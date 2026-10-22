@@ -89,6 +89,29 @@ for artist, terms in queries.items():
     for item in previous.get(artist, []):
         if item.get("id", "").startswith("MPREb_"):
             found.setdefault(item["id"], item)
+    # Verify artist identity using the album detail endpoint. Keep uncertain
+    # results in the catalog, but mark them as unverified for the UI.
+    checked = 0
+    for album in found.values():
+        album["artist_check"] = "unverified"
+        try:
+            detail = music.get_album(album["id"])
+            detail_artists = [a.get("name", "") for a in detail.get("artists", [])]
+            if not detail_artists:
+                continue
+            detail_keys = [name.casefold().removeprefix("the ").strip() for name in detail_artists]
+            if artist_key in detail_keys:
+                album["artist_check"] = "matched"
+                album["artists"] = detail_artists
+                album["year"] = detail.get("year") or album.get("year")
+                album["track_count"] = len(detail.get("tracks") or [])
+            else:
+                album["artist_check"] = "mismatch"
+                album["detail_artists"] = detail_artists
+            checked += 1
+        except Exception as error:
+            print("Album detail error:", artist, album["id"], str(error))
+    print("Album details checked:", artist, checked)
     catalog[artist] = sorted(found.values(), key=lambda x: (str(x["year"] or "9999"), x["title"]))
     print(artist, len(catalog[artist]))
 if not catalog["Miles Davis"]: raise SystemExit("No albums found; do not publish empty catalog")
