@@ -34,7 +34,7 @@ except (OSError, ValueError):
 # Known artist ensembles are not mistaken for unrelated performers.
 artist_aliases = {
     "Miles Davis": {"miles davis quintet", "miles davis sextet"},
-    "Duke Ellington": {"duke ellington and his orchestra", "duke ellington & his famous orchestra", "duke ellington and his famous orchestra"},
+    "Duke Ellington": {"duke ellington and his orchestra", "duke ellington & his orchestra", "duke ellington & his famous orchestra", "duke ellington and his famous orchestra"},
     "Stan Getz": {"stan getz quintet", "stan getz quartet"},
     "John Coltrane": {"the john coltrane quartet", "john coltrane quartet"},
     "Jeff Beck": {"jeff beck group"},
