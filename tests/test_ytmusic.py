@@ -18,3 +18,12 @@ for query in queries:
             print("ERROR:", repr(exc), flush=True)
             traceback.print_exc()
 print("Diagnostic completed; empty results are not treated as a successful catalog connection.")
+
+print("\nDIRECT ALBUM TEST", flush=True)
+try:
+    album_id = "MPREb_iNbKdKjDqyr"
+    album = music.get_album(album_id)
+    print(json.dumps({"title":album.get("title"),"artists":album.get("artists"),"year":album.get("year"),"tracks":len(album.get("tracks",[])),"url":"https://music.youtube.com/browse/"+album_id},ensure_ascii=False),flush=True)
+except Exception as exc:
+    print("ALBUM DETAIL ERROR:",repr(exc),flush=True)
+    traceback.print_exc()
