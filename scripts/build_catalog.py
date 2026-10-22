@@ -1,4 +1,4 @@
-import json, pathlib
+import json, pathlib, re, time, urllib.parse, urllib.request
 from ytmusicapi import YTMusic
 
 music = YTMusic(location="JP", language="ja")
@@ -39,6 +39,29 @@ artist_aliases = {
     "John Coltrane": {"the john coltrane quartet", "john coltrane quartet"},
     "Jeff Beck": {"jeff beck group"},
 }
+def title_key(value):
+    value = re.sub(r"\\([^)]*(?:remaster|mono|stereo|edition)[^)]*\\)", "", value or "", flags=re.I)
+    return re.sub(r"[^\\w]", "", value.casefold())
+
+def original_years(artist):
+    """MusicBrainz release groups supply earliest release dates, not streaming reissue dates."""
+    result = {}
+    try:
+        params = urllib.parse.urlencode({"query": f'artist:"{artist}" AND primarytype:album', "fmt": "json", "limit": 100})
+        req = urllib.request.Request("https://musicbrainz.org/ws/2/release-group/?" + params,
+            headers={"User-Agent": "RECORD/0.20 (album discovery prototype)", "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=20) as response:
+            groups = json.load(response).get("release-groups", [])
+        for group in groups:
+            year = (group.get("first-release-date") or "")[:4]
+            if not (len(year) == 4 and year.isdigit()): continue
+            key = title_key(group.get("title", ""))
+            if key and (key not in result or year < result[key]):
+                result[key] = year
+    except Exception as error:
+        print("MusicBrainz year lookup failed:", artist, error)
+    return result
+
 catalog = {}
 for artist, terms in queries.items():
     found = {}
@@ -121,7 +144,14 @@ for artist, terms in queries.items():
         except Exception as error:
             print("Album detail error:", artist, album["id"], str(error))
     print("Album details checked:", artist, checked)
-    catalog[artist] = sorted(found.values(), key=lambda x: (str(x["year"] or "9999"), x["title"]))
+    mb_years = original_years(artist)
+    for album in found.values():
+        key = title_key(album["title"])
+        year = mb_years.get(key)
+        if year:
+            album["original_year"] = year
+            album["year_source"] = "MusicBrainz (title match)"
+    catalog[artist] = sorted(found.values(), key=lambda x: (str(x.get("original_year") or "9999"), x["title"]))
     print(artist, len(catalog[artist]))
 if not catalog["Miles Davis"]: raise SystemExit("No albums found; do not publish empty catalog")
 pathlib.Path("data").mkdir(exist_ok=True)
