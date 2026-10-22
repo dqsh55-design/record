@@ -18,7 +18,13 @@ queries = {
         "Miles Davis best of", "Miles Davis complete sessions",
         "Miles Davis 1950s", "Miles Davis 1960s", "Miles Davis 1970s",
         "Miles Davis 1980s", "Miles Davis 1990s"
-    ]
+    ],
+    "Duke Ellington": ["Duke Ellington", "Duke Ellington albums", "Duke Ellington live", "Duke Ellington best of", "Duke Ellington Ellington at Newport", "Duke Ellington Money Jungle", "Duke Ellington Far East Suite", "Duke Ellington Such Sweet Thunder", "Duke Ellington Masterpieces by Ellington"],
+    "Stan Getz": ["Stan Getz", "Stan Getz albums", "Stan Getz Getz Gilberto", "Stan Getz Jazz Samba", "Stan Getz Focus", "Stan Getz live", "Stan Getz best of"],
+    "John Coltrane": ["John Coltrane", "John Coltrane albums", "John Coltrane A Love Supreme", "John Coltrane Blue Train", "John Coltrane Giant Steps", "John Coltrane My Favorite Things", "John Coltrane Ballads", "John Coltrane live", "John Coltrane best of"],
+    "Chick Corea": ["Chick Corea", "Chick Corea albums", "Chick Corea Return to Forever", "Chick Corea Light as a Feather", "Chick Corea Now He Sings Now He Sobs", "Chick Corea live", "Chick Corea best of"],
+    "Jeff Beck": ["Jeff Beck", "Jeff Beck albums", "Jeff Beck Blow by Blow", "Jeff Beck Wired", "Jeff Beck There and Back", "Jeff Beck Guitar Shop", "Jeff Beck live", "Jeff Beck best of"],
+    "The Beatles": ["The Beatles", "The Beatles albums", "The Beatles Abbey Road", "The Beatles Revolver", "The Beatles Rubber Soul", "The Beatles Sgt Pepper", "The Beatles White Album", "The Beatles Let It Be", "The Beatles live", "The Beatles greatest hits"]
 }
 catalog = {}
 for artist, terms in queries.items():
