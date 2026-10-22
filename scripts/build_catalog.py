@@ -43,24 +43,44 @@ def title_key(value):
     value = re.sub(r"\\([^)]*(?:remaster|mono|stereo|edition)[^)]*\\)", "", value or "", flags=re.I)
     return re.sub(r"[^\\w]", "", value.casefold())
 
-def original_years(artist):
-    """MusicBrainz release groups supply earliest release dates, not streaming reissue dates."""
+def musicbrainz_json(path, params):
+    url = "https://musicbrainz.org/ws/2/" + path + "?" + urllib.parse.urlencode({**params, "fmt": "json"})
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "RECORD/0.22 (noncommercial music album guide)",
+        "Accept": "application/json"
+    })
+    with urllib.request.urlopen(req, timeout=25) as response:
+        return json.load(response)
+
+def original_years_for_miles():
+    """Use a fixed artist MBID and exact titles, never broad artist text search."""
+    miles_mbid = "561d854a-6a28-4aa7-8c99-323e6ce46c2a"
     result = {}
     try:
-        params = urllib.parse.urlencode({"query": f'artist:"{artist}" AND primarytype:album', "fmt": "json", "limit": 100})
-        req = urllib.request.Request("https://musicbrainz.org/ws/2/release-group/?" + params,
-            headers={"User-Agent": "RECORD/0.20 (album discovery prototype)", "Accept": "application/json"})
-        with urllib.request.urlopen(req, timeout=20) as response:
-            groups = json.load(response).get("release-groups", [])
-        for group in groups:
-            year = (group.get("first-release-date") or "")[:4]
-            if not (len(year) == 4 and year.isdigit()): continue
-            key = title_key(group.get("title", ""))
-            if key and (key not in result or year < result[key]):
-                result[key] = year
+        offset = 0
+        while True:
+            data = musicbrainz_json("release-group", {
+                "artist": miles_mbid, "type": "album", "limit": 100, "offset": offset
+            })
+            groups = data.get("release-groups", [])
+            for group in groups:
+                year = (group.get("first-release-date") or "")[:4]
+                if len(year) != 4 or not year.isdigit():
+                    continue
+                key = title_key(group.get("title", ""))
+                if not key:
+                    continue
+                result.setdefault(key, set()).add(year)
+            offset += len(groups)
+            if not groups or offset >= data.get("release-group-count", 0):
+                break
+            time.sleep(1.2)
     except Exception as error:
-        print("MusicBrainz year lookup failed:", artist, error)
-    return result
+        print("MusicBrainz artist-ID lookup failed:", error)
+        return {}
+    # Conflicting release groups with the same title are not safe to match.
+    return {key: next(iter(years)) for key, years in result.items() if len(years) == 1}
+
 
 catalog = {}
 for artist, terms in queries.items():
@@ -144,12 +164,16 @@ for artist, terms in queries.items():
         except Exception as error:
             print("Album detail error:", artist, album["id"], str(error))
     print("Album details checked:", artist, checked)
-    # MusicBrainz text-search matching can return unrelated release groups.
-    # Do not publish these years until artist MBIDs and exact release groups
-    # are independently verified.
+    mb_years = original_years_for_miles() if artist == "Miles Davis" else {}
     for album in found.values():
         album.pop("original_year", None)
         album.pop("year_source", None)
+        if album.get("artist_check") != "matched":
+            continue
+        year = mb_years.get(title_key(album["title"]))
+        if year:
+            album["original_year"] = year
+            album["year_source"] = "MusicBrainz artist-ID exact title match"
     catalog[artist] = sorted(found.values(), key=lambda x: (str(x.get("original_year") or "9999"), x["title"]))
     print(artist, len(catalog[artist]))
 if not catalog["Miles Davis"]: raise SystemExit("No albums found; do not publish empty catalog")
