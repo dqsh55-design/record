@@ -357,10 +357,11 @@
       ],
       "thumbnail": "https://yt3.googleusercontent.com/skuprVUD8A_1RjfUYupK8Zgb_TlLRyeqNEx6gvA03ydDbkn4W0dsgczZuIz3ViTEoMAVWFctuBDI_p0uUw=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_OPTrMSBvLP2",
-      "artist_check": "mismatch",
+      "artist_check": "matched",
       "detail_artists": [
         "Miles Davis Quintet"
-      ]
+      ],
+      "track_count": 28
     },
     {
       "id": "MPREb_CbADbkjixWM",
@@ -371,10 +372,11 @@
       ],
       "thumbnail": "https://yt3.googleusercontent.com/JcObBos2coRxgm-23hbmdlxPKv3iU1rHHQ46CLqimKelO9xDAxBWv1qD_YEgdgdymCICPS26QMBfLKQ=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_CbADbkjixWM",
-      "artist_check": "mismatch",
+      "artist_check": "matched",
       "detail_artists": [
         "Miles Davis Quintet"
-      ]
+      ],
+      "track_count": 20
     },
     {
       "id": "MPREb_LeNSjOsjOvS",
@@ -906,10 +908,11 @@
       ],
       "thumbnail": "https://yt3.googleusercontent.com/4wb5qcgq4eJxHFPUsBlU0oYXI2igfPaL5jbdLDKJml6dv9daGy7INJR4RKvnqDRFxgzl1WW8BQYbh40=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_ovjvk4t4US4",
-      "artist_check": "mismatch",
+      "artist_check": "matched",
       "detail_artists": [
         "Duke Ellington and His Orchestra"
-      ]
+      ],
+      "track_count": 20
     },
     {
       "id": "MPREb_WUmwTQfPxGd",
@@ -933,11 +936,12 @@
       ],
       "thumbnail": "https://yt3.googleusercontent.com/a2ZcfjsrAS2eSYMR4UU_2v2njoIsXTR8uUyZRjxfLYGeEI9sv26pXSbktDe0T2oPvYS0Y8EZLaQuaTo=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_fF82ZeDEr9A",
-      "artist_check": "mismatch",
+      "artist_check": "matched",
       "detail_artists": [
         "エラ・フィッツジェラルド",
         "Duke Ellington And His Orchestra"
-      ]
+      ],
+      "track_count": 51
     },
     {
       "id": "MPREb_WsFxaXI2Ssq",
@@ -948,10 +952,11 @@
       ],
       "thumbnail": "https://yt3.googleusercontent.com/fycX5tuameeZiO4qaEEr-PNidcQvteXJ-9wW04BqfdTUiqoUTzpM3_ioopKahLh1iNasJ_urFxtVRf3Y=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_WsFxaXI2Ssq",
-      "artist_check": "mismatch",
+      "artist_check": "matched",
       "detail_artists": [
         "Duke Ellington & His Famous Orchestra"
-      ]
+      ],
+      "track_count": 9
     },
     {
       "id": "MPREb_244F1lI2THe",
@@ -1085,10 +1090,11 @@
       ],
       "thumbnail": "https://yt3.googleusercontent.com/HOaBAi3oSJwCRNCZPn7ShYSNnXf6UtOQLhVWqOWoGKljSPJRwjPIvphWFv_fwNlLt_5hGarcaj5I2eI=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_cXfOIo9ChZt",
-      "artist_check": "mismatch",
+      "artist_check": "matched",
       "detail_artists": [
         "Duke Ellington and His Orchestra"
-      ]
+      ],
+      "track_count": 16
     },
     {
       "id": "MPREb_aQpEMH5mu5S",
@@ -1200,10 +1206,11 @@
       ],
       "thumbnail": "https://yt3.googleusercontent.com/mrwc_myHecT0BtKM2UUr58v-_M4vfpaufYEnAKjh3JpgFsOaoc7xk3FCTZze1QOVi92Ece0odHpb1Oei=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_m9zlpdO5z0u",
-      "artist_check": "mismatch",
+      "artist_check": "matched",
       "detail_artists": [
         "Stan Getz Quintet"
-      ]
+      ],
+      "track_count": 9
     },
     {
       "id": "MPREb_DWxigt0cmgn",
@@ -1228,10 +1235,11 @@
       ],
       "thumbnail": "https://yt3.googleusercontent.com/GC4yIcIGC9LHLv3kdl4iAyp9IAji7CMbb-78G2rHqsou7zOkmAiI8nbOSZNEY0bhcBC01y4WOXTKSfVSZA=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_doFv5P4jEdJ",
-      "artist_check": "mismatch",
+      "artist_check": "matched",
       "detail_artists": [
         "The John Coltrane Quartet"
-      ]
+      ],
+      "track_count": 4
     },
     {
       "id": "MPREb_6DAtIBq90RC",
@@ -1552,10 +1560,11 @@
       ],
       "thumbnail": "https://yt3.googleusercontent.com/61Pfw92MiK18_724tSSvYUg4lsxgYK6tFdjsg1vIKp5-3Yf1CztE1sTk-0p6CGY_jRiL9Iaj-qSWCM4i=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_cJzPi7YsCCb",
-      "artist_check": "mismatch",
+      "artist_check": "matched",
       "detail_artists": [
         "Jeff Beck Group"
-      ]
+      ],
+      "track_count": 7
     },
     {
       "id": "MPREb_rIfvGtvJXGe",
