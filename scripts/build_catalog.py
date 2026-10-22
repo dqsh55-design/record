@@ -52,35 +52,36 @@ def musicbrainz_json(path, params):
     with urllib.request.urlopen(req, timeout=25) as response:
         return json.load(response)
 
+# Initial curated release-year set checked against the Miles Davis
+# discography on MusicBrainz. Extend only after reviewing each album.
+MILES_ORIGINAL_YEARS = {
+    "Kind of Blue": "1959",
+    "Bitches Brew": "1970",
+    "Tutu": "1986",
+    "Sketches of Spain": "1960",
+    "Milestones": "1958",
+    "Porgy and Bess": "1958",
+    "Miles Ahead": "1957",
+    "Nefertiti": "1968",
+    "In a Silent Way": "1969",
+    "Filles de Kilimanjaro": "1969",
+    "Sorcerer": "1967",
+    "E.S.P.": "1965",
+    "On the Corner": "1972",
+    "Get Up With It": "1974",
+    "Amandla": "1989",
+    "Decoy": "1984",
+    "Star People": "1983",
+    "Quiet Nights": "1963",
+    "Seven Steps to Heaven": "1963",
+    "The Man With the Horn": "1981",
+    "Big Fun": "1974",
+    "Water Babies": "1976",
+    "Birth of the Cool": "1957",
+    "Doo-Bop": "1992",
+}
 def original_years_for_miles():
-    """Use a fixed artist MBID and exact titles, never broad artist text search."""
-    miles_mbid = "561d854a-6a28-4aa7-8c99-323e6ce46c2a"
-    result = {}
-    try:
-        offset = 0
-        while True:
-            data = musicbrainz_json("release-group", {
-                "artist": miles_mbid, "type": "album", "limit": 100, "offset": offset
-            })
-            groups = data.get("release-groups", [])
-            for group in groups:
-                year = (group.get("first-release-date") or "")[:4]
-                if len(year) != 4 or not year.isdigit():
-                    continue
-                key = title_key(group.get("title", ""))
-                if not key:
-                    continue
-                result.setdefault(key, set()).add(year)
-            offset += len(groups)
-            if not groups or offset >= data.get("release-group-count", 0):
-                break
-            time.sleep(1.2)
-    except Exception as error:
-        print("MusicBrainz artist-ID lookup failed:", error)
-        return {}
-    # Conflicting release groups with the same title are not safe to match.
-    return {key: next(iter(years)) for key, years in result.items() if len(years) == 1}
-
+    return {title_key(title): year for title, year in MILES_ORIGINAL_YEARS.items()}
 
 catalog = {}
 for artist, terms in queries.items():
@@ -173,7 +174,7 @@ for artist, terms in queries.items():
         year = mb_years.get(title_key(album["title"]))
         if year:
             album["original_year"] = year
-            album["year_source"] = "MusicBrainz artist-ID exact title match"
+            album["year_source"] = "MusicBrainz discography (curated)"
     catalog[artist] = sorted(found.values(), key=lambda x: (str(x.get("original_year") or "9999"), x["title"]))
     print(artist, len(catalog[artist]))
 if not catalog["Miles Davis"]: raise SystemExit("No albums found; do not publish empty catalog")
