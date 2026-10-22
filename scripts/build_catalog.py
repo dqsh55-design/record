@@ -31,6 +31,14 @@ try:
     previous = json.loads(catalog_path.read_text(encoding="utf-8"))
 except (OSError, ValueError):
     previous = {}
+# Known artist ensembles are not mistaken for unrelated performers.
+artist_aliases = {
+    "Miles Davis": {"miles davis quintet", "miles davis sextet"},
+    "Duke Ellington": {"duke ellington and his orchestra", "duke ellington & his famous orchestra", "duke ellington and his famous orchestra"},
+    "Stan Getz": {"stan getz quintet", "stan getz quartet"},
+    "John Coltrane": {"the john coltrane quartet", "john coltrane quartet"},
+    "Jeff Beck": {"jeff beck group"},
+}
 catalog = {}
 for artist, terms in queries.items():
     found = {}
@@ -100,7 +108,8 @@ for artist, terms in queries.items():
             if not detail_artists:
                 continue
             detail_keys = [name.casefold().removeprefix("the ").strip() for name in detail_artists]
-            if artist_key in detail_keys:
+            allowed = {artist_key} | artist_aliases.get(artist, set())
+            if any(key in allowed for key in detail_keys):
                 album["artist_check"] = "matched"
                 album["artists"] = detail_artists
                 album["year"] = detail.get("year") or album.get("year")
