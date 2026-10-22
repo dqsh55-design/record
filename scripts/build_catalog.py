@@ -40,8 +40,8 @@ artist_aliases = {
     "Jeff Beck": {"jeff beck group"},
 }
 def title_key(value):
-    value = re.sub(r"\\([^)]*(?:remaster|mono|stereo|edition)[^)]*\\)", "", value or "", flags=re.I)
-    return re.sub(r"[^\\w]", "", value.casefold())
+    # Normalize punctuation and spacing without fragile regex escaping.
+    return "".join(char for char in (value or "").casefold() if char.isalnum())
 
 def musicbrainz_json(path, params):
     url = "https://musicbrainz.org/ws/2/" + path + "?" + urllib.parse.urlencode({**params, "fmt": "json"})
