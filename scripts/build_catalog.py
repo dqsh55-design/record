@@ -144,13 +144,12 @@ for artist, terms in queries.items():
         except Exception as error:
             print("Album detail error:", artist, album["id"], str(error))
     print("Album details checked:", artist, checked)
-    mb_years = original_years(artist)
+    # MusicBrainz text-search matching can return unrelated release groups.
+    # Do not publish these years until artist MBIDs and exact release groups
+    # are independently verified.
     for album in found.values():
-        key = title_key(album["title"])
-        year = mb_years.get(key)
-        if year:
-            album["original_year"] = year
-            album["year_source"] = "MusicBrainz (title match)"
+        album.pop("original_year", None)
+        album.pop("year_source", None)
     catalog[artist] = sorted(found.values(), key=lambda x: (str(x.get("original_year") or "9999"), x["title"]))
     print(artist, len(catalog[artist]))
 if not catalog["Miles Davis"]: raise SystemExit("No albums found; do not publish empty catalog")
