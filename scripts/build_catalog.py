@@ -41,7 +41,7 @@ artist_aliases = {
 }
 def title_key(value):
     # Normalize punctuation and spacing without fragile regex escaping.
-    return "".join(char for char in (value or "").casefold() if char.isalnum())
+    return " ".join((value or "").casefold().split())
 
 def musicbrainz_json(path, params):
     url = "https://musicbrainz.org/ws/2/" + path + "?" + urllib.parse.urlencode({**params, "fmt": "json"})
