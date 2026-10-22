@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RECORD</title>
+<style>
+body{font-family:Arial,sans-serif;background:#faf9f7;color:#252525;max-width:550px;margin:60px auto;padding:20px}
+h1{text-align:center;letter-spacing:8px;font-weight:400}
+p{text-align:center;color:#888}
+input{padding:14px;font-size:16px;width:65%;box-sizing:border-box}
+button{padding:14px;font-size:16px;background:#252525;color:white;border:0;border-radius:5px}
+#result{margin-top:35px}
+.album{padding:14px 0;border-bottom:1px solid #ddd}
+.year{color:#888;font-size:14px}
+</style>
+</head>
+<body>
+<h1>RECORD</h1>
+<p>Find the music. Know the era.</p>
+<input id="artist" placeholder="アーティスト名">
+<button onclick="search()">検索</button>
+<div id="result"></div>
+<script>
+function search(){
+let q=document.getElementById('artist').value.toLowerCase().replace(/[\s・]/g,'');
+let r=document.getElementById('result');
+let data=[
+{keys:['ジェフベック','jeffbeck'],name:'Jeff Beck',albums:[['Blow by Blow',1975],['Wired',1976],['There & Back',1980]]},
+{keys:['ジミヘン','ジミヘンドリックス','jimihendrix'],name:'Jimi Hendrix',albums:[['Are You Experienced',1967],['Axis: Bold as Love',1967],['Electric Ladyland',1968]]}
+];
+let a=data.find(x=>x.keys.some(k=>k.includes(q)&&q.length>0));
+r.innerHTML=a?'<h2>'+a.name+'</h2>'+a.albums.map(x=>'<div class="album">'+x[0]+'<div class="year">'+x[1]+'年</div></div>').join(''):'該当するアーティストが見つかりません';
+}
+</script>
+</body>
+</html>
