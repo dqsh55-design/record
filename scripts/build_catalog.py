@@ -26,11 +26,16 @@ queries = {
     "Jeff Beck": ["Jeff Beck", "Jeff Beck albums", "Jeff Beck Blow by Blow", "Jeff Beck Wired", "Jeff Beck There and Back", "Jeff Beck Guitar Shop", "Jeff Beck live", "Jeff Beck best of"],
     "The Beatles": ["The Beatles", "The Beatles albums", "The Beatles Abbey Road", "The Beatles Revolver", "The Beatles Rubber Soul", "The Beatles Sgt Pepper", "The Beatles White Album", "The Beatles Let It Be", "The Beatles live", "The Beatles greatest hits"]
 }
+catalog_path = pathlib.Path("data/ytmusic-albums.json")
+try:
+    previous = json.loads(catalog_path.read_text(encoding="utf-8"))
+except (OSError, ValueError):
+    previous = {}
 catalog = {}
 for artist, terms in queries.items():
     found = {}
     errors = []
-    artist_key = artist.casefold().replace("the ", "").strip()
+    artist_key = artist.casefold().removeprefix("the ").strip()
     for term in terms:
         try:
             for item in music.search(term, limit=50):
@@ -38,8 +43,8 @@ for artist, terms in queries.items():
                 album_id = item.get("browseId", "")
                 if not album_id.startswith("MPREb_"): continue
                 artists = [a.get("name", "") for a in item.get("artists", [])]
-                normalized_names = [name.casefold().replace("the ", "").strip() for name in artists]
-                if not any(artist_key in name or name in artist_key for name in normalized_names if name): continue
+                normalized_names = [name.casefold().removeprefix("the ").strip() for name in artists]
+                if not any(artist_key == name for name in normalized_names if name): continue
                 found[album_id] = {
                     "id": album_id, "title": item.get("title", ""),
                     "year": item.get("year"), "artists": artists,
@@ -54,7 +59,7 @@ for artist, terms in queries.items():
         artist_results = music.search(artist, filter="artists", limit=20)
         for result in artist_results:
             namestr = result.get("artist", result.get("title", ""))
-            if artist_key not in str(namestr).casefold().replace("the ", "").strip():
+            if artist_key != str(namestr).casefold().removeprefix("the ").strip():
                 continue
             channel_id = result.get("browseId")
             if not channel_id: continue
@@ -80,6 +85,10 @@ for artist, terms in queries.items():
             break
     except Exception as error:
         print("Artist browsing error:", artist, error)
+    # Keep previously discovered albums when YouTube search is inconsistent.
+    for item in previous.get(artist, []):
+        if item.get("id", "").startswith("MPREb_"):
+            found.setdefault(item["id"], item)
     catalog[artist] = sorted(found.values(), key=lambda x: (str(x["year"] or "9999"), x["title"]))
     print(artist, len(catalog[artist]))
 if not catalog["Miles Davis"]: raise SystemExit("No albums found; do not publish empty catalog")
