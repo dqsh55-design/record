@@ -2,7 +2,7 @@
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RECORD — Find the music.</title>
 <style>
 :root{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;color:#252525;background:#f8f7f4}*{box-sizing:border-box}body{margin:0}main{max-width:780px;margin:auto;padding:65px 22px 90px}header{text-align:center;margin-bottom:54px}h1{font-size:39px;letter-spacing:.22em;font-weight:450;margin:0 0 12px;padding-left:.22em}header p{color:#888;font-size:12px;letter-spacing:.13em;margin:0}.intro{font-size:14px;color:#777;line-height:1.9;text-align:center;margin-bottom:28px}.search{display:flex;gap:8px}input{min-width:0;flex:1;padding:16px;border:1px solid #d9d7d2;border-radius:4px;background:white;font-size:16px}button{border:0;background:#242424;color:#fff;padding:0 24px;border-radius:4px;font-size:15px;cursor:pointer}button:disabled{opacity:.5}.hint{font-size:12px;color:#999;margin-top:12px}.status{margin:32px 0;color:#777;font-size:14px;line-height:1.8}.artist{font-size:24px;font-weight:500;margin:42px 0 8px}.sub{font-size:12px;color:#888;margin-bottom:22px}.filters{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}.filter{background:transparent;color:#666;border:1px solid #d8d6d1;border-radius:30px;padding:9px 14px;font-size:12px}.filter.active{background:#252525;color:white;border-color:#252525}.album{border-top:1px solid #e0ded9;padding:18px 0;display:flex;gap:17px;align-items:center}.cover{width:76px;height:76px;flex:none;background:#e9e7e2;border-radius:2px;object-fit:cover}.info{min-width:0;flex:1}.album-title{font-size:15px;font-weight:550;line-height:1.5}.meta{font-size:12px;color:#888;margin:6px 0 10px}.listen{font-size:12px;color:#4d4d4d;text-underline-offset:3px}.detail-btn{background:transparent;color:#555;border:1px solid #d8d6d1;padding:7px 10px;font-size:12px;margin-top:9px}.album-tools{margin-top:12px;border-top:1px solid #eceae5;padding-top:10px}.album-tools summary{cursor:pointer;font-size:12px;color:#777;list-style:none}.album-tools summary::-webkit-details-marker{display:none}.album-tools summary::after{content:' ＋'}.album-tools[open] summary::after{content:' −'}.album-tools-body{padding-top:8px}.album-tools .direct-url{max-width:100%}.availability{font-size:12px;color:#888;margin-top:9px}.availability.confirmed{color:#336b52}.availability.missing{color:#955f48}.direct-url{display:block;width:100%;max-width:390px;margin-top:8px;padding:9px;border:1px solid #d8d6d1;border-radius:4px;background:#fff;font-size:12px}.release-detail{font-size:12px;color:#777;line-height:1.8;margin-top:8px}.note{font-size:12px;line-height:1.8;color:#999;margin-top:36px}.more{display:block;margin:26px auto 0;padding:13px 24px}footer{text-align:center;color:#aaa;font-size:11px;margin-top:80px}@media(max-width:420px){main{padding-top:48px}h1{font-size:33px}.search button{padding:0 17px}.cover{width:66px;height:66px}}
-</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。<br>正規発売アルバムを探すための音楽ガイド。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます</div><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Music data by MusicBrainz · v0.58</footer></main>
+</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。<br>正規発売アルバムを探すための音楽ガイド。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます</div><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Music data by MusicBrainz · v0.59</footer></main>
 <script>
 const $=id=>document.getElementById(id), status=$('status'),results=$('results');
 let relatedCatalogAlbums=[],artistChoices=[],ytVisible=20,ytSort='name',ytAlbums=[],albums=[],filter='おすすめ',artistName='',offset=0,artistId='',busy=false,total=0;
@@ -11,6 +11,43 @@ const normalize=s=>s.toLowerCase().replace(/[\s・･ー‐－]/g,'');
 function typeOf(a){let t=a['secondary-types']||[];if(t.includes('Compilation'))return 'ベスト・編集盤';if(t.includes('Live'))return 'ライブ盤';if(a['primary-type']==='Album')return 'スタジオ盤';return 'その他'}
 function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));let lastRequestAt=0;let requestQueue=Promise.resolve();function api(path){const job=requestQueue.catch(()=>{}).then(async()=>{let url='https://musicbrainz.org/ws/2/'+path;for(let attempt=0;attempt<3;attempt++){let wait=Math.max(0,1100-(Date.now()-lastRequestAt));if(wait)await pause(wait);lastRequestAt=Date.now();try{let r=await fetch(url,{headers:{Accept:'application/json'}});if(r.ok)return await r.json();if(![429,502,503,504].includes(r.status)||attempt===2)throw Error('音楽データを取得できませんでした（'+r.status+'）');}catch(e){if(attempt===2||!/Failed to fetch|NetworkError|Load failed/i.test(e.message))throw e}await pause((attempt+1)*1700)}throw Error('通信が混み合っています')});requestQueue=job.catch(()=>{});return job}
+function automaticState(a){
+ const e=a.automatic_verification;
+ if(!e||e.version!==1||e.album_id!==a.id)return 'insufficient';
+ const age=Date.now()-Date.parse(e.checked_at);
+ if(!Number.isFinite(age)||age<0||age>30*24*60*60*1000)return 'insufficient';
+ return ['supported','different'].includes(e.status)?e.status:'insufficient';
+}
+function appendAutomaticEvidence(a,info){
+ const e=a.automatic_verification, state=automaticState(a);
+ const labels={supported:'根拠あり：公式発売盤のメタデータと一致',insufficient:'情報不足：正規盤は未確認',different:'不一致：取得した発売盤候補と相違あり'};
+ const badge=document.createElement('div');badge.className='availability '+(state==='supported'?'confirmed':state==='different'?'missing':'');badge.textContent=labels[state];info.append(badge);
+ const panel=document.createElement('details');panel.className='album-tools';
+ const summary=document.createElement('summary');summary.textContent='自動照合の根拠を見る';panel.append(summary);
+ const line=text=>{const p=document.createElement('div');p.className='release-detail';p.textContent=text;panel.append(p);return p};
+ line('メタデータの照合結果です。正規配信の権利許諾を保証するものではありません。不一致は取得した候補との比較であり、非正規盤との断定ではありません。');
+ if(!e||e.album_id!==a.id){line('自動照合は未実施です。手入力なしで確認できる根拠がまだありません。');info.append(panel);return}
+ line('確認日時：'+(e.checked_at||'不明')+(automaticState(a)==='insufficient'&&e.status!=='insufficient'?'（再確認が必要）':''));
+ for(const text of e.limitations||[])line(text);
+ const yt=e.youtube;
+ if(yt){
+  line('YouTube Music レーベル：'+((yt.labels||[]).join(' / ')||'未取得')+' · 発売元：'+(yt.publisher||'未取得'));
+  line('収録曲：'+(yt.track_count??'曲数不明')+'曲 · 全曲取得：'+(yt.complete?'確認':'未確認'));
+  if(yt.description)line('YouTube Musicの説明文（レーベル推定には使用しません）：'+yt.description);
+ }
+ const terms={official:'公式発売登録',title:'作品名',artist:'アーティスト',label:'レーベル',count:'曲数',titles:'曲名',order:'曲順'},values={match:'一致',different:'不一致',unknown:'情報不足'};
+ for(const c of e.candidates||[]){
+  const row=line([c.title,c.date,c.country,(c.labels||[]).join(' / ')||'レーベル未取得',(c.catalog_numbers||[]).join(' / ')].filter(Boolean).join(' · '));
+  if(c.release_id){const link=document.createElement('a');link.href='https://musicbrainz.org/release/'+encodeURIComponent(c.release_id);link.textContent=' 発売盤の出典 ↗';link.target='_blank';link.rel='noopener noreferrer';row.append(link)}
+  line(Object.entries(terms).map(([k,v])=>v+'：'+(values[c.checks?.[k]]||'情報不足')).join(' · '));
+  const songs=document.createElement('details'),caption=document.createElement('summary');caption.textContent='取得した曲目を比較';songs.append(caption);
+  const tracks=document.createElement('div');tracks.className='release-detail';tracks.style.whiteSpace='pre-wrap';
+  const y=yt?.tracks||[],m=c.tracks||[];
+  tracks.textContent=Array.from({length:Math.max(y.length,m.length)},(_,i)=>(i+1)+'. YouTube Music：'+(y[i]?.title||'未取得')+' / MusicBrainz：'+(m[i]?.title||'未取得')).join('\n');songs.append(tracks);panel.append(songs);
+ }
+ info.append(panel);
+}
+
 function titleKey(s){return String(s||'').normalize('NFKC').toLowerCase().replace(/\([^)]*(remaster|mono|stereo|edition)[^)]*\)/gi,'').replace(/[^\p{L}\p{N}]/gu,'')}
 function uniqueAlbums(){let map=new Map();for(const a of albums){const key=titleKey(a.title)+'|'+typeOf(a);if(!map.has(key))map.set(key,a);else{const old=map.get(key);if((a['first-release-date']||'9999')<(old['first-release-date']||'9999'))map.set(key,a)}}return [...map.values()].sort((a,b)=>(a['first-release-date']||'9999').localeCompare(b['first-release-date']||'9999'))}
 const releaseEvidenceCache=(()=>{try{return JSON.parse(localStorage.getItem('recordReleaseEvidenceV1')||'{}')}catch{return {}}})();
@@ -201,10 +238,10 @@ if(ytEvidenceOnly){
  help.textContent='MusicBrainzに公式発売の登録がある作品を表示します。これはYouTube Music上の配信盤が正規であることの証明ではありません。';
  section.append(help);
 }
-for(let a of visibleYt.slice(0,ytVisible)){let item=document.createElement('article');item.className='album';if(a.thumbnail){let img=document.createElement('img');img.className='cover';img.src=a.thumbnail;img.alt='';img.loading='lazy';item.append(img)}let info=document.createElement('div');info.className='info';let title=document.createElement('div');title.className='album-title';title.textContent=a.title;let meta=document.createElement('div');meta.className='meta';meta.textContent=(a.displayYear||'発売年不明')+(a.albumType?' · '+a.albumType:'')+(a.track_count?' · '+a.track_count+'曲':'')+(a.artist_check==='matched'?' · 本人名義を確認（正規盤は未確認）':' · 本人名義・正規盤とも未確認');let link=document.createElement('a');link.className='listen';link.href=a.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent='YouTube Musicでアルバムを開く ↗';info.append(title,meta,link);
+for(let a of visibleYt.slice(0,ytVisible)){let item=document.createElement('article');item.className='album';if(a.thumbnail){let img=document.createElement('img');img.className='cover';img.src=a.thumbnail;img.alt='';img.loading='lazy';item.append(img)}let info=document.createElement('div');info.className='info';let title=document.createElement('div');title.className='album-title';title.textContent=a.title;let meta=document.createElement('div');meta.className='meta';meta.textContent=(a.displayYear||'発売年不明')+(a.albumType?' · '+a.albumType:'')+(a.track_count?' · '+a.track_count+'曲':'')+(a.artist_check==='matched'?' · 本人名義を確認（正規盤は未確認）':' · 本人名義・正規盤とも未確認');let link=document.createElement('a');link.className='listen';link.href=a.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent='YouTube Musicでアルバムを開く ↗';info.append(title,meta,link);appendAutomaticEvidence(a,info);
 let matchedGroup=mbById.get(a.mb_release_group)||mbByTitle.get(titleKey(a.title));
 if(matchedGroup){
-  if(a.match_evidence){
+  if(a.match_evidence&&!a.automatic_verification){
     let machine=document.createElement('details');machine.className='album-tools';
     let caption=document.createElement('summary');caption.textContent=a.match_evidence.status==='corroborated'?'発売盤の曲目・レーベルが一致（正規配信は未保証）':'自動照合の根拠を見る（候補）';
     let evidenceText=document.createElement('div');evidenceText.className='release-detail';
@@ -258,7 +295,7 @@ if(matchedGroup){
   const recordedLabel=record?.ytLabel||'';
   comparison.textContent=!recordedLabel?'レーベル照合：YouTube Music側の表示情報が未登録':!officialLabels.length?'レーベル照合：MusicBrainz側の情報が不足':officialLabels.some(x=>normalizeLabel(x)===normalizeLabel(recordedLabel))?'レーベル名が一致（同一盤・正規配信の証明ではありません）':'レーベル名が一致しません（別表記・再発盤の可能性あり）';
   let panel=document.createElement('details');panel.className='album-tools';
-  let summary=document.createElement('summary');summary.textContent=record?'照合記録を編集':'正規盤の照合結果を記録';
+  let summary=document.createElement('summary');summary.textContent=record?'手動の照合記録を編集（任意）':'手動の照合記録（任意）';
   let body=document.createElement('div');body.className='album-tools-body';
   body.append(check,detail,mbLabel,comparison,verification,verdict,labelInput,notesInput,saveCheck);
   panel.append(summary,body);info.append(panel);

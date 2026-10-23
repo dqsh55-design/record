@@ -59,3 +59,26 @@ assert.equal(run("getVerification(id,'https://music.youtube.com/browse/MPREb_res
 console.log('Strict album URLs, snapshot preservation and large-backup restore passed');
 
 assert.equal(run("saveVerification(id,{ytUrl:url,verdict:'matched',ytLabel:' [no label] ',notes:'checked'})"),false);
+
+const fresh=new Date().toISOString();
+context.fresh=fresh;
+assert.equal(run("automaticState({id:'a',automatic_verification:{version:1,album_id:'a',checked_at:fresh,status:'supported'}})"),'supported');
+assert.equal(run("automaticState({id:'b',automatic_verification:{version:1,album_id:'a',checked_at:fresh,status:'supported'}})"),'insufficient');
+assert.equal(run("automaticState({id:'a',automatic_verification:{version:1,album_id:'a',checked_at:'2000-01-01',status:'supported'}})"),'insufficient');
+class Element {
+ constructor(tag){this.tag=tag;this.children=[];this.textContent='';this.style={}}
+ append(...items){this.children.push(...items)}
+}
+context.document.createElement=tag=>new Element(tag);
+context.info=new Element('div');
+run("appendAutomaticEvidence({id:'a'},info)");
+assert.equal(context.info.children[0].textContent,'情報不足：正規盤は未確認');
+assert.equal(context.info.children[1].tag,'details');
+context.info=new Element('div');
+run(`appendAutomaticEvidence({id:'a',automatic_verification:{version:1,album_id:'a',checked_at:fresh,status:'different',youtube:{labels:[],tracks:[{title:'<script>unsafe</script>'}],complete:false},candidates:[{release_id:'edition',checks:{order:'different'},tracks:[{title:'Other'}]}]}},info)`);
+const allText=node=>[node.textContent,...(node.children||[]).flatMap(c=>allText(c))];
+assert(allText(context.info).some(t=>t.includes('曲順：不一致')));
+assert(allText(context.info).some(t=>t.includes('レーベル：未取得')));
+assert(allText(context.info).some(t=>t.includes('<script>unsafe</script>')));
+assert(!context.info.innerHTML);
+console.log('Automatic evidence: album binding, expiry, missing metadata, mismatch and safe text rendering passed');

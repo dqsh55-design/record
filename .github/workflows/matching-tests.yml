@@ -16,6 +16,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: python -m unittest discover -s tests -p 'test_release_matching.py' -v
+      - run: python -m unittest discover -s tests -p 'test_*matching.py' -v
       - run: node tests/test_browser.cjs
-      - run: python -m py_compile scripts/build_catalog.py scripts/release_matching.py
+      - run: python -m py_compile scripts/build_catalog.py scripts/release_matching.py scripts/automatic_matching.py scripts/verify_catalog.py
