@@ -60,3 +60,11 @@ python -m py_compile scripts/build_catalog.py scripts/release_matching.py
 
 **公開前の残件**：現在の実カタログは10名義166作品、自動照合結果は0件です。テスト用の照合成功例は実カタログに入れていません。コード上の表示経路は検証済みですが、接続できる環境で実データを取得し、結果を同じPRでレビューするまでは公開前承認を保留します。1回12作品の更新では全作品の即時照合はされません。週次だけでは30日以内に全166作品を巡回できないため、根拠のみの日次更新を追加しました。毎回12作品を処理できる場合の初回巡回は約14日です。通信失敗・実行時間上限等で未照合・古い結果があれば情報不足のままです。
 
+## PR #2 接続の再調査
+
+2026-10-23に設定済みプロキシ経由で再測定し、curl・Python標準ライブラリ・ytmusicapi 1.12.3でYouTube Music宛CONNECTの403を確認しました。MusicBrainzでは対象3作品の実検索・発売盤詳細取得に成功しましたが、YouTube Music側を取得できないため、実データ同士の照合成功はありません。レーベル取得のライブラリ上の制約も確認しました。[調査結果・必要設定・代替案](docs/YOUTUBE-MUSIC-CONNECTIVITY.md)と[実測JSON](docs/matching-diagnostic-2026-10-23.json)を参照してください。
+
+`scripts/diagnose_matching.py --output work/matching-diagnostic.json` はJeff BeckのBlow by Blow / Best of Beck、Miles DavisのKind of Blueを読み取り専用で調査します。YouTube側の失敗でMusicBrainz調査を省略しません。候補の一部だけの確認では総合判定を確定せず、診断の総合statusは情報不足を維持します。実カタログは更新しません。手動確認workflowには診断artifactを追加し、起動は行っていません。
+
+追加後の検証：Python 30件、JavaScript回帰、Chromium画面回帰5件（検索・保存/復元・リンク・通信失敗・日本語検索・並替え・320/375/390/430px幅）、Python構文・差分チェックが成功。画面テストでは外部API応答を置き換えています。実カタログ・画面実装は今回変更していません。
+
