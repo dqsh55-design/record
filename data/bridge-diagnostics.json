@@ -1,199 +1,408 @@
 {
-  "artist": "The Jimi Hendrix Experience",
-  "musicbrainz_id": "33b3c323-77c2-417c-a5b4-af7e6a111cc9",
-  "albums_checked": 25,
-  "no_candidates": [
-    "1968‐02‐28: The Scene, Milwaukee, WI",
-    "1968‐08‐10: Auditorium Theatre, Chicago, IL",
-    "1968‐02‐17: Will Rogers Auditorium, Fort Worth, TX",
-    "1968‐12‐01: Coliseum, Chicago, IL",
-    "1968‐02‐25: Civic Opera House, Chicago, IL",
-    "Historic Performances Recorded at the Monterey International Pop Festival",
-    "The Wild Man of Pop Plays, Volume 1",
-    "The Legendary Starclub Tapes",
-    "Rockstars in Concert",
-    "Riots in Berkeley",
-    "Live at Winterland +3",
-    "Electric Guitarland"
-  ],
-  "title_mismatch": [
-    {
-      "wanted": "Experience",
-      "found": "Experience Hendrix: The Best Of Jimi Hendrix"
-    },
-    {
-      "wanted": "Experience",
-      "found": "Sing The Hits Of The Jimi Hendrix Experience"
-    },
-    {
-      "wanted": "Experience",
-      "found": "Sing The Hits Of The Jimi Hendrix Experience"
-    },
-    {
-      "wanted": "Experience",
-      "found": "Magic Boy: The Jimi Hendrix Experience Live At Berkeley [First Show]"
-    },
-    {
-      "wanted": "Voodoo Chile",
-      "found": "Electric Ladyland"
-    },
-    {
-      "wanted": "Voodoo Chile",
-      "found": "Live at Woodstock"
-    },
-    {
-      "wanted": "Voodoo Chile",
-      "found": "Voodoo Child: The Jimi Hendrix Collection"
-    },
-    {
-      "wanted": "Live at Winterland",
-      "found": "Winterland"
-    },
-    {
-      "wanted": "Live at Winterland",
-      "found": "Voodoo Child: The Jimi Hendrix Collection"
-    },
-    {
-      "wanted": "Live at Winterland",
-      "found": "Hendrix In The West"
-    },
-    {
-      "wanted": "Radio One",
-      "found": "BBC Sessions"
-    },
-    {
-      "wanted": "Radio One",
-      "found": "The Karaoke Channel - Classic Rock, Vol. 11"
-    },
-    {
-      "wanted": "Radio One",
-      "found": "Led Zeppelin (Remaster)"
-    },
-    {
-      "wanted": "The Wild Man of Pop Plays",
-      "found": "The Jimi Hendrix Experience (Deluxe Reissue)"
-    },
-    {
-      "wanted": "The Wild Man of Pop Plays",
-      "found": "Live At Monterey"
-    },
-    {
-      "wanted": "The Wild Man of Pop Plays",
-      "found": "Are You Experienced"
-    },
-    {
-      "wanted": "1968 A.D.",
-      "found": "The Jimi Hendrix Experience (Deluxe Reissue)"
-    },
-    {
-      "wanted": "1968 A.D.",
-      "found": "Winterland"
-    },
-    {
-      "wanted": "1968 A.D.",
-      "found": "Miami Pop Festival"
-    },
-    {
-      "wanted": "Get The Experience!",
-      "found": "Experience Hendrix: The Best Of Jimi Hendrix"
-    },
-    {
-      "wanted": "Get The Experience!",
-      "found": "Sing The Hits Of The Jimi Hendrix Experience"
-    },
-    {
-      "wanted": "Get The Experience!",
-      "found": "Sing The Hits Of The Jimi Hendrix Experience"
-    },
-    {
-      "wanted": "Get The Experience!",
-      "found": "Rock Legend"
-    },
-    {
-      "wanted": "1968 A.D., Part Two",
-      "found": "The Jimi Hendrix Experience (Deluxe Reissue)"
-    },
-    {
-      "wanted": "1968 A.D., Part Two",
-      "found": "Winterland"
-    },
-    {
-      "wanted": "1968 A.D., Part Two",
-      "found": "Miami Pop Festival"
-    },
-    {
-      "wanted": "One Night Stand",
-      "found": "Led Zeppelin (Remaster)"
-    },
-    {
-      "wanted": "One Night Stand",
-      "found": "Let It Bleed (50th Anniversary Edition / Remastered 2019)"
-    },
-    {
-      "wanted": "One Night Stand",
-      "found": "Led Zeppelin II (Remaster)"
-    }
-  ],
-  "artist_mismatch": [],
-  "detail_mismatch": [],
-  "matched": [
-    "Are You Experienced",
-    "Axis: Bold as Love",
-    "Electric Ladyland",
-    "Smash Hits"
-  ],
-  "fallback_found": [
-    {
-      "title": "Are You Experienced",
-      "count": 4
-    },
-    {
-      "title": "Axis: Bold as Love",
-      "count": 4
-    },
-    {
-      "title": "Electric Ladyland",
-      "count": 4
-    },
-    {
-      "title": "Smash Hits",
-      "count": 3
-    },
-    {
-      "title": "Experience",
-      "count": 4
-    },
-    {
-      "title": "Voodoo Chile",
-      "count": 3
-    },
-    {
-      "title": "Live at Winterland",
-      "count": 3
-    },
-    {
-      "title": "Radio One",
-      "count": 3
-    },
-    {
-      "title": "The Wild Man of Pop Plays",
-      "count": 3
-    },
-    {
-      "title": "1968 A.D.",
-      "count": 3
-    },
-    {
-      "title": "Get The Experience!",
-      "count": 4
-    },
-    {
-      "title": "1968 A.D., Part Two",
-      "count": 3
-    },
-    {
-      "title": "One Night Stand",
-      "count": 3
-    }
-  ]
+  "The Jimi Hendrix Experience": {
+    "artist": "The Jimi Hendrix Experience",
+    "musicbrainz_id": "33b3c323-77c2-417c-a5b4-af7e6a111cc9",
+    "albums_checked": 25,
+    "no_candidates": [
+      "1968‐02‐28: The Scene, Milwaukee, WI",
+      "1968‐08‐10: Auditorium Theatre, Chicago, IL",
+      "1968‐02‐17: Will Rogers Auditorium, Fort Worth, TX",
+      "1968‐12‐01: Coliseum, Chicago, IL",
+      "1968‐02‐25: Civic Opera House, Chicago, IL",
+      "Historic Performances Recorded at the Monterey International Pop Festival",
+      "The Wild Man of Pop Plays, Volume 1",
+      "The Legendary Starclub Tapes",
+      "Rockstars in Concert",
+      "Riots in Berkeley",
+      "Live at Winterland +3",
+      "Electric Guitarland"
+    ],
+    "title_mismatch": [
+      {
+        "wanted": "Experience",
+        "found": "Experience Hendrix: The Best Of Jimi Hendrix"
+      },
+      {
+        "wanted": "Experience",
+        "found": "Sing The Hits Of The Jimi Hendrix Experience"
+      },
+      {
+        "wanted": "Experience",
+        "found": "Sing The Hits Of The Jimi Hendrix Experience"
+      },
+      {
+        "wanted": "Experience",
+        "found": "Magic Boy: The Jimi Hendrix Experience Live At Berkeley [First Show]"
+      },
+      {
+        "wanted": "Voodoo Chile",
+        "found": "Electric Ladyland"
+      },
+      {
+        "wanted": "Voodoo Chile",
+        "found": "Live at Woodstock"
+      },
+      {
+        "wanted": "Voodoo Chile",
+        "found": "Voodoo Child: The Jimi Hendrix Collection"
+      },
+      {
+        "wanted": "Live at Winterland",
+        "found": "Winterland"
+      },
+      {
+        "wanted": "Live at Winterland",
+        "found": "Voodoo Child: The Jimi Hendrix Collection"
+      },
+      {
+        "wanted": "Live at Winterland",
+        "found": "Hendrix In The West"
+      },
+      {
+        "wanted": "Radio One",
+        "found": "BBC Sessions"
+      },
+      {
+        "wanted": "Radio One",
+        "found": "The Karaoke Channel - Classic Rock, Vol. 11"
+      },
+      {
+        "wanted": "Radio One",
+        "found": "Led Zeppelin (Remaster)"
+      },
+      {
+        "wanted": "The Wild Man of Pop Plays",
+        "found": "The Jimi Hendrix Experience (Deluxe Reissue)"
+      },
+      {
+        "wanted": "The Wild Man of Pop Plays",
+        "found": "Live At Monterey"
+      },
+      {
+        "wanted": "The Wild Man of Pop Plays",
+        "found": "Are You Experienced"
+      },
+      {
+        "wanted": "1968 A.D.",
+        "found": "The Jimi Hendrix Experience (Deluxe Reissue)"
+      },
+      {
+        "wanted": "1968 A.D.",
+        "found": "Winterland"
+      },
+      {
+        "wanted": "1968 A.D.",
+        "found": "Miami Pop Festival"
+      },
+      {
+        "wanted": "Get The Experience!",
+        "found": "Experience Hendrix: The Best Of Jimi Hendrix"
+      },
+      {
+        "wanted": "Get The Experience!",
+        "found": "Sing The Hits Of The Jimi Hendrix Experience"
+      },
+      {
+        "wanted": "Get The Experience!",
+        "found": "Sing The Hits Of The Jimi Hendrix Experience"
+      },
+      {
+        "wanted": "Get The Experience!",
+        "found": "Rock Legend"
+      },
+      {
+        "wanted": "1968 A.D., Part Two",
+        "found": "Band Of Gypsys (50th Anniversary / Live At Fillmore East, 1970)"
+      },
+      {
+        "wanted": "1968 A.D., Part Two",
+        "found": "The Jimi Hendrix Experience (Deluxe Reissue)"
+      },
+      {
+        "wanted": "1968 A.D., Part Two",
+        "found": "Winterland"
+      },
+      {
+        "wanted": "One Night Stand",
+        "found": "Led Zeppelin (Remaster)"
+      },
+      {
+        "wanted": "One Night Stand",
+        "found": "Let It Bleed (50th Anniversary Edition / Remastered 2019)"
+      },
+      {
+        "wanted": "One Night Stand",
+        "found": "Led Zeppelin II (Remaster)"
+      }
+    ],
+    "artist_mismatch": [],
+    "detail_mismatch": [],
+    "matched": [
+      "Are You Experienced",
+      "Axis: Bold as Love",
+      "Electric Ladyland",
+      "Smash Hits"
+    ],
+    "fallback_found": [
+      {
+        "title": "Are You Experienced",
+        "count": 4
+      },
+      {
+        "title": "Axis: Bold as Love",
+        "count": 4
+      },
+      {
+        "title": "Electric Ladyland",
+        "count": 4
+      },
+      {
+        "title": "Smash Hits",
+        "count": 3
+      },
+      {
+        "title": "Experience",
+        "count": 4
+      },
+      {
+        "title": "Voodoo Chile",
+        "count": 3
+      },
+      {
+        "title": "Live at Winterland",
+        "count": 3
+      },
+      {
+        "title": "Radio One",
+        "count": 3
+      },
+      {
+        "title": "The Wild Man of Pop Plays",
+        "count": 3
+      },
+      {
+        "title": "1968 A.D.",
+        "count": 3
+      },
+      {
+        "title": "Get The Experience!",
+        "count": 4
+      },
+      {
+        "title": "1968 A.D., Part Two",
+        "count": 3
+      },
+      {
+        "title": "One Night Stand",
+        "count": 3
+      }
+    ]
+  },
+  "Janis Joplin": {
+    "artist": "Janis Joplin",
+    "musicbrainz_id": "76c9a186-75bd-436a-85c0-823e3efddb7f",
+    "albums_checked": 20,
+    "no_candidates": [
+      "Texas International Pop Festival, Volume 3",
+      "1970-06-28: Transcontinental Pop Festival, Toronto, ON",
+      "Anthology",
+      "The History of Rock, Volume Fifteen",
+      "Live in San Francisco 1966/67",
+      "Golden Highlights"
+    ],
+    "title_mismatch": [
+      {
+        "wanted": "Big Brother & The Holding Company",
+        "found": "Cheap Thrills"
+      },
+      {
+        "wanted": "I Got Dem Ol’ Kozmic Blues Again Mama!",
+        "found": "I Got Dem Ol' Kozmic Blues Again Mama!"
+      },
+      {
+        "wanted": "This Is Janis Joplin",
+        "found": "Janis on the Rocks: A Tribute to Janis Joplin"
+      },
+      {
+        "wanted": "This Is Janis Joplin",
+        "found": "Janis Joplin"
+      },
+      {
+        "wanted": "This Is Janis Joplin",
+        "found": "Janis Joplin"
+      },
+      {
+        "wanted": "The Legendary Typewriter Tape 6/25/64 Jorma's House",
+        "found": "The Legendary Typewriter Tape: 6/25/64 Jorma's House"
+      },
+      {
+        "wanted": "Janis Joplin im Soundcheck",
+        "found": "Purple Rain (Deluxe Expanded Edition)"
+      },
+      {
+        "wanted": "Live at Royal Albert Hall, London, 1969",
+        "found": "Led Zeppelin IV (Remaster)"
+      },
+      {
+        "wanted": "Live at Royal Albert Hall, London, 1969",
+        "found": "Completely Well"
+      },
+      {
+        "wanted": "The Great Janis",
+        "found": "Janis Joplin's Greatest Hits"
+      },
+      {
+        "wanted": "The Great Janis",
+        "found": "I Got Dem Ol' Kozmic Blues Again Mama!"
+      },
+      {
+        "wanted": "The Great Janis",
+        "found": "Woodstock Sunday August 17, 1969 (Live)"
+      },
+      {
+        "wanted": "In Concert",
+        "found": "Joplin In Concert"
+      },
+      {
+        "wanted": "In Concert",
+        "found": "Janis Joplin's Greatest Hits"
+      },
+      {
+        "wanted": "In Concert",
+        "found": "Pearl"
+      },
+      {
+        "wanted": "In Concert",
+        "found": "Tribute to Janis Joplin"
+      },
+      {
+        "wanted": "Janis Joplin’s Greatest Hits",
+        "found": "Janis Joplin's Greatest Hits"
+      },
+      {
+        "wanted": "Janis Joplin’s Greatest Hits",
+        "found": "Cheap Thrills"
+      },
+      {
+        "wanted": "Janis Joplin’s Greatest Hits",
+        "found": "Pearl"
+      },
+      {
+        "wanted": "Janis Joplin’s Greatest Hits",
+        "found": "Greatest Hits Karaoke: Janis Joplin"
+      },
+      {
+        "wanted": "Janis",
+        "found": "Janis Joplin's Greatest Hits"
+      },
+      {
+        "wanted": "Janis",
+        "found": "A Night with Janis Joplin (Original Broadway Cast Recording)"
+      },
+      {
+        "wanted": "Janis",
+        "found": "Playlist: The Very Best Of Janis Joplin"
+      },
+      {
+        "wanted": "Janis",
+        "found": "Janis: Little Girl Blue (Original Motion Picture Soundtrack)"
+      },
+      {
+        "wanted": "The Very Best of Janis Joplin",
+        "found": "Playlist: The Very Best Of Janis Joplin"
+      },
+      {
+        "wanted": "The Very Best of Janis Joplin",
+        "found": "Janis Joplin's Greatest Hits"
+      },
+      {
+        "wanted": "The Very Best of Janis Joplin",
+        "found": "Pearl"
+      },
+      {
+        "wanted": "The Very Best of Janis Joplin",
+        "found": "The Essential Janis Joplin"
+      },
+      {
+        "wanted": "Trouble in Mind",
+        "found": "The Legendary Typewriter Tape: 6/25/64 Jorma's House"
+      },
+      {
+        "wanted": "Trouble in Mind",
+        "found": "All Blues'd Up: Songs of Janis Joplin"
+      },
+      {
+        "wanted": "Trouble in Mind",
+        "found": "All Blues'd Up: Songs of Janis Joplin"
+      }
+    ],
+    "artist_mismatch": [],
+    "detail_mismatch": [],
+    "matched": [
+      "Big Brother & The Holding Company",
+      "Pearl",
+      "Farewell Song"
+    ],
+    "fallback_found": [
+      {
+        "title": "Big Brother & The Holding Company",
+        "count": 4
+      },
+      {
+        "title": "I Got Dem Ol’ Kozmic Blues Again Mama!",
+        "count": 1
+      },
+      {
+        "title": "Pearl",
+        "count": 4
+      },
+      {
+        "title": "This Is Janis Joplin",
+        "count": 3
+      },
+      {
+        "title": "The Legendary Typewriter Tape 6/25/64 Jorma's House",
+        "count": 1
+      },
+      {
+        "title": "Janis Joplin im Soundcheck",
+        "count": 1
+      },
+      {
+        "title": "Live at Royal Albert Hall, London, 1969",
+        "count": 2
+      },
+      {
+        "title": "The Great Janis",
+        "count": 3
+      },
+      {
+        "title": "In Concert",
+        "count": 4
+      },
+      {
+        "title": "Janis Joplin’s Greatest Hits",
+        "count": 4
+      },
+      {
+        "title": "Janis",
+        "count": 4
+      },
+      {
+        "title": "Farewell Song",
+        "count": 4
+      },
+      {
+        "title": "The Very Best of Janis Joplin",
+        "count": 4
+      },
+      {
+        "title": "Trouble in Mind",
+        "count": 3
+      }
+    ]
+  },
+  "Jeff Beck": {
+    "error": "HTTP Error 503: Service Temporarily Unavailable"
+  }
 }

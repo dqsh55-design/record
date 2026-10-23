@@ -1696,9 +1696,6 @@
       "thumbnail": "https://yt3.googleusercontent.com/61Pfw92MiK18_724tSSvYUg4lsxgYK6tFdjsg1vIKp5-3Yf1CztE1sTk-0p6CGY_jRiL9Iaj-qSWCM4i=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_cJzPi7YsCCb",
       "artist_check": "matched",
-      "detail_artists": [
-        "Jeff Beck Group"
-      ],
       "track_count": 7
     },
     {
@@ -1841,14 +1838,50 @@
       "id": "MPREb_Awa1aYq9Vcf",
       "title": "Big Brother & The Holding Company",
       "year": null,
+      "original_year": "1967",
+      "year_source": "MusicBrainz release group",
       "artists": [
         "Big Brother & The Holding Company",
         "Janis Joplin"
       ],
-      "thumbnail": "https://yt3.googleusercontent.com/anC1-IitnLO59C6sdaie9pbTcbEqjJ9u40Eb2aBi-m93R23Hd-uWYFhMyLRFAOmJBJWdACKC3aiNQBWc=w544-h544-l90-rj",
-      "url": "https://music.youtube.com/browse/MPREb_Awa1aYq9Vcf",
       "artist_check": "matched",
-      "track_count": 12
+      "thumbnail": "https://yt3.googleusercontent.com/anC1-IitnLO59C6sdaie9pbTcbEqjJ9u40Eb2aBi-m93R23Hd-uWYFhMyLRFAOmJBJWdACKC3aiNQBWc=w544-h544-l90-rj",
+      "track_count": 12,
+      "url": "https://music.youtube.com/browse/MPREb_Awa1aYq9Vcf",
+      "mb_release_group": "2464c8f8-7d3f-32e4-afaa-870ccb18d869",
+      "match_method": "artist_and_title"
+    },
+    {
+      "id": "MPREb_gGZ2ZiaTXOF",
+      "title": "Pearl",
+      "year": null,
+      "original_year": "1971",
+      "year_source": "MusicBrainz release group",
+      "artists": [
+        "Janis Joplin"
+      ],
+      "artist_check": "matched",
+      "thumbnail": "https://yt3.googleusercontent.com/VpOfkcL5LveE7L02DxPEfmYN34X21c-ZY95k6pVP6o_NvUpS866hnE0RxUKiwhIp6qxAaymq4wazx4yz=w544-h544-l90-rj",
+      "track_count": 10,
+      "url": "https://music.youtube.com/browse/MPREb_gGZ2ZiaTXOF",
+      "mb_release_group": "99878359-e736-3cdc-a225-548ad17d1c76",
+      "match_method": "artist_and_title"
+    },
+    {
+      "id": "MPREb_L6vfHx2JpWU",
+      "title": "Farewell Song",
+      "year": null,
+      "original_year": "1982",
+      "year_source": "MusicBrainz release group",
+      "artists": [
+        "Janis Joplin"
+      ],
+      "artist_check": "matched",
+      "thumbnail": "https://yt3.googleusercontent.com/f5ls9H_oR24onreLlhBvEA-YGfKV9W7PHFohWFFZuY9GzCMZN6LU9W4VKuwvySTb4OlCi2rexo1qrKGo=w544-h544-l90-rj",
+      "track_count": 9,
+      "url": "https://music.youtube.com/browse/MPREb_L6vfHx2JpWU",
+      "mb_release_group": "a0a19acc-1382-33ad-b7a5-38193e8cc28f",
+      "match_method": "artist_and_title"
     },
     {
       "id": "MPREb_HKBTNxs7YyA",
@@ -1862,18 +1895,6 @@
       "url": "https://music.youtube.com/browse/MPREb_HKBTNxs7YyA",
       "artist_check": "matched",
       "track_count": 11
-    },
-    {
-      "id": "MPREb_L6vfHx2JpWU",
-      "title": "Farewell Song",
-      "year": null,
-      "artists": [
-        "Janis Joplin"
-      ],
-      "thumbnail": "https://yt3.googleusercontent.com/f5ls9H_oR24onreLlhBvEA-YGfKV9W7PHFohWFFZuY9GzCMZN6LU9W4VKuwvySTb4OlCi2rexo1qrKGo=w544-h544-l90-rj",
-      "url": "https://music.youtube.com/browse/MPREb_L6vfHx2JpWU",
-      "artist_check": "matched",
-      "track_count": 9
     },
     {
       "id": "MPREb_5rvVQR5naYp",
@@ -1923,18 +1944,6 @@
       "url": "https://music.youtube.com/browse/MPREb_3FzeDVI4EjS",
       "artist_check": "matched",
       "track_count": 14
-    },
-    {
-      "id": "MPREb_gGZ2ZiaTXOF",
-      "title": "Pearl",
-      "year": null,
-      "artists": [
-        "Janis Joplin"
-      ],
-      "thumbnail": "https://yt3.googleusercontent.com/VpOfkcL5LveE7L02DxPEfmYN34X21c-ZY95k6pVP6o_NvUpS866hnE0RxUKiwhIp6qxAaymq4wazx4yz=w544-h544-l90-rj",
-      "url": "https://music.youtube.com/browse/MPREb_gGZ2ZiaTXOF",
-      "artist_check": "matched",
-      "track_count": 10
     },
     {
       "id": "MPREb_ON4gb9GyPfv",
