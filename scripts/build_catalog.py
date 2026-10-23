@@ -123,6 +123,28 @@ for artist, terms in queries.items():
         except Exception as error:
             errors.append((term, str(error)))
             print("Search error:", term, str(error))
+    # A named band's releases can appear under its own artist identity.
+    # Query both exact album names and band + album combinations.
+    if artist == "Jimi Hendrix":
+        for title in ("Are You Experienced", "Axis: Bold as Love", "Electric Ladyland"):
+            for term in (title + " The Jimi Hendrix Experience", title + " Jimi Hendrix"):
+                try:
+                    for item in music.search(term, filter="albums", limit=50):
+                        aid = item.get("browseId", "")
+                        if not aid.startswith("MPREb_"): continue
+                        if title_key(item.get("title", "")) != title_key(title): continue
+                        names = [a.get("name", "") for a in item.get("artists", [])]
+                        keys = [name.casefold().removeprefix("the ").strip() for name in names]
+                        allowed = {artist_key} | artist_aliases.get(artist, set())
+                        if not any(key in allowed for key in keys): continue
+                        found.setdefault(aid, {
+                            "id": aid, "title": item.get("title", ""),
+                            "year": item.get("year"), "artists": names,
+                            "thumbnail": (item.get("thumbnails") or [{}])[-1].get("url", ""),
+                            "url": "https://music.youtube.com/browse/" + aid
+                        })
+                except Exception as error:
+                    print("Targeted album search error:", title, str(error))
     # Artist pages expose additional albums that ordinary keyword searches can miss.
     try:
         artist_results = music.search(artist, filter="artists", limit=20)
