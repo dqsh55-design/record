@@ -27,3 +27,35 @@ assert.equal(run("Boolean(usableLabel('Columbia'))"),true);
 run("releaseEvidenceCache[id]={savedAt:Date.now(),data:{releases:[{status:'Official','label-info':[{label:{name:'[no label]'}}]}]}};");
 assert.equal(run("cachedOfficialEvidence(id)"),'unconfirmed');
 console.log('Unknown publisher placeholders cannot establish official-release evidence');
+
+// Album links must identify one album, with no credentials, alternate port or suffix.
+for(const value of ['https://music.youtube.com/browse/MPREb_',
+ 'https://music.youtube.com/browse/MPREb_test/extra',
+ 'https://user@music.youtube.com/browse/MPREb_test',
+ 'https://music.youtube.com:444/browse/MPREb_test',
+ 'https://music.youtube.com/playlist?list=OLAK5uy_',
+ 'https://music.youtube.com.evil.test/browse/MPREb_test']) {
+ assert.equal(run(`albumUrl(${JSON.stringify(value)})`),false,value);
+}
+assert.equal(run("albumUrl('https://music.youtube.com/playlist?list=OLAK5uy_test&si=share')"),true);
+context.localStorage.setItem=(k,v)=>storage[k]=v;
+run("releaseEvidenceCache[id]={savedAt:123,data:{'release-count':101,releases:[{id:'edition','label-info':[{label:{name:'Label'}}]}]}};");
+assert.equal(run("saveVerification(id,{ytUrl:url,verdict:'matched',ytLabel:'Label',notes:'checked'})"),true);
+assert.equal(run("getVerification(id,url).evidenceSnapshot.releaseCount"),101);
+run("delete releaseEvidenceCache[id]");
+assert.equal(run("saveVerification(id,{ytUrl:url,verdict:'different'})"),true);
+assert.equal(run("getVerification(id,url).evidenceSnapshot.releases[0].id"),'edition');
+assert.equal(run("getVerification(id,url).mbReleaseGroup"),id);
+// Import a backup larger than the former silent snapshot-drop threshold.
+context.FileReader=class {readAsText(file){this.result=file;this.onload()}};
+context.alert=()=>{};
+run("render=()=>{}");
+const backup={format:'RECORD-verification-v1',records:{[id]:{mbReleaseGroup:id,
+ ytUrl:'https://music.youtube.com/browse/MPREb_restore',verdict:'matched',
+ evidenceSnapshot:{releases:[{notes:'x'.repeat(200001)}]}}}};
+context.backup=JSON.stringify(backup);
+run('importVerificationRecords(backup)');
+assert.equal(run("getVerification(id,'https://music.youtube.com/browse/MPREb_restore').evidenceSnapshot.releases[0].notes.length"),200001);
+console.log('Strict album URLs, snapshot preservation and large-backup restore passed');
+
+assert.equal(run("saveVerification(id,{ytUrl:url,verdict:'matched',ytLabel:' [no label] ',notes:'checked'})"),false);

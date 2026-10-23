@@ -86,7 +86,7 @@ function importVerificationRecords(file){
     if(!url)continue;
     const key=verificationKey(group,url);
     if(!merged[key]||String(v.checkedAt||'')>String(merged[key].checkedAt||'')){
-     merged[key]={verdict:v.verdict,ytLabel:String(v.ytLabel||'').slice(0,300),notes:String(v.notes||'').slice(0,1000),ytUrl:url,mbReleaseGroup:group,checkedAt:String(v.checkedAt||''),...(v.evidenceSnapshot&&typeof v.evidenceSnapshot==='object'&&JSON.stringify(v.evidenceSnapshot).length<200000?{evidenceSnapshot:v.evidenceSnapshot}:{})};
+     merged[key]={verdict:v.verdict,ytLabel:String(v.ytLabel||'').slice(0,300),notes:String(v.notes||'').slice(0,1000),ytUrl:url,mbReleaseGroup:group,checkedAt:String(v.checkedAt||''),...(v.evidenceSnapshot&&typeof v.evidenceSnapshot==='object'&&!Array.isArray(v.evidenceSnapshot)?{evidenceSnapshot:v.evidenceSnapshot}:{})};
     }
    }
    if(!saveLocal('recordVerificationV1',merged))throw Error('ブラウザに保存できませんでした');
@@ -113,21 +113,22 @@ function getVerification(id,url){
 function saveVerification(id,entry){
  if(!albumUrl(entry.ytUrl)||!['pending','matched','different'].includes(entry.verdict))return false;
  // A manual confirmation must include the observed publisher and its rationale.
- if(entry.verdict==='matched'&&(!entry.ytLabel?.trim()||!entry.notes?.trim()))return false;
+ if(entry.verdict==='matched'&&(!usableLabel(entry.ytLabel)||!entry.notes?.trim()))return false;
+ const previous=getVerification(id,entry.ytUrl);
  const cached=releaseEvidenceCache[id];
  const releases=(cached?.data?.releases||[]).map(r=>({id:r.id,status:r.status,date:r.date,country:r.country,
    labels:(r['label-info']||[]).map(li=>({name:li.label?.name,catalogNumber:li['catalog-number']}))}));
- entry={...entry,ytUrl:canonicalAlbumUrl(entry.ytUrl),evidenceSnapshot:{source:'MusicBrainz',
+ entry={...entry,mbReleaseGroup:id,ytUrl:canonicalAlbumUrl(entry.ytUrl),evidenceSnapshot:!cached&&previous?.evidenceSnapshot?previous.evidenceSnapshot:{source:'MusicBrainz',
    sourceUrl:'https://musicbrainz.org/release-group/'+encodeURIComponent(id),
-   retrievedAt:cached?.savedAt||null,releaseCount:cached?.data?.['release-count']||releases.length,releases}};
+   retrievedAt:cached?.savedAt||null,releaseCount:cached?.data?.['release-count']??releases.length,truncated:(cached?.data?.['release-count']||0)>releases.length,releases}};
  const key=verificationKey(id,entry.ytUrl);
- const previous=verificationRecords[key];
+ const previousAtKey=verificationRecords[key];
  verificationRecords[key]={...entry,checkedAt:new Date().toISOString()};
- if(!saveLocal('recordVerificationV1',verificationRecords)){if(previous)verificationRecords[key]=previous;else delete verificationRecords[key];return false}
+ if(!saveLocal('recordVerificationV1',verificationRecords)){if(previousAtKey)verificationRecords[key]=previousAtKey;else delete verificationRecords[key];return false}
  return true;
 }
 const albumStatuses=(()=>{try{return JSON.parse(localStorage.getItem('recordAlbumStatuses')||'{}')}catch{return {}}})();
-function albumUrl(s){try{let u=new URL(s);if(u.protocol!=='https:'||u.hostname!=='music.youtube.com')return false;if(u.pathname.startsWith('/browse/'))return /^MPREb_/i.test(u.pathname.split('/')[2]||'');if(u.pathname==='/playlist')return /^OLAK5uy_/i.test(u.searchParams.get('list')||'');return false}catch{return false}}
+function albumUrl(s){try{let u=new URL(s);if(u.protocol!=='https:'||u.hostname!=='music.youtube.com'||u.username||u.password||u.port)return false;if(u.pathname.startsWith('/browse/'))return /^\/browse\/MPREb_[A-Za-z0-9_-]+$/.test(u.pathname);if(u.pathname==='/playlist')return /^OLAK5uy_[A-Za-z0-9_-]+$/.test(u.searchParams.get('list')||'');return false}catch{return false}}
 function saveLocal(key,data){try{localStorage.setItem(key,JSON.stringify(data));return true}catch{return false}}
 function setStatus(id,value){albumStatuses[id]=value;return saveLocal('recordAlbumStatuses',albumStatuses)}
 async function findCatalogLink(a,output,button,link){button.disabled=true;button.textContent='公式データを照合中…';try{let d=await api('release-group/'+encodeURIComponent(a.id)+'?inc=url-rels&fmt=json');let urls=(d.relations||[]).map(x=>x.url?.resource).filter(Boolean);let matches=urls.filter(albumUrl);if(matches.length){output.textContent='MusicBrainzに登録されたアルバムリンクを発見しました。リンク先の作品・配信元をご確認ください。';link.href=matches[0];link.textContent='登録済みアルバムを直接開く ↗';button.textContent='リンクを発見';}else{output.textContent='この作品にはYouTube MusicのアルバムURLが登録されていません。検索からお探しください。';button.textContent='登録リンクなし'} }catch(e){output.textContent='照合できませんでした。時間をおいてお試しください。';button.disabled=false;button.textContent='もう一度照合'}}
@@ -209,7 +210,7 @@ if(matchedGroup){
     let evidenceText=document.createElement('div');evidenceText.className='release-detail';
     evidenceText.textContent='確認日時：'+(a.match_evidence.checked_at||'不明')+' · 配信レーベル：'+(a.match_evidence.yt_label||'未取得');
     machine.append(caption,evidenceText);
-    for(const r of a.match_evidence.releases||[]){let line=document.createElement('div');line.className='release-detail';line.textContent=[r.release_id,r.status,r.date,(r.labels||[]).join(' / '),'曲目 '+(r.tracklist_match?'一致':'未一致'),'レーベル '+(r.label_match?'一致':'未一致')].filter(Boolean).join(' · ');machine.append(line)}
+    for(const r of a.match_evidence.releases||[]){let line=document.createElement('div');line.className='release-detail';line.textContent=[r.release_id,r.status,r.date,(r.labels||[]).join(' / '),'曲目 '+(r.tracklist_match?'一致':'未一致'),'レーベル '+(r.label_match?'一致':'未一致')].filter(Boolean).join(' · ');if(r.release_id){let source=document.createElement('a');source.href='https://musicbrainz.org/release/'+encodeURIComponent(r.release_id);source.target='_blank';source.rel='noopener noreferrer';source.textContent=' 発売盤の出典 ↗';line.append(source)}machine.append(line)}
     info.append(machine);
   }
   const matchMethod=mbById.has(a.mb_release_group)?'MusicBrainz作品候補（配信盤の同一性は未確認）':'アルバム名のみ一致（同一盤は未確認）';

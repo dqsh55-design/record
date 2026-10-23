@@ -157,12 +157,17 @@ def bridge_discography(artist_name, mbid, limit=25):
                 # Inspect release-level publisher and recording metadata; never
                 # promote a title/artist association into proof of an official edition.
                 time.sleep(1.2)
-                release_data = musicbrainz_json("release", {
-                    "release-group": group["id"], "inc": "labels+recordings+artist-credits", "limit": 100})
-                evidence = release_evidence(group, detail, release_data.get("releases", []),
-                                           [artist_name, *artist_aliases.get(artist_name, set())])
-                evidence["release_count"] = release_data.get("release-count", len(release_data.get("releases", [])))
-                evidence["truncated"] = evidence["release_count"] > len(release_data.get("releases", []))
+                try:
+                    release_data = musicbrainz_json("release", {
+                        "release-group": group["id"], "inc": "labels+recordings+artist-credits", "limit": 100})
+                    evidence = release_evidence(group, detail, release_data.get("releases", []),
+                                               [artist_name, *artist_aliases.get(artist_name, set())])
+                    evidence["release_count"] = release_data.get("release-count", len(release_data.get("releases", [])))
+                    evidence["truncated"] = evidence["release_count"] > len(release_data.get("releases", []))
+                except Exception as error:
+                    evidence = release_evidence(group, detail, [], [artist_name])
+                    evidence["retrieval_error"] = str(error)
+                    diagnostics.setdefault("release_errors", []).append({"title": title, "error": str(error)})
                 results.append({
                     "id": aid, "title": item.get("title", title),
                     "year": detail.get("year"), "original_year": (group.get("first-release-date") or "")[:4],
