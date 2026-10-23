@@ -82,3 +82,11 @@ assert(allText(context.info).some(t=>t.includes('レーベル：未取得')));
 assert(allText(context.info).some(t=>t.includes('<script>unsafe</script>')));
 assert(!context.info.innerHTML);
 console.log('Automatic evidence: album binding, expiry, missing metadata, mismatch and safe text rendering passed');
+
+assert.equal(run("releaseVisibility({status:'Official','label-info':[]})"),'official');
+assert.equal(run("releaseVisibility({})"),'unknown');
+for(const status of ['Bootleg','Pseudo-Release','Promotion']){
+ context.releaseStatus=status;
+ assert.equal(run('releaseVisibility({status:releaseStatus})'),'excluded');
+}
+console.log('Release-first policy preserves incomplete official records and separates explicit non-official editions');

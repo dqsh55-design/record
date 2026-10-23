@@ -69,7 +69,7 @@ class BrowserTests(unittest.TestCase):
         cls.browser.close()
         cls.playwright.stop()
 
-    def open_site(self, width=390, fail_mb=False):
+    def open_site(self, width=390, fail_mb=False, fail_catalog=False, fail_release=False, release_total=3):
         context = self.browser.new_context(viewport={'width': width, 'height': 844}, is_mobile=width < 500, has_touch=width < 500)
         self.addCleanup(context.close)
         page = context.new_page()
@@ -82,12 +82,19 @@ class BrowserTests(unittest.TestCase):
             if url.hostname == 'record.test' and url.path == '/':
                 request.fulfill(body=(ROOT / 'index.html').read_text(), content_type='text/html')
             elif url.path == '/data/ytmusic-albums.json':
-                request.fulfill(json=self.catalog)
+                request.fulfill(status=503 if fail_catalog else 200, json={} if fail_catalog else self.catalog)
             elif url.hostname == 'musicbrainz.org':
                 if fail_mb and url.path.endswith('/release-group'):
                     request.fulfill(status=403, json={'error': 'external service unavailable'})
                 elif url.path.endswith('/artist'):
                     request.fulfill(json={'artists': [{'id': GROUP, 'name': 'Artist', 'type': 'Person'}]})
+                elif url.path.endswith('/release'):
+                    request.fulfill(status=503 if fail_release else 200, json={'release-count': release_total, 'releases': [
+                        {'id': 'official', 'title': 'Official Album', 'status': 'Official', 'date': '1975', 'release-group': {'id': GROUP, 'primary-type': 'Album'}, 'label-info': [{'label': {'name': 'Epic'}, 'catalog-number': 'EPC 1'}]},
+                        {'id': 'missing-label', 'title': 'Official without label', 'status': 'Official', 'release-group': {'primary-type': 'Album', 'secondary-types': ['Live']}},
+                        {'id': 'bootleg', 'title': 'Bootleg hidden', 'status': 'Bootleg', 'release-group': {'primary-type': 'Album'}}]})
+                elif url.path.endswith('/release/official'):
+                    request.fulfill(json={'media': [{'position': 1, 'tracks': [{'position': 1, 'title': '<Song>'}]}]})
                 elif url.path.endswith('/release-group'):
                     request.fulfill(json={'release-groups': [{'id': GROUP, 'title': 'supported', 'primary-type': 'Album', 'first-release-date': '2001'}], 'release-group-count': 1})
                 else:
@@ -103,8 +110,43 @@ class BrowserTests(unittest.TestCase):
         page.get_by_role('textbox', name='アーティスト名').fill('Artist')
         page.get_by_role('button', name='検索', exact=True).click()
         page.get_by_role('button', name='この名義の作品を見る →').click()
-        expect(page.get_by_role('heading', name='YouTube Musicで見つかったアルバム')).to_be_visible()
-        return page.locator('#results > section').first
+        expect(page.locator('#status')).not_to_contain_text('アルバムを取得します', timeout=20000)
+        expect(page.locator('#status')).not_to_contain_text('作品を読み込んでいます')
+        page.get_by_text('以前のYouTube Music一覧・保存記録・照合ツール', exact=True).click()
+        return page.locator('#results > details > section').first
+
+    def test_release_catalog_works_without_youtube_catalog(self):
+        page = self.open_site(fail_catalog=True, release_total=103)
+        page.get_by_role('textbox', name='アーティスト名').fill('Artist')
+        page.get_by_role('button', name='検索', exact=True).click()
+        page.get_by_role('button', name='この名義の作品を見る →').click()
+        section = page.locator('#official-releases')
+        expect(section.locator('article')).to_have_count(2)
+        section.get_by_role('button', name='さらに発売記録を読み込む', exact=True).click()
+        expect(section).to_contain_text('6 / 103件取得')
+        expect(section.locator('article')).to_have_count(2)
+        expect(section.get_by_role('link', name='YouTube Musicで探す ↗')).to_have_count(2)
+
+    def test_release_failure_shows_retry_and_legacy_data(self):
+        page = self.open_site(fail_release=True)
+        self.search(page)
+        section = page.locator('#official-releases')
+        expect(section).to_contain_text('発売記録を取得できませんでした')
+        expect(section.get_by_role('button', name='発売記録の取得を再試行')).to_be_visible()
+
+    def test_musicbrainz_first_official_editions(self):
+        page = self.open_site()
+        self.search(page)
+        section = page.locator('#official-releases')
+        expect(section.locator('article')).to_have_count(2)
+        expect(section).to_contain_text('公式発売の登録あり')
+        expect(section).to_contain_text('レーベル未登録')
+        expect(section).not_to_contain_text('Bootleg hidden')
+        expect(section.get_by_role('link', name='YouTube Musicで探す ↗').first).to_have_attribute('href', 'https://music.youtube.com/search?q=Artist%20Official%20Album')
+        section.get_by_text('収録曲・曲順を見る', exact=True).first.click()
+        section.get_by_role('button', name='曲目を取得', exact=True).first.click()
+        expect(section).to_contain_text('1. <Song>')
+        expect(section).to_contain_text('EPC 1')
 
     def test_search_generated_evidence_and_track_comparison(self):
         page = self.open_site()
@@ -136,7 +178,9 @@ class BrowserTests(unittest.TestCase):
         page.get_by_role('textbox', name='アーティスト名').fill('マイルス・デイヴィス')
         page.get_by_role('button', name='検索', exact=True).click()
         page.get_by_role('button', name='この名義の作品を見る →').click()
-        section = page.locator('#results > section').first
+        expect(page.locator('#status')).to_contain_text('作品を表示しています')
+        page.get_by_text('以前のYouTube Music一覧・保存記録・照合ツール', exact=True).click()
+        section = page.locator('#results > details > section').first
         expect(section.locator('article')).to_have_count(5)
         self.assertTrue(any('query=Miles%20Davis' in url for url in requests))
         section.get_by_role('button', name='発売年順', exact=True).click()
