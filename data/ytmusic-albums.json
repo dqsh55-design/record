@@ -15,20 +15,6 @@
       "year_source": "MusicBrainz discography (curated)"
     },
     {
-      "id": "MPREb_lOTpQQpWyBe",
-      "title": "Milestones",
-      "year": null,
-      "artists": [
-        "Miles Davis Sextet"
-      ],
-      "thumbnail": "https://yt3.googleusercontent.com/q4OCFSVQbvItRPBnGxJ_GLMk4QGdtPRBHPCE8TsaTGc6K2PhxeZifFSk7jMQI_eFMD1J1aTJol4vVXA=w544-h544-l90-rj",
-      "url": "https://music.youtube.com/browse/MPREb_lOTpQQpWyBe",
-      "artist_check": "matched",
-      "track_count": 24,
-      "original_year": "1958",
-      "year_source": "MusicBrainz discography (curated)"
-    },
-    {
       "id": "MPREb_ZIykZkA8WDA",
       "title": "Milestones",
       "year": null,
@@ -39,6 +25,20 @@
       "url": "https://music.youtube.com/browse/MPREb_ZIykZkA8WDA",
       "artist_check": "matched",
       "track_count": 1,
+      "original_year": "1958",
+      "year_source": "MusicBrainz discography (curated)"
+    },
+    {
+      "id": "MPREb_lOTpQQpWyBe",
+      "title": "Milestones",
+      "year": null,
+      "artists": [
+        "Miles Davis Sextet"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/q4OCFSVQbvItRPBnGxJ_GLMk4QGdtPRBHPCE8TsaTGc6K2PhxeZifFSk7jMQI_eFMD1J1aTJol4vVXA=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_lOTpQQpWyBe",
+      "artist_check": "matched",
+      "track_count": 24,
       "original_year": "1958",
       "year_source": "MusicBrainz discography (curated)"
     },
@@ -1017,10 +1017,6 @@
       "thumbnail": "https://yt3.googleusercontent.com/a2ZcfjsrAS2eSYMR4UU_2v2njoIsXTR8uUyZRjxfLYGeEI9sv26pXSbktDe0T2oPvYS0Y8EZLaQuaTo=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_fF82ZeDEr9A",
       "artist_check": "matched",
-      "detail_artists": [
-        "エラ・フィッツジェラルド",
-        "Duke Ellington And His Orchestra"
-      ],
       "track_count": 51
     },
     {
@@ -1292,6 +1288,18 @@
       "url": "https://music.youtube.com/browse/MPREb_m9zlpdO5z0u",
       "artist_check": "matched",
       "track_count": 9
+    },
+    {
+      "id": "MPREb_fXkbntQ2PCz",
+      "title": "Swiss Radio Days Jazz Series, Vol. 29 (Live At Zurich 1960)",
+      "year": null,
+      "artists": [
+        "Stan Getz Quartet"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/W-qpmThWzNVBi1me41gAKyZaJF8nUZQhgYKHfGS3jF8yKpbeHbwy9oyvm3AmzW25j-h-sFibsglr5IM3=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_fXkbntQ2PCz",
+      "artist_check": "matched",
+      "track_count": 7
     },
     {
       "id": "MPREb_DWxigt0cmgn",
@@ -1746,6 +1754,18 @@
       "track_count": 11
     },
     {
+      "id": "MPREb_6kJvnprrYPK",
+      "title": "Both Sides of the Sky",
+      "year": null,
+      "artists": [
+        "Jimi Hendrix"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/QWusch8g84iG-rHN126gOmTnAtMTA2NPlHvtzUurhHgNYF_8IxGTbR8Yvu6hn-cTb-byZ8BDQmAAr8E=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_6kJvnprrYPK",
+      "artist_check": "matched",
+      "track_count": 13
+    },
+    {
       "id": "MPREb_fSXBj0QXuOP",
       "title": "Experience Hendrix: The Best Of Jimi Hendrix",
       "year": null,
@@ -1768,6 +1788,18 @@
       "url": "https://music.youtube.com/browse/MPREb_nD4yqqO5i4e",
       "artist_check": "matched",
       "track_count": 16
+    },
+    {
+      "id": "MPREb_bidRTfQWZXc",
+      "title": "Valleys Of Neptune",
+      "year": null,
+      "artists": [
+        "Jimi Hendrix"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/uDvVEWGXIZO_qWecnqxfZ-ImyJoC7i7nCrbq1D0buMGKOQQ-dTl5vQbRFdtydaa2AHi_F1lPIl0IeJLw=w544-h544-s-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_bidRTfQWZXc",
+      "artist_check": "matched",
+      "track_count": 12
     },
     {
       "id": "MPREb_ZjuiTpHFtOl",
@@ -1971,5 +2003,6 @@
         "The New Beatles"
       ]
     }
-  ]
+  ],
+  "The Jimi Hendrix Experience": []
 }
