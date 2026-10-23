@@ -92,7 +92,7 @@ async function chooseArtist(artist){
       }
     }catch(e){console.warn('Year lookup skipped',a.title,e.message);break}
   }
-  if(changed&&artistId===artist.id)render();
+  if(changed&&artistId===artist.id){render();showRelatedBands();}
 }
 function showArtistChoices(list){
   results.innerHTML='';let section=document.createElement('section');
