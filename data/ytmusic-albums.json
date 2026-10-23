@@ -870,6 +870,19 @@
       "track_count": 23
     },
     {
+      "id": "MPREb_tkjL8QDgpHY",
+      "title": "The Final Tour: The Bootleg Series, Vol. 6",
+      "year": null,
+      "artists": [
+        "Miles Davis",
+        "JOHN COLTRANE"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/_QlSeVRogZ_eAX3f1KSzROLzM--y79mBVKs62fRFGfLlbn754RAKF_4_ITg4FNX5EfPGeSp1e9rd53I=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_tkjL8QDgpHY",
+      "artist_check": "matched",
+      "track_count": 23
+    },
+    {
       "id": "MPREb_2tuQ26srDLC",
       "title": "The Lost Concert (Live)",
       "year": null,
@@ -1325,9 +1338,6 @@
       "thumbnail": "https://yt3.googleusercontent.com/GC4yIcIGC9LHLv3kdl4iAyp9IAji7CMbb-78G2rHqsou7zOkmAiI8nbOSZNEY0bhcBC01y4WOXTKSfVSZA=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_doFv5P4jEdJ",
       "artist_check": "matched",
-      "detail_artists": [
-        "The John Coltrane Quartet"
-      ],
       "track_count": 4
     },
     {
