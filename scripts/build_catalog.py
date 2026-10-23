@@ -112,7 +112,8 @@ for artist, terms in queries.items():
                 if not album_id.startswith("MPREb_"): continue
                 artists = [a.get("name", "") for a in item.get("artists", [])]
                 normalized_names = [name.casefold().removeprefix("the ").strip() for name in artists]
-                if not any(artist_key == name for name in normalized_names if name): continue
+                allowed = {artist_key} | artist_aliases.get(artist, set())
+                if not any(name in allowed for name in normalized_names if name): continue
                 found[album_id] = {
                     "id": album_id, "title": item.get("title", ""),
                     "year": item.get("year"), "artists": artists,
@@ -125,9 +126,12 @@ for artist, terms in queries.items():
     # Artist pages expose additional albums that ordinary keyword searches can miss.
     try:
         artist_results = music.search(artist, filter="artists", limit=20)
+        if artist == "Jimi Hendrix":
+            artist_results += music.search("The Jimi Hendrix Experience", filter="artists", limit=20)
         for result in artist_results:
             namestr = result.get("artist", result.get("title", ""))
-            if artist_key != str(namestr).casefold().removeprefix("the ").strip():
+            allowed = {artist_key} | artist_aliases.get(artist, set())
+            if str(namestr).casefold().removeprefix("the ").strip() not in allowed:
                 continue
             channel_id = result.get("browseId")
             if not channel_id: continue
