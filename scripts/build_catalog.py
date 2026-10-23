@@ -99,6 +99,59 @@ MILES_ORIGINAL_YEARS = {
 def original_years_for_miles():
     return {title_key(title): year for title, year in MILES_ORIGINAL_YEARS.items()}
 
+# Reusable bridge: MusicBrainz discography -> YouTube Music album links.
+# Start with one artist identity; the algorithm does not hardcode album titles.
+def bridge_discography(artist_name, mbid, limit=25):
+    results = []
+    try:
+        endpoint = ("https://musicbrainz.org/ws/2/release-group?artist=" +
+                    urllib.parse.quote(mbid) + "&type=album&limit=100&fmt=json")
+        req = urllib.request.Request(endpoint, headers={
+            "User-Agent": "RECORD/0.26 (music discovery prototype)",
+            "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=25) as response:
+            groups = json.load(response).get("release-groups", [])
+    except Exception as error:
+        print("MusicBrainz bridge error:", artist_name, error)
+        return results
+    # Studio albums first; no individual title is built into the program.
+    groups.sort(key=lambda g: (bool(g.get("secondary-types")),
+                               g.get("first-release-date") or "9999"))
+    allowed = {artist_name.casefold().removeprefix("the ").strip()}
+    allowed |= artist_aliases.get("Jimi Hendrix", set()) if artist_name == "The Jimi Hendrix Experience" else set()
+    for group in groups[:limit]:
+        title = group.get("title", "")
+        if not title: continue
+        try:
+            candidates = music.search(artist_name + " " + title, filter="albums", limit=20)
+            for item in candidates:
+                aid = item.get("browseId", "")
+                if not aid.startswith("MPREb_"): continue
+                if title_key(item.get("title", "")) != title_key(title): continue
+                names = [a.get("name", "") for a in item.get("artists", [])]
+                if not names and item.get("artist"): names = [item["artist"]]
+                if not any(n.casefold().removeprefix("the ").strip() in allowed for n in names):
+                    continue
+                detail = music.get_album(aid)
+                actual = [a.get("name", "") for a in detail.get("artists", [])]
+                if not any(n.casefold().removeprefix("the ").strip() in allowed for n in actual):
+                    continue
+                results.append({
+                    "id": aid, "title": item.get("title", title),
+                    "year": detail.get("year"), "original_year": (group.get("first-release-date") or "")[:4],
+                    "year_source": "MusicBrainz release group",
+                    "artists": actual, "artist_check": "matched",
+                    "thumbnail": (item.get("thumbnails") or detail.get("thumbnails") or [{}])[-1].get("url", ""),
+                    "track_count": len(detail.get("tracks") or []),
+                    "url": "https://music.youtube.com/browse/" + aid,
+                    "mb_release_group": group.get("id"),
+                    "match_method": "artist_and_title"
+                })
+                break
+        except Exception as error:
+            print("Bridge search error:", artist_name, title, error)
+    return results
+
 catalog = {}
 for artist, terms in queries.items():
     found = {}
@@ -219,6 +272,22 @@ for artist, terms in queries.items():
             album["year_source"] = "MusicBrainz discography (curated)"
     catalog[artist] = sorted(found.values(), key=lambda x: (str(x.get("original_year") or "9999"), x["title"]))
     print(artist, len(catalog[artist]))
+# Pilot with the Experience's distinct MusicBrainz artist identity.
+# Additional artists can be added as MBIDs without enumerating album titles.
+# Resolve the artist ID from MusicBrainz search rather than trusting a guessed ID.
+try:
+    q = urllib.parse.quote('artist:"The Jimi Hendrix Experience"')
+    req = urllib.request.Request("https://musicbrainz.org/ws/2/artist/?query=" + q + "&fmt=json&limit=10",
+        headers={"User-Agent": "RECORD/0.26 (music discovery prototype)"})
+    with urllib.request.urlopen(req, timeout=25) as response:
+        artists_mb = json.load(response).get("artists", [])
+    match = next((a for a in artists_mb if a.get("name", "").casefold() == "the jimi hendrix experience"), None)
+    if match:
+        bridged = bridge_discography("The Jimi Hendrix Experience", match["id"], limit=25)
+        catalog["The Jimi Hendrix Experience"] = bridged
+        print("Experience bridge matches:", len(bridged))
+except Exception as error:
+    print("Experience bridge error:", error)
 if not catalog["Miles Davis"]: raise SystemExit("No albums found; do not publish empty catalog")
 pathlib.Path("data").mkdir(exist_ok=True)
 pathlib.Path("data/ytmusic-albums.json").write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
