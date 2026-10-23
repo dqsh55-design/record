@@ -1,5 +1,6 @@
 import json, pathlib, re, time, urllib.parse, urllib.request, urllib.error
 from ytmusicapi import YTMusic
+from release_matching import release_evidence, supported_group
 
 music = YTMusic(location="JP", language="ja")
 queries = {
@@ -121,7 +122,7 @@ def bridge_discography(artist_name, mbid, limit=25):
                                g.get("first-release-date") or "9999"))
     allowed = {artist_name.casefold().removeprefix("the ").strip()}
     allowed |= artist_aliases.get("Jimi Hendrix", set()) if artist_name == "The Jimi Hendrix Experience" else set()
-    for group in groups[:limit]:
+    for group in [g for g in groups if supported_group(g)][:limit]:
         diagnostics["albums_checked"] += 1
         title = group.get("title", "")
         if not title: continue
@@ -153,6 +154,15 @@ def bridge_discography(artist_name, mbid, limit=25):
                 if not any(n.casefold().removeprefix("the ").strip() in allowed for n in actual):
                     diagnostics["detail_mismatch"].append({"wanted": title, "artists": actual})
                     continue
+                # Inspect release-level publisher and recording metadata; never
+                # promote a title/artist association into proof of an official edition.
+                time.sleep(1.2)
+                release_data = musicbrainz_json("release", {
+                    "release-group": group["id"], "inc": "labels+recordings+artist-credits", "limit": 100})
+                evidence = release_evidence(group, detail, release_data.get("releases", []),
+                                           [artist_name, *artist_aliases.get(artist_name, set())])
+                evidence["release_count"] = release_data.get("release-count", len(release_data.get("releases", [])))
+                evidence["truncated"] = evidence["release_count"] > len(release_data.get("releases", []))
                 results.append({
                     "id": aid, "title": item.get("title", title),
                     "year": detail.get("year"), "original_year": (group.get("first-release-date") or "")[:4],
@@ -162,7 +172,8 @@ def bridge_discography(artist_name, mbid, limit=25):
                     "track_count": len(detail.get("tracks") or []),
                     "url": "https://music.youtube.com/browse/" + aid,
                     "mb_release_group": group.get("id"),
-                    "match_method": "artist_and_title"
+                    "match_method": "release_metadata" if evidence["status"] == "corroborated" else "artist_and_title_candidate",
+                    "match_evidence": evidence
                 })
                 diagnostics["matched"].append(title)
                 matched = True
@@ -286,6 +297,9 @@ for artist, terms in queries.items():
         # Preserve previously verified metadata across catalog rebuilds.
         # Never copy metadata across albums merely because their titles match.
         prior = prior_by_id.get(album.get("id"), {})
+        for field in ("match_evidence", "match_method"):
+            if field not in album and field in prior:
+                album[field] = prior[field]
         if album.get("artist_check") != "matched":
             album.pop("original_year", None)
             album.pop("year_source", None)
