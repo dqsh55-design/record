@@ -60,7 +60,7 @@ class BrowserTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.playwright = sync_playwright().start()
-        executable = os.environ.get('RECORD_CHROMIUM') or shutil.which('chromium')
+        executable = os.environ.get('RECORD_CHROMIUM') or shutil.which('chromium') or shutil.which('google-chrome')
         cls.browser = cls.playwright.chromium.launch(**({'executable_path': executable} if executable else {}))
         cls.catalog = generated_catalog()
 
