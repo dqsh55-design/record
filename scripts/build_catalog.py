@@ -24,6 +24,20 @@ queries = {
     "John Coltrane": ["John Coltrane", "John Coltrane albums", "John Coltrane A Love Supreme", "John Coltrane Blue Train", "John Coltrane Giant Steps", "John Coltrane My Favorite Things", "John Coltrane Ballads", "John Coltrane live", "John Coltrane best of"],
     "Chick Corea": ["Chick Corea", "Chick Corea albums", "Chick Corea Return to Forever", "Chick Corea Light as a Feather", "Chick Corea Now He Sings Now He Sobs", "Chick Corea live", "Chick Corea best of"],
     "Jeff Beck": ["Jeff Beck", "Jeff Beck albums", "Jeff Beck Blow by Blow", "Jeff Beck Wired", "Jeff Beck There and Back", "Jeff Beck Guitar Shop", "Jeff Beck live", "Jeff Beck best of"],
+    "Jimi Hendrix": [
+        "Jimi Hendrix", "Jimi Hendrix albums", "Jimi Hendrix Are You Experienced",
+        "Jimi Hendrix Axis Bold as Love", "Jimi Hendrix Electric Ladyland",
+        "Jimi Hendrix Band of Gypsys", "Jimi Hendrix live",
+        "Jimi Hendrix posthumous", "Jimi Hendrix compilation",
+        "The Jimi Hendrix Experience"
+    ],
+    "Janis Joplin": [
+        "Janis Joplin", "Janis Joplin albums", "Janis Joplin Pearl",
+        "Janis Joplin I Got Dem Ol Kozmic Blues Again Mama",
+        "Janis Joplin Cheap Thrills", "Janis Joplin Big Brother",
+        "Janis Joplin live", "Janis Joplin greatest hits",
+        "Janis Joplin posthumous"
+    ],
     "The Beatles": ["The Beatles", "The Beatles albums", "The Beatles Abbey Road", "The Beatles Revolver", "The Beatles Rubber Soul", "The Beatles Sgt Pepper", "The Beatles White Album", "The Beatles Let It Be", "The Beatles live", "The Beatles greatest hits"]
 }
 catalog_path = pathlib.Path("data/ytmusic-albums.json")
@@ -38,6 +52,8 @@ artist_aliases = {
     "Stan Getz": {"stan getz quintet", "stan getz quartet"},
     "John Coltrane": {"the john coltrane quartet", "john coltrane quartet"},
     "Jeff Beck": {"jeff beck group"},
+    "Jimi Hendrix": {"the jimi hendrix experience", "band of gypsys"},
+    "Janis Joplin": {"big brother & the holding company", "big brother and the holding company"},
 }
 def title_key(value):
     # Normalize punctuation and spacing without fragile regex escaping.
