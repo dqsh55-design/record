@@ -1,4 +1,4 @@
-import json, pathlib, re, time, urllib.parse, urllib.request
+import json, pathlib, re, time, urllib.parse, urllib.request, urllib.error
 from ytmusicapi import YTMusic
 
 music = YTMusic(location="JP", language="ja")
@@ -306,8 +306,17 @@ for target_name, target_limit in bridge_targets:
         req = urllib.request.Request(
             "https://musicbrainz.org/ws/2/artist/?query=" + q + "&fmt=json&limit=10",
             headers={"User-Agent": "RECORD/0.27 (music discovery prototype)"})
-        with urllib.request.urlopen(req, timeout=25) as response:
-            artists_mb = json.load(response).get("artists", [])
+        artists_mb = []
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(req, timeout=25) as response:
+                    artists_mb = json.load(response).get("artists", [])
+                break
+            except urllib.error.HTTPError as error:
+                if error.code not in (429, 502, 503, 504) or attempt == 2:
+                    raise
+                time.sleep(2 * (attempt + 1))
+        time.sleep(1.2)  # Respect MusicBrainz public API rate limits.
         match = next((a for a in artists_mb if a.get("name", "").casefold() == target_name.casefold()), None)
         if not match:
             bridge_reports[target_name] = {"error": "MusicBrainz artist identity not found"}
