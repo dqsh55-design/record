@@ -1,10 +1,12 @@
 import copy
 import sys
 import unittest
+import tempfile
 from pathlib import Path
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from automatic_matching import youtube_evidence, compare, verify_album, enrich
+from verify_catalog import refresh_file
 
 class AutomaticTests(unittest.TestCase):
     def setUp(self):
@@ -98,5 +100,64 @@ class AutomaticTests(unittest.TestCase):
             {'position': 1, 'track-count': 1, 'tracks': [{'position': 1, 'title': 'One'}]}]
         self.assertEqual(self.check()['status'], 'supported')
 
+    def test_missing_titles_are_unknown_not_different(self):
+        for obj in (self.detail, self.release):
+            title = obj.pop('title')
+            self.assertEqual(self.check()['checks']['title'], 'unknown')
+            self.assertEqual(self.check()['status'], 'insufficient')
+            obj['title'] = title
+
+    def test_full_musicbrainz_release_omits_search_only_medium_count(self):
+        self.release.pop('medium-count')
+        self.assertEqual(self.check()['status'], 'insufficient')
+        self.assertEqual(verify_album(self.album, self.music, self.mb)['status'], 'supported')
+        self.release['medium-count'] = 2
+        self.assertEqual(verify_album(self.album, self.music, self.mb)['status'], 'insufficient')
+
+    def test_missing_or_duplicate_positions_cannot_support_order(self):
+        for items in (self.release['media'], self.release['media'][0]['tracks']):
+            value = items[0].pop('position')
+            self.assertEqual(self.check()['checks']['order'], 'unknown')
+            self.assertEqual(self.check()['status'], 'insufficient')
+            items[0]['position'] = value
+        self.release['media'][0]['tracks'][1]['position'] = 1
+        self.assertEqual(self.check()['status'], 'insufficient')
+
+    def test_nameless_collaborator_is_not_silently_dropped(self):
+        for credits, entry in ((self.detail['artists'], {}),
+                               (self.release['artist-credit'], {'artist': {}})):
+            credits.append(entry)
+            self.assertEqual(self.check()['checks']['artist'], 'unknown')
+            self.assertEqual(self.check()['status'], 'insufficient')
+            credits.pop()
+
+    def test_partial_label_list_is_insufficient(self):
+        for label in ('Other Label', '[unknown]'):
+            self.release['label-info'].append({'label': {'name': label}})
+            self.assertEqual(self.check()['checks']['label'], 'unknown')
+            self.assertEqual(self.check()['status'], 'insufficient')
+            self.release['label-info'].pop()
+
+    def test_refresh_writes_ui_catalog_and_preserves_other_fields(self):
+        import json
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'catalog.json'
+            before = {'Artist': [self.album], 'Other': [{'id': 'keep', 'legacy': {'notes': '保存'}}]}
+            path.write_text(json.dumps(before))
+            result = refresh_file(path, self.music, self.mb, limit=1)
+            written = json.loads(path.read_text())
+            self.assertEqual(written, result)
+            self.assertEqual(written['Artist'][0]['automatic_verification']['status'], 'supported')
+            for field, value in self.album.items():
+                self.assertEqual(written['Artist'][0][field], value)
+            self.assertEqual(written['Other'], before['Other'])
+            original = path.read_bytes()
+            with patch('verify_catalog.os.replace', side_effect=OSError('disk failure')):
+                with self.assertRaises(OSError):
+                    refresh_file(path, self.music, self.mb, limit=0)
+            self.assertEqual(path.read_bytes(), original)
+            self.assertEqual(list(Path(directory).iterdir()), [path])
+
 if __name__ == '__main__':
     unittest.main()
+

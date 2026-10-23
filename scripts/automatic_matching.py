@@ -16,34 +16,55 @@ def usable_label(value):
     return isinstance(value, str) and bool(key(value)) and value.strip().casefold() not in {'[no label]', '[unknown]'}
 
 
+def ordered_positions(items):
+    """Missing/duplicate positions cannot establish a complete ordered disc."""
+    positions = [item.get('position') for item in items]
+    return bool(items) and all(type(p) is int for p in positions) and sorted(positions) == list(range(1, len(items) + 1))
+
+
 def youtube_evidence(album_id, detail):
     tracks = [{'position': i + 1, 'title': t.get('title'), 'video_id': t.get('videoId')}
               for i, t in enumerate(detail.get('tracks') or [])]
     # Description/copyright is retained verbatim, never parsed into a label.
     return {'source': 'https://music.youtube.com/browse/' + album_id,
             'title': detail.get('title'),
-            'artists': [a.get('name') for a in detail.get('artists', []) if a.get('name')],
+            'artists': [a.get('name') for a in detail.get('artists') or []],
             'labels': [detail['label']] if usable_label(detail.get('label')) else [],
             'publisher': detail.get('publisher') if isinstance(detail.get('publisher'), str) else None,
             'description': detail.get('description'), 'track_count': detail.get('trackCount'),
             'tracks': tracks,
-            'complete': bool(tracks) and detail.get('trackCount') == len(tracks)
-                        and all(t['title'] for t in tracks)}
+            'complete': bool(tracks) and type(detail.get('trackCount')) is int and detail.get('trackCount') == len(tracks)
+                        and all(key(t['title']) for t in tracks)}
 
 
-def compare(yt, release):
+def compare(yt, release, *, full_release=False):
     media = sorted(release.get('media') or [], key=lambda m: m.get('position', 0))
     tracks = [t for m in media for t in sorted(m.get('tracks') or [], key=lambda t: t.get('position', 0))]
     titles = [key(t.get('title')) for t in tracks]
     ytitles = [key(t.get('title')) for t in yt.get('tracks', [])]
-    complete = bool(media) and all(m.get('track-count') == len(m.get('tracks') or []) for m in media) and release.get('medium-count') == len(media) and all(titles)
+    # The full /release/{id}?inc=recordings endpoint returns all media, but
+    # unlike release search, normally omits medium-count. Do not require a
+    # search-only field on that endpoint; still reject any conflicting count.
+    media_complete = (release.get('medium-count') == len(media)
+                      if type(release.get('medium-count')) is int
+                      else full_release and 'medium-count' not in release)
+    complete = ordered_positions(media) and all(
+        type(m.get('track-count')) is int and m.get('track-count') == len(m.get('tracks') or [])
+        and ordered_positions(m.get('tracks') or []) for m in media
+    ) and media_complete and all(titles)
     labels = [li['label']['name'] for li in release.get('label-info', []) if usable_label((li.get('label') or {}).get('name'))]
-    artists = [a['artist']['name'] for a in release.get('artist-credit', []) if isinstance(a, dict) and a.get('artist', {}).get('name')]
+    credits = [a for a in release.get('artist-credit', []) if isinstance(a, dict)]
+    artists = [a.get('name') or (a.get('artist') or {}).get('name') for a in credits]
+    yt_artists = yt.get('artists') or []
+    # A nameless collaborator is missing evidence, not permission to ignore them.
+    artists_complete = bool(artists) and all(key(a) for a in artists) and bool(yt_artists) and all(key(a) for a in yt_artists)
     checks = {
         'official': 'match' if release.get('status') == 'Official' else ('different' if release.get('status') else 'unknown'),
-        'title': 'match' if key(yt.get('title')) and key(yt.get('title')) == key(release.get('title')) else 'different',
-        'artist': ('match' if {key(a) for a in yt.get('artists', [])} == {key(a) for a in artists} else 'different') if artists and yt.get('artists') else 'unknown',
-        'label': ('match' if {key(x) for x in yt['labels']} & {key(x) for x in labels} else 'different') if yt.get('labels') and labels else 'unknown',
+        'title': ('match' if key(yt.get('title')) == key(release.get('title')) else 'different') if key(yt.get('title')) and key(release.get('title')) else 'unknown',
+        'artist': ('match' if {key(a) for a in yt_artists} == {key(a) for a in artists} else 'different') if artists_complete else 'unknown',
+        'label': ('match' if {key(x) for x in yt['labels']} == {key(x) for x in labels}
+                  else 'unknown' if {key(x) for x in yt['labels']} & {key(x) for x in labels}
+                  else 'different') if yt.get('labels') and labels and all(usable_label((li.get('label') or {}).get('name')) for li in release.get('label-info', [])) else 'unknown',
         'count': 'unknown', 'titles': 'unknown', 'order': 'unknown'}
     if yt.get('complete') and complete:
         checks.update(count='match' if len(titles) == len(ytitles) else 'different',
@@ -92,7 +113,7 @@ def verify_album(album, music, mb):
         def quoted(s):
             return str(s).replace('\\', '\\\\').replace('"', '\\"')
         query = 'release:"' + quoted(yt.get('title') or album['title']) + '" AND status:official'
-        artists = yt.get('artists') or []
+        artists = [a for a in yt.get('artists') or [] if key(a)]
         if artists:
             query += ' AND artist:"' + quoted(artists[0]) + '"'
         search = mb.get('release/', query=query, limit=25)
@@ -102,7 +123,7 @@ def verify_album(album, music, mb):
             result['limitations'].append('発売盤候補が多いため、先頭25件のみ照合しました。')
         for candidate in found:
             release = mb.get('release/' + candidate['id'], inc='labels+recordings+artist-credits')
-            result['candidates'].append(compare(yt, release))
+            result['candidates'].append(compare(yt, release, full_release=True))
         statuses = [c['status'] for c in result['candidates']]
         if 'supported' in statuses:
             result['status'] = 'supported'
@@ -126,3 +147,4 @@ def enrich(catalog, music, mb=None, max_albums=12):
             break
         album['automatic_verification'] = verify_album(album, music, mb)
     return catalog
+
