@@ -1,20 +1,6 @@
 {
   "Miles Davis": [
     {
-      "id": "MPREb_HrTXC17c9RC",
-      "title": "Miles Tones",
-      "year": null,
-      "artists": [
-        "Miles Davis"
-      ],
-      "thumbnail": "https://yt3.googleusercontent.com/mjWaFU4gvq2FC1wTwZabkmilvfvvQDWs9Blk2MRCr0kAbRP2d73HuAcWMw35Gfxc_Ukk93LooLVYb2-k=w544-h544-l90-rj",
-      "url": "https://music.youtube.com/browse/MPREb_HrTXC17c9RC",
-      "artist_check": "matched",
-      "track_count": 7,
-      "original_year": "1958",
-      "year_source": "MusicBrainz discography (curated)"
-    },
-    {
       "id": "MPREb_D4qWHSb24e7",
       "title": "Milestones",
       "year": null,
@@ -25,6 +11,20 @@
       "url": "https://music.youtube.com/browse/MPREb_D4qWHSb24e7",
       "artist_check": "matched",
       "track_count": 9,
+      "original_year": "1958",
+      "year_source": "MusicBrainz discography (curated)"
+    },
+    {
+      "id": "MPREb_ZIykZkA8WDA",
+      "title": "Milestones",
+      "year": null,
+      "artists": [
+        "Miles Davis"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/10zWU4gEqp1SjgW0p2-yZ0vFc3OF13XUm7Q_yNEARe14EZIbBv57jzJlwTuzkz7o_naWFDOWDbDA-ECWxw=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_ZIykZkA8WDA",
+      "artist_check": "matched",
+      "track_count": 1,
       "original_year": "1958",
       "year_source": "MusicBrainz discography (curated)"
     },
@@ -351,6 +351,18 @@
       "track_count": 26
     },
     {
+      "id": "MPREb_PXvPi87rsay",
+      "title": "Isle of Wight (Live)",
+      "year": null,
+      "artists": [
+        "Miles Davis"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/SjlqOeVBxpLlxHD3fpdHQlYw3la4Vvi6db2p7OJ4Sl3w0Jam5BZjxMqY0ZZ9jISNf_saYGYurB9YX_I=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_PXvPi87rsay",
+      "artist_check": "matched",
+      "track_count": 6
+    },
+    {
       "id": "MPREb_DdnNIr8kDKH",
       "title": "Live - Petrillo Music Shell, Chicago Jazz Festival 20th Aug 1990",
       "year": null,
@@ -501,6 +513,18 @@
       "track_count": 7
     },
     {
+      "id": "MPREb_HrTXC17c9RC",
+      "title": "Miles Tones",
+      "year": null,
+      "artists": [
+        "Miles Davis"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/mjWaFU4gvq2FC1wTwZabkmilvfvvQDWs9Blk2MRCr0kAbRP2d73HuAcWMw35Gfxc_Ukk93LooLVYb2-k=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_HrTXC17c9RC",
+      "artist_check": "matched",
+      "track_count": 7
+    },
+    {
       "id": "MPREb_LaBmIl2WWqp",
       "title": "Miles at The Fillmore: Miles Davis 1970: The Bootleg Series, Vol. 3",
       "year": null,
@@ -619,6 +643,19 @@
       "url": "https://music.youtube.com/browse/MPREb_uvY4ITHdwoq",
       "artist_check": "matched",
       "track_count": 14
+    },
+    {
+      "id": "MPREb_KrkYWqgSjL1",
+      "title": "Round Midnight",
+      "year": null,
+      "artists": [
+        "John Coltrane",
+        "Miles Davis"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/bv0INcbavk-ZMlNvsl5vP9zoe90k8DQaWLKIU98lksPSlh7IFmPAz0iscUrWYIqHDX8CPOPVj_sOhzk=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_KrkYWqgSjL1",
+      "artist_check": "matched",
+      "track_count": 6
     },
     {
       "id": "MPREb_yaxep99ShSQ",
@@ -912,6 +949,18 @@
       "url": "https://music.youtube.com/browse/MPREb_5lNAbIgSU4D",
       "artist_check": "matched",
       "track_count": 21
+    },
+    {
+      "id": "MPREb_fid47AjW35l",
+      "title": "Duke Ellington Live At The Blue Note",
+      "year": null,
+      "artists": [
+        "Duke Ellington"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/9lpwNubLsO0_suh_n0x9RDP__9MOPJ2-me7GtHo1iLO4e0B_JJSfWfv4c4NWqanSDTSAcja87ttWcSIR=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_fid47AjW35l",
+      "artist_check": "matched",
+      "track_count": 28
     },
     {
       "id": "MPREb_3Hrw5jftujK",
@@ -1281,6 +1330,18 @@
       "track_count": 30
     },
     {
+      "id": "MPREb_mEVJHomAuXA",
+      "title": "Giant Steps (Alternate, Take 8) (2020 Remaster)",
+      "year": null,
+      "artists": [
+        "John Coltrane"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/NPuKgklAGP4F07PLU1QAOUEKgwyebHtQwbs_LN_2IO8ueUSDxM9U_q0F7xyAIGBkqhYqfqLMI9fHwHmb_w=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_mEVJHomAuXA",
+      "artist_check": "matched",
+      "track_count": 1
+    },
+    {
       "id": "MPREb_ruVjr8RTIlw",
       "title": "Giant Steps (Deluxe Edition)",
       "year": null,
@@ -1315,6 +1376,18 @@
       "url": "https://music.youtube.com/browse/MPREb_3PDYHXQNhPp",
       "artist_check": "matched",
       "track_count": 7
+    },
+    {
+      "id": "MPREb_Krb3pQGyKRn",
+      "title": "Live at Birdland and the Half Note",
+      "year": null,
+      "artists": [
+        "John Coltrane"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/FrpZXxvLdzqHtQy95ELgIi7yDwUU2PAsew2COCYVAE60H6gIIqQyzBHfne3I3lfRzExqjmaaJQ000f0=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_Krb3pQGyKRn",
+      "artist_check": "matched",
+      "track_count": 5
     },
     {
       "id": "MPREb_7Jf3rxMdZ6B",
@@ -1640,6 +1713,206 @@
       "url": "https://music.youtube.com/browse/MPREb_iG0nbNh24qY",
       "artist_check": "matched",
       "track_count": 10
+    }
+  ],
+  "Jimi Hendrix": [
+    {
+      "id": "MPREb_apiWk8x9N5z",
+      "title": "Blues",
+      "year": null,
+      "artists": [
+        "Jimi Hendrix"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/RHDxkMFPiWxH2RzsXMs2WEuFDjzbFJqrOi9bBoxVazEjPZBAJgM_q-lNGh1tVaw226UVHwdZFUYODY8=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_apiWk8x9N5z",
+      "artist_check": "matched",
+      "track_count": 11
+    },
+    {
+      "id": "MPREb_fSXBj0QXuOP",
+      "title": "Experience Hendrix: The Best Of Jimi Hendrix",
+      "year": null,
+      "artists": [
+        "Jimi Hendrix"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/0DQQNlRdhFpiw9PI8ttRLpaJpFD5Fan4f3AUQ6bT4PoLTcDueLqZZDF4Dj2RfR4h0ZnkdY85fhhUWHTe=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_fSXBj0QXuOP",
+      "artist_check": "matched",
+      "track_count": 20
+    },
+    {
+      "id": "MPREb_nD4yqqO5i4e",
+      "title": "Live at Woodstock",
+      "year": null,
+      "artists": [
+        "Jimi Hendrix"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/nTRshg5UBdW2TKj2_jbEN2Lc0ZvldUhfT_EhpKqYDQR-GTzA56f8DNuv6m9b2gXReLQutQwMT040vnNH=w544-h544-s-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_nD4yqqO5i4e",
+      "artist_check": "matched",
+      "track_count": 16
+    },
+    {
+      "id": "MPREb_ZjuiTpHFtOl",
+      "title": "Voodoo Child: The Jimi Hendrix Collection",
+      "year": null,
+      "artists": [
+        "Jimi Hendrix"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/fSSzYryf97J_c2yobgPUTMAD1iNDo0CiEiZugUhUASNQr_mJ1s9RyS1k6LMT328P5xcsTEsKx5F8lx58tQ=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_ZjuiTpHFtOl",
+      "artist_check": "matched",
+      "track_count": 30
+    },
+    {
+      "id": "MPREb_nVFdgcK8zTZ",
+      "title": "West Coast Seattle Boy: The Jimi Hendrix Anthology",
+      "year": null,
+      "artists": [
+        "Jimi Hendrix"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/UHhzgom-UjQHiQvgDdIrPJ6vHyO0N0h-HdSE-Bed2n8ZMsDvSfcqkK_hjVF1Tye6mrZOYJsJU-u_qhDs=w544-h544-s-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_nVFdgcK8zTZ",
+      "artist_check": "matched",
+      "track_count": 59
+    }
+  ],
+  "Janis Joplin": [
+    {
+      "id": "MPREb_Awa1aYq9Vcf",
+      "title": "Big Brother & The Holding Company",
+      "year": null,
+      "artists": [
+        "Big Brother & The Holding Company",
+        "Janis Joplin"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/anC1-IitnLO59C6sdaie9pbTcbEqjJ9u40Eb2aBi-m93R23Hd-uWYFhMyLRFAOmJBJWdACKC3aiNQBWc=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_Awa1aYq9Vcf",
+      "artist_check": "matched",
+      "track_count": 12
+    },
+    {
+      "id": "MPREb_HKBTNxs7YyA",
+      "title": "Cheap Thrills",
+      "year": null,
+      "artists": [
+        "Big Brother & The Holding Company",
+        "Janis Joplin"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/HwnLc25r-Yq0y_7XqLRnFRVGGFrqWNB8_vyB7bzTfU9MkH2WnNbMdoR5CsXIu_gwyUIsq8DRASXOeEk=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_HKBTNxs7YyA",
+      "artist_check": "matched",
+      "track_count": 11
+    },
+    {
+      "id": "MPREb_L6vfHx2JpWU",
+      "title": "Farewell Song",
+      "year": null,
+      "artists": [
+        "Janis Joplin"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/f5ls9H_oR24onreLlhBvEA-YGfKV9W7PHFohWFFZuY9GzCMZN6LU9W4VKuwvySTb4OlCi2rexo1qrKGo=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_L6vfHx2JpWU",
+      "artist_check": "matched",
+      "track_count": 9
+    },
+    {
+      "id": "MPREb_5rvVQR5naYp",
+      "title": "I Got Dem Ol' Kozmic Blues Again Mama!",
+      "year": null,
+      "artists": [
+        "Janis Joplin"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/vqqo9g16ZuL-svssIDNF6iBBXPCkhFrn63hOGLoo69JN5nGqBhKZCsMXIk3gDs1x1Jch_MjCyUhXikVN=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_5rvVQR5naYp",
+      "artist_check": "matched",
+      "track_count": 8
+    },
+    {
+      "id": "MPREb_oB0sHgeH7Hs",
+      "title": "Janis Joplin Live At Winterland '68",
+      "year": null,
+      "artists": [
+        "Big Brother & The Holding Company",
+        "Janis Joplin"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/czxjbj26Dwcy6vuTClLQBo0zilXk7QzLKeH1SanobkmcFaHM4RHazGJ3egMNwOrK5MebORvU7Y-dsFCp=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_oB0sHgeH7Hs",
+      "artist_check": "matched",
+      "track_count": 14
+    },
+    {
+      "id": "MPREb_OWPILPrNzRL",
+      "title": "Janis Joplin's Greatest Hits",
+      "year": null,
+      "artists": [
+        "Janis Joplin"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/Fkw0iqHk6e6uoijc84xGdzG1svPuVmRU7Fwtxx4Ea1pMDNuCXpAiStfABpe3dfWallP2Ezw3Ztf6GcQ=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_OWPILPrNzRL",
+      "artist_check": "matched",
+      "track_count": 12
+    },
+    {
+      "id": "MPREb_3FzeDVI4EjS",
+      "title": "Joplin In Concert",
+      "year": null,
+      "artists": [
+        "Janis Joplin"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/l1wSqUcktAFtXk_utGGv_VnTYVydHygyBIV3kjSH60Rekpdn31jevbOne_fH3J9Upd7ZRAKCipl5VVlW=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_3FzeDVI4EjS",
+      "artist_check": "matched",
+      "track_count": 14
+    },
+    {
+      "id": "MPREb_gGZ2ZiaTXOF",
+      "title": "Pearl",
+      "year": null,
+      "artists": [
+        "Janis Joplin"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/VpOfkcL5LveE7L02DxPEfmYN34X21c-ZY95k6pVP6o_NvUpS866hnE0RxUKiwhIp6qxAaymq4wazx4yz=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_gGZ2ZiaTXOF",
+      "artist_check": "matched",
+      "track_count": 10
+    },
+    {
+      "id": "MPREb_ON4gb9GyPfv",
+      "title": "Sex, Dope & Cheap Thrills",
+      "year": null,
+      "artists": [
+        "Big Brother & The Holding Company",
+        "Janis Joplin"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/MZ0bavuYNWoVysDSRuPa2DT7jcrjW1OaRcxZm4bbtbuoV2HOrVp9Jixmm9tO8YVpxDv4-y7MNGKJ6cMX=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_ON4gb9GyPfv",
+      "artist_check": "matched",
+      "track_count": 30
+    },
+    {
+      "id": "MPREb_S1Z1wU3AJLL",
+      "title": "The Essential Janis Joplin",
+      "year": null,
+      "artists": [
+        "Janis Joplin"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/lOaCGBbXS9GWtP4ibktf24N-Dg3uFE7Ga2FYWd8Yw8_ZM1geii1NdHCicmdRGUf-SYanFmvYruy4PJc=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_S1Z1wU3AJLL",
+      "artist_check": "matched",
+      "track_count": 30
+    },
+    {
+      "id": "MPREb_em17ePnIa9E",
+      "title": "The Pearl Sessions",
+      "year": null,
+      "artists": [
+        "Janis Joplin"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/bKh4ON4aPVdYL9fQuvRDO8oCSK_mFt9K-BBY1VRXynA8XRZQo0mi9lh6I1ODFx19x9O69qi2krdIf18sPg=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_em17ePnIa9E",
+      "artist_check": "matched",
+      "track_count": 36
     }
   ],
   "The Beatles": [
