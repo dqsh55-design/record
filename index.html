@@ -2,7 +2,7 @@
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RECORD — Find the music.</title>
 <style>
 :root{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;color:#252525;background:#f8f7f4}*{box-sizing:border-box}body{margin:0}main{max-width:780px;margin:auto;padding:65px 22px 90px}header{text-align:center;margin-bottom:54px}h1{font-size:39px;letter-spacing:.22em;font-weight:450;margin:0 0 12px;padding-left:.22em}header p{color:#888;font-size:12px;letter-spacing:.13em;margin:0}.intro{font-size:14px;color:#777;line-height:1.9;text-align:center;margin-bottom:28px}.search{display:flex;gap:8px}input{min-width:0;flex:1;padding:16px;border:1px solid #d9d7d2;border-radius:4px;background:white;font-size:16px}button{border:0;background:#242424;color:#fff;padding:0 24px;border-radius:4px;font-size:15px;cursor:pointer}button:disabled{opacity:.5}.hint{font-size:12px;color:#999;margin-top:12px}.status{margin:32px 0;color:#777;font-size:14px;line-height:1.8}.artist{font-size:24px;font-weight:500;margin:42px 0 8px}.sub{font-size:12px;color:#888;margin-bottom:22px}.filters{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}.filter{background:transparent;color:#666;border:1px solid #d8d6d1;border-radius:30px;padding:9px 14px;font-size:12px}.filter.active{background:#252525;color:white;border-color:#252525}.album{border-top:1px solid #e0ded9;padding:18px 0;display:flex;gap:17px;align-items:center}.cover{width:76px;height:76px;flex:none;background:#e9e7e2;border-radius:2px;object-fit:cover}.info{min-width:0;flex:1}.album-title{font-size:15px;font-weight:550;line-height:1.5}.meta{font-size:12px;color:#888;margin:6px 0 10px}.listen{font-size:12px;color:#4d4d4d;text-underline-offset:3px}.detail-btn{background:transparent;color:#555;border:1px solid #d8d6d1;padding:7px 10px;font-size:12px;margin-top:9px}.album-tools{margin-top:12px;border-top:1px solid #eceae5;padding-top:10px}.album-tools summary{cursor:pointer;font-size:12px;color:#777;list-style:none}.album-tools summary::-webkit-details-marker{display:none}.album-tools summary::after{content:' ＋'}.album-tools[open] summary::after{content:' −'}.album-tools-body{padding-top:8px}.album-tools .direct-url{max-width:100%}.availability{font-size:12px;color:#888;margin-top:9px}.availability.confirmed{color:#336b52}.availability.missing{color:#955f48}.direct-url{display:block;width:100%;max-width:390px;margin-top:8px;padding:9px;border:1px solid #d8d6d1;border-radius:4px;background:#fff;font-size:12px}.release-detail{font-size:12px;color:#777;line-height:1.8;margin-top:8px}.note{font-size:12px;line-height:1.8;color:#999;margin-top:36px}.more{display:block;margin:26px auto 0;padding:13px 24px}footer{text-align:center;color:#aaa;font-size:11px;margin-top:80px}@media(max-width:420px){main{padding-top:48px}h1{font-size:33px}.search button{padding:0 17px}.cover{width:66px;height:66px}}
-</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。<br>正規発売アルバムを探すための音楽ガイド。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます</div><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Music data by MusicBrainz · v0.52</footer></main>
+</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。<br>正規発売アルバムを探すための音楽ガイド。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます</div><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Music data by MusicBrainz · v0.53</footer></main>
 <script>
 const $=id=>document.getElementById(id), status=$('status'),results=$('results');
 let relatedCatalogAlbums=[],artistChoices=[],ytVisible=20,ytSort='name',ytAlbums=[],albums=[],filter='おすすめ',artistName='',offset=0,artistId='',busy=false,total=0;
@@ -39,7 +39,7 @@ async function showReleaseDetail(a,container,btn){
     let official=releases.filter(x=>x.status.toLowerCase()==='official');
     let evidence=document.createElement('div');
     evidence.style.fontWeight='600';
-    evidence.textContent=official.length?'公式発売の登録あり':'発売情報未確認';
+    evidence.textContent=official.length?'MusicBrainzに公式発売登録あり':'発売情報未確認';
     container.append(evidence);
     let details=document.createElement('details');
     details.className='album-tools';
@@ -153,7 +153,7 @@ if(ytEvidenceOnly)visibleYt=visibleYt.filter(a=>{
 visibleYt.sort((a,b)=>ytSort==='year'?(Number(a.displayYear||9999)-Number(b.displayYear||9999)||a.title.localeCompare(b.title)):a.title.localeCompare(b.title));
 let controls=document.createElement('div');controls.className='filters';let sortLabel=document.createElement('span');sortLabel.className='sub';sortLabel.style.margin='auto 8px auto 0';sortLabel.textContent='並び順';controls.append(sortLabel);for(const [value,label] of [['name','アルバム名順'],['year','発売年順']]){let button=document.createElement('button');button.className='filter'+(ytSort===value?' active':'');button.textContent=label;button.onclick=()=>{ytSort=value;ytVisible=20;render()};controls.append(button)}let evidenceButton=document.createElement('button');
 evidenceButton.className='filter'+(ytEvidenceOnly?' active':'');
-evidenceButton.textContent='公式発売の登録あり（確認済みのみ）';
+evidenceButton.textContent='MusicBrainzに公式発売登録あり';
 evidenceButton.onclick=()=>{ytEvidenceOnly=!ytEvidenceOnly;ytVisible=20;render()};
 controls.append(evidenceButton);
 section.append(controls);
@@ -186,17 +186,19 @@ if(ytEvidenceOnly){
 for(let a of visibleYt.slice(0,ytVisible)){let item=document.createElement('article');item.className='album';if(a.thumbnail){let img=document.createElement('img');img.className='cover';img.src=a.thumbnail;img.alt='';img.loading='lazy';item.append(img)}let info=document.createElement('div');info.className='info';let title=document.createElement('div');title.className='album-title';title.textContent=a.title;let meta=document.createElement('div');meta.className='meta';meta.textContent=(a.displayYear||'発売年不明')+(a.albumType?' · '+a.albumType:'')+(a.track_count?' · '+a.track_count+'曲':'')+(a.artist_check==='matched'?' · 本人名義を確認（正規盤は未確認）':' · 本人名義・正規盤とも未確認');let link=document.createElement('a');link.className='listen';link.href=a.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent='YouTube Musicでアルバムを開く ↗';info.append(title,meta,link);
 let matchedGroup=mbById.get(a.mb_release_group)||mbByTitle.get(titleKey(a.title));
 if(matchedGroup){
+  const matchMethod=mbById.has(a.mb_release_group)?'MusicBrainz ID一致':'アルバム名のみ一致（同一盤は未確認）';
+  let matchNote=document.createElement('div');matchNote.className='meta';matchNote.textContent=matchMethod;info.append(matchNote);
   let check=document.createElement('button');check.className='detail-btn';check.textContent=releaseEvidenceCache[matchedGroup.id]?'保存済みの発売情報を見る':'発売元の登録情報を見る';
   let detail=document.createElement('div');detail.className='release-detail';
   const cachedStatus=cachedOfficialEvidence(matchedGroup.id);
   if(cachedStatus!==null){
     let evidence=document.createElement('div');evidence.className='meta';
-    evidence.textContent=cachedStatus==='official'?'公式発売の登録あり（保存済み）':'発売情報未確認（保存済み）';
+    evidence.textContent=cachedStatus==='official'?'MusicBrainzに公式発売登録あり（保存済み）':'発売情報未確認（保存済み）';
     info.append(evidence);
   }
   check.onclick=()=>showReleaseDetail(matchedGroup,detail,check);
   const record=getVerification(matchedGroup.id,a.url);
-  const storedRecord=record||verificationRecords[matchedGroup.id];
+  const storedRecord=record||Object.values(verificationRecords).find(v=>v&&v.mbReleaseGroup===matchedGroup.id&&v.ytUrl!==a.url);
   let verification=document.createElement('div');verification.className='release-detail';
   verification.textContent=record?'照合記録：'+(record.verdict==='matched'?'一致を手動確認':record.verdict==='different'?'別盤・不一致':'要確認')+' · '+record.checkedAt.slice(0,10):storedRecord?'別のYouTube Musicリンクで照合済み（この配信盤は未確認）':'YouTube Musicとの照合は未確認';
   let verdict=document.createElement('select');verdict.className='direct-url';verdict.setAttribute('aria-label',a.title+'の照合結果');
