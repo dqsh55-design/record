@@ -3,34 +3,197 @@
   "musicbrainz_id": "33b3c323-77c2-417c-a5b4-af7e6a111cc9",
   "albums_checked": 25,
   "no_candidates": [
-    "Are You Experienced",
-    "Axis: Bold as Love",
-    "Electric Ladyland",
     "1968‐02‐28: The Scene, Milwaukee, WI",
     "1968‐08‐10: Auditorium Theatre, Chicago, IL",
     "1968‐02‐17: Will Rogers Auditorium, Fort Worth, TX",
     "1968‐12‐01: Coliseum, Chicago, IL",
     "1968‐02‐25: Civic Opera House, Chicago, IL",
-    "Smash Hits",
     "Historic Performances Recorded at the Monterey International Pop Festival",
-    "Experience",
-    "Voodoo Chile",
-    "Live at Winterland",
-    "Radio One",
     "The Wild Man of Pop Plays, Volume 1",
     "The Legendary Starclub Tapes",
     "Rockstars in Concert",
     "Riots in Berkeley",
     "Live at Winterland +3",
-    "The Wild Man of Pop Plays",
-    "1968 A.D.",
-    "Electric Guitarland",
-    "Get The Experience!",
-    "1968 A.D., Part Two",
-    "One Night Stand"
+    "Electric Guitarland"
   ],
-  "title_mismatch": [],
+  "title_mismatch": [
+    {
+      "wanted": "Experience",
+      "found": "Experience Hendrix: The Best Of Jimi Hendrix"
+    },
+    {
+      "wanted": "Experience",
+      "found": "Sing The Hits Of The Jimi Hendrix Experience"
+    },
+    {
+      "wanted": "Experience",
+      "found": "Sing The Hits Of The Jimi Hendrix Experience"
+    },
+    {
+      "wanted": "Experience",
+      "found": "Magic Boy: The Jimi Hendrix Experience Live At Berkeley [First Show]"
+    },
+    {
+      "wanted": "Voodoo Chile",
+      "found": "Electric Ladyland"
+    },
+    {
+      "wanted": "Voodoo Chile",
+      "found": "Live at Woodstock"
+    },
+    {
+      "wanted": "Voodoo Chile",
+      "found": "Voodoo Child: The Jimi Hendrix Collection"
+    },
+    {
+      "wanted": "Live at Winterland",
+      "found": "Winterland"
+    },
+    {
+      "wanted": "Live at Winterland",
+      "found": "Voodoo Child: The Jimi Hendrix Collection"
+    },
+    {
+      "wanted": "Live at Winterland",
+      "found": "Hendrix In The West"
+    },
+    {
+      "wanted": "Radio One",
+      "found": "BBC Sessions"
+    },
+    {
+      "wanted": "Radio One",
+      "found": "The Karaoke Channel - Classic Rock, Vol. 11"
+    },
+    {
+      "wanted": "Radio One",
+      "found": "Led Zeppelin (Remaster)"
+    },
+    {
+      "wanted": "The Wild Man of Pop Plays",
+      "found": "The Jimi Hendrix Experience (Deluxe Reissue)"
+    },
+    {
+      "wanted": "The Wild Man of Pop Plays",
+      "found": "Live At Monterey"
+    },
+    {
+      "wanted": "The Wild Man of Pop Plays",
+      "found": "Are You Experienced"
+    },
+    {
+      "wanted": "1968 A.D.",
+      "found": "The Jimi Hendrix Experience (Deluxe Reissue)"
+    },
+    {
+      "wanted": "1968 A.D.",
+      "found": "Winterland"
+    },
+    {
+      "wanted": "1968 A.D.",
+      "found": "Miami Pop Festival"
+    },
+    {
+      "wanted": "Get The Experience!",
+      "found": "Experience Hendrix: The Best Of Jimi Hendrix"
+    },
+    {
+      "wanted": "Get The Experience!",
+      "found": "Sing The Hits Of The Jimi Hendrix Experience"
+    },
+    {
+      "wanted": "Get The Experience!",
+      "found": "Sing The Hits Of The Jimi Hendrix Experience"
+    },
+    {
+      "wanted": "Get The Experience!",
+      "found": "Rock Legend"
+    },
+    {
+      "wanted": "1968 A.D., Part Two",
+      "found": "The Jimi Hendrix Experience (Deluxe Reissue)"
+    },
+    {
+      "wanted": "1968 A.D., Part Two",
+      "found": "Winterland"
+    },
+    {
+      "wanted": "1968 A.D., Part Two",
+      "found": "Miami Pop Festival"
+    },
+    {
+      "wanted": "One Night Stand",
+      "found": "Led Zeppelin (Remaster)"
+    },
+    {
+      "wanted": "One Night Stand",
+      "found": "Let It Bleed (50th Anniversary Edition / Remastered 2019)"
+    },
+    {
+      "wanted": "One Night Stand",
+      "found": "Led Zeppelin II (Remaster)"
+    }
+  ],
   "artist_mismatch": [],
   "detail_mismatch": [],
-  "matched": []
+  "matched": [
+    "Are You Experienced",
+    "Axis: Bold as Love",
+    "Electric Ladyland",
+    "Smash Hits"
+  ],
+  "fallback_found": [
+    {
+      "title": "Are You Experienced",
+      "count": 4
+    },
+    {
+      "title": "Axis: Bold as Love",
+      "count": 4
+    },
+    {
+      "title": "Electric Ladyland",
+      "count": 4
+    },
+    {
+      "title": "Smash Hits",
+      "count": 3
+    },
+    {
+      "title": "Experience",
+      "count": 4
+    },
+    {
+      "title": "Voodoo Chile",
+      "count": 3
+    },
+    {
+      "title": "Live at Winterland",
+      "count": 3
+    },
+    {
+      "title": "Radio One",
+      "count": 3
+    },
+    {
+      "title": "The Wild Man of Pop Plays",
+      "count": 3
+    },
+    {
+      "title": "1968 A.D.",
+      "count": 3
+    },
+    {
+      "title": "Get The Experience!",
+      "count": 4
+    },
+    {
+      "title": "1968 A.D., Part Two",
+      "count": 3
+    },
+    {
+      "title": "One Night Stand",
+      "count": 3
+    }
+  ]
 }

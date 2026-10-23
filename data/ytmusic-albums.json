@@ -2014,5 +2014,70 @@
       ]
     }
   ],
-  "The Jimi Hendrix Experience": []
+  "The Jimi Hendrix Experience": [
+    {
+      "id": "MPREb_8A32sVmzw1D",
+      "title": "Are You Experienced",
+      "year": null,
+      "original_year": "1967",
+      "year_source": "MusicBrainz release group",
+      "artists": [
+        "The Jimi Hendrix Experience"
+      ],
+      "artist_check": "matched",
+      "thumbnail": "https://yt3.googleusercontent.com/UXsMsB1vi3c8yMqWbTatjMvxVN0GIwBW8c8dXrpDcT1iuY83RAw9F67l3nh-ZMHtcYuZxjpPwWGpaYe9=w544-h544-l90-rj",
+      "track_count": 17,
+      "url": "https://music.youtube.com/browse/MPREb_8A32sVmzw1D",
+      "mb_release_group": "da40e720-2097-3730-8a7f-0c2ddbff4a96",
+      "match_method": "artist_and_title"
+    },
+    {
+      "id": "MPREb_87dAc8h6pwW",
+      "title": "Axis: Bold As Love",
+      "year": null,
+      "original_year": "1967",
+      "year_source": "MusicBrainz release group",
+      "artists": [
+        "The Jimi Hendrix Experience"
+      ],
+      "artist_check": "matched",
+      "thumbnail": "https://yt3.googleusercontent.com/Lo50kntrtDrijY1IZJpUMQEtKAYsthZhnX2khRGn63lyoc2FRlwiPd9t0G8Kr9kbQrXcUi9rcQpJi5yw=w544-h544-l90-rj",
+      "track_count": 13,
+      "url": "https://music.youtube.com/browse/MPREb_87dAc8h6pwW",
+      "mb_release_group": "d0b1e21e-cef6-4575-8d92-1afea1894ca3",
+      "match_method": "artist_and_title"
+    },
+    {
+      "id": "MPREb_xl4MnHmyujn",
+      "title": "Electric Ladyland",
+      "year": null,
+      "original_year": "1968",
+      "year_source": "MusicBrainz release group",
+      "artists": [
+        "The Jimi Hendrix Experience"
+      ],
+      "artist_check": "matched",
+      "thumbnail": "https://yt3.googleusercontent.com/3HI49FFF4b7L16PYqXDBsmneoAirp1OuBiXuCPrEySW1k4WJVJz1FZtRDtCdTZHLiYXKPWYuqi_q0nTd=w544-h544-l90-rj",
+      "track_count": 16,
+      "url": "https://music.youtube.com/browse/MPREb_xl4MnHmyujn",
+      "mb_release_group": "47ba2d59-5544-34a4-b108-dc08c0956298",
+      "match_method": "artist_and_title"
+    },
+    {
+      "id": "MPREb_gaBJVZ2gUap",
+      "title": "Smash Hits",
+      "year": null,
+      "original_year": "1968",
+      "year_source": "MusicBrainz release group",
+      "artists": [
+        "The Jimi Hendrix Experience"
+      ],
+      "artist_check": "matched",
+      "thumbnail": "https://yt3.googleusercontent.com/oWYYJNt8IWJC7Tpu4gatZZeBeHiCfg2m5H9dfCEkD2_SDD8zuqPhigThvFbo7vAcPPB8zZguvvaYbLQ=w544-h544-l90-rj",
+      "track_count": 12,
+      "url": "https://music.youtube.com/browse/MPREb_gaBJVZ2gUap",
+      "mb_release_group": "1d311193-6318-3b53-bb6f-e29f07192289",
+      "match_method": "artist_and_title"
+    }
+  ]
 }
