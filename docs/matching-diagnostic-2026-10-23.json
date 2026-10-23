@@ -1,0 +1,537 @@
+{
+  "checked_at": "2026-10-23T06:54:00.366123+00:00",
+  "purpose": "diagnostic_only_not_catalog_evidence",
+  "targets": [
+    {
+      "artist": "Jeff Beck",
+      "title": "Blow by Blow",
+      "album_id": "MPREb_jT1i6yytIdA",
+      "status": "insufficient",
+      "candidates": [
+        {
+          "status": "insufficient",
+          "checks": {
+            "official": "match",
+            "title": "unknown",
+            "artist": "unknown",
+            "label": "unknown",
+            "count": "unknown",
+            "titles": "unknown",
+            "order": "unknown"
+          },
+          "release_id": "f9e85897-b4d4-4b3d-b8b8-a4f19031f321",
+          "source": "https://musicbrainz.org/release/f9e85897-b4d4-4b3d-b8b8-a4f19031f321",
+          "title": "Blow by Blow",
+          "date": "1994",
+          "country": "US",
+          "labels": [
+            "Epic"
+          ],
+          "catalog_numbers": [
+            "EK 64407"
+          ],
+          "track_count": 9,
+          "tracks": [
+            {
+              "position": 1,
+              "title": "You Know What I Mean"
+            },
+            {
+              "position": 2,
+              "title": "She’s a Woman"
+            },
+            {
+              "position": 3,
+              "title": "Constipated Duck"
+            },
+            {
+              "position": 4,
+              "title": "Air Blower"
+            },
+            {
+              "position": 5,
+              "title": "Scatterbrain"
+            },
+            {
+              "position": 6,
+              "title": "Cause We’ve Ended as Lovers"
+            },
+            {
+              "position": 7,
+              "title": "Thelonius"
+            },
+            {
+              "position": 8,
+              "title": "Freeway Jam"
+            },
+            {
+              "position": 9,
+              "title": "Diamond Dust"
+            }
+          ]
+        },
+        {
+          "status": "insufficient",
+          "checks": {
+            "official": "match",
+            "title": "unknown",
+            "artist": "unknown",
+            "label": "unknown",
+            "count": "unknown",
+            "titles": "unknown",
+            "order": "unknown"
+          },
+          "release_id": "496a1856-c8ac-3a4b-8415-a6610250cfd7",
+          "source": "https://musicbrainz.org/release/496a1856-c8ac-3a4b-8415-a6610250cfd7",
+          "title": "Blow by Blow",
+          "date": "1975-03",
+          "country": "GB",
+          "labels": [
+            "Epic"
+          ],
+          "catalog_numbers": [
+            "EPC 69117"
+          ],
+          "track_count": 9,
+          "tracks": [
+            {
+              "position": 1,
+              "title": "You Know What I Mean"
+            },
+            {
+              "position": 2,
+              "title": "She’s a Woman"
+            },
+            {
+              "position": 3,
+              "title": "Constipated Duck"
+            },
+            {
+              "position": 4,
+              "title": "Air Blower"
+            },
+            {
+              "position": 5,
+              "title": "Scatterbrain"
+            },
+            {
+              "position": 6,
+              "title": "Cause We’ve Ended as Lovers"
+            },
+            {
+              "position": 7,
+              "title": "Thelonius"
+            },
+            {
+              "position": 8,
+              "title": "Freeway Jam"
+            },
+            {
+              "position": 9,
+              "title": "Diamond Dust"
+            }
+          ]
+        },
+        {
+          "status": "insufficient",
+          "checks": {
+            "official": "match",
+            "title": "unknown",
+            "artist": "unknown",
+            "label": "unknown",
+            "count": "unknown",
+            "titles": "unknown",
+            "order": "unknown"
+          },
+          "release_id": "6751c404-9762-3f25-b8c0-082546a7850c",
+          "source": "https://musicbrainz.org/release/6751c404-9762-3f25-b8c0-082546a7850c",
+          "title": "Blow by Blow",
+          "date": "1988",
+          "country": "AU",
+          "labels": [
+            "Epic"
+          ],
+          "catalog_numbers": [
+            "462710 2"
+          ],
+          "track_count": 9,
+          "tracks": [
+            {
+              "position": 1,
+              "title": "You Know What I Mean"
+            },
+            {
+              "position": 2,
+              "title": "She’s a Woman"
+            },
+            {
+              "position": 3,
+              "title": "Constipated Duck"
+            },
+            {
+              "position": 4,
+              "title": "Air Blower"
+            },
+            {
+              "position": 5,
+              "title": "Scatterbrain"
+            },
+            {
+              "position": 6,
+              "title": "Cause We’ve Ended as Lovers"
+            },
+            {
+              "position": 7,
+              "title": "Thelonius"
+            },
+            {
+              "position": 8,
+              "title": "Freeway Jam"
+            },
+            {
+              "position": 9,
+              "title": "Diamond Dust"
+            }
+          ]
+        }
+      ],
+      "youtube_error": {
+        "category": "proxy_connect_403",
+        "exception": "ProxyError",
+        "http_status": null
+      },
+      "musicbrainz_total": 26,
+      "candidate_search_only": true,
+      "comparison_available": false
+    },
+    {
+      "artist": "Jeff Beck",
+      "title": "Best of Beck",
+      "album_id": "MPREb_ad4e4La82DZ",
+      "status": "insufficient",
+      "candidates": [
+        {
+          "status": "insufficient",
+          "checks": {
+            "official": "match",
+            "title": "unknown",
+            "artist": "unknown",
+            "label": "unknown",
+            "count": "unknown",
+            "titles": "unknown",
+            "order": "unknown"
+          },
+          "release_id": "f7b16126-1638-418d-932b-edfa90d5da0e",
+          "source": "https://musicbrainz.org/release/f7b16126-1638-418d-932b-edfa90d5da0e",
+          "title": "Best of Beck",
+          "date": "1995-08-15",
+          "country": "US",
+          "labels": [
+            "Epic"
+          ],
+          "catalog_numbers": [
+            "EK 64689"
+          ],
+          "track_count": 14,
+          "tracks": [
+            {
+              "position": 1,
+              "title": "The Pump"
+            },
+            {
+              "position": 2,
+              "title": "People Get Ready"
+            },
+            {
+              "position": 3,
+              "title": "Freeway Jam"
+            },
+            {
+              "position": 4,
+              "title": "Shapes of Things"
+            },
+            {
+              "position": 5,
+              "title": "Where Were You"
+            },
+            {
+              "position": 6,
+              "title": "Beck’s Bolero"
+            },
+            {
+              "position": 7,
+              "title": "Going Down"
+            },
+            {
+              "position": 8,
+              "title": "Jailhouse Rock"
+            },
+            {
+              "position": 9,
+              "title": "Goodbye Pork Pie Hat"
+            },
+            {
+              "position": 10,
+              "title": "Blue Wind"
+            },
+            {
+              "position": 11,
+              "title": "Plynth (Water Down the Drain)"
+            },
+            {
+              "position": 12,
+              "title": "Two Rivers"
+            },
+            {
+              "position": 13,
+              "title": "Scatterbrain"
+            },
+            {
+              "position": 14,
+              "title": "She’s a Woman"
+            }
+          ]
+        }
+      ],
+      "youtube_error": {
+        "category": "proxy_connect_403",
+        "exception": "ProxyError",
+        "http_status": null
+      },
+      "musicbrainz_total": 1,
+      "candidate_search_only": true,
+      "comparison_available": false
+    },
+    {
+      "artist": "Miles Davis",
+      "title": "Kind of Blue",
+      "album_id": "MPREb_iNbKdKjDqyr",
+      "status": "insufficient",
+      "candidates": [
+        {
+          "status": "insufficient",
+          "checks": {
+            "official": "match",
+            "title": "unknown",
+            "artist": "unknown",
+            "label": "unknown",
+            "count": "unknown",
+            "titles": "unknown",
+            "order": "unknown"
+          },
+          "release_id": "e32a3f0b-1c19-3170-bb1c-650893774744",
+          "source": "https://musicbrainz.org/release/e32a3f0b-1c19-3170-bb1c-650893774744",
+          "title": "Kind of Blue",
+          "date": "1987",
+          "country": "US",
+          "labels": [
+            "Columbia"
+          ],
+          "catalog_numbers": [
+            "CK 40579"
+          ],
+          "track_count": 5,
+          "tracks": [
+            {
+              "position": 1,
+              "title": "So What"
+            },
+            {
+              "position": 2,
+              "title": "Freddie Freeloader"
+            },
+            {
+              "position": 3,
+              "title": "Blue in Green"
+            },
+            {
+              "position": 4,
+              "title": "All Blues"
+            },
+            {
+              "position": 5,
+              "title": "Flamenco Sketches"
+            }
+          ]
+        },
+        {
+          "status": "insufficient",
+          "checks": {
+            "official": "match",
+            "title": "unknown",
+            "artist": "unknown",
+            "label": "unknown",
+            "count": "unknown",
+            "titles": "unknown",
+            "order": "unknown"
+          },
+          "release_id": "e8324f18-31cd-4a2f-877b-08affdccfff1",
+          "source": "https://musicbrainz.org/release/e8324f18-31cd-4a2f-877b-08affdccfff1",
+          "title": "Kind of Blue",
+          "date": "2004",
+          "country": "US",
+          "labels": [
+            "Columbia"
+          ],
+          "catalog_numbers": [
+            "CN 90887"
+          ],
+          "track_count": 19,
+          "tracks": [
+            {
+              "position": 1,
+              "title": "So What"
+            },
+            {
+              "position": 2,
+              "title": "Freddie Freeloader"
+            },
+            {
+              "position": 3,
+              "title": "Blue In Green"
+            },
+            {
+              "position": 4,
+              "title": "All Blues"
+            },
+            {
+              "position": 5,
+              "title": "Flamenco Sketches"
+            },
+            {
+              "position": 6,
+              "title": "Flamenco Sketches (Alternate Take)"
+            },
+            {
+              "position": 7,
+              "title": "So What"
+            },
+            {
+              "position": 8,
+              "title": "Freddie Freeloader"
+            },
+            {
+              "position": 9,
+              "title": "Blue in Green"
+            },
+            {
+              "position": 10,
+              "title": "All Blues"
+            },
+            {
+              "position": 11,
+              "title": "Flamenco Sketches"
+            },
+            {
+              "position": 12,
+              "title": "Flamenco Sketches (alternate take)"
+            },
+            {
+              "position": 13,
+              "title": "So What (5.0 mix)"
+            },
+            {
+              "position": 14,
+              "title": "Freddie Freeloader (5.0 mix)"
+            },
+            {
+              "position": 15,
+              "title": "Blue in Green (5.0 mix)"
+            },
+            {
+              "position": 16,
+              "title": "All Blues (5.0 mix)"
+            },
+            {
+              "position": 17,
+              "title": "Flamenco Sketches (5.0 mix)"
+            },
+            {
+              "position": 18,
+              "title": "Flamenco Sketches (alternate take) (5.0 mix)"
+            },
+            {
+              "position": 19,
+              "title": "Made in Heaven: The Making of \"Kind of Blue\""
+            }
+          ]
+        },
+        {
+          "status": "insufficient",
+          "checks": {
+            "official": "match",
+            "title": "unknown",
+            "artist": "unknown",
+            "label": "unknown",
+            "count": "unknown",
+            "titles": "unknown",
+            "order": "unknown"
+          },
+          "release_id": "a9bd6e04-c2b6-4d70-8043-eb3c115d2d57",
+          "source": "https://musicbrainz.org/release/a9bd6e04-c2b6-4d70-8043-eb3c115d2d57",
+          "title": "Kind of Blue",
+          "date": "1997",
+          "country": "CA",
+          "labels": [
+            "Columbia",
+            "Legacy"
+          ],
+          "catalog_numbers": [
+            "CK 64935",
+            "CK 64935"
+          ],
+          "track_count": 6,
+          "tracks": [
+            {
+              "position": 1,
+              "title": "So What"
+            },
+            {
+              "position": 2,
+              "title": "Freddie Freeloader"
+            },
+            {
+              "position": 3,
+              "title": "Blue in Green"
+            },
+            {
+              "position": 4,
+              "title": "All Blues"
+            },
+            {
+              "position": 5,
+              "title": "Flamenco Sketches"
+            },
+            {
+              "position": 6,
+              "title": "Flamenco Sketches (alternate take)"
+            }
+          ]
+        }
+      ],
+      "youtube_error": {
+        "category": "proxy_connect_403",
+        "exception": "ProxyError",
+        "http_status": null
+      },
+      "musicbrainz_total": 126,
+      "candidate_search_only": true,
+      "comparison_available": false
+    }
+  ],
+  "transport": [
+    {
+      "url": "https://music.youtube.com/",
+      "error": {
+        "category": "proxy_connect_403",
+        "exception": "URLError",
+        "http_status": null
+      }
+    },
+    {
+      "url": "https://musicbrainz.org/",
+      "http_status": 200
+    }
+  ],
+  "ytmusicapi_version": "1.12.3"
+}

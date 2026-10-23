@@ -1,0 +1,1739 @@
+{
+  "checked_at": "2026-10-23T08:01:51.693962+00:00",
+  "method": "Real Python urllib HTTP through the configured proxy, TLS verification enabled; no response mocks",
+  "results": {
+    "kind": "live HTTP requests; no mocked responses",
+    "artists": [
+      {
+        "name": "Jeff Beck",
+        "artist_id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+        "release_count": 253,
+        "first_page_count": 100,
+        "official_albums": 79,
+        "samples": [
+          {
+            "category": "Studio",
+            "release": {
+              "text-representation": {
+                "language": "eng",
+                "script": "Latn"
+              },
+              "quality": "normal",
+              "id": "00694f49-9f0d-4ab0-a370-e5e3271e5dcc",
+              "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+              "date": "1992",
+              "disambiguation": "",
+              "status": "Official",
+              "barcode": "5018665283824",
+              "title": "Flash",
+              "packaging": "Jewel Case",
+              "asin": null,
+              "cover-art-archive": {
+                "artwork": true,
+                "count": 1,
+                "back": false,
+                "front": true,
+                "darkened": false
+              },
+              "release-events": [
+                {
+                  "area": {
+                    "disambiguation": "",
+                    "type": null,
+                    "type-id": null,
+                    "sort-name": "Europe",
+                    "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+                    "iso-3166-1-codes": [
+                      "XE"
+                    ],
+                    "name": "Europe"
+                  },
+                  "date": "1992"
+                }
+              ],
+              "label-info": [
+                {
+                  "catalog-number": "982838 2",
+                  "label": {
+                    "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+                    "sort-name": "Epic",
+                    "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+                    "type": "Imprint",
+                    "label-code": 199,
+                    "name": "Epic",
+                    "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55"
+                  }
+                }
+              ],
+              "media": [
+                {
+                  "track-count": 9,
+                  "id": "0e0b181f-d878-324c-a5d0-9529a32df04f",
+                  "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+                  "title": "",
+                  "format": "CD",
+                  "position": 1,
+                  "tracks": [
+                    {
+                      "title": "Ambitious",
+                      "recording": {
+                        "video": false,
+                        "length": 278026,
+                        "title": "Ambitious",
+                        "first-release-date": "1985-07",
+                        "disambiguation": "",
+                        "id": "5d5ae20d-4883-49d9-9e5d-9f445d411484"
+                      },
+                      "id": "c44f4a98-e72d-40f2-bc92-fd084ae8b45c",
+                      "length": 268000,
+                      "number": "1",
+                      "position": 1
+                    },
+                    {
+                      "id": "6c49539c-282c-41a8-815d-ac7031852d04",
+                      "title": "Gets Us All in the End",
+                      "recording": {
+                        "id": "8b2a1894-cb71-4a4c-84d6-e1cf8b65c070",
+                        "disambiguation": "",
+                        "first-release-date": "1985-07",
+                        "title": "Gets Us All in the End",
+                        "length": 366000,
+                        "video": false
+                      },
+                      "number": "2",
+                      "position": 2,
+                      "length": 354000
+                    },
+                    {
+                      "id": "de9861a4-62b4-4177-8600-925dee29187b",
+                      "recording": {
+                        "disambiguation": "",
+                        "first-release-date": "1985-07",
+                        "title": "Escape",
+                        "video": false,
+                        "length": 279426,
+                        "id": "5708a93a-c3e0-48e5-a2a9-fba319f4d8c7"
+                      },
+                      "title": "Escape",
+                      "number": "3",
+                      "position": 3,
+                      "length": 271000
+                    },
+                    {
+                      "id": "9e1b0dfa-ff73-4873-b570-f4bbd423299b",
+                      "title": "People Get Ready",
+                      "recording": {
+                        "video": false,
+                        "length": 294866,
+                        "title": "People Get Ready",
+                        "first-release-date": "1985-07",
+                        "disambiguation": "",
+                        "id": "32c1be1d-f5b3-4faa-a72b-4db1b33128e4"
+                      },
+                      "number": "4",
+                      "position": 4,
+                      "length": 286000
+                    },
+                    {
+                      "id": "8bb67664-09f1-45da-8c4a-3af6f8942f48",
+                      "title": "Stop, Look and Listen",
+                      "recording": {
+                        "video": false,
+                        "length": 267626,
+                        "title": "Stop, Look and Listen",
+                        "first-release-date": "1985-07",
+                        "disambiguation": "",
+                        "id": "67892db5-8b80-480c-951d-6261f28872f1"
+                      },
+                      "number": "5",
+                      "position": 5,
+                      "length": 256000
+                    },
+                    {
+                      "id": "19115004-9fc8-46fc-abb7-9af83ae2cb03",
+                      "title": "Get Workin’",
+                      "recording": {
+                        "first-release-date": "1985-07",
+                        "disambiguation": "",
+                        "length": 215706,
+                        "video": false,
+                        "title": "Get Workin’",
+                        "id": "76cfa2d3-ac05-49f0-8a0a-5414288f7d4c"
+                      },
+                      "position": 6,
+                      "number": "6",
+                      "length": 207000
+                    },
+                    {
+                      "title": "Ecstasy",
+                      "recording": {
+                        "disambiguation": "",
+                        "first-release-date": "1985-07",
+                        "title": "Ecstasy",
+                        "video": false,
+                        "length": 211426,
+                        "id": "75af36fe-0de0-48bf-abfd-37abffdb8da4"
+                      },
+                      "id": "e4659658-366e-4fdb-96d3-1bb28192a397",
+                      "length": 218000,
+                      "number": "7",
+                      "position": 7
+                    },
+                    {
+                      "id": "c7e48063-73c0-4fc5-b416-5963be4be7f8",
+                      "recording": {
+                        "title": "Night After Night",
+                        "video": false,
+                        "length": 222000,
+                        "disambiguation": "",
+                        "first-release-date": "1985-07",
+                        "id": "5dba1f0b-6a9c-4fa5-804a-ad1f749e35ae"
+                      },
+                      "title": "Night After Night",
+                      "position": 8,
+                      "number": "8",
+                      "length": 212000
+                    },
+                    {
+                      "id": "fb32ab6b-0a90-41e9-b5c8-71fc03880eed",
+                      "recording": {
+                        "video": false,
+                        "length": 335800,
+                        "title": "You Know, We Know",
+                        "first-release-date": "1985-07",
+                        "disambiguation": "",
+                        "id": "cf8545ef-f8f9-4a97-888c-182f6719f357"
+                      },
+                      "title": "You Know, We Know",
+                      "number": "9",
+                      "position": 9,
+                      "length": 325000
+                    }
+                  ],
+                  "track-offset": 0
+                }
+              ],
+              "country": "XE",
+              "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a"
+            }
+          },
+          {
+            "category": "Compilation",
+            "release": {
+              "release-events": [
+                {
+                  "date": "1991-11-19",
+                  "area": {
+                    "name": "United States",
+                    "disambiguation": "",
+                    "type-id": null,
+                    "iso-3166-1-codes": [
+                      "US"
+                    ],
+                    "sort-name": "United States",
+                    "type": null,
+                    "id": "489ce91b-6658-3307-9877-795b68554c98"
+                  }
+                }
+              ],
+              "date": "1991-11-19",
+              "id": "0631f4a9-64b1-3309-a0b9-ad7855477e13",
+              "status": "Official",
+              "text-representation": {
+                "language": "eng",
+                "script": "Latn"
+              },
+              "label-info": [
+                {
+                  "label": {
+                    "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+                    "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+                    "label-code": 199,
+                    "name": "Epic",
+                    "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+                    "sort-name": "Epic",
+                    "type": "Imprint"
+                  },
+                  "catalog-number": "EPC 489319 2"
+                }
+              ],
+              "quality": "normal",
+              "country": "US",
+              "disambiguation": "",
+              "asin": "B0000062FB",
+              "barcode": "5099748931924",
+              "cover-art-archive": {
+                "artwork": true,
+                "count": 1,
+                "darkened": false,
+                "front": true,
+                "back": false
+              },
+              "media": [
+                {
+                  "position": 1,
+                  "format": "CD",
+                  "track-count": 25,
+                  "tracks": [
+                    {
+                      "title": "Trouble in Mind",
+                      "number": "1",
+                      "id": "3d0719ff-ba48-303b-92de-ff17bcd64028",
+                      "length": 138693,
+                      "position": 1,
+                      "recording": {
+                        "first-release-date": "1991-11-19",
+                        "video": false,
+                        "title": "Trouble in Mind",
+                        "disambiguation": "",
+                        "length": 138693,
+                        "id": "7bd4df94-9b58-4c60-8c81-85f1804810b3"
+                      }
+                    },
+                    {
+                      "recording": {
+                        "video": false,
+                        "title": "Nursery Rhyme (live)",
+                        "length": 350106,
+                        "disambiguation": "",
+                        "id": "630965b0-531b-442e-b24e-cb026b8bf3b4",
+                        "first-release-date": "1991-11-19"
+                      },
+                      "position": 2,
+                      "length": 350106,
+                      "id": "dc4b69f7-9dfe-3999-bb8c-3d2fd13051cb",
+                      "number": "2",
+                      "title": "Nursery Rhyme (live)"
+                    },
+                    {
+                      "id": "088f4457-179e-3068-8c18-c37d6c37807c",
+                      "number": "3",
+                      "length": 208626,
+                      "title": "Wandering Man Blues",
+                      "position": 3,
+                      "recording": {
+                        "title": "Wandering Man Blues",
+                        "video": false,
+                        "disambiguation": "",
+                        "length": 208626,
+                        "id": "6a681ece-2686-4690-a983-5e2c1f89a970",
+                        "first-release-date": "1991-11-19"
+                      }
+                    },
+                    {
+                      "position": 4,
+                      "recording": {
+                        "video": false,
+                        "title": "Steeled Blues",
+                        "disambiguation": "",
+                        "length": 159066,
+                        "id": "acb59975-ef9b-42b9-b4a0-f508da304582",
+                        "first-release-date": "1986"
+                      },
+                      "title": "Steeled Blues",
+                      "number": "4",
+                      "id": "7307d48d-3e7d-32dc-8b80-afef24e46117",
+                      "length": 159066
+                    },
+                    {
+                      "length": 149106,
+                      "number": "5",
+                      "id": "59b4dfff-b8a3-3d25-a848-cd4d4cd60310",
+                      "title": "Heart Full of Soul",
+                      "recording": {
+                        "title": "Heart Full of Soul",
+                        "video": false,
+                        "id": "f0cd9be0-eebf-4896-80a3-a7c6d0ac187d",
+                        "length": 149000,
+                        "disambiguation": "",
+                        "first-release-date": "1965-11-15"
+                      },
+                      "position": 5
+                    },
+                    {
+                      "position": 6,
+                      "recording": {
+                        "id": "c9ea404f-31e9-45cb-9a16-4e3aa77eafa8",
+                        "disambiguation": "",
+                        "length": 152733,
+                        "title": "I’m Not Talking",
+                        "video": false,
+                        "first-release-date": "1986"
+                      },
+                      "number": "6",
+                      "id": "cf202ab9-aa84-3c6f-b97b-a5767564cf1e",
+                      "length": 152626,
+                      "title": "I’m Not Talking"
+                    },
+                    {
+                      "recording": {
+                        "id": "4846ff49-af07-4810-aef3-70d9eba8a8ef",
+                        "length": 219333,
+                        "disambiguation": "",
+                        "title": "I Ain’t Done Wrong",
+                        "video": false,
+                        "first-release-date": "1986"
+                      },
+                      "position": 7,
+                      "title": "I Ain’t Done Wrong",
+                      "length": 219333,
+                      "id": "8da94895-4edd-3607-a504-22b1e9bc5936",
+                      "number": "7"
+                    },
+                    {
+                      "title": "The Train Kept A‐Rollin’",
+                      "length": 205106,
+                      "id": "3521e5d2-a56a-3105-b7fc-2e91569e96d9",
+                      "number": "8",
+                      "recording": {
+                        "first-release-date": "1965-11-15",
+                        "id": "92581805-9e3e-4ca7-9129-52d977b35b14",
+                        "length": 206426,
+                        "disambiguation": "",
+                        "video": false,
+                        "title": "The Train Kept a‐Rollin’"
+                      },
+                      "position": 8
+                    },
+                    {
+                      "position": 9,
+                      "recording": {
+                        "id": "ee27d516-ac9e-4b14-890c-7c5bde4d7784",
+                        "disambiguation": "",
+                        "length": 158053,
+                        "video": false,
+                        "title": "I’m a Man",
+                        "first-release-date": "1965-11-15"
+                      },
+                      "title": "I’m a Man",
+                      "number": "9",
+                      "id": "865dd7d8-84ee-39bc-9c49-03e3fbda3849",
+                      "length": 158226
+                    },
+                    {
+                      "title": "Shapes of Things",
+                      "number": "10",
+                      "id": "7930a778-f19a-34d3-9e5a-b638b27c4b88",
+                      "length": 145200,
+                      "position": 10,
+                      "recording": {
+                        "first-release-date": "1986",
+                        "title": "Shapes of Things",
+                        "video": false,
+                        "id": "71726130-82c1-4a82-93f1-188b36aa4acf",
+                        "disambiguation": "",
+                        "length": 146493
+                      }
+                    },
+                    {
+                      "recording": {
+                        "first-release-date": "1966-08",
+                        "title": "Over, Under, Sideways, Down",
+                        "video": false,
+                        "disambiguation": "",
+                        "length": 143226,
+                        "id": "d1c39d4e-aacb-43d4-869c-03fe6c09691d"
+                      },
+                      "position": 11,
+                      "title": "Over Under Sideways Down",
+                      "length": 142466,
+                      "number": "11",
+                      "id": "511042f2-4ad7-3782-b234-7ea491a58b3f"
+                    },
+                    {
+                      "recording": {
+                        "id": "46efa4eb-32d1-41af-a8d8-934db69336a6",
+                        "disambiguation": "",
+                        "length": 175760,
+                        "title": "Happenings Ten Years Time Ago",
+                        "video": false,
+                        "first-release-date": "1983"
+                      },
+                      "position": 12,
+                      "length": 175306,
+                      "number": "12",
+                      "id": "af717a96-601a-313c-b0da-5d836acf7a31",
+                      "title": "Happenings Ten Years Time Ago"
+                    },
+                    {
+                      "recording": {
+                        "first-release-date": "1991-11-19",
+                        "length": 160733,
+                        "disambiguation": "",
+                        "id": "b190dc7c-981d-4f18-9997-dcf999506e5c",
+                        "title": "Hot House of Omagarashid",
+                        "video": false
+                      },
+                      "position": 13,
+                      "length": 160733,
+                      "id": "d6374df4-e30c-3fca-8e28-9208cc8e8815",
+                      "number": "13",
+                      "title": "Hot House of Omagarashid"
+                    },
+                    {
+                      "length": 188893,
+                      "id": "45112756-532f-3e93-a41b-387dfcb710e4",
+                      "number": "14",
+                      "title": "Lost Woman",
+                      "recording": {
+                        "first-release-date": "1991-11-19",
+                        "video": false,
+                        "title": "Lost Woman",
+                        "length": 188893,
+                        "disambiguation": "",
+                        "id": "56d17dfd-5382-4ba6-8e63-de54f81d585a"
+                      },
+                      "position": 14
+                    },
+                    {
+                      "id": "d446bf84-c3c8-3e69-a73b-3a91be9e89d2",
+                      "number": "15",
+                      "length": 193040,
+                      "title": "Rack My Mind",
+                      "position": 15,
+                      "recording": {
+                        "title": "Rack My Mind",
+                        "video": false,
+                        "id": "5fc716d2-2e53-4b5e-9dc8-ff4e8c13d20a",
+                        "length": 194026,
+                        "disambiguation": "",
+                        "first-release-date": "1966-08"
+                      }
+                    },
+                    {
+                      "recording": {
+                        "video": false,
+                        "title": "The Nazz Are Blue",
+                        "id": "9544a51b-08ab-4bb9-a083-74bf9e25a805",
+                        "length": 183000,
+                        "disambiguation": "",
+                        "first-release-date": "1966-08"
+                      },
+                      "position": 16,
+                      "title": "The Nazz Are Blue",
+                      "length": 182466,
+                      "id": "ec1366cf-20f8-3b48-83ee-6c261701d023",
+                      "number": "16"
+                    },
+                    {
+                      "recording": {
+                        "first-release-date": "1966",
+                        "video": false,
+                        "title": "Psycho Daisies (mono)",
+                        "length": 109000,
+                        "disambiguation": "",
+                        "id": "ccdfdc61-85be-434f-bc97-bf8c667d77a5"
+                      },
+                      "position": 17,
+                      "length": 108600,
+                      "id": "163ae080-ba86-371f-b465-56d0c874d866",
+                      "number": "17",
+                      "title": "Psycho Daisies"
+                    },
+                    {
+                      "title": "Jeff’s Boogie",
+                      "id": "30d29734-c0b2-363b-baeb-f76e5a7f1c83",
+                      "number": "18",
+                      "length": 143733,
+                      "position": 18,
+                      "recording": {
+                        "length": 144000,
+                        "disambiguation": "",
+                        "id": "bc6cf7a6-0f47-4ab3-b338-655643a91e25",
+                        "video": false,
+                        "title": "Jeff’s Boogie",
+                        "first-release-date": "1966-08"
+                      }
+                    },
+                    {
+                      "number": "19",
+                      "id": "123de140-081a-3f7d-b1d8-634c3aec86f2",
+                      "length": 150160,
+                      "title": "Too Much Monkey Business (live)",
+                      "position": 19,
+                      "recording": {
+                        "first-release-date": "1991-11-19",
+                        "title": "Too Much Monkey Business (live)",
+                        "video": false,
+                        "id": "d47c191b-6ee5-4379-ae12-dbb524de3f7c",
+                        "disambiguation": "",
+                        "length": 150160
+                      }
+                    },
+                    {
+                      "position": 20,
+                      "recording": {
+                        "title": "The Sun Is Shining (live)",
+                        "video": false,
+                        "id": "a32fffb0-968f-45fc-869e-0ba5fa7fb8fa",
+                        "length": 163240,
+                        "disambiguation": "",
+                        "first-release-date": "1991-11-19"
+                      },
+                      "id": "f4be1e25-f4e3-34b7-bb56-70c6e8a5c75f",
+                      "number": "20",
+                      "length": 163240,
+                      "title": "The Sun Is Shining (live)"
+                    },
+                    {
+                      "recording": {
+                        "id": "a39f5a0b-b51a-4307-a418-42bca2de8e68",
+                        "length": 237360,
+                        "disambiguation": "",
+                        "title": "You’re a Better Man Than I (live)",
+                        "video": false,
+                        "first-release-date": "1991-11-19"
+                      },
+                      "position": 21,
+                      "title": "You’re a Better Man Than I (live)",
+                      "length": 237360,
+                      "number": "21",
+                      "id": "2a0af47d-6bcf-323c-9e56-5f0309fca115"
+                    },
+                    {
+                      "title": "Love Me Like I Love You (live)",
+                      "id": "79758223-7205-3ef0-885c-e06b215d886d",
+                      "number": "22",
+                      "length": 171333,
+                      "position": 22,
+                      "recording": {
+                        "first-release-date": "1991-11-19",
+                        "video": false,
+                        "title": "Love Me Like I Love You (live)",
+                        "disambiguation": "",
+                        "length": 171333,
+                        "id": "9816fe51-2cf3-4e65-832f-b772bb960df0"
+                      }
+                    },
+                    {
+                      "title": "Hi Ho Silver Lining",
+                      "number": "23",
+                      "id": "abe88cd2-c0e9-3b73-9a78-4f6e4b792252",
+                      "length": 173106,
+                      "position": 23,
+                      "recording": {
+                        "video": false,
+                        "title": "Hi‐Ho Silver Lining",
+                        "id": "634d6612-71f4-4198-b6f8-caf3be3607e6",
+                        "length": 173000,
+                        "disambiguation": "",
+                        "first-release-date": "1967"
+                      }
+                    },
+                    {
+                      "title": "Tally Man",
+                      "length": 166000,
+                      "id": "2e1022f1-0916-3dac-a95b-213998359ffb",
+                      "number": "24",
+                      "recording": {
+                        "first-release-date": "1967",
+                        "video": false,
+                        "title": "Tallyman",
+                        "length": 166000,
+                        "disambiguation": "",
+                        "id": "a390582f-36b0-47e3-bd3b-ca96272451a7"
+                      },
+                      "position": 24
+                    },
+                    {
+                      "number": "25",
+                      "id": "65a1def8-bd3d-3764-a9cc-35c7a0881317",
+                      "length": 171333,
+                      "title": "Beck’s Bolero",
+                      "position": 25,
+                      "recording": {
+                        "video": false,
+                        "title": "Beck’s Bolero",
+                        "length": 173893,
+                        "disambiguation": "",
+                        "id": "01ea290e-875a-4cb5-814e-d2f871ae243d",
+                        "first-release-date": "1967"
+                      }
+                    }
+                  ],
+                  "id": "cfbbb9bb-828a-304d-baa7-ed38f9248f4e",
+                  "title": "",
+                  "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+                  "track-offset": 0
+                },
+                {
+                  "position": 2,
+                  "track-count": 14,
+                  "format": "CD",
+                  "title": "",
+                  "id": "9b3fac38-5645-3a0f-b95b-ea5f045da319",
+                  "tracks": [
+                    {
+                      "length": 199800,
+                      "id": "9754736b-0ce9-31ba-a1f6-ca6c23377c50",
+                      "number": "1",
+                      "title": "Shapes of Things",
+                      "recording": {
+                        "first-release-date": "1968-07-29",
+                        "id": "74a81142-71f8-4770-921b-211b5bc78249",
+                        "disambiguation": "",
+                        "length": 199800,
+                        "title": "Shapes of Things",
+                        "video": false
+                      },
+                      "position": 1
+                    },
+                    {
+                      "recording": {
+                        "first-release-date": "1968-07-29",
+                        "length": 294000,
+                        "disambiguation": "",
+                        "id": "f5ea6690-56a5-4e94-b965-6ed6fad92dc6",
+                        "title": "I Ain’t Superstitious",
+                        "video": false
+                      },
+                      "position": 2,
+                      "length": 294066,
+                      "number": "2",
+                      "id": "d5416cac-3b7e-32b4-a25e-122f912e53d4",
+                      "title": "I Ain’t Superstitious"
+                    },
+                    {
+                      "recording": {
+                        "title": "Rock My Plimsoul",
+                        "video": false,
+                        "length": 220733,
+                        "disambiguation": "",
+                        "id": "b48d1b83-2513-4b60-82d2-464885a896b0",
+                        "first-release-date": "1967"
+                      },
+                      "position": 3,
+                      "title": "Rock My Plimsoul",
+                      "length": 220733,
+                      "id": "e7f33497-78f3-3e1c-83fc-e44470dae261",
+                      "number": "3"
+                    },
+                    {
+                      "title": "Jailhouse Rock",
+                      "length": 193293,
+                      "id": "bf1ddbdc-4da0-3bb7-8672-b8e1ee77e6d7",
+                      "number": "4",
+                      "recording": {
+                        "id": "95ea6038-7199-4102-a0fe-661de190d79d",
+                        "disambiguation": "",
+                        "length": 194533,
+                        "video": false,
+                        "title": "Jailhouse Rock",
+                        "first-release-date": "1969-06"
+                      },
+                      "position": 4
+                    },
+                    {
+                      "position": 5,
+                      "recording": {
+                        "first-release-date": "1969-06",
+                        "title": "Plynth (Water Down the Drain)",
+                        "video": false,
+                        "disambiguation": "",
+                        "length": 187000,
+                        "id": "577dbb3c-3c75-4221-a7b0-19fb179e058d"
+                      },
+                      "id": "b1b48d62-3d0f-3d04-93ee-5ea671c42792",
+                      "number": "5",
+                      "length": 185733,
+                      "title": "Plynth (Water Down the Drain)"
+                    },
+                    {
+                      "title": "I’ve Been Drinking",
+                      "length": 199440,
+                      "id": "ded52904-7a40-329f-ac88-d0cb527db847",
+                      "number": "6",
+                      "recording": {
+                        "id": "bb79980b-a2ed-4ff6-bf13-24201fbe4386",
+                        "disambiguation": "",
+                        "length": 198853,
+                        "title": "I’ve Been Drinking",
+                        "video": false,
+                        "first-release-date": "1968"
+                      },
+                      "position": 6
+                    },
+                    {
+                      "recording": {
+                        "first-release-date": "1972-05-01",
+                        "title": "Definitely Maybe",
+                        "video": false,
+                        "id": "c4467cea-4e56-4da5-a63e-db460262533f",
+                        "length": 302266,
+                        "disambiguation": ""
+                      },
+                      "position": 7,
+                      "title": "Definitely Maybe",
+                      "length": 303093,
+                      "number": "7",
+                      "id": "7c358ec9-735b-3a69-8062-c0fa5dc918a5"
+                    },
+                    {
+                      "title": "New Ways Train Train",
+                      "number": "8",
+                      "id": "37061c6c-616e-3eb1-b35d-37d84cc1bee0",
+                      "length": 351800,
+                      "position": 8,
+                      "recording": {
+                        "first-release-date": "1971-10-25",
+                        "disambiguation": "",
+                        "length": 352533,
+                        "id": "90a82791-1057-4637-8327-4c5ed136c41f",
+                        "title": "New Ways Train Train",
+                        "video": false
+                      }
+                    },
+                    {
+                      "recording": {
+                        "first-release-date": "1972-05-01",
+                        "title": "Going Down",
+                        "video": false,
+                        "disambiguation": "",
+                        "length": 411040,
+                        "id": "b93eef48-6633-4060-a781-2fb905c80c36"
+                      },
+                      "position": 9,
+                      "title": "Going Down",
+                      "length": 408906,
+                      "id": "4099637e-9d9f-3870-bb39-2f78db9d79dd",
+                      "number": "9"
+                    },
+                    {
+                      "recording": {
+                        "first-release-date": "1972-05-01",
+                        "title": "I Can’t Give Back the Love I Feel for You",
+                        "video": false,
+                        "id": "0aefba31-d3b0-429f-b9ec-df927d904445",
+                        "disambiguation": "",
+                        "length": 162866
+                      },
+                      "position": 10,
+                      "length": 162866,
+                      "id": "a9ac41ec-416f-3dd3-829c-08d001899a24",
+                      "number": "10",
+                      "title": "I Can’t Give Back the Love I Feel for You"
+                    },
+                    {
+                      "recording": {
+                        "id": "bf9f3fe9-fae6-4e77-b030-da1b0eba0c42",
+                        "length": 259000,
+                        "disambiguation": "",
+                        "video": false,
+                        "title": "Superstition",
+                        "first-release-date": "1973"
+                      },
+                      "position": 11,
+                      "title": "Superstition",
+                      "length": 259066,
+                      "number": "11",
+                      "id": "1c0c48a9-c8e9-358d-9366-b708af34f103"
+                    },
+                    {
+                      "title": "Black Cat Moan (live)",
+                      "length": 557360,
+                      "number": "12",
+                      "id": "f0b704b2-d8e0-3619-9927-426ef4514a8c",
+                      "recording": {
+                        "first-release-date": "1991-11-19",
+                        "disambiguation": "",
+                        "length": 557360,
+                        "id": "c4907592-91ab-4de3-b999-5b06506d2e18",
+                        "title": "Black Cat Moan (live)",
+                        "video": false
+                      },
+                      "position": 12
+                    },
+                    {
+                      "recording": {
+                        "id": "238c65e9-710f-41c3-9d15-935ccb6a351d",
+                        "length": 1002533,
+                        "disambiguation": "",
+                        "video": false,
+                        "title": "Blues Deluxe / BBA Boogie (live)",
+                        "first-release-date": "1991-11-19"
+                      },
+                      "position": 13,
+                      "title": "Blues Deluxe / BBA Boogie (live)",
+                      "length": 1002533,
+                      "number": "13",
+                      "id": "c5bae0f6-2f93-3a75-866a-f5b697299903"
+                    },
+                    {
+                      "recording": {
+                        "title": "Jizz Whizz",
+                        "video": false,
+                        "id": "7752d7a2-5f57-41f3-ad3e-ad9465c97b6c",
+                        "disambiguation": "",
+                        "length": 264640,
+                        "first-release-date": "1991-11-19"
+                      },
+                      "position": 14,
+                      "title": "Jizz Whizz",
+                      "length": 264640,
+                      "number": "14",
+                      "id": "791df9af-1381-35cd-87b6-f49a18b1837b"
+                    }
+                  ],
+                  "track-offset": 0,
+                  "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+                },
+                {
+                  "position": 3,
+                  "format": "CD",
+                  "track-count": 16,
+                  "title": "",
+                  "tracks": [
+                    {
+                      "recording": {
+                        "disambiguation": "",
+                        "length": 342333,
+                        "id": "a8656997-a083-4c68-ae67-f63742438b98",
+                        "title": "Cause We’ve Ended as Lovers",
+                        "video": false,
+                        "first-release-date": "1975-03"
+                      },
+                      "position": 1,
+                      "title": "Cause We’ve Ended as Lovers",
+                      "length": 343400,
+                      "number": "1",
+                      "id": "9704aa8e-7d9c-3d42-b318-d7f6e10adf75"
+                    },
+                    {
+                      "title": "Goodbye Pork Pie Hat",
+                      "id": "0be4887c-dc16-35f0-a195-7000c5debfb4",
+                      "number": "2",
+                      "length": 327200,
+                      "position": 2,
+                      "recording": {
+                        "video": false,
+                        "title": "Goodbye Pork Pie Hat",
+                        "id": "747fb10d-070a-4468-8bb6-58304bed9ee3",
+                        "disambiguation": "",
+                        "length": 330666,
+                        "first-release-date": "1976-05"
+                      }
+                    },
+                    {
+                      "recording": {
+                        "first-release-date": "1976-05",
+                        "disambiguation": "",
+                        "length": 150773,
+                        "id": "5b309417-6ec7-4fd7-8a6c-9e4ad9f0489b",
+                        "title": "Love Is Green",
+                        "video": false
+                      },
+                      "position": 3,
+                      "title": "Love Is Green",
+                      "length": 150200,
+                      "id": "68235eaf-ea93-3cb1-8796-24412dd8a7fc",
+                      "number": "3"
+                    },
+                    {
+                      "recording": {
+                        "first-release-date": "1975-03",
+                        "title": "Diamond Dust",
+                        "video": false,
+                        "id": "e1fdba3a-8dd6-48b3-9500-fe1b4c72b57b",
+                        "disambiguation": "",
+                        "length": 505600
+                      },
+                      "position": 4,
+                      "length": 502160,
+                      "number": "4",
+                      "id": "a6428f2e-6c9a-37df-b5e5-b975ce83d34a",
+                      "title": "Diamond Dust"
+                    },
+                    {
+                      "position": 5,
+                      "recording": {
+                        "video": false,
+                        "title": "Freeway Jam (live)",
+                        "length": 444106,
+                        "disambiguation": "",
+                        "id": "8e0287a3-61dc-4ca5-a7f1-7ae8758b4d02",
+                        "first-release-date": "1991-11-19"
+                      },
+                      "number": "5",
+                      "id": "5aaa6f7f-1317-33d9-a54d-295b8db20a2a",
+                      "length": 444106,
+                      "title": "Freeway Jam (live)"
+                    },
+                    {
+                      "position": 6,
+                      "recording": {
+                        "video": false,
+                        "title": "The Pump",
+                        "length": 350000,
+                        "disambiguation": "",
+                        "id": "7243003f-4fc1-4d48-b937-443fa4418c2f",
+                        "first-release-date": "1980-07"
+                      },
+                      "title": "The Pump",
+                      "id": "132a5de0-72c9-39ab-9d88-f159bb37daa5",
+                      "number": "6",
+                      "length": 348293
+                    },
+                    {
+                      "recording": {
+                        "first-release-date": "1985-07",
+                        "video": false,
+                        "title": "People Get Ready",
+                        "id": "32c1be1d-f5b3-4faa-a72b-4db1b33128e4",
+                        "disambiguation": "",
+                        "length": 294866
+                      },
+                      "position": 7,
+                      "length": 296040,
+                      "id": "a4ca64e0-e2d0-3956-98ff-ef0dcf2b1464",
+                      "number": "7",
+                      "title": "People Get Ready"
+                    },
+                    {
+                      "title": "Escape",
+                      "id": "175c798f-ed30-3d0f-9ef0-1db9d83e8ad7",
+                      "number": "8",
+                      "length": 279426,
+                      "position": 8,
+                      "recording": {
+                        "first-release-date": "1985-07",
+                        "title": "Escape",
+                        "video": false,
+                        "id": "5708a93a-c3e0-48e5-a2a9-fba319f4d8c7",
+                        "disambiguation": "",
+                        "length": 279426
+                      }
+                    },
+                    {
+                      "length": 365600,
+                      "number": "9",
+                      "id": "64e837ad-b546-3c93-8691-09bbec66a0d9",
+                      "title": "Gets Us All in the End",
+                      "recording": {
+                        "video": false,
+                        "title": "Gets Us All in the End",
+                        "id": "279073d7-3e9c-4d2b-9f3a-35cac1767a2d",
+                        "length": 365600,
+                        "disambiguation": "",
+                        "first-release-date": "1986"
+                      },
+                      "position": 9
+                    },
+                    {
+                      "recording": {
+                        "video": false,
+                        "title": "Back on the Streets",
+                        "id": "5f11f67d-e7f2-4d2d-9a50-68ae7d5952a6",
+                        "disambiguation": "",
+                        "length": 222000,
+                        "first-release-date": "1985"
+                      },
+                      "position": 10,
+                      "title": "Back on the Street",
+                      "length": 222200,
+                      "number": "10",
+                      "id": "aabe9d07-8052-3ffe-8bbe-a457d80ff49a"
+                    },
+                    {
+                      "recording": {
+                        "first-release-date": "1986",
+                        "title": "Wild Thing",
+                        "video": false,
+                        "id": "57f689a5-2eca-49f4-b62e-7fc26ff07011",
+                        "disambiguation": "",
+                        "length": 253906
+                      },
+                      "position": 11,
+                      "length": 253906,
+                      "number": "11",
+                      "id": "409f04f7-d340-3611-a2ce-2598d3f3bc26",
+                      "title": "Wild Thing"
+                    },
+                    {
+                      "position": 12,
+                      "recording": {
+                        "id": "dd95e571-6466-4407-8e24-784405733c2e",
+                        "length": 239226,
+                        "disambiguation": "",
+                        "title": "The Train Kept A‐Rollin’",
+                        "video": false,
+                        "first-release-date": "1991-11-19"
+                      },
+                      "title": "The Train Kept A‐Rollin’",
+                      "id": "b149cb6f-d0c3-3498-9a60-f7e22d4901ec",
+                      "number": "12",
+                      "length": 239226
+                    },
+                    {
+                      "position": 13,
+                      "recording": {
+                        "length": 138200,
+                        "disambiguation": "",
+                        "id": "cfd1a66d-48cb-477a-ab47-aa5d3a7d0276",
+                        "title": "Sleepwalk",
+                        "video": false,
+                        "first-release-date": "1985"
+                      },
+                      "id": "10dfd609-f88e-319a-8126-697d59bcb265",
+                      "number": "13",
+                      "length": 138200,
+                      "title": "Sleep Walk"
+                    },
+                    {
+                      "recording": {
+                        "first-release-date": "1989",
+                        "title": "The Stumble",
+                        "video": false,
+                        "length": 182600,
+                        "disambiguation": "",
+                        "id": "dc83310e-0927-447d-86a9-e00998a4f037"
+                      },
+                      "position": 14,
+                      "title": "The Stumble",
+                      "length": 182600,
+                      "id": "22c4077f-9e71-3ea2-9241-a3cb3ce4c302",
+                      "number": "14"
+                    },
+                    {
+                      "title": "Big Block",
+                      "length": 249733,
+                      "id": "5866f007-85b7-31d0-aff1-9fa51e34d456",
+                      "number": "15",
+                      "recording": {
+                        "first-release-date": "1989-10",
+                        "video": false,
+                        "title": "Big Block",
+                        "disambiguation": "",
+                        "length": 249733,
+                        "id": "be0d8fe5-6b95-404d-abb9-0964fb0ac2ca"
+                      },
+                      "position": 15
+                    },
+                    {
+                      "position": 16,
+                      "recording": {
+                        "first-release-date": "1989-10",
+                        "id": "eed07c8b-92cc-4058-b20a-bba9582e5fd8",
+                        "length": 196400,
+                        "disambiguation": "",
+                        "video": false,
+                        "title": "Where Were You"
+                      },
+                      "title": "Where Were You",
+                      "id": "42ad1ff5-d7e7-3b85-a8ad-5fda42149567",
+                      "number": "16",
+                      "length": 196200
+                    }
+                  ],
+                  "id": "f9c44257-9c6c-3add-97c0-32bd85dbcfbe",
+                  "track-offset": 0,
+                  "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+                }
+              ],
+              "title": "Beckology",
+              "packaging": null,
+              "packaging-id": null,
+              "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+            }
+          },
+          {
+            "category": "Live",
+            "release": {
+              "date": "1989-11-22",
+              "id": "3a2b6c19-fcb1-4b99-8e5a-479fc3322931",
+              "quality": "normal",
+              "label-info": [
+                {
+                  "catalog-number": "ESCA 5069",
+                  "label": {
+                    "type": "Imprint",
+                    "sort-name": "Epic",
+                    "label-code": 199,
+                    "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+                    "name": "Epic",
+                    "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+                    "disambiguation": "US label founded by CBS in 1953, now owned by Sony"
+                  }
+                }
+              ],
+              "packaging-id": null,
+              "asin": null,
+              "barcode": "4988010506926",
+              "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+              "disambiguation": "",
+              "media": [
+                {
+                  "format": "CD",
+                  "track-offset": 0,
+                  "track-count": 7,
+                  "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+                  "id": "c37daf2b-49d0-3edd-a474-470e578fcdfe",
+                  "position": 1,
+                  "tracks": [
+                    {
+                      "recording": {
+                        "first-release-date": "1977-03",
+                        "title": "Freeway Jam",
+                        "video": false,
+                        "disambiguation": "",
+                        "id": "b9d78daf-d13d-4c31-a44c-d48391bd69bb",
+                        "length": 444000
+                      },
+                      "title": "Freeway Jam",
+                      "position": 1,
+                      "length": 441000,
+                      "id": "93bf4bef-524b-401c-9187-59769e4e6d0f",
+                      "number": "1"
+                    },
+                    {
+                      "number": "2",
+                      "id": "14ecc3b2-8585-457d-a149-dd98c392567c",
+                      "length": 274000,
+                      "position": 2,
+                      "title": "Earth (Still Our Only Home)",
+                      "recording": {
+                        "title": "Earth (Still Our Only Home)",
+                        "first-release-date": "1977-03",
+                        "video": false,
+                        "disambiguation": "",
+                        "length": 276400,
+                        "id": "6f3307f0-7db3-4297-82f7-19ddd6e7974d"
+                      }
+                    },
+                    {
+                      "recording": {
+                        "id": "03d1eab3-8bd7-4cfe-b9d2-b4eeb047a4b8",
+                        "length": 266493,
+                        "disambiguation": "",
+                        "video": false,
+                        "title": "She’s a Woman",
+                        "first-release-date": "1977-03"
+                      },
+                      "position": 3,
+                      "title": "She’s a Woman",
+                      "length": 265000,
+                      "number": "3",
+                      "id": "5c5aca5c-b3f9-48d2-8f25-547fd2553f2a"
+                    },
+                    {
+                      "id": "6ebd42e4-19e4-42d6-8a61-c5d6e8d45c66",
+                      "number": "4",
+                      "length": 367000,
+                      "title": "Full Moon Boogie",
+                      "position": 4,
+                      "recording": {
+                        "disambiguation": "",
+                        "id": "2b262cb2-9dba-4665-9421-3ff5adbd5dbd",
+                        "length": 368933,
+                        "title": "Full Moon Boogie",
+                        "first-release-date": "1977-03",
+                        "video": false
+                      }
+                    },
+                    {
+                      "recording": {
+                        "video": false,
+                        "title": "Darkness/Earth in Search of a Sun",
+                        "first-release-date": "1977-03",
+                        "length": 473133,
+                        "id": "d5df6a2c-6b1d-4573-8512-ff697f0270f3",
+                        "disambiguation": ""
+                      },
+                      "position": 5,
+                      "title": "Darkness / Earth in Search of a Sun",
+                      "length": 472000,
+                      "id": "2bfa7c2e-99c2-4ec7-aceb-bdfd5ac6c4a2",
+                      "number": "5"
+                    },
+                    {
+                      "number": "6",
+                      "id": "0cc5518e-962a-42b7-bcf5-1808c4b988c5",
+                      "length": 446000,
+                      "position": 6,
+                      "title": "Scatterbrain",
+                      "recording": {
+                        "length": 447040,
+                        "id": "74e469be-a1a5-4863-8c4d-ca1d9c715127",
+                        "disambiguation": "",
+                        "video": false,
+                        "title": "Scatterbrain",
+                        "first-release-date": "1977-03"
+                      }
+                    },
+                    {
+                      "recording": {
+                        "title": "Blue Wind",
+                        "first-release-date": "1977-03",
+                        "video": false,
+                        "disambiguation": "",
+                        "length": 395000,
+                        "id": "fe50fb68-818d-4c35-b85e-03db0e12a876"
+                      },
+                      "position": 7,
+                      "title": "Blue Wind",
+                      "length": 380000,
+                      "id": "efd7b312-06b9-4f49-ab97-f7e1d2023358",
+                      "number": "7"
+                    }
+                  ],
+                  "title": ""
+                }
+              ],
+              "status": "Official",
+              "text-representation": {
+                "script": "Latn",
+                "language": "eng"
+              },
+              "cover-art-archive": {
+                "count": 2,
+                "back": false,
+                "front": true,
+                "artwork": true,
+                "darkened": false
+              },
+              "title": "Live",
+              "release-events": [
+                {
+                  "date": "1989-11-22",
+                  "area": {
+                    "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                    "name": "Japan",
+                    "type-id": null,
+                    "disambiguation": "",
+                    "type": null,
+                    "iso-3166-1-codes": [
+                      "JP"
+                    ],
+                    "sort-name": "Japan"
+                  }
+                }
+              ],
+              "country": "JP",
+              "packaging": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "Miles Davis",
+        "artist_id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+        "release_count": 1971,
+        "first_page_count": 100,
+        "official_albums": 55,
+        "samples": [
+          {
+            "category": "Studio",
+            "release": {
+              "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+              "title": "Milestones",
+              "barcode": null,
+              "disambiguation": "",
+              "media": [
+                {
+                  "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+                  "track-count": 6,
+                  "id": "38a2371e-b0ca-37fd-a085-faf4fcd93a10",
+                  "position": 1,
+                  "title": "",
+                  "track-offset": 0,
+                  "format": "12\" Vinyl",
+                  "tracks": [
+                    {
+                      "title": "Dr. Jackle",
+                      "length": 353200,
+                      "id": "3bef3180-4494-3ac4-bad7-bebcf3bb4acf",
+                      "position": 1,
+                      "number": "1",
+                      "recording": {
+                        "title": "Dr. Jackle",
+                        "length": 349933,
+                        "video": false,
+                        "disambiguation": "original studio mix - CO60203-2",
+                        "id": "5f84dd67-74c3-4d4f-852c-8749f8006f55",
+                        "first-release-date": "1958"
+                      }
+                    },
+                    {
+                      "title": "Sid’s Ahead",
+                      "length": 785346,
+                      "id": "0fc5a154-149a-3908-a589-2f680255595e",
+                      "position": 2,
+                      "recording": {
+                        "id": "a2463ab2-c7c4-47b0-b532-61d77e6a1ab3",
+                        "first-release-date": "1958",
+                        "title": "Sid’s Ahead",
+                        "disambiguation": "original studio mix - CO60204-1",
+                        "length": 782133,
+                        "video": false
+                      },
+                      "number": "2"
+                    },
+                    {
+                      "id": "55b39cea-8af9-32cd-b09b-ab70573c4fa1",
+                      "position": 3,
+                      "title": "Two Bass Hit",
+                      "length": 319106,
+                      "recording": {
+                        "id": "05a4dfe7-8c30-4294-9f00-89b48dc04d2a",
+                        "first-release-date": "1958",
+                        "title": "Two Bass Hit",
+                        "disambiguation": "original studio mix - CO60199-2",
+                        "length": 315000,
+                        "video": false
+                      },
+                      "number": "3"
+                    },
+                    {
+                      "length": 347320,
+                      "title": "Milestones",
+                      "position": 4,
+                      "id": "1399f5c3-6391-3026-8919-85a170cd2fe2",
+                      "recording": {
+                        "id": "ae4f577f-e861-4acb-94ab-dd158c7d9bc8",
+                        "first-release-date": "1958",
+                        "title": "Milestones",
+                        "disambiguation": "original studio mix – CO60202–3",
+                        "length": 344866,
+                        "video": false
+                      },
+                      "number": "4"
+                    },
+                    {
+                      "id": "f6be5129-73a5-3b7e-b8f1-8560f342588b",
+                      "position": 5,
+                      "title": "Billy Boy",
+                      "length": 439946,
+                      "number": "5",
+                      "recording": {
+                        "video": false,
+                        "length": 435000,
+                        "disambiguation": "original studio master",
+                        "title": "Billy Boy",
+                        "first-release-date": "1958",
+                        "id": "9f008f95-e3a0-45f1-827a-f782d39f4468"
+                      }
+                    },
+                    {
+                      "number": "6",
+                      "recording": {
+                        "title": "Straight, No Chaser",
+                        "disambiguation": "original studio mix - CO60201-2",
+                        "length": 640066,
+                        "video": false,
+                        "id": "e93b55ee-f0f0-4391-aad6-0c6a4fefc002",
+                        "first-release-date": "1958"
+                      },
+                      "position": 6,
+                      "id": "41b4d8ca-0d85-3f3a-b620-901c03e5d111",
+                      "length": 642573,
+                      "title": "Straight, No Chaser"
+                    }
+                  ]
+                }
+              ],
+              "label-info": [
+                {
+                  "catalog-number": "CL 1193",
+                  "label": {
+                    "name": "Columbia",
+                    "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX",
+                    "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+                    "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+                    "sort-name": "Columbia",
+                    "type": "Imprint",
+                    "label-code": 162
+                  }
+                }
+              ],
+              "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+              "packaging": "Cardboard/Paper Sleeve",
+              "release-events": [
+                {
+                  "area": {
+                    "iso-3166-1-codes": [
+                      "US"
+                    ],
+                    "sort-name": "United States",
+                    "type": null,
+                    "type-id": null,
+                    "id": "489ce91b-6658-3307-9877-795b68554c98",
+                    "disambiguation": "",
+                    "name": "United States"
+                  },
+                  "date": "1958"
+                }
+              ],
+              "id": "0c21218a-04cc-4135-a445-1d0dbef08ddb",
+              "quality": "normal",
+              "cover-art-archive": {
+                "artwork": true,
+                "count": 1,
+                "front": true,
+                "darkened": false,
+                "back": false
+              },
+              "country": "US",
+              "date": "1958",
+              "asin": "B0000576ZE",
+              "status": "Official",
+              "text-representation": {
+                "script": "Latn",
+                "language": "eng"
+              }
+            }
+          },
+          {
+            "category": "Compilation",
+            "release": {
+              "label-info": [
+                {
+                  "catalog-number": "PRLP-7013",
+                  "label": {
+                    "id": "11847c89-4b2c-4866-84c3-f72e264c0f66",
+                    "sort-name": "Prestige",
+                    "type": "Original Production",
+                    "label-code": 313,
+                    "type-id": "7aaa37fe-2def-3476-b359-80245850062d",
+                    "disambiguation": "American jazz label",
+                    "name": "Prestige"
+                  }
+                }
+              ],
+              "text-representation": {
+                "script": "Latn",
+                "language": "eng"
+              },
+              "status": "Official",
+              "id": "2c6f3c86-0df2-4033-b709-4b4dbaacc120",
+              "date": "1956",
+              "release-events": [
+                {
+                  "date": "1956",
+                  "area": {
+                    "sort-name": "United States",
+                    "type": null,
+                    "id": "489ce91b-6658-3307-9877-795b68554c98",
+                    "name": "United States",
+                    "disambiguation": "",
+                    "iso-3166-1-codes": [
+                      "US"
+                    ],
+                    "type-id": null
+                  }
+                }
+              ],
+              "asin": null,
+              "barcode": null,
+              "disambiguation": "",
+              "country": "US",
+              "quality": "normal",
+              "media": [
+                {
+                  "track-offset": 0,
+                  "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+                  "position": 1,
+                  "format": "12\" Vinyl",
+                  "track-count": 12,
+                  "title": "",
+                  "tracks": [
+                    {
+                      "recording": {
+                        "first-release-date": "1956",
+                        "video": false,
+                        "title": "Odjenar",
+                        "id": "bef88252-7ed5-439e-947a-be6ceba79247",
+                        "length": 172466,
+                        "disambiguation": ""
+                      },
+                      "position": 1,
+                      "title": "Odjenar",
+                      "length": 172986,
+                      "id": "a16d5de2-3a64-4d94-b3f1-c52205a24f5a",
+                      "number": "A1"
+                    },
+                    {
+                      "title": "Hibeck",
+                      "length": 186640,
+                      "id": "74038d49-9d0c-4ce1-a33b-f2232e7794ad",
+                      "number": "A2",
+                      "recording": {
+                        "title": "Hibeck",
+                        "video": false,
+                        "length": 186360,
+                        "disambiguation": "",
+                        "id": "922ec689-e0c4-4fe9-869b-9751378fa77e",
+                        "first-release-date": "1956"
+                      },
+                      "position": 2
+                    },
+                    {
+                      "position": 3,
+                      "recording": {
+                        "first-release-date": "1951",
+                        "title": "Yesterdays",
+                        "video": false,
+                        "disambiguation": "",
+                        "length": 146973,
+                        "id": "691246a9-ae68-4cda-b2bc-22a7f78728b6"
+                      },
+                      "number": "A3",
+                      "id": "137cc83d-6dd9-4337-92b4-c548f3215300",
+                      "length": 146973,
+                      "title": "Yesterdays"
+                    },
+                    {
+                      "title": "Ezz-Thetic",
+                      "id": "627617af-aae4-447b-8b72-e55f6a1f9244",
+                      "number": "A4",
+                      "length": 173640,
+                      "position": 4,
+                      "recording": {
+                        "title": "Ezz-Thetic",
+                        "video": false,
+                        "id": "4e9a4800-aedf-434f-ba41-e96d08029587",
+                        "length": 173270,
+                        "disambiguation": "",
+                        "first-release-date": "1956"
+                      }
+                    },
+                    {
+                      "recording": {
+                        "id": "16879143-6749-422a-8c75-07e802d8be02",
+                        "length": 153666,
+                        "disambiguation": "",
+                        "title": "Indian Summer",
+                        "video": false,
+                        "first-release-date": "1956"
+                      },
+                      "position": 5,
+                      "title": "Indian Summer",
+                      "length": 153666,
+                      "number": "A5",
+                      "id": "966163f6-95a0-41dc-be51-0445cc3bccb8"
+                    },
+                    {
+                      "title": "Duet for Saxophone and Guitar",
+                      "length": 159760,
+                      "number": "A6",
+                      "id": "82f4c116-9d22-4a31-b581-91ddc3ca8b36",
+                      "recording": {
+                        "first-release-date": "1956",
+                        "title": "Duet for Saxophone and Guitar",
+                        "video": false,
+                        "disambiguation": "",
+                        "length": 159760,
+                        "id": "e84d041e-2fed-4c30-bdf0-ac5a0ff82634"
+                      },
+                      "position": 6
+                    },
+                    {
+                      "recording": {
+                        "id": "6fbd3ac9-d3b4-40b9-96ac-c119ff8765e3",
+                        "disambiguation": "",
+                        "length": 242760,
+                        "video": false,
+                        "title": "Conception",
+                        "first-release-date": "1951-10-05"
+                      },
+                      "position": 7,
+                      "title": "Conception",
+                      "length": 249373,
+                      "id": "d5874b06-8b77-42cb-bfb8-571bb4e89f65",
+                      "number": "B1"
+                    },
+                    {
+                      "position": 8,
+                      "recording": {
+                        "video": false,
+                        "title": "My Old Flame",
+                        "length": 395000,
+                        "disambiguation": "",
+                        "id": "0e74f547-63bd-4319-bbcf-0536d39391b2",
+                        "first-release-date": "1951-10-05"
+                      },
+                      "id": "2b3952b7-5a41-41a5-9243-dc2959e100dc",
+                      "number": "B2",
+                      "length": 395800,
+                      "title": "My Old Flame"
+                    },
+                    {
+                      "length": 201586,
+                      "id": "82cbc50d-db8b-4224-92eb-6e854fad0cdc",
+                      "number": "B3",
+                      "title": "Intoit",
+                      "recording": {
+                        "title": "Intoit",
+                        "video": false,
+                        "length": 201586,
+                        "disambiguation": "",
+                        "id": "7c918a14-46bc-49f2-90b5-0ad31a30ccee",
+                        "first-release-date": "1956"
+                      },
+                      "position": 9
+                    },
+                    {
+                      "recording": {
+                        "id": "88d71417-8d0a-4d5a-8298-232af3cd90d4",
+                        "disambiguation": "",
+                        "length": 163053,
+                        "video": false,
+                        "title": "Prezervation",
+                        "first-release-date": "1956"
+                      },
+                      "position": 10,
+                      "length": 163053,
+                      "id": "91f57fb4-2c6d-4bcc-845e-0e92e361bdd3",
+                      "number": "B4",
+                      "title": "Prezervation"
+                    },
+                    {
+                      "position": 11,
+                      "recording": {
+                        "first-release-date": "1956",
+                        "id": "225cfc99-a15b-48ab-a21e-b5e8c2f340ed",
+                        "disambiguation": "",
+                        "length": 208373,
+                        "title": "I May Be Wrong",
+                        "video": false
+                      },
+                      "id": "6e828d4f-0d38-4610-a519-e6d9b4947679",
+                      "number": "B5",
+                      "length": 208373,
+                      "title": "I May Be Wrong"
+                    },
+                    {
+                      "length": 163466,
+                      "number": "B6",
+                      "id": "70d23b5d-287c-4d2d-b755-8e01d9041edd",
+                      "title": "So What",
+                      "recording": {
+                        "video": false,
+                        "title": "So What",
+                        "disambiguation": "",
+                        "length": 163466,
+                        "id": "a9af0e52-ef0e-4789-b502-fd021d94b7a4",
+                        "first-release-date": "1956"
+                      },
+                      "position": 12
+                    }
+                  ],
+                  "id": "4af839de-320c-3cff-b9bb-76861d4a8f00"
+                }
+              ],
+              "title": "Conception",
+              "cover-art-archive": {
+                "back": false,
+                "front": true,
+                "count": 1,
+                "darkened": false,
+                "artwork": true
+              },
+              "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+              "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+              "packaging": "Cardboard/Paper Sleeve"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

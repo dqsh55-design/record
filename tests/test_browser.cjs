@@ -59,3 +59,53 @@ assert.equal(run("getVerification(id,'https://music.youtube.com/browse/MPREb_res
 console.log('Strict album URLs, snapshot preservation and large-backup restore passed');
 
 assert.equal(run("saveVerification(id,{ytUrl:url,verdict:'matched',ytLabel:' [no label] ',notes:'checked'})"),false);
+
+const fresh=new Date().toISOString();
+context.fresh=fresh;
+assert.equal(run("automaticState({id:'a',automatic_verification:{version:1,album_id:'a',checked_at:fresh,status:'supported'}})"),'supported');
+assert.equal(run("automaticState({id:'b',automatic_verification:{version:1,album_id:'a',checked_at:fresh,status:'supported'}})"),'insufficient');
+assert.equal(run("automaticState({id:'a',automatic_verification:{version:1,album_id:'a',checked_at:'2000-01-01',status:'supported'}})"),'insufficient');
+class Element {
+ constructor(tag){this.tag=tag;this.children=[];this.textContent='';this.style={}}
+ append(...items){this.children.push(...items)}
+}
+context.document.createElement=tag=>new Element(tag);
+context.info=new Element('div');
+run("appendAutomaticEvidence({id:'a'},info)");
+assert.equal(context.info.children[0].textContent,'情報不足：正規盤は未確認');
+assert.equal(context.info.children[1].tag,'details');
+context.info=new Element('div');
+run(`appendAutomaticEvidence({id:'a',automatic_verification:{version:1,album_id:'a',checked_at:fresh,status:'different',youtube:{labels:[],tracks:[{title:'<script>unsafe</script>'}],complete:false},candidates:[{release_id:'edition',checks:{order:'different'},tracks:[{title:'Other'}]}]}},info)`);
+const allText=node=>[node.textContent,...(node.children||[]).flatMap(c=>allText(c))];
+assert(allText(context.info).some(t=>t.includes('曲順：不一致')));
+assert(allText(context.info).some(t=>t.includes('レーベル：未取得')));
+assert(allText(context.info).some(t=>t.includes('<script>unsafe</script>')));
+assert(!context.info.innerHTML);
+console.log('Automatic evidence: album binding, expiry, missing metadata, mismatch and safe text rendering passed');
+
+assert.equal(run("releaseVisibility({status:'Official','label-info':[]})"),'official');
+assert.equal(run("releaseVisibility({})"),'unknown');
+for(const status of ['Bootleg','Pseudo-Release','Promotion']){
+ context.releaseStatus=status;
+ assert.equal(run('releaseVisibility({status:releaseStatus})'),'excluded');
+}
+console.log('Release-first policy preserves incomplete official records and separates explicit non-official editions');
+
+context.detail={media:[{position:2,'track-count':2,tracks:[{position:2,title:'Fourth'},{position:1,title:'Third'}]},{position:1,'track-count':2,tracks:[{position:1,number:'A1',title:'First'}]},{position:3,'track-count':1}]};
+assert.equal(run('editionTrackText(detail)'), 'ディスク1 · A1. First\nディスク1：曲目情報が不足しています（1 / 2曲）。\nディスク2 · 1. Third\nディスク2 · 2. Fourth\nディスク3：曲目は未登録です。\nディスク3：曲目情報が不足しています（0 / 1曲）。');
+assert.equal(context.detail.media[0].position,2);
+console.log('Edition tracks: disc/track ordering, printed vinyl numbers and incomplete metadata passed');
+
+(async()=>{
+ context.AbortController=AbortController;
+ context.setTimeout=fn=>setTimeout(fn,1);
+ context.fetch=async(url,{signal})=>({ok:true,status:200,json:()=>new Promise((resolve,reject)=>signal.addEventListener('abort',()=>reject(Object.assign(new Error('aborted'),{name:'AbortError'}))))});
+ await assert.rejects(run("fetchJSONWithTimeout('https://musicbrainz.org/ws/2/artist')"),/タイムアウト/);
+ let calls=0;
+ context.fetch=async()=>{calls++;return {ok:false,status:429}};
+ await assert.rejects(run("api('artist?query=test')"),/アクセス制限中.*429/);
+ assert.equal(calls,3);
+ context.fetch=async()=>({ok:true,status:200,json:async()=>({artists:[]})});
+ assert.equal((await run("api('artist?query=retry')")).artists.length,0);
+ console.log('Network safety: response-body timeout, bounded 429 retries and queue recovery passed');
+})().catch(error=>{console.error(error);process.exitCode=1});
