@@ -103,6 +103,7 @@ def original_years_for_miles():
 # Start with one artist identity; the algorithm does not hardcode album titles.
 def bridge_discography(artist_name, mbid, limit=25):
     results = []
+    diagnostics = {"artist": artist_name, "musicbrainz_id": mbid, "albums_checked": 0, "no_candidates": [], "title_mismatch": [], "artist_mismatch": [], "detail_mismatch": [], "matched": []}
     try:
         endpoint = ("https://musicbrainz.org/ws/2/release-group?artist=" +
                     urllib.parse.quote(mbid) + "&type=album&limit=100&fmt=json")
@@ -113,28 +114,37 @@ def bridge_discography(artist_name, mbid, limit=25):
             groups = json.load(response).get("release-groups", [])
     except Exception as error:
         print("MusicBrainz bridge error:", artist_name, error)
-        return results
+        diagnostics["musicbrainz_error"] = str(error)
+        return results, diagnostics
     # Studio albums first; no individual title is built into the program.
     groups.sort(key=lambda g: (bool(g.get("secondary-types")),
                                g.get("first-release-date") or "9999"))
     allowed = {artist_name.casefold().removeprefix("the ").strip()}
     allowed |= artist_aliases.get("Jimi Hendrix", set()) if artist_name == "The Jimi Hendrix Experience" else set()
     for group in groups[:limit]:
+        diagnostics["albums_checked"] += 1
         title = group.get("title", "")
         if not title: continue
         try:
             candidates = music.search(artist_name + " " + title, filter="albums", limit=20)
+            if not candidates:
+                diagnostics["no_candidates"].append(title)
+            matched = False
             for item in candidates:
                 aid = item.get("browseId", "")
                 if not aid.startswith("MPREb_"): continue
-                if title_key(item.get("title", "")) != title_key(title): continue
+                if title_key(item.get("title", "")) != title_key(title):
+                    diagnostics["title_mismatch"].append({"wanted": title, "found": item.get("title", "")})
+                    continue
                 names = [a.get("name", "") for a in item.get("artists", [])]
                 if not names and item.get("artist"): names = [item["artist"]]
                 if not any(n.casefold().removeprefix("the ").strip() in allowed for n in names):
+                    diagnostics["artist_mismatch"].append({"wanted": title, "artists": names})
                     continue
                 detail = music.get_album(aid)
                 actual = [a.get("name", "") for a in detail.get("artists", [])]
                 if not any(n.casefold().removeprefix("the ").strip() in allowed for n in actual):
+                    diagnostics["detail_mismatch"].append({"wanted": title, "artists": actual})
                     continue
                 results.append({
                     "id": aid, "title": item.get("title", title),
@@ -147,10 +157,13 @@ def bridge_discography(artist_name, mbid, limit=25):
                     "mb_release_group": group.get("id"),
                     "match_method": "artist_and_title"
                 })
+                diagnostics["matched"].append(title)
+                matched = True
                 break
+            if not matched: print("Bridge unmatched:", artist_name, title, "candidates:", len(candidates))
         except Exception as error:
             print("Bridge search error:", artist_name, title, error)
-    return results
+    return results, diagnostics
 
 catalog = {}
 for artist, terms in queries.items():
@@ -283,8 +296,10 @@ try:
         artists_mb = json.load(response).get("artists", [])
     match = next((a for a in artists_mb if a.get("name", "").casefold() == "the jimi hendrix experience"), None)
     if match:
-        bridged = bridge_discography("The Jimi Hendrix Experience", match["id"], limit=25)
+        bridged, diagnostic = bridge_discography("The Jimi Hendrix Experience", match["id"], limit=25)
         catalog["The Jimi Hendrix Experience"] = bridged
+        pathlib.Path("data").mkdir(exist_ok=True)
+        pathlib.Path("data/bridge-diagnostics.json").write_text(json.dumps(diagnostic, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print("Experience bridge matches:", len(bridged))
 except Exception as error:
     print("Experience bridge error:", error)
