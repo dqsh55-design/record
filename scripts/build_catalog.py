@@ -292,24 +292,42 @@ for artist, terms in queries.items():
             album["year_source"] = "MusicBrainz discography (curated)"
     catalog[artist] = sorted(found.values(), key=lambda x: (str(x.get("original_year") or "9999"), x["title"]))
     print(artist, len(catalog[artist]))
-# Pilot with the Experience's distinct MusicBrainz artist identity.
-# Additional artists can be added as MBIDs without enumerating album titles.
-# Resolve the artist ID from MusicBrainz search rather than trusting a guessed ID.
-try:
-    q = urllib.parse.quote('artist:"The Jimi Hendrix Experience"')
-    req = urllib.request.Request("https://musicbrainz.org/ws/2/artist/?query=" + q + "&fmt=json&limit=10",
-        headers={"User-Agent": "RECORD/0.26 (music discovery prototype)"})
-    with urllib.request.urlopen(req, timeout=25) as response:
-        artists_mb = json.load(response).get("artists", [])
-    match = next((a for a in artists_mb if a.get("name", "").casefold() == "the jimi hendrix experience"), None)
-    if match:
-        bridged, diagnostic = bridge_discography("The Jimi Hendrix Experience", match["id"], limit=25)
-        catalog["The Jimi Hendrix Experience"] = bridged
-        pathlib.Path("data").mkdir(exist_ok=True)
-        pathlib.Path("data/bridge-diagnostics.json").write_text(json.dumps(diagnostic, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print("Experience bridge matches:", len(bridged))
-except Exception as error:
-    print("Experience bridge error:", error)
+# Reusable bridge for artist identities, not a list of hardcoded albums.
+# Keep prior verified matches when an external search intermittently fails.
+bridge_targets = [
+    ("The Jimi Hendrix Experience", 25),
+    ("Janis Joplin", 20),
+    ("Jeff Beck", 15),
+]
+bridge_reports = {}
+for target_name, target_limit in bridge_targets:
+    try:
+        q = urllib.parse.quote('artist:"' + target_name + '"')
+        req = urllib.request.Request(
+            "https://musicbrainz.org/ws/2/artist/?query=" + q + "&fmt=json&limit=10",
+            headers={"User-Agent": "RECORD/0.27 (music discovery prototype)"})
+        with urllib.request.urlopen(req, timeout=25) as response:
+            artists_mb = json.load(response).get("artists", [])
+        match = next((a for a in artists_mb if a.get("name", "").casefold() == target_name.casefold()), None)
+        if not match:
+            bridge_reports[target_name] = {"error": "MusicBrainz artist identity not found"}
+            continue
+        bridged, diagnostic = bridge_discography(target_name, match["id"], limit=target_limit)
+        bridge_reports[target_name] = diagnostic
+        existing = catalog.get(target_name, [])
+        by_id = {a["id"]: a for a in existing if a.get("id")}
+        for album in previous.get(target_name, []):
+            if album.get("id"): by_id.setdefault(album["id"], album)
+        for album in bridged:
+            by_id[album["id"]] = album
+        catalog[target_name] = sorted(by_id.values(), key=lambda x: (str(x.get("original_year") or "9999"), x.get("title", "")))
+        print("Bridge", target_name, "new:", len(bridged), "total:", len(catalog[target_name]))
+    except Exception as error:
+        bridge_reports[target_name] = {"error": str(error)}
+        print("Bridge error:", target_name, error)
+pathlib.Path("data").mkdir(exist_ok=True)
+pathlib.Path("data/bridge-diagnostics.json").write_text(
+    json.dumps(bridge_reports, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 if not catalog["Miles Davis"]: raise SystemExit("No albums found; do not publish empty catalog")
 pathlib.Path("data").mkdir(exist_ok=True)
 pathlib.Path("data/ytmusic-albums.json").write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
