@@ -23,3 +23,7 @@ PR #2のhead f70a16eを起点とする別PR。安全なURL検証、保存デー�
 ## 回帰検証
 
 Pythonの照合・診断30件、JavaScriptの保存・URL検証・発売区分テスト、Chromium画面8件を実行。画面テストはAPI応答を置き換え、YouTubeカタログ取得失敗時の主一覧、MusicBrainz障害時の再試行、ページ追加時の重複抑制、公式盤のレーベル欠損、ブートレグ除外、曲目表示、日本語検索・並替え、保存・バックアップ復元、320/375/390/430px幅を確認する。実APIの確認範囲は前節の通り。iPhone実機・Safariは未確認。
+
+## 公開前の最終レビュー
+
+取得中の再描画、通信タイムアウト、曲目欠損、旧一覧のページ追加などを補修した。[修正・検証・公開判断](PR3-FINAL-REVIEW.md)と、今回の[実HTTP記録](pr3-final-live.json)・[実ブラウザ記録](pr3-live-browser.json)を参照。画面回帰は14件へ拡張。iPhone実機・Safari、YouTube Music検索先画面、本番Pages配信は未確認。

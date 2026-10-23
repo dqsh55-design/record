@@ -69,7 +69,7 @@ class BrowserTests(unittest.TestCase):
         cls.browser.close()
         cls.playwright.stop()
 
-    def open_site(self, width=390, fail_mb=False, fail_catalog=False, fail_release=False, release_total=3):
+    def open_site(self, width=390, fail_mb=False, fail_catalog=False, fail_release=False, release_total=3, base_path=""):
         context = self.browser.new_context(viewport={'width': width, 'height': 844}, is_mobile=width < 500, has_touch=width < 500)
         self.addCleanup(context.close)
         page = context.new_page()
@@ -79,9 +79,9 @@ class BrowserTests(unittest.TestCase):
 
         def route(request):
             url = urlparse(request.request.url)
-            if url.hostname == 'record.test' and url.path == '/':
+            if url.hostname == 'record.test' and url.path == base_path + '/':
                 request.fulfill(body=(ROOT / 'index.html').read_text(), content_type='text/html')
-            elif url.path == '/data/ytmusic-albums.json':
+            elif url.path == base_path + '/data/ytmusic-albums.json':
                 request.fulfill(status=503 if fail_catalog else 200, json={} if fail_catalog else self.catalog)
             elif url.hostname == 'musicbrainz.org':
                 if fail_mb and url.path.endswith('/release-group'):
@@ -103,7 +103,7 @@ class BrowserTests(unittest.TestCase):
                 request.fulfill(status=404, body='')
 
         page.route('**/*', route)
-        page.goto('http://record.test/')
+        page.goto('http://record.test' + base_path + '/')
         return page
 
     def search(self, page):
@@ -114,6 +114,12 @@ class BrowserTests(unittest.TestCase):
         expect(page.locator('#status')).not_to_contain_text('作品を読み込んでいます')
         page.get_by_text('以前のYouTube Music一覧・保存記録・照合ツール', exact=True).click()
         return page.locator('#results > details > section').first
+
+    def test_github_pages_repository_subpath(self):
+        page = self.open_site(base_path='/record')
+        section = self.search(page)
+        expect(section.locator('article')).to_have_count(5)
+        expect(page.locator('#official-releases article')).to_have_count(2)
 
     def test_release_catalog_works_without_youtube_catalog(self):
         page = self.open_site(fail_catalog=True, release_total=103)
@@ -147,6 +153,85 @@ class BrowserTests(unittest.TestCase):
         section.get_by_role('button', name='曲目を取得', exact=True).first.click()
         expect(section).to_contain_text('1. <Song>')
         expect(section).to_contain_text('EPC 1')
+
+    def test_same_title_editions_and_unknown_status_are_preserved(self):
+        page = self.open_site()
+        editions = [{'id': str(i), 'title': '同名アルバム', 'status': status,
+                     'release-group': {'primary-type': 'Album', 'secondary-types': types}}
+                    for i, (status, types) in enumerate([
+                        ('Official', []), ('Official', ['Compilation']),
+                        ('Official', ['Live']), ('Withdrawn', []), ('Bootleg', [])])]
+        page.route('**/ws/2/release?**', lambda route: route.fulfill(json={'releases': editions, 'release-count': 5}))
+        self.search(page)
+        section = page.locator('#official-releases')
+        expect(section.locator('article')).to_have_count(4)
+        expect(section).to_contain_text('ベスト・編集盤')
+        expect(section).to_contain_text('ライブ盤')
+        expect(section).to_contain_text('発売区分：Withdrawn（確認待ち）')
+
+    def test_primary_controls_with_touch(self):
+        page = self.open_site(release_total=103)
+        page.get_by_role('textbox', name='アーティスト名').fill('ジェフ・ベック')
+        page.get_by_role('button', name='検索', exact=True).tap()
+        page.get_by_role('button', name='この名義の作品を見る →').tap()
+        section = page.locator('#official-releases')
+        expect(section.locator('article')).to_have_count(2)
+        section.get_by_text('収録曲・曲順を見る', exact=True).first.tap()
+        section.get_by_role('button', name='曲目を取得', exact=True).first.tap()
+        expect(section).to_contain_text('1. <Song>')
+        section.get_by_role('button', name='さらに発売記録を読み込む', exact=True).tap()
+        expect(section).to_contain_text('6 / 103件取得')
+        for control in section.locator('button:visible, a:visible, summary:visible').all():
+            self.assertGreaterEqual(control.bounding_box()['height'], 44)
+        self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+
+    def test_pending_tracks_survive_an_unrelated_rerender(self):
+        page = self.open_site()
+        self.search(page)
+        pending = []
+        page.route('**/release/official?**', lambda route: pending.append(route))
+        section = page.locator('#official-releases')
+        section.get_by_text('収録曲・曲順を見る', exact=True).first.click()
+        with page.expect_request('**/release/official?**'):
+            section.get_by_role('button', name='曲目を取得', exact=True).first.click()
+        page.evaluate('render()')
+        self.assertEqual(len(pending), 1)
+        pending[0].fulfill(json={'media': [{'position': 1, 'tracks': [{'position': 1, 'title': 'Delayed song'}]}]})
+        expect(section).to_contain_text('1. Delayed song')
+        expect(section.locator('.edition-tracks')).to_have_count(1)
+
+    def test_legacy_pagination_and_related_bands_survive_updates(self):
+        page = self.open_site(release_total=103)
+        page.route('**/ws/2/release-group?**', lambda route: route.fulfill(json={'release-groups': [{'id': GROUP, 'title': 'supported', 'primary-type': 'Album'}], 'release-group-count': 103}))
+        self.search(page)
+        expect(page.locator('#related-bands')).to_be_visible()
+        page.get_by_text('参考資料：MusicBrainzの作品一覧（配信未確認）', exact=True).click()
+        more = page.get_by_role('button', name='さらに作品を読み込む', exact=True)
+        expect(more).to_be_enabled()
+        more.click()
+        page.wait_for_function('offset === 2 && !busy')
+        expect(page.locator('#status')).to_contain_text('取得済み1件')
+        expect(more).to_be_enabled()
+        expect(page.locator('#related-bands')).to_be_visible()
+
+    def test_loaded_tracks_survive_pagination_and_show_failure(self):
+        page = self.open_site(release_total=103)
+        self.search(page)
+        section = page.locator('#official-releases')
+        details = section.locator('details').first
+        details.get_by_text('収録曲・曲順を見る', exact=True).click()
+        details.get_by_role('button', name='曲目を取得', exact=True).click()
+        expect(details).to_contain_text('1. <Song>')
+        section.get_by_role('button', name='さらに発売記録を読み込む', exact=True).click()
+        expect(section).to_contain_text('6 / 103件取得')
+        expect(section.locator('details').first).to_have_attribute('open', '')
+        expect(section.locator('details').first).to_contain_text('1. <Song>')
+        page.route('**/release/missing-label?**', lambda route: route.fulfill(status=403, json={}))
+        details = section.locator('details').nth(1)
+        details.get_by_text('収録曲・曲順を見る', exact=True).click()
+        details.get_by_role('button', name='曲目を取得', exact=True).click()
+        expect(details).to_contain_text('曲目を取得できませんでした：音楽データを取得できませんでした（403）')
+        expect(details.get_by_role('button', name='曲目の取得を再試行')).to_be_enabled()
 
     def test_search_generated_evidence_and_track_comparison(self):
         page = self.open_site()

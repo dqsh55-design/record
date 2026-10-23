@@ -90,3 +90,22 @@ for(const status of ['Bootleg','Pseudo-Release','Promotion']){
  assert.equal(run('releaseVisibility({status:releaseStatus})'),'excluded');
 }
 console.log('Release-first policy preserves incomplete official records and separates explicit non-official editions');
+
+context.detail={media:[{position:2,'track-count':2,tracks:[{position:2,title:'Fourth'},{position:1,title:'Third'}]},{position:1,'track-count':2,tracks:[{position:1,number:'A1',title:'First'}]},{position:3,'track-count':1}]};
+assert.equal(run('editionTrackText(detail)'), 'ディスク1 · A1. First\nディスク1：曲目情報が不足しています（1 / 2曲）。\nディスク2 · 1. Third\nディスク2 · 2. Fourth\nディスク3：曲目は未登録です。\nディスク3：曲目情報が不足しています（0 / 1曲）。');
+assert.equal(context.detail.media[0].position,2);
+console.log('Edition tracks: disc/track ordering, printed vinyl numbers and incomplete metadata passed');
+
+(async()=>{
+ context.AbortController=AbortController;
+ context.setTimeout=fn=>setTimeout(fn,1);
+ context.fetch=async(url,{signal})=>({ok:true,status:200,json:()=>new Promise((resolve,reject)=>signal.addEventListener('abort',()=>reject(Object.assign(new Error('aborted'),{name:'AbortError'}))))});
+ await assert.rejects(run("fetchJSONWithTimeout('https://musicbrainz.org/ws/2/artist')"),/タイムアウト/);
+ let calls=0;
+ context.fetch=async()=>{calls++;return {ok:false,status:429}};
+ await assert.rejects(run("api('artist?query=test')"),/アクセス制限中.*429/);
+ assert.equal(calls,3);
+ context.fetch=async()=>({ok:true,status:200,json:async()=>({artists:[]})});
+ assert.equal((await run("api('artist?query=retry')")).artists.length,0);
+ console.log('Network safety: response-body timeout, bounded 429 retries and queue recovery passed');
+})().catch(error=>{console.error(error);process.exitCode=1});

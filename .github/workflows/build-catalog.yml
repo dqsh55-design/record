@@ -16,8 +16,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install 'ytmusicapi>=1.10,<2'
-      - if: github.event_name != 'schedule' || github.event.schedule == '17 4 * * 1'
-        run: python scripts/build_catalog.py
+      - run: python scripts/build_catalog.py
       # Feed the same catalog that chooseArtist() reads; never publish an artifact-only result.
       - run: python scripts/verify_catalog.py --limit 12
       - name: Commit catalog

@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-23T08:01:51.693315+00:00",
+  "method": "Real Chromium HTTP through the configured proxy, TLS verification enabled; local site served by HTTP; no response mocks",
+  "results": [
+    {
+      "name": "Jeff Beck",
+      "initial_displayed": 80,
+      "after_page2": 165,
+      "detail_title": "Beckology",
+      "search_link": "https://music.youtube.com/search?q=Jeff%20Beck%20Beckology",
+      "horizontal_overflow": false,
+      "errors": []
+    },
+    {
+      "name": "Miles Davis",
+      "initial_displayed": 56,
+      "after_page2": 121,
+      "detail_title": "Milestones",
+      "search_link": "https://music.youtube.com/search?q=Miles%20Davis%20Milestones",
+      "horizontal_overflow": false,
+      "errors": []
+    }
+  ]
+}
