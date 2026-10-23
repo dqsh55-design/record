@@ -302,7 +302,7 @@ for artist, terms in queries.items():
         # Preserve previously verified metadata across catalog rebuilds.
         # Never copy metadata across albums merely because their titles match.
         prior = prior_by_id.get(album.get("id"), {})
-        for field in ("match_evidence", "match_method"):
+        for field in ("match_evidence", "match_method", "automatic_verification"):
             if field not in album and field in prior:
                 album[field] = prior[field]
         if album.get("artist_check") != "matched":
@@ -359,7 +359,7 @@ for target_name, target_limit in bridge_targets:
         for album in previous.get(target_name, []):
             if album.get("id"): by_id.setdefault(album["id"], album)
         for album in bridged:
-            by_id[album["id"]] = album
+            by_id[album["id"]] = {**by_id.get(album["id"], {}), **album}
         catalog[target_name] = sorted(by_id.values(), key=lambda x: (str(x.get("original_year") or "9999"), x.get("title", "")))
         print("Bridge", target_name, "new:", len(bridged), "total:", len(catalog[target_name]))
     except Exception as error:
