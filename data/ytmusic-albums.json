@@ -15,6 +15,20 @@
       "year_source": "MusicBrainz discography (curated)"
     },
     {
+      "id": "MPREb_lOTpQQpWyBe",
+      "title": "Milestones",
+      "year": null,
+      "artists": [
+        "Miles Davis Sextet"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/q4OCFSVQbvItRPBnGxJ_GLMk4QGdtPRBHPCE8TsaTGc6K2PhxeZifFSk7jMQI_eFMD1J1aTJol4vVXA=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_lOTpQQpWyBe",
+      "artist_check": "matched",
+      "track_count": 24,
+      "original_year": "1958",
+      "year_source": "MusicBrainz discography (curated)"
+    },
+    {
       "id": "MPREb_ZIykZkA8WDA",
       "title": "Milestones",
       "year": null,
@@ -468,9 +482,6 @@
       "thumbnail": "https://yt3.googleusercontent.com/skuprVUD8A_1RjfUYupK8Zgb_TlLRyeqNEx6gvA03ydDbkn4W0dsgczZuIz3ViTEoMAVWFctuBDI_p0uUw=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_OPTrMSBvLP2",
       "artist_check": "matched",
-      "detail_artists": [
-        "Miles Davis Quintet"
-      ],
       "track_count": 28
     },
     {
@@ -483,9 +494,6 @@
       "thumbnail": "https://yt3.googleusercontent.com/JcObBos2coRxgm-23hbmdlxPKv3iU1rHHQ46CLqimKelO9xDAxBWv1qD_YEgdgdymCICPS26QMBfLKQ=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_CbADbkjixWM",
       "artist_check": "matched",
-      "detail_artists": [
-        "Miles Davis Quintet"
-      ],
       "track_count": 20
     },
     {
@@ -984,9 +992,6 @@
       "thumbnail": "https://yt3.googleusercontent.com/4wb5qcgq4eJxHFPUsBlU0oYXI2igfPaL5jbdLDKJml6dv9daGy7INJR4RKvnqDRFxgzl1WW8BQYbh40=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_ovjvk4t4US4",
       "artist_check": "matched",
-      "detail_artists": [
-        "Duke Ellington and His Orchestra"
-      ],
       "track_count": 20
     },
     {
@@ -1028,9 +1033,6 @@
       "thumbnail": "https://yt3.googleusercontent.com/fycX5tuameeZiO4qaEEr-PNidcQvteXJ-9wW04BqfdTUiqoUTzpM3_ioopKahLh1iNasJ_urFxtVRf3Y=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_WsFxaXI2Ssq",
       "artist_check": "matched",
-      "detail_artists": [
-        "Duke Ellington & His Famous Orchestra"
-      ],
       "track_count": 9
     },
     {
@@ -1166,9 +1168,6 @@
       "thumbnail": "https://yt3.googleusercontent.com/HOaBAi3oSJwCRNCZPn7ShYSNnXf6UtOQLhVWqOWoGKljSPJRwjPIvphWFv_fwNlLt_5hGarcaj5I2eI=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_cXfOIo9ChZt",
       "artist_check": "matched",
-      "detail_artists": [
-        "Duke Ellington and His Orchestra"
-      ],
       "track_count": 16
     },
     {
@@ -1193,9 +1192,6 @@
       "thumbnail": "https://yt3.googleusercontent.com/Pnjd40D_kYuBtUBzQueqXKbvWIEphon6TQoOxTy0XhlduxVGrDmFNAVQj-yvyns0ryNHs5FOmeji0CfaGA=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_U9nhHoSuOPB",
       "artist_check": "matched",
-      "detail_artists": [
-        "Duke Ellington & His Orchestra"
-      ],
       "track_count": 11
     },
     {
@@ -1209,6 +1205,18 @@
       "url": "https://music.youtube.com/browse/MPREb_mpZ4tJa0Q4b",
       "artist_check": "matched",
       "track_count": 9
+    },
+    {
+      "id": "MPREb_ENrATxpBjhj",
+      "title": "The Uncollected Duke Ellington and His Orchestra 1946, Vol. 1 (Digitally Remastered)",
+      "year": null,
+      "artists": [
+        "Duke Ellington and His Orchestra"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/6rcSu7Eo1v3zkTZxgHyH9wO3sDU47CgwYr1dFffiQaJFgmZnBn3MM2j2P3yZZfkVHmvfiWaXhbLTvy24=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_ENrATxpBjhj",
+      "artist_check": "matched",
+      "track_count": 13
     },
     {
       "id": "MPREb_Rtja3B3g5CE",
@@ -1283,9 +1291,6 @@
       "thumbnail": "https://yt3.googleusercontent.com/mrwc_myHecT0BtKM2UUr58v-_M4vfpaufYEnAKjh3JpgFsOaoc7xk3FCTZze1QOVi92Ece0odHpb1Oei=w544-h544-l90-rj",
       "url": "https://music.youtube.com/browse/MPREb_m9zlpdO5z0u",
       "artist_check": "matched",
-      "detail_artists": [
-        "Stan Getz Quintet"
-      ],
       "track_count": 9
     },
     {
@@ -1328,6 +1333,18 @@
       "url": "https://music.youtube.com/browse/MPREb_6DAtIBq90RC",
       "artist_check": "matched",
       "track_count": 30
+    },
+    {
+      "id": "MPREb_PML3xeMijtJ",
+      "title": "France 1965: The Complete Concerts (Live)",
+      "year": null,
+      "artists": [
+        "John Coltrane Quartet"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/t3E51vXVmk67hBJpi2GHs6XknxVjBk-nYdFUmvL4ZDkqt16l_EC5rZL9PZHtLHlLjuihdNL5s-XS2v9edw=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_PML3xeMijtJ",
+      "artist_check": "matched",
+      "track_count": 12
     },
     {
       "id": "MPREb_mEVJHomAuXA",
@@ -1913,6 +1930,18 @@
       "url": "https://music.youtube.com/browse/MPREb_em17ePnIa9E",
       "artist_check": "matched",
       "track_count": 36
+    },
+    {
+      "id": "MPREb_oOJzKoqXWQa",
+      "title": "Woodstock Sunday August 17, 1969 (Live)",
+      "year": null,
+      "artists": [
+        "Janis Joplin"
+      ],
+      "thumbnail": "https://yt3.googleusercontent.com/ux-Xc411C3oteHA33JPt9LW9_twGEE2DngSwdoySD6usRw5T-x96mO7YPKpIXJgUCYQqzl4C19nrmA6c8g=w544-h544-l90-rj",
+      "url": "https://music.youtube.com/browse/MPREb_oOJzKoqXWQa",
+      "artist_check": "matched",
+      "track_count": 10
     }
   ],
   "The Beatles": [
