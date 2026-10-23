@@ -281,15 +281,27 @@ for artist, terms in queries.items():
             print("Album detail error:", artist, album["id"], str(error))
     print("Album details checked:", artist, checked)
     mb_years = original_years_for_miles() if artist == "Miles Davis" else {}
+    prior_by_id = {a.get("id"): a for a in previous.get(artist, []) if a.get("id")}
     for album in found.values():
-        album.pop("original_year", None)
-        album.pop("year_source", None)
+        # Preserve previously verified metadata across catalog rebuilds.
+        # Never copy metadata across albums merely because their titles match.
+        prior = prior_by_id.get(album.get("id"), {})
         if album.get("artist_check") != "matched":
+            album.pop("original_year", None)
+            album.pop("year_source", None)
             continue
         year = mb_years.get(title_key(album["title"]))
         if year:
             album["original_year"] = year
             album["year_source"] = "MusicBrainz discography (curated)"
+        elif prior.get("original_year") and re.fullmatch(r"[0-9]{4}", str(prior["original_year"])):
+            album["original_year"] = prior["original_year"]
+            album["year_source"] = prior.get("year_source") or "Previously verified catalog"
+        else:
+            album.pop("original_year", None)
+            album.pop("year_source", None)
+        if not album.get("mb_release_group") and prior.get("mb_release_group"):
+            album["mb_release_group"] = prior["mb_release_group"]
     catalog[artist] = sorted(found.values(), key=lambda x: (str(x.get("original_year") or "9999"), x["title"]))
     print(artist, len(catalog[artist]))
 # Reusable bridge for artist identities, not a list of hardcoded albums.
