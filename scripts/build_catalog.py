@@ -126,7 +126,14 @@ def bridge_discography(artist_name, mbid, limit=25):
         title = group.get("title", "")
         if not title: continue
         try:
+            # Some YouTube Music regions/queries return no results with the
+            # albums filter even when the general search finds album cards.
             candidates = music.search(artist_name + " " + title, filter="albums", limit=20)
+            if not candidates:
+                fallback = music.search(artist_name + " " + title, limit=50)
+                candidates = [x for x in fallback if x.get("resultType") == "album"]
+                if candidates:
+                    diagnostics.setdefault("fallback_found", []).append({"title": title, "count": len(candidates)})
             if not candidates:
                 diagnostics["no_candidates"].append(title)
             matched = False
