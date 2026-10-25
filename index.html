@@ -2,7 +2,8 @@
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RECORD — Find the music.</title>
 <style>
 :root{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;color:#252525;background:#f8f7f4}*{box-sizing:border-box}body{margin:0}main{max-width:780px;margin:auto;padding:65px 22px 90px}header{text-align:center;margin-bottom:54px}h1{font-size:39px;letter-spacing:.22em;font-weight:450;margin:0 0 12px;padding-left:.22em}header p{color:#888;font-size:12px;letter-spacing:.13em;margin:0}.intro{font-size:14px;color:#777;line-height:1.9;text-align:center;margin-bottom:28px}.search{display:flex;gap:8px}input{min-width:0;flex:1;padding:16px;border:1px solid #d9d7d2;border-radius:4px;background:white;font-size:16px}button{border:0;background:#242424;color:#fff;padding:0 24px;border-radius:4px;font-size:15px;cursor:pointer}button:disabled{opacity:.5}.hint{font-size:12px;color:#999;margin-top:12px}.status{margin:32px 0;color:#777;font-size:14px;line-height:1.8}.artist{font-size:24px;font-weight:500;margin:42px 0 8px}.sub{font-size:12px;color:#888;margin-bottom:22px}.filters{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}.filter{background:transparent;color:#666;border:1px solid #d8d6d1;border-radius:30px;padding:9px 14px;font-size:12px}.filter.active{background:#252525;color:white;border-color:#252525}.album{border-top:1px solid #e0ded9;padding:18px 0;display:flex;gap:17px;align-items:center}.cover{width:76px;height:76px;flex:none;background:#e9e7e2;border-radius:2px;object-fit:cover}.info{min-width:0;flex:1}.album-title{font-size:15px;font-weight:550;line-height:1.5}.meta{font-size:12px;color:#888;margin:6px 0 10px}.listen{font-size:12px;color:#4d4d4d;text-underline-offset:3px}.detail-btn{background:transparent;color:#555;border:1px solid #d8d6d1;padding:7px 10px;font-size:12px;margin-top:9px}.album-tools{margin-top:12px;border-top:1px solid #eceae5;padding-top:10px}.album-tools summary{cursor:pointer;font-size:12px;color:#777;list-style:none}.album-tools summary::-webkit-details-marker{display:none}.album-tools summary::after{content:' ＋'}.album-tools[open] summary::after{content:' −'}.album-tools-body{padding-top:8px}.album-tools .direct-url{max-width:100%}.availability{font-size:12px;color:#888;margin-top:9px}.availability.confirmed{color:#336b52}.availability.missing{color:#955f48}.direct-url{display:block;width:100%;max-width:390px;margin-top:8px;padding:9px;border:1px solid #d8d6d1;border-radius:4px;background:#fff;font-size:12px}.release-detail{font-size:12px;color:#777;line-height:1.8;margin-top:8px}.note{font-size:12px;line-height:1.8;color:#999;margin-top:36px}.more{display:block;margin:26px auto 0;padding:13px 24px}footer{text-align:center;color:#aaa;font-size:11px;margin-top:80px}@media(max-width:420px){main{padding-top:48px}h1{font-size:33px}.search button{padding:0 17px}.cover{width:66px;height:66px}}
-</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。<br>正規発売アルバムを探すための音楽ガイド。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます</div><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Music data by MusicBrainz · v0.58</footer></main>
+.info,.release-detail{overflow-wrap:anywhere}.album-tools summary{padding:12px 0;min-height:44px}.detail-btn,.filter{min-height:44px}.listen{display:inline-block;padding:12px 0;min-height:44px}.direct-url{font-size:16px;min-height:44px}
+</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。<br>正規発売アルバムを探すための音楽ガイド。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます</div><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Music data by MusicBrainz · v0.60</footer></main>
 <script>
 const $=id=>document.getElementById(id), status=$('status'),results=$('results');
 let relatedCatalogAlbums=[],artistChoices=[],ytVisible=20,ytSort='name',ytAlbums=[],albums=[],filter='おすすめ',artistName='',offset=0,artistId='',busy=false,total=0;
@@ -10,7 +11,64 @@ const aliases={'マイルスデイビス':'Miles Davis','マイルスデイヴ�
 const normalize=s=>s.toLowerCase().replace(/[\s・･ー‐－]/g,'');
 function typeOf(a){let t=a['secondary-types']||[];if(t.includes('Compilation'))return 'ベスト・編集盤';if(t.includes('Live'))return 'ライブ盤';if(a['primary-type']==='Album')return 'スタジオ盤';return 'その他'}
 function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));let lastRequestAt=0;let requestQueue=Promise.resolve();function api(path){const job=requestQueue.catch(()=>{}).then(async()=>{let url='https://musicbrainz.org/ws/2/'+path;for(let attempt=0;attempt<3;attempt++){let wait=Math.max(0,1100-(Date.now()-lastRequestAt));if(wait)await pause(wait);lastRequestAt=Date.now();try{let r=await fetch(url,{headers:{Accept:'application/json'}});if(r.ok)return await r.json();if(![429,502,503,504].includes(r.status)||attempt===2)throw Error('音楽データを取得できませんでした（'+r.status+'）');}catch(e){if(attempt===2||!/Failed to fetch|NetworkError|Load failed/i.test(e.message))throw e}await pause((attempt+1)*1700)}throw Error('通信が混み合っています')});requestQueue=job.catch(()=>{});return job}
+const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+async function fetchJSONWithTimeout(url,options={}){
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
+ try{const r=await fetch(url,{...options,signal:controller.signal});const data=r.ok?await r.json():null;return {ok:r.ok,status:r.status,json:async()=>data}}
+ catch(e){if(e.name==='AbortError')throw Error('通信がタイムアウトしました。時間をおいて再試行してください');throw e}
+ finally{clearTimeout(timer)}
+}
+let lastRequestAt=0,requestQueue=Promise.resolve();
+function api(path){
+ const job=requestQueue.catch(()=>{}).then(async()=>{
+  for(let attempt=0;attempt<3;attempt++){
+   const wait=Math.max(0,1100-(Date.now()-lastRequestAt));if(wait)await pause(wait);lastRequestAt=Date.now();
+   try{
+    const r=await fetchJSONWithTimeout('https://musicbrainz.org/ws/2/'+path,{headers:{Accept:'application/json'}});
+    if(r.ok)return await r.json();
+    if(![429,502,503,504].includes(r.status)||attempt===2)throw Error(r.status===429?'MusicBrainzのアクセス制限中です（429）。時間をおいて再試行してください':'音楽データを取得できませんでした（'+r.status+'）');
+   }catch(e){if(attempt===2||!/Failed to fetch|NetworkError|Load failed/i.test(e.message))throw e}
+   await pause((attempt+1)*1700);
+  }
+ });requestQueue=job.catch(()=>{});return job;
+}
+function automaticState(a){
+ const e=a.automatic_verification;
+ if(!e||e.version!==1||e.album_id!==a.id)return 'insufficient';
+ const age=Date.now()-Date.parse(e.checked_at);
+ if(!Number.isFinite(age)||age<0||age>30*24*60*60*1000)return 'insufficient';
+ return ['supported','different'].includes(e.status)?e.status:'insufficient';
+}
+function appendAutomaticEvidence(a,info){
+ const e=a.automatic_verification, state=automaticState(a);
+ const labels={supported:'根拠あり：公式発売盤のメタデータと一致',insufficient:'情報不足：正規盤は未確認',different:'不一致：取得した発売盤候補と相違あり'};
+ const badge=document.createElement('div');badge.className='availability '+(state==='supported'?'confirmed':state==='different'?'missing':'');badge.textContent=labels[state];info.append(badge);
+ const panel=document.createElement('details');panel.className='album-tools';
+ const summary=document.createElement('summary');summary.textContent='自動照合の根拠を見る';panel.append(summary);
+ const line=text=>{const p=document.createElement('div');p.className='release-detail';p.textContent=text;panel.append(p);return p};
+ line('メタデータの照合結果です。正規配信の権利許諾を保証するものではありません。不一致は取得した候補との比較であり、非正規盤との断定ではありません。');
+ if(!e||e.album_id!==a.id){line('自動照合は未実施です。手入力なしで確認できる根拠がまだありません。');info.append(panel);return}
+ line('確認日時：'+(e.checked_at||'不明')+(automaticState(a)==='insufficient'&&e.status!=='insufficient'?'（再確認が必要）':''));
+ for(const text of e.limitations||[])line(text);
+ const yt=e.youtube;
+ if(yt){
+  line('YouTube Music レーベル：'+((yt.labels||[]).join(' / ')||'未取得')+' · 発売元：'+(yt.publisher||'未取得'));
+  line('収録曲：'+(yt.track_count??'曲数不明')+'曲 · 全曲取得：'+(yt.complete?'確認':'未確認'));
+  if(yt.description)line('YouTube Musicの説明文（レーベル推定には使用しません）：'+yt.description);
+ }
+ const terms={official:'公式発売登録',title:'作品名',artist:'アーティスト',label:'レーベル',count:'曲数',titles:'曲名',order:'曲順'},values={match:'一致',different:'不一致',unknown:'情報不足'};
+ for(const c of e.candidates||[]){
+  const row=line([c.title,c.date,c.country,(c.labels||[]).join(' / ')||'レーベル未取得',(c.catalog_numbers||[]).join(' / ')].filter(Boolean).join(' · '));
+  if(c.release_id){const link=document.createElement('a');link.href='https://musicbrainz.org/release/'+encodeURIComponent(c.release_id);link.textContent=' 発売盤の出典 ↗';link.target='_blank';link.rel='noopener noreferrer';row.append(link)}
+  line(Object.entries(terms).map(([k,v])=>v+'：'+(values[c.checks?.[k]]||'情報不足')).join(' · '));
+  const songs=document.createElement('details'),caption=document.createElement('summary');caption.textContent='取得した曲目を比較';songs.append(caption);
+  const tracks=document.createElement('div');tracks.className='release-detail edition-tracks';tracks.style.whiteSpace='pre-wrap';
+  const y=yt?.tracks||[],m=c.tracks||[];
+  tracks.textContent=Array.from({length:Math.max(y.length,m.length)},(_,i)=>(i+1)+'. YouTube Music：'+(y[i]?.title||'未取得')+' / MusicBrainz：'+(m[i]?.title||'未取得')).join('\n');songs.append(tracks);panel.append(songs);
+ }
+ info.append(panel);
+}
+
 function titleKey(s){return String(s||'').normalize('NFKC').toLowerCase().replace(/\([^)]*(remaster|mono|stereo|edition)[^)]*\)/gi,'').replace(/[^\p{L}\p{N}]/gu,'')}
 function uniqueAlbums(){let map=new Map();for(const a of albums){const key=titleKey(a.title)+'|'+typeOf(a);if(!map.has(key))map.set(key,a);else{const old=map.get(key);if((a['first-release-date']||'9999')<(old['first-release-date']||'9999'))map.set(key,a)}}return [...map.values()].sort((a,b)=>(a['first-release-date']||'9999').localeCompare(b['first-release-date']||'9999'))}
 const releaseEvidenceCache=(()=>{try{return JSON.parse(localStorage.getItem('recordReleaseEvidenceV1')||'{}')}catch{return {}}})();
@@ -161,7 +219,7 @@ async function checkAlbumEvidenceBatch(items,button,progress){
   }
 }
 
-function render(){results.innerHTML='';if(!artistName)return;if(ytAlbums.length){let section=document.createElement('section');let h=document.createElement('h2');h.className='artist';h.textContent='YouTube Musicで見つかったアルバム';let note=document.createElement('div');note.className='sub';note.textContent='YouTube Musicの検索結果から取得 · 正規発売元・地域での再生可否は未検証';section.append(h,note);let years=new Map();for(const mb of albums){let year=(mb['first-release-date']||'').slice(0,4);if(!/^[0-9]{4}$/.test(year))continue;let key=titleKey(mb.title);if(!key)continue;let old=years.get(key);if(!old||year<old)years.set(key,year)}
+function renderLegacy(){results.innerHTML='';if(!artistName)return;if(ytAlbums.length){let section=document.createElement('section');let h=document.createElement('h2');h.className='artist';h.textContent='YouTube Musicで見つかったアルバム';let note=document.createElement('div');note.className='sub';note.textContent='YouTube Musicの検索結果から取得 · 正規発売元・地域での再生可否は未検証';section.append(h,note);let years=new Map();for(const mb of albums){let year=(mb['first-release-date']||'').slice(0,4);if(!/^[0-9]{4}$/.test(year))continue;let key=titleKey(mb.title);if(!key)continue;let old=years.get(key);if(!old||year<old)years.set(key,year)}
 let mbById=new Map(albums.map(a=>[a.id,a]));let mbByTitle=new Map();let ambiguousTitles=new Set();for(const a of albums){let key=titleKey(a.title);if(!key)continue;if(mbByTitle.has(key)&&mbByTitle.get(key).id!==a.id)ambiguousTitles.add(key);else mbByTitle.set(key,a)}for(const key of ambiguousTitles)mbByTitle.delete(key);
 let visibleYt=ytAlbums.filter(x=>x.artist_check!=='mismatch').map(a=>{let mb=mbById.get(a.mb_release_group)||mbByTitle.get(titleKey(a.title));let mbYear=mb&&(mb['first-release-date']||'').slice(0,4);let displayYear=a.original_year||(/^[0-9]{4}$/.test(mbYear||'')?mbYear:null)||a.year||null;let albumType=mb?typeOf(mb):null;return {...a,displayYear,albumType}});
 if(ytEvidenceOnly)visibleYt=visibleYt.filter(a=>{
@@ -201,12 +259,12 @@ if(ytEvidenceOnly){
  help.textContent='MusicBrainzに公式発売の登録がある作品を表示します。これはYouTube Music上の配信盤が正規であることの証明ではありません。';
  section.append(help);
 }
-for(let a of visibleYt.slice(0,ytVisible)){let item=document.createElement('article');item.className='album';if(a.thumbnail){let img=document.createElement('img');img.className='cover';img.src=a.thumbnail;img.alt='';img.loading='lazy';item.append(img)}let info=document.createElement('div');info.className='info';let title=document.createElement('div');title.className='album-title';title.textContent=a.title;let meta=document.createElement('div');meta.className='meta';meta.textContent=(a.displayYear||'発売年不明')+(a.albumType?' · '+a.albumType:'')+(a.track_count?' · '+a.track_count+'曲':'')+(a.artist_check==='matched'?' · 本人名義を確認（正規盤は未確認）':' · 本人名義・正規盤とも未確認');let link=document.createElement('a');link.className='listen';link.href=a.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent='YouTube Musicでアルバムを開く ↗';info.append(title,meta,link);
+for(let a of visibleYt.slice(0,ytVisible)){let item=document.createElement('article');item.className='album';if(a.thumbnail){let img=document.createElement('img');img.className='cover';img.src=a.thumbnail;img.alt='';img.loading='lazy';item.append(img)}let info=document.createElement('div');info.className='info';let title=document.createElement('div');title.className='album-title';title.textContent=a.title;let meta=document.createElement('div');meta.className='meta';meta.textContent=(a.displayYear||'発売年不明')+(a.albumType?' · '+a.albumType:'')+(a.track_count?' · '+a.track_count+'曲':'')+(a.artist_check==='matched'?' · 本人名義を確認（正規盤は未確認）':' · 本人名義・正規盤とも未確認');let link=document.createElement('a');link.className='listen';link.href=a.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent='YouTube Musicでアルバムを開く ↗';info.append(title,meta,link);appendAutomaticEvidence(a,info);
 let matchedGroup=mbById.get(a.mb_release_group)||mbByTitle.get(titleKey(a.title));
 if(matchedGroup){
   if(a.match_evidence){
     let machine=document.createElement('details');machine.className='album-tools';
-    let caption=document.createElement('summary');caption.textContent=a.match_evidence.status==='corroborated'?'発売盤の曲目・レーベルが一致（正規配信は未保証）':'自動照合の根拠を見る（候補）';
+    let caption=document.createElement('summary');caption.textContent='従来の照合記録：'+(a.match_evidence.status==='corroborated'?'発売盤の曲目・レーベルが一致（正規配信は未保証）':'自動照合の根拠を見る（候補）');
     let evidenceText=document.createElement('div');evidenceText.className='release-detail';
     evidenceText.textContent='確認日時：'+(a.match_evidence.checked_at||'不明')+' · 配信レーベル：'+(a.match_evidence.yt_label||'未取得');
     machine.append(caption,evidenceText);
@@ -258,13 +316,125 @@ if(matchedGroup){
   const recordedLabel=record?.ytLabel||'';
   comparison.textContent=!recordedLabel?'レーベル照合：YouTube Music側の表示情報が未登録':!officialLabels.length?'レーベル照合：MusicBrainz側の情報が不足':officialLabels.some(x=>normalizeLabel(x)===normalizeLabel(recordedLabel))?'レーベル名が一致（同一盤・正規配信の証明ではありません）':'レーベル名が一致しません（別表記・再発盤の可能性あり）';
   let panel=document.createElement('details');panel.className='album-tools';
-  let summary=document.createElement('summary');summary.textContent=record?'照合記録を編集':'正規盤の照合結果を記録';
+  let summary=document.createElement('summary');summary.textContent=record?'手動の照合記録を編集（任意）':'手動の照合記録（任意）';
   let body=document.createElement('div');body.className='album-tools-body';
   body.append(check,detail,mbLabel,comparison,verification,verdict,labelInput,notesInput,saveCheck);
   panel.append(summary,body);info.append(panel);
 }
-item.append(info);section.append(item)}if(visibleYt.length>ytVisible){let moreYt=document.createElement('button');moreYt.className='more';moreYt.textContent='さらに20作品を見る（残り'+(visibleYt.length-ytVisible)+'作品）';moreYt.onclick=()=>{ytVisible+=20;render()};section.append(moreYt)}results.append(section)};if(!ytAlbums.length&&normalize(artistName)==='milesdavis'){let featured=document.createElement('section');featured.innerHTML='<h2 class="artist">YouTube Music 直接リンク</h2><div class="sub">接続テストで発見し、Safariでアルバムページを確認した作品</div><article class="album"><img class="cover" alt="Kind of Blue ジャケット" src="https://coverartarchive.org/release-group/6b1b0b44-0b9b-3f4e-a6bc-6c3e3d3cbb3d/front-250" onerror="this.style.visibility=\'hidden\'"><div class="info"><div class="album-title">Kind of Blue</div><div class="meta">1959 · スタジオ盤 · 5曲</div><a class="listen" href="https://music.youtube.com/browse/MPREb_iNbKdKjDqyr" target="_blank" rel="noopener noreferrer">YouTube Musicでアルバムを開く ↗</a></div></article>';results.append(featured)}let referenceStart=results.children.length;let h=document.createElement('h2');h.className='artist';h.textContent=artistName;results.append(h);let sub=document.createElement('div');sub.className='sub';sub.textContent='MusicBrainzに登録された参考作品一覧 · 配信未確認の作品も含まれます';results.append(sub);let filters=document.createElement('div');filters.className='filters';for(let f of ['おすすめ','確認済み','すべて','スタジオ盤','ライブ盤','ベスト・編集盤','その他']){let b=document.createElement('button');b.className='filter'+(filter===f?' active':'');b.textContent=f;b.onclick=()=>{filter=f;render()};filters.append(b)}results.append(filters);let shown=uniqueAlbums().filter(a=>{let missing=albumStatuses[a.id]==='missing';let confirmed=albumStatuses[a.id]==='confirmed'&&albumUrl(verifiedLinks[a.id]||'');if(filter==='確認済み')return confirmed;if(filter==='おすすめ')return !missing;if(filter==='すべて')return true;if(filter==='その他')return missing||typeOf(a)==='その他';return !missing&&typeOf(a)===filter});if(filter==='おすすめ')shown.sort((a,b)=>Number(Boolean(albumUrl(verifiedLinks[b.id]||'')))-Number(Boolean(albumUrl(verifiedLinks[a.id]||'')))|| (a['first-release-date']||'9999').localeCompare(b['first-release-date']||'9999'));for(let a of shown){let item=document.createElement('article');item.className='album';let img=document.createElement('img');img.className='cover';img.alt='';img.loading='lazy';img.src='https://coverartarchive.org/release-group/'+encodeURIComponent(a.id)+'/front-250';img.onerror=()=>{img.onerror=null;img.removeAttribute('src')};let info=document.createElement('div');info.className='info';let title=document.createElement('div');title.className='album-title';title.textContent=a.title;let meta=document.createElement('div');meta.className='meta';meta.textContent=(a['first-release-date']?.slice(0,4)||'発売年不明')+' · '+typeOf(a);let link=document.createElement('a');link.className='listen';link.target='_blank';link.rel='noopener noreferrer';const searchUrl='https://music.youtube.com/search?q='+encodeURIComponent(artistName+' '+a.title);let saved=verifiedLinks[a.id];let automatic=[...ytAlbums,...relatedCatalogAlbums].find(x=>x.artist_check==='matched'&&x.mb_release_group===a.id&&x.match_evidence?.status==='corroborated'&&albumUrl(x.url));let directLink=saved&&albumUrl(saved)?saved:(automatic?automatic.url:null);link.href=directLink||searchUrl;link.textContent=saved&&albumUrl(saved)?'登録したアルバムを直接開く ↗':automatic?'YouTube Musicでアルバムを直接開く ↗':'YouTube Musicで探す ↗';let direct=document.createElement('button');direct.className='detail-btn';direct.textContent=saved?'直接リンクを変更':'正しいアルバムのURLを登録';direct.onclick=()=>{let existing=document.getElementById('wrap-'+a.id);if(existing){existing.remove();return}let input=document.createElement('input');input.id='url-'+a.id;input.className='direct-url';input.placeholder='YouTube MusicのアルバムURLを貼り付け';input.value=verifiedLinks[a.id]||'';let save=document.createElement('button');save.className='detail-btn';save.textContent='保存';let cancel=document.createElement('button');cancel.className='detail-btn';cancel.textContent='取消';let wrap=document.createElement('div');wrap.id='wrap-'+a.id;wrap.append(input,save,cancel);save.onclick=()=>{let value=input.value.trim();if(!albumUrl(value)){alert('YouTube MusicのアルバムURL（browse/MPREb_ または playlist?list=OLAK5uy_）を入力してください。');return}verifiedLinks[a.id]=value;if(!saveLocal('recordVerifiedLinks',verifiedLinks)){alert('保存できませんでした。ブラウザの保存設定をご確認ください。');return}setStatus(a.id,'confirmed');render()};cancel.onclick=()=>wrap.remove();direct.after(wrap)};let detail=document.createElement('div');detail.className='release-detail';let btn=document.createElement('button');btn.className='detail-btn';btn.textContent='発売元を確認';btn.onclick=()=>showReleaseDetail(a,detail,btn);let availability=document.createElement('div');availability.className='availability'+(albumStatuses[a.id]==='confirmed'?' confirmed':albumStatuses[a.id]==='missing'?' missing':'');availability.textContent=statusLabel(a);let select=document.createElement('select');select.className='direct-url';select.setAttribute('aria-label',a.title+'の配信確認状況');for(let [v,t] of [['unknown','配信未確認'],['confirmed','自分で配信を確認した'],['missing','探したが見つからなかった']]){let opt=document.createElement('option');opt.value=v;opt.textContent=t;select.append(opt)}select.value=albumStatuses[a.id]||'unknown';select.onchange=()=>{if(!setStatus(a.id,select.value)){alert('状態を保存できませんでした');return}availability.textContent=statusLabel(a);availability.className='availability'+(select.value==='confirmed'?' confirmed':select.value==='missing'?' missing':'');render()};let tools=document.createElement('details');tools.className='album-tools';let summary=document.createElement('summary');summary.textContent='発売元・配信情報を確認';let body=document.createElement('div');body.className='album-tools-body';let lookup=document.createElement('button');lookup.className='detail-btn';lookup.textContent='登録済みの配信リンクを探す';let lookupResult=document.createElement('div');lookupResult.className='release-detail';lookup.onclick=()=>findCatalogLink(a,lookupResult,lookup,link);body.append(lookup,lookupResult,availability,select,btn,detail,document.createElement('br'),direct);tools.append(summary,body);info.append(title,meta,link,tools);item.append(img,info);results.append(item)}if(!shown.length){let p=document.createElement('div');p.className='status';p.textContent=filter==='確認済み'?'直接リンクを確認済みの作品はまだありません。「すべて」からアルバムを探し、正しいYouTube MusicのURLを登録すると、ここに表示されます。':'この分類の作品は、取得済みのデータにはありません。';results.append(p)}let note=document.createElement('p');note.className='note';note.textContent='※ 「おすすめ」は配信確認済みを意味しません。 「その他」には元々その他に分類される作品と、ご自身で「見つからなかった」と記録した作品を表示します。未確認作品は配信中とは限りません。MusicBrainzの登録リンクは正規配信や現在の配信可否を保証しません。配信状況はご自身による確認の記録であり、自動判定ではありません。登録したリンクと確認状況はこのブラウザ内に保存され、他の端末には同期されません。アルバムURLはご自身で確認してください。同名作品の整理は簡易的なものです。発売元の表示はMusicBrainzの登録情報であり、正規盤・音質・YouTube Musicの配信状況を保証しません。検索先で配信元もご確認ください。';results.append(note);if(offset<total){let more=document.createElement('button');more.className='more';more.textContent='さらに作品を読み込む';more.disabled=busy;more.onclick=loadMore;results.append(more)}if(ytAlbums.length){let reference=document.createElement('details');reference.className='album-tools';reference.style.marginTop='35px';let summary=document.createElement('summary');summary.textContent='参考資料：MusicBrainzの作品一覧（配信未確認）';summary.style.fontSize='14px';summary.style.padding='14px 0';reference.append(summary);let body=document.createElement('div');body.className='album-tools-body';while(results.children.length>referenceStart)body.append(results.children[referenceStart]);reference.append(body);results.append(reference)}}
-async function loadMore(){if(busy)return;busy=true;status.textContent='作品を読み込んでいます…';try{let data=await api('release-group?artist='+encodeURIComponent(artistId)+'&type=album&limit=100&offset='+offset+'&fmt=json');let batch=data['release-groups']||[];let seen=new Set(albums.map(a=>a.id));for(let a of batch){if(!seen.has(a.id)){albums.push(a);seen.add(a.id)}}offset+=batch.length;total=data['release-group-count']||0;status.textContent=uniqueAlbums().length+'作品を表示しています（取得済み'+albums.length+'件）。';render()}catch(e){status.textContent=e.message+'。少し時間をおいて再試行してください。'}finally{busy=false}}
+item.append(info);section.append(item)}if(visibleYt.length>ytVisible){let moreYt=document.createElement('button');moreYt.className='more';moreYt.textContent='さらに20作品を見る（残り'+(visibleYt.length-ytVisible)+'作品）';moreYt.onclick=()=>{ytVisible+=20;render()};section.append(moreYt)}results.append(section)};let referenceStart=results.children.length;let h=document.createElement('h2');h.className='artist';h.textContent=artistName;results.append(h);let sub=document.createElement('div');sub.className='sub';sub.textContent='MusicBrainzに登録された参考作品一覧 · 配信未確認の作品も含まれます';results.append(sub);let filters=document.createElement('div');filters.className='filters';for(let f of ['おすすめ','確認済み','すべて','スタジオ盤','ライブ盤','ベスト・編集盤','その他']){let b=document.createElement('button');b.className='filter'+(filter===f?' active':'');b.textContent=f;b.onclick=()=>{filter=f;render()};filters.append(b)}results.append(filters);let shown=uniqueAlbums().filter(a=>{let missing=albumStatuses[a.id]==='missing';let confirmed=albumStatuses[a.id]==='confirmed'&&albumUrl(verifiedLinks[a.id]||'');if(filter==='確認済み')return confirmed;if(filter==='おすすめ')return !missing;if(filter==='すべて')return true;if(filter==='その他')return missing||typeOf(a)==='その他';return !missing&&typeOf(a)===filter});if(filter==='おすすめ')shown.sort((a,b)=>Number(Boolean(albumUrl(verifiedLinks[b.id]||'')))-Number(Boolean(albumUrl(verifiedLinks[a.id]||'')))|| (a['first-release-date']||'9999').localeCompare(b['first-release-date']||'9999'));for(let a of shown){let item=document.createElement('article');item.className='album';let img=document.createElement('img');img.className='cover';img.alt='';img.loading='lazy';img.src='https://coverartarchive.org/release-group/'+encodeURIComponent(a.id)+'/front-250';img.onerror=()=>{img.onerror=null;img.removeAttribute('src')};let info=document.createElement('div');info.className='info';let title=document.createElement('div');title.className='album-title';title.textContent=a.title;let meta=document.createElement('div');meta.className='meta';meta.textContent=(a['first-release-date']?.slice(0,4)||'発売年不明')+' · '+typeOf(a);let link=document.createElement('a');link.className='listen';link.target='_blank';link.rel='noopener noreferrer';const searchUrl='https://music.youtube.com/search?q='+encodeURIComponent(artistName+' '+a.title);let saved=verifiedLinks[a.id];let automatic=[...ytAlbums,...relatedCatalogAlbums].find(x=>x.artist_check==='matched'&&x.mb_release_group===a.id&&x.match_evidence?.status==='corroborated'&&albumUrl(x.url));let directLink=saved&&albumUrl(saved)?saved:(automatic?automatic.url:null);link.href=directLink||searchUrl;link.textContent=saved&&albumUrl(saved)?'登録したアルバムを直接開く ↗':automatic?'YouTube Musicでアルバムを直接開く ↗':'YouTube Musicで探す ↗';let direct=document.createElement('button');direct.className='detail-btn';direct.textContent=saved?'直接リンクを変更':'正しいアルバムのURLを登録';direct.onclick=()=>{let existing=document.getElementById('wrap-'+a.id);if(existing){existing.remove();return}let input=document.createElement('input');input.id='url-'+a.id;input.className='direct-url';input.placeholder='YouTube MusicのアルバムURLを貼り付け';input.value=verifiedLinks[a.id]||'';let save=document.createElement('button');save.className='detail-btn';save.textContent='保存';let cancel=document.createElement('button');cancel.className='detail-btn';cancel.textContent='取消';let wrap=document.createElement('div');wrap.id='wrap-'+a.id;wrap.append(input,save,cancel);save.onclick=()=>{let value=input.value.trim();if(!albumUrl(value)){alert('YouTube MusicのアルバムURL（browse/MPREb_ または playlist?list=OLAK5uy_）を入力してください。');return}verifiedLinks[a.id]=value;if(!saveLocal('recordVerifiedLinks',verifiedLinks)){alert('保存できませんでした。ブラウザの保存設定をご確認ください。');return}setStatus(a.id,'confirmed');render()};cancel.onclick=()=>wrap.remove();direct.after(wrap)};let detail=document.createElement('div');detail.className='release-detail';let btn=document.createElement('button');btn.className='detail-btn';btn.textContent='発売元を確認';btn.onclick=()=>showReleaseDetail(a,detail,btn);let availability=document.createElement('div');availability.className='availability'+(albumStatuses[a.id]==='confirmed'?' confirmed':albumStatuses[a.id]==='missing'?' missing':'');availability.textContent=statusLabel(a);let select=document.createElement('select');select.className='direct-url';select.setAttribute('aria-label',a.title+'の配信確認状況');for(let [v,t] of [['unknown','配信未確認'],['confirmed','自分で配信を確認した'],['missing','探したが見つからなかった']]){let opt=document.createElement('option');opt.value=v;opt.textContent=t;select.append(opt)}select.value=albumStatuses[a.id]||'unknown';select.onchange=()=>{if(!setStatus(a.id,select.value)){alert('状態を保存できませんでした');return}availability.textContent=statusLabel(a);availability.className='availability'+(select.value==='confirmed'?' confirmed':select.value==='missing'?' missing':'');render()};let tools=document.createElement('details');tools.className='album-tools';let summary=document.createElement('summary');summary.textContent='発売元・配信情報を確認';let body=document.createElement('div');body.className='album-tools-body';let lookup=document.createElement('button');lookup.className='detail-btn';lookup.textContent='登録済みの配信リンクを探す';let lookupResult=document.createElement('div');lookupResult.className='release-detail';lookup.onclick=()=>findCatalogLink(a,lookupResult,lookup,link);body.append(lookup,lookupResult,availability,select,btn,detail,document.createElement('br'),direct);tools.append(summary,body);info.append(title,meta,link,tools);item.append(img,info);results.append(item)}if(!shown.length){let p=document.createElement('div');p.className='status';p.textContent=filter==='確認済み'?'直接リンクを確認済みの作品はまだありません。「すべて」からアルバムを探し、正しいYouTube MusicのURLを登録すると、ここに表示されます。':'この分類の作品は、取得済みのデータにはありません。';results.append(p)}let note=document.createElement('p');note.className='note';note.textContent='※ 「おすすめ」は配信確認済みを意味しません。 「その他」には元々その他に分類される作品と、ご自身で「見つからなかった」と記録した作品を表示します。未確認作品は配信中とは限りません。MusicBrainzの登録リンクは正規配信や現在の配信可否を保証しません。配信状況はご自身による確認の記録であり、自動判定ではありません。登録したリンクと確認状況はこのブラウザ内に保存され、他の端末には同期されません。アルバムURLはご自身で確認してください。同名作品の整理は簡易的なものです。発売元の表示はMusicBrainzの登録情報であり、正規盤・音質・YouTube Musicの配信状況を保証しません。検索先で配信元もご確認ください。';results.append(note);if(offset<total){let more=document.createElement('button');more.className='more';more.textContent='さらに作品を読み込む';more.disabled=busy;more.onclick=loadMore;results.append(more)}if(ytAlbums.length){let reference=document.createElement('details');reference.id='legacy-reference';reference.className='album-tools';reference.style.marginTop='35px';let summary=document.createElement('summary');summary.textContent='参考資料：MusicBrainzの作品一覧（配信未確認）';summary.style.fontSize='14px';summary.style.padding='14px 0';reference.append(summary);let body=document.createElement('div');body.className='album-tools-body';while(results.children.length>referenceStart)body.append(results.children[referenceStart]);reference.append(body);results.append(reference)}}
+
+const editionDetails=new Map(),editionRequests=new Map();
+let officialReleases=[],officialOffset=0,officialTotal=0,officialError='',officialLoading=false;
+function releaseVisibility(r){
+ if(['Bootleg','Pseudo-Release','Promotion'].includes(r.status))return 'excluded';
+ return r.status==='Official'?'official':'unknown';
+}
+async function loadOfficialReleases(reset=false){
+ if(officialLoading&&!reset)return;
+ const selected=artistId;
+ if(reset){officialReleases=[];officialOffset=0;officialTotal=0;officialError=''}
+ officialLoading=true;
+ try{
+  const d=await api('release?artist='+encodeURIComponent(selected)+'&inc=labels+release-groups&limit=100&offset='+officialOffset+'&fmt=json');
+  if(selected!==artistId)return;
+  const batch=d.releases||[],seen=new Set(officialReleases.map(r=>r.id));
+  for(const r of batch)if(!seen.has(r.id)){officialReleases.push(r);seen.add(r.id)}
+  officialOffset+=batch.length;officialTotal=d['release-count']??officialOffset;officialError='';
+ }catch(e){if(selected===artistId)officialError=e.message}
+ finally{if(selected===artistId){officialLoading=false;render()}}
+}
+function editionTrackText(d){
+ const lines=[];
+ const ordered=items=>[...(items||[])].sort((a,b)=>(a.position??Infinity)-(b.position??Infinity));
+ for(const m of ordered(d.media)){
+  const tracks=ordered(m.tracks);
+  if(!tracks.length)lines.push('ディスク'+(m.position||'?')+'：曲目は未登録です。');
+  for(const t of tracks)lines.push('ディスク'+(m.position||'?')+' · '+(t.number||t.position||'?')+'. '+(t.title||t.recording?.title||'曲名未登録'));
+  if(m['track-count']>tracks.length)lines.push('ディスク'+(m.position||'?')+'：曲目情報が不足しています（'+tracks.length+' / '+m['track-count']+'曲）。');
+ }
+ return lines.join('\n')||'曲目は未登録です。';
+}
+async function showEditionTracks(r,body,button){
+ button.disabled=true;
+ try{
+  if(!editionDetails.has(r.id)&&!editionRequests.has(r.id)){
+   editionRequests.set(r.id,api('release/'+encodeURIComponent(r.id)+'?inc=recordings+labels&fmt=json').then(d=>{editionDetails.set(r.id,d);return d}).finally(()=>editionRequests.delete(r.id)));
+  }
+  const cached=editionDetails.get(r.id),d=cached||await editionRequests.get(r.id);
+  if(!cached)body=[...document.querySelectorAll('#official-releases details')].find(node=>node.dataset.releaseId===r.id);
+  if(!body)return;
+  button=body.querySelector('button');
+  body.querySelector('.edition-tracks')?.remove();
+  const tracks=document.createElement('div');tracks.className='release-detail edition-tracks';tracks.style.whiteSpace='pre-wrap';
+  tracks.textContent=editionTrackText(d);
+  body.querySelector('.track-error')?.remove();body.append(tracks);button?.remove();
+ }catch(e){
+  body=[...document.querySelectorAll('#official-releases details')].find(node=>node.dataset.releaseId===r.id);if(!body)return;
+  button=body.querySelector('button');
+  let error=body.querySelector('.track-error');if(!error){error=document.createElement('div');error.className='release-detail track-error';body.append(error)}
+  error.textContent='曲目を取得できませんでした：'+e.message;
+  if(button){button.disabled=false;button.textContent='曲目の取得を再試行';}
+ }
+}
+function render(){
+ const relatedBands=document.getElementById('related-bands');
+ const openEditions=new Set([...document.querySelectorAll('#official-releases details[open]')].map(d=>d.dataset.releaseId));
+ const historicalOpen=Boolean(document.getElementById('historical-catalog')?.open);
+ const referenceOpen=Boolean(document.getElementById('legacy-reference')?.open);
+ renderLegacy();
+ const reference=document.getElementById('legacy-reference');if(reference)reference.open=referenceOpen;
+ const historical=document.createElement('details'),summary=document.createElement('summary');
+ historical.id='historical-catalog';historical.open=historicalOpen;historical.className='album-tools';summary.textContent='以前のYouTube Music一覧・保存記録・照合ツール';historical.append(summary);
+ while(results.firstChild)historical.append(results.firstChild);
+ results.append(historical);
+ const section=document.createElement('section');section.id='official-releases';
+ const heading=document.createElement('h2');heading.className='artist';heading.textContent=artistName+' の発売アルバム';section.append(heading);
+ const note=document.createElement('p');note.className='sub';note.textContent='MusicBrainzの発売記録を基準に表示。公式ライブ・ベスト・再発盤を含みます。YouTube Musicの配信許諾・再生可否は保証しません。';section.append(note);
+ const line=text=>{const p=document.createElement('p');p.className='release-detail';p.textContent=text;section.append(p)};
+ line('発売記録を'+officialOffset+' / '+officialTotal+'件取得。取得済みの範囲を表示しています。再発・国別盤は発売盤ごとに表示します。');
+ if(officialError)line('発売記録を取得できませんでした：'+officialError+'。取得済みの記録は保持しています。');
+ const visible=officialReleases.filter(r=>releaseVisibility(r)!=='excluded'&&r['release-group']?.['primary-type']==='Album');
+ visible.sort((a,b)=>(a.date||'9999').localeCompare(b.date||'9999')||a.title.localeCompare(b.title));
+ for(const r of visible){
+  const article=document.createElement('article');article.className='album';const info=document.createElement('div');info.className='info';
+  const title=document.createElement('div');title.className='album-title';title.textContent=r.title;
+  const meta=document.createElement('div');meta.className='meta';
+  const labels=(r['label-info']||[]).map(li=>li.label?.name).filter(usableLabel),numbers=(r['label-info']||[]).map(li=>li['catalog-number']).filter(Boolean);
+  meta.textContent=[r.date||'発売日未登録',typeOf(r['release-group']||{}),r.country,labels.join(' / ')||'レーベル未登録',numbers.length?'品番：'+numbers.join(' / '):'',releaseVisibility(r)==='official'?'公式発売の登録あり':'発売区分：'+(r.status||'未登録')+'（確認待ち）'].filter(Boolean).join(' · ');
+  const search=document.createElement('a');search.className='listen';search.target='_blank';search.rel='noopener noreferrer';search.href='https://music.youtube.com/search?q='+encodeURIComponent(artistName+' '+r.title);search.textContent='YouTube Musicで探す ↗';
+  const source=document.createElement('a');source.className='listen';source.target='_blank';source.rel='noopener noreferrer';source.href='https://musicbrainz.org/release/'+encodeURIComponent(r.id);source.textContent='発売記録を見る ↗';source.style.marginLeft='14px';
+  const details=document.createElement('details'),caption=document.createElement('summary');details.className='album-tools';details.dataset.releaseId=r.id;details.open=openEditions.has(r.id);caption.textContent='収録曲・曲順を見る';details.append(caption);
+  const button=document.createElement('button');button.className='detail-btn';button.textContent='曲目を取得';button.onclick=()=>showEditionTracks(r,details,button);details.append(button);
+  if(editionDetails.has(r.id))showEditionTracks(r,details,button);
+  info.append(title,meta,search,source,details);
+  const group=r['release-group']?.id,saved=verifiedLinks[group];
+  if(group&&albumStatuses[group]==='confirmed'&&albumUrl(saved||'')){
+   const direct=document.createElement('a');direct.className='listen';direct.href=saved;direct.target='_blank';direct.rel='noopener noreferrer';direct.textContent='利用者が確認した作品リンク ↗';info.append(direct);
+   const caution=document.createElement('div');caution.className='sub';caution.textContent='作品単位の保存リンクです。この発売盤との同一性・配信許諾は未確認です。';info.append(caution);
+  }
+  article.append(info);section.append(article);
+ }
+ if(officialLoading)line('発売記録を読み込んでいます…');
+ if(!visible.length&&!officialLoading&&!officialError)line('この取得範囲に該当するアルバムはありません。情報不足だけで非公式とは判定しません。');
+ if(officialOffset<officialTotal||officialError){const more=document.createElement('button');more.className='more';more.textContent=officialError?'発売記録の取得を再試行':'さらに発売記録を読み込む';more.disabled=officialLoading;more.onclick=()=>loadOfficialReleases();section.append(more)}
+ results.prepend(section);
+ if(relatedBands)results.append(relatedBands);
+}
+
+async function loadMore(){
+ if(busy)return;
+ const selected=artistId;busy=true;status.textContent='作品を読み込んでいます…';
+ try{
+  const data=await api('release-group?artist='+encodeURIComponent(selected)+'&type=album&limit=100&offset='+offset+'&fmt=json');
+  if(selected!==artistId)return;
+  const batch=data['release-groups']||[],seen=new Set(albums.map(a=>a.id));
+  for(const a of batch)if(!seen.has(a.id)){albums.push(a);seen.add(a.id)}
+  offset+=batch.length;total=data['release-group-count']||0;
+  status.textContent='従来の参考一覧：'+uniqueAlbums().length+'作品を表示しています（取得済み'+albums.length+'件）。';
+ }catch(e){if(selected===artistId)status.textContent=e.message+'。少し時間をおいて再試行してください。'}
+ finally{busy=false;if(selected===artistId)render()}
+}
+
 async function showRelatedBands(){
   let existing=$('related-bands');if(existing)existing.remove();
   if(!artistId)return;
@@ -301,16 +471,20 @@ async function chooseArtist(artist){
   artistChoices=[];albums=[];ytAlbums=[];relatedCatalogAlbums=[];ytVisible=20;ytSort='name';offset=0;total=0;filter='おすすめ';
   artistId=artist.id;artistName=artist.name;results.innerHTML='';
   status.textContent='「'+artistName+'」のアルバムを取得します…';
+  const officialTask=loadOfficialReleases(true);
   try{
-    let response=await fetch('data/ytmusic-albums.json?cache='+Date.now());
+    let response=await fetchJSONWithTimeout('data/ytmusic-albums.json');
+    if(artistId!==artist.id)return;
     if(response.ok){
       let catalog=await response.json();
+      if(artistId!==artist.id)return;
       ytAlbums=catalog[artistName]||[];
       // When viewing a band's discography, also look for matching album links
       // catalogued under its recorded members' solo names.
       if(artist.type==='Group'){
         try{
           let relations=await api('artist/'+encodeURIComponent(artist.id)+'?inc=artist-rels&fmt=json');
+          if(artistId!==artist.id)return;
           let memberNames=new Set();
           for(const rel of relations.relations||[]){
             if(rel.type!=='member of band'||!rel.artist)continue;
@@ -323,60 +497,12 @@ async function chooseArtist(artist){
       }
     }
   }catch(error){console.warn('Catalog not available yet',error)}
+  await officialTask;
+  if(artistId!==artist.id)return;
   await loadMore();
   if(artistId===artist.id)showRelatedBands();
-  // Fill unknown years using the selected artist and their linked bands.
-  // Never infer a year from an unrelated artist with the same album title.
-  const missing=ytAlbums.filter(a=>!a.original_year&&!a.year).slice(0,20);
-  let changed=false;
-  let bandGroups=[];
-  let relatedArtistIds=new Set([artist.id]);
-  let relatedArtistNames=new Set([normalize(artistName)]);
-  if(missing.length&&artist.type!=='Group'){
-    try{
-      const relationData=await api('artist/'+encodeURIComponent(artist.id)+'?inc=artist-rels&fmt=json');
-      const bands=[...new Map((relationData.relations||[])
-        .filter(rel=>rel.type==='member of band'&&rel.artist&&rel.artist.id!==artist.id)
-        .map(rel=>[rel.artist.id,rel.artist])).values()].slice(0,8);
-      for(const band of bands){
-        relatedArtistIds.add(band.id);
-        relatedArtistNames.add(normalize(band.name));
-        if(artistId!==artist.id)break;
-        try{
-          const d=await api('release-group?artist='+encodeURIComponent(band.id)+'&type=album&limit=100&fmt=json');
-          bandGroups.push(...(d['release-groups']||[]));
-        }catch(e){console.warn('Band discography lookup skipped',band.name,e)}
-      }
-    }catch(e){console.warn('Related band year lookup unavailable',e)}
-  }
-  for(const a of missing){
-    if(artistId!==artist.id)break;
-    try{
-      let found=[...albums,...bandGroups].filter(x=>
-        titleKey(x.title)===titleKey(a.title)&&/^\d{4}/.test(x['first-release-date']||'')
-      ).sort((x,y)=>(x['first-release-date']||'').localeCompare(y['first-release-date']||''))[0];
-      if(!found){
-        // Title-only search also finds releases credited to related groups;
-        // accept only an exact title and an artist-credit matching this artist or a linked band.
-        let query='releasegroup:"'+a.title.replace(/"/g,'')+'"';
-        let data=await api('release-group?query='+encodeURIComponent(query)+'&limit=25&fmt=json');
-        found=(data['release-groups']||[]).filter(x=>
-          titleKey(x.title)===titleKey(a.title)&&/^\d{4}/.test(x['first-release-date']||'')&&
-          (x['artist-credit']||[]).some(ac=>ac.artist&&
-            (relatedArtistIds.has(ac.artist.id)||relatedArtistNames.has(normalize(ac.artist.name))))
-        ).sort((x,y)=>(x['first-release-date']||'').localeCompare(y['first-release-date']||''))[0];
-      }
-      if(found){
-        a.original_year=found['first-release-date'].slice(0,4);
-        a.mb_release_group=found.id;
-        a.albumType=typeOf(found);
-        if(!albums.some(x=>x.id===found.id))albums.push(found);
-        changed=true;
-      }
-    }catch(e){console.warn('Year lookup skipped',a.title,e.message);break}
-  }
-  if(changed&&artistId===artist.id){render();showRelatedBands();}
 }
+
 function showArtistChoices(list){
   results.innerHTML='';let section=document.createElement('section');
   let heading=document.createElement('h2');heading.className='artist';heading.textContent='アーティストを選択';

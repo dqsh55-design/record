@@ -1,0 +1,380 @@
+{
+  "checked_at": "2026-10-23T07:27:15.223705+00:00",
+  "targets": [
+    {
+      "artist": "Jeff Beck",
+      "artist_id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+      "total_release_records": 253,
+      "fetched": 100,
+      "official_albums_in_first_page": 79,
+      "sample": {
+        "cover-art-archive": {
+          "artwork": true,
+          "count": 1,
+          "back": false,
+          "front": true,
+          "darkened": false
+        },
+        "asin": null,
+        "packaging": "Jewel Case",
+        "title": "Flash",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "media": [
+          {
+            "title": "",
+            "id": "0e0b181f-d878-324c-a5d0-9529a32df04f",
+            "track-count": 9,
+            "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+            "track-offset": 0,
+            "tracks": [
+              {
+                "id": "c44f4a98-e72d-40f2-bc92-fd084ae8b45c",
+                "recording": {
+                  "id": "5d5ae20d-4883-49d9-9e5d-9f445d411484",
+                  "first-release-date": "1985-07",
+                  "disambiguation": "",
+                  "length": 278026,
+                  "video": false,
+                  "title": "Ambitious"
+                },
+                "title": "Ambitious",
+                "number": "1",
+                "position": 1,
+                "length": 268000
+              },
+              {
+                "number": "2",
+                "position": 2,
+                "length": 354000,
+                "id": "6c49539c-282c-41a8-815d-ac7031852d04",
+                "recording": {
+                  "title": "Gets Us All in the End",
+                  "video": false,
+                  "length": 366000,
+                  "disambiguation": "",
+                  "first-release-date": "1985-07",
+                  "id": "8b2a1894-cb71-4a4c-84d6-e1cf8b65c070"
+                },
+                "title": "Gets Us All in the End"
+              },
+              {
+                "id": "de9861a4-62b4-4177-8600-925dee29187b",
+                "recording": {
+                  "disambiguation": "",
+                  "first-release-date": "1985-07",
+                  "title": "Escape",
+                  "length": 279426,
+                  "video": false,
+                  "id": "5708a93a-c3e0-48e5-a2a9-fba319f4d8c7"
+                },
+                "title": "Escape",
+                "number": "3",
+                "position": 3,
+                "length": 271000
+              },
+              {
+                "recording": {
+                  "disambiguation": "",
+                  "first-release-date": "1985-07",
+                  "title": "People Get Ready",
+                  "length": 294866,
+                  "video": false,
+                  "id": "32c1be1d-f5b3-4faa-a72b-4db1b33128e4"
+                },
+                "title": "People Get Ready",
+                "id": "9e1b0dfa-ff73-4873-b570-f4bbd423299b",
+                "length": 286000,
+                "number": "4",
+                "position": 4
+              },
+              {
+                "id": "8bb67664-09f1-45da-8c4a-3af6f8942f48",
+                "title": "Stop, Look and Listen",
+                "recording": {
+                  "title": "Stop, Look and Listen",
+                  "length": 267626,
+                  "video": false,
+                  "disambiguation": "",
+                  "first-release-date": "1985-07",
+                  "id": "67892db5-8b80-480c-951d-6261f28872f1"
+                },
+                "number": "5",
+                "position": 5,
+                "length": 256000
+              },
+              {
+                "id": "19115004-9fc8-46fc-abb7-9af83ae2cb03",
+                "title": "Get Workin’",
+                "recording": {
+                  "id": "76cfa2d3-ac05-49f0-8a0a-5414288f7d4c",
+                  "title": "Get Workin’",
+                  "length": 215706,
+                  "video": false,
+                  "disambiguation": "",
+                  "first-release-date": "1985-07"
+                },
+                "position": 6,
+                "number": "6",
+                "length": 207000
+              },
+              {
+                "id": "e4659658-366e-4fdb-96d3-1bb28192a397",
+                "title": "Ecstasy",
+                "recording": {
+                  "id": "75af36fe-0de0-48bf-abfd-37abffdb8da4",
+                  "disambiguation": "",
+                  "first-release-date": "1985-07",
+                  "title": "Ecstasy",
+                  "length": 211426,
+                  "video": false
+                },
+                "position": 7,
+                "number": "7",
+                "length": 218000
+              },
+              {
+                "id": "c7e48063-73c0-4fc5-b416-5963be4be7f8",
+                "recording": {
+                  "id": "5dba1f0b-6a9c-4fa5-804a-ad1f749e35ae",
+                  "length": 222000,
+                  "video": false,
+                  "title": "Night After Night",
+                  "first-release-date": "1985-07",
+                  "disambiguation": ""
+                },
+                "title": "Night After Night",
+                "number": "8",
+                "position": 8,
+                "length": 212000
+              },
+              {
+                "length": 325000,
+                "position": 9,
+                "number": "9",
+                "recording": {
+                  "disambiguation": "",
+                  "first-release-date": "1985-07",
+                  "title": "You Know, We Know",
+                  "video": false,
+                  "length": 335800,
+                  "id": "cf8545ef-f8f9-4a97-888c-182f6719f357"
+                },
+                "title": "You Know, We Know",
+                "id": "fb32ab6b-0a90-41e9-b5c8-71fc03880eed"
+              }
+            ],
+            "format": "CD",
+            "position": 1
+          }
+        ],
+        "country": "XE",
+        "release-events": [
+          {
+            "date": "1992",
+            "area": {
+              "type": null,
+              "type-id": null,
+              "sort-name": "Europe",
+              "disambiguation": "",
+              "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+              "iso-3166-1-codes": [
+                "XE"
+              ],
+              "name": "Europe"
+            }
+          }
+        ],
+        "label-info": [
+          {
+            "catalog-number": "982838 2",
+            "label": {
+              "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+              "type": "Imprint",
+              "sort-name": "Epic",
+              "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+              "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+              "name": "Epic",
+              "label-code": 199
+            }
+          }
+        ],
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "id": "00694f49-9f0d-4ab0-a370-e5e3271e5dcc",
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "quality": "normal",
+        "status": "Official",
+        "barcode": "5018665283824",
+        "disambiguation": "",
+        "date": "1992"
+      }
+    },
+    {
+      "artist": "Miles Davis",
+      "artist_id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "total_release_records": 1971,
+      "fetched": 100,
+      "official_albums_in_first_page": 55,
+      "sample": {
+        "text-representation": {
+          "script": "Latn",
+          "language": "eng"
+        },
+        "cover-art-archive": {
+          "front": true,
+          "darkened": false,
+          "artwork": true,
+          "count": 1,
+          "back": false
+        },
+        "country": "US",
+        "packaging": "Cardboard/Paper Sleeve",
+        "release-events": [
+          {
+            "date": "1958",
+            "area": {
+              "sort-name": "United States",
+              "iso-3166-1-codes": [
+                "US"
+              ],
+              "type": null,
+              "name": "United States",
+              "id": "489ce91b-6658-3307-9877-795b68554c98",
+              "disambiguation": "",
+              "type-id": null
+            }
+          }
+        ],
+        "title": "Milestones",
+        "id": "0c21218a-04cc-4135-a445-1d0dbef08ddb",
+        "quality": "normal",
+        "date": "1958",
+        "media": [
+          {
+            "title": "",
+            "tracks": [
+              {
+                "recording": {
+                  "id": "5f84dd67-74c3-4d4f-852c-8749f8006f55",
+                  "length": 349933,
+                  "disambiguation": "original studio mix - CO60203-2",
+                  "video": false,
+                  "title": "Dr. Jackle",
+                  "first-release-date": "1958"
+                },
+                "title": "Dr. Jackle",
+                "position": 1,
+                "length": 353200,
+                "number": "1",
+                "id": "3bef3180-4494-3ac4-bad7-bebcf3bb4acf"
+              },
+              {
+                "title": "Sid’s Ahead",
+                "position": 2,
+                "recording": {
+                  "disambiguation": "original studio mix - CO60204-1",
+                  "length": 782133,
+                  "id": "a2463ab2-c7c4-47b0-b532-61d77e6a1ab3",
+                  "first-release-date": "1958",
+                  "title": "Sid’s Ahead",
+                  "video": false
+                },
+                "id": "0fc5a154-149a-3908-a589-2f680255595e",
+                "number": "2",
+                "length": 785346
+              },
+              {
+                "position": 3,
+                "title": "Two Bass Hit",
+                "recording": {
+                  "first-release-date": "1958",
+                  "title": "Two Bass Hit",
+                  "video": false,
+                  "disambiguation": "original studio mix - CO60199-2",
+                  "length": 315000,
+                  "id": "05a4dfe7-8c30-4294-9f00-89b48dc04d2a"
+                },
+                "id": "55b39cea-8af9-32cd-b09b-ab70573c4fa1",
+                "number": "3",
+                "length": 319106
+              },
+              {
+                "recording": {
+                  "disambiguation": "original studio mix – CO60202–3",
+                  "id": "ae4f577f-e861-4acb-94ab-dd158c7d9bc8",
+                  "length": 344866,
+                  "first-release-date": "1958",
+                  "title": "Milestones",
+                  "video": false
+                },
+                "position": 4,
+                "title": "Milestones",
+                "length": 347320,
+                "id": "1399f5c3-6391-3026-8919-85a170cd2fe2",
+                "number": "4"
+              },
+              {
+                "recording": {
+                  "disambiguation": "original studio master",
+                  "length": 435000,
+                  "id": "9f008f95-e3a0-45f1-827a-f782d39f4468",
+                  "title": "Billy Boy",
+                  "first-release-date": "1958",
+                  "video": false
+                },
+                "position": 5,
+                "title": "Billy Boy",
+                "length": 439946,
+                "number": "5",
+                "id": "f6be5129-73a5-3b7e-b8f1-8560f342588b"
+              },
+              {
+                "id": "41b4d8ca-0d85-3f3a-b620-901c03e5d111",
+                "number": "6",
+                "length": 642573,
+                "title": "Straight, No Chaser",
+                "position": 6,
+                "recording": {
+                  "first-release-date": "1958",
+                  "title": "Straight, No Chaser",
+                  "video": false,
+                  "disambiguation": "original studio mix - CO60201-2",
+                  "length": 640066,
+                  "id": "e93b55ee-f0f0-4391-aad6-0c6a4fefc002"
+                }
+              }
+            ],
+            "position": 1,
+            "track-offset": 0,
+            "track-count": 6,
+            "format": "12\" Vinyl",
+            "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+            "id": "38a2371e-b0ca-37fd-a085-faf4fcd93a10"
+          }
+        ],
+        "status": "Official",
+        "barcode": null,
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "disambiguation": "",
+        "label-info": [
+          {
+            "label": {
+              "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+              "name": "Columbia",
+              "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+              "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX",
+              "type": "Imprint",
+              "sort-name": "Columbia",
+              "label-code": 162
+            },
+            "catalog-number": "CL 1193"
+          }
+        ],
+        "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+        "asin": "B0000576ZE"
+      }
+    }
+  ]
+}
