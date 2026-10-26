@@ -1,0 +1,484 @@
+{
+  "area": {
+    "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+    "name": "United Kingdom",
+    "iso-3166-1-codes": [
+      "GB"
+    ],
+    "disambiguation": "",
+    "type": null,
+    "type-id": null,
+    "sort-name": "United Kingdom"
+  },
+  "relations": [
+    {
+      "type": "married",
+      "type-id": "b2bf7a5d-2da6-4742-baf4-e38d8a7ad029",
+      "artist": {
+        "id": "66c676f2-fca6-4426-a02c-998998cdf944",
+        "name": "Sandra Beck",
+        "disambiguation": "",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "country": "GB",
+        "type": "Person",
+        "sort-name": "Beck, Sandra"
+      },
+      "attributes": [],
+      "target-type": "artist",
+      "attribute-ids": {},
+      "begin": "2005",
+      "target-credit": "",
+      "source-credit": "",
+      "ended": true,
+      "direction": "backward",
+      "end": "2023",
+      "attribute-values": {}
+    },
+    {
+      "end": "1965-03",
+      "direction": "forward",
+      "attribute-values": {},
+      "attribute-credits": {},
+      "target-type": "artist",
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "type": "member of band",
+      "attributes": [
+        "guitar"
+      ],
+      "artist": {
+        "country": "GB",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "type": "Group",
+        "sort-name": "Tridents, The",
+        "disambiguation": "",
+        "id": "cb2db127-e46e-4fbe-9f7b-dac92814c74e",
+        "name": "The Tridents"
+      },
+      "ended": true,
+      "source-credit": "",
+      "attribute-ids": {
+        "guitar": "63021302-86cd-4aee-80df-2270d54f4978"
+      },
+      "begin": "1964-08",
+      "target-credit": ""
+    },
+    {
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "type": "member of band",
+      "attributes": [],
+      "artist": {
+        "id": "191de76f-a224-445d-b041-54df16d65bf7",
+        "name": "The Yardbirds",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "country": "GB",
+        "type": "Group",
+        "sort-name": "Yardbirds, The",
+        "disambiguation": ""
+      },
+      "target-type": "artist",
+      "attribute-ids": {},
+      "begin": "1965",
+      "target-credit": "",
+      "source-credit": "",
+      "ended": true,
+      "direction": "forward",
+      "end": "1966",
+      "attribute-values": {}
+    },
+    {
+      "attributes": [
+        "eponymous",
+        "guitar",
+        "original"
+      ],
+      "artist": {
+        "disambiguation": "",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "type": "Group",
+        "country": "GB",
+        "sort-name": "Beck, Jeff, Group",
+        "id": "a6339659-c879-4f88-9908-206d47963e29",
+        "name": "Jeff Beck Group"
+      },
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "type": "member of band",
+      "attribute-credits": {},
+      "target-type": "artist",
+      "begin": "1967-01",
+      "target-credit": "",
+      "attribute-ids": {
+        "original": "4fd3b255-a7d7-4424-9a63-40fa543b601c",
+        "eponymous": "15eea3b8-5655-43c8-b2c2-dd03c901a79b",
+        "guitar": "63021302-86cd-4aee-80df-2270d54f4978"
+      },
+      "ended": true,
+      "source-credit": "",
+      "direction": "forward",
+      "end": "1969",
+      "attribute-values": {}
+    },
+    {
+      "artist": {
+        "id": "a6339659-c879-4f88-9908-206d47963e29",
+        "name": "Jeff Beck Group",
+        "country": "GB",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "type": "Group",
+        "sort-name": "Beck, Jeff, Group",
+        "disambiguation": ""
+      },
+      "attributes": [
+        "eponymous",
+        "guitar",
+        "original"
+      ],
+      "type": "member of band",
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "target-type": "artist",
+      "attribute-credits": {},
+      "begin": "1970",
+      "target-credit": "",
+      "attribute-ids": {
+        "guitar": "63021302-86cd-4aee-80df-2270d54f4978",
+        "original": "4fd3b255-a7d7-4424-9a63-40fa543b601c",
+        "eponymous": "15eea3b8-5655-43c8-b2c2-dd03c901a79b"
+      },
+      "ended": true,
+      "source-credit": "",
+      "direction": "forward",
+      "end": "1972",
+      "attribute-values": {}
+    },
+    {
+      "target-type": "artist",
+      "attribute-credits": {},
+      "type": "member of band",
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "attributes": [
+        "eponymous",
+        "guitar",
+        "original"
+      ],
+      "artist": {
+        "name": "Beck, Bogert & Appice",
+        "id": "f16e80f0-8ee1-4bad-81d0-ff7c2893a250",
+        "sort-name": "Beck, Bogert & Appice",
+        "country": "US",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "type": "Group",
+        "disambiguation": ""
+      },
+      "ended": true,
+      "source-credit": "",
+      "attribute-ids": {
+        "guitar": "63021302-86cd-4aee-80df-2270d54f4978",
+        "original": "4fd3b255-a7d7-4424-9a63-40fa543b601c",
+        "eponymous": "15eea3b8-5655-43c8-b2c2-dd03c901a79b"
+      },
+      "target-credit": "",
+      "begin": "1972",
+      "end": "1974",
+      "direction": "forward",
+      "attribute-values": {}
+    },
+    {
+      "attribute-values": {},
+      "direction": "forward",
+      "end": "1984-03",
+      "begin": "1984-03",
+      "target-credit": "",
+      "attribute-ids": {
+        "electric guitar": "7ee8ebf5-3aed-4fc8-8004-49f4a8c45a87"
+      },
+      "source-credit": "",
+      "ended": true,
+      "artist": {
+        "disambiguation": "Robert Plant supergroup",
+        "sort-name": "Honeydrippers, The",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "type": "Group",
+        "country": "GB",
+        "name": "The Honeydrippers",
+        "id": "10c058a2-41e6-4f64-8cdd-fa3c7f2be9c0"
+      },
+      "attributes": [
+        "electric guitar"
+      ],
+      "type": "member of band",
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "target-type": "artist",
+      "attribute-credits": {}
+    },
+    {
+      "end": null,
+      "direction": "forward",
+      "attribute-values": {},
+      "target-type": "artist",
+      "type": "member of band",
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "attributes": [
+        "additional"
+      ],
+      "artist": {
+        "sort-name": "UPP",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "country": "GB",
+        "type": "Group",
+        "disambiguation": "",
+        "name": "UPP",
+        "id": "dd677525-28e5-44b1-acf4-f5683702dab7"
+      },
+      "ended": false,
+      "source-credit": "",
+      "attribute-ids": {
+        "additional": "0a5341f8-3b1d-4f99-a0c6-26b7f4e42c7f"
+      },
+      "target-credit": "",
+      "begin": null
+    },
+    {
+      "source-credit": "",
+      "ended": false,
+      "attribute-ids": {},
+      "target-credit": "",
+      "begin": null,
+      "target-type": "artist",
+      "type": "member of band",
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "artist": {
+        "type": "Group",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "country": "GB",
+        "sort-name": "Secret Police, The",
+        "disambiguation": "UK | Sting’s one‐off project during Amnesty International Gala",
+        "id": "1bca8cad-598b-493f-91f6-7b3730bd5899",
+        "name": "The Secret Police"
+      },
+      "attributes": [],
+      "attribute-values": {},
+      "end": null,
+      "direction": "forward"
+    },
+    {
+      "attribute-values": {},
+      "direction": "forward",
+      "end": null,
+      "attribute-ids": {},
+      "begin": null,
+      "target-credit": "The Immediate All-Stars",
+      "source-credit": "",
+      "ended": false,
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "type": "member of band",
+      "attributes": [],
+      "artist": {
+        "disambiguation": "British Blues band started by Cyril Davies",
+        "country": "GB",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "type": "Group",
+        "sort-name": "Immediate All Stars",
+        "id": "fd9743c6-9720-4ec6-a8cc-bc6843f806ed",
+        "name": "Immediate All Stars"
+      },
+      "target-type": "artist"
+    },
+    {
+      "type": "member of band",
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "artist": {
+        "name": "Malcolm McLaren and the Bootzilla Orchestra",
+        "id": "051efb30-16a4-45f8-9ca4-59218e318f25",
+        "disambiguation": "",
+        "sort-name": "McLaren, Malcolm and Bootzilla Orchestra, The",
+        "type": "Group",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "country": null
+      },
+      "attributes": [],
+      "target-type": "artist",
+      "attribute-ids": {},
+      "target-credit": "",
+      "begin": null,
+      "ended": false,
+      "source-credit": "",
+      "direction": "forward",
+      "end": null,
+      "attribute-values": {}
+    },
+    {
+      "attribute-values": {},
+      "direction": "forward",
+      "end": null,
+      "begin": null,
+      "target-credit": "",
+      "attribute-ids": {},
+      "source-credit": "",
+      "ended": false,
+      "artist": {
+        "name": "Lord Sutch & Heavy Friends",
+        "id": "05b1427d-e344-4932-ae42-8a3f096c2119",
+        "disambiguation": "",
+        "sort-name": "Sutch, Lord & Heavy Friends",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "type": "Group",
+        "country": null
+      },
+      "attributes": [],
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "type": "member of band",
+      "target-type": "artist"
+    },
+    {
+      "attribute-values": {},
+      "direction": "forward",
+      "end": null,
+      "target-credit": "",
+      "begin": null,
+      "attribute-ids": {},
+      "ended": false,
+      "source-credit": "",
+      "attributes": [],
+      "artist": {
+        "disambiguation": "",
+        "sort-name": "Jeffery Rod",
+        "type": "Group",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "country": null,
+        "name": "Jeffery Rod",
+        "id": "e551841c-8a3d-447a-b5b9-faf0114157a8"
+      },
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "type": "member of band",
+      "target-type": "artist"
+    },
+    {
+      "attribute-values": {},
+      "direction": "forward",
+      "end": null,
+      "begin": null,
+      "target-credit": "",
+      "attribute-ids": {},
+      "source-credit": "",
+      "ended": false,
+      "artist": {
+        "id": "fdac76bf-0076-461a-b4c0-0d5ee1cb1ade",
+        "name": "Holy Smoke",
+        "disambiguation": "UK Rock Band",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "country": null,
+        "type": "Group",
+        "sort-name": "Holy Smoke"
+      },
+      "attributes": [],
+      "type": "member of band",
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "target-type": "artist"
+    },
+    {
+      "end": null,
+      "direction": "forward",
+      "attribute-values": {},
+      "target-type": "artist",
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "type": "member of band",
+      "artist": {
+        "disambiguation": "",
+        "sort-name": "Mark Knopfler’s Guitar Heroes",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "country": null,
+        "type": "Group",
+        "name": "Mark Knopfler’s Guitar Heroes",
+        "id": "6d1c3698-6ef2-4f67-b626-fa16e2c69c8e"
+      },
+      "attributes": [],
+      "ended": false,
+      "source-credit": "",
+      "attribute-ids": {},
+      "begin": null,
+      "target-credit": ""
+    },
+    {
+      "ended": false,
+      "source-credit": "",
+      "begin": null,
+      "target-credit": "",
+      "attribute-ids": {},
+      "target-type": "artist",
+      "attributes": [],
+      "artist": {
+        "disambiguation": "Jeff Beck tribute band",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "country": "US",
+        "type": "Group",
+        "sort-name": "Beck-Ola",
+        "id": "5b6f92f6-cb62-4c42-8c3b-296e5559f550",
+        "name": "Beck-Ola"
+      },
+      "type-id": "a6f62641-2f58-470e-b02b-88d7b984dc9f",
+      "type": "tribute",
+      "attribute-values": {},
+      "end": null,
+      "direction": "backward"
+    },
+    {
+      "type": "tribute",
+      "type-id": "a6f62641-2f58-470e-b02b-88d7b984dc9f",
+      "artist": {
+        "disambiguation": "Jeff Beck / Rod Stewart / Faces tribute band from Detroit, MI",
+        "sort-name": "Face 2 Face",
+        "country": "US",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "type": "Group",
+        "name": "Face 2 Face",
+        "id": "f09f9020-7936-4f8f-82bc-0ccdaecf47da"
+      },
+      "attributes": [],
+      "target-type": "artist",
+      "attribute-ids": {},
+      "target-credit": "",
+      "begin": null,
+      "source-credit": "",
+      "ended": false,
+      "direction": "backward",
+      "end": null,
+      "attribute-values": {}
+    }
+  ],
+  "begin-area": {
+    "name": "Wallington",
+    "id": "e95dbbc0-98e9-49b2-b2c8-5bac336a71bf",
+    "sort-name": "Wallington",
+    "type": null,
+    "type-id": null,
+    "disambiguation": ""
+  },
+  "isnis": [
+    "0000000090730103"
+  ],
+  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+  "life-span": {
+    "begin": "1944-06-24",
+    "end": "2023-01-10",
+    "ended": true
+  },
+  "disambiguation": "English rock guitarist",
+  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+  "type": "Person",
+  "gender": "Male",
+  "end-area": {
+    "id": "4ce6b9d4-c448-450f-930a-f3b39b035001",
+    "name": "Royal Tunbridge Wells",
+    "disambiguation": "",
+    "type": null,
+    "type-id": null,
+    "sort-name": "Royal Tunbridge Wells"
+  },
+  "name": "Jeff Beck",
+  "ipis": [
+    "00059927039",
+    "00059927137"
+  ],
+  "gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+  "sort-name": "Beck, Jeff",
+  "country": "GB"
+}

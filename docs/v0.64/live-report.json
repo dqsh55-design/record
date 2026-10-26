@@ -1,0 +1,452 @@
+{
+  "checked_at": "2026-10-26T01:47:55.988903+00:00",
+  "mode": "real HTTPS",
+  "artists": [
+    {
+      "artist": "Miles Davis",
+      "artist_id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "index_pages": [
+        {
+          "offset": 0,
+          "count": 100,
+          "total": 637
+        },
+        {
+          "offset": 100,
+          "count": 100,
+          "total": 637
+        },
+        {
+          "offset": 200,
+          "count": 100,
+          "total": 637
+        },
+        {
+          "offset": 300,
+          "count": 100,
+          "total": 637
+        },
+        {
+          "offset": 400,
+          "count": 100,
+          "total": 637
+        },
+        {
+          "offset": 500,
+          "count": 100,
+          "total": 637
+        },
+        {
+          "offset": 600,
+          "count": 37,
+          "total": 637
+        }
+      ],
+      "samples": [
+        {
+          "label": "own",
+          "file": "Miles-Davis-own.json",
+          "group_id": "8e8a594f-2175-38c7-a871-abb68ec363e7",
+          "title": "Kind of Blue",
+          "release_id": "14f34297-ae81-4069-925a-1a320ac19f11",
+          "credits": [
+            {
+              "name": "Miles Davis",
+              "joinphrase": "",
+              "artist": {
+                "country": "US",
+                "name": "Miles Davis",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "type": "Person",
+                "sort-name": "Davis, Miles"
+              }
+            }
+          ],
+          "performance": [
+            {
+              "recording_id": "6ea17013-fa68-4446-a2c7-7b864e366803",
+              "title": "Freddie Freeloader",
+              "type": "instrument",
+              "attributes": [
+                "trumpet"
+              ]
+            },
+            {
+              "recording_id": "6ea17013-fa68-4446-a2c7-7b864e366803",
+              "title": "Freddie Freeloader",
+              "type": "instrument",
+              "attributes": [
+                "trumpet"
+              ]
+            }
+          ],
+          "participation_expected": false
+        },
+        {
+          "label": "joint",
+          "file": "Miles-Davis-joint.json",
+          "group_id": "095878f4-58ac-43f4-93ae-92a1e6588d8d",
+          "title": "Modern Jazz Trumpets",
+          "release_id": "6fbb6d1b-e6b4-4027-acf1-85045a0bd771",
+          "credits": [
+            {
+              "name": "Fats Navarro",
+              "joinphrase": ", ",
+              "artist": {
+                "disambiguation": "",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "US",
+                "name": "Fats Navarro",
+                "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+                "type": "Person",
+                "sort-name": "Navarro, Fats"
+              }
+            },
+            {
+              "artist": {
+                "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+                "type": "Person",
+                "sort-name": "Gillespie, Dizzy",
+                "disambiguation": "",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "US",
+                "name": "Dizzy Gillespie"
+              },
+              "joinphrase": ", ",
+              "name": "Dizzy Gillespie"
+            },
+            {
+              "name": "Miles Davis",
+              "joinphrase": ", ",
+              "artist": {
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                "name": "Miles Davis",
+                "country": "US",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "sort-name": "Davis, Miles",
+                "type": "Person"
+              }
+            },
+            {
+              "name": "Kenny Dorham",
+              "joinphrase": "",
+              "artist": {
+                "country": "US",
+                "name": "Kenny Dorham",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "US jazz trumpeter, singer, and composer",
+                "type": "Person",
+                "sort-name": "Dorham, Kenny",
+                "id": "4476453a-d37e-4c52-b60d-07c90b6fa661"
+              }
+            }
+          ],
+          "performance": [
+            {
+              "recording_id": "43c2ee24-e3bb-4bfd-921c-d96a9566ccb6",
+              "title": "Superman",
+              "type": "instrument",
+              "attributes": [
+                "trumpet"
+              ]
+            }
+          ],
+          "participation_expected": false
+        },
+        {
+          "label": "guest",
+          "file": "Miles-Davis-guest.json",
+          "group_id": "07eb42bc-78e5-4ee7-b7ec-62904a66ca8a",
+          "title": "Somethin' Else",
+          "release_id": "6f75e9e8-694a-4462-80c6-b5699ff18e9c",
+          "credits": [
+            {
+              "name": "Cannonball Adderley",
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "",
+                "type": "Person",
+                "country": "US",
+                "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Cannonball Adderley",
+                "sort-name": "Adderley, Cannonball"
+              }
+            }
+          ],
+          "performance": [
+            {
+              "recording_id": "69c7f51f-10bf-44b1-a319-3c1fb60f538d",
+              "title": "Autumn Leaves",
+              "type": "instrument",
+              "attributes": [
+                "trumpet"
+              ]
+            },
+            {
+              "recording_id": "d5e82ffa-d988-4022-bdee-31059f768b33",
+              "title": "Love For Sale",
+              "type": "instrument",
+              "attributes": [
+                "trumpet"
+              ]
+            },
+            {
+              "recording_id": "3082d124-1345-4023-b3c9-21bc4949ef5a",
+              "title": "Somethin' Else",
+              "type": "instrument",
+              "attributes": [
+                "trumpet"
+              ]
+            },
+            {
+              "recording_id": "0acb8682-2fbd-4dba-ba70-d0b2700540a0",
+              "title": "One For Daddy-O",
+              "type": "instrument",
+              "attributes": [
+                "trumpet"
+              ]
+            }
+          ],
+          "participation_expected": true
+        }
+      ]
+    },
+    {
+      "artist": "Jeff Beck",
+      "artist_id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+      "index_pages": [
+        {
+          "offset": 0,
+          "count": 74,
+          "total": 74
+        }
+      ],
+      "samples": [
+        {
+          "label": "own",
+          "file": "Jeff-Beck-own.json",
+          "group_id": "08f0ad54-dc95-38a9-bc88-503f0086b4f9",
+          "title": "Blow by Blow",
+          "release_id": "14e1f859-ed2c-4dba-ae7a-dc43ea817aed",
+          "credits": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "name": "Jeff Beck",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "sort-name": "Beck, Jeff",
+                "country": "GB",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "disambiguation": "English rock guitarist"
+              },
+              "name": "Jeff Beck"
+            }
+          ],
+          "performance": [
+            {
+              "recording_id": "24ee88d2-cf36-448f-9ada-76f074f9e4dd",
+              "title": "You Know What I Mean",
+              "type": "instrument",
+              "attributes": [
+                "guitar"
+              ]
+            },
+            {
+              "recording_id": "6b2489d0-90d0-4156-9d74-d5947346905f",
+              "title": "She’s a Woman",
+              "type": "instrument",
+              "attributes": [
+                "guitar"
+              ]
+            },
+            {
+              "recording_id": "6341b87c-1a07-4c7d-a776-c9f971509333",
+              "title": "Constipated Duck",
+              "type": "instrument",
+              "attributes": [
+                "guitar"
+              ]
+            },
+            {
+              "recording_id": "48c1523a-d0d9-43a9-b22a-cb6e949f6d1c",
+              "title": "Air Blower",
+              "type": "instrument",
+              "attributes": [
+                "guitar"
+              ]
+            },
+            {
+              "recording_id": "c5d0c289-b886-44f6-a028-35258a305fda",
+              "title": "Scatterbrain",
+              "type": "instrument",
+              "attributes": [
+                "guitar"
+              ]
+            },
+            {
+              "recording_id": "a8656997-a083-4c68-ae67-f63742438b98",
+              "title": "Cause We’ve Ended as Lovers",
+              "type": "instrument",
+              "attributes": [
+                "guitar"
+              ]
+            },
+            {
+              "recording_id": "0d4cd1d6-a34b-4ad9-ac07-1cf0b65848f1",
+              "title": "Thelonius",
+              "type": "instrument",
+              "attributes": [
+                "guitar"
+              ]
+            },
+            {
+              "recording_id": "fa9bdfcf-fdfb-485a-9f5b-49714bde438f",
+              "title": "Freeway Jam",
+              "type": "instrument",
+              "attributes": [
+                "guitar"
+              ]
+            },
+            {
+              "recording_id": "e1fdba3a-8dd6-48b3-9500-fe1b4c72b57b",
+              "title": "Diamond Dust",
+              "type": "instrument",
+              "attributes": [
+                "guitar"
+              ]
+            }
+          ],
+          "participation_expected": false
+        },
+        {
+          "label": "joint",
+          "file": "Jeff-Beck-joint.json",
+          "group_id": "01e94aea-fd9f-36b3-9965-73904e97cd73",
+          "title": "Jeff Beck With the Jan Hammer Group Live",
+          "release_id": "2e0ac963-80b7-4ea9-a2a7-6a38d93e84aa",
+          "credits": [
+            {
+              "joinphrase": " with the ",
+              "name": "Jeff Beck",
+              "artist": {
+                "country": "GB",
+                "name": "Jeff Beck",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "English rock guitarist",
+                "type": "Person",
+                "sort-name": "Beck, Jeff",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+              }
+            },
+            {
+              "artist": {
+                "name": "Jan Hammer Group",
+                "country": null,
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "disambiguation": "",
+                "sort-name": "Hammer, Jan Group",
+                "type": "Group",
+                "id": "074ad168-8c8b-44df-8388-110bbea45a2b"
+              },
+              "joinphrase": "",
+              "name": "Jan Hammer Group"
+            }
+          ],
+          "performance": [],
+          "participation_expected": false
+        },
+        {
+          "label": "guest",
+          "file": "Jeff-Beck-guest.json",
+          "group_id": "6139bff5-9a9a-3038-99ca-c7fa8bb754f3",
+          "title": "Amused to Death",
+          "release_id": "004143a7-76af-4f3d-a760-4ac29a20405e",
+          "credits": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "id": "0f50beab-d77d-4f0f-ac26-0b87d3e9b11b",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "",
+                "country": "GB",
+                "sort-name": "Waters, Roger",
+                "type": "Person",
+                "name": "Roger Waters"
+              },
+              "name": "Roger Waters"
+            }
+          ],
+          "performance": [
+            {
+              "recording_id": "a67d7033-a39d-4125-8c52-28d2bb592716",
+              "title": "The Ballad of Bill Hubbard",
+              "type": "instrument",
+              "attributes": [
+                "guitar"
+              ]
+            },
+            {
+              "recording_id": "69700fe4-f947-4096-936b-7c4e323eafa1",
+              "title": "What God Wants, Part I",
+              "type": "instrument",
+              "attributes": [
+                "guitar",
+                "solo"
+              ]
+            },
+            {
+              "recording_id": "fbfd96e2-8600-45c6-bec3-2ab02e0ad429",
+              "title": "What God Wants, Part III",
+              "type": "instrument",
+              "attributes": [
+                "guitar",
+                "solo"
+              ]
+            },
+            {
+              "recording_id": "01adddef-5d69-435e-a7e5-8dc65f09db6b",
+              "title": "Watching TV",
+              "type": "instrument",
+              "attributes": [
+                "electric guitar"
+              ]
+            },
+            {
+              "recording_id": "1da89c7a-aab6-465b-8f01-8858f608f2a0",
+              "title": "Three Wishes",
+              "type": "instrument",
+              "attributes": [
+                "guitar",
+                "solo"
+              ]
+            },
+            {
+              "recording_id": "7ae8c35d-d004-4933-b7d8-26c805bee9cb",
+              "title": "It’s a Miracle",
+              "type": "instrument",
+              "attributes": [
+                "guitar"
+              ]
+            },
+            {
+              "recording_id": "85574db0-d975-4de6-a9bf-9dc7822a3ea2",
+              "title": "Amused to Death",
+              "type": "instrument",
+              "attributes": [
+                "guitar",
+                "solo"
+              ]
+            }
+          ],
+          "participation_expected": true
+        }
+      ]
+    }
+  ],
+  "streaming_tested": false
+}

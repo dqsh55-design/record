@@ -1,0 +1,2720 @@
+{
+  "label-info": [
+    {
+      "catalog-number": "NOT2CD349",
+      "label": {
+        "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+        "label-code": null,
+        "disambiguation": "",
+        "type": "Reissue Production",
+        "id": "b454b444-eb75-46ed-b400-19e85d8e1c64",
+        "sort-name": "Not Now Music",
+        "name": "Not Now Music"
+      }
+    }
+  ],
+  "status": "Official",
+  "artist-credit": [
+    {
+      "name": "Cannonball Adderley",
+      "joinphrase": "",
+      "artist": {
+        "disambiguation": "",
+        "type": "Person",
+        "country": "US",
+        "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "name": "Cannonball Adderley",
+        "sort-name": "Adderley, Cannonball"
+      }
+    }
+  ],
+  "media": [
+    {
+      "tracks": [
+        {
+          "length": 665813,
+          "id": "521d4ccb-864c-4fcc-9d8f-7751b870c585",
+          "title": "Autumn Leaves",
+          "position": 1,
+          "artist-credit": [
+            {
+              "name": "Cannonball Adderley",
+              "artist": {
+                "sort-name": "Adderley, Cannonball",
+                "name": "Cannonball Adderley",
+                "type": "Person",
+                "disambiguation": "",
+                "country": "US",
+                "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "recording": {
+            "relations": [
+              {
+                "type": "engineer",
+                "artist": {
+                  "id": "f0707f1d-55e1-46b6-8a9c-05d508e09a73",
+                  "country": "US",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Gelder, van, Rudy",
+                  "name": "Rudy van Gelder"
+                },
+                "attributes": [],
+                "type-id": "5dcc52af-7064-4051-8d62-7d80f4c3c907",
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward",
+                "ended": false,
+                "end": null,
+                "source-credit": "",
+                "target-type": "artist",
+                "begin": null,
+                "attribute-ids": {}
+              },
+              {
+                "direction": "backward",
+                "target-credit": "Julian “Cannonball” Adderley",
+                "attribute-values": {},
+                "end": "1958-03-09",
+                "ended": true,
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley"
+                },
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "alto saxophone"
+                ],
+                "attribute-credits": {},
+                "begin": "1958-03-09",
+                "attribute-ids": {
+                  "alto saxophone": "9c977091-b27a-4a0e-b54e-b5ab89420e22"
+                },
+                "source-credit": "",
+                "target-type": "artist"
+              },
+              {
+                "source-credit": "",
+                "target-type": "artist",
+                "attribute-credits": {},
+                "begin": "1958-03-09",
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "artist": {
+                  "sort-name": "Blakey, Art",
+                  "name": "Art Blakey",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "id": "601e7466-eaf5-4a91-9909-ffd770b7e04a",
+                  "country": "US"
+                },
+                "type": "instrument",
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "end": "1958-03-09",
+                "ended": true
+              },
+              {
+                "attribute-ids": {
+                  "trumpet": "1c8f9780-2f16-4891-b66d-bb7aa0820dbd"
+                },
+                "attribute-credits": {},
+                "begin": "1958-03-09",
+                "target-type": "artist",
+                "source-credit": "",
+                "end": "1958-03-09",
+                "ended": true,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "attributes": [
+                  "trumpet"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "type": "instrument",
+                "artist": {
+                  "name": "Miles Davis",
+                  "sort-name": "Davis, Miles",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "type": "Person",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "country": "US"
+                }
+              },
+              {
+                "direction": "backward",
+                "target-credit": "",
+                "attribute-values": {},
+                "end": "1958-03-09",
+                "ended": true,
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "80d610fe-7771-4226-aa9b-950944791698",
+                  "country": "US",
+                  "disambiguation": "piano",
+                  "type": "Person",
+                  "sort-name": "Jones, Hank",
+                  "name": "Hank Jones"
+                },
+                "type": "instrument",
+                "attributes": [
+                  "piano"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-credits": {},
+                "begin": "1958-03-09",
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "source-credit": "",
+                "target-type": "artist"
+              },
+              {
+                "attributes": [
+                  "double bass"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "artist": {
+                  "sort-name": "Jones, Sam",
+                  "name": "Sam Jones",
+                  "disambiguation": "US jazz bassist",
+                  "type": "Person",
+                  "country": "US",
+                  "id": "1789de4d-0f0c-4db9-b850-a823b945c883",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "type": "instrument",
+                "end": "1958-03-09",
+                "ended": true,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {
+                  "double bass": "7bd32b95-416f-4244-a98b-1311ec69c7db"
+                },
+                "attribute-credits": {},
+                "begin": "1958-03-09"
+              },
+              {
+                "attribute-ids": {},
+                "begin": null,
+                "target-type": "artist",
+                "source-credit": "",
+                "ended": false,
+                "end": null,
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward",
+                "attributes": [],
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0",
+                "artist": {
+                  "name": "Alfred Lion",
+                  "sort-name": "Lion, Alfred",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "id": "c332fcf2-cc5c-424e-a5ea-317b31f6c035",
+                  "disambiguation": "",
+                  "type": "Person"
+                },
+                "type": "producer"
+              }
+            ],
+            "video": false,
+            "first-release-date": "1958",
+            "artist-credit": [
+              {
+                "name": "Cannonball Adderley",
+                "artist": {
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "country": "US",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "take 2",
+            "id": "69c7f51f-10bf-44b1-a319-3c1fb60f538d",
+            "title": "Autumn Leaves",
+            "length": 659066
+          },
+          "number": "1"
+        },
+        {
+          "recording": {
+            "relations": [
+              {
+                "artist": {
+                  "sort-name": "Gelder, van, Rudy",
+                  "name": "Rudy van Gelder",
+                  "country": "US",
+                  "id": "f0707f1d-55e1-46b6-8a9c-05d508e09a73",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "type": "engineer",
+                "attributes": [],
+                "type-id": "5dcc52af-7064-4051-8d62-7d80f4c3c907",
+                "direction": "backward",
+                "target-credit": "",
+                "attribute-values": {},
+                "end": null,
+                "ended": false,
+                "source-credit": "",
+                "target-type": "artist",
+                "begin": null,
+                "attribute-ids": {}
+              },
+              {
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley"
+                },
+                "type": "instrument",
+                "attributes": [
+                  "alto saxophone"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {},
+                "target-credit": "Julian “Cannonball” Adderley",
+                "direction": "backward",
+                "ended": true,
+                "end": "1958-03-09",
+                "source-credit": "",
+                "target-type": "artist",
+                "begin": "1958-03-09",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "alto saxophone": "9c977091-b27a-4a0e-b54e-b5ab89420e22"
+                }
+              },
+              {
+                "begin": "1958-03-09",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "source-credit": "",
+                "target-type": "artist",
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward",
+                "ended": true,
+                "end": "1958-03-09",
+                "artist": {
+                  "id": "601e7466-eaf5-4a91-9909-ffd770b7e04a",
+                  "country": "US",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Art Blakey",
+                  "sort-name": "Blakey, Art"
+                },
+                "type": "instrument",
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              },
+              {
+                "attribute-ids": {
+                  "trumpet": "1c8f9780-2f16-4891-b66d-bb7aa0820dbd"
+                },
+                "begin": "1958-03-09",
+                "attribute-credits": {},
+                "target-type": "artist",
+                "source-credit": "",
+                "ended": true,
+                "end": "1958-03-09",
+                "target-credit": "",
+                "attribute-values": {},
+                "direction": "backward",
+                "attributes": [
+                  "trumpet"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "type": "instrument",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "country": "US",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "name": "Miles Davis",
+                  "sort-name": "Davis, Miles"
+                }
+              },
+              {
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "piano"
+                ],
+                "type": "instrument",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "disambiguation": "piano",
+                  "id": "80d610fe-7771-4226-aa9b-950944791698",
+                  "country": "US",
+                  "name": "Hank Jones",
+                  "sort-name": "Jones, Hank"
+                },
+                "ended": true,
+                "end": "1958-03-09",
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward",
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "begin": "1958-03-09",
+                "attribute-credits": {}
+              },
+              {
+                "begin": "1958-03-09",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "double bass": "7bd32b95-416f-4244-a98b-1311ec69c7db"
+                },
+                "source-credit": "",
+                "target-type": "artist",
+                "target-credit": "",
+                "attribute-values": {},
+                "direction": "backward",
+                "ended": true,
+                "end": "1958-03-09",
+                "type": "instrument",
+                "artist": {
+                  "disambiguation": "US jazz bassist",
+                  "type": "Person",
+                  "id": "1789de4d-0f0c-4db9-b850-a823b945c883",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Jones, Sam",
+                  "name": "Sam Jones"
+                },
+                "attributes": [
+                  "double bass"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              },
+              {
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {},
+                "begin": null,
+                "attributes": [],
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "c332fcf2-cc5c-424e-a5ea-317b31f6c035",
+                  "country": "US",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "name": "Alfred Lion",
+                  "sort-name": "Lion, Alfred"
+                },
+                "type": "producer",
+                "end": null,
+                "ended": false,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": ""
+              }
+            ],
+            "video": false,
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "name": "Cannonball Adderley",
+                  "sort-name": "Adderley, Cannonball"
+                },
+                "name": "Cannonball Adderley"
+              }
+            ],
+            "first-release-date": "1958",
+            "disambiguation": "take 3",
+            "title": "Love for Sale",
+            "id": "d5e82ffa-d988-4022-bdee-31059f768b33",
+            "length": 425000
+          },
+          "number": "2",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                "country": "US",
+                "type": "Person",
+                "disambiguation": "",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Cannonball Adderley",
+                "sort-name": "Adderley, Cannonball"
+              },
+              "name": "Cannonball Adderley"
+            }
+          ],
+          "length": 430440,
+          "position": 2,
+          "id": "44207367-57ca-459d-853b-db47843c6048",
+          "title": "Love For Sale"
+        },
+        {
+          "title": "Somethin' Else",
+          "id": "765ea97c-4823-45bb-b161-e5d750433d09",
+          "position": 3,
+          "length": 500453,
+          "artist-credit": [
+            {
+              "name": "Cannonball Adderley",
+              "joinphrase": "",
+              "artist": {
+                "type": "Person",
+                "disambiguation": "",
+                "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                "country": "US",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Cannonball Adderley",
+                "sort-name": "Adderley, Cannonball"
+              }
+            }
+          ],
+          "recording": {
+            "disambiguation": "take 4",
+            "title": "Somethin’ Else",
+            "id": "3082d124-1345-4023-b3c9-21bc4949ef5a",
+            "length": 494027,
+            "relations": [
+              {
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {},
+                "begin": null,
+                "type-id": "5dcc52af-7064-4051-8d62-7d80f4c3c907",
+                "attributes": [],
+                "artist": {
+                  "name": "Rudy van Gelder",
+                  "sort-name": "Gelder, van, Rudy",
+                  "country": "US",
+                  "id": "f0707f1d-55e1-46b6-8a9c-05d508e09a73",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "type": "engineer",
+                "end": null,
+                "ended": false,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": ""
+              },
+              {
+                "begin": "1958-03-09",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "alto saxophone": "9c977091-b27a-4a0e-b54e-b5ab89420e22"
+                },
+                "source-credit": "",
+                "target-type": "artist",
+                "attribute-values": {},
+                "target-credit": "Julian “Cannonball” Adderley",
+                "direction": "backward",
+                "ended": true,
+                "end": "1958-03-09",
+                "artist": {
+                  "disambiguation": "",
+                  "type": "Person",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Cannonball Adderley",
+                  "sort-name": "Adderley, Cannonball"
+                },
+                "type": "instrument",
+                "attributes": [
+                  "alto saxophone"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              },
+              {
+                "attribute-credits": {},
+                "begin": "1958-03-09",
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "source-credit": "",
+                "target-type": "artist",
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "end": "1958-03-09",
+                "ended": true,
+                "type": "instrument",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "id": "601e7466-eaf5-4a91-9909-ffd770b7e04a",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "sort-name": "Blakey, Art",
+                  "name": "Art Blakey"
+                },
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              },
+              {
+                "attributes": [
+                  "trumpet"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "artist": {
+                  "sort-name": "Davis, Miles",
+                  "name": "Miles Davis",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "country": "US",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "type": "Person"
+                },
+                "type": "instrument",
+                "end": "1958-03-09",
+                "ended": true,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {
+                  "trumpet": "1c8f9780-2f16-4891-b66d-bb7aa0820dbd"
+                },
+                "attribute-credits": {},
+                "begin": "1958-03-09"
+              },
+              {
+                "attributes": [
+                  "piano"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "type": "instrument",
+                "artist": {
+                  "name": "Hank Jones",
+                  "sort-name": "Jones, Hank",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "piano",
+                  "type": "Person",
+                  "id": "80d610fe-7771-4226-aa9b-950944791698",
+                  "country": "US"
+                },
+                "end": "1958-03-09",
+                "ended": true,
+                "direction": "backward",
+                "target-credit": "",
+                "attribute-values": {},
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "attribute-credits": {},
+                "begin": "1958-03-09"
+              },
+              {
+                "type": "instrument",
+                "artist": {
+                  "sort-name": "Jones, Sam",
+                  "name": "Sam Jones",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "1789de4d-0f0c-4db9-b850-a823b945c883",
+                  "country": "US",
+                  "disambiguation": "US jazz bassist",
+                  "type": "Person"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "double bass"
+                ],
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "end": "1958-03-09",
+                "ended": true,
+                "source-credit": "",
+                "target-type": "artist",
+                "attribute-credits": {},
+                "begin": "1958-03-09",
+                "attribute-ids": {
+                  "double bass": "7bd32b95-416f-4244-a98b-1311ec69c7db"
+                }
+              },
+              {
+                "type": "producer",
+                "artist": {
+                  "name": "Alfred Lion",
+                  "sort-name": "Lion, Alfred",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "id": "c332fcf2-cc5c-424e-a5ea-317b31f6c035",
+                  "country": "US"
+                },
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0",
+                "attributes": [],
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "end": null,
+                "ended": false,
+                "source-credit": "",
+                "target-type": "artist",
+                "begin": null,
+                "attribute-ids": {}
+              }
+            ],
+            "video": false,
+            "artist-credit": [
+              {
+                "name": "Cannonball Adderley",
+                "artist": {
+                  "name": "Cannonball Adderley",
+                  "sort-name": "Adderley, Cannonball",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "country": "US",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "joinphrase": ""
+              }
+            ],
+            "first-release-date": "1958"
+          },
+          "number": "3"
+        },
+        {
+          "recording": {
+            "first-release-date": "1958",
+            "artist-credit": [
+              {
+                "name": "Cannonball Adderley",
+                "joinphrase": "",
+                "artist": {
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley",
+                  "country": "US",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                }
+              }
+            ],
+            "video": false,
+            "relations": [
+              {
+                "source-credit": "",
+                "target-type": "artist",
+                "begin": null,
+                "attribute-ids": {},
+                "artist": {
+                  "name": "Rudy van Gelder",
+                  "sort-name": "Gelder, van, Rudy",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "id": "f0707f1d-55e1-46b6-8a9c-05d508e09a73",
+                  "country": "US"
+                },
+                "type": "engineer",
+                "attributes": [],
+                "type-id": "5dcc52af-7064-4051-8d62-7d80f4c3c907",
+                "target-credit": "",
+                "attribute-values": {},
+                "direction": "backward",
+                "ended": false,
+                "end": null
+              },
+              {
+                "end": "1958-03-09",
+                "ended": true,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "Julian “Cannonball” Adderley",
+                "attributes": [
+                  "alto saxophone"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "artist": {
+                  "country": "US",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Cannonball Adderley",
+                  "sort-name": "Adderley, Cannonball"
+                },
+                "type": "instrument",
+                "attribute-ids": {
+                  "alto saxophone": "9c977091-b27a-4a0e-b54e-b5ab89420e22"
+                },
+                "attribute-credits": {},
+                "begin": "1958-03-09",
+                "target-type": "artist",
+                "source-credit": ""
+              },
+              {
+                "begin": "1958-03-09",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "source-credit": "",
+                "target-type": "artist",
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward",
+                "ended": true,
+                "end": "1958-03-09",
+                "artist": {
+                  "name": "Art Blakey",
+                  "sort-name": "Blakey, Art",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "id": "601e7466-eaf5-4a91-9909-ffd770b7e04a",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "type": "instrument",
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              },
+              {
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {
+                  "trumpet": "1c8f9780-2f16-4891-b66d-bb7aa0820dbd"
+                },
+                "attribute-credits": {},
+                "begin": "1958-03-09",
+                "attributes": [
+                  "trumpet"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "artist": {
+                  "name": "Miles Davis",
+                  "sort-name": "Davis, Miles",
+                  "country": "US",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "type": "Person",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "type": "instrument",
+                "end": "1958-03-09",
+                "ended": true,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": ""
+              },
+              {
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "piano"
+                ],
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "piano",
+                  "type": "Person",
+                  "id": "80d610fe-7771-4226-aa9b-950944791698",
+                  "country": "US",
+                  "sort-name": "Jones, Hank",
+                  "name": "Hank Jones"
+                },
+                "type": "instrument",
+                "end": "1958-03-09",
+                "ended": true,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "attribute-credits": {},
+                "begin": "1958-03-09"
+              },
+              {
+                "attribute-ids": {
+                  "double bass": "7bd32b95-416f-4244-a98b-1311ec69c7db"
+                },
+                "begin": "1958-03-09",
+                "attribute-credits": {},
+                "target-type": "artist",
+                "source-credit": "",
+                "ended": true,
+                "end": "1958-03-09",
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "double bass"
+                ],
+                "artist": {
+                  "sort-name": "Jones, Sam",
+                  "name": "Sam Jones",
+                  "country": "US",
+                  "id": "1789de4d-0f0c-4db9-b850-a823b945c883",
+                  "disambiguation": "US jazz bassist",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "type": "instrument"
+              },
+              {
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0",
+                "attributes": [],
+                "type": "producer",
+                "artist": {
+                  "name": "Alfred Lion",
+                  "sort-name": "Lion, Alfred",
+                  "country": "US",
+                  "id": "c332fcf2-cc5c-424e-a5ea-317b31f6c035",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "ended": false,
+                "end": null,
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward",
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {},
+                "begin": null
+              }
+            ],
+            "length": 505760,
+            "id": "0acb8682-2fbd-4dba-ba70-d0b2700540a0",
+            "title": "One for Daddy‐O",
+            "disambiguation": "take 6"
+          },
+          "number": "4",
+          "artist-credit": [
+            {
+              "name": "Cannonball Adderley",
+              "joinphrase": "",
+              "artist": {
+                "name": "Cannonball Adderley",
+                "sort-name": "Adderley, Cannonball",
+                "disambiguation": "",
+                "type": "Person",
+                "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                "country": "US",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+              }
+            }
+          ],
+          "position": 4,
+          "title": "One For Daddy-O",
+          "id": "2a8f12f3-cdad-413a-8856-689c8a554bbc",
+          "length": 511866
+        },
+        {
+          "number": "5",
+          "recording": {
+            "length": 247040,
+            "title": "Dancing in the Dark",
+            "id": "8590b891-5981-4584-8c1d-aadad1f45004",
+            "disambiguation": "take 11",
+            "artist-credit": [
+              {
+                "name": "Cannonball Adderley",
+                "artist": {
+                  "type": "Person",
+                  "disambiguation": "",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley"
+                },
+                "joinphrase": ""
+              }
+            ],
+            "first-release-date": "1958",
+            "video": false,
+            "relations": [
+              {
+                "type": "engineer",
+                "artist": {
+                  "id": "f0707f1d-55e1-46b6-8a9c-05d508e09a73",
+                  "country": "US",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Rudy van Gelder",
+                  "sort-name": "Gelder, van, Rudy"
+                },
+                "type-id": "5dcc52af-7064-4051-8d62-7d80f4c3c907",
+                "attributes": [],
+                "direction": "backward",
+                "target-credit": "",
+                "attribute-values": {},
+                "end": null,
+                "ended": false,
+                "source-credit": "",
+                "target-type": "artist",
+                "begin": null,
+                "attribute-ids": {}
+              },
+              {
+                "source-credit": "",
+                "target-type": "artist",
+                "attribute-credits": {},
+                "begin": "1958-03-09",
+                "attribute-ids": {
+                  "alto saxophone": "9c977091-b27a-4a0e-b54e-b5ab89420e22"
+                },
+                "type": "instrument",
+                "artist": {
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "country": "US",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "alto saxophone"
+                ],
+                "direction": "backward",
+                "target-credit": "Julian “Cannonball” Adderley",
+                "attribute-values": {},
+                "end": "1958-03-09",
+                "ended": true
+              },
+              {
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward",
+                "ended": true,
+                "end": "1958-03-09",
+                "artist": {
+                  "name": "Art Blakey",
+                  "sort-name": "Blakey, Art",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "601e7466-eaf5-4a91-9909-ffd770b7e04a",
+                  "country": "US",
+                  "type": "Person",
+                  "disambiguation": ""
+                },
+                "type": "instrument",
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "begin": "1958-03-09",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "source-credit": "",
+                "target-type": "artist"
+              },
+              {
+                "source-credit": "",
+                "target-type": "artist",
+                "attribute-credits": {},
+                "begin": "1958-03-09",
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "type": "instrument",
+                "artist": {
+                  "name": "Hank Jones",
+                  "sort-name": "Jones, Hank",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "80d610fe-7771-4226-aa9b-950944791698",
+                  "country": "US",
+                  "disambiguation": "piano",
+                  "type": "Person"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "piano"
+                ],
+                "direction": "backward",
+                "target-credit": "",
+                "attribute-values": {},
+                "end": "1958-03-09",
+                "ended": true
+              },
+              {
+                "attribute-credits": {},
+                "begin": "1958-03-09",
+                "attribute-ids": {
+                  "double bass": "7bd32b95-416f-4244-a98b-1311ec69c7db"
+                },
+                "source-credit": "",
+                "target-type": "artist",
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "end": "1958-03-09",
+                "ended": true,
+                "type": "instrument",
+                "artist": {
+                  "name": "Sam Jones",
+                  "sort-name": "Jones, Sam",
+                  "disambiguation": "US jazz bassist",
+                  "type": "Person",
+                  "country": "US",
+                  "id": "1789de4d-0f0c-4db9-b850-a823b945c883",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "double bass"
+                ]
+              },
+              {
+                "type": "producer",
+                "artist": {
+                  "sort-name": "Lion, Alfred",
+                  "name": "Alfred Lion",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "country": "US",
+                  "id": "c332fcf2-cc5c-424e-a5ea-317b31f6c035"
+                },
+                "attributes": [],
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0",
+                "direction": "backward",
+                "target-credit": "",
+                "attribute-values": {},
+                "end": null,
+                "ended": false,
+                "source-credit": "",
+                "target-type": "artist",
+                "begin": null,
+                "attribute-ids": {}
+              }
+            ]
+          },
+          "artist-credit": [
+            {
+              "artist": {
+                "sort-name": "Adderley, Cannonball",
+                "name": "Cannonball Adderley",
+                "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                "country": "US",
+                "type": "Person",
+                "disambiguation": "",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+              },
+              "joinphrase": "",
+              "name": "Cannonball Adderley"
+            }
+          ],
+          "length": 249826,
+          "position": 5,
+          "id": "4f947dab-60cb-434e-85c4-6fffa70a2b3d",
+          "title": "Dancing In The Dark"
+        }
+      ],
+      "format": "CD",
+      "track-count": 5,
+      "track-offset": 0,
+      "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+      "title": "Somethin' Else",
+      "id": "cbb4cda8-9d00-387c-b087-c7a313cc0323",
+      "position": 1
+    },
+    {
+      "tracks": [
+        {
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                "country": "US",
+                "disambiguation": "",
+                "type": "Person",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Adderley, Cannonball",
+                "name": "Cannonball Adderley"
+              },
+              "name": "Cannonball Adderley"
+            }
+          ],
+          "number": "1",
+          "recording": {
+            "first-release-date": "1958",
+            "artist-credit": [
+              {
+                "name": "Julian “Cannonball” Adderley",
+                "artist": {
+                  "name": "Cannonball Adderley",
+                  "sort-name": "Adderley, Cannonball",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "country": "US",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "joinphrase": ""
+              }
+            ],
+            "video": false,
+            "relations": [
+              {
+                "direction": "backward",
+                "target-credit": "",
+                "attribute-values": {},
+                "end": "1958-03-04",
+                "ended": true,
+                "type": "instrument",
+                "artist": {
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "alto saxophone"
+                ],
+                "attribute-credits": {},
+                "begin": "1958-03-04",
+                "attribute-ids": {
+                  "alto saxophone": "9c977091-b27a-4a0e-b54e-b5ab89420e22"
+                },
+                "source-credit": "",
+                "target-type": "artist"
+              },
+              {
+                "attribute-credits": {},
+                "begin": "1958-03-04",
+                "attribute-ids": {
+                  "cornet": "257dad59-02e6-47d9-958a-659843737827"
+                },
+                "source-credit": "",
+                "target-type": "artist",
+                "direction": "backward",
+                "target-credit": "",
+                "attribute-values": {},
+                "end": "1958-03-04",
+                "ended": true,
+                "type": "instrument",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "a9e79d89-f90b-4cef-943e-68151336a430",
+                  "country": "US",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "sort-name": "Adderley, Nat",
+                  "name": "Nat Adderley"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "cornet"
+                ]
+              },
+              {
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward",
+                "ended": true,
+                "end": "1958-03-04",
+                "artist": {
+                  "name": "Jimmy Cobb",
+                  "sort-name": "Cobb, Jimmy",
+                  "country": "US",
+                  "id": "d0cbf65a-541b-476a-996c-fe2cd264bbd0",
+                  "type": "Person",
+                  "disambiguation": "US jazz drummer",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "begin": "1958-03-04",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "source-credit": "",
+                "target-type": "artist"
+              },
+              {
+                "source-credit": "",
+                "target-type": "artist",
+                "attribute-credits": {},
+                "begin": "1958-03-04",
+                "attribute-ids": {
+                  "bass": "6505f98c-f698-4406-8bf4-8ca43d05c36f"
+                },
+                "type": "instrument",
+                "artist": {
+                  "sort-name": "Jones, Sam",
+                  "name": "Sam Jones",
+                  "type": "Person",
+                  "disambiguation": "US jazz bassist",
+                  "id": "1789de4d-0f0c-4db9-b850-a823b945c883",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "attributes": [
+                  "bass"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "direction": "backward",
+                "target-credit": "",
+                "attribute-values": {},
+                "end": "1958-03-04",
+                "ended": true
+              },
+              {
+                "source-credit": "",
+                "target-type": "artist",
+                "attribute-credits": {},
+                "begin": "1958-03-04",
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "type": "instrument",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "id": "d217c8ff-7dcc-4c11-84f2-3b5cdf018523",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "sort-name": "Mance, Junior",
+                  "name": "Junior Mance"
+                },
+                "attributes": [
+                  "piano"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "end": "1958-03-04",
+                "ended": true
+              }
+            ],
+            "length": 280146,
+            "id": "5500accd-80a4-4ba5-b31d-cdaaff73d229",
+            "title": "Our Delight",
+            "disambiguation": "original LP mono mix"
+          },
+          "length": 283053,
+          "id": "17829061-2faa-4276-8eb1-b5e704c061c6",
+          "title": "Our Delight",
+          "position": 1
+        },
+        {
+          "length": 306226,
+          "position": 2,
+          "title": "What's New",
+          "id": "46e27a83-3df2-4880-b2d6-ef7bfa93c405",
+          "recording": {
+            "first-release-date": "2010-02-01",
+            "artist-credit": [
+              {
+                "name": "Cannonball Adderley",
+                "joinphrase": "",
+                "artist": {
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "country": "US",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Cannonball Adderley",
+                  "sort-name": "Adderley, Cannonball"
+                }
+              }
+            ],
+            "video": false,
+            "relations": [
+              {
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {
+                  "alto saxophone": "9c977091-b27a-4a0e-b54e-b5ab89420e22"
+                },
+                "attribute-credits": {},
+                "begin": null,
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "alto saxophone"
+                ],
+                "artist": {
+                  "name": "Cannonball Adderley",
+                  "sort-name": "Adderley, Cannonball",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "country": "US",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "type": "instrument",
+                "end": null,
+                "ended": false,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": ""
+              },
+              {
+                "attribute-ids": {
+                  "cornet": "257dad59-02e6-47d9-958a-659843737827"
+                },
+                "attribute-credits": {},
+                "begin": null,
+                "target-type": "artist",
+                "source-credit": "",
+                "end": null,
+                "ended": false,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "cornet"
+                ],
+                "type": "instrument",
+                "artist": {
+                  "country": "US",
+                  "id": "a9e79d89-f90b-4cef-943e-68151336a430",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Adderley, Nat",
+                  "name": "Nat Adderley"
+                }
+              },
+              {
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward",
+                "ended": false,
+                "end": null,
+                "type": "instrument",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "id": "d0cbf65a-541b-476a-996c-fe2cd264bbd0",
+                  "type": "Person",
+                  "disambiguation": "US jazz drummer",
+                  "sort-name": "Cobb, Jimmy",
+                  "name": "Jimmy Cobb"
+                },
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "begin": null,
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "source-credit": "",
+                "target-type": "artist"
+              },
+              {
+                "source-credit": "",
+                "target-type": "artist",
+                "begin": null,
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "bass": "6505f98c-f698-4406-8bf4-8ca43d05c36f"
+                },
+                "type": "instrument",
+                "artist": {
+                  "id": "1789de4d-0f0c-4db9-b850-a823b945c883",
+                  "country": "US",
+                  "disambiguation": "US jazz bassist",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Sam Jones",
+                  "sort-name": "Jones, Sam"
+                },
+                "attributes": [
+                  "bass"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "target-credit": "",
+                "attribute-values": {},
+                "direction": "backward",
+                "ended": false,
+                "end": null
+              },
+              {
+                "end": null,
+                "ended": false,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "piano"
+                ],
+                "artist": {
+                  "id": "d217c8ff-7dcc-4c11-84f2-3b5cdf018523",
+                  "country": "US",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Mance, Junior",
+                  "name": "Junior Mance"
+                },
+                "type": "instrument",
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "attribute-credits": {},
+                "begin": null,
+                "target-type": "artist",
+                "source-credit": ""
+              }
+            ],
+            "length": 303000,
+            "id": "bcedc5a5-d08e-4e9b-8662-86662dcfa1a0",
+            "title": "What's New",
+            "disambiguation": ""
+          },
+          "number": "2",
+          "artist-credit": [
+            {
+              "name": "Cannonball Adderley",
+              "joinphrase": "",
+              "artist": {
+                "country": "US",
+                "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                "type": "Person",
+                "disambiguation": "",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Adderley, Cannonball",
+                "name": "Cannonball Adderley"
+              }
+            }
+          ]
+        },
+        {
+          "length": 227666,
+          "title": "Fuller Bop Man",
+          "id": "992bcbcb-807c-461a-9ad7-f324d0e0ccc2",
+          "position": 3,
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "",
+                "type": "Person",
+                "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                "country": "US",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Cannonball Adderley",
+                "sort-name": "Adderley, Cannonball"
+              },
+              "name": "Cannonball Adderley"
+            }
+          ],
+          "recording": {
+            "disambiguation": "“short version” original LP mono mix",
+            "id": "0aef6808-9775-405b-aefd-118fa59da76c",
+            "title": "Fuller Bop Man",
+            "length": 225973,
+            "relations": [
+              {
+                "ended": true,
+                "end": "1958-03-06",
+                "target-credit": "",
+                "attribute-values": {},
+                "direction": "backward",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "alto saxophone"
+                ],
+                "artist": {
+                  "name": "Cannonball Adderley",
+                  "sort-name": "Adderley, Cannonball",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "disambiguation": "",
+                  "type": "Person"
+                },
+                "type": "instrument",
+                "attribute-ids": {
+                  "alto saxophone": "9c977091-b27a-4a0e-b54e-b5ab89420e22"
+                },
+                "begin": "1958-03-06",
+                "attribute-credits": {},
+                "target-type": "artist",
+                "source-credit": ""
+              },
+              {
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "end": "1958-03-06",
+                "ended": true,
+                "type": "instrument",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "a9e79d89-f90b-4cef-943e-68151336a430",
+                  "country": "US",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "sort-name": "Adderley, Nat",
+                  "name": "Nat Adderley"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "cornet"
+                ],
+                "attribute-credits": {},
+                "begin": "1958-03-06",
+                "attribute-ids": {
+                  "cornet": "257dad59-02e6-47d9-958a-659843737827"
+                },
+                "source-credit": "",
+                "target-type": "artist"
+              },
+              {
+                "end": "1958-03-06",
+                "ended": true,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "artist": {
+                  "sort-name": "Cobb, Jimmy",
+                  "name": "Jimmy Cobb",
+                  "disambiguation": "US jazz drummer",
+                  "type": "Person",
+                  "id": "d0cbf65a-541b-476a-996c-fe2cd264bbd0",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "type": "instrument",
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "attribute-credits": {},
+                "begin": "1958-03-06",
+                "target-type": "artist",
+                "source-credit": ""
+              },
+              {
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "end": "1958-03-06",
+                "ended": true,
+                "type": "instrument",
+                "artist": {
+                  "name": "Sam Jones",
+                  "sort-name": "Jones, Sam",
+                  "type": "Person",
+                  "disambiguation": "US jazz bassist",
+                  "country": "US",
+                  "id": "1789de4d-0f0c-4db9-b850-a823b945c883",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "attributes": [
+                  "bass"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-credits": {},
+                "begin": "1958-03-06",
+                "attribute-ids": {
+                  "bass": "6505f98c-f698-4406-8bf4-8ca43d05c36f"
+                },
+                "source-credit": "",
+                "target-type": "artist"
+              },
+              {
+                "begin": "1958-03-06",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "source-credit": "",
+                "target-type": "artist",
+                "target-credit": "",
+                "attribute-values": {},
+                "direction": "backward",
+                "ended": true,
+                "end": "1958-03-06",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "id": "d217c8ff-7dcc-4c11-84f2-3b5cdf018523",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "sort-name": "Mance, Junior",
+                  "name": "Junior Mance"
+                },
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "piano"
+                ]
+              }
+            ],
+            "video": false,
+            "first-release-date": "1958",
+            "artist-credit": [
+              {
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "country": "US",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley"
+                },
+                "joinphrase": "",
+                "name": "Julian “Cannonball” Adderley"
+              }
+            ]
+          },
+          "number": "3"
+        },
+        {
+          "artist-credit": [
+            {
+              "artist": {
+                "sort-name": "Adderley, Cannonball",
+                "name": "Cannonball Adderley",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "",
+                "type": "Person",
+                "country": "US",
+                "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8"
+              },
+              "joinphrase": "",
+              "name": "Cannonball Adderley"
+            }
+          ],
+          "recording": {
+            "relations": [
+              {
+                "end": "1958-03-04",
+                "ended": true,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "attributes": [
+                  "alto saxophone"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "type": "instrument",
+                "artist": {
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "country": "US",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "attribute-ids": {
+                  "alto saxophone": "9c977091-b27a-4a0e-b54e-b5ab89420e22"
+                },
+                "attribute-credits": {},
+                "begin": "1958-03-04",
+                "target-type": "artist",
+                "source-credit": ""
+              },
+              {
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {
+                  "cornet": "257dad59-02e6-47d9-958a-659843737827"
+                },
+                "begin": "1958-03-04",
+                "attribute-credits": {},
+                "attributes": [
+                  "cornet"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "type": "instrument",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "id": "a9e79d89-f90b-4cef-943e-68151336a430",
+                  "country": "US",
+                  "name": "Nat Adderley",
+                  "sort-name": "Adderley, Nat"
+                },
+                "ended": true,
+                "end": "1958-03-04",
+                "target-credit": "",
+                "attribute-values": {},
+                "direction": "backward"
+              },
+              {
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "begin": "1958-03-04",
+                "attribute-credits": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "type": "instrument",
+                "artist": {
+                  "type": "Person",
+                  "disambiguation": "US jazz drummer",
+                  "country": "US",
+                  "id": "d0cbf65a-541b-476a-996c-fe2cd264bbd0",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Jimmy Cobb",
+                  "sort-name": "Cobb, Jimmy"
+                },
+                "ended": true,
+                "end": "1958-03-04",
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward"
+              },
+              {
+                "attribute-credits": {},
+                "begin": "1958-03-04",
+                "attribute-ids": {
+                  "bass": "6505f98c-f698-4406-8bf4-8ca43d05c36f"
+                },
+                "source-credit": "",
+                "target-type": "artist",
+                "direction": "backward",
+                "target-credit": "",
+                "attribute-values": {},
+                "end": "1958-03-04",
+                "ended": true,
+                "type": "instrument",
+                "artist": {
+                  "sort-name": "Jones, Sam",
+                  "name": "Sam Jones",
+                  "country": "US",
+                  "id": "1789de4d-0f0c-4db9-b850-a823b945c883",
+                  "type": "Person",
+                  "disambiguation": "US jazz bassist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "bass"
+                ]
+              },
+              {
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "attribute-credits": {},
+                "begin": "1958-03-04",
+                "target-type": "artist",
+                "source-credit": "",
+                "end": "1958-03-04",
+                "ended": true,
+                "direction": "backward",
+                "target-credit": "",
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "piano"
+                ],
+                "artist": {
+                  "name": "Junior Mance",
+                  "sort-name": "Mance, Junior",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "d217c8ff-7dcc-4c11-84f2-3b5cdf018523",
+                  "country": "US",
+                  "disambiguation": "",
+                  "type": "Person"
+                },
+                "type": "instrument"
+              }
+            ],
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "artist": {
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "type": "Person",
+                  "disambiguation": ""
+                },
+                "name": "Julian “Cannonball” Adderley"
+              }
+            ],
+            "first-release-date": "1958",
+            "video": false,
+            "title": "Jubilation",
+            "id": "6b08ae0f-1fd6-475f-8f7d-cd5653a7276b",
+            "disambiguation": "original LP mono mix",
+            "length": 329026
+          },
+          "number": "4",
+          "length": 331333,
+          "title": "Jubilation",
+          "id": "09a2fd55-2612-4a5b-886b-c2cfb8d35476",
+          "position": 4
+        },
+        {
+          "length": 280960,
+          "id": "21ed364e-ea02-44a5-8d54-bbe34677d3ab",
+          "title": "Stay On It",
+          "position": 5,
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "",
+                "type": "Person",
+                "country": "US",
+                "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Cannonball Adderley",
+                "sort-name": "Adderley, Cannonball"
+              },
+              "name": "Cannonball Adderley"
+            }
+          ],
+          "recording": {
+            "video": false,
+            "artist-credit": [
+              {
+                "name": "Julian “Cannonball” Adderley",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "country": "US",
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley"
+                },
+                "joinphrase": ""
+              }
+            ],
+            "first-release-date": "1958",
+            "relations": [
+              {
+                "attributes": [
+                  "alto saxophone"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "artist": {
+                  "country": "US",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley"
+                },
+                "type": "instrument",
+                "ended": true,
+                "end": "1958-03-06",
+                "target-credit": "",
+                "attribute-values": {},
+                "direction": "backward",
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {
+                  "alto saxophone": "9c977091-b27a-4a0e-b54e-b5ab89420e22"
+                },
+                "begin": "1958-03-06",
+                "attribute-credits": {}
+              },
+              {
+                "direction": "backward",
+                "attribute-values": {},
+                "target-credit": "",
+                "end": "1958-03-06",
+                "ended": true,
+                "artist": {
+                  "id": "a9e79d89-f90b-4cef-943e-68151336a430",
+                  "country": "US",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Adderley, Nat",
+                  "name": "Nat Adderley"
+                },
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "cornet"
+                ],
+                "attribute-credits": {},
+                "begin": "1958-03-06",
+                "attribute-ids": {
+                  "cornet": "257dad59-02e6-47d9-958a-659843737827"
+                },
+                "source-credit": "",
+                "target-type": "artist"
+              },
+              {
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "type": "instrument",
+                "artist": {
+                  "disambiguation": "US jazz drummer",
+                  "type": "Person",
+                  "country": "US",
+                  "id": "d0cbf65a-541b-476a-996c-fe2cd264bbd0",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Cobb, Jimmy",
+                  "name": "Jimmy Cobb"
+                },
+                "ended": true,
+                "end": "1958-03-06",
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward",
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "begin": "1958-03-06",
+                "attribute-credits": {}
+              },
+              {
+                "begin": "1958-03-06",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "bass": "6505f98c-f698-4406-8bf4-8ca43d05c36f"
+                },
+                "source-credit": "",
+                "target-type": "artist",
+                "target-credit": "",
+                "attribute-values": {},
+                "direction": "backward",
+                "ended": true,
+                "end": "1958-03-06",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "US jazz bassist",
+                  "type": "Person",
+                  "id": "1789de4d-0f0c-4db9-b850-a823b945c883",
+                  "country": "US",
+                  "name": "Sam Jones",
+                  "sort-name": "Jones, Sam"
+                },
+                "type": "instrument",
+                "attributes": [
+                  "bass"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              },
+              {
+                "type": "instrument",
+                "artist": {
+                  "sort-name": "Mance, Junior",
+                  "name": "Junior Mance",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "id": "d217c8ff-7dcc-4c11-84f2-3b5cdf018523",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "attributes": [
+                  "piano"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "target-credit": "",
+                "attribute-values": {},
+                "direction": "backward",
+                "ended": true,
+                "end": "1958-03-06",
+                "source-credit": "",
+                "target-type": "artist",
+                "begin": "1958-03-06",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                }
+              }
+            ],
+            "length": 278334,
+            "disambiguation": "original LP mono mix",
+            "title": "Stay on It",
+            "id": "a3834ba7-cae4-4085-9fff-af2802e24006"
+          },
+          "number": "5"
+        },
+        {
+          "recording": {
+            "relations": [
+              {
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "alto saxophone"
+                ],
+                "type": "instrument",
+                "artist": {
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "type": "Person",
+                  "disambiguation": ""
+                },
+                "ended": true,
+                "end": "1958-03-06",
+                "target-credit": "",
+                "attribute-values": {},
+                "direction": "backward",
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {
+                  "alto saxophone": "9c977091-b27a-4a0e-b54e-b5ab89420e22"
+                },
+                "begin": "1958-03-06",
+                "attribute-credits": {}
+              },
+              {
+                "begin": "1958-03-06",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "cornet": "257dad59-02e6-47d9-958a-659843737827"
+                },
+                "source-credit": "",
+                "target-type": "artist",
+                "target-credit": "",
+                "attribute-values": {},
+                "direction": "backward",
+                "ended": true,
+                "end": "1958-03-06",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "id": "a9e79d89-f90b-4cef-943e-68151336a430",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "name": "Nat Adderley",
+                  "sort-name": "Adderley, Nat"
+                },
+                "type": "instrument",
+                "attributes": [
+                  "cornet"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              },
+              {
+                "source-credit": "",
+                "target-type": "artist",
+                "begin": "1958-03-06",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "type": "instrument",
+                "artist": {
+                  "sort-name": "Cobb, Jimmy",
+                  "name": "Jimmy Cobb",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "US jazz drummer",
+                  "type": "Person",
+                  "id": "d0cbf65a-541b-476a-996c-fe2cd264bbd0",
+                  "country": "US"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward",
+                "ended": true,
+                "end": "1958-03-06"
+              },
+              {
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward",
+                "ended": true,
+                "end": "1958-03-06",
+                "type": "instrument",
+                "artist": {
+                  "country": "US",
+                  "id": "1789de4d-0f0c-4db9-b850-a823b945c883",
+                  "type": "Person",
+                  "disambiguation": "US jazz bassist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Sam Jones",
+                  "sort-name": "Jones, Sam"
+                },
+                "attributes": [
+                  "bass"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "begin": "1958-03-06",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "bass": "6505f98c-f698-4406-8bf4-8ca43d05c36f"
+                },
+                "source-credit": "",
+                "target-type": "artist"
+              },
+              {
+                "target-credit": "",
+                "attribute-values": {},
+                "direction": "backward",
+                "ended": true,
+                "end": "1958-03-06",
+                "artist": {
+                  "sort-name": "Mance, Junior",
+                  "name": "Junior Mance",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "id": "d217c8ff-7dcc-4c11-84f2-3b5cdf018523",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "piano"
+                ],
+                "begin": "1958-03-06",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "source-credit": "",
+                "target-type": "artist"
+              }
+            ],
+            "video": false,
+            "first-release-date": "1958",
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "artist": {
+                  "country": "US",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley"
+                },
+                "name": "Julian “Cannonball” Adderley"
+              }
+            ],
+            "disambiguation": "original LP mono mix",
+            "id": "9b6e1b30-2169-4d36-906a-807b9e4d6080",
+            "title": "If I Love Again",
+            "length": 327000
+          },
+          "number": "6",
+          "artist-credit": [
+            {
+              "name": "Cannonball Adderley",
+              "joinphrase": "",
+              "artist": {
+                "name": "Cannonball Adderley",
+                "sort-name": "Adderley, Cannonball",
+                "type": "Person",
+                "disambiguation": "",
+                "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                "country": "US",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+              }
+            }
+          ],
+          "position": 6,
+          "id": "536e1d19-5829-4e43-bee8-1d059a688a51",
+          "title": "If I Love Again",
+          "length": 329440
+        },
+        {
+          "id": "6408e224-6ed3-41c1-8b47-86bdc01750aa",
+          "title": "Straight, No Chaser",
+          "position": 7,
+          "length": 506133,
+          "artist-credit": [
+            {
+              "name": "Cannonball Adderley",
+              "artist": {
+                "type": "Person",
+                "disambiguation": "",
+                "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                "country": "US",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Cannonball Adderley",
+                "sort-name": "Adderley, Cannonball"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "recording": {
+            "relations": [
+              {
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {
+                  "alto saxophone": "9c977091-b27a-4a0e-b54e-b5ab89420e22"
+                },
+                "begin": "1958-03-04",
+                "attribute-credits": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "alto saxophone"
+                ],
+                "artist": {
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "country": "US",
+                  "type": "Person",
+                  "disambiguation": ""
+                },
+                "type": "instrument",
+                "ended": true,
+                "end": "1958-03-04",
+                "target-credit": "",
+                "attribute-values": {},
+                "direction": "backward"
+              },
+              {
+                "attribute-ids": {
+                  "cornet": "257dad59-02e6-47d9-958a-659843737827"
+                },
+                "begin": "1958-03-04",
+                "attribute-credits": {},
+                "target-type": "artist",
+                "source-credit": "",
+                "ended": true,
+                "end": "1958-03-04",
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "cornet"
+                ],
+                "artist": {
+                  "type": "Person",
+                  "disambiguation": "",
+                  "country": "US",
+                  "id": "a9e79d89-f90b-4cef-943e-68151336a430",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Nat Adderley",
+                  "sort-name": "Adderley, Nat"
+                },
+                "type": "instrument"
+              },
+              {
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "type": "instrument",
+                "artist": {
+                  "sort-name": "Cobb, Jimmy",
+                  "name": "Jimmy Cobb",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "id": "d0cbf65a-541b-476a-996c-fe2cd264bbd0",
+                  "disambiguation": "US jazz drummer",
+                  "type": "Person"
+                },
+                "ended": true,
+                "end": "1958-03-04",
+                "target-credit": "",
+                "attribute-values": {},
+                "direction": "backward",
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "begin": "1958-03-04",
+                "attribute-credits": {}
+              },
+              {
+                "attributes": [
+                  "bass"
+                ],
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "artist": {
+                  "id": "1789de4d-0f0c-4db9-b850-a823b945c883",
+                  "country": "US",
+                  "disambiguation": "US jazz bassist",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Jones, Sam",
+                  "name": "Sam Jones"
+                },
+                "type": "instrument",
+                "end": "1958-03-04",
+                "ended": true,
+                "direction": "backward",
+                "target-credit": "",
+                "attribute-values": {},
+                "target-type": "artist",
+                "source-credit": "",
+                "attribute-ids": {
+                  "bass": "6505f98c-f698-4406-8bf4-8ca43d05c36f"
+                },
+                "attribute-credits": {},
+                "begin": "1958-03-04"
+              },
+              {
+                "ended": true,
+                "end": "1958-03-04",
+                "attribute-values": {},
+                "target-credit": "",
+                "direction": "backward",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "piano"
+                ],
+                "artist": {
+                  "name": "Junior Mance",
+                  "sort-name": "Mance, Junior",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "id": "d217c8ff-7dcc-4c11-84f2-3b5cdf018523",
+                  "country": "US"
+                },
+                "type": "instrument",
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "begin": "1958-03-04",
+                "attribute-credits": {},
+                "target-type": "artist",
+                "source-credit": ""
+              }
+            ],
+            "video": false,
+            "artist-credit": [
+              {
+                "name": "Julian “Cannonball” Adderley",
+                "artist": {
+                  "sort-name": "Adderley, Cannonball",
+                  "name": "Cannonball Adderley",
+                  "country": "US",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "joinphrase": ""
+              }
+            ],
+            "first-release-date": "1958",
+            "disambiguation": "original LP mono mix",
+            "title": "Straight, No Chaser",
+            "id": "2a783f7a-03bd-4baf-80b3-d764da2c9d9d",
+            "length": 507000
+          },
+          "number": "7"
+        }
+      ],
+      "format": "CD",
+      "track-count": 7,
+      "title": "Cannonball's Sharpshooters",
+      "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+      "id": "3c00c310-ed42-343d-b226-2e61f02607ae",
+      "position": 2,
+      "track-offset": 0
+    }
+  ],
+  "barcode": "5060143493492",
+  "title": "Somethin' Else",
+  "country": "FR",
+  "date": "2010-04-15",
+  "id": "6f75e9e8-694a-4462-80c6-b5699ff18e9c",
+  "text-representation": {
+    "language": "eng",
+    "script": "Latn"
+  },
+  "quality": "normal",
+  "relations": [
+    {
+      "source-credit": "",
+      "target-type": "artist",
+      "begin": null,
+      "attribute-ids": {},
+      "type": "liner notes",
+      "artist": {
+        "name": "Peter Gamble",
+        "sort-name": "Gamble, Peter",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "id": "f6e255e5-1a78-435a-b300-a497df145965",
+        "country": null,
+        "type": "Person",
+        "disambiguation": "music journalist"
+      },
+      "attributes": [],
+      "type-id": "01323b4f-7aba-410c-8c91-cb224b963a40",
+      "direction": "backward",
+      "attribute-values": {},
+      "target-credit": "",
+      "end": null,
+      "ended": false
+    },
+    {
+      "direction": "backward",
+      "target-credit": "",
+      "attribute-values": {},
+      "end": null,
+      "ended": false,
+      "artist": {
+        "name": "Glenn Gretlund",
+        "sort-name": "Gretlund, Glenn",
+        "country": null,
+        "id": "db3fc967-0c36-4645-beed-d862c694c880",
+        "disambiguation": "",
+        "type": "Person",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "type": "producer",
+      "attributes": [],
+      "type-id": "8bf377ba-8d71-4ecc-97f2-7bb2d8a2a75f",
+      "begin": null,
+      "attribute-ids": {},
+      "source-credit": "",
+      "target-type": "artist"
+    }
+  ],
+  "asin": "B003GZB5RS",
+  "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+  "cover-art-archive": {
+    "count": 11,
+    "artwork": true,
+    "darkened": false,
+    "front": true,
+    "back": true
+  },
+  "disambiguation": "",
+  "packaging": "Jewel Case",
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "release-events": [
+    {
+      "date": "2010-04-15",
+      "area": {
+        "type-id": null,
+        "type": null,
+        "disambiguation": "",
+        "id": "08310658-51eb-3801-80de-5a0739207115",
+        "name": "France",
+        "sort-name": "France",
+        "iso-3166-1-codes": [
+          "FR"
+        ]
+      }
+    },
+    {
+      "area": {
+        "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+        "type": null,
+        "disambiguation": "",
+        "type-id": null,
+        "iso-3166-1-codes": [
+          "GB"
+        ],
+        "name": "United Kingdom",
+        "sort-name": "United Kingdom"
+      },
+      "date": "2010-05-03"
+    },
+    {
+      "date": "2010-05-07",
+      "area": {
+        "type-id": null,
+        "type": null,
+        "disambiguation": "",
+        "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+        "name": "Germany",
+        "sort-name": "Germany",
+        "iso-3166-1-codes": [
+          "DE"
+        ]
+      }
+    }
+  ],
+  "release-group": {
+    "id": "07eb42bc-78e5-4ee7-b7ec-62904a66ca8a",
+    "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+    "score": 100,
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit-id": "c00e92bf-7d6c-344b-9c01-21103046529e",
+    "count": 1,
+    "title": "Somethin' Else",
+    "disambiguation": "compilation of Somethin' Else & Cannonball's Sharpshooters",
+    "first-release-date": "2010-04-15",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "artist-credit": [
+      {
+        "name": "Cannonball Adderley",
+        "artist": {
+          "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+          "name": "Cannonball Adderley",
+          "sort-name": "Adderley, Cannonball",
+          "aliases": [
+            {
+              "sort-name": "Адърли, Дж. К.",
+              "name": "Дж. К. Адърли",
+              "locale": "bg",
+              "type": null,
+              "primary": null,
+              "begin-date": null,
+              "end-date": null
+            },
+            {
+              "sort-name": "Adderley, Julian ‘Cannonball’",
+              "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+              "name": "Julian ‘Cannonball’ Adderley",
+              "locale": null,
+              "type": "Artist name",
+              "primary": null,
+              "begin-date": null,
+              "end-date": null
+            },
+            {
+              "sort-name": "Adderly, Cannonball",
+              "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+              "name": "Cannonball Adderly",
+              "locale": null,
+              "type": "Artist name",
+              "primary": null,
+              "begin-date": null,
+              "end-date": null
+            },
+            {
+              "sort-name": "Julian Adderley",
+              "name": "Julian Adderley",
+              "locale": null,
+              "type": null,
+              "primary": null,
+              "begin-date": null,
+              "end-date": null
+            },
+            {
+              "sort-name": "Julian Cannonball Adderley",
+              "name": "Julian Cannonball Adderley",
+              "locale": null,
+              "type": null,
+              "primary": null,
+              "begin-date": null,
+              "end-date": null
+            },
+            {
+              "sort-name": "Julian Cannonball Adderly",
+              "name": "Julian Cannonball Adderly",
+              "locale": null,
+              "type": null,
+              "primary": null,
+              "begin-date": null,
+              "end-date": null
+            }
+          ]
+        }
+      }
+    ],
+    "releases": [
+      {
+        "id": "6f75e9e8-694a-4462-80c6-b5699ff18e9c",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "title": "Somethin' Else",
+        "status": "Official"
+      }
+    ],
+    "tags": [
+      {
+        "count": 1,
+        "name": "jazz"
+      },
+      {
+        "count": 1,
+        "name": "hard bop"
+      }
+    ]
+  }
+}

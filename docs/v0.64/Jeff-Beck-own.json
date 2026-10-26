@@ -1,0 +1,1354 @@
+{
+  "relations": [
+    {
+      "end": null,
+      "direction": "backward",
+      "attribute-values": {},
+      "target-type": "artist",
+      "attributes": [],
+      "artist": {
+        "name": "John Collier",
+        "id": "0553a9f5-f8b3-413a-a3d7-865983121616",
+        "disambiguation": "cover art",
+        "sort-name": "Collier, John",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "country": null,
+        "type": "Person"
+      },
+      "type": "design/illustration",
+      "type-id": "307e95dd-88b5-419b-8223-b146d4a0d439",
+      "ended": false,
+      "source-credit": "",
+      "begin": null,
+      "target-credit": "",
+      "attribute-ids": {}
+    },
+    {
+      "end": null,
+      "direction": "backward",
+      "attribute-values": {},
+      "target-type": "artist",
+      "attributes": [],
+      "artist": {
+        "disambiguation": "designer",
+        "sort-name": "Berg, John",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "type": "Person",
+        "country": "US",
+        "name": "John Berg",
+        "id": "52bd0f75-492c-416b-8831-2814005a9022"
+      },
+      "type": "graphic design",
+      "type-id": "cf43b79e-3299-4b0c-9244-59ea06337107",
+      "source-credit": "",
+      "ended": false,
+      "target-credit": "",
+      "begin": null,
+      "attribute-ids": {}
+    },
+    {
+      "ended": false,
+      "source-credit": "",
+      "attribute-ids": {
+        "membranophone": "3bccb7eb-cbca-42cd-b0ac-a5e959df7221",
+        "percussion": "8e9abdf1-0afc-4544-b201-c6fa768d01f4"
+      },
+      "begin": null,
+      "target-credit": "",
+      "target-type": "artist",
+      "attribute-credits": {},
+      "type-id": "67555849-61e5-455b-96e3-29733f0115f5",
+      "type": "instrument",
+      "attributes": [
+        "membranophone",
+        "percussion"
+      ],
+      "artist": {
+        "disambiguation": "drummer",
+        "sort-name": "Bailey, Richard",
+        "country": "GB",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "type": "Person",
+        "name": "Richard Bailey",
+        "id": "a853f944-2d58-40b4-af2a-66563c5774e0"
+      },
+      "attribute-values": {},
+      "end": null,
+      "direction": "backward"
+    },
+    {
+      "direction": "backward",
+      "end": null,
+      "attribute-values": {},
+      "type": "instrument",
+      "type-id": "67555849-61e5-455b-96e3-29733f0115f5",
+      "artist": {
+        "name": "Phil Chen",
+        "id": "ae980dce-f99b-4a5d-aa3e-d7abe9edd756",
+        "disambiguation": "Chinese-Jamaican bassist",
+        "sort-name": "Chen, Phil",
+        "type": "Person",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "country": "JM"
+      },
+      "attributes": [
+        "bass"
+      ],
+      "attribute-credits": {},
+      "target-type": "artist",
+      "attribute-ids": {
+        "bass": "6505f98c-f698-4406-8bf4-8ca43d05c36f"
+      },
+      "begin": null,
+      "target-credit": "Phil Chenn",
+      "ended": false,
+      "source-credit": ""
+    },
+    {
+      "attributes": [
+        "keyboard"
+      ],
+      "artist": {
+        "id": "bb31ae46-a8a2-4f81-863d-aad9caf4e7b1",
+        "name": "Max Middleton",
+        "country": "GB",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "type": "Person",
+        "sort-name": "Middleton, Max",
+        "disambiguation": ""
+      },
+      "type-id": "67555849-61e5-455b-96e3-29733f0115f5",
+      "type": "instrument",
+      "target-type": "artist",
+      "attribute-credits": {},
+      "target-credit": "",
+      "begin": null,
+      "attribute-ids": {
+        "keyboard": "95b0c3d2-9606-4ef5-a019-9b7437f3adda"
+      },
+      "source-credit": "",
+      "ended": false,
+      "direction": "backward",
+      "end": null,
+      "attribute-values": {}
+    },
+    {
+      "direction": "backward",
+      "end": null,
+      "attribute-values": {},
+      "type": "orchestrator",
+      "type-id": "04e1f0b6-ef40-4168-ba25-42a87729fe09",
+      "attributes": [],
+      "artist": {
+        "disambiguation": "producer, arranger, composer, conductor, audio engineer, and musician",
+        "sort-name": "Martin, George",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "country": "GB",
+        "type": "Person",
+        "name": "George Martin",
+        "id": "26fa8b67-6c7f-406c-ad64-a1d070092df2"
+      },
+      "target-type": "artist",
+      "attribute-ids": {},
+      "begin": null,
+      "target-credit": "",
+      "source-credit": "",
+      "ended": false
+    }
+  ],
+  "quality": "normal",
+  "text-representation": {
+    "language": "eng",
+    "script": "Latn"
+  },
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "id": "14e1f859-ed2c-4dba-ae7a-dc43ea817aed",
+  "disambiguation": "",
+  "date": "1975",
+  "status": "Official",
+  "barcode": "",
+  "artist-credit": [
+    {
+      "joinphrase": "",
+      "artist": {
+        "name": "Jeff Beck",
+        "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+        "sort-name": "Beck, Jeff",
+        "country": "GB",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "type": "Person",
+        "disambiguation": "English rock guitarist"
+      },
+      "name": "Jeff Beck"
+    }
+  ],
+  "packaging": "Cardboard/Paper Sleeve",
+  "title": "Blow by Blow",
+  "cover-art-archive": {
+    "artwork": false,
+    "count": 0,
+    "front": false,
+    "back": false,
+    "darkened": false
+  },
+  "asin": null,
+  "release-events": [
+    {
+      "area": {
+        "disambiguation": "",
+        "type-id": null,
+        "type": null,
+        "sort-name": "United States",
+        "id": "489ce91b-6658-3307-9877-795b68554c98",
+        "name": "United States",
+        "iso-3166-1-codes": [
+          "US"
+        ]
+      },
+      "date": "1975"
+    }
+  ],
+  "label-info": [
+    {
+      "label": {
+        "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+        "name": "Epic",
+        "label-code": 199,
+        "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+        "type": "Imprint",
+        "sort-name": "Epic",
+        "disambiguation": "US label founded by CBS in 1953, now owned by Sony"
+      },
+      "catalog-number": "PE 33409"
+    }
+  ],
+  "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+  "media": [
+    {
+      "format": "12\" Vinyl",
+      "position": 1,
+      "tracks": [
+        {
+          "id": "c6f8ac7a-50b2-38a4-a917-1934fad9f8a2",
+          "recording": {
+            "first-release-date": "1975-03",
+            "disambiguation": "",
+            "video": false,
+            "length": 246560,
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "name": "Jeff Beck",
+                "artist": {
+                  "disambiguation": "English rock guitarist",
+                  "sort-name": "Beck, Jeff",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "GB",
+                  "name": "Jeff Beck",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+                }
+              }
+            ],
+            "relations": [
+              {
+                "attribute-values": {},
+                "direction": "backward",
+                "end": null,
+                "target-credit": "",
+                "begin": null,
+                "attribute-ids": {},
+                "source-credit": "",
+                "ended": false,
+                "artist": {
+                  "id": "a735d66d-b86f-4bdb-b739-1fc8e7320de5",
+                  "name": "Denim Bridges",
+                  "disambiguation": "",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "sort-name": "Bridges, Denim"
+                },
+                "attributes": [],
+                "type-id": "5dcc52af-7064-4051-8d62-7d80f4c3c907",
+                "type": "engineer",
+                "target-type": "artist"
+              },
+              {
+                "end": null,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attributes": [
+                  "guitar"
+                ],
+                "artist": {
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "name": "Jeff Beck",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "GB",
+                  "sort-name": "Beck, Jeff",
+                  "disambiguation": "English rock guitarist"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "type": "instrument",
+                "source-credit": "",
+                "ended": false,
+                "begin": null,
+                "target-credit": "",
+                "attribute-ids": {
+                  "guitar": "63021302-86cd-4aee-80df-2270d54f4978"
+                }
+              },
+              {
+                "attribute-ids": {},
+                "begin": null,
+                "target-credit": "",
+                "source-credit": "",
+                "ended": false,
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0",
+                "type": "producer",
+                "attributes": [],
+                "artist": {
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "GB",
+                  "sort-name": "Martin, George",
+                  "disambiguation": "producer, arranger, composer, conductor, audio engineer, and musician",
+                  "id": "26fa8b67-6c7f-406c-ad64-a1d070092df2",
+                  "name": "George Martin"
+                },
+                "target-type": "artist",
+                "attribute-values": {},
+                "direction": "backward",
+                "end": null
+              }
+            ],
+            "title": "You Know What I Mean",
+            "id": "24ee88d2-cf36-448f-9ada-76f074f9e4dd"
+          },
+          "title": "You Know What I Mean",
+          "number": "A1",
+          "position": 1,
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Jeff Beck",
+              "artist": {
+                "disambiguation": "English rock guitarist",
+                "country": "GB",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "sort-name": "Beck, Jeff",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "name": "Jeff Beck"
+              }
+            }
+          ],
+          "length": 246560
+        },
+        {
+          "length": 271040,
+          "position": 2,
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Jeff Beck",
+              "artist": {
+                "name": "Jeff Beck",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "disambiguation": "English rock guitarist",
+                "sort-name": "Beck, Jeff",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "country": "GB"
+              }
+            }
+          ],
+          "number": "A2",
+          "recording": {
+            "relations": [
+              {
+                "source-credit": "",
+                "ended": false,
+                "begin": null,
+                "target-credit": "",
+                "attribute-ids": {},
+                "target-type": "artist",
+                "artist": {
+                  "disambiguation": "",
+                  "sort-name": "Bridges, Denim",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "name": "Denim Bridges",
+                  "id": "a735d66d-b86f-4bdb-b739-1fc8e7320de5"
+                },
+                "attributes": [],
+                "type": "engineer",
+                "type-id": "5dcc52af-7064-4051-8d62-7d80f4c3c907",
+                "attribute-values": {},
+                "end": null,
+                "direction": "backward"
+              },
+              {
+                "direction": "backward",
+                "end": null,
+                "attribute-values": {},
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attributes": [
+                  "guitar"
+                ],
+                "artist": {
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "name": "Jeff Beck",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "country": "GB",
+                  "sort-name": "Beck, Jeff",
+                  "disambiguation": "English rock guitarist"
+                },
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "guitar": "63021302-86cd-4aee-80df-2270d54f4978"
+                },
+                "begin": null,
+                "target-credit": "",
+                "ended": false,
+                "source-credit": ""
+              },
+              {
+                "direction": "backward",
+                "end": null,
+                "attribute-values": {},
+                "artist": {
+                  "name": "George Martin",
+                  "id": "26fa8b67-6c7f-406c-ad64-a1d070092df2",
+                  "sort-name": "Martin, George",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "GB",
+                  "disambiguation": "producer, arranger, composer, conductor, audio engineer, and musician"
+                },
+                "attributes": [],
+                "type": "producer",
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0",
+                "target-type": "artist",
+                "begin": null,
+                "target-credit": "",
+                "attribute-ids": {},
+                "ended": false,
+                "source-credit": ""
+              }
+            ],
+            "title": "She’s a Woman",
+            "id": "6b2489d0-90d0-4156-9d74-d5947346905f",
+            "first-release-date": "1975-03",
+            "disambiguation": "",
+            "video": false,
+            "length": 271040,
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "artist": {
+                  "disambiguation": "English rock guitarist",
+                  "sort-name": "Beck, Jeff",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "GB",
+                  "name": "Jeff Beck",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+                },
+                "name": "Jeff Beck"
+              }
+            ]
+          },
+          "title": "She’s a Woman",
+          "id": "20771ab2-36fc-3324-a489-3a293a33e03d"
+        },
+        {
+          "id": "0afd8987-f59a-363c-bca1-1a4a34135a8d",
+          "title": "Constipated Duck",
+          "recording": {
+            "id": "6341b87c-1a07-4c7d-a776-c9f971509333",
+            "relations": [
+              {
+                "attribute-values": {},
+                "direction": "backward",
+                "end": null,
+                "attribute-ids": {},
+                "target-credit": "",
+                "begin": null,
+                "ended": false,
+                "source-credit": "",
+                "type-id": "5dcc52af-7064-4051-8d62-7d80f4c3c907",
+                "type": "engineer",
+                "attributes": [],
+                "artist": {
+                  "disambiguation": "",
+                  "sort-name": "Bridges, Denim",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": null,
+                  "type": "Person",
+                  "name": "Denim Bridges",
+                  "id": "a735d66d-b86f-4bdb-b739-1fc8e7320de5"
+                },
+                "target-type": "artist"
+              },
+              {
+                "source-credit": "",
+                "ended": false,
+                "begin": null,
+                "target-credit": "",
+                "attribute-ids": {
+                  "guitar": "63021302-86cd-4aee-80df-2270d54f4978"
+                },
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attributes": [
+                  "guitar"
+                ],
+                "artist": {
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "name": "Jeff Beck",
+                  "disambiguation": "English rock guitarist",
+                  "country": "GB",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "sort-name": "Beck, Jeff"
+                },
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {},
+                "end": null,
+                "direction": "backward"
+              },
+              {
+                "attribute-values": {},
+                "direction": "backward",
+                "end": null,
+                "attribute-ids": {},
+                "target-credit": "",
+                "begin": null,
+                "source-credit": "",
+                "ended": false,
+                "type": "producer",
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0",
+                "artist": {
+                  "id": "26fa8b67-6c7f-406c-ad64-a1d070092df2",
+                  "name": "George Martin",
+                  "disambiguation": "producer, arranger, composer, conductor, audio engineer, and musician",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "GB",
+                  "sort-name": "Martin, George"
+                },
+                "attributes": [],
+                "target-type": "artist"
+              }
+            ],
+            "title": "Constipated Duck",
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "artist": {
+                  "sort-name": "Beck, Jeff",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "country": "GB",
+                  "disambiguation": "English rock guitarist",
+                  "name": "Jeff Beck",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+                },
+                "name": "Jeff Beck"
+              }
+            ],
+            "first-release-date": "1975-03",
+            "disambiguation": "",
+            "video": false,
+            "length": 168133
+          },
+          "number": "A3",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Jeff Beck",
+              "artist": {
+                "sort-name": "Beck, Jeff",
+                "country": "GB",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "disambiguation": "English rock guitarist",
+                "name": "Jeff Beck",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+              }
+            }
+          ],
+          "position": 3,
+          "length": 168133
+        },
+        {
+          "id": "93480dfc-749b-3438-ad78-dc24b0647fc7",
+          "recording": {
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "name": "Jeff Beck",
+                "artist": {
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "name": "Jeff Beck",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "country": "GB",
+                  "sort-name": "Beck, Jeff",
+                  "disambiguation": "English rock guitarist"
+                }
+              }
+            ],
+            "video": false,
+            "length": 309600,
+            "first-release-date": "1975-03",
+            "disambiguation": "",
+            "id": "48c1523a-d0d9-43a9-b22a-cb6e949f6d1c",
+            "title": "Air Blower",
+            "relations": [
+              {
+                "end": null,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-type": "artist",
+                "type": "engineer",
+                "type-id": "5dcc52af-7064-4051-8d62-7d80f4c3c907",
+                "artist": {
+                  "id": "a735d66d-b86f-4bdb-b739-1fc8e7320de5",
+                  "name": "Denim Bridges",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": null,
+                  "type": "Person",
+                  "sort-name": "Bridges, Denim"
+                },
+                "attributes": [],
+                "ended": false,
+                "source-credit": "",
+                "attribute-ids": {},
+                "begin": null,
+                "target-credit": ""
+              },
+              {
+                "attribute-values": {},
+                "direction": "backward",
+                "end": null,
+                "begin": null,
+                "target-credit": "",
+                "attribute-ids": {
+                  "guitar": "63021302-86cd-4aee-80df-2270d54f4978"
+                },
+                "source-credit": "",
+                "ended": false,
+                "artist": {
+                  "sort-name": "Beck, Jeff",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "GB",
+                  "disambiguation": "English rock guitarist",
+                  "name": "Jeff Beck",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+                },
+                "attributes": [
+                  "guitar"
+                ],
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-credits": {},
+                "target-type": "artist"
+              },
+              {
+                "target-type": "artist",
+                "type": "producer",
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0",
+                "artist": {
+                  "sort-name": "Martin, George",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "country": "GB",
+                  "disambiguation": "producer, arranger, composer, conductor, audio engineer, and musician",
+                  "name": "George Martin",
+                  "id": "26fa8b67-6c7f-406c-ad64-a1d070092df2"
+                },
+                "attributes": [],
+                "ended": false,
+                "source-credit": "",
+                "attribute-ids": {},
+                "target-credit": "",
+                "begin": null,
+                "end": null,
+                "direction": "backward",
+                "attribute-values": {}
+              }
+            ]
+          },
+          "title": "Air Blower",
+          "position": 4,
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "name": "Jeff Beck",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "sort-name": "Beck, Jeff",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "GB",
+                "type": "Person",
+                "disambiguation": "English rock guitarist"
+              },
+              "name": "Jeff Beck"
+            }
+          ],
+          "number": "A4",
+          "length": 309600
+        },
+        {
+          "number": "A5",
+          "position": 5,
+          "artist-credit": [
+            {
+              "name": "Jeff Beck",
+              "artist": {
+                "disambiguation": "English rock guitarist",
+                "sort-name": "Beck, Jeff",
+                "type": "Person",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "GB",
+                "name": "Jeff Beck",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "length": 340666,
+          "id": "e17e50f4-d8d7-3ab6-b3ff-c0a1da7c041b",
+          "recording": {
+            "relations": [
+              {
+                "attribute-values": {},
+                "direction": "backward",
+                "end": null,
+                "attribute-ids": {},
+                "target-credit": "",
+                "begin": null,
+                "ended": false,
+                "source-credit": "",
+                "type-id": "5dcc52af-7064-4051-8d62-7d80f4c3c907",
+                "type": "engineer",
+                "attributes": [],
+                "artist": {
+                  "name": "Denim Bridges",
+                  "id": "a735d66d-b86f-4bdb-b739-1fc8e7320de5",
+                  "sort-name": "Bridges, Denim",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": null,
+                  "disambiguation": ""
+                },
+                "target-type": "artist"
+              },
+              {
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attributes": [
+                  "guitar"
+                ],
+                "artist": {
+                  "disambiguation": "English rock guitarist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "GB",
+                  "type": "Person",
+                  "sort-name": "Beck, Jeff",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "name": "Jeff Beck"
+                },
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "source-credit": "",
+                "ended": false,
+                "target-credit": "",
+                "begin": null,
+                "attribute-ids": {
+                  "guitar": "63021302-86cd-4aee-80df-2270d54f4978"
+                },
+                "end": null,
+                "direction": "backward",
+                "attribute-values": {}
+              },
+              {
+                "attribute-values": {},
+                "end": null,
+                "direction": "backward",
+                "source-credit": "",
+                "ended": false,
+                "target-credit": "",
+                "begin": null,
+                "attribute-ids": {},
+                "target-type": "artist",
+                "artist": {
+                  "name": "George Martin",
+                  "id": "26fa8b67-6c7f-406c-ad64-a1d070092df2",
+                  "disambiguation": "producer, arranger, composer, conductor, audio engineer, and musician",
+                  "sort-name": "Martin, George",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "GB",
+                  "type": "Person"
+                },
+                "attributes": [],
+                "type": "producer",
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0"
+              }
+            ],
+            "title": "Scatterbrain",
+            "id": "c5d0c289-b886-44f6-a028-35258a305fda",
+            "disambiguation": "",
+            "first-release-date": "1975-03",
+            "length": 340666,
+            "video": false,
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "name": "Jeff Beck",
+                "artist": {
+                  "disambiguation": "English rock guitarist",
+                  "sort-name": "Beck, Jeff",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "GB",
+                  "name": "Jeff Beck",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+                }
+              }
+            ]
+          },
+          "title": "Scatterbrain"
+        },
+        {
+          "title": "Cause We’ve Ended as Lovers",
+          "recording": {
+            "artist-credit": [
+              {
+                "artist": {
+                  "name": "Jeff Beck",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "disambiguation": "English rock guitarist",
+                  "sort-name": "Beck, Jeff",
+                  "country": "GB",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person"
+                },
+                "name": "Jeff Beck",
+                "joinphrase": ""
+              }
+            ],
+            "video": false,
+            "length": 342333,
+            "disambiguation": "",
+            "first-release-date": "1975-03",
+            "id": "a8656997-a083-4c68-ae67-f63742438b98",
+            "title": "Cause We’ve Ended as Lovers",
+            "relations": [
+              {
+                "target-type": "artist",
+                "attributes": [],
+                "artist": {
+                  "sort-name": "Bridges, Denim",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "name": "Denim Bridges",
+                  "id": "a735d66d-b86f-4bdb-b739-1fc8e7320de5"
+                },
+                "type-id": "5dcc52af-7064-4051-8d62-7d80f4c3c907",
+                "type": "engineer",
+                "source-credit": "",
+                "ended": false,
+                "target-credit": "",
+                "begin": null,
+                "attribute-ids": {},
+                "end": null,
+                "direction": "backward",
+                "attribute-values": {}
+              },
+              {
+                "end": null,
+                "direction": "backward",
+                "attribute-values": {},
+                "attribute-credits": {},
+                "target-type": "artist",
+                "attributes": [
+                  "guitar"
+                ],
+                "artist": {
+                  "name": "Jeff Beck",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "sort-name": "Beck, Jeff",
+                  "country": "GB",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "disambiguation": "English rock guitarist"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "type": "instrument",
+                "ended": false,
+                "source-credit": "",
+                "begin": null,
+                "target-credit": "",
+                "attribute-ids": {
+                  "guitar": "63021302-86cd-4aee-80df-2270d54f4978"
+                }
+              },
+              {
+                "attribute-values": {},
+                "direction": "backward",
+                "end": null,
+                "attribute-ids": {},
+                "begin": null,
+                "target-credit": "",
+                "ended": false,
+                "source-credit": "",
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0",
+                "type": "producer",
+                "artist": {
+                  "disambiguation": "producer, arranger, composer, conductor, audio engineer, and musician",
+                  "sort-name": "Martin, George",
+                  "country": "GB",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "name": "George Martin",
+                  "id": "26fa8b67-6c7f-406c-ad64-a1d070092df2"
+                },
+                "attributes": [],
+                "target-type": "artist"
+              }
+            ]
+          },
+          "id": "f0703e7b-f9f6-3451-964b-d592d9d902d9",
+          "length": 342333,
+          "artist-credit": [
+            {
+              "name": "Jeff Beck",
+              "artist": {
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "name": "Jeff Beck",
+                "disambiguation": "English rock guitarist",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "country": "GB",
+                "sort-name": "Beck, Jeff"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "position": 6,
+          "number": "B1"
+        },
+        {
+          "title": "Thelonius",
+          "recording": {
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "name": "Jeff Beck",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "GB",
+                  "type": "Person",
+                  "sort-name": "Beck, Jeff",
+                  "disambiguation": "English rock guitarist",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "name": "Jeff Beck"
+                }
+              }
+            ],
+            "first-release-date": "1975-03",
+            "disambiguation": "",
+            "length": 197160,
+            "video": false,
+            "id": "0d4cd1d6-a34b-4ad9-ac07-1cf0b65848f1",
+            "relations": [
+              {
+                "target-type": "artist",
+                "attributes": [],
+                "artist": {
+                  "id": "a735d66d-b86f-4bdb-b739-1fc8e7320de5",
+                  "name": "Denim Bridges",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": null,
+                  "sort-name": "Bridges, Denim",
+                  "disambiguation": ""
+                },
+                "type": "engineer",
+                "type-id": "5dcc52af-7064-4051-8d62-7d80f4c3c907",
+                "ended": false,
+                "source-credit": "",
+                "begin": null,
+                "target-credit": "",
+                "attribute-ids": {},
+                "end": null,
+                "direction": "backward",
+                "attribute-values": {}
+              },
+              {
+                "attribute-ids": {
+                  "guitar": "63021302-86cd-4aee-80df-2270d54f4978"
+                },
+                "begin": null,
+                "target-credit": "",
+                "source-credit": "",
+                "ended": false,
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "artist": {
+                  "name": "Jeff Beck",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "sort-name": "Beck, Jeff",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "GB",
+                  "type": "Person",
+                  "disambiguation": "English rock guitarist"
+                },
+                "attributes": [
+                  "guitar"
+                ],
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attribute-values": {},
+                "direction": "backward",
+                "end": null
+              },
+              {
+                "attribute-ids": {},
+                "target-credit": "",
+                "begin": null,
+                "source-credit": "",
+                "ended": false,
+                "type": "producer",
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0",
+                "attributes": [],
+                "artist": {
+                  "id": "26fa8b67-6c7f-406c-ad64-a1d070092df2",
+                  "name": "George Martin",
+                  "disambiguation": "producer, arranger, composer, conductor, audio engineer, and musician",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "country": "GB",
+                  "sort-name": "Martin, George"
+                },
+                "target-type": "artist",
+                "attribute-values": {},
+                "direction": "backward",
+                "end": null
+              }
+            ],
+            "title": "Thelonius"
+          },
+          "id": "2b1cd84e-77d0-3c77-b025-69a23ad9c98a",
+          "length": 197160,
+          "number": "B2",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Jeff Beck",
+              "artist": {
+                "disambiguation": "English rock guitarist",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "country": "GB",
+                "sort-name": "Beck, Jeff",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "name": "Jeff Beck"
+              }
+            }
+          ],
+          "position": 7
+        },
+        {
+          "recording": {
+            "length": 298000,
+            "video": false,
+            "disambiguation": "",
+            "first-release-date": "1975-03",
+            "artist-credit": [
+              {
+                "artist": {
+                  "disambiguation": "English rock guitarist",
+                  "sort-name": "Beck, Jeff",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "GB",
+                  "type": "Person",
+                  "name": "Jeff Beck",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+                },
+                "name": "Jeff Beck",
+                "joinphrase": ""
+              }
+            ],
+            "title": "Freeway Jam",
+            "relations": [
+              {
+                "end": null,
+                "direction": "backward",
+                "attribute-values": {},
+                "target-type": "artist",
+                "attributes": [],
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": null,
+                  "type": "Person",
+                  "sort-name": "Bridges, Denim",
+                  "disambiguation": "",
+                  "id": "a735d66d-b86f-4bdb-b739-1fc8e7320de5",
+                  "name": "Denim Bridges"
+                },
+                "type-id": "5dcc52af-7064-4051-8d62-7d80f4c3c907",
+                "type": "engineer",
+                "ended": false,
+                "source-credit": "",
+                "begin": null,
+                "target-credit": "",
+                "attribute-ids": {}
+              },
+              {
+                "attribute-values": {},
+                "direction": "backward",
+                "end": null,
+                "target-credit": "",
+                "begin": null,
+                "attribute-ids": {
+                  "guitar": "63021302-86cd-4aee-80df-2270d54f4978"
+                },
+                "ended": false,
+                "source-credit": "",
+                "attributes": [
+                  "guitar"
+                ],
+                "artist": {
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "name": "Jeff Beck",
+                  "disambiguation": "English rock guitarist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "country": "GB",
+                  "sort-name": "Beck, Jeff"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "type": "instrument",
+                "target-type": "artist",
+                "attribute-credits": {}
+              },
+              {
+                "target-type": "artist",
+                "artist": {
+                  "id": "26fa8b67-6c7f-406c-ad64-a1d070092df2",
+                  "name": "George Martin",
+                  "disambiguation": "producer, arranger, composer, conductor, audio engineer, and musician",
+                  "country": "GB",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "sort-name": "Martin, George"
+                },
+                "attributes": [],
+                "type": "producer",
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0",
+                "source-credit": "",
+                "ended": false,
+                "begin": null,
+                "target-credit": "",
+                "attribute-ids": {},
+                "end": null,
+                "direction": "backward",
+                "attribute-values": {}
+              }
+            ],
+            "id": "fa9bdfcf-fdfb-485a-9f5b-49714bde438f"
+          },
+          "title": "Freeway Jam",
+          "id": "c7c94719-fd98-3455-b7a2-ad644825439e",
+          "length": 298000,
+          "number": "B3",
+          "position": 8,
+          "artist-credit": [
+            {
+              "artist": {
+                "disambiguation": "English rock guitarist",
+                "sort-name": "Beck, Jeff",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "GB",
+                "type": "Person",
+                "name": "Jeff Beck",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+              },
+              "name": "Jeff Beck",
+              "joinphrase": ""
+            }
+          ]
+        },
+        {
+          "recording": {
+            "video": false,
+            "length": 505600,
+            "disambiguation": "",
+            "first-release-date": "1975-03",
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "name": "Jeff Beck",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "country": "GB",
+                  "sort-name": "Beck, Jeff",
+                  "disambiguation": "English rock guitarist"
+                },
+                "name": "Jeff Beck",
+                "joinphrase": ""
+              }
+            ],
+            "title": "Diamond Dust",
+            "relations": [
+              {
+                "attribute-ids": {},
+                "begin": null,
+                "target-credit": "",
+                "source-credit": "",
+                "ended": false,
+                "type": "engineer",
+                "type-id": "5dcc52af-7064-4051-8d62-7d80f4c3c907",
+                "artist": {
+                  "id": "a735d66d-b86f-4bdb-b739-1fc8e7320de5",
+                  "name": "Denim Bridges",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": null,
+                  "type": "Person",
+                  "sort-name": "Bridges, Denim"
+                },
+                "attributes": [],
+                "target-type": "artist",
+                "attribute-values": {},
+                "direction": "backward",
+                "end": null
+              },
+              {
+                "source-credit": "",
+                "ended": false,
+                "attribute-ids": {
+                  "guitar": "63021302-86cd-4aee-80df-2270d54f4978"
+                },
+                "begin": null,
+                "target-credit": "",
+                "target-type": "artist",
+                "attribute-credits": {},
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "artist": {
+                  "disambiguation": "English rock guitarist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "GB",
+                  "type": "Person",
+                  "sort-name": "Beck, Jeff",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "name": "Jeff Beck"
+                },
+                "attributes": [
+                  "guitar"
+                ],
+                "attribute-values": {},
+                "end": null,
+                "direction": "backward"
+              },
+              {
+                "target-type": "artist",
+                "type": "producer",
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0",
+                "attributes": [],
+                "artist": {
+                  "disambiguation": "producer, arranger, composer, conductor, audio engineer, and musician",
+                  "sort-name": "Martin, George",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "country": "GB",
+                  "name": "George Martin",
+                  "id": "26fa8b67-6c7f-406c-ad64-a1d070092df2"
+                },
+                "source-credit": "",
+                "ended": false,
+                "attribute-ids": {},
+                "begin": null,
+                "target-credit": "",
+                "end": null,
+                "direction": "backward",
+                "attribute-values": {}
+              }
+            ],
+            "id": "e1fdba3a-8dd6-48b3-9500-fe1b4c72b57b"
+          },
+          "title": "Diamond Dust",
+          "id": "754921c0-9d9c-309d-b521-7d671c133c5a",
+          "length": 505600,
+          "number": "B4",
+          "position": 9,
+          "artist-credit": [
+            {
+              "artist": {
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "name": "Jeff Beck",
+                "disambiguation": "English rock guitarist",
+                "country": "GB",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "sort-name": "Beck, Jeff"
+              },
+              "name": "Jeff Beck",
+              "joinphrase": ""
+            }
+          ]
+        }
+      ],
+      "track-offset": 0,
+      "track-count": 9,
+      "id": "525300b5-07b8-3ea4-a925-ac1609a2f92f",
+      "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+      "title": ""
+    }
+  ],
+  "country": "US",
+  "release-group": {
+    "first-release-date": "1975-03",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "id": "08f0ad54-dc95-38a9-bc88-503f0086b4f9",
+    "secondary-type-ids": [],
+    "title": "Blow by Blow",
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "name": "Jeff Beck",
+        "artist": {
+          "disambiguation": "English rock guitarist",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Jeff Beck",
+          "country": "GB",
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "sort-name": "Beck, Jeff",
+          "type": "Person"
+        }
+      }
+    ],
+    "disambiguation": "",
+    "secondary-types": []
+  }
+}

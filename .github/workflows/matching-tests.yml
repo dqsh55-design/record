@@ -18,6 +18,7 @@ jobs:
           node-version: '22'
       - run: python -m unittest discover -s tests -p 'test_*matching.py' -v
       - run: node tests/test_browser.cjs
+      - run: node tests/test_credit_attribution.cjs
       - run: pip install 'playwright>=1.50,<2'
       # ubuntu-latest includes Chrome and its native libraries.
       - run: google-chrome --version

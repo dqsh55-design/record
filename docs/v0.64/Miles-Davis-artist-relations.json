@@ -1,0 +1,679 @@
+{
+  "area": {
+    "name": "United States",
+    "id": "489ce91b-6658-3307-9877-795b68554c98",
+    "disambiguation": "",
+    "type-id": null,
+    "sort-name": "United States",
+    "iso-3166-1-codes": [
+      "US"
+    ],
+    "type": null
+  },
+  "gender": "Male",
+  "gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+  "country": "US",
+  "relations": [
+    {
+      "target-credit": "",
+      "attribute-ids": {},
+      "attribute-values": {},
+      "artist": {
+        "type": "Group",
+        "sort-name": "Artists United Against Apartheid",
+        "id": "298fb0c1-5a1f-43c1-854d-663762caad6e",
+        "country": "US",
+        "name": "Artists United Against Apartheid",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "disambiguation": ""
+      },
+      "source-credit": "",
+      "direction": "forward",
+      "attributes": [],
+      "target-type": "artist",
+      "end": null,
+      "begin": null,
+      "ended": false,
+      "type-id": "75c09861-6857-4ec0-9729-84eefde7fc86",
+      "type": "collaboration"
+    },
+    {
+      "begin": null,
+      "target-type": "artist",
+      "end": null,
+      "attributes": [],
+      "ended": false,
+      "direction": "forward",
+      "type": "founder",
+      "type-id": "6ed4bfc4-0a0d-44c0-b025-b7fc4d900b67",
+      "attribute-values": {},
+      "attribute-ids": {},
+      "target-credit": "",
+      "source-credit": "",
+      "artist": {
+        "sort-name": "Miles Davis and His Band",
+        "type": "Group",
+        "name": "Miles Davis and His Band",
+        "country": null,
+        "id": "55920730-831f-431f-80f7-539a2bf83f98",
+        "disambiguation": "Miles Davis, Art Blakey, Jackie McLean, Sonny Rollins, Tommy Potter & Walter Bishop, Jr.",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+      }
+    },
+    {
+      "artist": {
+        "sort-name": "Gréco, Juliette",
+        "type": "Person",
+        "disambiguation": "French singer and actress",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "name": "Juliette Gréco",
+        "country": "FR",
+        "id": "bb839dd4-94be-4732-b014-135a64c340a6"
+      },
+      "source-credit": "",
+      "target-credit": "",
+      "attribute-values": {},
+      "attribute-ids": {},
+      "type-id": "fd3927ba-fd51-4fa9-bcc2-e83637896fe8",
+      "type": "involved with",
+      "direction": "forward",
+      "begin": "1949",
+      "target-type": "artist",
+      "end": "1991",
+      "attributes": [],
+      "ended": true
+    },
+    {
+      "target-credit": "",
+      "attribute-ids": {},
+      "attribute-values": {},
+      "source-credit": "",
+      "artist": {
+        "type": "Person",
+        "sort-name": "Henry, Cleo",
+        "id": "8dddb806-0971-4968-ac1d-68340402cd94",
+        "country": "US",
+        "name": "Cleo Henry",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": ""
+      },
+      "direction": "forward",
+      "attributes": [],
+      "target-type": "artist",
+      "end": null,
+      "begin": null,
+      "ended": false,
+      "type-id": "dd9886f2-1dfe-4270-97db-283f6839a666",
+      "type": "is person"
+    },
+    {
+      "direction": "forward",
+      "begin": "1959-12-21",
+      "target-type": "artist",
+      "attributes": [],
+      "end": "1968",
+      "ended": true,
+      "type-id": "b2bf7a5d-2da6-4742-baf4-e38d8a7ad029",
+      "type": "married",
+      "target-credit": "",
+      "attribute-values": {},
+      "attribute-ids": {},
+      "artist": {
+        "sort-name": "Davis, Frances Taylor",
+        "type": "Person",
+        "name": "Frances Taylor Davis",
+        "id": "1d8bf559-e9ab-4009-a61e-def117019485",
+        "country": "US",
+        "disambiguation": "",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "source-credit": ""
+    },
+    {
+      "source-credit": "",
+      "artist": {
+        "id": "bb17dc42-ecaf-42ca-aa35-b23207573060",
+        "country": "US",
+        "name": "Betty Davis",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "funk/soul singer",
+        "type": "Person",
+        "sort-name": "Davis, Betty"
+      },
+      "attribute-ids": {},
+      "attribute-values": {},
+      "target-credit": "",
+      "type": "married",
+      "type-id": "b2bf7a5d-2da6-4742-baf4-e38d8a7ad029",
+      "ended": true,
+      "target-type": "artist",
+      "end": "1969",
+      "attributes": [],
+      "begin": "1968-09",
+      "direction": "forward"
+    },
+    {
+      "source-credit": "",
+      "artist": {
+        "type": "Person",
+        "sort-name": "Tyson, Cicely",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "American actress",
+        "id": "896d0e21-2b6e-4596-a76e-32c29049f19f",
+        "country": null,
+        "name": "Cicely Tyson"
+      },
+      "attribute-ids": {},
+      "attribute-values": {},
+      "target-credit": "",
+      "type": "married",
+      "type-id": "b2bf7a5d-2da6-4742-baf4-e38d8a7ad029",
+      "ended": true,
+      "target-type": "artist",
+      "attributes": [],
+      "end": "1989",
+      "begin": "1981",
+      "direction": "backward"
+    },
+    {
+      "target-credit": "",
+      "attribute-ids": {
+        "eponymous": "15eea3b8-5655-43c8-b2c2-dd03c901a79b",
+        "original": "4fd3b255-a7d7-4424-9a63-40fa543b601c"
+      },
+      "attribute-values": {},
+      "artist": {
+        "sort-name": "Davis, Miles, Quintet",
+        "type": "Group",
+        "name": "Miles Davis Quintet",
+        "id": "fe7245e7-d734-4ca1-8e26-691883f58201",
+        "country": "US",
+        "disambiguation": "US jazz group, active 1955–58 and 1964-1970",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+      },
+      "source-credit": "",
+      "direction": "forward",
+      "ended": false,
+      "target-type": "artist",
+      "end": null,
+      "attributes": [
+        "eponymous",
+        "original"
+      ],
+      "begin": null,
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "type": "member of band"
+    },
+    {
+      "source-credit": "",
+      "artist": {
+        "sort-name": "Davis, Miles, Sextet",
+        "type": "Group",
+        "name": "Miles Davis Sextet",
+        "country": "US",
+        "id": "f137837b-fa55-48d1-8c85-f13961b3ac77",
+        "disambiguation": "",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+      },
+      "attribute-values": {},
+      "attribute-ids": {
+        "original": "4fd3b255-a7d7-4424-9a63-40fa543b601c",
+        "eponymous": "15eea3b8-5655-43c8-b2c2-dd03c901a79b"
+      },
+      "target-credit": "",
+      "type": "member of band",
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "begin": null,
+      "target-type": "artist",
+      "attributes": [
+        "eponymous",
+        "original"
+      ],
+      "end": null,
+      "ended": false,
+      "direction": "forward"
+    },
+    {
+      "type": "member of band",
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "ended": false,
+      "begin": null,
+      "end": null,
+      "target-type": "artist",
+      "attributes": [
+        "eponymous",
+        "original"
+      ],
+      "direction": "forward",
+      "artist": {
+        "type": "Group",
+        "sort-name": "Davis, Miles, Quartet",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "disambiguation": "",
+        "country": "US",
+        "id": "03606dee-b333-48fe-b9af-d671c837d40f",
+        "name": "Miles Davis Quartet"
+      },
+      "source-credit": "",
+      "attribute-values": {},
+      "attribute-ids": {
+        "original": "4fd3b255-a7d7-4424-9a63-40fa543b601c",
+        "eponymous": "15eea3b8-5655-43c8-b2c2-dd03c901a79b"
+      },
+      "target-credit": ""
+    },
+    {
+      "type": "member of band",
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "ended": false,
+      "begin": null,
+      "end": null,
+      "target-type": "artist",
+      "attributes": [
+        "eponymous",
+        "original"
+      ],
+      "direction": "forward",
+      "artist": {
+        "name": "Miles Davis Septet",
+        "id": "88130878-7ee9-4ce2-b24b-1dd9da898030",
+        "country": null,
+        "disambiguation": "",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "sort-name": "Davis, Miles, Septet",
+        "type": "Group"
+      },
+      "source-credit": "",
+      "attribute-values": {},
+      "attribute-ids": {
+        "original": "4fd3b255-a7d7-4424-9a63-40fa543b601c",
+        "eponymous": "15eea3b8-5655-43c8-b2c2-dd03c901a79b"
+      },
+      "target-credit": ""
+    },
+    {
+      "artist": {
+        "sort-name": "Davis, Miles, Nonet, The",
+        "type": "Group",
+        "name": "The Miles Davis Nonet",
+        "country": null,
+        "id": "16d2b8e6-8930-4c9e-856f-e6d096479350",
+        "disambiguation": "",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+      },
+      "source-credit": "",
+      "target-credit": "",
+      "attribute-ids": {
+        "trumpet": "1c8f9780-2f16-4891-b66d-bb7aa0820dbd",
+        "eponymous": "15eea3b8-5655-43c8-b2c2-dd03c901a79b",
+        "original": "4fd3b255-a7d7-4424-9a63-40fa543b601c"
+      },
+      "attribute-values": {},
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "type": "member of band",
+      "direction": "forward",
+      "attribute-credits": {},
+      "ended": false,
+      "target-type": "artist",
+      "attributes": [
+        "eponymous",
+        "original",
+        "trumpet"
+      ],
+      "end": null,
+      "begin": null
+    },
+    {
+      "source-credit": "",
+      "artist": {
+        "type": "Group",
+        "sort-name": "Parker, Charlie, Quintet",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "disambiguation": "",
+        "country": "US",
+        "id": "e02d4f5a-8bcf-4fd3-8410-57c680389748",
+        "name": "Charlie Parker Quintet"
+      },
+      "target-credit": "",
+      "attribute-values": {},
+      "attribute-ids": {
+        "original": "4fd3b255-a7d7-4424-9a63-40fa543b601c"
+      },
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "type": "member of band",
+      "direction": "forward",
+      "begin": null,
+      "target-type": "artist",
+      "end": null,
+      "attributes": [
+        "original"
+      ],
+      "ended": false
+    },
+    {
+      "source-credit": "",
+      "artist": {
+        "sort-name": "Davis, Miles and His Orchestra",
+        "type": "Group",
+        "name": "Miles Davis and His Orchestra",
+        "id": "c52ff92e-b338-4815-bd63-4e9b89795e84",
+        "country": "US",
+        "disambiguation": "",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+      },
+      "target-credit": "",
+      "attribute-values": {},
+      "attribute-ids": {
+        "eponymous": "15eea3b8-5655-43c8-b2c2-dd03c901a79b"
+      },
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "type": "member of band",
+      "direction": "forward",
+      "begin": null,
+      "end": null,
+      "target-type": "artist",
+      "attributes": [
+        "eponymous"
+      ],
+      "ended": false
+    },
+    {
+      "artist": {
+        "name": "Miles Davis All Stars",
+        "id": "607d7275-2b92-49e5-a7ee-32f9cc29b076",
+        "country": null,
+        "disambiguation": "",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "sort-name": "Davis, Miles, All Stars",
+        "type": "Group"
+      },
+      "source-credit": "",
+      "target-credit": "",
+      "attribute-values": {},
+      "attribute-ids": {
+        "eponymous": "15eea3b8-5655-43c8-b2c2-dd03c901a79b"
+      },
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "type": "member of band",
+      "direction": "forward",
+      "ended": false,
+      "begin": null,
+      "end": null,
+      "target-type": "artist",
+      "attributes": [
+        "eponymous"
+      ]
+    },
+    {
+      "source-credit": "",
+      "artist": {
+        "type": "Group",
+        "sort-name": "Miles Davis Group",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "disambiguation": "",
+        "id": "5464e03d-32be-4e9a-bf74-2567f560df6f",
+        "country": null,
+        "name": "Miles Davis Group"
+      },
+      "target-credit": "",
+      "attribute-values": {},
+      "attribute-ids": {
+        "eponymous": "15eea3b8-5655-43c8-b2c2-dd03c901a79b"
+      },
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "type": "member of band",
+      "direction": "forward",
+      "begin": null,
+      "end": null,
+      "target-type": "artist",
+      "attributes": [
+        "eponymous"
+      ],
+      "ended": false
+    },
+    {
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "type": "member of band",
+      "direction": "forward",
+      "ended": false,
+      "target-type": "artist",
+      "attributes": [
+        "eponymous"
+      ],
+      "end": null,
+      "begin": null,
+      "source-credit": "",
+      "artist": {
+        "sort-name": "Miles Davis and His Band",
+        "type": "Group",
+        "disambiguation": "Miles Davis, Art Blakey, Jackie McLean, Sonny Rollins, Tommy Potter & Walter Bishop, Jr.",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "name": "Miles Davis and His Band",
+        "id": "55920730-831f-431f-80f7-539a2bf83f98",
+        "country": null
+      },
+      "target-credit": "",
+      "attribute-ids": {
+        "eponymous": "15eea3b8-5655-43c8-b2c2-dd03c901a79b"
+      },
+      "attribute-values": {}
+    },
+    {
+      "type-id": "5be4c609-9afa-4ea0-910b-12ffb71e3821",
+      "type": "member of band",
+      "direction": "forward",
+      "target-type": "artist",
+      "attributes": [],
+      "end": null,
+      "begin": null,
+      "ended": true,
+      "source-credit": "",
+      "artist": {
+        "type": "Group",
+        "sort-name": "Parker, Charlie, Septet",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "disambiguation": "",
+        "country": null,
+        "id": "8d63d8f8-e743-48af-b45e-5d9639edcd1b",
+        "name": "Charlie Parker Septet"
+      },
+      "target-credit": "",
+      "attribute-ids": {},
+      "attribute-values": {}
+    },
+    {
+      "direction": "backward",
+      "ended": false,
+      "target-type": "artist",
+      "attributes": [],
+      "end": null,
+      "begin": null,
+      "type-id": "1af24726-5b1f-4b07-826e-5351723f504b",
+      "type": "named after artist",
+      "target-credit": "",
+      "attribute-ids": {},
+      "attribute-values": {},
+      "artist": {
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "disambiguation": "Miles Davis, Art Blakey, Jackie McLean, Sonny Rollins, Tommy Potter & Walter Bishop, Jr.",
+        "id": "55920730-831f-431f-80f7-539a2bf83f98",
+        "country": null,
+        "name": "Miles Davis and His Band",
+        "type": "Group",
+        "sort-name": "Miles Davis and His Band"
+      },
+      "source-credit": ""
+    },
+    {
+      "direction": "forward",
+      "ended": false,
+      "begin": null,
+      "target-type": "artist",
+      "end": null,
+      "attributes": [],
+      "type-id": "9421ca84-934f-49fe-9e66-dea242430406",
+      "type": "parent",
+      "target-credit": "",
+      "attribute-values": {},
+      "attribute-ids": {},
+      "artist": {
+        "country": "US",
+        "id": "acbb43f8-c4b1-4af7-9b94-bf3c8cca0ab2",
+        "name": "Erin Davis",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "",
+        "type": "Person",
+        "sort-name": "Davis, Erin"
+      },
+      "source-credit": ""
+    },
+    {
+      "artist": {
+        "sort-name": "Davis, Cheryl",
+        "type": "Person",
+        "name": "Cheryl Davis",
+        "id": "ea389664-0eaa-4ecf-9567-3d1c807dbdc6",
+        "country": "US",
+        "disambiguation": "",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "source-credit": "",
+      "attribute-values": {},
+      "attribute-ids": {},
+      "target-credit": "",
+      "type": "parent",
+      "type-id": "9421ca84-934f-49fe-9e66-dea242430406",
+      "begin": null,
+      "attributes": [],
+      "target-type": "artist",
+      "end": null,
+      "ended": false,
+      "direction": "forward"
+    },
+    {
+      "source-credit": "",
+      "artist": {
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "",
+        "country": "US",
+        "id": "81abda46-7201-4fa4-8026-5280d1b23105",
+        "name": "Elwood Buchanan",
+        "type": "Person",
+        "sort-name": "Buchanan, Elwood"
+      },
+      "target-credit": "",
+      "attribute-ids": {},
+      "attribute-values": {},
+      "type-id": "249fc24f-d573-4290-9d74-0547712d1f1e",
+      "type": "teacher",
+      "direction": "backward",
+      "end": null,
+      "target-type": "artist",
+      "attributes": [],
+      "begin": null,
+      "ended": false
+    },
+    {
+      "source-credit": "",
+      "artist": {
+        "type": "Person",
+        "sort-name": "Roney, Wallace",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "jazz trumpeter",
+        "id": "30907194-57ca-4c7f-8e10-8c2883799052",
+        "country": "US",
+        "name": "Wallace Roney"
+      },
+      "target-credit": "",
+      "attribute-ids": {},
+      "attribute-values": {},
+      "type-id": "249fc24f-d573-4290-9d74-0547712d1f1e",
+      "type": "teacher",
+      "direction": "forward",
+      "ended": false,
+      "target-type": "artist",
+      "attributes": [],
+      "end": null,
+      "begin": null
+    },
+    {
+      "type-id": "a6f62641-2f58-470e-b02b-88d7b984dc9f",
+      "type": "tribute",
+      "direction": "backward",
+      "ended": false,
+      "begin": null,
+      "target-type": "artist",
+      "end": null,
+      "attributes": [],
+      "source-credit": "",
+      "artist": {
+        "type": "Group",
+        "sort-name": "Miles!",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "disambiguation": "Dutch tribute to Miles Davis",
+        "country": "NL",
+        "id": "f2b73b53-3414-4883-b014-622ab6917215",
+        "name": "Miles!"
+      },
+      "target-credit": "",
+      "attribute-values": {},
+      "attribute-ids": {}
+    },
+    {
+      "source-credit": "",
+      "artist": {
+        "id": "10e59749-62bb-4aec-b18c-6b7a25714ec9",
+        "country": null,
+        "name": "A Tribute to Miles Davis",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "disambiguation": "",
+        "type": "Group",
+        "sort-name": "Tribute to Miles Davis, A"
+      },
+      "attribute-values": {},
+      "attribute-ids": {},
+      "target-credit": "",
+      "type": "tribute",
+      "type-id": "a6f62641-2f58-470e-b02b-88d7b984dc9f",
+      "begin": null,
+      "target-type": "artist",
+      "end": null,
+      "attributes": [],
+      "ended": false,
+      "direction": "backward"
+    }
+  ],
+  "life-span": {
+    "ended": true,
+    "begin": "1926-05-26",
+    "end": "1991-09-28"
+  },
+  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+  "end-area": {
+    "disambiguation": "",
+    "type-id": null,
+    "name": "Santa Monica",
+    "id": "dbacf2e3-7e3e-4cee-8804-999b109285fa",
+    "sort-name": "Santa Monica",
+    "type": null
+  },
+  "type": "Person",
+  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+  "begin-area": {
+    "sort-name": "Alton",
+    "type": null,
+    "name": "Alton",
+    "id": "39e1719e-2604-4b59-b698-dab7caf85b33",
+    "disambiguation": "",
+    "type-id": null
+  },
+  "name": "Miles Davis",
+  "isnis": [
+    "000000012144707X"
+  ],
+  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+  "ipis": [
+    "00007619785"
+  ],
+  "sort-name": "Davis, Miles"
+}

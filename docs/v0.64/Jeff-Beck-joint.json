@@ -1,0 +1,671 @@
+{
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+  "packaging": "Jewel Case",
+  "artist-credit": [
+    {
+      "joinphrase": " with the ",
+      "name": "Jeff Beck",
+      "artist": {
+        "country": "GB",
+        "name": "Jeff Beck",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "English rock guitarist",
+        "type": "Person",
+        "sort-name": "Beck, Jeff",
+        "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+      }
+    },
+    {
+      "artist": {
+        "name": "Jan Hammer Group",
+        "country": null,
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "disambiguation": "",
+        "sort-name": "Hammer, Jan Group",
+        "type": "Group",
+        "id": "074ad168-8c8b-44df-8388-110bbea45a2b"
+      },
+      "joinphrase": "",
+      "name": "Jan Hammer Group"
+    }
+  ],
+  "title": "Live",
+  "media": [
+    {
+      "id": "f96b24e4-438c-3c9d-ba64-143ee74d6a4a",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "Freeway Jam",
+          "number": "1",
+          "id": "0d09d39b-acfb-48cf-9ddd-1538ffbadf06",
+          "length": 444133,
+          "artist-credit": [
+            {
+              "artist": {
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "English rock guitarist",
+                "name": "Jeff Beck",
+                "country": "GB",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "sort-name": "Beck, Jeff",
+                "type": "Person"
+              },
+              "name": "Jeff Beck",
+              "joinphrase": " with the "
+            },
+            {
+              "joinphrase": "",
+              "name": "Jan Hammer Group",
+              "artist": {
+                "disambiguation": "",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "country": null,
+                "name": "Jan Hammer Group",
+                "id": "074ad168-8c8b-44df-8388-110bbea45a2b",
+                "type": "Group",
+                "sort-name": "Hammer, Jan Group"
+              }
+            }
+          ],
+          "recording": {
+            "relations": [],
+            "artist-credit": [
+              {
+                "joinphrase": " with the ",
+                "name": "Jeff Beck",
+                "artist": {
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "sort-name": "Beck, Jeff",
+                  "type": "Person",
+                  "disambiguation": "English rock guitarist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Jeff Beck",
+                  "country": "GB"
+                }
+              },
+              {
+                "artist": {
+                  "type": "Group",
+                  "sort-name": "Hammer, Jan Group",
+                  "id": "074ad168-8c8b-44df-8388-110bbea45a2b",
+                  "country": null,
+                  "name": "Jan Hammer Group",
+                  "disambiguation": "",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+                },
+                "name": "Jan Hammer Group",
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1977-03",
+            "video": false,
+            "title": "Freeway Jam",
+            "length": 444000,
+            "id": "b9d78daf-d13d-4c31-a44c-d48391bd69bb"
+          }
+        },
+        {
+          "artist-credit": [
+            {
+              "artist": {
+                "country": "GB",
+                "name": "Jeff Beck",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "English rock guitarist",
+                "type": "Person",
+                "sort-name": "Beck, Jeff",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+              },
+              "name": "Jeff Beck",
+              "joinphrase": " with the "
+            },
+            {
+              "artist": {
+                "name": "Jan Hammer Group",
+                "country": null,
+                "disambiguation": "",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "sort-name": "Hammer, Jan Group",
+                "type": "Group",
+                "id": "074ad168-8c8b-44df-8388-110bbea45a2b"
+              },
+              "name": "Jan Hammer Group",
+              "joinphrase": ""
+            }
+          ],
+          "recording": {
+            "relations": [],
+            "artist-credit": [
+              {
+                "joinphrase": " with the ",
+                "name": "Jeff Beck",
+                "artist": {
+                  "disambiguation": "English rock guitarist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "GB",
+                  "name": "Jeff Beck",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "type": "Person",
+                  "sort-name": "Beck, Jeff"
+                }
+              },
+              {
+                "artist": {
+                  "type": "Group",
+                  "sort-name": "Hammer, Jan Group",
+                  "id": "074ad168-8c8b-44df-8388-110bbea45a2b",
+                  "country": null,
+                  "name": "Jan Hammer Group",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "disambiguation": ""
+                },
+                "joinphrase": "",
+                "name": "Jan Hammer Group"
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1977-03",
+            "title": "Earth (Still Our Only Home)",
+            "video": false,
+            "id": "6f3307f0-7db3-4297-82f7-19ddd6e7974d",
+            "length": 276400
+          },
+          "position": 2,
+          "title": "Earth (Still Our Only Home)",
+          "number": "2",
+          "id": "6b4cb97e-8882-4de4-8c85-304e5994fac9",
+          "length": 276400
+        },
+        {
+          "artist-credit": [
+            {
+              "name": "Jeff Beck",
+              "joinphrase": " with the ",
+              "artist": {
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "sort-name": "Beck, Jeff",
+                "type": "Person",
+                "disambiguation": "English rock guitarist",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Jeff Beck",
+                "country": "GB"
+              }
+            },
+            {
+              "joinphrase": "",
+              "name": "Jan Hammer Group",
+              "artist": {
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "disambiguation": "",
+                "country": null,
+                "name": "Jan Hammer Group",
+                "id": "074ad168-8c8b-44df-8388-110bbea45a2b",
+                "type": "Group",
+                "sort-name": "Hammer, Jan Group"
+              }
+            }
+          ],
+          "recording": {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "type": "Person",
+                  "sort-name": "Beck, Jeff",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "English rock guitarist",
+                  "country": "GB",
+                  "name": "Jeff Beck"
+                },
+                "name": "Jeff Beck",
+                "joinphrase": " with the "
+              },
+              {
+                "name": "Jan Hammer Group",
+                "joinphrase": "",
+                "artist": {
+                  "country": null,
+                  "name": "Jan Hammer Group",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "disambiguation": "",
+                  "type": "Group",
+                  "sort-name": "Hammer, Jan Group",
+                  "id": "074ad168-8c8b-44df-8388-110bbea45a2b"
+                }
+              }
+            ],
+            "relations": [],
+            "disambiguation": "",
+            "first-release-date": "1977-03",
+            "video": false,
+            "title": "She’s a Woman",
+            "id": "03d1eab3-8bd7-4cfe-b9d2-b4eeb047a4b8",
+            "length": 266493
+          },
+          "position": 3,
+          "title": "She’s a Woman",
+          "number": "3",
+          "id": "de947b54-e13d-4ab0-8628-cb18c2e34be9",
+          "length": 266493
+        },
+        {
+          "id": "72225493-e274-427c-b71a-0f7132500f3c",
+          "number": "4",
+          "length": 368933,
+          "title": "Full Moon Boogie",
+          "position": 4,
+          "artist-credit": [
+            {
+              "artist": {
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "type": "Person",
+                "sort-name": "Beck, Jeff",
+                "disambiguation": "English rock guitarist",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "GB",
+                "name": "Jeff Beck"
+              },
+              "name": "Jeff Beck",
+              "joinphrase": " with the "
+            },
+            {
+              "artist": {
+                "id": "074ad168-8c8b-44df-8388-110bbea45a2b",
+                "type": "Group",
+                "sort-name": "Hammer, Jan Group",
+                "disambiguation": "",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "country": null,
+                "name": "Jan Hammer Group"
+              },
+              "name": "Jan Hammer Group",
+              "joinphrase": ""
+            }
+          ],
+          "recording": {
+            "artist-credit": [
+              {
+                "name": "Jeff Beck",
+                "joinphrase": " with the ",
+                "artist": {
+                  "disambiguation": "English rock guitarist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Jeff Beck",
+                  "country": "GB",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "sort-name": "Beck, Jeff",
+                  "type": "Person"
+                }
+              },
+              {
+                "name": "Jan Hammer Group",
+                "joinphrase": "",
+                "artist": {
+                  "type": "Group",
+                  "sort-name": "Hammer, Jan Group",
+                  "id": "074ad168-8c8b-44df-8388-110bbea45a2b",
+                  "country": null,
+                  "name": "Jan Hammer Group",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "disambiguation": ""
+                }
+              }
+            ],
+            "relations": [],
+            "disambiguation": "",
+            "first-release-date": "1977-03",
+            "length": 368933,
+            "id": "2b262cb2-9dba-4665-9421-3ff5adbd5dbd",
+            "video": false,
+            "title": "Full Moon Boogie"
+          }
+        },
+        {
+          "number": "5",
+          "id": "881933f6-4fb4-411b-8d21-d62320b41f4c",
+          "length": 473133,
+          "title": "Darkness/Earth in Search of a Sun",
+          "position": 5,
+          "artist-credit": [
+            {
+              "artist": {
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "sort-name": "Beck, Jeff",
+                "type": "Person",
+                "disambiguation": "English rock guitarist",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Jeff Beck",
+                "country": "GB"
+              },
+              "name": "Jeff Beck",
+              "joinphrase": " with the "
+            },
+            {
+              "name": "Jan Hammer Group",
+              "joinphrase": "",
+              "artist": {
+                "sort-name": "Hammer, Jan Group",
+                "type": "Group",
+                "id": "074ad168-8c8b-44df-8388-110bbea45a2b",
+                "name": "Jan Hammer Group",
+                "country": null,
+                "disambiguation": "",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+              }
+            }
+          ],
+          "recording": {
+            "relations": [],
+            "artist-credit": [
+              {
+                "artist": {
+                  "name": "Jeff Beck",
+                  "country": "GB",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "English rock guitarist",
+                  "sort-name": "Beck, Jeff",
+                  "type": "Person",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+                },
+                "name": "Jeff Beck",
+                "joinphrase": " with the "
+              },
+              {
+                "artist": {
+                  "disambiguation": "",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "country": null,
+                  "name": "Jan Hammer Group",
+                  "id": "074ad168-8c8b-44df-8388-110bbea45a2b",
+                  "type": "Group",
+                  "sort-name": "Hammer, Jan Group"
+                },
+                "name": "Jan Hammer Group",
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1977-03",
+            "title": "Darkness/Earth in Search of a Sun",
+            "video": false,
+            "length": 473133,
+            "id": "d5df6a2c-6b1d-4573-8512-ff697f0270f3"
+          }
+        },
+        {
+          "length": 447040,
+          "id": "d50d7716-0706-4a70-9c12-8493b821cfc1",
+          "number": "6",
+          "title": "Scatterbrain",
+          "position": 6,
+          "recording": {
+            "first-release-date": "1977-03",
+            "video": false,
+            "title": "Scatterbrain",
+            "id": "74e469be-a1a5-4863-8c4d-ca1d9c715127",
+            "length": 447040,
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "sort-name": "Beck, Jeff",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "English rock guitarist",
+                  "name": "Jeff Beck",
+                  "country": "GB"
+                },
+                "joinphrase": " with the ",
+                "name": "Jeff Beck"
+              },
+              {
+                "joinphrase": "",
+                "name": "Jan Hammer Group",
+                "artist": {
+                  "name": "Jan Hammer Group",
+                  "country": null,
+                  "disambiguation": "",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "sort-name": "Hammer, Jan Group",
+                  "type": "Group",
+                  "id": "074ad168-8c8b-44df-8388-110bbea45a2b"
+                }
+              }
+            ],
+            "relations": [],
+            "disambiguation": ""
+          },
+          "artist-credit": [
+            {
+              "artist": {
+                "name": "Jeff Beck",
+                "country": "GB",
+                "disambiguation": "English rock guitarist",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Beck, Jeff",
+                "type": "Person",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+              },
+              "joinphrase": " with the ",
+              "name": "Jeff Beck"
+            },
+            {
+              "artist": {
+                "name": "Jan Hammer Group",
+                "country": null,
+                "disambiguation": "",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "sort-name": "Hammer, Jan Group",
+                "type": "Group",
+                "id": "074ad168-8c8b-44df-8388-110bbea45a2b"
+              },
+              "joinphrase": "",
+              "name": "Jan Hammer Group"
+            }
+          ]
+        },
+        {
+          "artist-credit": [
+            {
+              "artist": {
+                "name": "Jeff Beck",
+                "country": "GB",
+                "disambiguation": "English rock guitarist",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Beck, Jeff",
+                "type": "Person",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+              },
+              "name": "Jeff Beck",
+              "joinphrase": " with the "
+            },
+            {
+              "name": "Jan Hammer Group",
+              "joinphrase": "",
+              "artist": {
+                "id": "074ad168-8c8b-44df-8388-110bbea45a2b",
+                "sort-name": "Hammer, Jan Group",
+                "type": "Group",
+                "disambiguation": "",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "name": "Jan Hammer Group",
+                "country": null
+              }
+            }
+          ],
+          "recording": {
+            "first-release-date": "1977-03",
+            "title": "Blue Wind",
+            "video": false,
+            "length": 395000,
+            "id": "fe50fb68-818d-4c35-b85e-03db0e12a876",
+            "artist-credit": [
+              {
+                "name": "Jeff Beck",
+                "joinphrase": " with the ",
+                "artist": {
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "sort-name": "Beck, Jeff",
+                  "type": "Person",
+                  "disambiguation": "English rock guitarist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Jeff Beck",
+                  "country": "GB"
+                }
+              },
+              {
+                "artist": {
+                  "id": "074ad168-8c8b-44df-8388-110bbea45a2b",
+                  "sort-name": "Hammer, Jan Group",
+                  "type": "Group",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "disambiguation": "",
+                  "name": "Jan Hammer Group",
+                  "country": null
+                },
+                "name": "Jan Hammer Group",
+                "joinphrase": ""
+              }
+            ],
+            "relations": [],
+            "disambiguation": ""
+          },
+          "position": 7,
+          "title": "Blue Wind",
+          "number": "7",
+          "id": "617d2136-4cef-4157-aa23-e76ca8a9e105",
+          "length": 395066
+        }
+      ],
+      "title": "",
+      "track-count": 7,
+      "format": "CD",
+      "position": 1,
+      "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+      "track-offset": 0
+    }
+  ],
+  "cover-art-archive": {
+    "count": 5,
+    "darkened": false,
+    "artwork": true,
+    "back": true,
+    "front": true
+  },
+  "barcode": "074643443326",
+  "asin": null,
+  "disambiguation": "",
+  "relations": [
+    {
+      "attribute-values": {},
+      "type-id": "84453d28-c3e8-4864-9aae-25aa968bcf9e",
+      "target-type": "artist",
+      "attribute-ids": {
+        "re": "9b72452f-550e-4ace-93ed-fb8789cdc245"
+      },
+      "ended": false,
+      "artist": {
+        "disambiguation": "US recording/mastering engineer",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "name": "Mark Wilder",
+        "country": "US",
+        "id": "edde585e-5e21-4b98-bd63-68e477c39d75",
+        "sort-name": "Wilder, Mark",
+        "type": "Person"
+      },
+      "begin": null,
+      "direction": "backward",
+      "source-credit": "",
+      "target-credit": "",
+      "end": null,
+      "attributes": [
+        "re"
+      ],
+      "type": "mastering"
+    }
+  ],
+  "country": "US",
+  "quality": "normal",
+  "text-representation": {
+    "script": "Latn",
+    "language": "eng"
+  },
+  "label-info": [
+    {
+      "catalog-number": "EK 34433",
+      "label": {
+        "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+        "label-code": 199,
+        "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+        "name": "Epic",
+        "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+        "type": "Imprint",
+        "sort-name": "Epic"
+      }
+    }
+  ],
+  "status": "Official",
+  "id": "2e0ac963-80b7-4ea9-a2a7-6a38d93e84aa",
+  "date": "",
+  "release-events": [
+    {
+      "date": "",
+      "area": {
+        "type-id": null,
+        "iso-3166-1-codes": [
+          "US"
+        ],
+        "disambiguation": "",
+        "name": "United States",
+        "id": "489ce91b-6658-3307-9877-795b68554c98",
+        "sort-name": "United States",
+        "type": null
+      }
+    }
+  ],
+  "release-group": {
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "title": "Jeff Beck With the Jan Hammer Group Live",
+    "artist-credit": [
+      {
+        "joinphrase": " with the ",
+        "artist": {
+          "sort-name": "Beck, Jeff",
+          "type": "Person",
+          "disambiguation": "English rock guitarist",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Jeff Beck",
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "country": "GB"
+        },
+        "name": "Jeff Beck"
+      },
+      {
+        "joinphrase": "",
+        "name": "Jan Hammer Group",
+        "artist": {
+          "disambiguation": "",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "name": "Jan Hammer Group",
+          "country": null,
+          "id": "074ad168-8c8b-44df-8388-110bbea45a2b",
+          "sort-name": "Hammer, Jan Group",
+          "type": "Group"
+        }
+      }
+    ],
+    "disambiguation": "",
+    "secondary-types": [
+      "Live"
+    ],
+    "first-release-date": "1977-03",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "id": "01e94aea-fd9f-36b3-9965-73904e97cd73"
+  }
+}
