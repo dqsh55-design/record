@@ -1,0 +1,378 @@
+{
+  "country": "US",
+  "date": "1958",
+  "status": "Official",
+  "asin": "B0000576ZE",
+  "text-representation": {
+    "script": "Latn",
+    "language": "eng"
+  },
+  "id": "0c21218a-04cc-4135-a445-1d0dbef08ddb",
+  "quality": "normal",
+  "cover-art-archive": {
+    "count": 1,
+    "artwork": true,
+    "darkened": false,
+    "front": true,
+    "back": false
+  },
+  "label-info": [
+    {
+      "catalog-number": "CL 1193",
+      "label": {
+        "label-code": 162,
+        "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+        "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+        "type": "Imprint",
+        "sort-name": "Columbia",
+        "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX",
+        "name": "Columbia"
+      }
+    }
+  ],
+  "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+  "artist-credit": [
+    {
+      "joinphrase": "",
+      "name": "Miles Davis",
+      "artist": {
+        "country": "US",
+        "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "type": "Person",
+        "sort-name": "Davis, Miles",
+        "disambiguation": "jazz trumpeter, bandleader, songwriter",
+        "name": "Miles Davis"
+      }
+    }
+  ],
+  "packaging": "Cardboard/Paper Sleeve",
+  "release-events": [
+    {
+      "date": "1958",
+      "area": {
+        "type": null,
+        "sort-name": "United States",
+        "type-id": null,
+        "id": "489ce91b-6658-3307-9877-795b68554c98",
+        "disambiguation": "",
+        "name": "United States",
+        "iso-3166-1-codes": [
+          "US"
+        ]
+      }
+    }
+  ],
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "title": "Milestones",
+  "barcode": null,
+  "release-group": {
+    "secondary-types": [],
+    "id": "89896a3e-e309-3ed3-a1a9-36be29ae76b0",
+    "title": "Milestones",
+    "disambiguation": "",
+    "primary-type": "Album",
+    "artist-credit": [
+      {
+        "name": "Miles Davis",
+        "joinphrase": "",
+        "artist": {
+          "country": "US",
+          "type": "Person",
+          "sort-name": "Davis, Miles",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+          "name": "Miles Davis",
+          "disambiguation": "jazz trumpeter, bandleader, songwriter"
+        }
+      }
+    ],
+    "first-release-date": "1958",
+    "secondary-type-ids": [],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  "media": [
+    {
+      "format": "12\" Vinyl",
+      "tracks": [
+        {
+          "recording": {
+            "id": "5f84dd67-74c3-4d4f-852c-8749f8006f55",
+            "artist-credit": [
+              {
+                "name": "Miles Davis",
+                "joinphrase": "",
+                "artist": {
+                  "type": "Person",
+                  "sort-name": "Davis, Miles",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Miles Davis",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "country": "US"
+                }
+              }
+            ],
+            "first-release-date": "1958",
+            "title": "Dr. Jackle",
+            "length": 349933,
+            "video": false,
+            "disambiguation": "original studio mix - CO60203-2"
+          },
+          "number": "1",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Miles Davis",
+              "artist": {
+                "country": "US",
+                "sort-name": "Davis, Miles",
+                "type": "Person",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Miles Davis",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter"
+              }
+            }
+          ],
+          "length": 353200,
+          "title": "Dr. Jackle",
+          "position": 1,
+          "id": "3bef3180-4494-3ac4-bad7-bebcf3bb4acf"
+        },
+        {
+          "artist-credit": [
+            {
+              "artist": {
+                "country": "US",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                "name": "Miles Davis",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "sort-name": "Davis, Miles"
+              },
+              "name": "Miles Davis",
+              "joinphrase": ""
+            }
+          ],
+          "recording": {
+            "title": "Sid’s Ahead",
+            "disambiguation": "original studio mix - CO60204-1",
+            "length": 782133,
+            "video": false,
+            "artist-credit": [
+              {
+                "name": "Miles Davis",
+                "joinphrase": "",
+                "artist": {
+                  "country": "US",
+                  "name": "Miles Davis",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "sort-name": "Davis, Miles",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a"
+                }
+              }
+            ],
+            "id": "a2463ab2-c7c4-47b0-b532-61d77e6a1ab3",
+            "first-release-date": "1958"
+          },
+          "number": "2",
+          "title": "Sid’s Ahead",
+          "length": 785346,
+          "id": "0fc5a154-149a-3908-a589-2f680255595e",
+          "position": 2
+        },
+        {
+          "length": 319106,
+          "title": "Two Bass Hit",
+          "position": 3,
+          "id": "55b39cea-8af9-32cd-b09b-ab70573c4fa1",
+          "recording": {
+            "first-release-date": "1958",
+            "id": "05a4dfe7-8c30-4294-9f00-89b48dc04d2a",
+            "artist-credit": [
+              {
+                "name": "Miles Davis",
+                "joinphrase": "",
+                "artist": {
+                  "country": "US",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "name": "Miles Davis",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Davis, Miles",
+                  "type": "Person"
+                }
+              }
+            ],
+            "video": false,
+            "length": 315000,
+            "disambiguation": "original studio mix - CO60199-2",
+            "title": "Two Bass Hit"
+          },
+          "number": "3",
+          "artist-credit": [
+            {
+              "name": "Miles Davis",
+              "joinphrase": "",
+              "artist": {
+                "country": "US",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "sort-name": "Davis, Miles",
+                "name": "Miles Davis",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter"
+              }
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "id": "1399f5c3-6391-3026-8919-85a170cd2fe2",
+          "length": 347320,
+          "title": "Milestones",
+          "recording": {
+            "first-release-date": "1958",
+            "artist-credit": [
+              {
+                "artist": {
+                  "sort-name": "Davis, Miles",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "name": "Miles Davis",
+                  "country": "US"
+                },
+                "name": "Miles Davis",
+                "joinphrase": ""
+              }
+            ],
+            "id": "ae4f577f-e861-4acb-94ab-dd158c7d9bc8",
+            "disambiguation": "original studio mix – CO60202–3",
+            "length": 344866,
+            "video": false,
+            "title": "Milestones"
+          },
+          "number": "4",
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Miles Davis",
+              "artist": {
+                "country": "US",
+                "sort-name": "Davis, Miles",
+                "type": "Person",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "name": "Miles Davis",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter"
+              }
+            }
+          ]
+        },
+        {
+          "id": "f6be5129-73a5-3b7e-b8f1-8560f342588b",
+          "position": 5,
+          "title": "Billy Boy",
+          "length": 439946,
+          "artist-credit": [
+            {
+              "artist": {
+                "country": "US",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "sort-name": "Davis, Miles",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                "name": "Miles Davis"
+              },
+              "joinphrase": "",
+              "name": "Miles Davis"
+            }
+          ],
+          "number": "5",
+          "recording": {
+            "title": "Billy Boy",
+            "length": 435000,
+            "video": false,
+            "disambiguation": "original studio master",
+            "id": "9f008f95-e3a0-45f1-827a-f782d39f4468",
+            "artist-credit": [
+              {
+                "artist": {
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "name": "Miles Davis",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "type": "Person",
+                  "sort-name": "Davis, Miles",
+                  "country": "US"
+                },
+                "joinphrase": "",
+                "name": "Miles Davis"
+              }
+            ],
+            "first-release-date": "1958"
+          }
+        },
+        {
+          "number": "6",
+          "recording": {
+            "first-release-date": "1958",
+            "id": "e93b55ee-f0f0-4391-aad6-0c6a4fefc002",
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "name": "Miles Davis",
+                "artist": {
+                  "country": "US",
+                  "type": "Person",
+                  "sort-name": "Davis, Miles",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "name": "Miles Davis"
+                }
+              }
+            ],
+            "length": 640066,
+            "video": false,
+            "disambiguation": "original studio mix - CO60201-2",
+            "title": "Straight, No Chaser"
+          },
+          "artist-credit": [
+            {
+              "name": "Miles Davis",
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                "name": "Miles Davis",
+                "sort-name": "Davis, Miles",
+                "type": "Person",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "US"
+              }
+            }
+          ],
+          "length": 642573,
+          "title": "Straight, No Chaser",
+          "position": 6,
+          "id": "41b4d8ca-0d85-3f3a-b620-901c03e5d111"
+        }
+      ],
+      "title": "",
+      "track-offset": 0,
+      "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+      "id": "38a2371e-b0ca-37fd-a085-faf4fcd93a10",
+      "track-count": 6,
+      "position": 1
+    }
+  ],
+  "disambiguation": ""
+}

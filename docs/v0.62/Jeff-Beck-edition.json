@@ -1,0 +1,539 @@
+{
+  "cover-art-archive": {
+    "artwork": true,
+    "count": 1,
+    "darkened": false,
+    "front": true,
+    "back": false
+  },
+  "title": "Flash",
+  "media": [
+    {
+      "track-offset": 0,
+      "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+      "title": "",
+      "id": "0e0b181f-d878-324c-a5d0-9529a32df04f",
+      "tracks": [
+        {
+          "title": "Ambitious",
+          "length": 268000,
+          "number": "1",
+          "id": "c44f4a98-e72d-40f2-bc92-fd084ae8b45c",
+          "position": 1,
+          "recording": {
+            "disambiguation": "",
+            "artist-credit": [
+              {
+                "artist": {
+                  "sort-name": "Beck, Jeff",
+                  "type": "Person",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "name": "Jeff Beck",
+                  "country": "GB",
+                  "disambiguation": "English rock guitarist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "joinphrase": "",
+                "name": "Jeff Beck"
+              }
+            ],
+            "title": "Ambitious",
+            "video": false,
+            "id": "5d5ae20d-4883-49d9-9e5d-9f445d411484",
+            "length": 278026,
+            "first-release-date": "1985-07"
+          },
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Jeff Beck",
+              "artist": {
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "English rock guitarist",
+                "name": "Jeff Beck",
+                "country": "GB",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "sort-name": "Beck, Jeff",
+                "type": "Person"
+              }
+            }
+          ]
+        },
+        {
+          "id": "6c49539c-282c-41a8-815d-ac7031852d04",
+          "number": "2",
+          "length": 354000,
+          "title": "Gets Us All in the End",
+          "position": 2,
+          "artist-credit": [
+            {
+              "artist": {
+                "disambiguation": "English rock guitarist",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "GB",
+                "name": "Jeff Beck",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "type": "Person",
+                "sort-name": "Beck, Jeff"
+              },
+              "name": "Jeff Beck",
+              "joinphrase": ""
+            }
+          ],
+          "recording": {
+            "artist-credit": [
+              {
+                "artist": {
+                  "disambiguation": "English rock guitarist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Jeff Beck",
+                  "country": "GB",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "sort-name": "Beck, Jeff",
+                  "type": "Person"
+                },
+                "name": "Jeff Beck",
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1985-07",
+            "length": 366000,
+            "id": "8b2a1894-cb71-4a4c-84d6-e1cf8b65c070",
+            "title": "Gets Us All in the End",
+            "video": false
+          }
+        },
+        {
+          "length": 271000,
+          "number": "3",
+          "id": "de9861a4-62b4-4177-8600-925dee29187b",
+          "title": "Escape",
+          "position": 3,
+          "recording": {
+            "first-release-date": "1985-07",
+            "video": false,
+            "title": "Escape",
+            "length": 279426,
+            "id": "5708a93a-c3e0-48e5-a2a9-fba319f4d8c7",
+            "artist-credit": [
+              {
+                "name": "Jeff Beck",
+                "joinphrase": "",
+                "artist": {
+                  "type": "Person",
+                  "sort-name": "Beck, Jeff",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "country": "GB",
+                  "name": "Jeff Beck",
+                  "disambiguation": "English rock guitarist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                }
+              }
+            ],
+            "disambiguation": ""
+          },
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Jeff Beck",
+              "artist": {
+                "type": "Person",
+                "sort-name": "Beck, Jeff",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "country": "GB",
+                "name": "Jeff Beck",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "English rock guitarist"
+              }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "disambiguation": "",
+            "artist-credit": [
+              {
+                "artist": {
+                  "name": "Jeff Beck",
+                  "country": "GB",
+                  "disambiguation": "English rock guitarist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Beck, Jeff",
+                  "type": "Person",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+                },
+                "joinphrase": " & ",
+                "name": "Jeff Beck"
+              },
+              {
+                "artist": {
+                  "type": "Person",
+                  "sort-name": "Stewart, Rod",
+                  "id": "a35237a0-4f47-40a6-b6f3-1e786db23402",
+                  "country": "GB",
+                  "name": "Rod Stewart",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": ""
+                },
+                "name": "Rod Stewart",
+                "joinphrase": ""
+              }
+            ],
+            "title": "People Get Ready",
+            "video": false,
+            "id": "32c1be1d-f5b3-4faa-a72b-4db1b33128e4",
+            "length": 294866,
+            "first-release-date": "1985-07"
+          },
+          "artist-credit": [
+            {
+              "artist": {
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "type": "Person",
+                "sort-name": "Beck, Jeff",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "English rock guitarist",
+                "country": "GB",
+                "name": "Jeff Beck"
+              },
+              "joinphrase": " with ",
+              "name": "Jeff Beck"
+            },
+            {
+              "name": "Rod Stewart",
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "GB",
+                "name": "Rod Stewart",
+                "id": "a35237a0-4f47-40a6-b6f3-1e786db23402",
+                "type": "Person",
+                "sort-name": "Stewart, Rod"
+              }
+            }
+          ],
+          "position": 4,
+          "title": "People Get Ready",
+          "length": 286000,
+          "id": "9e1b0dfa-ff73-4873-b570-f4bbd423299b",
+          "number": "4"
+        },
+        {
+          "artist-credit": [
+            {
+              "name": "Jeff Beck",
+              "joinphrase": "",
+              "artist": {
+                "country": "GB",
+                "name": "Jeff Beck",
+                "disambiguation": "English rock guitarist",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "sort-name": "Beck, Jeff",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+              }
+            }
+          ],
+          "recording": {
+            "id": "67892db5-8b80-480c-951d-6261f28872f1",
+            "length": 267626,
+            "video": false,
+            "title": "Stop, Look and Listen",
+            "first-release-date": "1985-07",
+            "disambiguation": "",
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "name": "Jeff Beck",
+                "artist": {
+                  "sort-name": "Beck, Jeff",
+                  "type": "Person",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "name": "Jeff Beck",
+                  "country": "GB",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "English rock guitarist"
+                }
+              }
+            ]
+          },
+          "number": "5",
+          "id": "8bb67664-09f1-45da-8c4a-3af6f8942f48",
+          "length": 256000,
+          "title": "Stop, Look and Listen",
+          "position": 5
+        },
+        {
+          "recording": {
+            "first-release-date": "1985-07",
+            "title": "Get Workin’",
+            "video": false,
+            "id": "76cfa2d3-ac05-49f0-8a0a-5414288f7d4c",
+            "length": 215706,
+            "artist-credit": [
+              {
+                "name": "Jeff Beck",
+                "joinphrase": "",
+                "artist": {
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "sort-name": "Beck, Jeff",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "English rock guitarist",
+                  "name": "Jeff Beck",
+                  "country": "GB"
+                }
+              }
+            ],
+            "disambiguation": ""
+          },
+          "artist-credit": [
+            {
+              "artist": {
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "sort-name": "Beck, Jeff",
+                "type": "Person",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "English rock guitarist",
+                "name": "Jeff Beck",
+                "country": "GB"
+              },
+              "joinphrase": "",
+              "name": "Jeff Beck"
+            }
+          ],
+          "position": 6,
+          "length": 207000,
+          "number": "6",
+          "id": "19115004-9fc8-46fc-abb7-9af83ae2cb03",
+          "title": "Get Workin’"
+        },
+        {
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Jeff Beck",
+              "artist": {
+                "type": "Person",
+                "sort-name": "Beck, Jeff",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "country": "GB",
+                "name": "Jeff Beck",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "English rock guitarist"
+              }
+            }
+          ],
+          "recording": {
+            "disambiguation": "",
+            "artist-credit": [
+              {
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "English rock guitarist",
+                  "name": "Jeff Beck",
+                  "country": "GB",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "sort-name": "Beck, Jeff",
+                  "type": "Person"
+                },
+                "joinphrase": "",
+                "name": "Jeff Beck"
+              }
+            ],
+            "title": "Ecstasy",
+            "video": false,
+            "id": "75af36fe-0de0-48bf-abfd-37abffdb8da4",
+            "length": 211426,
+            "first-release-date": "1985-07"
+          },
+          "position": 7,
+          "number": "7",
+          "id": "e4659658-366e-4fdb-96d3-1bb28192a397",
+          "length": 218000,
+          "title": "Ecstasy"
+        },
+        {
+          "artist-credit": [
+            {
+              "name": "Jeff Beck",
+              "joinphrase": "",
+              "artist": {
+                "disambiguation": "English rock guitarist",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Jeff Beck",
+                "country": "GB",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "sort-name": "Beck, Jeff",
+                "type": "Person"
+              }
+            }
+          ],
+          "recording": {
+            "artist-credit": [
+              {
+                "artist": {
+                  "type": "Person",
+                  "sort-name": "Beck, Jeff",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "country": "GB",
+                  "name": "Jeff Beck",
+                  "disambiguation": "English rock guitarist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "joinphrase": "",
+                "name": "Jeff Beck"
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1985-07",
+            "video": false,
+            "title": "Night After Night",
+            "length": 222000,
+            "id": "5dba1f0b-6a9c-4fa5-804a-ad1f749e35ae"
+          },
+          "position": 8,
+          "number": "8",
+          "id": "c7e48063-73c0-4fc5-b416-5963be4be7f8",
+          "length": 212000,
+          "title": "Night After Night"
+        },
+        {
+          "position": 9,
+          "length": 325000,
+          "id": "fb32ab6b-0a90-41e9-b5c8-71fc03880eed",
+          "number": "9",
+          "title": "You Know, We Know",
+          "recording": {
+            "video": false,
+            "title": "You Know, We Know",
+            "length": 335800,
+            "id": "cf8545ef-f8f9-4a97-888c-182f6719f357",
+            "first-release-date": "1985-07",
+            "disambiguation": "",
+            "artist-credit": [
+              {
+                "artist": {
+                  "type": "Person",
+                  "sort-name": "Beck, Jeff",
+                  "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                  "country": "GB",
+                  "name": "Jeff Beck",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "English rock guitarist"
+                },
+                "name": "Jeff Beck",
+                "joinphrase": ""
+              }
+            ]
+          },
+          "artist-credit": [
+            {
+              "artist": {
+                "disambiguation": "English rock guitarist",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "GB",
+                "name": "Jeff Beck",
+                "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+                "type": "Person",
+                "sort-name": "Beck, Jeff"
+              },
+              "name": "Jeff Beck",
+              "joinphrase": ""
+            }
+          ]
+        }
+      ],
+      "position": 1,
+      "track-count": 9,
+      "format": "CD"
+    }
+  ],
+  "packaging": "Jewel Case",
+  "artist-credit": [
+    {
+      "artist": {
+        "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+        "sort-name": "Beck, Jeff",
+        "type": "Person",
+        "disambiguation": "English rock guitarist",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "name": "Jeff Beck",
+        "country": "GB"
+      },
+      "joinphrase": "",
+      "name": "Jeff Beck"
+    }
+  ],
+  "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "release-events": [
+    {
+      "date": "1992",
+      "area": {
+        "name": "Europe",
+        "disambiguation": "",
+        "iso-3166-1-codes": [
+          "XE"
+        ],
+        "type-id": null,
+        "sort-name": "Europe",
+        "type": null,
+        "id": "89a675c2-3e37-3518-b83c-418bad59a85a"
+      }
+    }
+  ],
+  "date": "1992",
+  "status": "Official",
+  "id": "00694f49-9f0d-4ab0-a370-e5e3271e5dcc",
+  "label-info": [
+    {
+      "label": {
+        "label-code": 199,
+        "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+        "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+        "name": "Epic",
+        "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+        "type": "Imprint",
+        "sort-name": "Epic"
+      },
+      "catalog-number": "982838 2"
+    }
+  ],
+  "text-representation": {
+    "script": "Latn",
+    "language": "eng"
+  },
+  "quality": "normal",
+  "country": "XE",
+  "disambiguation": "",
+  "asin": null,
+  "release-group": {
+    "id": "78eac630-0c27-3f22-8c01-ee5fe689fb46",
+    "title": "Flash",
+    "secondary-type-ids": [],
+    "first-release-date": "1985-07",
+    "secondary-types": [],
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "name": "Jeff Beck",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "sort-name": "Beck, Jeff",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "English rock guitarist",
+          "name": "Jeff Beck",
+          "country": "GB"
+        }
+      }
+    ],
+    "primary-type": "Album"
+  },
+  "barcode": "5018665283824"
+}

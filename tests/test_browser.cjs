@@ -107,11 +107,18 @@ assert.equal(run('editionLinks[id].url'),run('url'));
 context.localStorage.setItem=(k,v)=>storage[k]=v;
 assert.equal(run("saveEditionLink(id,'')"),true);
 assert.equal(run('editionLinks[id]'),undefined);
-run("ytAlbums=[{id:'a',url,artist_check:'matched',automatic_verification:{version:1,album_id:'a',checked_at:fresh,status:'supported',candidates:[{release_id:id,status:'supported'}]}}]");
-assert.equal(run('supportedEditionLink({id}).id'),'a');
-assert.equal(run("supportedEditionLink({id:'other'})"),undefined);
-run("ytAlbums[0].automatic_verification.checked_at='2000-01-01'");
-assert.equal(run('supportedEditionLink({id})'),undefined);
+run(`artistName='Artist';ytAlbums=[{id:'MPREb_test',url,artist_check:'matched',automatic_verification:{version:2,album_id:'MPREb_test',checked_at:fresh,status:'supported',youtube:{source:url,title:'Album',year:'2001',artists:['Artist'],complete:true,tracks:[{title:'One'}]},candidates:[{release_id:id,status:'supported',title:'Album',date:'2001',checks:Object.fromEntries(['official','title','artist','year','label','count','titles','order'].map(k=>[k,'match']))}]}}]`);
+assert.equal(run("supportedEditionLink({id,title:'Album',date:'2001'}).id"),'MPREb_test');
+assert.equal(run("supportedEditionLink({id:'other',title:'Album',date:'2001'})"),undefined);
+assert.equal(run("supportedEditionLink({id,title:'Album',date:'2002'})"),undefined);
+assert.equal(run("listeningAlbumUrl('https://music.youtube.com/playlist?list=OLAK5uy_test')"),false);
+assert.equal(run("listeningAlbumUrl('https://music.youtube.com/watch?v=abcdefghijk')"),false);
+run("ytAlbums[0].url='https://music.youtube.com/browse/MPREb_other'");
+assert.equal(run("supportedEditionLink({id,title:'Album',date:'2001'})"),undefined);
+run("ytAlbums[0].url=url;artistName='Different Artist'");
+assert.equal(run("supportedEditionLink({id,title:'Album',date:'2001'})"),undefined);
+run("artistName='Artist';ytAlbums[0].automatic_verification.checked_at='2000-01-01'");
+assert.equal(run("supportedEditionLink({id,title:'Album',date:'2001'})"),undefined);
 console.log('v0.61: release ID deduplication, edition binding, stale evidence and storage rollback passed');
 
 (async()=>{
