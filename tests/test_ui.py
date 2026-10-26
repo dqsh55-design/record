@@ -461,7 +461,7 @@ class BrowserTests(unittest.TestCase):
             page.evaluate("chooseArtist({id:'artist',name:" + json.dumps(name) + "})")
             section = page.locator('#official-releases')
             expect(section.locator('article')).to_have_count(100, timeout=15000)
-            self.assertEqual([c[1] for c in calls if not c[3]][:2], [0, 100])
+            self.assertEqual([c[1] for c in calls if c[0].endswith('/release-group') and not c[3]][-2:], [0, 100])
             expect(section.locator('.decade').first).to_have_text('1950年代')
             expect(section.locator('.meta').first).to_have_text('1959年（初回発売）')
             expect(section.locator('article').first).to_contain_text('この盤の発売：2009')
@@ -949,7 +949,7 @@ class BrowserTests(unittest.TestCase):
     def test_v070_small_index_and_no_idle_auto_loading(self):
         from urllib.parse import parse_qs
         page = self.open_site(390)
-        page.evaluate('window.IntersectionObserver = window.NativeIntersectionObserver')
+        page.evaluate('()=>{window.IntersectionObserver = window.NativeIntersectionObserver}')
         requests = []
         groups = [{'id': 'small-work', 'title': 'Small Work', 'primary-type': 'Album',
                    'first-release-date': '2002', 'artist-credit': [{'artist': {'id': 'small'}}]}]
