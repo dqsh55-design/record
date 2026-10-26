@@ -156,6 +156,7 @@ class BrowserTests(unittest.TestCase):
             {'id': id, 'title': 'Album', 'date': '2001', 'status': 'Official', 'release-group': {'primary-type': 'Album'}} for id in (GROUP, 'different-edition')]}))
         self.search(page)
         section = page.locator('#official-releases')
+        section.locator('.work-editions > summary').first.click()
         expect(section.get_by_role('link', name='YouTube Musicで聴く')).to_have_count(1)
         expect(section.get_by_role('link', name='YouTube Musicで探す ↗')).to_have_count(1)
         section.get_by_text('収録曲・曲順・リンクを確認', exact=True).first.click()
@@ -305,6 +306,7 @@ class BrowserTests(unittest.TestCase):
         section.get_by_role('button', name='さらに発売記録を読み込む', exact=True).click()
         expect(page.locator('#catalog-info')).to_contain_text('発売盤 6件取得')
         expect(section.locator('article')).to_have_count(2)
+        section.locator('.work-editions > summary').first.click()
         expect(section.get_by_role('link', name='YouTube Musicで探す ↗')).to_have_count(2)
 
     def test_release_failure_shows_retry_and_legacy_data(self):
@@ -416,7 +418,8 @@ class BrowserTests(unittest.TestCase):
         expect(section.locator('details').first).to_have_attribute('open', '')
         expect(section.locator('details').first).to_contain_text('1. <Song>')
         page.route('**/release/missing-label?**', lambda route: route.fulfill(status=403, json={}))
-        details = section.locator('details').nth(1)
+        section.locator('.work-editions > summary').first.click()
+        details = section.locator('details[data-release-id]').nth(1)
         details.get_by_text('収録曲・曲順・リンクを確認', exact=True).click()
         details.get_by_role('button', name='曲目を取得', exact=True).click()
         expect(details).to_contain_text('曲目を取得できませんでした：音楽データを取得できませんでした（403）')
