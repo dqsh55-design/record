@@ -251,6 +251,7 @@ class BrowserTests(unittest.TestCase):
         expect(image).to_have_attribute('loading', 'lazy')
         expect(image).to_have_attribute('decoding', 'async')
         page.wait_for_function("document.querySelector('#official-releases img').naturalWidth > 0")
+        section.locator('.work-editions > summary').first.click()
         section.locator('article').nth(1).scroll_into_view_if_needed()
         expect(section.locator('article').nth(1).locator('.cover')).to_have_text('画像なし')
         page.evaluate('render()')
@@ -635,6 +636,7 @@ class BrowserTests(unittest.TestCase):
             expect(field).to_be_focused()
             expect(original.locator('.discography-evidence')).not_to_contain_text('ユニバーサル ミュージック合同会社')
             reissue = section.locator('article[data-release-id="dd00e0df-dd7e-48af-8b13-921bf505167f"]')
+            section.locator('.work-editions > summary').first.click()
             reissue.locator('summary').click()
             expect(reissue.locator('.discography-evidence')).to_contain_text('正規再発盤')
             expect(reissue.locator('.discography-evidence')).to_contain_text('この盤の発売元（公式資料）：ユニバーサル ミュージック合同会社')
@@ -863,6 +865,43 @@ class BrowserTests(unittest.TestCase):
             page.get_by_role('button', name='検索', exact=True).click()
             expect(page.get_by_role('button', name='この名義の作品を見る →')).to_be_visible()
             self.assertTrue(any('query=Norah%20Jones' in url for url in requests))
+
+    def test_v068_work_groups_preserve_editions_and_drafts(self):
+        for width in (320, 390, 430):
+            page = self.open_site(width)
+            # Synthetic UI records: same title never establishes work identity.
+            base = {'title': 'Same title', 'status': 'Official',
+                    'artist-credit': [{'artist': {'id': GROUP}}],
+                    'release-group': {'id': 'work-a', 'title': 'Same title',
+                                      'primary-type': 'Album', 'first-release-date': '2002'}}
+            records = [{**base, 'id': 'edition-' + str(i), 'date': str(2002+i),
+                        'label-info': [{'label': {'name': 'Label '+str(i)}}]} for i in range(3)]
+            records.append({**base, 'id': 'other-work', 'release-group': {**base['release-group'], 'id': 'work-b'}})
+            records.extend({**base, 'id': 'no-work-'+str(i), 'release-group': {'primary-type': 'Album'}} for i in range(2))
+            page.evaluate("items=>{artistId='" + GROUP + "';artistName='Artist';creditScope='all';officialReleases=items;render()}", records)
+            section = page.locator('#official-releases')
+            expect(section.locator('.release-work-group')).to_have_count(4)
+            expect(section.locator('article:visible')).to_have_count(4)
+            expect(section.locator('article')).to_have_count(6)
+            work = section.locator('.release-work-group').first
+            expect(work.locator('.work-editions')).not_to_have_attribute('open', '')
+            work.locator('.work-editions > summary').click()
+            expect(section.locator('article:visible')).to_have_count(6)
+            edition = work.locator('article[data-release-id="edition-1"]')
+            edition.locator('summary').click()
+            field = edition.get_by_role('textbox', name='Same titleの発売盤リンク')
+            field.fill('https://music.youtube.com/browse/MPREb_draft')
+            page.evaluate("globalThis.draftCard=document.querySelector('[data-release-id=edition-1].album');officialReleases.push({...officialReleases[0],id:'later-edition'});render(true)")
+            expect(work.locator('.work-editions')).to_have_attribute('open', '')
+            expect(field).to_have_value('https://music.youtube.com/browse/MPREb_draft')
+            expect(field).to_be_focused()
+            self.assertTrue(page.evaluate("draftCard===document.querySelector('[data-release-id=edition-1].album')"))
+            expect(work.locator('article')).to_have_count(4)
+            expect(edition.locator('.album-label')).to_have_text('この盤のレーベル：Label 1')
+            expect(edition.locator('.edition-release-meta')).to_contain_text('この盤の発売：2003')
+            self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+            work.locator('.work-editions > summary').click()
+            expect(section.locator('article:visible')).to_have_count(4)
 
     def test_mobile_layout_and_touch_targets(self):
         for width in (320, 375, 390, 430):
