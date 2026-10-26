@@ -17,6 +17,7 @@ jobs:
         with:
           node-version: '22'
       - run: python -m unittest discover -s tests -p 'test_*matching.py' -v
+      - run: python -m unittest discover -s tests -p 'test_official_discography.py' -v
       - run: node tests/test_official_catalog.cjs
       - run: node tests/test_loading.cjs
       - run: node tests/test_api_cache.cjs
