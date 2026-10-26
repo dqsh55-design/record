@@ -26,8 +26,9 @@
 <script>
 const $=id=>document.getElementById(id), status=$('status'),results=$('results');
 let relatedCatalogAlbums=[],artistChoices=[],ytVisible=20,ytSort='name',ytAlbums=[],albums=[],filter='おすすめ',artistName='',offset=0,artistId='',busy=false,total=0;
-const aliases={'マイルスデイビス':'Miles Davis','マイルスデイヴィス':'Miles Davis','デュークエリントン':'Duke Ellington','ジェフベック':'Jeff Beck','ジミヘンドリックス':'Jimi Hendrix','ジミヘン':'Jimi Hendrix','ジャニス':'Janis Joplin','ジャニスジョプリン':'Janis Joplin','スタンゲッツ':'Stan Getz','ジョンコルトレーン':'John Coltrane','チックコリア':'Chick Corea','ビートルズ':'The Beatles','原田知世':'Tomoyo Harada'};
+const aliases={'ノラジョーンズ':'Norah Jones','マイルスデイビス':'Miles Davis','マイルスデイヴィス':'Miles Davis','デュークエリントン':'Duke Ellington','ジェフベック':'Jeff Beck','ジミヘンドリックス':'Jimi Hendrix','ジミヘン':'Jimi Hendrix','ジャニス':'Janis Joplin','ジャニスジョプリン':'Janis Joplin','スタンゲッツ':'Stan Getz','ジョンコルトレーン':'John Coltrane','チックコリア':'Chick Corea','ビートルズ':'The Beatles','原田知世':'Tomoyo Harada'};
 const normalize=s=>s.toLowerCase().replace(/[\s・･ー‐－]/g,'');
+function artistSearchTerm(raw){return Object.entries(aliases).find(([name])=>normalize(name)===normalize(raw))?.[1]||raw}
 function albumKind(group){
  if(group?.['primary-type']!=='Album')return 'other';
  const types=group['secondary-types'];
@@ -928,7 +929,7 @@ function showArtistChoices(list){
   results.append(section);status.textContent=list.length+'件の候補が見つかりました。アーティストを選択してください。';
 }
 $('form').addEventListener('submit',async e=>{
-  e.preventDefault();if(busy)return;let raw=$('query').value.trim();let q=aliases[normalize(raw)]||raw;
+  e.preventDefault();if(busy)return;let raw=$('query').value.trim();let q=artistSearchTerm(raw);
   albums=[];ytAlbums=[];artistName='';artistId='';results.innerHTML='';status.textContent='アーティストを探しています…';
   busy=true;$('submit').disabled=true;
   try{
