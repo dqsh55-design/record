@@ -194,3 +194,38 @@ assert.equal(run('assessRelease(item,missingMedia).verification'),'unconfirmed')
 context.item={...reissue,media:[{'track-count':0,format:'Unknown'}]};
 context.missingMedia=refs.map(ref=>({...ref,trackCounts:[0],mediaFormats:['Unknown']}));
 assert.equal(run('assessRelease(item,missingMedia).verification'),'unconfirmed');
+
+// v0.72: an exact negative edition fact must stand on its own, never need a positive fact.
+// Synthetic references exercise the matcher; they are NOT new documentary evidence.
+const editionRef=refs.find(ref=>ref.scope==='release');
+for(const artist of ['norah-test','miles-test','beck-test','healey-band-test']){
+ context.item={...reissue,'artist-credit':[{artist:{id:artist}}]};
+ context.negative=[{...editionRef,artistIds:[artist],official:false}];
+ for(const status of ['Official',null,'Bootleg','Withdrawn']){
+  context.item.status=status;
+  const result=run('assessRelease(item,negative)');
+  assert.equal(result.verification,'conflict');assert.equal(result.visibility,status==='Bootleg'?'excluded':'unknown');
+  assert.equal(result.edition,'unconfirmed');assert.equal(result.sources.length,1);
+ }
+ // Neither same-work siblings nor a same-name/different-ID artist inherit the finding.
+ context.item={...context.item,status:'Official',id:'different-edition'};
+ assert.equal(run('assessRelease(item,negative).verification'),'unconfirmed');
+ context.item={...reissue,'artist-credit':[{artist:{id:artist+'-homonym'}}]};
+ assert.equal(run('assessRelease(item,negative).verification'),'unconfirmed');
+ context.negative[0].checkedAt='2099-01-01';
+ context.item={...reissue,'artist-credit':[{artist:{id:artist}}]};
+ assert.equal(run('assessRelease(item,negative).verification'),'unconfirmed');
+}
+for(const releaseDate of ['2022','2022-05','2022-02-30','2022-13-01','not-a-date']){
+ context.item={...reissue,date:releaseDate};context.invalid=[{...editionRef,releaseDate}];
+ assert.equal(run('assessRelease(item,invalid).verification'),'unconfirmed');
+}
+// Future release dates can be legitimate announcements; only the review date must be past.
+context.item={...reissue,date:'2099-05-27'};context.future=[{...editionRef,releaseDate:'2099-05-27'}];
+assert.equal(run('assessRelease(item,future).verification'),'confirmed');
+for(const catalogNumber of ['',' ','[unknown]','UNKNOWN','none','n/a','-','[no catalog number]']){
+ context.item={...reissue,'label-info':[{'catalog-number':catalogNumber,label:{name:'Blue Note'}}]};
+ context.invalid=[{...editionRef,catalogNumber}];
+ assert.equal(run('assessRelease(item,invalid).verification'),'unconfirmed');
+}
+console.log('Standalone negative edition facts, source retention, identity isolation, calendar dates and catalog placeholders passed');

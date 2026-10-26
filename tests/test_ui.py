@@ -1005,6 +1005,33 @@ class BrowserTests(unittest.TestCase):
                 expect(card.locator('.work-verification')).to_contain_text('相違あり')
                 self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
 
+    def test_v072_negative_edition_evidence_keeps_source_and_draft(self):
+        refs = json.loads((ROOT / 'data/discography-references.json').read_text())['references']
+        data = json.loads((ROOT / 'docs/v0.66/6ccac9d2-22ed-33de-bd5d-f2aadcacf7f8-editions.json').read_text())
+        item = next(r for r in data['releases'] if r['id']=='dd00e0df-dd7e-48af-8b13-921bf505167f')
+        item = {**item, 'release-group':data['group']}
+        # Synthetic negative finding tests conflict handling; no production reference changes.
+        negative = [{**r, 'official':False} if r['scope']=='release' else r for r in refs]
+        for width in (320, 390, 430):
+            page = self.open_site(width)
+            page.evaluate("args=>{discographyReferences=args.refs;artistId='test';artistName='Test';creditScope='all';officialReleases=[args.item];render()}", {'refs':refs,'item':item})
+            card = page.locator('#official-releases article').first
+            card.locator('summary').click()
+            expect(card.locator('.discography-evidence')).to_contain_text('正規再発盤')
+            field = card.locator('.direct-url')
+            field.fill('https://music.youtube.com/browse/MPREb_draft')
+            page.evaluate("refs=>{discographyReferences=refs;refreshDiscographyEvidence()}", negative)
+            panel = card.locator('.discography-evidence')
+            expect(panel).to_contain_text('この盤：公式資料と発売区分に相違があります（未確認）')
+            expect(panel).not_to_contain_text('正規再発盤')
+            expect(panel.get_by_role('link', name='公式資料を見る ↗')).to_have_count(2)
+            expect(card.locator('.edition-release-meta')).to_contain_text('確認待ち')
+            expect(card.locator('.work-verification')).to_contain_text('作品：公式資料と一致')
+            expect(field).to_have_value('https://music.youtube.com/browse/MPREb_draft')
+            expect(field).to_be_focused()
+            expect(card.get_by_role('link', name='YouTube Musicで聴く')).to_have_count(0)
+            self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+
     def test_mobile_layout_and_touch_targets(self):
         for width in (320, 375, 390, 430):
             with self.subTest(width=width):
