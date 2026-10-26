@@ -1,0 +1,1831 @@
+{
+  "title": "Modern Jazz Trumpets",
+  "media": [
+    {
+      "track-offset": 0,
+      "format-id": "3155d2b6-52fd-3952-bda3-bd7c429d038d",
+      "position": 1,
+      "track-count": 8,
+      "format": "10\" Vinyl",
+      "title": "",
+      "id": "426570ce-ce7a-3574-86f5-ea5e16295afe",
+      "tracks": [
+        {
+          "position": 1,
+          "id": "6b029355-f047-4a81-be88-69ca56da9d30",
+          "number": "A1",
+          "length": null,
+          "title": "Dynamo",
+          "artist-credit": [
+            {
+              "artist": {
+                "name": "Dizzy Gillespie Jazzmen",
+                "country": null,
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "disambiguation": "",
+                "sort-name": "Gillespie, Dizzy, Jazzmen",
+                "type": "Group",
+                "id": "e495811a-f10c-4596-8b5e-7c0f3fc6f5db"
+              },
+              "name": "Dizzy Gillespie Jazzmen",
+              "joinphrase": ""
+            }
+          ],
+          "recording": {
+            "length": null,
+            "id": "59ea7cf4-7a1b-4703-b073-a83bf226d024",
+            "title": "Dynamo",
+            "video": false,
+            "first-release-date": "1951",
+            "disambiguation": "",
+            "relations": [
+              {
+                "attribute-credits": {},
+                "target-type": "artist",
+                "attribute-ids": {
+                  "double bass": "7bd32b95-416f-4244-a98b-1311ec69c7db"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {},
+                "direction": "backward",
+                "source-credit": "",
+                "ended": true,
+                "begin": "1946-02-07",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "jazz bassist",
+                  "country": "US",
+                  "name": "Ray Brown",
+                  "id": "d8a1a9e8-295d-4999-9c70-0a4c8bdb36e8",
+                  "type": "Person",
+                  "sort-name": "Brown, Ray"
+                },
+                "type": "instrument",
+                "target-credit": "",
+                "attributes": [
+                  "double bass"
+                ],
+                "end": "1946-02-07"
+              },
+              {
+                "ended": true,
+                "artist": {
+                  "type": "Person",
+                  "sort-name": "Gillespie, Dizzy",
+                  "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+                  "country": "US",
+                  "name": "Dizzy Gillespie",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "begin": "1946-02-07",
+                "direction": "backward",
+                "source-credit": "",
+                "target-credit": "",
+                "attributes": [
+                  "trumpet"
+                ],
+                "end": "1946-02-07",
+                "type": "instrument",
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-credits": {},
+                "target-type": "artist",
+                "attribute-ids": {
+                  "trumpet": "1c8f9780-2f16-4891-b66d-bb7aa0820dbd"
+                }
+              },
+              {
+                "source-credit": "",
+                "direction": "backward",
+                "begin": "1946-02-07",
+                "artist": {
+                  "name": "Al Haig",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "sort-name": "Haig, Al",
+                  "type": "Person",
+                  "id": "3f95b7c3-deba-4698-b12d-596d83c907e5"
+                },
+                "ended": true,
+                "type": "instrument",
+                "attributes": [
+                  "piano"
+                ],
+                "end": "1946-02-07",
+                "target-credit": "",
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "target-type": "artist",
+                "attribute-credits": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {}
+              },
+              {
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "vibraphone": "799af440-c0e7-4d8f-83d5-ecfee8b25787"
+                },
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "direction": "backward",
+                "source-credit": "",
+                "ended": true,
+                "artist": {
+                  "type": "Person",
+                  "sort-name": "Jackson, Milt",
+                  "id": "2e38e1de-2890-4620-8467-5b0bb4641cb9",
+                  "country": "US",
+                  "name": "Milt Jackson",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": ""
+                },
+                "begin": "1946-02-07",
+                "type": "instrument",
+                "target-credit": "",
+                "attributes": [
+                  "vibraphone"
+                ],
+                "end": "1946-02-07"
+              },
+              {
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "attribute-credits": {},
+                "target-type": "artist",
+                "end": "1946-02-07",
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "target-credit": "",
+                "type": "instrument",
+                "artist": {
+                  "name": "Stan Levey",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "sort-name": "Levey, Stan",
+                  "type": "Person",
+                  "id": "ec5ba540-ff12-43f0-bf1e-caa5426867da"
+                },
+                "begin": "1946-02-07",
+                "ended": true,
+                "source-credit": "",
+                "direction": "backward"
+              },
+              {
+                "artist": {
+                  "id": "4b0b1bd5-35e8-4764-b4f2-55ef56f595aa",
+                  "type": "Person",
+                  "sort-name": "Thompson, Lucky",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "country": "US",
+                  "name": "Lucky Thompson"
+                },
+                "begin": "1946-02-07",
+                "ended": true,
+                "source-credit": "",
+                "direction": "backward",
+                "attributes": [
+                  "tenor saxophone"
+                ],
+                "end": "1946-02-07",
+                "target-credit": "",
+                "type": "instrument",
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-ids": {
+                  "tenor saxophone": "ef7382cf-d5b4-4923-8b9e-3c482ed84b5e"
+                },
+                "attribute-credits": {},
+                "target-type": "artist"
+              }
+            ],
+            "artist-credit": [
+              {
+                "artist": {
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "disambiguation": "",
+                  "name": "Dizzy Gillespie Jazzmen",
+                  "country": null,
+                  "id": "e495811a-f10c-4596-8b5e-7c0f3fc6f5db",
+                  "sort-name": "Gillespie, Dizzy, Jazzmen",
+                  "type": "Group"
+                },
+                "joinphrase": "",
+                "name": "Dizzy Gillespie Jazzmen"
+              }
+            ]
+          }
+        },
+        {
+          "recording": {
+            "id": "29fd128e-6177-4bb5-bad4-3a8ed56b01e9",
+            "length": 167000,
+            "title": "'Round Midnight",
+            "video": false,
+            "first-release-date": "1946",
+            "disambiguation": "1946-02-07, mx. GRC-1005-A",
+            "artist-credit": [
+              {
+                "name": "Tempo Jazzmen (Dizzy Gillespie Jazzmen)",
+                "joinphrase": "",
+                "artist": {
+                  "disambiguation": "",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "country": null,
+                  "name": "Tempo Jazz Men",
+                  "id": "f7c9a577-a035-40e3-a8d0-696174f48c45",
+                  "type": "Group",
+                  "sort-name": "Tempo Jazz Men"
+                }
+              }
+            ],
+            "relations": [
+              {
+                "source-credit": "",
+                "direction": "backward",
+                "artist": {
+                  "disambiguation": "jazz bassist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Ray Brown",
+                  "country": "US",
+                  "id": "d8a1a9e8-295d-4999-9c70-0a4c8bdb36e8",
+                  "sort-name": "Brown, Ray",
+                  "type": "Person"
+                },
+                "begin": "1946-02-05",
+                "ended": true,
+                "type": "instrument",
+                "attributes": [
+                  "double bass"
+                ],
+                "end": "1946-02-05",
+                "target-credit": "",
+                "attribute-ids": {
+                  "double bass": "7bd32b95-416f-4244-a98b-1311ec69c7db"
+                },
+                "target-type": "artist",
+                "attribute-credits": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {}
+              },
+              {
+                "type": "instrument",
+                "attributes": [
+                  "trumpet"
+                ],
+                "end": "1946-02-05",
+                "target-credit": "Gabriel",
+                "source-credit": "",
+                "direction": "backward",
+                "artist": {
+                  "sort-name": "Gillespie, Dizzy",
+                  "type": "Person",
+                  "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+                  "name": "Dizzy Gillespie",
+                  "country": "US",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "begin": "1946-02-05",
+                "ended": true,
+                "attribute-ids": {
+                  "trumpet": "1c8f9780-2f16-4891-b66d-bb7aa0820dbd"
+                },
+                "attribute-credits": {},
+                "target-type": "artist",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {}
+              },
+              {
+                "ended": true,
+                "artist": {
+                  "country": "US",
+                  "name": "Al Haig",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "sort-name": "Haig, Al",
+                  "id": "3f95b7c3-deba-4698-b12d-596d83c907e5"
+                },
+                "begin": "1946-02-05",
+                "direction": "backward",
+                "source-credit": "",
+                "target-credit": "",
+                "attributes": [
+                  "piano"
+                ],
+                "end": "1946-02-05",
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {},
+                "attribute-credits": {},
+                "target-type": "artist",
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                }
+              },
+              {
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "vibraphone": "799af440-c0e7-4d8f-83d5-ecfee8b25787"
+                },
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "type": "instrument",
+                "target-credit": "",
+                "attributes": [
+                  "vibraphone"
+                ],
+                "end": "1946-02-05",
+                "direction": "backward",
+                "source-credit": "",
+                "ended": true,
+                "artist": {
+                  "country": "US",
+                  "name": "Milt Jackson",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "sort-name": "Jackson, Milt",
+                  "id": "2e38e1de-2890-4620-8467-5b0bb4641cb9"
+                },
+                "begin": "1946-02-05"
+              },
+              {
+                "end": "1946-02-05",
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "target-credit": "",
+                "type": "instrument",
+                "artist": {
+                  "type": "Person",
+                  "sort-name": "Levey, Stan",
+                  "id": "ec5ba540-ff12-43f0-bf1e-caa5426867da",
+                  "country": "US",
+                  "name": "Stan Levey",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": ""
+                },
+                "begin": "1946-02-05",
+                "ended": true,
+                "source-credit": "",
+                "direction": "backward",
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "target-type": "artist",
+                "attribute-credits": {}
+              },
+              {
+                "begin": "1946-02-05",
+                "artist": {
+                  "country": "US",
+                  "name": "Lucky Thompson",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "sort-name": "Thompson, Lucky",
+                  "id": "4b0b1bd5-35e8-4764-b4f2-55ef56f595aa"
+                },
+                "ended": true,
+                "source-credit": "",
+                "direction": "backward",
+                "end": "1946-02-05",
+                "attributes": [
+                  "tenor saxophone"
+                ],
+                "target-credit": "",
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {},
+                "attribute-ids": {
+                  "tenor saxophone": "ef7382cf-d5b4-4923-8b9e-3c482ed84b5e"
+                },
+                "attribute-credits": {},
+                "target-type": "artist"
+              }
+            ]
+          },
+          "artist-credit": [
+            {
+              "name": "Dizzy Gillespie Jazzmen",
+              "joinphrase": "",
+              "artist": {
+                "type": "Group",
+                "sort-name": "Gillespie, Dizzy, Jazzmen",
+                "id": "e495811a-f10c-4596-8b5e-7c0f3fc6f5db",
+                "country": null,
+                "name": "Dizzy Gillespie Jazzmen",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "disambiguation": ""
+              }
+            }
+          ],
+          "position": 2,
+          "length": null,
+          "id": "fcbb55b8-8d2e-4ab3-8be7-084d2376152b",
+          "number": "A2",
+          "title": "About Midnight"
+        },
+        {
+          "position": 3,
+          "length": null,
+          "id": "4dce667d-2b56-4479-82b9-ef59cbf6072b",
+          "number": "A3",
+          "title": "Diggin’ Dizzy",
+          "recording": {
+            "artist-credit": [
+              {
+                "artist": {
+                  "type": "Group",
+                  "sort-name": "Gillespie, Dizzy, Jazzmen",
+                  "id": "e495811a-f10c-4596-8b5e-7c0f3fc6f5db",
+                  "country": null,
+                  "name": "Dizzy Gillespie Jazzmen",
+                  "disambiguation": "",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+                },
+                "joinphrase": "",
+                "name": "Dizzy Gillespie Jazzmen"
+              }
+            ],
+            "relations": [
+              {
+                "attribute-ids": {
+                  "double bass": "7bd32b95-416f-4244-a98b-1311ec69c7db"
+                },
+                "attribute-credits": {},
+                "target-type": "artist",
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "source-credit": "",
+                "direction": "backward",
+                "begin": "1946-02-07",
+                "artist": {
+                  "country": "US",
+                  "name": "Ray Brown",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "jazz bassist",
+                  "type": "Person",
+                  "sort-name": "Brown, Ray",
+                  "id": "d8a1a9e8-295d-4999-9c70-0a4c8bdb36e8"
+                },
+                "ended": true,
+                "type": "instrument",
+                "attributes": [
+                  "double bass"
+                ],
+                "end": "1946-02-07",
+                "target-credit": ""
+              },
+              {
+                "direction": "backward",
+                "source-credit": "",
+                "ended": true,
+                "begin": "1946-02-07",
+                "artist": {
+                  "name": "Dizzy Gillespie",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "sort-name": "Gillespie, Dizzy",
+                  "type": "Person",
+                  "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5"
+                },
+                "type": "instrument",
+                "target-credit": "",
+                "attributes": [
+                  "trumpet"
+                ],
+                "end": "1946-02-07",
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "trumpet": "1c8f9780-2f16-4891-b66d-bb7aa0820dbd"
+                },
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              },
+              {
+                "source-credit": "",
+                "direction": "backward",
+                "artist": {
+                  "type": "Person",
+                  "sort-name": "Haig, Al",
+                  "id": "3f95b7c3-deba-4698-b12d-596d83c907e5",
+                  "country": "US",
+                  "name": "Al Haig",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "begin": "1946-02-07",
+                "ended": true,
+                "type": "instrument",
+                "end": "1946-02-07",
+                "attributes": [
+                  "piano"
+                ],
+                "target-credit": "",
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              },
+              {
+                "type": "instrument",
+                "target-credit": "",
+                "end": "1946-02-07",
+                "attributes": [
+                  "vibraphone"
+                ],
+                "direction": "backward",
+                "source-credit": "",
+                "ended": true,
+                "artist": {
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Milt Jackson",
+                  "country": "US",
+                  "id": "2e38e1de-2890-4620-8467-5b0bb4641cb9",
+                  "sort-name": "Jackson, Milt",
+                  "type": "Person"
+                },
+                "begin": "1946-02-07",
+                "attribute-credits": {},
+                "target-type": "artist",
+                "attribute-ids": {
+                  "vibraphone": "799af440-c0e7-4d8f-83d5-ecfee8b25787"
+                },
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              },
+              {
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {},
+                "attribute-credits": {},
+                "target-type": "artist",
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "ended": true,
+                "begin": "1946-02-07",
+                "artist": {
+                  "name": "Stan Levey",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "sort-name": "Levey, Stan",
+                  "type": "Person",
+                  "id": "ec5ba540-ff12-43f0-bf1e-caa5426867da"
+                },
+                "direction": "backward",
+                "source-credit": "",
+                "target-credit": "",
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "end": "1946-02-07",
+                "type": "instrument"
+              },
+              {
+                "type": "instrument",
+                "target-credit": "",
+                "end": "1946-02-07",
+                "attributes": [
+                  "tenor saxophone"
+                ],
+                "direction": "backward",
+                "source-credit": "",
+                "ended": true,
+                "begin": "1946-02-07",
+                "artist": {
+                  "sort-name": "Thompson, Lucky",
+                  "type": "Person",
+                  "id": "4b0b1bd5-35e8-4764-b4f2-55ef56f595aa",
+                  "name": "Lucky Thompson",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": ""
+                },
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "tenor saxophone": "ef7382cf-d5b4-4923-8b9e-3c482ed84b5e"
+                },
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1951",
+            "id": "0993a1a5-0b67-4f5c-9432-e76e5d2e7e10",
+            "length": null,
+            "title": "Diggin’ Dizzy",
+            "video": false
+          },
+          "artist-credit": [
+            {
+              "artist": {
+                "id": "e495811a-f10c-4596-8b5e-7c0f3fc6f5db",
+                "type": "Group",
+                "sort-name": "Gillespie, Dizzy, Jazzmen",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "disambiguation": "",
+                "country": null,
+                "name": "Dizzy Gillespie Jazzmen"
+              },
+              "joinphrase": "",
+              "name": "Dizzy Gillespie Jazzmen"
+            }
+          ]
+        },
+        {
+          "title": "When I Grow Too Old",
+          "length": null,
+          "number": "A4",
+          "id": "7112eb82-7cad-450a-97d8-86f2273d8004",
+          "position": 4,
+          "recording": {
+            "artist-credit": [
+              {
+                "artist": {
+                  "disambiguation": "",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "country": null,
+                  "name": "Tempo Jazz Men",
+                  "id": "f7c9a577-a035-40e3-a8d0-696174f48c45",
+                  "type": "Group",
+                  "sort-name": "Tempo Jazz Men"
+                },
+                "name": "Tempo Jazz Men",
+                "joinphrase": " featuring "
+              },
+              {
+                "joinphrase": " on trumpet",
+                "name": "Gabriel",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "name": "Dizzy Gillespie",
+                  "country": "US",
+                  "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+                  "sort-name": "Gillespie, Dizzy",
+                  "type": "Person"
+                }
+              }
+            ],
+            "relations": [
+              {
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "double bass": "7bd32b95-416f-4244-a98b-1311ec69c7db"
+                },
+                "target-credit": "",
+                "end": "1946-02-05",
+                "attributes": [
+                  "double bass"
+                ],
+                "type": "instrument",
+                "ended": true,
+                "begin": "1946-02-05",
+                "artist": {
+                  "country": "US",
+                  "name": "Ray Brown",
+                  "disambiguation": "jazz bassist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "sort-name": "Brown, Ray",
+                  "id": "d8a1a9e8-295d-4999-9c70-0a4c8bdb36e8"
+                },
+                "direction": "backward",
+                "source-credit": ""
+              },
+              {
+                "attribute-ids": {
+                  "trumpet": "1c8f9780-2f16-4891-b66d-bb7aa0820dbd"
+                },
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "source-credit": "",
+                "direction": "backward",
+                "begin": "1946-02-05",
+                "artist": {
+                  "name": "Dizzy Gillespie",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "sort-name": "Gillespie, Dizzy",
+                  "type": "Person",
+                  "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5"
+                },
+                "ended": true,
+                "type": "instrument",
+                "attributes": [
+                  "trumpet"
+                ],
+                "end": "1946-02-05",
+                "target-credit": "Gabriel"
+              },
+              {
+                "type": "instrument",
+                "target-credit": "",
+                "end": "1946-02-05",
+                "attributes": [
+                  "piano"
+                ],
+                "direction": "backward",
+                "source-credit": "",
+                "ended": true,
+                "artist": {
+                  "type": "Person",
+                  "sort-name": "Haig, Al",
+                  "id": "3f95b7c3-deba-4698-b12d-596d83c907e5",
+                  "country": "US",
+                  "name": "Al Haig",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "begin": "1946-02-05",
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {}
+              },
+              {
+                "source-credit": "",
+                "direction": "backward",
+                "begin": "1946-02-05",
+                "artist": {
+                  "sort-name": "Jackson, Milt",
+                  "type": "Person",
+                  "id": "2e38e1de-2890-4620-8467-5b0bb4641cb9",
+                  "name": "Milt Jackson",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": ""
+                },
+                "ended": true,
+                "type": "instrument",
+                "attributes": [
+                  "vibraphone"
+                ],
+                "end": "1946-02-05",
+                "target-credit": "",
+                "attribute-ids": {
+                  "vibraphone": "799af440-c0e7-4d8f-83d5-ecfee8b25787"
+                },
+                "attribute-credits": {},
+                "target-type": "artist",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {}
+              },
+              {
+                "attribute-credits": {},
+                "target-type": "artist",
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "direction": "backward",
+                "source-credit": "",
+                "ended": true,
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "country": "US",
+                  "name": "Stan Levey",
+                  "id": "ec5ba540-ff12-43f0-bf1e-caa5426867da",
+                  "type": "Person",
+                  "sort-name": "Levey, Stan"
+                },
+                "begin": "1946-02-05",
+                "type": "instrument",
+                "target-credit": "",
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "end": "1946-02-05"
+              },
+              {
+                "type": "instrument",
+                "end": "1946-02-05",
+                "attributes": [
+                  "tenor saxophone"
+                ],
+                "target-credit": "",
+                "source-credit": "",
+                "direction": "backward",
+                "begin": "1946-02-05",
+                "artist": {
+                  "id": "4b0b1bd5-35e8-4764-b4f2-55ef56f595aa",
+                  "sort-name": "Thompson, Lucky",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "name": "Lucky Thompson",
+                  "country": "US"
+                },
+                "ended": true,
+                "attribute-ids": {
+                  "tenor saxophone": "ef7382cf-d5b4-4923-8b9e-3c482ed84b5e"
+                },
+                "target-type": "artist",
+                "attribute-credits": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {}
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1951",
+            "title": "When I Grow Too Old to Dream",
+            "video": false,
+            "length": 171000,
+            "id": "7dfb3663-ee30-4c05-ae91-9f2acdba29d0"
+          },
+          "artist-credit": [
+            {
+              "name": "Dizzy Gillespie Jazzmen",
+              "joinphrase": "",
+              "artist": {
+                "id": "e495811a-f10c-4596-8b5e-7c0f3fc6f5db",
+                "sort-name": "Gillespie, Dizzy, Jazzmen",
+                "type": "Group",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "disambiguation": "",
+                "name": "Dizzy Gillespie Jazzmen",
+                "country": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "ee18a8e2-97ec-43fd-a886-9ad6a4fbc5cb",
+          "number": "B1",
+          "length": null,
+          "title": "Move",
+          "position": 5,
+          "artist-credit": [
+            {
+              "artist": {
+                "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+                "sort-name": "Navarro, Fats",
+                "type": "Person",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "",
+                "name": "Fats Navarro",
+                "country": "US"
+              },
+              "joinphrase": "",
+              "name": "Fats Navarro"
+            }
+          ],
+          "recording": {
+            "length": null,
+            "id": "ef98e753-4abf-4439-bd9a-755c4891d9d6",
+            "video": false,
+            "title": "Move",
+            "first-release-date": "1951",
+            "disambiguation": "",
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+                  "sort-name": "Navarro, Fats",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Fats Navarro",
+                  "country": "US"
+                },
+                "name": "Fats Navarro",
+                "joinphrase": ""
+              }
+            ],
+            "relations": [
+              {
+                "target-credit": "",
+                "attributes": [
+                  "piano"
+                ],
+                "end": "1948-11-29",
+                "type": "instrument",
+                "ended": true,
+                "artist": {
+                  "id": "f3ec00ec-375d-4582-a0d6-f03034f82ac6",
+                  "sort-name": "Garner, Linton",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "name": "Linton Garner",
+                  "country": "CA"
+                },
+                "begin": "1948-11-29",
+                "direction": "backward",
+                "source-credit": "",
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-credits": {},
+                "target-type": "artist",
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                }
+              },
+              {
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-ids": {
+                  "double bass": "7bd32b95-416f-4244-a98b-1311ec69c7db"
+                },
+                "attribute-credits": {},
+                "target-type": "artist",
+                "artist": {
+                  "type": "Person",
+                  "sort-name": "Johnson, James",
+                  "id": "0ac2c845-f681-4c49-8119-740faaef65f0",
+                  "country": "US",
+                  "name": "James Johnson",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "jazz double bassist"
+                },
+                "begin": "1948-11-29",
+                "ended": true,
+                "source-credit": "",
+                "direction": "backward",
+                "end": "1948-11-29",
+                "attributes": [
+                  "double bass"
+                ],
+                "target-credit": "Jimmy Johnson",
+                "type": "instrument"
+              },
+              {
+                "artist": {
+                  "name": "Don Lanphere",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "sort-name": "Lanphere, Don",
+                  "type": "Person",
+                  "id": "0c2fd627-8ae5-408d-9d0b-984e10a87224"
+                },
+                "begin": "1948-11-29",
+                "ended": true,
+                "source-credit": "",
+                "direction": "backward",
+                "attributes": [
+                  "tenor saxophone"
+                ],
+                "end": "1948-11-29",
+                "target-credit": "",
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {},
+                "attribute-ids": {
+                  "tenor saxophone": "ef7382cf-d5b4-4923-8b9e-3c482ed84b5e"
+                },
+                "attribute-credits": {},
+                "target-type": "artist"
+              },
+              {
+                "attribute-credits": {},
+                "target-type": "artist",
+                "attribute-ids": {
+                  "trumpet": "1c8f9780-2f16-4891-b66d-bb7aa0820dbd"
+                },
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "direction": "backward",
+                "source-credit": "",
+                "ended": true,
+                "begin": "1948-11-29",
+                "artist": {
+                  "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+                  "sort-name": "Navarro, Fats",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "name": "Fats Navarro",
+                  "country": "US"
+                },
+                "type": "instrument",
+                "target-credit": "",
+                "end": "1948-11-29",
+                "attributes": [
+                  "trumpet"
+                ]
+              },
+              {
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "end": "1948-11-29",
+                "target-credit": "",
+                "type": "instrument",
+                "artist": {
+                  "disambiguation": "20th century US jazz drummer & composer",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "name": "Max Roach",
+                  "id": "0b6aea55-d855-4a33-ae08-b0280dd28684",
+                  "type": "Person",
+                  "sort-name": "Roach, Max"
+                },
+                "begin": "1948-11-29",
+                "ended": true,
+                "source-credit": "",
+                "direction": "backward",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {},
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "attribute-credits": {},
+                "target-type": "artist"
+              }
+            ]
+          }
+        },
+        {
+          "position": 6,
+          "title": "Confirmation",
+          "length": null,
+          "number": "B2",
+          "id": "60b2b6e2-2614-4dda-95a2-ad79e3937c65",
+          "recording": {
+            "relations": [
+              {
+                "type": "instrument",
+                "target-credit": "",
+                "attributes": [
+                  "double bass"
+                ],
+                "end": "1946-02-06",
+                "direction": "backward",
+                "source-credit": "",
+                "ended": true,
+                "artist": {
+                  "id": "d8a1a9e8-295d-4999-9c70-0a4c8bdb36e8",
+                  "type": "Person",
+                  "sort-name": "Brown, Ray",
+                  "disambiguation": "jazz bassist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "name": "Ray Brown"
+                },
+                "begin": "1946-02-06",
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "double bass": "7bd32b95-416f-4244-a98b-1311ec69c7db"
+                },
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              },
+              {
+                "type": "instrument",
+                "target-credit": "",
+                "end": "1946-02-06",
+                "attributes": [
+                  "trumpet"
+                ],
+                "direction": "backward",
+                "source-credit": "",
+                "ended": true,
+                "begin": "1946-02-06",
+                "artist": {
+                  "name": "Dizzy Gillespie",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "sort-name": "Gillespie, Dizzy",
+                  "type": "Person",
+                  "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5"
+                },
+                "attribute-credits": {},
+                "target-type": "artist",
+                "attribute-ids": {
+                  "trumpet": "1c8f9780-2f16-4891-b66d-bb7aa0820dbd"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {}
+              },
+              {
+                "ended": true,
+                "begin": "1946-02-06",
+                "artist": {
+                  "sort-name": "Haig, Al",
+                  "type": "Person",
+                  "id": "3f95b7c3-deba-4698-b12d-596d83c907e5",
+                  "name": "Al Haig",
+                  "country": "US",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "direction": "backward",
+                "source-credit": "",
+                "target-credit": "",
+                "attributes": [
+                  "piano"
+                ],
+                "end": "1946-02-06",
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {},
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                }
+              },
+              {
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-credits": {},
+                "target-type": "artist",
+                "attribute-ids": {
+                  "vibraphone": "799af440-c0e7-4d8f-83d5-ecfee8b25787"
+                },
+                "target-credit": "",
+                "attributes": [
+                  "vibraphone"
+                ],
+                "end": "1946-02-06",
+                "type": "instrument",
+                "ended": true,
+                "artist": {
+                  "id": "2e38e1de-2890-4620-8467-5b0bb4641cb9",
+                  "type": "Person",
+                  "sort-name": "Jackson, Milt",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "country": "US",
+                  "name": "Milt Jackson"
+                },
+                "begin": "1946-02-06",
+                "direction": "backward",
+                "source-credit": ""
+              },
+              {
+                "type": "instrument",
+                "target-credit": "",
+                "end": "1946-02-06",
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "direction": "backward",
+                "source-credit": "",
+                "ended": true,
+                "artist": {
+                  "sort-name": "Levey, Stan",
+                  "type": "Person",
+                  "id": "ec5ba540-ff12-43f0-bf1e-caa5426867da",
+                  "name": "Stan Levey",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": ""
+                },
+                "begin": "1946-02-06",
+                "attribute-credits": {},
+                "target-type": "artist",
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {}
+              },
+              {
+                "type": "instrument",
+                "end": "1946-02-06",
+                "attributes": [
+                  "tenor saxophone"
+                ],
+                "target-credit": "",
+                "source-credit": "",
+                "direction": "backward",
+                "artist": {
+                  "sort-name": "Thompson, Lucky",
+                  "type": "Person",
+                  "id": "4b0b1bd5-35e8-4764-b4f2-55ef56f595aa",
+                  "name": "Lucky Thompson",
+                  "country": "US",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "begin": "1946-02-06",
+                "ended": true,
+                "attribute-ids": {
+                  "tenor saxophone": "ef7382cf-d5b4-4923-8b9e-3c482ed84b5e"
+                },
+                "target-type": "artist",
+                "attribute-credits": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {}
+              },
+              {
+                "end": null,
+                "attributes": [],
+                "target-credit": "",
+                "type": "producer",
+                "artist": {
+                  "id": "8246739e-1599-44d9-9383-411f1a39822d",
+                  "sort-name": "Russell, Ross",
+                  "type": "Person",
+                  "disambiguation": "US jazz producer 1940's-",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Ross Russell",
+                  "country": "US"
+                },
+                "begin": null,
+                "ended": false,
+                "source-credit": "",
+                "direction": "backward",
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0",
+                "attribute-values": {},
+                "attribute-ids": {},
+                "target-type": "artist"
+              }
+            ],
+            "artist-credit": [
+              {
+                "name": "Tempo Jazzmen",
+                "joinphrase": "",
+                "artist": {
+                  "id": "f7c9a577-a035-40e3-a8d0-696174f48c45",
+                  "sort-name": "Tempo Jazz Men",
+                  "type": "Group",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "disambiguation": "",
+                  "name": "Tempo Jazz Men",
+                  "country": null
+                }
+              }
+            ],
+            "disambiguation": "studio, 1946-02-06: Dial D1001-E",
+            "first-release-date": "1946",
+            "video": false,
+            "title": "Confirmation (D1001-E)",
+            "id": "76e9745a-a85e-472b-a867-abd01a59d133",
+            "length": 173000
+          },
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Dizzy Gillespie",
+              "artist": {
+                "country": "US",
+                "name": "Dizzy Gillespie",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "",
+                "type": "Person",
+                "sort-name": "Gillespie, Dizzy",
+                "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5"
+              }
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "title": "Thermodynamics",
+          "length": null,
+          "id": "bf670210-e596-4a5b-9b16-5d2da93ff99a",
+          "number": "B3",
+          "recording": {
+            "artist-credit": [
+              {
+                "artist": {
+                  "sort-name": "McGhee, Howard",
+                  "type": "Person",
+                  "id": "22b66dc2-f5b5-4c03-a4ca-083321bf8b6b",
+                  "name": "Howard McGhee",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": ""
+                },
+                "joinphrase": "",
+                "name": "Howard McGhee"
+              }
+            ],
+            "relations": [
+              {
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "attribute-credits": {},
+                "target-type": "artist",
+                "end": "1946-07-29",
+                "attributes": [
+                  "piano"
+                ],
+                "target-credit": "",
+                "type": "instrument",
+                "artist": {
+                  "disambiguation": "40s jazz pianist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "name": "Jimmy Bunn",
+                  "id": "53a329bb-ed63-42d0-aaaa-e33e5d2cb474",
+                  "type": "Person",
+                  "sort-name": "Bunn, Jimmy"
+                },
+                "begin": "1946-07-29",
+                "ended": true,
+                "source-credit": "",
+                "direction": "backward"
+              },
+              {
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-values": {},
+                "attribute-ids": {
+                  "double bass": "7bd32b95-416f-4244-a98b-1311ec69c7db"
+                },
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attributes": [
+                  "double bass"
+                ],
+                "end": "1946-07-29",
+                "target-credit": "",
+                "type": "instrument",
+                "artist": {
+                  "id": "cfb32f35-f2dc-4cad-8fa1-5c9516726aa5",
+                  "sort-name": "Kesterson, Bob",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "name": "Bob Kesterson",
+                  "country": "US"
+                },
+                "begin": "1946-07-29",
+                "ended": true,
+                "source-credit": "",
+                "direction": "backward"
+              },
+              {
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "trumpet": "1c8f9780-2f16-4891-b66d-bb7aa0820dbd"
+                },
+                "target-credit": "",
+                "end": "1946-07-29",
+                "attributes": [
+                  "trumpet"
+                ],
+                "type": "instrument",
+                "ended": true,
+                "begin": "1946-07-29",
+                "artist": {
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "name": "Howard McGhee",
+                  "id": "22b66dc2-f5b5-4c03-a4ca-083321bf8b6b",
+                  "type": "Person",
+                  "sort-name": "McGhee, Howard"
+                },
+                "direction": "backward",
+                "source-credit": ""
+              },
+              {
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "target-credit": "",
+                "end": "1946-07-29",
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "type": "instrument",
+                "ended": true,
+                "artist": {
+                  "id": "eb69dd28-2c83-4e86-be56-c2af87c06ff1",
+                  "sort-name": "Porter, Roy",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "name": "Roy Porter",
+                  "country": "US"
+                },
+                "begin": "1946-07-29",
+                "direction": "backward",
+                "source-credit": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1951",
+            "video": false,
+            "title": "Thermodynamics",
+            "length": null,
+            "id": "2b0e3b4c-2c0f-490e-bfd3-268591f6cad4"
+          },
+          "artist-credit": [
+            {
+              "artist": {
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "",
+                "name": "Howard McGhee",
+                "country": "US",
+                "id": "22b66dc2-f5b5-4c03-a4ca-083321bf8b6b",
+                "sort-name": "McGhee, Howard",
+                "type": "Person"
+              },
+              "name": "Howard McGhee",
+              "joinphrase": ""
+            }
+          ]
+        },
+        {
+          "id": "6c4d0622-6f61-4bc2-8868-69b3e3bdef16",
+          "number": "B4",
+          "length": null,
+          "title": "Superman",
+          "position": 8,
+          "artist-credit": [
+            {
+              "name": "Miles Davis",
+              "joinphrase": "",
+              "artist": {
+                "country": "US",
+                "name": "Miles Davis",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "sort-name": "Davis, Miles",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a"
+              }
+            }
+          ],
+          "recording": {
+            "first-release-date": "1951",
+            "title": "Superman",
+            "video": false,
+            "length": null,
+            "id": "43c2ee24-e3bb-4bfd-921c-d96a9566ccb6",
+            "artist-credit": [
+              {
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "name": "Miles Davis",
+                  "country": "US",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "sort-name": "Davis, Miles",
+                  "type": "Person"
+                },
+                "joinphrase": "",
+                "name": "Miles Davis"
+              }
+            ],
+            "relations": [
+              {
+                "type": "instrument",
+                "end": "1947-10-28",
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "target-credit": "",
+                "source-credit": "",
+                "direction": "backward",
+                "begin": "1947-10-28",
+                "artist": {
+                  "disambiguation": "20th century US jazz drummer & composer",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Max Roach",
+                  "country": "US",
+                  "id": "0b6aea55-d855-4a33-ae08-b0280dd28684",
+                  "sort-name": "Roach, Max",
+                  "type": "Person"
+                },
+                "ended": true,
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "target-type": "artist",
+                "attribute-credits": {},
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              },
+              {
+                "end": "1948-10-28",
+                "attributes": [
+                  "trumpet"
+                ],
+                "target-credit": "",
+                "type": "instrument",
+                "artist": {
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "type": "Person",
+                  "sort-name": "Davis, Miles",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "country": "US",
+                  "name": "Miles Davis"
+                },
+                "begin": "1948-10-28",
+                "ended": true,
+                "source-credit": "",
+                "direction": "backward",
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-ids": {
+                  "trumpet": "1c8f9780-2f16-4891-b66d-bb7aa0820dbd"
+                },
+                "target-type": "artist",
+                "attribute-credits": {}
+              },
+              {
+                "attributes": [
+                  "piano"
+                ],
+                "end": "1948-10-28",
+                "target-credit": "",
+                "type": "instrument",
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "disambiguation": "",
+                  "name": "Duke Jordan",
+                  "country": "DK",
+                  "id": "18288a13-0259-4a44-a9dc-558229fbfdd2",
+                  "sort-name": "Jordan, Duke",
+                  "type": "Person"
+                },
+                "begin": "1948-10-28",
+                "ended": true,
+                "source-credit": "",
+                "direction": "backward",
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "attribute-credits": {},
+                "target-type": "artist"
+              },
+              {
+                "attribute-credits": {},
+                "target-type": "artist",
+                "attribute-ids": {
+                  "alto saxophone": "9c977091-b27a-4a0e-b54e-b5ab89420e22"
+                },
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "direction": "backward",
+                "source-credit": "",
+                "ended": true,
+                "begin": "1948-10-28",
+                "artist": {
+                  "disambiguation": "aka “Bird”, jazz alto saxophonist",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Charlie Parker",
+                  "country": "US",
+                  "id": "c7356af9-9ea6-4a78-a55b-c73775716312",
+                  "sort-name": "Parker, Charlie",
+                  "type": "Person"
+                },
+                "type": "instrument",
+                "target-credit": "",
+                "end": "1948-10-28",
+                "attributes": [
+                  "alto saxophone"
+                ]
+              },
+              {
+                "source-credit": "",
+                "direction": "backward",
+                "artist": {
+                  "sort-name": "Potter, Tommy",
+                  "type": "Person",
+                  "id": "7d606f44-a90c-4c1e-909d-37e57681a3cf",
+                  "name": "Tommy Potter",
+                  "country": "US",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "begin": "1948-10-28",
+                "ended": true,
+                "type": "instrument",
+                "end": "1948-10-28",
+                "attributes": [
+                  "double bass"
+                ],
+                "target-credit": "",
+                "attribute-ids": {
+                  "double bass": "7bd32b95-416f-4244-a98b-1311ec69c7db"
+                },
+                "attribute-credits": {},
+                "target-type": "artist",
+                "attribute-values": {},
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              }
+            ],
+            "disambiguation": ""
+          }
+        }
+      ]
+    }
+  ],
+  "cover-art-archive": {
+    "count": 0,
+    "artwork": false,
+    "darkened": false,
+    "front": false,
+    "back": false
+  },
+  "packaging-id": null,
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "packaging": null,
+  "artist-credit": [
+    {
+      "name": "Fats Navarro",
+      "joinphrase": ", ",
+      "artist": {
+        "disambiguation": "",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "country": "US",
+        "name": "Fats Navarro",
+        "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+        "type": "Person",
+        "sort-name": "Navarro, Fats"
+      }
+    },
+    {
+      "artist": {
+        "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+        "type": "Person",
+        "sort-name": "Gillespie, Dizzy",
+        "disambiguation": "",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "country": "US",
+        "name": "Dizzy Gillespie"
+      },
+      "joinphrase": ", ",
+      "name": "Dizzy Gillespie"
+    },
+    {
+      "name": "Miles Davis",
+      "joinphrase": ", ",
+      "artist": {
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "jazz trumpeter, bandleader, songwriter",
+        "name": "Miles Davis",
+        "country": "US",
+        "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+        "sort-name": "Davis, Miles",
+        "type": "Person"
+      }
+    },
+    {
+      "name": "Kenny Dorham",
+      "joinphrase": "",
+      "artist": {
+        "country": "US",
+        "name": "Kenny Dorham",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "US jazz trumpeter, singer, and composer",
+        "type": "Person",
+        "sort-name": "Dorham, Kenny",
+        "id": "4476453a-d37e-4c52-b60d-07c90b6fa661"
+      }
+    }
+  ],
+  "label-info": [
+    {
+      "label": {
+        "name": "Prestige",
+        "disambiguation": "American jazz label",
+        "label-code": 313,
+        "type-id": "7aaa37fe-2def-3476-b359-80245850062d",
+        "type": "Original Production",
+        "sort-name": "Prestige",
+        "id": "11847c89-4b2c-4866-84c3-f72e264c0f66"
+      },
+      "catalog-number": "PRLP 113"
+    }
+  ],
+  "text-representation": {
+    "language": "eng",
+    "script": "Latn"
+  },
+  "status": "Official",
+  "id": "6fbb6d1b-e6b4-4027-acf1-85045a0bd771",
+  "date": "1951",
+  "release-events": [
+    {
+      "area": {
+        "type": null,
+        "sort-name": "United States",
+        "id": "489ce91b-6658-3307-9877-795b68554c98",
+        "name": "United States",
+        "iso-3166-1-codes": [
+          "US"
+        ],
+        "type-id": null,
+        "disambiguation": ""
+      },
+      "date": "1951"
+    }
+  ],
+  "barcode": "",
+  "asin": null,
+  "disambiguation": "",
+  "relations": [],
+  "quality": "normal",
+  "country": "US",
+  "release-group": {
+    "secondary-types": [],
+    "first-release-date": "1951",
+    "secondary-type-ids": [],
+    "title": "Modern Jazz Trumpets",
+    "id": "095878f4-58ac-43f4-93ae-92a1e6588d8d",
+    "primary-type": "Album",
+    "artist-credit": [
+      {
+        "artist": {
+          "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+          "type": "Person",
+          "sort-name": "Navarro, Fats",
+          "disambiguation": "",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "US",
+          "name": "Fats Navarro"
+        },
+        "name": "Fats Navarro",
+        "joinphrase": ", "
+      },
+      {
+        "artist": {
+          "disambiguation": "",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Dizzy Gillespie",
+          "country": "US",
+          "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+          "sort-name": "Gillespie, Dizzy",
+          "type": "Person"
+        },
+        "joinphrase": ", ",
+        "name": "Dizzy Gillespie"
+      },
+      {
+        "artist": {
+          "disambiguation": "jazz trumpeter, bandleader, songwriter",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "US",
+          "name": "Miles Davis",
+          "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+          "type": "Person",
+          "sort-name": "Davis, Miles"
+        },
+        "name": "Miles Davis",
+        "joinphrase": ", "
+      },
+      {
+        "joinphrase": "",
+        "name": "Kenny Dorham",
+        "artist": {
+          "name": "Kenny Dorham",
+          "country": "US",
+          "disambiguation": "US jazz trumpeter, singer, and composer",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Dorham, Kenny",
+          "type": "Person",
+          "id": "4476453a-d37e-4c52-b60d-07c90b6fa661"
+        }
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": ""
+  }
+}

@@ -98,7 +98,7 @@ class BrowserTests(unittest.TestCase):
                 elif url.path.endswith('/release/official'):
                     request.fulfill(json={'media': [{'position': 1, 'tracks': [{'position': 1, 'title': '<Song>'}]}]})
                 elif url.path.endswith('/release-group'):
-                    request.fulfill(json={'release-groups': [{'id': GROUP, 'title': 'supported', 'primary-type': 'Album', 'first-release-date': '2001'}], 'release-group-count': 1})
+                    request.fulfill(json={'release-groups': [{'id': GROUP, 'title': 'supported', 'primary-type': 'Album', 'artist-credit': [{'artist': {'id': GROUP, 'name': 'Artist'}}], 'first-release-date': '2001'}], 'release-group-count': 1})
                 else:
                     request.fulfill(json={'relations': []})
             else:
@@ -114,6 +114,8 @@ class BrowserTests(unittest.TestCase):
         page.get_by_role('button', name='この名義の作品を見る →').click()
         expect(page.locator('#status')).not_to_contain_text('アルバムを取得します', timeout=20000)
         expect(page.locator('#status')).not_to_contain_text('作品を読み込んでいます')
+        # Existing provenance/link tests include deliberately different artist IDs.
+        page.get_by_role('button', name='すべての名義', exact=True).click()
         page.get_by_text('以前のYouTube Music一覧・保存記録・照合ツール', exact=True).click()
         return page.locator('#results > details > section').first
 
@@ -183,6 +185,7 @@ class BrowserTests(unittest.TestCase):
                 page.get_by_role('button', name='検索', exact=True).click()
                 page.get_by_role('button', name='この名義の作品を見る →').click()
                 section = page.locator('#official-releases')
+                section.get_by_role('button', name='すべての名義', exact=True).click()
                 expect(section.get_by_role('link', name='YouTube Musicで聴く')).to_have_attribute('href', album['url'])
                 expect(section.locator('.album-label')).to_have_text(detail['label'])
                 expect(section.locator('.album-title')).to_have_text(release['title'])
@@ -409,6 +412,8 @@ class BrowserTests(unittest.TestCase):
             groups = [{'id': 'later-' + str(i), 'title': 'Later', 'primary-type': 'Album', 'first-release-date': '2010'} for i in range(100)]
             groups += [{'id': 'old', 'title': 'Early', 'primary-type': 'Album', 'first-release-date': '1959'},
                        {'id': 'unknown', 'title': 'Unknown', 'primary-type': 'Album'}]
+            for group in groups:
+                group['artist-credit'] = [{'artist': {'id': 'artist', 'name': name}}]
             calls = []
             def api_route(route, request, calls=calls, groups=groups, name=name):
                 url = urlparse(route.request.url)
@@ -448,6 +453,124 @@ class BrowserTests(unittest.TestCase):
             self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
             # Unknown originals stay last in either direction and never borrow edition dates.
             self.assertEqual(page.evaluate("orderedGroups([{id:'u'},{id:'k','first-release-date':'1950'}]).map(g=>g.id)"), ['k', 'u'])
+            page.close()
+
+    def test_v064_credit_scopes_and_on_demand_performance(self):
+        from urllib.parse import parse_qs
+        page = self.open_site(390)
+        credit = lambda id, name=None: {'artist': {'id': id, 'name': name or id}}
+        groups = [{'id': kind, 'title': kind, 'primary-type': 'Album', 'first-release-date': str(1950 + i * 10),
+                   'artist-credit': credits} for i, (kind, credits) in enumerate([
+                       ('own', [credit('target')]), ('joint', [credit('other'), credit('target')]),
+                       ('guest', [credit('other')]), ('unknown', []), ('band', [credit('band-id')])])]
+        def route(route):
+            url = urlparse(route.request.url)
+            if url.path.endswith('/release-group'):
+                route.fulfill(json={'release-groups': groups, 'release-group-count': len(groups)})
+            elif url.path.endswith('/release'):
+                group = next(g for g in groups if g['id'] == parse_qs(url.query)['release-group'][0])
+                route.fulfill(json={'release-count': 1, 'releases': [{'id': group['id'], 'title': group['title'], 'status': 'Official',
+                    'date': '2020', 'artist-credit': group['artist-credit'], 'label-info': [{'label': {'name': 'Label'}}]}]})
+            elif url.path.endswith('/release/guest'):
+                self.assertIn('recording-level-rels', parse_qs(url.query)['inc'][0])
+                route.fulfill(json={'id': 'guest', 'artist-credit': [credit('other')], 'media': [{'position': 1, 'tracks': [
+                    {'position': 1, 'title': 'Guest song', 'recording': {'id': 'recording-id', 'relations': [
+                        {'type': 'instrument', 'artist': {'id': 'target'}, 'attributes': ['guitar']},
+                        {'type': 'producer', 'artist': {'id': 'target'}}]}}]}]})
+            else:
+                route.fulfill(json={'relations': []})
+        page.route('**/ws/2/**', route)
+        page.evaluate("chooseArtist({id:'target',name:'Target'})")
+        # Each interaction fetches only one work/page; all scopes reuse the same prefix.
+        for _ in range(4):
+            page.evaluate('loadOfficialReleases()')
+        section = page.locator('#official-releases')
+        expect(section.get_by_role('button', name='本人・共同名義', exact=True)).to_have_attribute('aria-pressed', 'true')
+        expect(section.locator('article')).to_have_count(2)
+        expect(section.locator('.credit-badge').first).to_contain_text('本人名義')
+        expect(section.locator('.credit-badge').nth(1)).to_contain_text('共同名義')
+        section.get_by_role('button', name='共同名義', exact=True).click()
+        expect(section.locator('article')).to_have_count(1)
+        expect(section.locator('.decade')).to_have_text('1960年代')
+        section.get_by_role('button', name='確認待ち', exact=True).click()
+        expect(section.locator('article')).to_have_count(3)
+        guest = section.locator('article[data-release-id="guest"]')
+        guest.locator('summary').click()
+        expect(guest).to_contain_text('関連作品や所属バンドという理由だけでは参加と判定しません')
+        guest.get_by_role('button', name='曲目を取得', exact=True).click()
+        expect(guest.locator('.credit-badge')).to_contain_text('演奏参加')
+        expect(guest.locator('.credit-evidence a[href*="/recording/"]')).to_have_attribute('href', 'https://musicbrainz.org/recording/recording-id')
+        expect(section.locator('#credit-counts')).to_contain_text('演奏参加（録音の登録根拠あり） 1件')
+        section.get_by_role('button', name='演奏参加', exact=True).click()
+        expect(section.locator('article')).to_have_count(1)
+        expect(section).to_contain_text('参加作品の網羅性は保証しません')
+        expect(section.locator('details')).to_have_attribute('open', '')
+        section.get_by_role('button', name='本人・共同名義', exact=True).click()
+        expect(section.locator('article')).to_have_count(2)
+        section.get_by_role('button', name='新しい順', exact=True).click()
+        page.wait_for_function('!officialLoading')
+        # Newest work is a separate band credit: do not promote it to the target's solo albums.
+        expect(section.locator('article')).to_have_count(0)
+        section.get_by_role('button', name='確認待ち', exact=True).click()
+        expect(section.locator('.album-title')).to_have_text('band')
+        self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+
+    def test_v064_captured_credit_and_band_routes_for_both_artists(self):
+        # Every MB body below is captured real data, replayed offline.
+        # The candidate index combines three chosen works to test an unrelated candidate;
+        # it is not a claim that guest albums occur in the artist browse response.
+        from urllib.parse import parse_qs
+        report = json.loads((ROOT / 'docs/v0.64/live-report.json').read_text())
+        for artist in report['artists']:
+            prefix = artist['artist'].replace(' ', '-')
+            releases = [json.loads((ROOT / 'docs/v0.64' / (prefix + '-' + kind + '.json')).read_text()) for kind in ('own', 'joint', 'guest')]
+            groups = [r['release-group'] for r in releases]
+            relationships = json.loads((ROOT / 'docs/v0.64' / (prefix + '-artist-relations.json')).read_text())
+            page = self.open_site(375)
+            def route(route, request, groups=groups, releases=releases, artist=artist, relationships=relationships):
+                url = urlparse(route.request.url)
+                q = parse_qs(url.query)
+                if url.path.endswith('/release-group'):
+                    items = groups if q['artist'][0] == artist['artist_id'] else []
+                    route.fulfill(json={'release-group-count': len(items), 'release-groups': items})
+                elif url.path.endswith('/release'):
+                    release = next(r for r in releases if r['release-group']['id'] == q['release-group'][0])
+                    route.fulfill(json={'release-count': 1, 'releases': [release]})
+                elif '/release/' in url.path:
+                    route.fulfill(json=next(r for r in releases if r['id'] == url.path.split('/')[-1]))
+                else:
+                    route.fulfill(json=relationships)
+            page.route('**/ws/2/**', route)
+            page.evaluate('chooseArtist(' + json.dumps({'id': artist['artist_id'], 'name': artist['artist']}) + ')')
+            for _ in range(2):
+                page.evaluate('loadOfficialReleases()')
+            section = page.locator('#official-releases')
+            expect(section.locator('article')).to_have_count(2)
+            expect(section.locator('.credit-badge', has_text='本人名義')).to_have_count(1)
+            expect(section.locator('.credit-badge', has_text='共同名義')).to_have_count(1)
+            section.get_by_role('button', name='確認待ち', exact=True).click()
+            expect(section.locator('article')).to_have_count(1)
+            expect(section.locator('.album-title')).to_have_text(releases[2]['title'])
+            section.locator('summary').click()
+            section.get_by_role('button', name='曲目を取得', exact=True).click()
+            expect(section.locator('.credit-badge')).to_contain_text('演奏参加')
+            expect(section.get_by_role('button', name='演奏参加', exact=True)).to_have_attribute('aria-pressed', 'true')
+            self.assertGreater(section.locator('.credit-evidence a[href*="/recording/"]').count(), 0)
+            expect(section.locator('details')).to_have_attribute('open', '')
+            expect(section.get_by_role('link', name='YouTube Musicで探す ↗')).to_have_count(1)
+            expect(page.locator('#related-bands')).to_be_visible()
+            page.get_by_role('button', name='所属バンドを調べる →').click()
+            band = next(rel['artist'] for rel in relationships['relations'] if rel['type'] == 'member of band' and rel.get('artist', {}).get('type') == 'Group')
+            related = page.locator('#related-bands article').filter(has=page.get_by_text(band['name'], exact=True))
+            expect(related).to_have_count(1)
+            # A member's solo list does not absorb the band's works. The existing selector
+            # opens that band's own artist ID and resets the previous list/scope.
+            related.get_by_role('button', name='この名義の作品を見る →').click()
+            page.wait_for_function('artistId === ' + json.dumps(band['id']) + ' && !officialLoading')
+            expect(section.locator('h2')).to_have_text(band['name'] + ' の発売アルバム')
+            expect(section.locator('article')).to_have_count(0)
+            expect(section.get_by_role('button', name='本人・共同名義', exact=True)).to_have_attribute('aria-pressed', 'true')
+            self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
             page.close()
 
     def test_search_generated_evidence_and_track_comparison(self):

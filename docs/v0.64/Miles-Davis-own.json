@@ -1,0 +1,582 @@
+{
+  "country": "US",
+  "date": "2008",
+  "text-representation": {
+    "script": "Latn",
+    "language": "eng"
+  },
+  "asin": null,
+  "status": "Official",
+  "quality": "normal",
+  "id": "14f34297-ae81-4069-925a-1a320ac19f11",
+  "cover-art-archive": {
+    "back": false,
+    "front": true,
+    "darkened": false,
+    "artwork": true,
+    "count": 1
+  },
+  "artist-credit": [
+    {
+      "name": "Miles Davis",
+      "joinphrase": "",
+      "artist": {
+        "country": "US",
+        "name": "Miles Davis",
+        "disambiguation": "jazz trumpeter, bandleader, songwriter",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+        "type": "Person",
+        "sort-name": "Davis, Miles"
+      }
+    }
+  ],
+  "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+  "label-info": [
+    {
+      "catalog-number": "CS 8163",
+      "label": {
+        "label-code": null,
+        "disambiguation": "audiophile reissues",
+        "name": "Classic Records",
+        "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+        "id": "f8714b81-78da-4f6e-a20c-7b2bad7709ce",
+        "type": "Reissue Production",
+        "sort-name": "Classic Records"
+      }
+    }
+  ],
+  "packaging": "Cardboard/Paper Sleeve",
+  "release-events": [
+    {
+      "date": "2008",
+      "area": {
+        "type-id": null,
+        "id": "489ce91b-6658-3307-9877-795b68554c98",
+        "sort-name": "United States",
+        "type": null,
+        "disambiguation": "",
+        "name": "United States",
+        "iso-3166-1-codes": [
+          "US"
+        ]
+      }
+    }
+  ],
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "relations": [],
+  "title": "Kind of Blue",
+  "barcode": "",
+  "media": [
+    {
+      "track-count": 5,
+      "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+      "id": "bdc4f08a-e8af-308d-8cc5-87a6bf1b71de",
+      "position": 1,
+      "title": "",
+      "track-offset": 0,
+      "format": "12\" Vinyl",
+      "tracks": [
+        {
+          "number": "A1",
+          "recording": {
+            "first-release-date": "2008",
+            "id": "f1d7de2d-219a-44fa-919d-ec84d0572bfe",
+            "artist-credit": [
+              {
+                "name": "Miles Davis",
+                "joinphrase": "",
+                "artist": {
+                  "sort-name": "Davis, Miles",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "name": "Miles Davis",
+                  "country": "US"
+                }
+              }
+            ],
+            "length": 549000,
+            "video": false,
+            "disambiguation": "",
+            "title": "So What",
+            "relations": []
+          },
+          "artist-credit": [
+            {
+              "artist": {
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "sort-name": "Davis, Miles",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                "name": "Miles Davis",
+                "country": "US"
+              },
+              "joinphrase": "",
+              "name": "Miles Davis"
+            }
+          ],
+          "length": 549000,
+          "title": "So What",
+          "position": 1,
+          "id": "546256be-e438-43ab-8400-97b4554367e5"
+        },
+        {
+          "id": "94e0d9f3-f178-43b9-8178-d71c8ff6a669",
+          "position": 2,
+          "title": "Freddie Freeloader",
+          "length": 587000,
+          "artist-credit": [
+            {
+              "artist": {
+                "country": "US",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Davis, Miles",
+                "type": "Person",
+                "name": "Miles Davis",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter"
+              },
+              "name": "Miles Davis",
+              "joinphrase": ""
+            }
+          ],
+          "recording": {
+            "artist-credit": [
+              {
+                "artist": {
+                  "country": "US",
+                  "name": "Miles Davis",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "sort-name": "Davis, Miles"
+                },
+                "name": "Miles Davis",
+                "joinphrase": ""
+              }
+            ],
+            "id": "6ea17013-fa68-4446-a2c7-7b864e366803",
+            "first-release-date": "1987",
+            "relations": [
+              {
+                "end": null,
+                "type-id": "5dcc52af-7064-4051-8d62-7d80f4c3c907",
+                "target-credit": "",
+                "source-credit": "",
+                "type": "engineer",
+                "attribute-values": {},
+                "attributes": [],
+                "attribute-ids": {},
+                "begin": null,
+                "direction": "backward",
+                "ended": false,
+                "artist": {
+                  "country": "US",
+                  "disambiguation": "",
+                  "name": "Fred Plaut",
+                  "id": "febc30e8-5033-4c65-b25c-084c872be8e5",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "sort-name": "Plaut, Fred"
+                },
+                "target-type": "artist"
+              },
+              {
+                "attribute-values": {},
+                "attributes": [
+                  "alto saxophone"
+                ],
+                "attribute-ids": {
+                  "alto saxophone": "9c977091-b27a-4a0e-b54e-b5ab89420e22"
+                },
+                "begin": "1959-03-02",
+                "direction": "backward",
+                "ended": true,
+                "artist": {
+                  "disambiguation": "",
+                  "name": "Cannonball Adderley",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+                  "type": "Person",
+                  "sort-name": "Adderley, Cannonball",
+                  "country": "US"
+                },
+                "target-type": "artist",
+                "type": "instrument",
+                "attribute-credits": {},
+                "end": "1959-03-02",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "target-credit": "",
+                "source-credit": ""
+              },
+              {
+                "attributes": [
+                  "double bass"
+                ],
+                "attribute-values": {},
+                "begin": "1959-03-02",
+                "attribute-ids": {
+                  "double bass": "7bd32b95-416f-4244-a98b-1311ec69c7db"
+                },
+                "direction": "backward",
+                "target-type": "artist",
+                "artist": {
+                  "name": "Paul Chambers",
+                  "disambiguation": "US jazz bassist",
+                  "id": "b6ff4fd0-03ae-41a6-942e-7de13124b970",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Chambers, Paul",
+                  "type": "Person",
+                  "country": "US"
+                },
+                "ended": true,
+                "type": "instrument",
+                "attribute-credits": {},
+                "end": "1959-03-02",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "source-credit": "",
+                "target-credit": ""
+              },
+              {
+                "type": "instrument",
+                "begin": "1959-03-02",
+                "attribute-ids": {
+                  "drums (drum set)": "12092505-6ee1-46af-a15a-b5b468b6b155"
+                },
+                "attributes": [
+                  "drums (drum set)"
+                ],
+                "attribute-values": {},
+                "target-type": "artist",
+                "ended": true,
+                "artist": {
+                  "name": "Jimmy Cobb",
+                  "disambiguation": "US jazz drummer",
+                  "sort-name": "Cobb, Jimmy",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "d0cbf65a-541b-476a-996c-fe2cd264bbd0",
+                  "country": "US"
+                },
+                "direction": "backward",
+                "attribute-credits": {},
+                "end": "1959-03-02",
+                "source-credit": "",
+                "target-credit": "",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              },
+              {
+                "source-credit": "",
+                "target-credit": "",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "end": "1959-03-02",
+                "attribute-credits": {},
+                "type": "instrument",
+                "target-type": "artist",
+                "ended": true,
+                "artist": {
+                  "type": "Person",
+                  "sort-name": "Coltrane, John",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "b625448e-bf4a-41c3-a421-72ad46cdb831",
+                  "disambiguation": "",
+                  "name": "John Coltrane",
+                  "country": "US"
+                },
+                "direction": "backward",
+                "begin": "1959-03-02",
+                "attribute-ids": {
+                  "tenor saxophone": "ef7382cf-d5b4-4923-8b9e-3c482ed84b5e"
+                },
+                "attributes": [
+                  "tenor saxophone"
+                ],
+                "attribute-values": {}
+              },
+              {
+                "type": "instrument",
+                "attribute-ids": {
+                  "trumpet": "1c8f9780-2f16-4891-b66d-bb7aa0820dbd"
+                },
+                "begin": "1959-03-02",
+                "attribute-values": {},
+                "attributes": [
+                  "trumpet"
+                ],
+                "artist": {
+                  "country": "US",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "name": "Miles Davis",
+                  "sort-name": "Davis, Miles",
+                  "type": "Person",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "ended": true,
+                "target-type": "artist",
+                "direction": "backward",
+                "attribute-credits": {},
+                "end": "1959-03-02",
+                "target-credit": "",
+                "source-credit": "",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461"
+              },
+              {
+                "direction": "backward",
+                "target-type": "artist",
+                "artist": {
+                  "country": "US",
+                  "name": "Wynton Kelly",
+                  "disambiguation": "",
+                  "id": "d3f9352c-18e2-47a0-802c-13d821490e42",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Kelly, Wynton",
+                  "type": "Person"
+                },
+                "ended": true,
+                "attributes": [
+                  "piano"
+                ],
+                "attribute-values": {},
+                "begin": "1959-03-02",
+                "attribute-ids": {
+                  "piano": "b3eac5f9-7859-4416-ac39-7154e2e8d348"
+                },
+                "type": "instrument",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "source-credit": "",
+                "target-credit": "",
+                "attribute-credits": {},
+                "end": "1959-03-02"
+              },
+              {
+                "attribute-credits": {},
+                "end": "1959-04",
+                "type-id": "59054b12-01ac-43ee-a618-285fd397e461",
+                "target-credit": "",
+                "source-credit": "",
+                "type": "instrument",
+                "attribute-values": {},
+                "attributes": [
+                  "trumpet"
+                ],
+                "attribute-ids": {
+                  "trumpet": "1c8f9780-2f16-4891-b66d-bb7aa0820dbd"
+                },
+                "begin": "1959-03",
+                "direction": "backward",
+                "artist": {
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "name": "Miles Davis",
+                  "sort-name": "Davis, Miles",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "country": "US"
+                },
+                "ended": true,
+                "target-type": "artist"
+              },
+              {
+                "type-id": "5c0ceac3-feb4-41f0-868d-dc06f6e27fc0",
+                "source-credit": "",
+                "target-credit": "",
+                "end": null,
+                "direction": "backward",
+                "target-type": "artist",
+                "artist": {
+                  "country": "US",
+                  "sort-name": "Townsend, Irving",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "5ca16cfc-f480-4203-93e7-f35080d12d60",
+                  "disambiguation": "US record producer",
+                  "name": "Irving Townsend"
+                },
+                "ended": false,
+                "attributes": [],
+                "attribute-values": {},
+                "begin": null,
+                "attribute-ids": {},
+                "type": "producer"
+              }
+            ],
+            "title": "Freddie Freeloader",
+            "disambiguation": "first speed-correct stereo remix",
+            "video": false,
+            "length": 588000
+          },
+          "number": "A2"
+        },
+        {
+          "recording": {
+            "artist-credit": [
+              {
+                "name": "Miles Davis",
+                "joinphrase": "",
+                "artist": {
+                  "country": "US",
+                  "type": "Person",
+                  "sort-name": "Davis, Miles",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Miles Davis",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter"
+                }
+              }
+            ],
+            "id": "4cf7720a-2576-4fec-9f9c-7cbad0d41b27",
+            "first-release-date": "2008",
+            "relations": [],
+            "title": "Blue in Green",
+            "disambiguation": "",
+            "length": 331000,
+            "video": false
+          },
+          "number": "A3",
+          "artist-credit": [
+            {
+              "name": "Miles Davis",
+              "joinphrase": "",
+              "artist": {
+                "country": "US",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "type": "Person",
+                "sort-name": "Davis, Miles",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                "name": "Miles Davis"
+              }
+            }
+          ],
+          "length": 331000,
+          "title": "Blue in Green",
+          "position": 3,
+          "id": "53836763-c299-4dcd-bf12-b8208327703c"
+        },
+        {
+          "id": "97806a8e-3479-481f-99dd-bd13d111e536",
+          "position": 4,
+          "title": "Flamenco Sketches",
+          "length": 696000,
+          "artist-credit": [
+            {
+              "artist": {
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "sort-name": "Davis, Miles",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                "name": "Miles Davis",
+                "country": "US"
+              },
+              "joinphrase": "",
+              "name": "Miles Davis"
+            }
+          ],
+          "recording": {
+            "relations": [],
+            "title": "Flamenco Sketches",
+            "disambiguation": "",
+            "length": 696000,
+            "video": false,
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "name": "Miles Davis",
+                "artist": {
+                  "type": "Person",
+                  "sort-name": "Davis, Miles",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "name": "Miles Davis",
+                  "country": "US"
+                }
+              }
+            ],
+            "id": "0719ac50-753f-49ac-8574-ed6e0c37b6bc",
+            "first-release-date": "2008"
+          },
+          "number": "B1"
+        },
+        {
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "name": "Miles Davis",
+              "artist": {
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "type": "Person",
+                "sort-name": "Davis, Miles",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                "name": "Miles Davis",
+                "country": "US"
+              }
+            }
+          ],
+          "recording": {
+            "id": "0e4ca648-233f-4a3e-8f20-84f20af567ea",
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "name": "Miles Davis",
+                "artist": {
+                  "country": "US",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "name": "Miles Davis",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Davis, Miles",
+                  "type": "Person"
+                }
+              }
+            ],
+            "first-release-date": "2008",
+            "title": "All Blues",
+            "relations": [],
+            "video": false,
+            "length": 563000,
+            "disambiguation": ""
+          },
+          "number": "B2",
+          "title": "All Blues",
+          "length": 563000,
+          "id": "c0f3c5ba-368e-4e6b-8ae1-fa7cccfe81cf",
+          "position": 5
+        }
+      ]
+    }
+  ],
+  "disambiguation": "reissue, remastered, stereo, 200 gram Quiex SV-P, “Hand Made”",
+  "release-group": {
+    "disambiguation": "",
+    "artist-credit": [
+      {
+        "artist": {
+          "disambiguation": "jazz trumpeter, bandleader, songwriter",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "US",
+          "name": "Miles Davis",
+          "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+          "type": "Person",
+          "sort-name": "Davis, Miles"
+        },
+        "name": "Miles Davis",
+        "joinphrase": ""
+      }
+    ],
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "title": "Kind of Blue",
+    "id": "8e8a594f-2175-38c7-a871-abb68ec363e7",
+    "first-release-date": "1959-08-17",
+    "secondary-types": [],
+    "secondary-type-ids": []
+  }
+}

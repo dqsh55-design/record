@@ -1,0 +1,246 @@
+{
+  "created": "2026-10-26T01:48:54.679Z",
+  "count": 1,
+  "offset": 0,
+  "release-groups": [
+    {
+      "id": "6139bff5-9a9a-3038-99ca-c7fa8bb754f3",
+      "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "score": 100,
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "artist-credit-id": "bfd08d28-4538-32f5-ac5d-505bc6f79cd3",
+      "count": 25,
+      "title": "Amused to Death",
+      "first-release-date": "1992-09-01",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Roger Waters",
+          "artist": {
+            "id": "0f50beab-d77d-4f0f-ac26-0b87d3e9b11b",
+            "name": "Roger Waters",
+            "sort-name": "Waters, Roger",
+            "aliases": [
+              {
+                "sort-name": "WATERS GEORGE ROGER",
+                "name": "WATERS GEORGE ROGER",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Waters",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Waters",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Waters, George Roger",
+                "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                "name": "George Roger Waters",
+                "locale": null,
+                "type": "Legal name",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ロジャー・ウォーターズ",
+                "name": "ロジャー・ウォーターズ",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "86933817-dccd-4657-bb8b-adab98e4ff6c",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "5cebf197-5fc1-4921-8e41-86586c71e457",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "7ef9f7ce-3b3e-4be8-add1-3dcd2977ee49",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "48c5b7f9-9e92-4537-bb4c-efbb2d7cf79a",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "2984fd68-a05d-4e98-9db2-fe7ad311a463",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "7369df2f-b329-4658-9dea-d8e6b7d5f499",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "fd1bfa0b-5d60-3b3a-94f2-70f200c90b11",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death: Limited Edition",
+          "status": "Official"
+        },
+        {
+          "id": "adc3ecfd-550f-49bf-a7d1-7dcb3bd3d504",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "88b29a3e-a633-32f3-948e-126816c0cae9",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "c5690584-695e-46be-a1d5-958cfaa140d0",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "b995fc99-d45f-4536-9add-c734e92ad292",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "fedbe63b-6d75-4b95-8c20-9285ff0ac2d5",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "c8ff240f-844d-470c-9823-8b0c6685a0e0",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "004143a7-76af-4f3d-a760-4ac29a20405e",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "57deaba4-8df6-4a3a-95f2-1b457ea52f40",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "a35ce381-b118-4813-a571-4653cee55fdb",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "040d218c-e1bd-415c-9ba1-8f210e11d5bb",
+          "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+          "title": "Amused to Death",
+          "status": "Bootleg"
+        },
+        {
+          "id": "2736c078-fdb8-3cea-bf4d-3c585dbd25d0",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "0723e2af-9fff-428a-93e5-d57c0d691550",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "f82bf3b3-c714-43f1-9354-86697da2ad1e",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "fcf1f357-c0b3-3edc-8fa2-762a3b618a04",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "c1b3f914-0b7f-3ee2-90ff-df83a62f4eb6",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "a4eaee84-a6bc-31e8-9916-b0f31f21a714",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "72012153-aa2c-4f19-b7e4-c0fdef3405ac",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        },
+        {
+          "id": "e41b60bd-818f-4ca7-b5e2-13622b046889",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Amused to Death",
+          "status": "Official"
+        }
+      ],
+      "tags": [
+        {
+          "count": 8,
+          "name": "rock"
+        },
+        {
+          "count": 0,
+          "name": "alternative rock"
+        },
+        {
+          "count": 8,
+          "name": "progressive rock"
+        },
+        {
+          "count": 2,
+          "name": "art rock"
+        },
+        {
+          "count": -1,
+          "name": "symphonic rock"
+        },
+        {
+          "count": 1,
+          "name": "qsound"
+        }
+      ]
+    }
+  ]
+}
