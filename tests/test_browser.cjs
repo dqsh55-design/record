@@ -193,3 +193,12 @@ run("globalThis.makeDefaultChronology=newChronologyState;newChronologyState=()=>
  assert.equal((await run("api('artist?query=retry')")).artists.length,0);
  console.log('Network safety: response-body timeout, bounded 429 retries and queue recovery passed');
 })().catch(error=>{console.error(error);process.exitCode=1});
+
+// Japanese search uses the same normalization for alias keys and input.
+for(const input of ['ノラジョーンズ','ノラ・ジョーンズ','ノラ ジョーンズ']){
+ assert.equal(vm.runInContext('artistSearchTerm('+JSON.stringify(input)+')',context),'Norah Jones');
+}
+for(const [input,expected] of [['スタン・ゲッツ','Stan Getz'],['ビートルズ','The Beatles'],['Norah Jones','Norah Jones'],['未知の名前','未知の名前']]){
+ assert.equal(vm.runInContext('artistSearchTerm('+JSON.stringify(input)+')',context),expected);
+}
+console.log('Japanese aliases: Norah Jones variants, long-vowel aliases, English and unknown queries passed');

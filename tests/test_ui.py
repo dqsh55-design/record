@@ -854,6 +854,16 @@ class BrowserTests(unittest.TestCase):
         section.get_by_role('button', name='アルバム名順', exact=True).click()
         expect(section.get_by_role('button', name='アルバム名順', exact=True)).to_have_class('filter active')
 
+    def test_norah_japanese_search_variants(self):
+        for query in ['ノラジョーンズ', 'ノラ・ジョーンズ', 'ノラ ジョーンズ']:
+            page = self.open_site()
+            requests = []
+            page.on('request', lambda request: requests.append(request.url))
+            page.get_by_role('textbox', name='アーティスト名').fill(query)
+            page.get_by_role('button', name='検索', exact=True).click()
+            expect(page.get_by_role('button', name='この名義の作品を見る →')).to_be_visible()
+            self.assertTrue(any('query=Norah%20Jones' in url for url in requests))
+
     def test_mobile_layout_and_touch_targets(self):
         for width in (320, 375, 390, 430):
             with self.subTest(width=width):
