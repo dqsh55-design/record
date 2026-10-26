@@ -23,7 +23,7 @@
 @media(max-width:350px){main{padding-left:14px;padding-right:14px}#official-releases .album{grid-template-columns:76px minmax(0,1fr);gap:12px}#official-releases .cover{width:76px;height:76px}}
 @media(prefers-reduced-motion:no-preference){.loading-line{animation:loading-pulse 1.5s ease-in-out infinite alternate}@keyframes loading-pulse{to{opacity:.45}}}
 .work-editions>summary{min-height:44px;box-sizing:border-box;padding:13px 0;font-size:13px;cursor:pointer;color:#555}.work-editions{border-bottom:1px solid #e0ded9}.work-editions[open]{padding-bottom:8px}.release-work-group{min-width:0}.release-work-group>.release-work{font-size:12px;font-weight:400;color:#777;margin:18px 0 0}.work-editions .album{border-bottom:0}
-</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます</div><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Music data by MusicBrainz · v0.69</footer></main>
+</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます</div><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Music data by MusicBrainz · v0.70</footer></main>
 <script>
 const $=id=>document.getElementById(id), status=$('status'),results=$('results');
 let relatedCatalogAlbums=[],artistChoices=[],ytVisible=20,ytSort='name',ytAlbums=[],albums=[],filter='おすすめ',artistName='',offset=0,artistId='',busy=false,total=0;
@@ -624,6 +624,7 @@ function inDateRange(group,range){
  return !!date&&(!range.low||date.slice(0,4)>=range.low.slice(0,4))&&(!range.high||date.slice(0,4)<=range.high.slice(0,4));
 }
 function switchChronology(order){
+ autoLoadIntent=false;
  if(chronology?.restartRequired)apiResponses.clear();
  chronologyOrder=order;chronologyGeneration++;releaseObserver?.disconnect();
  officialLoading=false;officialError='';officialReleases=[];officialOffset=0;officialTotal=0;chronology=null;
@@ -634,6 +635,18 @@ function workIndexEntry(g){
  return {id:g.id,title:g.title,'first-release-date':g['first-release-date'],'primary-type':g['primary-type'],'secondary-types':g['secondary-types'],'artist-credit':Array.isArray(g['artist-credit'])?g['artist-credit'].map(c=>c&&typeof c==='object'?{name:c.name,joinphrase:c.joinphrase,artist:c.artist?{id:c.artist.id,name:c.artist.name}:undefined}:c):g['artist-credit']};
 }
 async function loadIndexPage(state,selected){
+ if(state.mode==='probe'){
+  const d=await api('release-group?artist='+encodeURIComponent(selected)+'&type=album&inc=artist-credits&limit=100&offset=0&fmt=json',{attempts:1});
+  const batch=d['release-groups'],count=d['release-group-count'];
+  if(!Array.isArray(batch)||!Number.isInteger(count)||count<0||(!batch.length&&count)||batch.length>100||
+   batch.some(g=>!g.id||g['primary-type']!=='Album'||!(g['artist-credit']||[]).some(c=>c.artist?.id===selected)))throw Error('作品索引の件数を確認できませんでした');
+  if(count<=100){
+   const groups=uniqueReleaseIds(batch.map(workIndexEntry));
+   if(groups.length!==count)throw Error('作品索引が不完全です');
+   state.mode='browse';state.groups=orderedGroups(groups);state.indexOffset=count;state.indexTotal=count;state.ready=true;state.allReady=true;
+  }else state.mode='ranges';
+  return;
+ }
  const range=state.ranges[state.range];
  if(state.mode==='ranges'){
   const cached=rangeIndexCache.get(selected+'|'+JSON.stringify(range));
@@ -663,16 +676,17 @@ async function loadIndexPage(state,selected){
   if(state.indexOffset>=count){if(state.pending.length!==count){state.pending=[];state.indexOffset=0;state.indexTotal=null;throw Error('作品索引が不完全です。再試行してください')}state.groups=orderedGroups(state.pending);state.pending=[];state.ready=true;state.allReady=true}
  }
 }
-async function loadOfficialReleases(reset=false){
+async function loadOfficialReleases(reset=false,probeSmallIndex=false){
  if(officialLoading&&!reset)return;
- if(reset){creditScope='credited';chronologyGeneration++;chronologyOrder='asc';chronology=null;officialReleases=[];officialOffset=0;officialTotal=0;officialError=''}
+ if(reset){autoLoadIntent=false;creditScope='credited';chronologyGeneration++;chronologyOrder='asc';chronology=null;officialReleases=[];officialOffset=0;officialTotal=0;officialError=''}
  const generation=chronologyGeneration,selected=artistId,current=()=>generation===chronologyGeneration&&selected===artistId;
- if(!chronology)chronology=newChronologyState();
+ if(!chronology){chronology=newChronologyState();if(probeSmallIndex)chronology.mode='probe'}
  const state=chronology;officialLoading=true;officialError='';render(true);
  try{
   while(state.cursor>=state.groups.length&&!state.allReady){
    try{await loadIndexPage(state,selected)}catch(error){
     if(!current())return;
+    if(state.mode==='probe'){apiResponses.clear();state.mode='ranges';continue}
     apiResponses.clear(); // Invalid/count-changing payloads must be fetched again on retry.
     // Before publishing anything, a failed/invalid search safely falls back to full browse.
     // After a prefix is visible, retain it and retry the same range; never switch sources mid-list.
@@ -695,14 +709,42 @@ async function loadOfficialReleases(reset=false){
  }catch(e){if(current()){apiResponses.clear();officialError=e.message}}
  finally{if(current()){officialLoading=false;status.textContent='';render(true)}}
 }
+let autoLoadIntent=false,autoScrollY=0;
+if(typeof window!=='undefined')window.addEventListener('scroll',()=>{
+ const y=window.scrollY;
+ if(y>autoScrollY+1){autoLoadIntent=true;observeReleaseEnd()}
+ else if(y<autoScrollY){autoLoadIntent=false;releaseObserver?.disconnect()}
+ autoScrollY=y;
+},{passive:true});
+// A downward gesture at the bottom still counts when the page cannot move further.
+if(typeof window!=='undefined'){
+ window.addEventListener('wheel',event=>{
+  if(event.deltaY>0){autoLoadIntent=true;observeReleaseEnd()}
+  else if(event.deltaY<0){autoLoadIntent=false;releaseObserver?.disconnect()}
+ },{passive:true});
+ let touchY=null;
+ window.addEventListener('touchstart',event=>{touchY=event.touches[0]?.clientY??null},{passive:true});
+ window.addEventListener('touchmove',event=>{
+  const y=event.touches[0]?.clientY;
+  if(touchY!==null&&y!==undefined){
+   if(y<touchY-1){autoLoadIntent=true;observeReleaseEnd()}
+   else if(y>touchY+1){autoLoadIntent=false;releaseObserver?.disconnect()}
+  }
+  touchY=y??null;
+ },{passive:true});
+}
 function observeReleaseEnd(){
  releaseObserver?.disconnect();
  const target=document.getElementById('chronology-more');
- if(!target||officialLoading||officialError||creditScope==='participation'||typeof IntersectionObserver==='undefined')return;
- releaseObserver=new IntersectionObserver(entries=>{
-  if(entries.some(e=>e.isIntersecting)){releaseObserver.disconnect();loadOfficialReleases()}
- },{rootMargin:'0px 0px 500px 0px'});
- releaseObserver.observe(target);
+ if(!target||officialLoading||officialError||creditScope==='participation'||!autoLoadIntent||typeof IntersectionObserver==='undefined')return;
+ const generation=chronologyGeneration,selected=artistId;
+ const observer=new IntersectionObserver(entries=>{
+  if(observer!==releaseObserver||!target.isConnected||officialLoading||officialError||generation!==chronologyGeneration||selected!==artistId)return;
+  if(autoLoadIntent&&entries.some(e=>e.isIntersecting)){
+   autoLoadIntent=false;observer.disconnect();loadOfficialReleases();
+  }
+ },{rootMargin:'0px 0px 300px 0px'});
+ releaseObserver=observer;observer.observe(target);
 }
 function editionTrackText(d){
  const lines=[];
@@ -803,7 +845,7 @@ function render(preserveEditions=false){
  if(creditScope==='participation'){const scopeNote=document.createElement('p');scopeNote.className='release-detail';scopeNote.textContent='確認できた演奏参加のみ表示しています。全参加作品の一覧ではありません。';section.append(scopeNote)}
  line('初期表示は正式クレジットのある本人・共同名義。切替は取得済みの発売盤が対象です。演奏参加は詳細の曲目取得で確認した録音の登録根拠に限り、参加作品の網羅性は保証しません。');
  line('発売盤 '+officialOffset+'件取得 · 索引 '+(chronology?.groups.length||0)+'作品の年代順を確認済み。後の範囲は追加操作に応じて取得します。全作品取得済みという意味ではありません。');
- if(chronology?.mode==='browse')line('検索索引を利用できないため、作品索引全体を確認しています。'+chronology.indexOffset+' / '+(chronology.indexTotal??'確認中')+'件。');
+ if(chronology?.mode==='browse')line((chronology.allReady?'作品索引全体の年代順を確認済み。':'作品索引全体を確認しています。')+chronology.indexOffset+' / '+(chronology.indexTotal??'確認中')+'件。');
  else if(chronology&&!chronology.allReady)line('索引の確認範囲：'+chronology.ranges[chronology.range]?.label+' · '+chronology.indexOffset+' / '+(chronology.indexTotal??'確認中')+'件。');
  line('一覧には取得済みの盤から発売区分・レーベル・画像登録・品番などの情報がそろった盤を優先表示します。画像の実配信・推奨盤・正規性確認済みを保証するものではありません。操作中は表示盤を固定します。ほかの盤は作品内の「ほかの発売盤を見る」から確認できます。');
  line('同じ作品IDの発売盤は同じ作品として整理し、異なる発売盤IDは保持します。同名だけでは統合しません。再発の正規性は発売年や発売元名だけでは判定しません。');
@@ -931,12 +973,13 @@ function refreshEditionLinks(){
   const state=article.querySelector('.link-state');if(state)state.textContent=link.dataset.linkState;
  }
 }
-async function loadListeningCatalog(artist){
+async function loadListeningCatalog(artist,initialReady=Promise.resolve()){
  try{
   const response=await fetchJSONWithTimeout('data/ytmusic-albums.json');if(artistId!==artist.id||!response.ok)return;
   const catalog=await response.json();if(artistId!==artist.id)return;
   ytAlbums=catalog[artistName]||[];
   if(artist.type==='Group'){
+   await initialReady;if(artistId!==artist.id)return;
    const relations=await api('artist/'+encodeURIComponent(artist.id)+'?inc=artist-rels&fmt=json');if(artistId!==artist.id)return;
    const names=new Set((relations.relations||[]).filter(r=>r.type==='member of band'&&r.artist).map(r=>normalize(r.artist.name)));
    for(const [name,entries] of Object.entries(catalog))if(names.has(normalize(name)))relatedCatalogAlbums.push(...entries);
@@ -947,7 +990,7 @@ async function loadListeningCatalog(artist){
 async function chooseArtist(artist){
  artistChoices=[];albums=[];ytAlbums=[];relatedCatalogAlbums=[];ytVisible=20;ytSort='name';offset=0;total=0;filter='おすすめ';legacyLoadedFor='';legacyLoadingFor='';legacyError='';
  artistId=artist.id;artistName=artist.name;results.innerHTML='';status.textContent='';
- const task=loadOfficialReleases(true);loadListeningCatalog(artist);loadDiscographyReferences();
+ const task=loadOfficialReleases(true,true);loadListeningCatalog(artist,task);loadDiscographyReferences();
  await task;if(artistId===artist.id)showRelatedBands();
 }
 
