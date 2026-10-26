@@ -471,7 +471,7 @@ class BrowserTests(unittest.TestCase):
             page.locator('#chronology-more').scroll_into_view_if_needed()
             page.mouse.wheel(0, 300)
             page.wait_for_function('officialReleases.length >= 105', timeout=15000)
-            self.assertTrue(page.evaluate("firstEdition===document.querySelector('#official-releases article')"))
+            self.assertTrue(page.evaluate("firstEdition.isConnected && firstEdition===Array.from(document.querySelectorAll('#official-releases article')).find(row=>row.dataset.releaseId===firstEdition.dataset.releaseId)"))
             self.assertEqual(section.locator('article[data-release-id="old-99"]').count(), 1)
             # Changing direction discards the prefix and starts at the newest known work.
             section.get_by_role('combobox', name='並び順', exact=True).select_option('desc')
