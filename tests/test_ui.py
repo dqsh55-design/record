@@ -191,7 +191,7 @@ class BrowserTests(unittest.TestCase):
                 section = page.locator('#official-releases')
                 section.get_by_role('combobox', name='名義', exact=True).select_option('all')
                 expect(section.get_by_role('link', name='YouTube Musicで聴く')).to_have_attribute('href', album['url'])
-                expect(section.locator('.album-label')).to_have_text(detail['label'])
+                expect(section.locator('.album-label')).to_have_text('この盤のレーベル：' + detail['label'])
                 expect(section.locator('.album-title')).to_have_text(release['title'])
                 page.wait_for_function('!officialLoading')
                 expect(section.locator('.edition-identity')).not_to_be_visible()
@@ -214,7 +214,7 @@ class BrowserTests(unittest.TestCase):
             card = page.locator('#official-releases article').first
             card.scroll_into_view_if_needed()
             expect(card.locator('.album-title')).to_be_visible()
-            expect(card.locator('.album-label')).to_have_text('Epic')
+            expect(card.locator('.album-label')).to_have_text('この盤のレーベル：Epic')
             expect(card.locator('.meta')).to_have_text('2001年（初回発売）')
             expect(card.locator('.edition-identity')).not_to_be_visible()
             expect(card.locator('.link-state')).to_have_text('配信状況は未確認')
@@ -590,6 +590,68 @@ class BrowserTests(unittest.TestCase):
             expect(section.locator('h2')).to_have_text(band['name'] + ' の発売アルバム')
             expect(section.locator('article')).to_have_count(0)
             expect(section.get_by_role('combobox', name='名義', exact=True)).to_have_value('credited')
+            self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+            page.close()
+
+    def test_v066_official_work_and_edition_evidence_stay_separate(self):
+        # Real MB response replay; official sources are reviewed facts, not live calls.
+        groups = ('6ccac9d2-22ed-33de-bd5d-f2aadcacf7f8',
+                  '00fa7988-ba9e-4f50-8839-09a9d79a5e45',
+                  'c67ed8da-fa12-433a-8f8a-a45c7bfe4d7b')
+        editions = {}
+        for group_id in groups:
+            data = json.loads((ROOT / 'docs/v0.66' / (group_id + '-editions.json')).read_text())
+            for release in data['releases']:
+                editions[release['id']] = {**release, 'release-group': data['group']}
+        selected = [editions[id] for id in (
+            'c88138cf-00f3-3c70-8757-3bbe0e4713d1',
+            'dd00e0df-dd7e-48af-8b13-921bf505167f',
+            'c766c537-9eef-4005-ad35-b6b0a1bd5712',
+            '608d22ac-be83-453e-97e8-6fc607a30908',
+            '36469a3c-5ed7-460d-b2f8-c78208589fad',
+            '93f9b391-3836-477e-bc3b-9d350684fb99')]
+        refs = json.loads((ROOT / 'data/discography-references.json').read_text())
+        for width in (320, 390, 430):
+            page = self.open_site(width)
+            pending = []
+            page.route('**/data/discography-references.json', lambda route: pending.append(route))
+            page.evaluate("items=>{artistId='985c709c-7771-4de3-9024-7bda29ebe3f9';artistName='Norah Jones';creditScope='all';officialReleases=[...items,items[0]];render();void loadDiscographyReferences()}", selected)
+            section = page.locator('#official-releases')
+            expect(section.locator('article')).to_have_count(6)
+            expect(section.locator('.release-work')).to_have_count(3)
+            expect(section.locator('.release-work').first).to_contain_text('4発売盤')
+            original = section.locator('article').first
+            original.locator('summary').click()
+            field = original.get_by_role('textbox', name='Come Away With Meの発売盤リンク')
+            field.fill('https://music.youtube.com/browse/MPREb_draft')
+            page.evaluate("window.evidenceCard=document.querySelector('#official-releases article')")
+            expect(original.locator('.discography-evidence')).to_contain_text('未確認')
+            page.wait_for_function('discographyReferenceTask !== null')
+            self.assertEqual(len(pending), 1)
+            pending[0].fulfill(json=refs)
+            expect(original.locator('.discography-evidence')).to_contain_text('照合済み')
+            self.assertTrue(page.evaluate("evidenceCard===document.querySelector('#official-releases article')"))
+            expect(field).to_have_value('https://music.youtube.com/browse/MPREb_draft')
+            expect(field).to_be_focused()
+            expect(original.locator('.discography-evidence')).not_to_contain_text('ユニバーサル ミュージック合同会社')
+            reissue = section.locator('article[data-release-id="dd00e0df-dd7e-48af-8b13-921bf505167f"]')
+            reissue.locator('summary').click()
+            expect(reissue.locator('.discography-evidence')).to_contain_text('正規再発盤')
+            expect(reissue.locator('.discography-evidence')).to_contain_text('この盤の発売元（公式資料）：ユニバーサル ミュージック合同会社')
+            expect(reissue.locator('.meta')).to_have_text('2002年（初回発売）')
+            expect(reissue.locator('.edition-release-meta')).to_contain_text('この盤の発売：2022-05-27')
+            expect(reissue.locator('.album-label')).to_have_text('この盤のレーベル：Blue Note')
+            expect(reissue.get_by_role('link', name='公式資料を見る ↗')).to_have_count(2)
+            expect(section.locator('article[data-release-id="608d22ac-be83-453e-97e8-6fc607a30908"]')).to_contain_text('確認待ち')
+            # A newer detail can change the status/label without replacing the work year or URL draft.
+            detail = {**selected[0], 'date': '2030', 'status': None, 'label-info': [], 'media': []}
+            page.route('**/ws/2/release/c88138cf-00f3-3c70-8757-3bbe0e4713d1?**', lambda route: route.fulfill(json=detail))
+            original.get_by_role('button', name='曲目を取得', exact=True).click()
+            expect(original.locator('.edition-release-meta')).to_contain_text('確認待ち')
+            expect(original.locator('.edition-release-meta')).to_contain_text('この盤の発売：2030')
+            expect(original.locator('.meta')).to_have_text('2002年（初回発売）')
+            expect(original.locator('.album-label')).to_have_text('レーベル未登録')
+            expect(field).to_have_value('https://music.youtube.com/browse/MPREb_draft')
             self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
             page.close()
 

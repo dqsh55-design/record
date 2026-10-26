@@ -1,0 +1,209 @@
+{
+  "group": {
+    "title": "New York City / Come Away With Me",
+    "primary-type": "Album",
+    "id": "9c3469a2-b684-3030-bd4d-e0704305f953",
+    "disambiguation": "",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "artist-credit": [
+      {
+        "name": "The Peter Malick Group",
+        "joinphrase": " feat. ",
+        "artist": {
+          "name": "The Peter Malick Group",
+          "sort-name": "Malick, Peter, Group, The",
+          "disambiguation": "",
+          "type": "Group",
+          "country": "US",
+          "id": "baeb409b-87ef-465e-97c4-496290fd3fcd",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+        }
+      },
+      {
+        "name": "Norah Jones",
+        "joinphrase": " / ",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9"
+        }
+      },
+      {
+        "joinphrase": "",
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "type": "Person",
+          "disambiguation": "",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": ""
+  },
+  "releases": [
+    {
+      "cover-art-archive": {
+        "back": false,
+        "count": 0,
+        "artwork": false,
+        "darkened": false,
+        "front": false
+      },
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "packaging": null,
+      "title": "New York City / Come Away With Me",
+      "quality": "normal",
+      "id": "ea4d0e12-a286-4cc8-aa4c-22511f7fae0e",
+      "disambiguation": "",
+      "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+      "barcode": null,
+      "status": "Bootleg",
+      "media": [
+        {
+          "title": "",
+          "track-count": 22,
+          "format": null,
+          "format-id": null,
+          "id": "865a8901-9c03-35ec-b3be-b6a6336adc55",
+          "position": 1
+        }
+      ],
+      "asin": null,
+      "packaging-id": null,
+      "label-info": [],
+      "artist-credit": [
+        {
+          "joinphrase": " feat. ",
+          "name": "The Peter Malick Group",
+          "artist": {
+            "sort-name": "Malick, Peter, Group, The",
+            "type": "Group",
+            "disambiguation": "",
+            "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+            "name": "The Peter Malick Group",
+            "id": "baeb409b-87ef-465e-97c4-496290fd3fcd",
+            "country": "US"
+          }
+        },
+        {
+          "name": "Norah Jones",
+          "artist": {
+            "type": "Person",
+            "sort-name": "Jones, Norah",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "disambiguation": "",
+            "country": "US",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "name": "Norah Jones"
+          },
+          "joinphrase": " / "
+        },
+        {
+          "joinphrase": "",
+          "artist": {
+            "type": "Person",
+            "sort-name": "Jones, Norah",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "disambiguation": "",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "country": "US",
+            "name": "Norah Jones"
+          },
+          "name": "Norah Jones"
+        }
+      ]
+    },
+    {
+      "disambiguation": "",
+      "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+      "barcode": null,
+      "status": "Bootleg",
+      "media": [
+        {
+          "format": null,
+          "track-count": 19,
+          "id": "d3f53fc5-fb92-3aa5-bed6-cda25bcd0fcd",
+          "format-id": null,
+          "position": 1,
+          "title": ""
+        }
+      ],
+      "asin": null,
+      "packaging-id": null,
+      "label-info": [],
+      "artist-credit": [
+        {
+          "artist": {
+            "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+            "disambiguation": "",
+            "country": "US",
+            "id": "baeb409b-87ef-465e-97c4-496290fd3fcd",
+            "name": "The Peter Malick Group",
+            "type": "Group",
+            "sort-name": "Malick, Peter, Group, The"
+          },
+          "name": "The Peter Malick Group",
+          "joinphrase": " feat. "
+        },
+        {
+          "joinphrase": " / ",
+          "artist": {
+            "type": "Person",
+            "sort-name": "Jones, Norah",
+            "country": "US",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "name": "Norah Jones",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "disambiguation": ""
+          },
+          "name": "Norah Jones"
+        },
+        {
+          "artist": {
+            "sort-name": "Jones, Norah",
+            "type": "Person",
+            "disambiguation": "",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "name": "Norah Jones",
+            "country": "US",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9"
+          },
+          "name": "Norah Jones",
+          "joinphrase": ""
+        }
+      ],
+      "quality": "normal",
+      "id": "eb08d617-4887-467d-87c6-34b9291502c8",
+      "packaging": null,
+      "title": "New York City / Come Away With Me",
+      "cover-art-archive": {
+        "front": false,
+        "artwork": false,
+        "darkened": false,
+        "count": 0,
+        "back": false
+      },
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      }
+    }
+  ]
+}

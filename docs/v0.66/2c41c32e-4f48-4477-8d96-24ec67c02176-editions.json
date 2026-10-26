@@ -1,0 +1,113 @@
+{
+  "group": {
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "title": "More Appearances Featuring Norah Jones",
+    "primary-type": "Album",
+    "id": "2c41c32e-4f48-4477-8d96-24ec67c02176",
+    "disambiguation": "",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2015"
+  },
+  "releases": [
+    {
+      "title": "More Appearances Featuring Norah Jones",
+      "media": [
+        {
+          "position": 1,
+          "track-count": 19,
+          "format": "Digital Media",
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "title": "",
+          "id": "28b44ac0-c2db-3731-9fea-7d3daedfb980"
+        }
+      ],
+      "cover-art-archive": {
+        "count": 2,
+        "darkened": false,
+        "artwork": true,
+        "back": true,
+        "front": true
+      },
+      "packaging": "None",
+      "artist-credit": [
+        {
+          "name": "Norah Jones",
+          "joinphrase": "",
+          "artist": {
+            "name": "Norah Jones",
+            "country": "US",
+            "disambiguation": "",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "sort-name": "Jones, Norah",
+            "type": "Person",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9"
+          }
+        }
+      ],
+      "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "date": "2015",
+      "release-events": [
+        {
+          "date": "2015",
+          "area": {
+            "name": "Europe",
+            "disambiguation": "",
+            "iso-3166-1-codes": [
+              "XE"
+            ],
+            "type-id": null,
+            "sort-name": "Europe",
+            "type": null,
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a"
+          }
+        }
+      ],
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "label-info": [
+        {
+          "catalog-number": "CDOMEN 019F",
+          "label": {
+            "id": "2812f64b-8228-41b3-a0f2-0560213d8040",
+            "type": "Bootleg Production",
+            "sort-name": "Omen Records",
+            "label-code": null,
+            "type-id": "fdac9b96-359b-3488-9322-ad99c2473636",
+            "disambiguation": "bootleg",
+            "name": "Omen Records"
+          }
+        }
+      ],
+      "status": "Bootleg",
+      "id": "90352f3e-cf6b-4a3b-b2b4-8e576a73300b",
+      "quality": "normal",
+      "country": "XE",
+      "asin": null,
+      "barcode": null,
+      "disambiguation": ""
+    }
+  ]
+}

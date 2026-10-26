@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "references": [
+    {
+      "scope": "work",
+      "groupId": "6ccac9d2-22ed-33de-bd5d-f2aadcacf7f8",
+      "title": "Come Away With Me",
+      "artistIds": [
+        "985c709c-7771-4de3-9024-7bda29ebe3f9"
+      ],
+      "kind": "studio",
+      "originalYear": "2002",
+      "official": true,
+      "sourceKind": "artist-or-label",
+      "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+      "checkedAt": "2026-10-26",
+      "reviewNote": "Blue Noteの経歴で2002年のデビュー作品と確認。個別盤の発売元の根拠には使わない。"
+    },
+    {
+      "scope": "work",
+      "groupId": "c67ed8da-fa12-433a-8f8a-a45c7bfe4d7b",
+      "title": "…’Til We Meet Again",
+      "artistIds": [
+        "985c709c-7771-4de3-9024-7bda29ebe3f9"
+      ],
+      "kind": "live",
+      "originalYear": "2021",
+      "official": true,
+      "sourceKind": "artist-or-label",
+      "sourceUrl": "https://www.norahjones.com/news-1/2021/4/16/norah-jones-releases-first-ever-live-album-til-we-meet-again",
+      "checkedAt": "2026-10-26",
+      "reviewNote": "2021年4月16日の公式ライブ盤。日本語の商品名にベストとあってもベスト盤への変更根拠にはしない。"
+    },
+    {
+      "scope": "work",
+      "groupId": "00fa7988-ba9e-4f50-8839-09a9d79a5e45",
+      "title": "…Featuring",
+      "artistIds": [
+        "985c709c-7771-4de3-9024-7bda29ebe3f9"
+      ],
+      "kind": "compilation",
+      "originalYear": "2010",
+      "official": true,
+      "sourceKind": "artist-or-label",
+      "sourceUrl": "https://norahjones.jp/disco/tocp-70881/",
+      "checkedAt": "2026-10-26",
+      "reviewNote": "公式ディスコグラフィーで2010年11月3日の日本先行発売。共演曲の編集盤。全ての国別盤を独立確認した意味ではない。"
+    },
+    {
+      "scope": "work",
+      "groupId": "329cb3f2-b650-4b38-bcd9-2fb2c6f3b8b9",
+      "title": "Visions",
+      "artistIds": [
+        "985c709c-7771-4de3-9024-7bda29ebe3f9"
+      ],
+      "kind": "studio",
+      "originalYear": "2024",
+      "official": true,
+      "sourceKind": "artist-or-label",
+      "sourceUrl": "https://www.norahjones.com/news-1/visions",
+      "checkedAt": "2026-10-26",
+      "reviewNote": "公式発表で2024年3月8日、studio albumと確認。"
+    },
+    {
+      "scope": "release",
+      "releaseId": "dd00e0df-dd7e-48af-8b13-921bf505167f",
+      "groupId": "6ccac9d2-22ed-33de-bd5d-f2aadcacf7f8",
+      "artistIds": [
+        "985c709c-7771-4de3-9024-7bda29ebe3f9"
+      ],
+      "kind": "studio",
+      "edition": "reissue",
+      "releaseDate": "2022-05-27",
+      "catalogNumber": "UCCQ-1155/7",
+      "trackCounts": [
+        14,
+        17,
+        13
+      ],
+      "publisher": "ユニバーサル ミュージック合同会社",
+      "official": true,
+      "sourceKind": "artist-or-label",
+      "sourceUrl": "https://www.universal-music.co.jp/norah-jones/products/uccq-1155/",
+      "checkedAt": "2026-10-26",
+      "reviewNote": "公式商品ページの日本盤3CD・品番・日付・各ディスク曲数を照合。発売元は販売元欄の値。MBのBlue Noteはインプリント欄として保持し、Universal Music/UNIVERSAL JAZZと文字列同一扱いしない。2002年の発売元の根拠にはしない。",
+      "mediaFormats": [
+        "CD",
+        "CD",
+        "CD"
+      ]
+    },
+    {
+      "scope": "work",
+      "groupId": "1155e2ce-f1b2-394a-b23a-22406c8782a3",
+      "title": "Not Too Late",
+      "artistIds": [
+        "985c709c-7771-4de3-9024-7bda29ebe3f9"
+      ],
+      "kind": "studio",
+      "originalYear": "2007",
+      "official": true,
+      "sourceKind": "artist-or-label",
+      "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+      "checkedAt": "2026-10-26",
+      "reviewNote": "Blue Note公式の年は2007。取得したMB索引は2006。作品索引の日付を公式年として追認せず相違・未確認を表示する。再発年からの補正もしない。"
+    }
+  ]
+}

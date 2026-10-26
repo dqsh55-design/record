@@ -1,0 +1,653 @@
+{
+  "group": {
+    "first-release-date": "2021-04-16",
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "artist": {
+          "disambiguation": "",
+          "type": "Person",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones"
+        },
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": "",
+    "id": "c67ed8da-fa12-433a-8f8a-a45c7bfe4d7b",
+    "primary-type": "Album",
+    "title": "…’Til We Meet Again",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ]
+  },
+  "releases": [
+    {
+      "media": [
+        {
+          "track-count": 14,
+          "position": 1,
+          "format": "CD",
+          "id": "60517906-2a93-3fa5-849d-12b3f1cce875",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": ""
+        }
+      ],
+      "barcode": "602435689845",
+      "country": "US",
+      "title": "…’Til We Meet Again",
+      "id": "29d8e666-f283-4bcb-9190-4cce16258c65",
+      "date": "2021-04-16",
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "label-info": [
+        {
+          "label": {
+            "sort-name": "Blue Note",
+            "name": "Blue Note",
+            "type": "Imprint",
+            "disambiguation": "",
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 133
+          },
+          "catalog-number": "B003344002"
+        }
+      ],
+      "artist-credit": [
+        {
+          "artist": {
+            "disambiguation": "",
+            "type": "Person",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "country": "US",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "sort-name": "Jones, Norah",
+            "name": "Norah Jones"
+          },
+          "joinphrase": "",
+          "name": "Norah Jones"
+        }
+      ],
+      "status": "Official",
+      "cover-art-archive": {
+        "count": 2,
+        "artwork": true,
+        "darkened": false,
+        "back": true,
+        "front": true
+      },
+      "disambiguation": "",
+      "packaging": null,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "date": "2021-04-16",
+          "area": {
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "sort-name": "United States",
+            "name": "United States",
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "type": null,
+            "disambiguation": "",
+            "type-id": null
+          }
+        }
+      ],
+      "asin": null,
+      "packaging-id": null
+    },
+    {
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "asin": null,
+      "release-events": [
+        {
+          "area": {
+            "iso-3166-1-codes": [
+              "XW"
+            ],
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "type": null,
+            "disambiguation": "",
+            "type-id": null
+          },
+          "date": "2021-04-16"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging": "None",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true,
+        "back": false,
+        "darkened": false,
+        "artwork": true,
+        "count": 1
+      },
+      "status": "Official",
+      "artist-credit": [
+        {
+          "joinphrase": "",
+          "artist": {
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "country": "US",
+            "type": "Person",
+            "disambiguation": "",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "sort-name": "Jones, Norah",
+            "name": "Norah Jones"
+          },
+          "name": "Norah Jones"
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "type": "Imprint",
+            "disambiguation": "",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 133,
+            "sort-name": "Blue Note",
+            "name": "Blue Note"
+          },
+          "catalog-number": null
+        }
+      ],
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "id": "378832a1-b7f3-4117-8a0c-2382db7c89fb",
+      "date": "2021-04-16",
+      "title": "…’Til We Meet Again",
+      "country": "XW",
+      "barcode": "00602435689821",
+      "media": [
+        {
+          "id": "d1e1ee25-a2f8-3a12-b8a7-98607bee1e50",
+          "title": "",
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "track-count": 14,
+          "position": 1,
+          "format": "Digital Media"
+        }
+      ]
+    },
+    {
+      "asin": null,
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "packaging": "None",
+      "cover-art-archive": {
+        "count": 1,
+        "artwork": true,
+        "darkened": false,
+        "front": true,
+        "back": false
+      },
+      "disambiguation": "Japan exclusive",
+      "release-events": [
+        {
+          "area": {
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+            "disambiguation": "",
+            "type": null,
+            "type-id": null,
+            "iso-3166-1-codes": [
+              "JP"
+            ],
+            "sort-name": "Japan",
+            "name": "Japan"
+          },
+          "date": "2021-04-16"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "label-info": [
+        {
+          "label": {
+            "sort-name": "Blue Note",
+            "name": "Blue Note",
+            "label-code": 133,
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "disambiguation": "",
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946"
+          },
+          "catalog-number": null
+        }
+      ],
+      "artist-credit": [
+        {
+          "name": "Norah Jones",
+          "artist": {
+            "name": "Norah Jones",
+            "sort-name": "Jones, Norah",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "country": "US",
+            "disambiguation": "",
+            "type": "Person",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+          },
+          "joinphrase": ""
+        }
+      ],
+      "status": "Official",
+      "title": "…’Til We Meet Again",
+      "country": "JP",
+      "id": "3aaa1f7b-3e12-440f-aa3d-9551617e94d8",
+      "date": "2021-04-16",
+      "media": [
+        {
+          "track-count": 15,
+          "format": "Digital Media",
+          "position": 1,
+          "id": "c61b2ba3-4c61-389c-a87f-d8299423e807",
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "title": ""
+        }
+      ],
+      "barcode": "00602435993171",
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      }
+    },
+    {
+      "asin": null,
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "packaging": "None",
+      "cover-art-archive": {
+        "artwork": true,
+        "count": 1,
+        "front": true,
+        "back": false,
+        "darkened": false
+      },
+      "disambiguation": "",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "area": {
+            "sort-name": "Japan",
+            "name": "Japan",
+            "iso-3166-1-codes": [
+              "JP"
+            ],
+            "type-id": null,
+            "disambiguation": "",
+            "type": null,
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c"
+          },
+          "date": "2021-04-16"
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "name": "Blue Note",
+            "sort-name": "Blue Note",
+            "disambiguation": "",
+            "type": "Imprint",
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "label-code": 133,
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded"
+          },
+          "catalog-number": null
+        }
+      ],
+      "status": "Official",
+      "artist-credit": [
+        {
+          "artist": {
+            "sort-name": "Jones, Norah",
+            "name": "Norah Jones",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "disambiguation": "",
+            "type": "Person",
+            "country": "US",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9"
+          },
+          "joinphrase": "",
+          "name": "ノラ・ジョーンズ"
+        }
+      ],
+      "country": "JP",
+      "title": "…’Til We Meet Again",
+      "date": "2021-04-16",
+      "id": "4ed7952c-4b9c-402a-bd41-e1966d102210",
+      "media": [
+        {
+          "id": "e2d7cd00-3ec5-3f6b-bf45-c870baf26bc5",
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "title": "",
+          "track-count": 15,
+          "position": 1,
+          "format": "Digital Media"
+        }
+      ],
+      "barcode": "00602435993201",
+      "quality": "normal",
+      "text-representation": {
+        "script": "Jpan",
+        "language": "jpn"
+      }
+    },
+    {
+      "status": "Official",
+      "artist-credit": [
+        {
+          "artist": {
+            "country": "US",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "type": "Person",
+            "disambiguation": "",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "sort-name": "Jones, Norah",
+            "name": "Norah Jones"
+          },
+          "joinphrase": "",
+          "name": "Norah Jones"
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": null,
+          "label": {
+            "name": "Blue Note",
+            "sort-name": "Blue Note",
+            "type": "Imprint",
+            "disambiguation": "",
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "label-code": 133,
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded"
+          }
+        }
+      ],
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "date": "2021-04-16",
+      "id": "745947dc-d432-4bd8-bf7d-5cf4f83e2336",
+      "title": "…’Til We Meet Again",
+      "country": null,
+      "media": [
+        {
+          "track-count": 14,
+          "position": 1,
+          "format": "Digital Media",
+          "id": "f69588f3-45ec-3d95-a3d4-853c65796dcc",
+          "title": "",
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794"
+        }
+      ],
+      "barcode": "00602435689807",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "asin": null,
+      "release-events": [
+        {
+          "area": null,
+          "date": "2021-04-16"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging": "None",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "darkened": false,
+        "back": false,
+        "front": true,
+        "count": 1,
+        "artwork": true
+      }
+    },
+    {
+      "status": "Official",
+      "artist-credit": [
+        {
+          "artist": {
+            "sort-name": "Jones, Norah",
+            "name": "Norah Jones",
+            "disambiguation": "",
+            "type": "Person",
+            "country": "US",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+          },
+          "joinphrase": "",
+          "name": "Norah Jones"
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "00602435689845",
+          "label": {
+            "label-code": 133,
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "disambiguation": "",
+            "type": "Imprint",
+            "name": "Blue Note",
+            "sort-name": "Blue Note"
+          }
+        }
+      ],
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "country": "XE",
+      "title": "…’Til We Meet Again",
+      "date": "2021",
+      "id": "80f9542a-7b18-47fa-80fc-7ef28837e0e4",
+      "media": [
+        {
+          "position": 1,
+          "format": "CD",
+          "track-count": 14,
+          "title": "",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "id": "110ab2f6-f31e-34ef-bd28-92ee1e52e712"
+        }
+      ],
+      "barcode": "602435689845",
+      "packaging-id": "2aee93e9-8acb-476c-807e-6a4a3974e1cb",
+      "asin": "B08XNVBRZQ",
+      "release-events": [
+        {
+          "area": {
+            "sort-name": "Europe",
+            "name": "Europe",
+            "iso-3166-1-codes": [
+              "XE"
+            ],
+            "type-id": null,
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "type": null,
+            "disambiguation": ""
+          },
+          "date": "2021"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging": "Slidepack",
+      "cover-art-archive": {
+        "artwork": true,
+        "count": 2,
+        "front": true,
+        "back": true,
+        "darkened": false
+      },
+      "disambiguation": ""
+    },
+    {
+      "artist-credit": [
+        {
+          "name": "Norah Jones",
+          "joinphrase": "",
+          "artist": {
+            "type": "Person",
+            "disambiguation": "",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "country": "US",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "sort-name": "Jones, Norah",
+            "name": "Norah Jones"
+          }
+        }
+      ],
+      "status": "Official",
+      "label-info": [
+        {
+          "label": {
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "type": "Imprint",
+            "disambiguation": "",
+            "label-code": 133,
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "name": "Blue Note",
+            "sort-name": "Blue Note"
+          },
+          "catalog-number": null
+        }
+      ],
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "id": "8e496dae-0afe-419a-84da-b5a707f3355e",
+      "date": "2021-04-16",
+      "country": null,
+      "title": "…’Til We Meet Again",
+      "media": [
+        {
+          "id": "d2697576-ee02-330c-9867-fb4d8eb6fefc",
+          "title": "",
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "track-count": 14,
+          "format": "Digital Media",
+          "position": 1
+        }
+      ],
+      "barcode": "00602435689791",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "asin": null,
+      "release-events": [
+        {
+          "area": null,
+          "date": "2021-04-16"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging": "None",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "artwork": true,
+        "count": 1,
+        "back": false,
+        "front": true,
+        "darkened": false
+      }
+    },
+    {
+      "barcode": "4988031426272",
+      "media": [
+        {
+          "title": "",
+          "format-id": "4856b1c6-674d-3f68-a1dd-8ae517e8b566",
+          "id": "bc514d21-bf67-3760-9db5-f43c2a473ba3",
+          "position": 1,
+          "format": "SHM-CD",
+          "track-count": 15
+        }
+      ],
+      "title": "…’Til We Meet Again",
+      "country": "JP",
+      "id": "93f9b391-3836-477e-bc3b-9d350684fb99",
+      "date": "2021-04-16",
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "label-info": [
+        {
+          "label": {
+            "name": "Blue Note",
+            "sort-name": "Blue Note",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 133,
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "type": "Imprint",
+            "disambiguation": ""
+          },
+          "catalog-number": "UCCQ-1139"
+        }
+      ],
+      "status": "Official",
+      "artist-credit": [
+        {
+          "artist": {
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "type": "Person",
+            "disambiguation": "",
+            "country": "US",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "name": "Norah Jones",
+            "sort-name": "Jones, Norah"
+          },
+          "joinphrase": "",
+          "name": "Norah Jones"
+        }
+      ],
+      "cover-art-archive": {
+        "darkened": false,
+        "back": true,
+        "front": true,
+        "count": 25,
+        "artwork": true
+      },
+      "disambiguation": "",
+      "packaging": "Jewel Case",
+      "release-events": [
+        {
+          "area": {
+            "disambiguation": "",
+            "type": null,
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+            "type-id": null,
+            "iso-3166-1-codes": [
+              "JP"
+            ],
+            "sort-name": "Japan",
+            "name": "Japan"
+          },
+          "date": "2021-04-16"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "asin": null,
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a"
+    }
+  ]
+}

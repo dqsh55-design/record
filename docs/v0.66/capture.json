@@ -1,0 +1,57 @@
+{
+  "checked_at": "2026-10-26T04:41:09.758234+00:00",
+  "artist_id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+  "groups": 56,
+  "group_ids": [
+    "6ccac9d2-22ed-33de-bd5d-f2aadcacf7f8",
+    "00fa7988-ba9e-4f50-8839-09a9d79a5e45",
+    "c67ed8da-fa12-433a-8f8a-a45c7bfe4d7b",
+    "329cb3f2-b650-4b38-bcd9-2fb2c6f3b8b9",
+    "2c41c32e-4f48-4477-8d96-24ec67c02176",
+    "9c3469a2-b684-3030-bd4d-e0704305f953"
+  ],
+  "mode": "real HTTPS via inherited proxy; TLS verification enabled",
+  "complete_artist_release_inventory": false,
+  "requests": [
+    {
+      "url": "https://musicbrainz.org/ws/2/release-group?fmt=json&limit=100&offset=0&artist=985c709c-7771-4de3-9024-7bda29ebe3f9&type=album&inc=artist-credits",
+      "status": 503
+    },
+    {
+      "url": "https://musicbrainz.org/ws/2/release-group?fmt=json&limit=100&offset=0&artist=985c709c-7771-4de3-9024-7bda29ebe3f9&type=album&inc=artist-credits",
+      "status": 200
+    },
+    {
+      "url": "https://musicbrainz.org/ws/2/release?fmt=json&limit=100&offset=0&release-group=6ccac9d2-22ed-33de-bd5d-f2aadcacf7f8&inc=labels%2Bmedia%2Bartist-credits",
+      "status": 200
+    },
+    {
+      "url": "https://musicbrainz.org/ws/2/release?fmt=json&limit=100&offset=0&release-group=00fa7988-ba9e-4f50-8839-09a9d79a5e45&inc=labels%2Bmedia%2Bartist-credits",
+      "status": 200
+    },
+    {
+      "url": "https://musicbrainz.org/ws/2/release?fmt=json&limit=100&offset=0&release-group=c67ed8da-fa12-433a-8f8a-a45c7bfe4d7b&inc=labels%2Bmedia%2Bartist-credits",
+      "status": 503
+    },
+    {
+      "url": "https://musicbrainz.org/ws/2/release?fmt=json&limit=100&offset=0&release-group=c67ed8da-fa12-433a-8f8a-a45c7bfe4d7b&inc=labels%2Bmedia%2Bartist-credits",
+      "status": 200
+    },
+    {
+      "url": "https://musicbrainz.org/ws/2/release?fmt=json&limit=100&offset=0&release-group=329cb3f2-b650-4b38-bcd9-2fb2c6f3b8b9&inc=labels%2Bmedia%2Bartist-credits",
+      "status": 503
+    },
+    {
+      "url": "https://musicbrainz.org/ws/2/release?fmt=json&limit=100&offset=0&release-group=329cb3f2-b650-4b38-bcd9-2fb2c6f3b8b9&inc=labels%2Bmedia%2Bartist-credits",
+      "status": 200
+    },
+    {
+      "url": "https://musicbrainz.org/ws/2/release?fmt=json&limit=100&offset=0&release-group=2c41c32e-4f48-4477-8d96-24ec67c02176&inc=labels%2Bmedia%2Bartist-credits",
+      "status": 200
+    },
+    {
+      "url": "https://musicbrainz.org/ws/2/release?fmt=json&limit=100&offset=0&release-group=9c3469a2-b684-3030-bd4d-e0704305f953&inc=labels%2Bmedia%2Bartist-credits",
+      "status": 200
+    }
+  ]
+}

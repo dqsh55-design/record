@@ -16,18 +16,28 @@
 @media(max-width:500px){main{padding-left:18px;padding-right:18px}#official-releases .album{grid-template-columns:96px minmax(0,1fr);gap:15px;padding:22px 0}#official-releases .cover{width:96px;height:96px}#official-releases .album-title{font-size:17px}}
 @media(max-width:350px){#official-releases .album{grid-template-columns:84px minmax(0,1fr);gap:12px}#official-releases .cover{width:84px;height:84px}}
 
+.release-work{font-size:12px;color:#777;margin:12px 0 0;overflow-wrap:anywhere}
 /* v0.65: one search, two selects, then the list. See docs/MOBILE-UI.md. */
 .status:empty{display:none}main{padding-top:30px}header{margin-bottom:24px}h1{font-size:32px}header p{font-size:10px}.intro{font-size:13px;margin-bottom:18px}.hint{margin-top:8px}.status{margin:18px 0;font-size:13px}.artist{font-size:21px;margin:22px 0 12px}.list-controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.45fr);gap:10px;margin:12px 0 18px}.list-controls label{font-size:11px;color:#777;margin:0!important}.list-controls select{display:block;width:100%;min-height:44px;margin-top:5px;font:inherit;font-size:16px;padding:9px 26px 9px 10px;border:1px solid #d8d6d1;border-radius:6px;background:#fff;color:#333}.list-progress{font-size:13px;color:#777;line-height:1.7;margin:12px 0}.list-progress progress{display:block;width:100%;height:5px;margin-top:10px;accent-color:#666}.loading-card{display:grid;grid-template-columns:84px 1fr;gap:16px;padding:22px 0;border-top:1px solid #e0ded9}.loading-cover,.loading-line{background:#e9e7e2;border-radius:4px}.loading-cover{width:84px;height:84px}.loading-line{height:12px;margin:8px 0 14px;width:85%}.loading-line.short{width:50%}.settings-area{margin-top:30px}.settings-area>summary{font-size:14px}.catalog-info{margin:14px 0}.catalog-info>summary{font-size:12px}.credit-badge{font-size:11px}.link-state{margin:0}#official-releases .album-tools>summary{padding:9px 0;font-size:11px}#official-releases .album{padding:20px 0;gap:16px}#official-releases .meta{margin:6px 0 3px}.backup-area{margin-top:16px}footer{margin-top:44px}
 @media(max-width:500px){main{padding-top:24px}header{margin-bottom:20px}h1{font-size:29px}#official-releases .album{grid-template-columns:88px minmax(0,1fr);gap:14px}#official-releases .cover{width:88px;height:88px}#official-releases .album-title{font-size:16px}}
 @media(max-width:350px){main{padding-left:14px;padding-right:14px}#official-releases .album{grid-template-columns:76px minmax(0,1fr);gap:12px}#official-releases .cover{width:76px;height:76px}}
 @media(prefers-reduced-motion:no-preference){.loading-line{animation:loading-pulse 1.5s ease-in-out infinite alternate}@keyframes loading-pulse{to{opacity:.45}}}
-</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます</div><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Music data by MusicBrainz · v0.65</footer></main>
+</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます</div><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Music data by MusicBrainz · v0.66</footer></main>
 <script>
 const $=id=>document.getElementById(id), status=$('status'),results=$('results');
 let relatedCatalogAlbums=[],artistChoices=[],ytVisible=20,ytSort='name',ytAlbums=[],albums=[],filter='おすすめ',artistName='',offset=0,artistId='',busy=false,total=0;
 const aliases={'マイルスデイビス':'Miles Davis','マイルスデイヴィス':'Miles Davis','デュークエリントン':'Duke Ellington','ジェフベック':'Jeff Beck','ジミヘンドリックス':'Jimi Hendrix','ジミヘン':'Jimi Hendrix','ジャニス':'Janis Joplin','ジャニスジョプリン':'Janis Joplin','スタンゲッツ':'Stan Getz','ジョンコルトレーン':'John Coltrane','チックコリア':'Chick Corea','ビートルズ':'The Beatles','原田知世':'Tomoyo Harada'};
 const normalize=s=>s.toLowerCase().replace(/[\s・･ー‐－]/g,'');
-function typeOf(a){let t=a['secondary-types']||[];if(t.includes('Compilation'))return 'ベスト・編集盤';if(t.includes('Live'))return 'ライブ盤';if(a['primary-type']==='Album')return 'スタジオ盤';return 'その他'}
+function albumKind(group){
+ if(group?.['primary-type']!=='Album')return 'other';
+ const types=group['secondary-types'];
+ if(types!==undefined&&!Array.isArray(types))return 'unknown';
+ const t=types||[];
+ if(t.some(x=>!['Live','Compilation'].includes(x)))return 'other';
+ if(t.includes('Live')&&t.includes('Compilation'))return 'live-compilation';
+ return t.includes('Live')?'live':t.includes('Compilation')?'compilation':'studio';
+}
+function typeOf(a){return {studio:'スタジオ盤',live:'ライブ盤',compilation:'ベスト・編集盤','live-compilation':'ライブ・編集盤',unknown:'種別未確認',other:'その他'}[albumKind(a)]}
 function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 async function fetchJSONWithTimeout(url,options={}){
@@ -396,9 +406,97 @@ function appendEditionLinkTools(r,details,search){
 function uniqueReleaseIds(releases){const seen=new Set();return releases.filter(r=>{if(!r.id||seen.has(r.id))return false;seen.add(r.id);return true})}
 const editionDetails=new Map(),editionRequests=new Map();
 let officialReleases=[],officialOffset=0,officialTotal=0,officialError='',officialLoading=false;
-function releaseVisibility(r){
- if(['Bootleg','Pseudo-Release','Promotion'].includes(r.status))return 'excluded';
- return r.status==='Official'?'official':'unknown';
+let discographyReferences=[],discographyReferenceTask=null;
+// Official is a community database status, not independent authorization evidence.
+// References are explicit, reviewed facts, never inferred from titles or label popularity.
+function sameArtistIds(left,right){
+ if(!Array.isArray(left)||!Array.isArray(right)||!left.length||!right.length)return false;
+ if([...left,...right].some(id=>typeof id!=='string'||!id))return false;
+ const a=new Set(left),b=new Set(right);return a.size===b.size&&[...a].every(id=>b.has(id));
+}
+function assessRelease(r,references=discographyReferences){
+ references=Array.isArray(references)?references.filter(ref=>ref&&typeof ref==='object'):[];
+ const group=r['release-group']||{},kind=albumKind(group);
+ const credits=(r['artist-credit']||group['artist-credit']||[]).map(c=>c?.artist?.id);
+ const labels=(r['label-info']||[]).map(li=>li.label?.name).filter(usableLabel);
+ const numbers=(r['label-info']||[]).map(li=>li['catalog-number']).filter(Boolean);
+ const exact=references.filter(ref=>ref.scope==='release'&&ref.releaseId===r.id&&ref.groupId===group.id&&
+  sameArtistIds(credits,ref.artistIds)&&
+  ref.sourceKind==='artist-or-label'&&/^https:\/\//.test(ref.sourceUrl||'')&&/^\d{4}-\d{2}-\d{2}$/.test(ref.checkedAt||'')&&
+  ref.releaseDate&&ref.releaseDate===r.date&&(ref.label||ref.publisher)&&(!ref.label||labels.includes(ref.label))&&
+  ref.catalogNumber&&numbers.includes(ref.catalogNumber)&&Array.isArray(ref.trackCounts)&&ref.trackCounts.length>0&&
+  JSON.stringify(ref.trackCounts)===JSON.stringify((r.media||[]).map(m=>m['track-count']))&&
+  Array.isArray(ref.mediaFormats)&&JSON.stringify(ref.mediaFormats)===JSON.stringify((r.media||[]).map(m=>m.format)));
+ const confirmed=exact.filter(ref=>ref.official===true);
+ const groupCredits=(group['artist-credit']||[]).map(c=>c?.artist?.id);
+ const workFacts=references.filter(ref=>ref.scope==='work'&&ref.groupId===group.id&&ref.official===true&&
+  ref.sourceKind==='artist-or-label'&&/^https:\/\//.test(ref.sourceUrl||'')&&/^\d{4}-\d{2}-\d{2}$/.test(ref.checkedAt||'')&&
+  sameArtistIds(groupCredits,ref.artistIds));
+ const workConflict=workFacts.some(ref=>ref.kind!==kind||(ref.originalYear&&originalDate(group)&&ref.originalYear!==originalDate(group).slice(0,4)));
+
+ const excluded=['Bootleg','Pseudo-Release','Promotion'].includes(r.status);
+ const conflict=confirmed.length&&(excluded||['Withdrawn','Cancelled'].includes(r.status)||confirmed.some(ref=>ref.kind!==kind));
+ return {kind,visibility:conflict?'unknown':excluded?'excluded':r.status==='Official'||confirmed.length?'official':'unknown',
+  verification:conflict?'conflict':confirmed.length?'confirmed':'unconfirmed',
+  workVerification:workConflict?'conflict':workFacts.some(ref=>ref.originalYear&&ref.originalYear===originalDate(group).slice(0,4))?'confirmed':'unconfirmed',
+  workSources:workFacts.map(ref=>ref.sourceUrl),referenceYears:[...new Set(workFacts.map(ref=>ref.originalYear).filter(Boolean))],
+  // Never fill original dates or original labels from a later edition.
+  originalDate:originalDate(group),releaseDate:r.date||'',labels,
+  edition:confirmed.some(ref=>ref.edition==='reissue')&&!conflict?'reissue':'unconfirmed',
+  publishers:confirmed.map(ref=>ref.publisher).filter(Boolean),sources:confirmed.map(ref=>ref.sourceUrl)};
+}
+async function loadDiscographyReferences(){
+ if(!discographyReferenceTask)discographyReferenceTask=(async()=>{
+  try{
+   const response=await fetchJSONWithTimeout('data/discography-references.json');
+   if(!response.ok)return;
+   const data=await response.json();if(data.version!==1||!Array.isArray(data.references))return;
+   const before=eligibleReleases().map(r=>r.id).join(',');
+   discographyReferences=data.references;
+   if(before!==eligibleReleases().map(r=>r.id).join(','))render(true);
+   refreshDiscographyEvidence();
+  }catch(e){/* Missing optional references leave every independent check unconfirmed. */}
+ })();
+ return discographyReferenceTask;
+}
+function appendDiscographyEvidence(r,node){
+ const assessment=assessRelease(releaseRecord(r));
+ const text=document.createElement('div');text.className='release-detail';
+ text.textContent=assessment.workVerification==='confirmed'?'作品：公式ディスコグラフィーと種別・初回発売年を照合済み。発売盤ごとの照合結果は別に表示します。':assessment.workVerification==='conflict'?'作品：公式資料と登録情報に相違があります（未確認）。公式資料の初回発売年：'+assessment.referenceYears.join(' / '):'作品・発売盤の正規性：公式資料による独立確認は未確認です。';node.append(text);
+ if(assessment.verification==='confirmed'){
+  const edition=document.createElement('div');edition.className='release-detail';edition.textContent='この盤：公式商品情報と発売日・品番・盤構成を照合済み'+(assessment.edition==='reissue'?'（正規再発盤）':'')+(assessment.publishers.length?' · この盤の発売元（公式資料）：'+assessment.publishers.join(' / '):'');node.append(edition);
+ }else if(assessment.verification==='conflict'){
+  const conflict=document.createElement('div');conflict.className='release-detail';conflict.textContent='この盤：公式資料と発売区分に相違があります（未確認）。';node.append(conflict);
+ }else{
+  const pending=document.createElement('div');pending.className='release-detail';pending.textContent='この盤の正規性：公式資料による独立確認は未確認です。';node.append(pending);
+ }
+ for(const url of new Set([...assessment.workSources,...assessment.sources])){
+  const link=document.createElement('a');link.className='listen';link.href=url;link.target='_blank';link.rel='noopener noreferrer';link.textContent='公式資料を見る ↗';node.append(link);
+ }
+}
+function refreshDiscographyEvidence(){
+ for(const r of officialReleases){
+  const article=[...document.querySelectorAll('#official-releases article')].find(node=>node.dataset.releaseId===r.id);
+  const year=article?.querySelector('.meta');if(year)year.textContent=workYearText(releaseRecord(r));
+  const meta=article?.querySelector('.edition-release-meta');if(meta)meta.textContent=releaseMetadataText(releaseRecord(r));
+  const panel=article?.querySelector('.discography-evidence');if(panel){panel.replaceChildren();appendDiscographyEvidence(r,panel)}
+ }
+}
+function releaseRecord(r){
+ const detail=editionDetails.get(r.id);
+ // Detailed release fields supersede browse fields; the work index owns chronology.
+ return detail?{...r,...detail,id:r.id,'release-group':r['release-group']}:r;
+}
+function releaseVisibility(r){return assessRelease(releaseRecord(r)).visibility}
+function releaseWorkKey(r){return r['release-group']?.id?'group:'+r['release-group'].id:'release:'+r.id}
+function releaseWorks(releases){
+ const works=new Map();
+ for(const r of uniqueReleaseIds(releases)){
+  const key=releaseWorkKey(r);
+  if(!works.has(key))works.set(key,{key,group:r['release-group']||{},releases:[]});
+  works.get(key).releases.push(r);
+ }
+ return [...works.values()];
 }
 // Credit identity is independent from streaming-edition verification. See docs/ARTIST-CREDITS.md.
 const creditLabels={own:'本人名義',joint:'共同名義',participation:'演奏参加（録音の登録根拠あり）',pending:'確認待ち'};
@@ -443,7 +541,7 @@ function matchesCreditScope(r){
  return creditScope==='all'||(creditScope==='credited'?['own','joint'].includes(kind):kind===creditScope);
 }
 function switchCreditScope(scope){creditScope=scope;render(true)}
-function eligibleReleases(){return uniqueReleaseIds(officialReleases).filter(r=>releaseVisibility(r)!=='excluded'&&r['release-group']?.['primary-type']==='Album')}
+function eligibleReleases(){return uniqueReleaseIds(officialReleases).filter(r=>releaseVisibility(r)!=='excluded'&&releaseRecord(r)['release-group']?.['primary-type']==='Album')}
 function creditCountsText(){const items=eligibleReleases();return '取得済みの名義区分：'+Object.entries(creditLabels).map(([kind,label])=>label+' '+items.filter(r=>releaseAttribution(r).kind===kind).length+'件').join(' · ')}
 function appendCreditEvidence(r,details){
  const attribution=releaseAttribution(r),group=r['release-group'];
@@ -595,6 +693,16 @@ async function showEditionTracks(r,body,button){
     creditScope=releaseAttribution(r).kind;status.textContent='名義の確認結果に合わせて「'+creditLabels[creditScope]+'」に切り替えました。';
    }
    render(true);
+  }else if(!cached){
+   // Refresh classification in place so fetching tracks cannot erase a URL draft.
+   const current=releaseRecord(r),article=body.closest('article');
+   if(article){
+    const labels=(current['label-info']||[]).map(li=>li.label?.name).filter(usableLabel);
+    article.querySelector('.album-label').textContent=labels.length?'この盤のレーベル：'+labels.join(' / '):'レーベル未登録';
+    const meta=article.querySelector('.edition-release-meta');if(meta)meta.textContent=releaseMetadataText(current);
+    const evidence=article.querySelector('.discography-evidence');if(evidence){evidence.replaceChildren();appendDiscographyEvidence(current,evidence)}
+   }
+   if(releaseVisibility(r)==='excluded')render(true);
   }
  }catch(e){
   body=[...document.querySelectorAll('#official-releases details')].find(node=>node.dataset.releaseId===r.id);if(!body)return;
@@ -603,6 +711,14 @@ async function showEditionTracks(r,body,button){
   error.textContent='曲目を取得できませんでした：'+e.message;
   if(button){button.disabled=false;button.textContent='曲目の取得を再試行';}
  }
+}
+function workYearText(r){
+ const date=originalDate(r['release-group']);
+ return !date?'初回発売年不明':date.slice(0,4)+(assessRelease(r).workVerification==='conflict'?'年（MB登録・初回発売年は未確認）':'年（初回発売）');
+}
+function releaseMetadataText(r){
+ const date=originalDate(r['release-group']),numbers=(r['label-info']||[]).map(li=>li['catalog-number']).filter(Boolean);
+ return ['作品の初回発売：'+(date||'不明'),'この盤の発売：'+(r.date||'不明'),typeOf(r['release-group']||{}),r.country,numbers.length?'品番：'+numbers.join(' / '):'',r.status==='Official'?'MusicBrainz：公式発売の登録あり':'発売区分：'+(r.status||'未登録')+'（確認待ち）'].filter(Boolean).join(' · ');
 }
 function render(preserveEditions=false){
  const active=document.activeElement,focusId=active?.id;
@@ -636,24 +752,34 @@ function render(preserveEditions=false){
  line('発売盤 '+officialOffset+'件取得 · 索引 '+(chronology?.groups.length||0)+'作品の年代順を確認済み。後の範囲は追加操作に応じて取得します。全作品取得済みという意味ではありません。');
  if(chronology?.mode==='browse')line('検索索引を利用できないため、作品索引全体を確認しています。'+chronology.indexOffset+' / '+(chronology.indexTotal??'確認中')+'件。');
  else if(chronology&&!chronology.allReady)line('索引の確認範囲：'+chronology.ranges[chronology.range]?.label+' · '+chronology.indexOffset+' / '+(chronology.indexTotal??'確認中')+'件。');
+ line('同じ作品IDの発売盤は同じ作品として整理し、異なる発売盤IDは保持します。同名だけでは統合しません。再発の正規性は発売年や発売元名だけでは判定しません。');
  line('作品の初回発売日はMusicBrainz登録値です。初出の正規盤の年を保証するものではありません。年不明は末尾に分け、個別盤の日付から補いません。');
  if(officialError){const error=document.createElement('p');error.className='list-progress';error.setAttribute('role','alert');error.textContent='アルバムを読み込めませんでした。取得済みの一覧は保持しています。';section.append(error);line('取得エラー：'+officialError)}
  const backup=document.createElement('button');backup.className='detail-btn';backup.textContent='保存記録をバックアップ';backup.onclick=exportVerificationRecords;const restore=document.createElement('input');restore.type='file';restore.accept='application/json';restore.className='direct-url';restore.setAttribute('aria-label','保存記録を復元');restore.onchange=()=>importVerificationRecords(restore.files[0]);const restoreLabel=document.createElement('label');restoreLabel.className='release-detail';restoreLabel.textContent='保存記録を復元（JSONファイル）';restoreLabel.append(restore);const backupArea=document.createElement('div');backupArea.className='backup-area';backupArea.append(backup,restoreLabel);
  const eligible=eligibleReleases();
  const counts=document.createElement('p');counts.className='release-detail';counts.id='credit-counts';counts.textContent=creditCountsText();catalogInfo.append(counts);
  const visible=eligible.filter(matchesCreditScope);
+ const works=releaseWorks(visible),workCounts=new Map(works.map(w=>[w.key,w.releases.length]));
+ const workSeen=new Set();
  let decade=null;
- for(const r of visible){
+ for(const entry of visible){
+  const r=releaseRecord(entry);
   const date=originalDate(r['release-group']),era=date?Math.floor(Number(date.slice(0,4))/10)*10+'年代':'オリジナル発売年不明';
   if(era!==decade){const heading=document.createElement('h3');heading.className='decade';heading.textContent=era;section.append(heading);decade=era}
+  const workKey=releaseWorkKey(r);
+  if(!workSeen.has(workKey)){
+   workSeen.add(workKey);
+   const workHeading=document.createElement('h4');workHeading.className='release-work';workHeading.dataset.workKey=workKey;
+   workHeading.textContent=(r['release-group']?.title||r.title)+' · 取得済み '+workCounts.get(workKey)+'発売盤';section.append(workHeading);
+  }
   if(existingEditions.has(r.id)){section.append(existingEditions.get(r.id));continue}
   const article=document.createElement('article');article.className='album';const info=document.createElement('div');info.className='info';
   const title=document.createElement('div');title.className='album-title';title.textContent=r.title;
   const meta=document.createElement('div');meta.className='meta';
   const labels=(r['label-info']||[]).map(li=>li.label?.name).filter(usableLabel),numbers=(r['label-info']||[]).map(li=>li['catalog-number']).filter(Boolean);
-  meta.textContent=date?date.slice(0,4)+'年（初回発売）':'初回発売年不明';
+  meta.textContent=workYearText(r);
   const badge=document.createElement('div');badge.className='credit-badge release-detail';badge.textContent=creditLabels[releaseAttribution(r).kind];
-  const label=document.createElement('div');label.className='album-label';label.textContent=labels.join(' / ')||'レーベル未登録';
+  const label=document.createElement('div');label.className='album-label';label.textContent=labels.length?'この盤のレーベル：'+labels.join(' / '):'レーベル未登録';
   const search=document.createElement('a');search.className='listen';search.target='_blank';search.rel='noopener noreferrer';search.href='https://music.youtube.com/search?q='+encodeURIComponent(artistName+' '+r.title);search.textContent='YouTube Musicで探す ↗';
   const source=document.createElement('a');source.className='listen';source.target='_blank';source.rel='noopener noreferrer';source.href='https://musicbrainz.org/release/'+encodeURIComponent(r.id);source.textContent='発売記録を見る ↗';source.style.marginLeft='14px';
   const details=document.createElement('details'),caption=document.createElement('summary');details.className='album-tools';details.dataset.releaseId=r.id;details.open=openEditions.has(r.id);caption.textContent='収録曲・曲順・リンクを確認';details.append(caption);
@@ -661,9 +787,10 @@ function render(preserveEditions=false){
   if(editionDetails.has(r.id))showEditionTracks(r,details,button);
   const identity=document.createElement('div');identity.className='edition-identity';identity.textContent=[r.disambiguation,r.barcode?'バーコード：'+r.barcode:'',(r.media||[]).map(m=>[m.format,m['track-count']?m['track-count']+'曲':''].filter(Boolean).join(' ')).join(' / '),'MusicBrainz発売盤ID：'+r.id].filter(Boolean).join(' · ');
   const listeningTools=document.createElement('div');listeningTools.className='edition-link-tools';appendEditionLinkTools(r,listeningTools,search);details.append(listeningTools);
-  const releaseMeta=document.createElement('div');releaseMeta.className='release-detail';releaseMeta.textContent=['作品の初回発売：'+(date||'不明'),'この盤の発売：'+(r.date||'不明'),typeOf(r['release-group']||{}),r.country,numbers.length?'品番：'+numbers.join(' / '):'',releaseVisibility(r)==='official'?'MusicBrainz：公式発売の登録あり':'発売区分：'+(r.status||'未登録')+'（確認待ち）'].filter(Boolean).join(' · ');
+  const releaseMeta=document.createElement('div');releaseMeta.className='release-detail edition-release-meta';releaseMeta.textContent=releaseMetadataText(r);
   const creditPanel=document.createElement('div');creditPanel.className='credit-evidence';appendCreditEvidence(r,creditPanel);
-  details.append(creditPanel,releaseMeta,identity,source);
+  const discography=document.createElement('div');discography.className='discography-evidence';appendDiscographyEvidence(r,discography);
+  details.append(creditPanel,discography,releaseMeta,identity,source);
   const state=document.createElement('div');state.className='link-state';state.textContent=search.dataset.linkState;
   details.append(state);info.append(title,meta,label,badge,search,details);
   const group=r['release-group']?.id,saved=verifiedLinks[group];
@@ -763,7 +890,7 @@ async function loadListeningCatalog(artist){
 async function chooseArtist(artist){
  artistChoices=[];albums=[];ytAlbums=[];relatedCatalogAlbums=[];ytVisible=20;ytSort='name';offset=0;total=0;filter='おすすめ';legacyLoadedFor='';legacyLoadingFor='';legacyError='';
  artistId=artist.id;artistName=artist.name;results.innerHTML='';status.textContent='';
- const task=loadOfficialReleases(true);loadListeningCatalog(artist);
+ const task=loadOfficialReleases(true);loadListeningCatalog(artist);loadDiscographyReferences();
  await task;if(artistId===artist.id)showRelatedBands();
 }
 

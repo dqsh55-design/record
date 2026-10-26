@@ -1,0 +1,737 @@
+{
+  "group": {
+    "first-release-date": "2024-03-08",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "disambiguation": "",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "id": "329cb3f2-b650-4b38-bcd9-2fb2c6f3b8b9",
+    "primary-type": "Album",
+    "title": "Visions",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "secondary-types": []
+  },
+  "releases": [
+    {
+      "disambiguation": "",
+      "media": [
+        {
+          "position": 1,
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "track-count": 12,
+          "id": "bff75519-44ea-3912-aa36-b0727c4f6f62",
+          "title": "",
+          "format": "Digital Media"
+        }
+      ],
+      "barcode": "00602458671506",
+      "title": "Visions",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "date": "2024-03-08",
+          "area": {
+            "sort-name": "[Worldwide]",
+            "type": null,
+            "type-id": null,
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "disambiguation": "",
+            "iso-3166-1-codes": [
+              "XW"
+            ]
+          }
+        }
+      ],
+      "packaging": "None",
+      "label-info": [
+        {
+          "catalog-number": "[none]",
+          "label": {
+            "label-code": 133,
+            "name": "Blue Note",
+            "disambiguation": "",
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "sort-name": "Blue Note"
+          }
+        }
+      ],
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "artist-credit": [
+        {
+          "artist": {
+            "country": "US",
+            "name": "Norah Jones",
+            "disambiguation": "",
+            "type": "Person",
+            "sort-name": "Jones, Norah",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9"
+          },
+          "name": "Norah Jones",
+          "joinphrase": ""
+        }
+      ],
+      "cover-art-archive": {
+        "back": false,
+        "darkened": false,
+        "front": true,
+        "artwork": true,
+        "count": 1
+      },
+      "id": "0d3d2576-fccd-4c4c-82f0-29d2ed25fff1",
+      "quality": "normal",
+      "asin": null,
+      "status": "Official",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "date": "2024-03-08",
+      "country": "XW"
+    },
+    {
+      "cover-art-archive": {
+        "front": true,
+        "darkened": false,
+        "back": true,
+        "count": 6,
+        "artwork": true
+      },
+      "id": "2cbe518c-3ea7-4323-beaf-1f42de1fe35b",
+      "quality": "normal",
+      "status": "Official",
+      "asin": null,
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "date": "2024-03-08",
+      "country": "US",
+      "media": [
+        {
+          "title": "",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "id": "aa16aed7-fa66-376f-afdd-5ff480bfd776",
+          "track-count": 12,
+          "position": 1,
+          "format": "12\" Vinyl"
+        }
+      ],
+      "disambiguation": "Indie Record Store exclusive orange blend",
+      "title": "Visions",
+      "barcode": "602458994230",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "area": {
+            "type-id": null,
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "type": null,
+            "sort-name": "United States",
+            "name": "United States",
+            "disambiguation": "",
+            "iso-3166-1-codes": [
+              "US"
+            ]
+          },
+          "date": "2024-03-08"
+        }
+      ],
+      "packaging": "Cardboard/Paper Sleeve",
+      "label-info": [
+        {
+          "catalog-number": null,
+          "label": {
+            "label-code": 133,
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "sort-name": "Blue Note",
+            "name": "Blue Note",
+            "disambiguation": ""
+          }
+        }
+      ],
+      "artist-credit": [
+        {
+          "artist": {
+            "country": "US",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "sort-name": "Jones, Norah",
+            "type": "Person",
+            "name": "Norah Jones",
+            "disambiguation": ""
+          },
+          "joinphrase": "",
+          "name": "Norah Jones"
+        }
+      ],
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f"
+    },
+    {
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "status": "Official",
+      "asin": null,
+      "country": null,
+      "date": "2024-03-08",
+      "cover-art-archive": {
+        "artwork": true,
+        "count": 1,
+        "back": false,
+        "darkened": false,
+        "front": true
+      },
+      "quality": "normal",
+      "id": "3b745edb-dc43-4bfe-b18b-d15d3dfa4e68",
+      "release-events": [
+        {
+          "date": "2024-03-08",
+          "area": null
+        }
+      ],
+      "artist-credit": [
+        {
+          "artist": {
+            "country": "US",
+            "disambiguation": "",
+            "name": "Norah Jones",
+            "type": "Person",
+            "sort-name": "Jones, Norah",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+          },
+          "name": "Norah Jones",
+          "joinphrase": ""
+        }
+      ],
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "label-info": [
+        {
+          "catalog-number": "[none]",
+          "label": {
+            "disambiguation": "",
+            "name": "Blue Note",
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "sort-name": "Blue Note",
+            "label-code": 133
+          }
+        }
+      ],
+      "packaging": "None",
+      "barcode": "00602458671513",
+      "title": "Visions",
+      "disambiguation": "",
+      "media": [
+        {
+          "format": "Digital Media",
+          "position": 1,
+          "track-count": 12,
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "id": "ce3f3f6f-89d6-3c7c-95e7-413f3f59b0c4",
+          "title": ""
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+    },
+    {
+      "cover-art-archive": {
+        "front": true,
+        "darkened": false,
+        "back": true,
+        "artwork": true,
+        "count": 6
+      },
+      "id": "4d36951a-8653-4093-aa1e-18645ce357f0",
+      "quality": "normal",
+      "asin": null,
+      "status": "Official",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "date": "2024-03-08",
+      "country": "XE",
+      "disambiguation": "special edition",
+      "media": [
+        {
+          "track-count": 13,
+          "id": "ec4288b9-3746-3a7d-a3ba-e8bb364f7524",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "position": 1,
+          "title": "",
+          "format": "CD"
+        }
+      ],
+      "barcode": "602465103311",
+      "title": "Visions",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "date": "2024-03-08",
+          "area": {
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "type-id": null,
+            "type": null,
+            "sort-name": "Europe",
+            "disambiguation": "",
+            "name": "Europe",
+            "iso-3166-1-codes": [
+              "XE"
+            ]
+          }
+        }
+      ],
+      "packaging": "Gatefold Cover",
+      "label-info": [
+        {
+          "label": {
+            "disambiguation": "",
+            "name": "Blue Note",
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "Blue Note",
+            "type": "Imprint",
+            "label-code": 133
+          },
+          "catalog-number": "00602465103311"
+        }
+      ],
+      "packaging-id": "e724a489-a7e8-30a1-a17c-30dfd6831202",
+      "artist-credit": [
+        {
+          "name": "Norah Jones",
+          "joinphrase": "",
+          "artist": {
+            "disambiguation": "",
+            "name": "Norah Jones",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "type": "Person",
+            "sort-name": "Jones, Norah",
+            "country": "US"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5a08855e-f387-4321-b077-13c0fa3a978c",
+      "quality": "normal",
+      "cover-art-archive": {
+        "front": true,
+        "darkened": false,
+        "back": false,
+        "artwork": true,
+        "count": 1
+      },
+      "country": "US",
+      "date": "2024-03-08",
+      "asin": null,
+      "status": "Official",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "barcode": "602458994285",
+      "title": "Visions",
+      "media": [
+        {
+          "format": "CD",
+          "title": "",
+          "track-count": 13,
+          "id": "f161eaa8-69b5-399e-906f-83ae49a1aac9",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "position": 1
+        }
+      ],
+      "disambiguation": "Target Exclusive",
+      "label-info": [
+        {
+          "label": {
+            "label-code": 133,
+            "type": "Imprint",
+            "sort-name": "Blue Note",
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "disambiguation": "",
+            "name": "Blue Note"
+          },
+          "catalog-number": "00602458994285"
+        }
+      ],
+      "artist-credit": [
+        {
+          "artist": {
+            "type": "Person",
+            "sort-name": "Jones, Norah",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "disambiguation": "",
+            "name": "Norah Jones",
+            "country": "US"
+          },
+          "joinphrase": "",
+          "name": "Norah Jones"
+        }
+      ],
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "packaging": "Cardboard/Paper Sleeve",
+      "release-events": [
+        {
+          "date": "2024-03-08",
+          "area": {
+            "disambiguation": "",
+            "name": "United States",
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "type-id": null,
+            "sort-name": "United States",
+            "type": null,
+            "iso-3166-1-codes": [
+              "US"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "asin": null,
+      "status": "Official",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "country": null,
+      "date": "2024-03-08",
+      "cover-art-archive": {
+        "back": false,
+        "darkened": false,
+        "front": true,
+        "artwork": true,
+        "count": 1
+      },
+      "id": "5d696837-da08-436c-a7c4-787e32fed623",
+      "quality": "normal",
+      "release-events": [
+        {
+          "area": null,
+          "date": "2024-03-08"
+        }
+      ],
+      "packaging": "None",
+      "label-info": [
+        {
+          "label": {
+            "label-code": 133,
+            "type": "Imprint",
+            "sort-name": "Blue Note",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "name": "Blue Note",
+            "disambiguation": ""
+          },
+          "catalog-number": "[none]"
+        }
+      ],
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "artist-credit": [
+        {
+          "artist": {
+            "country": "US",
+            "disambiguation": "",
+            "name": "Norah Jones",
+            "type": "Person",
+            "sort-name": "Jones, Norah",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9"
+          },
+          "joinphrase": "",
+          "name": "Norah Jones"
+        }
+      ],
+      "disambiguation": "Dolby Atmos mix",
+      "media": [
+        {
+          "position": 1,
+          "track-count": 12,
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "id": "01700819-1b5a-3b1e-9ffc-5c1317e18339",
+          "title": "",
+          "format": "Digital Media"
+        }
+      ],
+      "barcode": "00602458671520",
+      "title": "Visions",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+    },
+    {
+      "release-events": [
+        {
+          "date": "2024-03-08",
+          "area": {
+            "type-id": null,
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "type": null,
+            "sort-name": "United States",
+            "disambiguation": "",
+            "name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "Blue Note",
+            "type": "Imprint",
+            "name": "Blue Note",
+            "disambiguation": "",
+            "label-code": 133
+          },
+          "catalog-number": "00602458671445"
+        }
+      ],
+      "packaging-id": "e724a489-a7e8-30a1-a17c-30dfd6831202",
+      "artist-credit": [
+        {
+          "joinphrase": "",
+          "name": "Norah Jones",
+          "artist": {
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "type": "Person",
+            "sort-name": "Jones, Norah",
+            "name": "Norah Jones",
+            "disambiguation": "",
+            "country": "US"
+          }
+        }
+      ],
+      "packaging": "Gatefold Cover",
+      "title": "Visions",
+      "barcode": "602458671445",
+      "disambiguation": "",
+      "media": [
+        {
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "id": "7d205d59-b992-39f8-bacf-2847ed4561f2",
+          "track-count": 12,
+          "position": 1,
+          "title": "",
+          "format": "CD"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "status": "Official",
+      "asin": null,
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "country": "US",
+      "date": "2024-03-08",
+      "cover-art-archive": {
+        "front": true,
+        "darkened": false,
+        "back": true,
+        "count": 13,
+        "artwork": true
+      },
+      "id": "7ff84e33-639d-4d0c-9175-49cdeb3efb43",
+      "quality": "normal"
+    },
+    {
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "asin": null,
+      "status": "Official",
+      "country": "JP",
+      "date": "2024-03-08",
+      "cover-art-archive": {
+        "count": 25,
+        "artwork": true,
+        "darkened": false,
+        "front": true,
+        "back": true
+      },
+      "quality": "normal",
+      "id": "d8e96a61-0762-4f3d-8baf-7334cc210a33",
+      "release-events": [
+        {
+          "area": {
+            "type-id": null,
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+            "type": null,
+            "sort-name": "Japan",
+            "disambiguation": "",
+            "name": "Japan",
+            "iso-3166-1-codes": [
+              "JP"
+            ]
+          },
+          "date": "2024-03-08"
+        }
+      ],
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "artist-credit": [
+        {
+          "name": "Norah Jones",
+          "joinphrase": "",
+          "artist": {
+            "country": "US",
+            "sort-name": "Jones, Norah",
+            "type": "Person",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "name": "Norah Jones",
+            "disambiguation": ""
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "UCCQ-9666",
+          "label": {
+            "name": "Blue Note",
+            "disambiguation": "",
+            "sort-name": "Blue Note",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "label-code": 133
+          }
+        }
+      ],
+      "packaging": "Jewel Case",
+      "title": "Visions",
+      "barcode": "4988031627815",
+      "disambiguation": "",
+      "media": [
+        {
+          "title": "",
+          "position": 1,
+          "id": "28c31bb9-74d8-3b8d-9417-2c5a2adda91c",
+          "format-id": "4856b1c6-674d-3f68-a1dd-8ae517e8b566",
+          "track-count": 13,
+          "format": "SHM-CD"
+        },
+        {
+          "format": "DVD-Video",
+          "format-id": "bb71fd58-ff93-32b4-a201-4ad1b2a80e5f",
+          "id": "2277026f-79e0-367f-abb3-f48d23c63fb5",
+          "track-count": 4,
+          "position": 2,
+          "title": ""
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+    },
+    {
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "media": [
+        {
+          "position": 1,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "track-count": 12,
+          "id": "a9d12855-a4f7-3e38-b6a1-864298c1a055",
+          "title": "",
+          "format": "CD"
+        }
+      ],
+      "disambiguation": "",
+      "barcode": "602458671445",
+      "title": "Visions",
+      "packaging": "Gatefold Cover",
+      "label-info": [
+        {
+          "catalog-number": "00602458671445",
+          "label": {
+            "label-code": 133,
+            "type": "Imprint",
+            "sort-name": "Blue Note",
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "name": "Blue Note",
+            "disambiguation": ""
+          }
+        }
+      ],
+      "artist-credit": [
+        {
+          "name": "Norah Jones",
+          "joinphrase": "",
+          "artist": {
+            "name": "Norah Jones",
+            "disambiguation": "",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "sort-name": "Jones, Norah",
+            "type": "Person",
+            "country": "US"
+          }
+        }
+      ],
+      "packaging-id": "e724a489-a7e8-30a1-a17c-30dfd6831202",
+      "release-events": [
+        {
+          "date": "2024-03-08",
+          "area": {
+            "type": null,
+            "sort-name": "[Worldwide]",
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "type-id": null,
+            "name": "[Worldwide]",
+            "disambiguation": "",
+            "iso-3166-1-codes": [
+              "XW"
+            ]
+          }
+        }
+      ],
+      "id": "df0264da-6b54-4015-a62c-29226e210d0c",
+      "quality": "normal",
+      "cover-art-archive": {
+        "front": true,
+        "darkened": false,
+        "back": true,
+        "count": 6,
+        "artwork": true
+      },
+      "date": "2024-03-08",
+      "country": "XW",
+      "asin": null,
+      "status": "Official",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      }
+    }
+  ]
+}
