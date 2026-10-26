@@ -1,0 +1,1739 @@
+[
+  {
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "title": "…Featuring",
+    "primary-type": "Album",
+    "id": "00fa7988-ba9e-4f50-8839-09a9d79a5e45",
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "artist": {
+          "type": "Person",
+          "disambiguation": "",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah"
+        },
+        "joinphrase": "",
+        "name": "Norah Jones"
+      }
+    ],
+    "first-release-date": "2010-11-03"
+  },
+  {
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ],
+    "disambiguation": "",
+    "id": "0a7637cd-09a4-43e1-a41e-5d0f2976e759",
+    "primary-type": "Album",
+    "title": "The Vinyl Collection",
+    "first-release-date": "2012-12-11",
+    "artist-credit": [
+      {
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "disambiguation": "",
+          "type": "Person"
+        },
+        "joinphrase": "",
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "first-release-date": "2012",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "disambiguation": "",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "id": "0bc61fcc-cecf-438f-aef2-9f3ce756f9bf",
+    "title": "Singing About You",
+    "disambiguation": "",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ]
+  },
+  {
+    "first-release-date": "2007-01-16",
+    "artist-credit": [
+      {
+        "joinphrase": " feat. ",
+        "artist": {
+          "sort-name": "Malick, Peter, Group, The",
+          "name": "The Peter Malick Group",
+          "disambiguation": "",
+          "type": "Group",
+          "id": "baeb409b-87ef-465e-97c4-496290fd3fcd",
+          "country": "US",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+        },
+        "name": "The Peter Malick Group"
+      },
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "disambiguation": "",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah"
+        }
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "id": "0df43d14-06e2-49e7-88db-75cd134a931d",
+    "primary-type": "Album",
+    "title": "The Deluxe Collection",
+    "disambiguation": "\"New York City\" with all the remixes",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ]
+  },
+  {
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "disambiguation": "",
+    "id": "1155e2ce-f1b2-394a-b23a-22406c8782a3",
+    "primary-type": "Album",
+    "title": "Not Too Late",
+    "first-release-date": "2006",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9"
+        },
+        "joinphrase": "",
+        "name": "Norah Jones"
+      }
+    ]
+  },
+  {
+    "disambiguation": "",
+    "title": "Stay With Me",
+    "primary-type": "Album",
+    "id": "130a0713-8209-3520-8e7e-806b1a1b0714",
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "artist-credit": [
+      {
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "type": "Person",
+          "disambiguation": "",
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah"
+        },
+        "joinphrase": "",
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2003"
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "type": "Person",
+          "disambiguation": "",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        }
+      }
+    ],
+    "first-release-date": "2002-04-16",
+    "disambiguation": "",
+    "title": "House of Blues, Chicago",
+    "id": "13861d7c-339a-48d0-b3ce-c89009d18b84",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ]
+  },
+  {
+    "disambiguation": "",
+    "title": "Marian McPartland’s Piano Jazz",
+    "primary-type": "Album",
+    "id": "15a68b1f-f487-3082-af61-f85ef4989903",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "pianist",
+          "id": "8833389f-b7fa-47f4-affe-f2e96d056dc2",
+          "country": "GB",
+          "name": "Marian McPartland",
+          "sort-name": "McPartland, Marian"
+        },
+        "joinphrase": " with guest ",
+        "name": "Marian McPartland"
+      },
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "disambiguation": "",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        }
+      }
+    ],
+    "first-release-date": "2003"
+  },
+  {
+    "artist-credit": [
+      {
+        "name": "Willie Nelson",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "",
+          "type": "Person",
+          "country": "US",
+          "id": "668fd73c-bf54-4310-a139-305517f05311",
+          "sort-name": "Nelson, Willie",
+          "name": "Willie Nelson"
+        },
+        "joinphrase": " & "
+      },
+      {
+        "name": "Wynton Marsalis",
+        "artist": {
+          "name": "Wynton Marsalis",
+          "sort-name": "Marsalis, Wynton",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "country": "US",
+          "id": "0d74dcc7-5684-4695-830f-a9846aad8ba9"
+        },
+        "joinphrase": " featuring "
+      },
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "disambiguation": "",
+          "type": "Person",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones"
+        }
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2011-03-28",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "disambiguation": "",
+    "title": "Here We Go Again: Celebrating the Genius of Ray Charles",
+    "id": "15d1029c-25b0-47f9-b105-b540cfc9aeca",
+    "primary-type": "Album"
+  },
+  {
+    "disambiguation": "",
+    "primary-type": "Album",
+    "id": "218d3fb6-0919-4dd7-8e70-a9432be47b01",
+    "title": "Playing Along",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "first-release-date": "2023-11-24",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "disambiguation": "",
+          "type": "Person",
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah"
+        }
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "disambiguation": "",
+    "title": "Live in PARIS (Palais Des Congrès)",
+    "id": "259af1d7-7839-3d11-99ae-265e27da1058",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "joinphrase": " & ",
+        "artist": {
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "type": "Person",
+          "disambiguation": "",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones"
+        },
+        "name": "Norah Jones"
+      },
+      {
+        "artist": {
+          "type": "Group",
+          "disambiguation": "",
+          "country": null,
+          "id": "66e092eb-16f4-4656-8e10-4c62de6beef5",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "name": "The Handsome Band",
+          "sort-name": "Handsome Band, The"
+        },
+        "joinphrase": "",
+        "name": "The Handsome Band"
+      }
+    ],
+    "first-release-date": "2004"
+  },
+  {
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "title": "More Appearances Featuring Norah Jones",
+    "primary-type": "Album",
+    "id": "2c41c32e-4f48-4477-8d96-24ec67c02176",
+    "disambiguation": "",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2015"
+  },
+  {
+    "title": "The Chill Album",
+    "primary-type": "Album",
+    "id": "300ec249-adba-35fd-8c44-45ae48fa63d5",
+    "disambiguation": "",
+    "secondary-types": [
+      "Remix"
+    ],
+    "secondary-type-ids": [
+      "0c60f497-ff81-3818-befd-abfc84a4858b"
+    ],
+    "artist-credit": [
+      {
+        "name": "The Peter Malick Group",
+        "joinphrase": " feat. ",
+        "artist": {
+          "type": "Group",
+          "disambiguation": "",
+          "country": "US",
+          "id": "baeb409b-87ef-465e-97c4-496290fd3fcd",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "sort-name": "Malick, Peter, Group, The",
+          "name": "The Peter Malick Group"
+        }
+      },
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "type": "Person",
+          "disambiguation": "",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2005-10-18"
+  },
+  {
+    "first-release-date": "2024-03-08",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "disambiguation": "",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "id": "329cb3f2-b650-4b38-bcd9-2fb2c6f3b8b9",
+    "primary-type": "Album",
+    "title": "Visions",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "secondary-types": []
+  },
+  {
+    "id": "39375a83-8d11-4f6f-b56d-621c02f8fef1",
+    "primary-type": "Album",
+    "title": "Bonnaroo Festival (live)",
+    "disambiguation": "",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "first-release-date": "",
+    "artist-credit": [
+      {
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "disambiguation": "",
+          "type": "Person",
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones"
+        },
+        "joinphrase": "",
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "disambiguation": "",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "name": "Norah Jones"
+      }
+    ],
+    "first-release-date": "",
+    "title": "Special Norah Jones",
+    "id": "4aed661c-e983-3dad-b156-904d9458cc4a",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ]
+  },
+  {
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "title": "Hamburg 2002 (WDR)",
+    "primary-type": "Album",
+    "id": "4defc485-b635-3959-95f7-12241438aea6",
+    "disambiguation": "",
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "",
+          "type": "Person",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones"
+        },
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": ""
+  },
+  {
+    "disambiguation": "",
+    "primary-type": "Album",
+    "id": "4f18b51c-9d2a-455f-94b8-2f38d14d4a74",
+    "title": "Live in 2007",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "first-release-date": "2007",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9"
+        },
+        "joinphrase": ""
+      }
+    ]
+  },
+  {
+    "first-release-date": "2021-10-14",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "disambiguation": "",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": "",
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type": "Album",
+    "id": "52970684-d795-4cc4-b508-ed9582ed5154",
+    "title": "I Dream of Christmas",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "secondary-types": []
+  },
+  {
+    "id": "62c6265a-807e-4e5a-9c74-c2635af674cd",
+    "primary-type": "Album",
+    "title": "Little Broken Hearts: Live at Allaire Studios",
+    "disambiguation": "",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "first-release-date": "2023-04-22",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "disambiguation": "",
+    "title": "Feels Like Home",
+    "primary-type": "Album",
+    "id": "689db471-1647-3d0f-a6b8-2e776cf913e8",
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "artist-credit": [
+      {
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US"
+        },
+        "joinphrase": "",
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2004-02-06"
+  },
+  {
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "id": "6ccac9d2-22ed-33de-bd5d-f2aadcacf7f8",
+    "primary-type": "Album",
+    "title": "Come Away With Me",
+    "disambiguation": "",
+    "first-release-date": "2002-02-26",
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "artist": {
+          "disambiguation": "",
+          "type": "Person",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones"
+        },
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "disambiguation": "",
+    "id": "7356ba2d-34a8-4048-b069-aee38344c2c7",
+    "primary-type": "Album",
+    "title": "Live at Ronnie Scott's",
+    "first-release-date": "2018-06-15",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "disambiguation": "",
+          "type": "Person",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah"
+        }
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "title": "Live at Heineken Music Hall",
+    "id": "74a05f8b-4118-4d5f-96b3-0654b43d9d28",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "type": "Person",
+          "disambiguation": "",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2004"
+  },
+  {
+    "first-release-date": "2003-07-08",
+    "artist-credit": [
+      {
+        "name": "The Peter Malick Group",
+        "joinphrase": " feat. ",
+        "artist": {
+          "id": "baeb409b-87ef-465e-97c4-496290fd3fcd",
+          "country": "US",
+          "disambiguation": "",
+          "type": "Group",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "name": "The Peter Malick Group",
+          "sort-name": "Malick, Peter, Group, The"
+        }
+      },
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US"
+        }
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "disambiguation": "",
+    "id": "76352c83-9b40-3b49-9b65-5a4fde8e8306",
+    "primary-type": "Album",
+    "title": "New York City"
+  },
+  {
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "id": "785cb865-c4b7-44ac-bab4-4159db869828",
+    "title": "…Little Broken Hearts",
+    "first-release-date": "2012-04-25",
+    "artist-credit": [
+      {
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "disambiguation": "",
+          "type": "Person",
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones"
+        },
+        "joinphrase": "",
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "first-release-date": "2008",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "type": "Person",
+          "disambiguation": ""
+        }
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": "",
+    "id": "86279efa-89d8-49fc-98ed-fa8fb93db5ed",
+    "primary-type": "Album",
+    "title": "The Greatest Hits",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ]
+  },
+  {
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "id": "8e036c82-e912-3143-beaf-4cf4fa74b2aa",
+    "title": "Live in New Orleans",
+    "first-release-date": "2003-02-25",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "type": "Person",
+          "disambiguation": "",
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones"
+        },
+        "name": "Norah Jones"
+      }
+    ]
+  },
+  {
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "title": "1981-12-xx: The BBC Jazz Club",
+    "primary-type": "Album",
+    "id": "92b8e8a2-1384-44a0-ade5-c71e3d3dee81",
+    "disambiguation": "",
+    "artist-credit": [
+      {
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US"
+        },
+        "joinphrase": "",
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": ""
+  },
+  {
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "primary-type": "Album",
+    "id": "9933161a-8269-3dbd-9861-940767cb815a",
+    "title": "Davies Hall (live)",
+    "disambiguation": "",
+    "first-release-date": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "",
+          "type": "Person",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah"
+        },
+        "name": "Norah Jones"
+      }
+    ]
+  },
+  {
+    "title": "New York City / Come Away With Me",
+    "primary-type": "Album",
+    "id": "9c3469a2-b684-3030-bd4d-e0704305f953",
+    "disambiguation": "",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "artist-credit": [
+      {
+        "name": "The Peter Malick Group",
+        "joinphrase": " feat. ",
+        "artist": {
+          "name": "The Peter Malick Group",
+          "sort-name": "Malick, Peter, Group, The",
+          "disambiguation": "",
+          "type": "Group",
+          "country": "US",
+          "id": "baeb409b-87ef-465e-97c4-496290fd3fcd",
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+        }
+      },
+      {
+        "name": "Norah Jones",
+        "joinphrase": " / ",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9"
+        }
+      },
+      {
+        "joinphrase": "",
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "type": "Person",
+          "disambiguation": "",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": ""
+  },
+  {
+    "title": "The Collection",
+    "id": "a43b1fa3-4a91-401a-9d4e-6215e65d9a66",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2012-12-11"
+  },
+  {
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "title": "Visionary Jones",
+    "primary-type": "Album",
+    "id": "acbdf5ef-2934-490e-8f17-735c47e63971",
+    "disambiguation": "",
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "type": "Person",
+          "disambiguation": "",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2024-02-09"
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "disambiguation": "",
+          "type": "Person",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "first-release-date": "2010-02-05",
+    "disambiguation": "",
+    "title": "iTunes Originals",
+    "id": "ba2ae634-efd4-421c-9ccb-f1434f977b9d",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ]
+  },
+  {
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "disambiguation": "",
+    "id": "bca6c68a-56b8-3cb5-bb0f-02743995d4e8",
+    "primary-type": "Album",
+    "title": "2002-06-23: Bonnaroo Music Festival, Manchester, TN, USA",
+    "first-release-date": "",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "disambiguation": "",
+          "type": "Person",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "first-release-date": "2004",
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "disambiguation": "",
+          "type": "Person"
+        },
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "id": "c273c836-efbc-4b04-8c2c-5f48ee9d50f5",
+    "primary-type": "Album",
+    "title": "The Ultimate Collection",
+    "disambiguation": ""
+  },
+  {
+    "title": "Begin Again",
+    "primary-type": "Album",
+    "id": "c43f36d2-c6d2-44bd-b361-b76c461ec7a0",
+    "disambiguation": "",
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "disambiguation": "",
+          "type": "Person",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        }
+      }
+    ],
+    "first-release-date": "2019-04-12"
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "type": "Person",
+          "disambiguation": "",
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah"
+        },
+        "joinphrase": "",
+        "name": "Norah Jones"
+      }
+    ],
+    "first-release-date": "2011-03",
+    "title": "Feels Like Home / Not Too Late",
+    "primary-type": "Album",
+    "id": "c57623af-3173-4cb7-8253-5cb61efbda6d",
+    "disambiguation": "",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ]
+  },
+  {
+    "first-release-date": "2021-04-16",
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "artist": {
+          "disambiguation": "",
+          "type": "Person",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones"
+        },
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": "",
+    "id": "c67ed8da-fa12-433a-8f8a-a45c7bfe4d7b",
+    "primary-type": "Album",
+    "title": "…’Til We Meet Again",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ]
+  },
+  {
+    "first-release-date": "2015",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "disambiguation": "",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ],
+    "primary-type": "Album",
+    "id": "c6b33e82-eec1-45e3-9447-df1a80cdf1fd",
+    "title": "More Appearances & Duets +",
+    "disambiguation": ""
+  },
+  {
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "title": "Live in 2004",
+    "id": "c8f650dd-cbc1-4970-82b0-f8bc5c721121",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "joinphrase": " & ",
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "type": "Person",
+          "disambiguation": ""
+        }
+      },
+      {
+        "artist": {
+          "sort-name": "Handsome Band, The",
+          "name": "The Handsome Band",
+          "disambiguation": "",
+          "type": "Group",
+          "id": "66e092eb-16f4-4656-8e10-4c62de6beef5",
+          "country": null,
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+        },
+        "joinphrase": "",
+        "name": "The Handsome Band"
+      }
+    ],
+    "first-release-date": "2004"
+  },
+  {
+    "id": "caa80518-d32b-33bf-bb7b-f9b3d29f1aad",
+    "primary-type": "Album",
+    "title": "The Peter Malick Group",
+    "disambiguation": "\"New York City\" with remix tracks added",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ],
+    "first-release-date": "2008",
+    "artist-credit": [
+      {
+        "name": "The Peter Malick Group",
+        "artist": {
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "country": "US",
+          "id": "baeb409b-87ef-465e-97c4-496290fd3fcd",
+          "disambiguation": "",
+          "type": "Group",
+          "name": "The Peter Malick Group",
+          "sort-name": "Malick, Peter, Group, The"
+        },
+        "joinphrase": " feat. "
+      },
+      {
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "type": "Person",
+          "disambiguation": ""
+        },
+        "joinphrase": "",
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "first-release-date": "2009-11-11",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "disambiguation": "",
+          "type": "Person"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "primary-type": "Album",
+    "id": "d757d920-d0e5-4931-919b-f2dd16c64dcf",
+    "title": "The Fall",
+    "disambiguation": ""
+  },
+  {
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": "",
+    "title": "The Fall / Not Too Late",
+    "primary-type": "Album",
+    "id": "d76e14f5-36e2-4d4f-9f0d-cd62465b4a17",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "",
+          "type": "Person",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah"
+        }
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2011-10-20"
+  },
+  {
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "title": "Day Breaks",
+    "primary-type": "Album",
+    "id": "d8b7416b-0c01-4062-a84e-ea9a30328f43",
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "disambiguation": "",
+          "type": "Person",
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "first-release-date": "2016-10-05"
+  },
+  {
+    "first-release-date": "",
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "",
+          "type": "Person",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9"
+        },
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "disambiguation": "",
+    "id": "e522f51e-3432-3d34-9960-d6b884d9df50",
+    "primary-type": "Album",
+    "title": "2002-07-13: GTE Amphitheatre, Virginia Beach, VA, USA"
+  },
+  {
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2026-05-27",
+    "title": "Norah Jones in London 2007",
+    "id": "e80c8ca8-25d1-4df8-8d61-e2f2561fa8ca",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ]
+  },
+  {
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "id": "e931bcf5-f9f3-4c61-a529-476cb5a28723",
+    "title": "Live in Paris 2007",
+    "first-release-date": "",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "disambiguation": "",
+          "type": "Person",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        }
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "title": "Foreverly",
+    "id": "e999c049-c65b-4c5e-ad12-5596998679c7",
+    "primary-type": "Album",
+    "artist-credit": [
+      {
+        "name": "Billie Joe",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "id": "5d06fe54-485a-4a07-b506-5f6f719448cb",
+          "country": "US",
+          "name": "Billie Joe Armstrong",
+          "sort-name": "Armstrong, Billie Joe"
+        },
+        "joinphrase": " + "
+      },
+      {
+        "name": "Norah",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "disambiguation": "",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2013-11-22"
+  },
+  {
+    "artist-credit": [
+      {
+        "joinphrase": "",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "disambiguation": "",
+          "type": "Person"
+        },
+        "name": "Norah Jones"
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2020-06-12",
+    "disambiguation": "",
+    "title": "Pick Me Up Off the Floor",
+    "primary-type": "Album",
+    "id": "ec35b59b-2f3c-414e-9225-6c8e93f3dbfa",
+    "secondary-types": [],
+    "secondary-type-ids": []
+  },
+  {
+    "title": "Covers",
+    "primary-type": "Album",
+    "id": "ef02708e-7b8b-4860-b04b-27062ab2e6e2",
+    "disambiguation": "",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "disambiguation": "",
+          "type": "Person",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        }
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2012-10-31"
+  },
+  {
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "primary-type": "Album",
+    "id": "f3a32311-e3cc-4c2a-902f-6f7a69732caa",
+    "title": "2007-06-29: McCaw Hall, Seattle, WA, USA",
+    "disambiguation": "",
+    "first-release-date": "",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "type": "Person",
+          "disambiguation": "",
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah"
+        }
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "primary-type": "Album",
+    "id": "f7833a53-138f-41f9-ab2c-191b5eebccd6",
+    "title": "Live in Poland",
+    "disambiguation": "",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "first-release-date": "2013-09-12",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah"
+        }
+      }
+    ]
+  },
+  {
+    "disambiguation": "",
+    "title": "Demos & Alternates",
+    "primary-type": "Album",
+    "id": "f8864d73-0595-46af-b8be-b251b3822944",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "disambiguation": "",
+          "type": "Person",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": "",
+        "name": "Norah Jones"
+      }
+    ],
+    "first-release-date": ""
+  },
+  {
+    "title": "Live From Austin, TX",
+    "id": "fd390dd4-275a-3831-84a7-64db94dc5fa0",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah",
+          "disambiguation": "",
+          "type": "Person",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        }
+      }
+    ],
+    "first-release-date": "2008-09-02"
+  },
+  {
+    "disambiguation": "",
+    "primary-type": "Album",
+    "id": "fe2de2c2-666e-3845-bda3-2cb23fcde7d2",
+    "title": "New York City: The Remix Album",
+    "secondary-type-ids": [
+      "0c60f497-ff81-3818-befd-abfc84a4858b"
+    ],
+    "secondary-types": [
+      "Remix"
+    ],
+    "first-release-date": "2004-08-10",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "artist": {
+          "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+          "country": "US",
+          "id": "baeb409b-87ef-465e-97c4-496290fd3fcd",
+          "type": "Group",
+          "disambiguation": "",
+          "name": "The Peter Malick Group",
+          "sort-name": "Malick, Peter, Group, The"
+        },
+        "joinphrase": " feat. ",
+        "name": "The Peter Malick Group"
+      },
+      {
+        "name": "Norah Jones",
+        "joinphrase": "",
+        "artist": {
+          "sort-name": "Jones, Norah",
+          "name": "Norah Jones",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "",
+          "type": "Person",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9"
+        }
+      }
+    ]
+  }
+]

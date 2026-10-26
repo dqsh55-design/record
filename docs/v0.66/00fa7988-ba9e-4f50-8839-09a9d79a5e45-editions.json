@@ -1,0 +1,513 @@
+{
+  "group": {
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "title": "…Featuring",
+    "primary-type": "Album",
+    "id": "00fa7988-ba9e-4f50-8839-09a9d79a5e45",
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "artist-credit": [
+      {
+        "artist": {
+          "type": "Person",
+          "disambiguation": "",
+          "country": "US",
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Norah Jones",
+          "sort-name": "Jones, Norah"
+        },
+        "joinphrase": "",
+        "name": "Norah Jones"
+      }
+    ],
+    "first-release-date": "2010-11-03"
+  },
+  "releases": [
+    {
+      "cover-art-archive": {
+        "front": true,
+        "back": false,
+        "count": 1,
+        "darkened": false,
+        "artwork": true
+      },
+      "title": "…Featuring",
+      "media": [
+        {
+          "title": "",
+          "id": "e66aa38a-3990-325c-acbc-e56b0d9b6cbb",
+          "track-count": 19,
+          "format": "CD",
+          "position": 1,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+        }
+      ],
+      "packaging-id": "e724a489-a7e8-30a1-a17c-30dfd6831202",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit": [
+        {
+          "artist": {
+            "sort-name": "Jones, Norah",
+            "type": "Person",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "name": "Norah Jones",
+            "country": "US",
+            "disambiguation": "",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+          },
+          "name": "Norah Jones",
+          "joinphrase": ""
+        }
+      ],
+      "packaging": "Gatefold Cover",
+      "id": "36469a3c-5ed7-460d-b2f8-c78208589fad",
+      "status": "Official",
+      "label-info": [
+        {
+          "catalog-number": "TOCP-70881",
+          "label": {
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "type": "Imprint",
+            "sort-name": "Blue Note",
+            "disambiguation": "",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 133,
+            "name": "Blue Note"
+          }
+        }
+      ],
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "release-events": [
+        {
+          "date": "2010-11-03",
+          "area": {
+            "disambiguation": "",
+            "iso-3166-1-codes": [
+              "JP"
+            ],
+            "type-id": null,
+            "name": "Japan",
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+            "sort-name": "Japan",
+            "type": null
+          }
+        }
+      ],
+      "date": "2010-11-03",
+      "disambiguation": "",
+      "asin": "B003YY8KF6",
+      "barcode": "4988006883123",
+      "country": "JP",
+      "quality": "normal"
+    },
+    {
+      "id": "5f30e2c9-5d56-353a-ae41-620f17cc51b2",
+      "status": "Official",
+      "label-info": [
+        {
+          "catalog-number": "509999 09868 26",
+          "label": {
+            "type": "Imprint",
+            "sort-name": "Blue Note",
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "name": "Blue Note",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 133,
+            "disambiguation": ""
+          }
+        }
+      ],
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "release-events": [
+        {
+          "area": {
+            "sort-name": "United Kingdom",
+            "type": null,
+            "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+            "name": "United Kingdom",
+            "type-id": null,
+            "iso-3166-1-codes": [
+              "GB"
+            ],
+            "disambiguation": ""
+          },
+          "date": "2010-11-15"
+        }
+      ],
+      "date": "2010-11-15",
+      "disambiguation": "",
+      "asin": "B003YWUTJI",
+      "barcode": "5099990986826",
+      "country": "GB",
+      "quality": "normal",
+      "cover-art-archive": {
+        "darkened": false,
+        "count": 8,
+        "artwork": true,
+        "front": true,
+        "back": true
+      },
+      "media": [
+        {
+          "format": "CD",
+          "track-count": 18,
+          "position": 1,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": "",
+          "id": "96b04071-29c2-33a6-9091-f4e68e10afdf"
+        }
+      ],
+      "title": "…Featuring",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": null,
+      "packaging": null,
+      "artist-credit": [
+        {
+          "artist": {
+            "country": "US",
+            "name": "Norah Jones",
+            "disambiguation": "",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "type": "Person",
+            "sort-name": "Jones, Norah",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9"
+          },
+          "name": "Norah Jones",
+          "joinphrase": ""
+        }
+      ]
+    },
+    {
+      "artist-credit": [
+        {
+          "artist": {
+            "country": "US",
+            "name": "Norah Jones",
+            "disambiguation": "",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "type": "Person",
+            "sort-name": "Jones, Norah",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9"
+          },
+          "name": "Norah Jones",
+          "joinphrase": ""
+        }
+      ],
+      "packaging": "Gatefold Cover",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "e724a489-a7e8-30a1-a17c-30dfd6831202",
+      "media": [
+        {
+          "title": "",
+          "id": "b32c388e-8f5c-37be-b255-a2a5e52663bc",
+          "format": "CD",
+          "track-count": 18,
+          "position": 1,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+        }
+      ],
+      "title": "…Featuring",
+      "cover-art-archive": {
+        "count": 1,
+        "darkened": false,
+        "artwork": true,
+        "back": false,
+        "front": true
+      },
+      "quality": "normal",
+      "country": "DE",
+      "asin": "B003YWUTJI",
+      "barcode": "5099990986826",
+      "disambiguation": "",
+      "date": "2010-11-10",
+      "release-events": [
+        {
+          "area": {
+            "disambiguation": "",
+            "iso-3166-1-codes": [
+              "DE"
+            ],
+            "type-id": null,
+            "name": "Germany",
+            "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+            "sort-name": "Germany",
+            "type": null
+          },
+          "date": "2010-11-10"
+        }
+      ],
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "label-info": [
+        {
+          "catalog-number": "509999 09868 2 6",
+          "label": {
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 133,
+            "disambiguation": "",
+            "name": "Blue Note",
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "sort-name": "Blue Note",
+            "type": "Imprint"
+          }
+        }
+      ],
+      "status": "Official",
+      "id": "6d0666ae-ffe4-3e8e-9184-c65e9aaffb92"
+    },
+    {
+      "packaging-id": null,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging": null,
+      "artist-credit": [
+        {
+          "artist": {
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "sort-name": "Jones, Norah",
+            "type": "Person",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "disambiguation": "",
+            "name": "Norah Jones",
+            "country": "US"
+          },
+          "name": "Norah Jones",
+          "joinphrase": ""
+        }
+      ],
+      "media": [
+        {
+          "track-count": 18,
+          "format": "CD",
+          "position": 1,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": "",
+          "id": "19624655-c7a2-3537-82dc-d29892b6edd7"
+        }
+      ],
+      "title": "…Featuring",
+      "cover-art-archive": {
+        "count": 1,
+        "darkened": false,
+        "artwork": true,
+        "back": false,
+        "front": true
+      },
+      "barcode": "5099990986826",
+      "asin": "B003YWUTJI",
+      "disambiguation": "",
+      "quality": "normal",
+      "country": "US",
+      "label-info": [
+        {
+          "label": {
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "type": "Imprint",
+            "sort-name": "Blue Note",
+            "disambiguation": "",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 133,
+            "name": "Blue Note"
+          },
+          "catalog-number": "509999 09868 26"
+        }
+      ],
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "id": "740bc2bb-3d6e-4870-b176-b6f219475eea",
+      "status": "Official",
+      "date": "2010-11-16",
+      "release-events": [
+        {
+          "date": "2010-11-16",
+          "area": {
+            "name": "United States",
+            "type-id": null,
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "disambiguation": "",
+            "type": null,
+            "sort-name": "United States",
+            "id": "489ce91b-6658-3307-9877-795b68554c98"
+          }
+        }
+      ]
+    },
+    {
+      "release-events": [
+        {
+          "date": "2010",
+          "area": {
+            "type": null,
+            "sort-name": "Canada",
+            "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+            "name": "Canada",
+            "iso-3166-1-codes": [
+              "CA"
+            ],
+            "type-id": null,
+            "disambiguation": ""
+          }
+        }
+      ],
+      "date": "2010",
+      "id": "c746f93e-4ef2-4c52-a102-470733826e79",
+      "status": "Official",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "label-info": [
+        {
+          "catalog-number": "509999 09868 2 6",
+          "label": {
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946",
+            "type": "Imprint",
+            "sort-name": "Blue Note",
+            "disambiguation": "",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 133,
+            "name": "Blue Note"
+          }
+        }
+      ],
+      "country": "CA",
+      "quality": "normal",
+      "disambiguation": "",
+      "asin": null,
+      "barcode": "5099990986826",
+      "cover-art-archive": {
+        "darkened": false,
+        "count": 0,
+        "artwork": false,
+        "front": false,
+        "back": false
+      },
+      "title": "…Featuring",
+      "media": [
+        {
+          "id": "ba538e74-33db-3434-8d5f-66c942a6566e",
+          "title": "",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "position": 1,
+          "format": "CD",
+          "track-count": 18
+        }
+      ],
+      "packaging": "Gatefold Cover",
+      "artist-credit": [
+        {
+          "artist": {
+            "type": "Person",
+            "sort-name": "Jones, Norah",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "country": "US",
+            "name": "Norah Jones",
+            "disambiguation": "",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+          },
+          "name": "Norah Jones",
+          "joinphrase": ""
+        }
+      ],
+      "packaging-id": "e724a489-a7e8-30a1-a17c-30dfd6831202",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+    },
+    {
+      "media": [
+        {
+          "id": "99af54be-b3b1-3e4e-b8a6-adb9e13ce610",
+          "title": "",
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "position": 1,
+          "track-count": 19,
+          "format": "Digital Media"
+        }
+      ],
+      "title": "…Featuring",
+      "cover-art-archive": {
+        "count": 2,
+        "artwork": true,
+        "darkened": false,
+        "front": true,
+        "back": false
+      },
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging": "None",
+      "artist-credit": [
+        {
+          "artist": {
+            "name": "Norah Jones",
+            "country": "US",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "disambiguation": "",
+            "sort-name": "Jones, Norah",
+            "type": "Person",
+            "id": "985c709c-7771-4de3-9024-7bda29ebe3f9"
+          },
+          "joinphrase": "",
+          "name": "Norah Jones"
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "name": "Blue Note",
+            "disambiguation": "",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 133,
+            "type": "Imprint",
+            "sort-name": "Blue Note",
+            "id": "713c4a95-6616-442b-9cf6-14e1ddfd5946"
+          },
+          "catalog-number": null
+        }
+      ],
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "status": "Official",
+      "id": "e5e80279-2b18-4b52-8a1b-346488166eb2",
+      "date": "2010-11-12",
+      "release-events": [
+        {
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "sort-name": "[Worldwide]",
+            "type": null,
+            "iso-3166-1-codes": [
+              "XW"
+            ],
+            "type-id": null,
+            "disambiguation": "",
+            "name": "[Worldwide]"
+          },
+          "date": "2010-11-12"
+        }
+      ],
+      "barcode": "05099991901057",
+      "asin": "B0048PU7TC",
+      "disambiguation": "",
+      "country": "XW",
+      "quality": "normal"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "mode": "offline replay of real MB responses and reviewed official facts",
+  "cases": [
+    {
+      "name": "original studio",
+      "releaseId": "c88138cf-00f3-3c70-8757-3bbe0e4713d1",
+      "kind": "studio",
+      "visibility": "official",
+      "verification": "unconfirmed",
+      "workVerification": "confirmed",
+      "workSources": [
+        "https://www.bluenote.com/artist/norah-jones/"
+      ],
+      "referenceYears": [
+        "2002"
+      ],
+      "originalDate": "2002-02-26",
+      "releaseDate": "2002-02-26",
+      "labels": [
+        "Blue Note"
+      ],
+      "edition": "unconfirmed",
+      "publishers": [],
+      "sources": []
+    },
+    {
+      "name": "official live",
+      "releaseId": "93f9b391-3836-477e-bc3b-9d350684fb99",
+      "kind": "live",
+      "visibility": "official",
+      "verification": "unconfirmed",
+      "workVerification": "confirmed",
+      "workSources": [
+        "https://www.norahjones.com/news-1/2021/4/16/norah-jones-releases-first-ever-live-album-til-we-meet-again"
+      ],
+      "referenceYears": [
+        "2021"
+      ],
+      "originalDate": "2021-04-16",
+      "releaseDate": "2021-04-16",
+      "labels": [
+        "Blue Note"
+      ],
+      "edition": "unconfirmed",
+      "publishers": [],
+      "sources": []
+    },
+    {
+      "name": "official compilation",
+      "releaseId": "36469a3c-5ed7-460d-b2f8-c78208589fad",
+      "kind": "compilation",
+      "visibility": "official",
+      "verification": "unconfirmed",
+      "workVerification": "confirmed",
+      "workSources": [
+        "https://norahjones.jp/disco/tocp-70881/"
+      ],
+      "referenceYears": [
+        "2010"
+      ],
+      "originalDate": "2010-11-03",
+      "releaseDate": "2010-11-03",
+      "labels": [
+        "Blue Note"
+      ],
+      "edition": "unconfirmed",
+      "publishers": [],
+      "sources": []
+    },
+    {
+      "name": "official reissue",
+      "releaseId": "dd00e0df-dd7e-48af-8b13-921bf505167f",
+      "kind": "studio",
+      "visibility": "official",
+      "verification": "confirmed",
+      "workVerification": "confirmed",
+      "workSources": [
+        "https://www.bluenote.com/artist/norah-jones/"
+      ],
+      "referenceYears": [
+        "2002"
+      ],
+      "originalDate": "2002-02-26",
+      "releaseDate": "2022-05-27",
+      "labels": [
+        "Blue Note"
+      ],
+      "edition": "reissue",
+      "publishers": [
+        "ユニバーサル ミュージック合同会社"
+      ],
+      "sources": [
+        "https://www.universal-music.co.jp/norah-jones/products/uccq-1155/"
+      ]
+    },
+    {
+      "name": "licensed specialist imprint stays visible",
+      "releaseId": "c766c537-9eef-4005-ad35-b6b0a1bd5712",
+      "kind": "studio",
+      "visibility": "official",
+      "verification": "unconfirmed",
+      "workVerification": "confirmed",
+      "workSources": [
+        "https://www.bluenote.com/artist/norah-jones/"
+      ],
+      "referenceYears": [
+        "2002"
+      ],
+      "originalDate": "2002-02-26",
+      "releaseDate": "2012-11-13",
+      "labels": [
+        "Analogue Productions"
+      ],
+      "edition": "unconfirmed",
+      "publishers": [],
+      "sources": []
+    },
+    {
+      "name": "missing status on a named label",
+      "releaseId": "608d22ac-be83-453e-97e8-6fc607a30908",
+      "kind": "studio",
+      "visibility": "unknown",
+      "verification": "unconfirmed",
+      "workVerification": "confirmed",
+      "workSources": [
+        "https://www.bluenote.com/artist/norah-jones/"
+      ],
+      "referenceYears": [
+        "2002"
+      ],
+      "originalDate": "2002-02-26",
+      "releaseDate": "2022",
+      "labels": [
+        "Blue Note"
+      ],
+      "edition": "unconfirmed",
+      "publishers": [],
+      "sources": []
+    },
+    {
+      "name": "missing status and label",
+      "releaseId": "03deeefc-9b7a-4655-a819-11cc992c8b45",
+      "kind": "studio",
+      "visibility": "unknown",
+      "verification": "unconfirmed",
+      "workVerification": "confirmed",
+      "workSources": [
+        "https://www.bluenote.com/artist/norah-jones/"
+      ],
+      "referenceYears": [
+        "2002"
+      ],
+      "originalDate": "2002-02-26",
+      "releaseDate": "",
+      "labels": [],
+      "edition": "unconfirmed",
+      "publishers": [],
+      "sources": []
+    },
+    {
+      "name": "withdrawn remains pending",
+      "releaseId": "6e0af97b-723b-4b0c-a410-dc257a373071",
+      "kind": "studio",
+      "visibility": "unknown",
+      "verification": "unconfirmed",
+      "workVerification": "confirmed",
+      "workSources": [
+        "https://www.bluenote.com/artist/norah-jones/"
+      ],
+      "referenceYears": [
+        "2002"
+      ],
+      "originalDate": "2002-02-26",
+      "releaseDate": "2012-04-06",
+      "labels": [
+        "Blue Note"
+      ],
+      "edition": "unconfirmed",
+      "publishers": [],
+      "sources": []
+    }
+  ]
+}

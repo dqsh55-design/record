@@ -20,6 +20,7 @@ jobs:
       - run: node tests/test_browser.cjs
       - run: node tests/test_credit_attribution.cjs
       - run: node tests/test_chronology.cjs
+      - run: node tests/test_album_classification.cjs
       - run: pip install 'playwright>=1.50,<2'
       # ubuntu-latest includes Chrome and its native libraries.
       - run: google-chrome --version
