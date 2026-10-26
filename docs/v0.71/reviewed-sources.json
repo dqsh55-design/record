@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-10-26",
+  "method": "Manual review of retrieved official pages; factual paraphrases only; MBID mapping reviewed separately",
+  "references": [
+    {
+      "scope": "work",
+      "official": true,
+      "sourceKind": "artist-or-label",
+      "checkedAt": "2026-10-26",
+      "groupId": "8e8a594f-2175-38c7-a871-abb68ec363e7",
+      "title": "Kind of Blue",
+      "artistIds": [
+        "561d854a-6a28-4aa7-8c99-323e6ce46c2a"
+      ],
+      "kind": "studio",
+      "originalYear": "1959",
+      "sourceUrl": "https://www.milesdavis.com/albums/kind-of-blue/",
+      "reviewNote": "公式作品ページの1959年8月17日とスタジオ録音の説明を確認。Columbiaの記載を他の発売盤のレーベルへ転用しない。各発売盤の品番・仕様は未照合。"
+    },
+    {
+      "scope": "work",
+      "official": true,
+      "sourceKind": "artist-or-label",
+      "checkedAt": "2026-10-26",
+      "groupId": "01e94aea-fd9f-36b3-9965-73904e97cd73",
+      "title": "Jeff Beck With the Jan Hammer Group Live",
+      "artistIds": [
+        "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+        "074ad168-8c8b-44df-8388-110bbea45a2b"
+      ],
+      "kind": "live",
+      "originalYear": "1977",
+      "sourceUrl": "https://www.sonymusic.co.jp/artist/JeffBeck/profile/",
+      "reviewNote": "Sony公式ディスコグラフィーの発売年と、ライブ盤／3枚組ベスト盤の記載を確認。共同名義のIDはMB索引に対応付けたもので公式ページがMBIDを提供しているという意味ではない。発売盤別の独立確認には使わない。"
+    },
+    {
+      "scope": "work",
+      "official": true,
+      "sourceKind": "artist-or-label",
+      "checkedAt": "2026-10-26",
+      "groupId": "e1f7f19d-ac4a-369f-932c-969d3bc4c13f",
+      "title": "Beckology",
+      "artistIds": [
+        "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17"
+      ],
+      "kind": "compilation",
+      "originalYear": "1991",
+      "sourceUrl": "https://www.sonymusic.co.jp/artist/JeffBeck/profile/",
+      "reviewNote": "Sony公式ディスコグラフィーの発売年と、ライブ盤／3枚組ベスト盤の記載を確認。共同名義のIDはMB索引に対応付けたもので公式ページがMBIDを提供しているという意味ではない。発売盤別の独立確認には使わない。"
+    },
+    {
+      "scope": "work",
+      "official": true,
+      "sourceKind": "artist-or-label",
+      "checkedAt": "2026-10-26",
+      "groupId": "88996cde-51b7-3178-9d39-f16ca582330f",
+      "title": "See the Light",
+      "artistIds": [
+        "9fac4087-8201-4b74-a619-e77b1602aaf4"
+      ],
+      "kind": "studio",
+      "originalYear": "1988",
+      "sourceUrl": "https://jeffhealey.com/album/see-the-light/",
+      "reviewNote": "Estate公式の1988年・バンド名義・スタジオ録音場所を確認。作品IDはMB発売盤ページからのリンク、年と名義はMBアーティストのAlbum一覧で対応付けた。個人Jeff HealeyのIDではない。品番と正確な発売日は公式ページ未確認のため各盤の独立確認には使わない。"
+    }
+  ],
+  "limits": [
+    "Only four additional works reviewed, not complete discographies",
+    "No additional edition receives independent confirmation",
+    "MusicBrainz direct API returned non-JSON; no new API snapshot saved",
+    "A browser verification page blocked the Healey work page; no bypass attempted; work ID taken from observed release-page link"
+  ]
+}
