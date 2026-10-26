@@ -1,0 +1,2753 @@
+{
+  "release-count": 137,
+  "releases": [
+    {
+      "media": [
+        {
+          "position": 1,
+          "format": "12\" Vinyl",
+          "title": "",
+          "track-count": 5,
+          "id": "a9b76717-5dab-34b2-84bd-c4d298537f74",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64"
+        }
+      ],
+      "country": "XE",
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "release-events": [
+        {
+          "date": "2015",
+          "area": {
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "name": "Europe",
+            "iso-3166-1-codes": [
+              "XE"
+            ],
+            "disambiguation": "",
+            "type": null,
+            "type-id": null,
+            "sort-name": "Europe"
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "DOL725H",
+          "label": {
+            "label-code": null,
+            "name": "DOL",
+            "id": "2777a286-40e7-49b4-b5bf-050a560c7d26",
+            "disambiguation": "",
+            "sort-name": "DOL",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production"
+          }
+        }
+      ],
+      "asin": null,
+      "cover-art-archive": {
+        "back": true,
+        "front": true,
+        "darkened": false,
+        "count": 2,
+        "artwork": true
+      },
+      "title": "Kind of Blue",
+      "packaging": "Cardboard/Paper Sleeve",
+      "status": "Official",
+      "barcode": "889397557256",
+      "date": "2015",
+      "disambiguation": "",
+      "id": "04eeef76-5a4b-4195-a6bb-e64e84eee6e0",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal"
+    },
+    {
+      "cover-art-archive": {
+        "artwork": false,
+        "front": false,
+        "back": false,
+        "darkened": false,
+        "count": 0
+      },
+      "asin": null,
+      "packaging": "Book",
+      "title": "Kind of Blue",
+      "packaging-id": "d60b6157-79fe-3913-ab8b-23b32de8690d",
+      "country": "FR",
+      "media": [
+        {
+          "position": 1,
+          "format": "CD",
+          "id": "6cd8d19a-11cd-321c-94ea-51757b082cb2",
+          "track-count": 9,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": ""
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "83315",
+          "label": {
+            "label-code": null,
+            "id": "d2b01fd0-4308-440d-a784-b6fac847b41e",
+            "name": "Jazz Images",
+            "disambiguation": "",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "sort-name": "Jazz Images"
+          }
+        }
+      ],
+      "release-events": [
+        {
+          "area": {
+            "sort-name": "France",
+            "type": null,
+            "type-id": null,
+            "disambiguation": "",
+            "name": "France",
+            "iso-3166-1-codes": [
+              "FR"
+            ],
+            "id": "08310658-51eb-3801-80de-5a0739207115"
+          },
+          "date": "2022"
+        }
+      ],
+      "status-id": null,
+      "id": "0645c88c-5e15-4e61-86ee-cb57a414144c",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "barcode": "9788409345625",
+      "status": null,
+      "disambiguation": "",
+      "date": "2022"
+    },
+    {
+      "packaging": "None",
+      "title": "Kind of Blue",
+      "cover-art-archive": {
+        "artwork": true,
+        "darkened": false,
+        "front": true,
+        "back": false,
+        "count": 1
+      },
+      "asin": "B00136JQMI",
+      "label-info": [
+        {
+          "catalog-number": null,
+          "label": {
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX",
+            "sort-name": "Columbia",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "label-code": 162,
+            "name": "Columbia",
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e"
+          }
+        },
+        {
+          "label": {
+            "name": "Legacy",
+            "id": "45ffe1d8-92da-4750-9a4a-f42861f46e2c",
+            "label-code": 2361,
+            "sort-name": "Legacy",
+            "type": "Reissue Production",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "disambiguation": "reissue division of Sony Music Entertainment"
+          },
+          "catalog-number": null
+        }
+      ],
+      "release-events": [
+        {
+          "area": {
+            "type-id": null,
+            "type": null,
+            "sort-name": "United States",
+            "disambiguation": "",
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ]
+          },
+          "date": ""
+        }
+      ],
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "country": "US",
+      "media": [
+        {
+          "format": "Digital Media",
+          "position": 1,
+          "track-count": 6,
+          "id": "d8958ccc-4d16-37b9-89bb-37562def7786",
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "title": ""
+        }
+      ],
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "080d58e3-9e03-4322-aebf-6d42605b3260",
+      "disambiguation": "",
+      "date": "",
+      "barcode": "",
+      "status": "Official"
+    },
+    {
+      "cover-art-archive": {
+        "count": 0,
+        "darkened": false,
+        "front": false,
+        "back": false,
+        "artwork": false
+      },
+      "asin": null,
+      "packaging": "Cardboard/Paper Sleeve",
+      "title": "Kind of Blue",
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "media": [
+        {
+          "format": "12\" Vinyl",
+          "position": 1,
+          "id": "cd2e40d0-7960-307f-ac58-29305dbea750",
+          "track-count": 5,
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "title": ""
+        }
+      ],
+      "country": "JP",
+      "release-events": [
+        {
+          "date": "2019-12-25",
+          "area": {
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+            "name": "Japan",
+            "iso-3166-1-codes": [
+              "JP"
+            ],
+            "disambiguation": "",
+            "type-id": null,
+            "type": null,
+            "sort-name": "Japan"
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "disambiguation": "Japanese TEXTLESS boxed Walking Eye imprint",
+            "sort-name": "Sony Records International",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": null,
+            "name": "Sony Records International",
+            "id": "c9a4ea86-7611-4fff-9f4f-41f18be7e14b"
+          },
+          "catalog-number": "SIJP-1014"
+        }
+      ],
+      "status-id": "55005350-bc3f-441a-b0c7-27c565eae341",
+      "id": "0915561a-a75c-493e-aee8-1c2d130c2e3d",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "status": "Cancelled",
+      "barcode": "4547366428582",
+      "disambiguation": "mono",
+      "date": "2019-12-25"
+    },
+    {
+      "cover-art-archive": {
+        "artwork": false,
+        "darkened": false,
+        "front": false,
+        "back": false,
+        "count": 0
+      },
+      "asin": null,
+      "packaging": "Cardboard/Paper Sleeve",
+      "title": "Kind of Blue",
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "country": "GB",
+      "media": [
+        {
+          "format": "12\" Vinyl",
+          "position": 1,
+          "id": "a1c56cb4-0384-43c7-b833-5a70cf7002b0",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "track-count": 5,
+          "title": ""
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "disambiguation": "CBS Records’ international imprint from 1962–1990; renamed since 1991 as Columbia",
+            "sort-name": "CBS",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 149,
+            "name": "CBS",
+            "id": "b8d33bec-92cc-40d9-bd92-4eb089b401a9"
+          },
+          "catalog-number": "CS 8163"
+        },
+        {
+          "label": {
+            "id": "bf5674f0-0c42-4036-a47c-6d113d115d8d",
+            "name": "De Agostini",
+            "label-code": null,
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "De Agostini",
+            "disambiguation": ""
+          },
+          "catalog-number": null
+        }
+      ],
+      "release-events": [
+        {
+          "area": {
+            "disambiguation": "",
+            "type-id": null,
+            "type": null,
+            "sort-name": "United Kingdom",
+            "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+            "name": "United Kingdom",
+            "iso-3166-1-codes": [
+              "GB"
+            ]
+          },
+          "date": "2016-01-20"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "099c1bb3-091f-4a86-a0e9-ece4b347bd2b",
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "barcode": "",
+      "status": "Official",
+      "disambiguation": "Jazz @ 33rpm - Issue 1",
+      "date": "2016-01-20"
+    },
+    {
+      "status": "Official",
+      "barcode": "888880696069",
+      "date": "",
+      "disambiguation": "legacy edition",
+      "id": "0b84b56e-b0c6-4319-8d81-49cdd0ee3737",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "media": [
+        {
+          "position": 1,
+          "format": "Digital Media",
+          "title": "",
+          "track-count": 15,
+          "id": "701cd078-7a8e-3c2c-92c9-96265ddf0242",
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794"
+        },
+        {
+          "position": 2,
+          "format": "Digital Media",
+          "id": "d7064d04-2e62-3496-b923-ba62769de9a2",
+          "track-count": 6,
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "title": ""
+        }
+      ],
+      "country": "XW",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "release-events": [
+        {
+          "area": {
+            "disambiguation": "",
+            "sort-name": "[Worldwide]",
+            "type": null,
+            "type-id": null,
+            "name": "[Worldwide]",
+            "iso-3166-1-codes": [
+              "XW"
+            ],
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f"
+          },
+          "date": ""
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": null,
+          "label": {
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "Columbia",
+            "label-code": 162,
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+            "name": "Columbia"
+          }
+        },
+        {
+          "label": {
+            "label-code": 2361,
+            "name": "Legacy",
+            "id": "45ffe1d8-92da-4750-9a4a-f42861f46e2c",
+            "disambiguation": "reissue division of Sony Music Entertainment",
+            "sort-name": "Legacy",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production"
+          },
+          "catalog-number": null
+        }
+      ],
+      "asin": null,
+      "cover-art-archive": {
+        "artwork": true,
+        "count": 1,
+        "darkened": false,
+        "back": false,
+        "front": true
+      },
+      "title": "Kind of Blue",
+      "packaging": "None"
+    },
+    {
+      "text-representation": {
+        "script": null,
+        "language": "eng"
+      },
+      "quality": "normal",
+      "id": "15eb186f-2856-4852-890c-44d6109357ae",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "date": "2023-11-22",
+      "disambiguation": "",
+      "barcode": "4547366638691",
+      "status": "Official",
+      "title": "Kind of Blue",
+      "packaging": "Box",
+      "asin": null,
+      "cover-art-archive": {
+        "darkened": false,
+        "back": false,
+        "front": false,
+        "count": 0,
+        "artwork": false
+      },
+      "label-info": [
+        {
+          "catalog-number": "SICJ-30048",
+          "label": {
+            "id": "c9a4ea86-7611-4fff-9f4f-41f18be7e14b",
+            "name": "Sony Records International",
+            "label-code": null,
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "Sony Records International",
+            "disambiguation": "Japanese TEXTLESS boxed Walking Eye imprint"
+          }
+        },
+        {
+          "catalog-number": "SICJ-30049",
+          "label": {
+            "label-code": null,
+            "name": "Sony Records International",
+            "id": "c9a4ea86-7611-4fff-9f4f-41f18be7e14b",
+            "disambiguation": "Japanese TEXTLESS boxed Walking Eye imprint",
+            "sort-name": "Sony Records International",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint"
+          }
+        }
+      ],
+      "release-events": [
+        {
+          "date": "2023-11-22",
+          "area": {
+            "type": null,
+            "type-id": null,
+            "sort-name": "Japan",
+            "disambiguation": "",
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+            "iso-3166-1-codes": [
+              "JP"
+            ],
+            "name": "Japan"
+          }
+        }
+      ],
+      "country": "JP",
+      "media": [
+        {
+          "title": "Stereo",
+          "id": "b0b0f63a-a386-3141-bdb3-fe98020648b4",
+          "track-count": 6,
+          "format-id": "038ec24e-5d01-3a8c-817e-c51a515b1875",
+          "format": "Blu-spec CD",
+          "position": 1
+        },
+        {
+          "title": "Mono",
+          "track-count": 5,
+          "id": "7be4371c-2534-3111-9d64-49d93077f1e0",
+          "format-id": "038ec24e-5d01-3a8c-817e-c51a515b1875",
+          "position": 2,
+          "format": "Blu-spec CD"
+        }
+      ],
+      "packaging-id": "c1668fc7-8944-4a00-bc3e-46e8d861d211"
+    },
+    {
+      "asin": null,
+      "cover-art-archive": {
+        "count": 0,
+        "darkened": false,
+        "back": false,
+        "front": false,
+        "artwork": false
+      },
+      "title": "Kind Of Blue",
+      "packaging": null,
+      "country": "GB",
+      "media": [
+        {
+          "id": "5649c073-7ab6-3fca-b21c-338e0e931b68",
+          "track-count": 5,
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "title": "",
+          "format": "12\" Vinyl",
+          "position": 1
+        }
+      ],
+      "packaging-id": null,
+      "label-info": [
+        {
+          "catalog-number": "CS 8163",
+          "label": {
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX",
+            "sort-name": "Columbia",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "label-code": 162,
+            "name": "Columbia",
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e"
+          }
+        },
+        {
+          "catalog-number": "CS 8163",
+          "label": {
+            "label-code": null,
+            "name": "De Agostini",
+            "id": "bf5674f0-0c42-4036-a47c-6d113d115d8d",
+            "disambiguation": "",
+            "sort-name": "De Agostini",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded"
+          }
+        }
+      ],
+      "release-events": [
+        {
+          "area": {
+            "type": null,
+            "type-id": null,
+            "sort-name": "United Kingdom",
+            "disambiguation": "",
+            "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+            "iso-3166-1-codes": [
+              "GB"
+            ],
+            "name": "United Kingdom"
+          },
+          "date": "2016-01-20"
+        }
+      ],
+      "id": "18c13f03-1df4-4e72-af84-c503c5e6ee5a",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "barcode": null,
+      "status": "Official",
+      "date": "2016-01-20",
+      "disambiguation": "180gram"
+    },
+    {
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "id": "1cf538cd-8b5b-4aeb-b1b4-73861b84ceac",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "date": "2015-09-21",
+      "disambiguation": "2015 MFSL remaster",
+      "barcode": "821797450119",
+      "status": "Official",
+      "title": "Kind of Blue",
+      "packaging": "Gatefold Cover",
+      "asin": null,
+      "cover-art-archive": {
+        "front": true,
+        "back": true,
+        "darkened": false,
+        "count": 7,
+        "artwork": true
+      },
+      "label-info": [
+        {
+          "label": {
+            "id": "edd54e2f-2eef-46b1-a9b5-bedfe5ed33be",
+            "name": "Mobile Fidelity Sound Lab",
+            "label-code": null,
+            "type": "Reissue Production",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "sort-name": "Mobile Fidelity Sound Lab",
+            "disambiguation": ""
+          },
+          "catalog-number": "MFSL 2-45011"
+        }
+      ],
+      "release-events": [
+        {
+          "area": {
+            "type": null,
+            "type-id": null,
+            "sort-name": "United States",
+            "disambiguation": "",
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ]
+          },
+          "date": "2015-09-21"
+        }
+      ],
+      "country": "US",
+      "media": [
+        {
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "id": "dc7c3c12-d4df-3aaf-90d7-5d9e77ecfcc1",
+          "track-count": 3,
+          "title": "",
+          "format": "12\" Vinyl",
+          "position": 1
+        },
+        {
+          "position": 2,
+          "format": "12\" Vinyl",
+          "id": "48c41808-7d08-3a94-9fa8-b7732e21683e",
+          "track-count": 2,
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "title": ""
+        }
+      ],
+      "packaging-id": "e724a489-a7e8-30a1-a17c-30dfd6831202"
+    },
+    {
+      "packaging": "Cardboard/Paper Sleeve",
+      "title": "Kind of Blue",
+      "cover-art-archive": {
+        "artwork": true,
+        "darkened": false,
+        "back": true,
+        "front": true,
+        "count": 2
+      },
+      "asin": "B0041TM5OU",
+      "label-info": [
+        {
+          "catalog-number": "88697680571",
+          "label": {
+            "label-code": 162,
+            "name": "Columbia",
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX",
+            "sort-name": "Columbia",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint"
+          }
+        },
+        {
+          "label": {
+            "id": "45ffe1d8-92da-4750-9a4a-f42861f46e2c",
+            "name": "Legacy",
+            "label-code": 2361,
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "sort-name": "Legacy",
+            "disambiguation": "reissue division of Sony Music Entertainment"
+          },
+          "catalog-number": "88697680571"
+        }
+      ],
+      "release-events": [
+        {
+          "date": "2010",
+          "area": {
+            "sort-name": "United States",
+            "type": null,
+            "type-id": null,
+            "disambiguation": "",
+            "name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "id": "489ce91b-6658-3307-9877-795b68554c98"
+          }
+        }
+      ],
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "country": "US",
+      "media": [
+        {
+          "track-count": 5,
+          "id": "22311fe2-3fc4-3b2f-b83d-2822250c4691",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "title": "",
+          "position": 1,
+          "format": "12\" Vinyl"
+        }
+      ],
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "2899db3e-155b-4990-931e-66c81cc95ae3",
+      "disambiguation": "stereo",
+      "date": "2010",
+      "barcode": "886976805715",
+      "status": "Official"
+    },
+    {
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "353021d1-3d84-4f17-9fe4-66788d785a9d",
+      "disambiguation": "legacy edition",
+      "date": "2016",
+      "barcode": "889853635726",
+      "status": "Official",
+      "packaging": "Gatefold Cover",
+      "title": "Kind of Blue",
+      "cover-art-archive": {
+        "artwork": true,
+        "front": false,
+        "back": true,
+        "darkened": false,
+        "count": 6
+      },
+      "asin": null,
+      "label-info": [
+        {
+          "catalog-number": "88985363572",
+          "label": {
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+            "name": "Columbia",
+            "label-code": 162,
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "sort-name": "Columbia",
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX"
+          }
+        },
+        {
+          "label": {
+            "disambiguation": "reissue division of Sony Music Entertainment",
+            "sort-name": "Legacy",
+            "type": "Reissue Production",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "label-code": 2361,
+            "name": "Legacy",
+            "id": "45ffe1d8-92da-4750-9a4a-f42861f46e2c"
+          },
+          "catalog-number": "88985363572"
+        }
+      ],
+      "release-events": [
+        {
+          "area": {
+            "disambiguation": "",
+            "type-id": null,
+            "type": null,
+            "sort-name": "Europe",
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "name": "Europe",
+            "iso-3166-1-codes": [
+              "XE"
+            ]
+          },
+          "date": "2016"
+        }
+      ],
+      "packaging-id": "e724a489-a7e8-30a1-a17c-30dfd6831202",
+      "country": "XE",
+      "media": [
+        {
+          "format": "CD",
+          "position": 1,
+          "id": "3dc2aa1b-6bc2-30db-a201-93d7aff9447a",
+          "track-count": 15,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": ""
+        },
+        {
+          "position": 2,
+          "format": "CD",
+          "title": "",
+          "id": "4a3f28ce-9b28-396c-a4df-cc4f490d2fa7",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "track-count": 6
+        }
+      ]
+    },
+    {
+      "asin": null,
+      "cover-art-archive": {
+        "artwork": true,
+        "back": true,
+        "front": true,
+        "darkened": false,
+        "count": 5
+      },
+      "title": "Kind Of Blue",
+      "packaging": null,
+      "media": [
+        {
+          "id": "52882c63-ceaf-4491-a1f9-bb1b1af34938",
+          "track-count": 5,
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "title": "",
+          "position": 1,
+          "format": "12\" Vinyl"
+        }
+      ],
+      "country": "US",
+      "packaging-id": null,
+      "release-events": [
+        {
+          "date": "2022-08-29",
+          "area": {
+            "name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "sort-name": "United States",
+            "type": null,
+            "type-id": null,
+            "disambiguation": ""
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "name": "Sony Music Commercial Music Group",
+            "id": "b1820065-83a8-47f8-9416-5a22f6cb8718",
+            "label-code": null,
+            "sort-name": "Sony Music Commercial Music Group",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "disambiguation": ""
+          },
+          "catalog-number": "19075978631"
+        },
+        {
+          "label": {
+            "label-code": 162,
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+            "name": "Columbia",
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "Columbia"
+          },
+          "catalog-number": "CS 8163"
+        },
+        {
+          "catalog-number": "UHQR 0004-45",
+          "label": {
+            "sort-name": "Analogue Productions",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "disambiguation": "",
+            "name": "Analogue Productions",
+            "id": "fbc379e0-b926-4bfa-94ef-96753c397654",
+            "label-code": null
+          }
+        },
+        {
+          "catalog-number": "UHQR 0004-45",
+          "label": {
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+            "name": "Columbia",
+            "label-code": 162,
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "sort-name": "Columbia",
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX"
+          }
+        }
+      ],
+      "id": "45ea6391-ae09-4ae5-8854-f584f0c32f7c",
+      "status-id": null,
+      "quality": "normal",
+      "text-representation": {
+        "script": null,
+        "language": null
+      },
+      "status": null,
+      "barcode": "753088045073",
+      "date": "2022-08-29",
+      "disambiguation": ""
+    },
+    {
+      "title": "Kind of Blue",
+      "packaging": null,
+      "asin": null,
+      "cover-art-archive": {
+        "count": 11,
+        "darkened": false,
+        "front": true,
+        "back": true,
+        "artwork": true
+      },
+      "release-events": [
+        {
+          "date": "2015-06-10",
+          "area": {
+            "disambiguation": "",
+            "sort-name": "United States",
+            "type": null,
+            "type-id": null,
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "name": "United States",
+            "id": "489ce91b-6658-3307-9877-795b68554c98"
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "88697943622",
+          "label": {
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+            "name": "Columbia",
+            "label-code": 162,
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "Columbia",
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX"
+          }
+        },
+        {
+          "catalog-number": "UDSACD 2085",
+          "label": {
+            "disambiguation": "",
+            "type": "Reissue Production",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "sort-name": "Mobile Fidelity Sound Lab",
+            "label-code": null,
+            "id": "edd54e2f-2eef-46b1-a9b5-bedfe5ed33be",
+            "name": "Mobile Fidelity Sound Lab"
+          }
+        }
+      ],
+      "media": [
+        {
+          "title": "",
+          "id": "13837ff0-6556-38eb-a856-2f7948a2dc9e",
+          "track-count": 5,
+          "format-id": "5c9021b5-aecf-3339-b78e-c7bbe427c342",
+          "position": 1,
+          "format": "SACD"
+        }
+      ],
+      "country": "US",
+      "packaging-id": null,
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "id": "4a9d4dce-2330-41f7-b151-aabeb861ff20",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "date": "2015-06-10",
+      "disambiguation": "stereo",
+      "status": "Official",
+      "barcode": "821797208567"
+    },
+    {
+      "packaging": "None",
+      "title": "Kind of Blue",
+      "cover-art-archive": {
+        "back": false,
+        "front": true,
+        "darkened": false,
+        "count": 2,
+        "artwork": true
+      },
+      "asin": null,
+      "release-events": [
+        {
+          "date": "2011-11-08",
+          "area": {
+            "type-id": null,
+            "type": null,
+            "sort-name": "[Worldwide]",
+            "disambiguation": "",
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "iso-3166-1-codes": [
+              "XW"
+            ],
+            "name": "[Worldwide]"
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "Columbia",
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX",
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+            "name": "Columbia",
+            "label-code": 162
+          },
+          "catalog-number": null
+        }
+      ],
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "media": [
+        {
+          "track-count": 5,
+          "id": "0285132a-bf8d-3f8b-b4a6-90208195665a",
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "title": "",
+          "format": "Digital Media",
+          "position": 1
+        }
+      ],
+      "country": "XW",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "4c8af71f-5746-4981-92d7-0d6c64db1155",
+      "disambiguation": "",
+      "date": "2011-11-08",
+      "status": "Official",
+      "barcode": "5099749522428"
+    },
+    {
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "51c87419-b6cc-4e26-af1f-b82640e89ee4",
+      "disambiguation": "stereo",
+      "date": "2020-09-23",
+      "barcode": "4547366450965",
+      "status": "Official",
+      "packaging": "Cardboard/Paper Sleeve",
+      "title": "Kind of Blue",
+      "cover-art-archive": {
+        "count": 1,
+        "darkened": false,
+        "back": false,
+        "front": true,
+        "artwork": true
+      },
+      "asin": "B0863VQ4VX",
+      "label-info": [
+        {
+          "catalog-number": "SIJP-1020",
+          "label": {
+            "disambiguation": "Japanese TEXTLESS boxed Walking Eye imprint",
+            "sort-name": "Sony Records International",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": null,
+            "name": "Sony Records International",
+            "id": "c9a4ea86-7611-4fff-9f4f-41f18be7e14b"
+          }
+        }
+      ],
+      "release-events": [
+        {
+          "date": "2020-09-23",
+          "area": {
+            "type-id": null,
+            "type": null,
+            "sort-name": "Japan",
+            "disambiguation": "",
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+            "iso-3166-1-codes": [
+              "JP"
+            ],
+            "name": "Japan"
+          }
+        }
+      ],
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "country": "JP",
+      "media": [
+        {
+          "format": "12\" Vinyl",
+          "position": 1,
+          "title": "",
+          "id": "41b25659-c43b-3143-90db-43cd7764b80d",
+          "track-count": 5,
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64"
+        }
+      ]
+    },
+    {
+      "asin": null,
+      "cover-art-archive": {
+        "front": true,
+        "back": false,
+        "darkened": false,
+        "count": 2,
+        "artwork": true
+      },
+      "title": "Kind of Blue",
+      "packaging": "None",
+      "media": [
+        {
+          "position": 1,
+          "format": "Digital Media",
+          "id": "5d880bb5-509e-34ed-9026-7cc69ff2639a",
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "track-count": 8,
+          "title": ""
+        }
+      ],
+      "country": "XW",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "release-events": [
+        {
+          "date": "2025",
+          "area": {
+            "name": "[Worldwide]",
+            "iso-3166-1-codes": [
+              "XW"
+            ],
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "sort-name": "[Worldwide]",
+            "type": null,
+            "type-id": null,
+            "disambiguation": ""
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "HDTT13879",
+          "label": {
+            "id": "f1a4ecbf-0492-4a11-bb8f-5b9f8e92155d",
+            "name": "High Definition Tape Transfers",
+            "label-code": null,
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "sort-name": "High Definition Tape Transfers",
+            "disambiguation": ""
+          }
+        }
+      ],
+      "id": "5472d4b8-1d33-405d-84fa-9c8385f22531",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "status": "Official",
+      "barcode": "",
+      "date": "2025",
+      "disambiguation": "DSD256"
+    },
+    {
+      "release-events": [
+        {
+          "area": {
+            "disambiguation": "",
+            "type": null,
+            "type-id": null,
+            "sort-name": "Europe",
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "name": "Europe",
+            "iso-3166-1-codes": [
+              "XE"
+            ]
+          },
+          "date": "2014"
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "sort-name": "Green Corner",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "disambiguation": "",
+            "name": "Green Corner",
+            "id": "47827d96-7719-4863-b06b-bf8cdf11c51b",
+            "label-code": null
+          },
+          "catalog-number": "100891"
+        }
+      ],
+      "media": [
+        {
+          "format": "CD",
+          "position": 1,
+          "id": "8b1af3b8-5b36-30c6-97a5-4a06f9efb7df",
+          "track-count": 8,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": "The Stereo Version"
+        },
+        {
+          "format": "CD",
+          "position": 2,
+          "title": "The Mono Version",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "id": "efc8c110-a505-378e-8df6-40430a6877f1",
+          "track-count": 6
+        }
+      ],
+      "country": "XE",
+      "packaging-id": null,
+      "title": "Kind of Blue",
+      "packaging": null,
+      "asin": null,
+      "cover-art-archive": {
+        "count": 1,
+        "darkened": false,
+        "front": true,
+        "back": false,
+        "artwork": true
+      },
+      "date": "2014",
+      "disambiguation": "",
+      "status": "Official",
+      "barcode": "8436539312253",
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "id": "55db8111-3fbf-493a-87bd-a815b1f15d60",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+    },
+    {
+      "release-events": [
+        {
+          "date": "2010",
+          "area": {
+            "disambiguation": "",
+            "sort-name": "United Kingdom",
+            "type-id": null,
+            "type": null,
+            "name": "United Kingdom",
+            "iso-3166-1-codes": [
+              "GB"
+            ],
+            "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "NOT2CD335",
+          "label": {
+            "label-code": null,
+            "id": "b454b444-eb75-46ed-b400-19e85d8e1c64",
+            "name": "Not Now Music",
+            "disambiguation": "",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "sort-name": "Not Now Music"
+          }
+        }
+      ],
+      "media": [
+        {
+          "title": "",
+          "id": "346daf60-42c1-3c03-87c0-85252c931847",
+          "track-count": 5,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "position": 1,
+          "format": "CD"
+        },
+        {
+          "title": "",
+          "track-count": 15,
+          "id": "5f14a1ba-b207-31a7-8eaa-ffd7c2127893",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "position": 2,
+          "format": "CD"
+        }
+      ],
+      "country": "GB",
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "title": "Kind of Blue",
+      "packaging": "Jewel Case",
+      "asin": "B0030Y10RA",
+      "cover-art-archive": {
+        "artwork": true,
+        "count": 4,
+        "darkened": false,
+        "front": true,
+        "back": false
+      },
+      "date": "2010",
+      "disambiguation": "",
+      "status": "Official",
+      "barcode": "5060143493355",
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "id": "5db85826-f516-4f39-ba0f-df0efe634668",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+    },
+    {
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "612b6b32-433e-4d44-a987-ca0c92598e5d",
+      "disambiguation": "",
+      "date": "2010",
+      "status": "Official",
+      "barcode": "5050457094522",
+      "packaging": "Jewel Case",
+      "title": "Kind of Blue",
+      "cover-art-archive": {
+        "artwork": true,
+        "darkened": false,
+        "front": true,
+        "back": false,
+        "count": 1
+      },
+      "asin": "B003R9PDT4",
+      "release-events": [
+        {
+          "date": "2010",
+          "area": {
+            "name": "Netherlands",
+            "iso-3166-1-codes": [
+              "NL"
+            ],
+            "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+            "disambiguation": "",
+            "sort-name": "Netherlands",
+            "type-id": null,
+            "type": null
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "709452",
+          "label": {
+            "label-code": null,
+            "id": "58e5d211-0672-4767-a2e4-f54a00ef3b57",
+            "name": "Hallmark Music & Entertainment",
+            "disambiguation": "",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "Hallmark Music & Entertainment"
+          }
+        }
+      ],
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "media": [
+        {
+          "position": 1,
+          "format": "CD",
+          "id": "7c3fea1f-5b79-3d02-9124-8c65e00d4c73",
+          "track-count": 5,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": ""
+        }
+      ],
+      "country": "NL"
+    },
+    {
+      "packaging": "Cardboard/Paper Sleeve",
+      "title": "Kind of Blue",
+      "cover-art-archive": {
+        "count": 2,
+        "front": true,
+        "back": true,
+        "darkened": false,
+        "artwork": true
+      },
+      "asin": "B00CZ50IVY",
+      "release-events": [
+        {
+          "date": "2015-06-10",
+          "area": {
+            "disambiguation": "",
+            "type-id": null,
+            "type": null,
+            "sort-name": "United States",
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "name": "United States"
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX",
+            "sort-name": "Columbia",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 162,
+            "name": "Columbia",
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e"
+          },
+          "catalog-number": "88697943622"
+        },
+        {
+          "label": {
+            "sort-name": "Mobile Fidelity Sound Lab",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "disambiguation": "",
+            "name": "Mobile Fidelity Sound Lab",
+            "id": "edd54e2f-2eef-46b1-a9b5-bedfe5ed33be",
+            "label-code": null
+          },
+          "catalog-number": "UDSACD 2085"
+        }
+      ],
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "media": [
+        {
+          "title": "",
+          "format-id": "1a168dbd-d7ce-381d-a38a-3948de2cb4d6",
+          "id": "0e1a2590-7b77-3974-a2ae-00cce8be4866",
+          "track-count": 5,
+          "format": "Hybrid SACD (CD layer)",
+          "position": 1
+        },
+        {
+          "title": "",
+          "format-id": "6c521ee3-f723-41de-bc6b-ec3621b9ffa9",
+          "id": "f3557535-f614-3e2d-8a50-fae38d9645a2",
+          "track-count": 5,
+          "format": "Hybrid SACD (SACD layer, 2 channels)",
+          "position": 2
+        }
+      ],
+      "country": "US",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "82bb6cb8-0045-44bf-9a52-5d3fcde6a988",
+      "disambiguation": "SACD",
+      "date": "2015-06-10",
+      "status": "Official",
+      "barcode": "821797208567"
+    },
+    {
+      "label-info": [
+        {
+          "label": {
+            "type-id": null,
+            "type": null,
+            "sort-name": "Second Records",
+            "disambiguation": "European vinyl label",
+            "id": "3567d3fa-08f0-4491-8685-73c80f4ce4b7",
+            "name": "Second Records",
+            "label-code": null
+          },
+          "catalog-number": "SRPD0019"
+        }
+      ],
+      "release-events": [
+        {
+          "date": "2025",
+          "area": {
+            "type": null,
+            "type-id": null,
+            "sort-name": "Europe",
+            "disambiguation": "",
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "name": "Europe",
+            "iso-3166-1-codes": [
+              "XE"
+            ]
+          }
+        }
+      ],
+      "country": "XE",
+      "media": [
+        {
+          "position": 1,
+          "format": "12\" Vinyl",
+          "id": "5768ef03-8d07-4c1e-a3ac-8024e366d11b",
+          "track-count": 5,
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "title": ""
+        }
+      ],
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "title": "Kind of Blue",
+      "packaging": "Cardboard/Paper Sleeve",
+      "asin": null,
+      "cover-art-archive": {
+        "count": 5,
+        "back": true,
+        "front": true,
+        "darkened": false,
+        "artwork": true
+      },
+      "date": "2025",
+      "disambiguation": "",
+      "barcode": "9003829978148",
+      "status": "Official",
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "id": "890942eb-0248-43a5-8442-ee90ec5321f9",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+    },
+    {
+      "packaging": "Digipak",
+      "title": "Kind of Blue",
+      "cover-art-archive": {
+        "artwork": true,
+        "count": 1,
+        "front": true,
+        "back": false,
+        "darkened": false
+      },
+      "asin": null,
+      "label-info": [
+        {
+          "catalog-number": "38043",
+          "label": {
+            "label-code": null,
+            "name": "Jazz Images",
+            "id": "d2b01fd0-4308-440d-a784-b6fac847b41e",
+            "disambiguation": "",
+            "sort-name": "Jazz Images",
+            "type": "Reissue Production",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c"
+          }
+        }
+      ],
+      "release-events": [
+        {
+          "date": "2018",
+          "area": {
+            "disambiguation": "",
+            "sort-name": "Europe",
+            "type": null,
+            "type-id": null,
+            "name": "Europe",
+            "iso-3166-1-codes": [
+              "XE"
+            ],
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a"
+          }
+        }
+      ],
+      "packaging-id": "8f931351-d2e2-310f-afc6-37b89ddba246",
+      "country": "XE",
+      "media": [
+        {
+          "title": "",
+          "track-count": 7,
+          "id": "5ae361d8-57c8-392c-9679-bc231b2cf0ca",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "position": 1,
+          "format": "CD"
+        }
+      ],
+      "text-representation": {
+        "script": null,
+        "language": "eng"
+      },
+      "quality": "normal",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "90e7b1b1-b8fe-4c7e-b5d3-8b4416a2eadd",
+      "disambiguation": "",
+      "date": "2018",
+      "barcode": null,
+      "status": "Official"
+    },
+    {
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "935de3c3-212d-4455-bd73-fcacdecc6f7e",
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "barcode": null,
+      "status": "Official",
+      "disambiguation": "",
+      "date": "2015-09-15",
+      "cover-art-archive": {
+        "count": 0,
+        "front": false,
+        "back": false,
+        "darkened": false,
+        "artwork": false
+      },
+      "asin": null,
+      "packaging": null,
+      "title": "Kind of Blue",
+      "packaging-id": null,
+      "country": "US",
+      "media": [
+        {
+          "id": "4e3ce9d7-5848-3e06-9914-62556db4db9d",
+          "track-count": 5,
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "title": "",
+          "position": 1,
+          "format": "12\" Vinyl"
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "2-45011",
+          "label": {
+            "id": "edd54e2f-2eef-46b1-a9b5-bedfe5ed33be",
+            "name": "Mobile Fidelity Sound Lab",
+            "label-code": null,
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "sort-name": "Mobile Fidelity Sound Lab",
+            "disambiguation": ""
+          }
+        }
+      ],
+      "release-events": [
+        {
+          "date": "2015-09-15",
+          "area": {
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "name": "United States",
+            "disambiguation": "",
+            "type-id": null,
+            "type": null,
+            "sort-name": "United States"
+          }
+        }
+      ]
+    },
+    {
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "id": "9c56aa14-559f-4742-ae3c-34781cd83bcf",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "date": "",
+      "disambiguation": "",
+      "status": "Official",
+      "barcode": null,
+      "title": "Kind of Blue",
+      "packaging": null,
+      "asin": null,
+      "cover-art-archive": {
+        "count": 4,
+        "back": true,
+        "front": true,
+        "darkened": false,
+        "artwork": true
+      },
+      "release-events": [
+        {
+          "date": "",
+          "area": {
+            "disambiguation": "",
+            "type-id": null,
+            "type": null,
+            "sort-name": "Europe",
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "name": "Europe",
+            "iso-3166-1-codes": [
+              "XE"
+            ]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "32109",
+          "label": {
+            "label-code": 149,
+            "id": "b8d33bec-92cc-40d9-bd92-4eb089b401a9",
+            "name": "CBS",
+            "disambiguation": "CBS Records’ international imprint from 1962–1990; renamed since 1991 as Columbia",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "CBS"
+          }
+        },
+        {
+          "label": {
+            "id": "b8d33bec-92cc-40d9-bd92-4eb089b401a9",
+            "name": "CBS",
+            "label-code": 149,
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "CBS",
+            "disambiguation": "CBS Records’ international imprint from 1962–1990; renamed since 1991 as Columbia"
+          },
+          "catalog-number": "CBS 32109"
+        },
+        {
+          "catalog-number": "CBS 62066",
+          "label": {
+            "name": "CBS",
+            "id": "b8d33bec-92cc-40d9-bd92-4eb089b401a9",
+            "label-code": 149,
+            "sort-name": "CBS",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "disambiguation": "CBS Records’ international imprint from 1962–1990; renamed since 1991 as Columbia"
+          }
+        }
+      ],
+      "media": [
+        {
+          "title": "",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "id": "5a4876ef-cd5c-3d77-a50b-e8d87462849a",
+          "track-count": 5,
+          "format": "12\" Vinyl",
+          "position": 1
+        }
+      ],
+      "country": "XE",
+      "packaging-id": null
+    },
+    {
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "country": "US",
+      "media": [
+        {
+          "position": 1,
+          "format": "Digital Media",
+          "id": "6a12503a-19d5-3f3c-b1e9-5076995e643e",
+          "track-count": 5,
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "title": ""
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "name": "Columbia",
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+            "label-code": 162,
+            "sort-name": "Columbia",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX"
+          },
+          "catalog-number": null
+        },
+        {
+          "catalog-number": null,
+          "label": {
+            "id": "45ffe1d8-92da-4750-9a4a-f42861f46e2c",
+            "name": "Legacy",
+            "label-code": 2361,
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "sort-name": "Legacy",
+            "disambiguation": "reissue division of Sony Music Entertainment"
+          }
+        }
+      ],
+      "release-events": [
+        {
+          "area": {
+            "disambiguation": "",
+            "type": null,
+            "type-id": null,
+            "sort-name": "United States",
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ]
+          },
+          "date": "2013-11"
+        }
+      ],
+      "cover-art-archive": {
+        "front": true,
+        "back": false,
+        "darkened": false,
+        "count": 2,
+        "artwork": true
+      },
+      "asin": null,
+      "packaging": "None",
+      "title": "Kind of Blue",
+      "barcode": "",
+      "status": "Official",
+      "disambiguation": "mono",
+      "date": "2013-11",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "a25deb78-2bcd-4535-86b6-2c66505e796d",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal"
+    },
+    {
+      "label-info": [
+        {
+          "catalog-number": "27208",
+          "label": {
+            "disambiguation": "\"grey\" reissue label",
+            "sort-name": "Poll Winners Records",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "label-code": null,
+            "name": "Poll Winners Records",
+            "id": "fa1cc8ab-61b4-4ea3-b7d9-f16ff941f727"
+          }
+        }
+      ],
+      "release-events": [
+        {
+          "date": "2010",
+          "area": {
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "name": "Europe",
+            "iso-3166-1-codes": [
+              "XE"
+            ],
+            "type": null,
+            "type-id": null,
+            "sort-name": "Europe",
+            "disambiguation": ""
+          }
+        }
+      ],
+      "packaging-id": null,
+      "country": "XE",
+      "media": [
+        {
+          "position": 1,
+          "format": "CD",
+          "id": "33759e5e-c771-366d-8ffe-f352b07e7e51",
+          "track-count": 9,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": ""
+        }
+      ],
+      "packaging": null,
+      "title": "Kind of Blue",
+      "cover-art-archive": {
+        "front": false,
+        "back": false,
+        "darkened": false,
+        "count": 0,
+        "artwork": false
+      },
+      "asin": null,
+      "disambiguation": "",
+      "date": "2010",
+      "barcode": "8436028691555",
+      "status": "Official",
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "a8ca58bf-1196-416f-8cf5-5578078bbf05"
+    },
+    {
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "id": "ab8e869e-9fed-456b-934e-4154f157eafa",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "date": "",
+      "disambiguation": "reissue",
+      "status": "Official",
+      "barcode": null,
+      "title": "Kind of Blue",
+      "packaging": null,
+      "asin": null,
+      "cover-art-archive": {
+        "front": true,
+        "back": true,
+        "darkened": false,
+        "count": 4,
+        "artwork": true
+      },
+      "release-events": [
+        {
+          "area": {
+            "type": null,
+            "type-id": null,
+            "sort-name": "Europe",
+            "disambiguation": "",
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "name": "Europe",
+            "iso-3166-1-codes": [
+              "XE"
+            ]
+          },
+          "date": ""
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "32109",
+          "label": {
+            "disambiguation": "CBS Records’ international imprint from 1962–1990; renamed since 1991 as Columbia",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "CBS",
+            "label-code": 149,
+            "id": "b8d33bec-92cc-40d9-bd92-4eb089b401a9",
+            "name": "CBS"
+          }
+        },
+        {
+          "label": {
+            "sort-name": "CBS",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "disambiguation": "CBS Records’ international imprint from 1962–1990; renamed since 1991 as Columbia",
+            "name": "CBS",
+            "id": "b8d33bec-92cc-40d9-bd92-4eb089b401a9",
+            "label-code": 149
+          },
+          "catalog-number": "CBS 32109"
+        },
+        {
+          "catalog-number": "CBS 62066",
+          "label": {
+            "disambiguation": "CBS Records’ international imprint from 1962–1990; renamed since 1991 as Columbia",
+            "sort-name": "CBS",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "label-code": 149,
+            "name": "CBS",
+            "id": "b8d33bec-92cc-40d9-bd92-4eb089b401a9"
+          }
+        }
+      ],
+      "media": [
+        {
+          "id": "886b477e-2060-4bee-893c-73801070027a",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "track-count": 5,
+          "title": "",
+          "position": 1,
+          "format": "12\" Vinyl"
+        }
+      ],
+      "country": "XE",
+      "packaging-id": null
+    },
+    {
+      "release-events": [
+        {
+          "date": "2021-05-21",
+          "area": {
+            "type": null,
+            "type-id": null,
+            "sort-name": "United States",
+            "disambiguation": "",
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "19075978621",
+          "label": {
+            "label-code": null,
+            "id": "b1820065-83a8-47f8-9416-5a22f6cb8718",
+            "name": "Sony Music Commercial Music Group",
+            "disambiguation": "",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "Sony Music Commercial Music Group"
+          }
+        },
+        {
+          "label": {
+            "label-code": null,
+            "name": "Analogue Productions",
+            "id": "fbc379e0-b926-4bfa-94ef-96753c397654",
+            "disambiguation": "",
+            "sort-name": "Analogue Productions",
+            "type": "Reissue Production",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c"
+          },
+          "catalog-number": "AUHQR 0004"
+        },
+        {
+          "label": {
+            "name": "Columbia",
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+            "label-code": 162,
+            "sort-name": "Columbia",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX"
+          },
+          "catalog-number": "CS 8163"
+        },
+        {
+          "label": {
+            "label-code": null,
+            "id": "fbc379e0-b926-4bfa-94ef-96753c397654",
+            "name": "Analogue Productions",
+            "disambiguation": "",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "sort-name": "Analogue Productions"
+          },
+          "catalog-number": "UHQR 0004"
+        }
+      ],
+      "media": [
+        {
+          "title": "",
+          "id": "6eb06197-c69b-399c-b6f6-dd0d8b27d466",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "track-count": 5,
+          "format": "12\" Vinyl",
+          "position": 1
+        }
+      ],
+      "country": "US",
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "title": "Kind of Blue",
+      "packaging": "Cardboard/Paper Sleeve",
+      "asin": null,
+      "cover-art-archive": {
+        "artwork": true,
+        "back": false,
+        "front": true,
+        "darkened": false,
+        "count": 1
+      },
+      "date": "2021-05-21",
+      "disambiguation": "stereo",
+      "status": "Official",
+      "barcode": "753088400018",
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "id": "bc37119c-3a4b-414f-a4d1-e1c32d5730ff",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+    },
+    {
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "id": "bd9c0f19-f6a6-4c97-85c6-4028d8a68d29",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "date": "2012",
+      "disambiguation": "",
+      "barcode": "5060143494284",
+      "status": "Official",
+      "title": "Kind of Blue",
+      "packaging": "Digibook",
+      "asin": null,
+      "cover-art-archive": {
+        "artwork": false,
+        "darkened": false,
+        "front": false,
+        "back": false,
+        "count": 0
+      },
+      "label-info": [
+        {
+          "label": {
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "sort-name": "Not Now Music",
+            "disambiguation": "",
+            "id": "b454b444-eb75-46ed-b400-19e85d8e1c64",
+            "name": "Not Now Music",
+            "label-code": null
+          },
+          "catalog-number": "NOT2CD428"
+        }
+      ],
+      "release-events": [
+        {
+          "area": {
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "iso-3166-1-codes": [
+              "XE"
+            ],
+            "name": "Europe",
+            "disambiguation": "",
+            "type-id": null,
+            "type": null,
+            "sort-name": "Europe"
+          },
+          "date": "2012"
+        }
+      ],
+      "country": "XE",
+      "media": [
+        {
+          "format": "CD",
+          "position": 1,
+          "title": "Mono",
+          "track-count": 5,
+          "id": "8a3a6956-dfed-3d02-9eed-c1f6d372b69b",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+        },
+        {
+          "format": "CD",
+          "position": 2,
+          "title": "Stereo",
+          "id": "2d447b8e-fe9d-324e-baeb-d135583f5f63",
+          "track-count": 5,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+        }
+      ],
+      "packaging-id": "9f2e13bc-f84f-428a-8342-fd86ece7fc4d"
+    },
+    {
+      "release-events": [
+        {
+          "date": "2020",
+          "area": {
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "name": "Europe",
+            "iso-3166-1-codes": [
+              "XE"
+            ],
+            "type": null,
+            "type-id": null,
+            "sort-name": "Europe",
+            "disambiguation": ""
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "77012",
+          "label": {
+            "label-code": null,
+            "name": "Groove Replica",
+            "id": "93ceeef3-ff7b-4dd1-9027-0fb58da6a1b3",
+            "disambiguation": "",
+            "sort-name": "Groove Replica",
+            "type": null,
+            "type-id": null
+          }
+        }
+      ],
+      "media": [
+        {
+          "format": "CD",
+          "position": 1,
+          "title": "",
+          "id": "a354a266-2149-3e44-ba32-f68be825b88f",
+          "track-count": 7,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+        }
+      ],
+      "country": "XE",
+      "packaging-id": "8f931351-d2e2-310f-afc6-37b89ddba246",
+      "title": "Kind of Blue",
+      "packaging": "Digipak",
+      "asin": null,
+      "cover-art-archive": {
+        "count": 0,
+        "darkened": false,
+        "front": false,
+        "back": false,
+        "artwork": false
+      },
+      "date": "2020",
+      "disambiguation": "2020 re-release with two bonus tracks",
+      "status": "Official",
+      "barcode": "",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "id": "bf48ae37-e630-4e45-92ab-e2e1d6d3a656",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+    },
+    {
+      "date": "",
+      "disambiguation": "",
+      "status": "Official",
+      "barcode": "07464405792",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "id": "c27e2140-1403-4a76-89ec-6e5aac73767c",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "date": "",
+          "area": {
+            "iso-3166-1-codes": [
+              "CA"
+            ],
+            "name": "Canada",
+            "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+            "sort-name": "Canada",
+            "type": null,
+            "type-id": null,
+            "disambiguation": ""
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "sort-name": "Columbia",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX",
+            "name": "Columbia",
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+            "label-code": 162
+          },
+          "catalog-number": "VCK-40579"
+        }
+      ],
+      "media": [
+        {
+          "id": "74ecc644-f9dc-3ab4-8745-43024a164001",
+          "track-count": 5,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": "",
+          "format": "CD",
+          "position": 1
+        }
+      ],
+      "country": "CA",
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "title": "Kind of Blue",
+      "packaging": "Jewel Case",
+      "asin": null,
+      "cover-art-archive": {
+        "back": false,
+        "front": false,
+        "darkened": false,
+        "count": 0,
+        "artwork": false
+      }
+    },
+    {
+      "packaging-id": "d60b6157-79fe-3913-ab8b-23b32de8690d",
+      "country": null,
+      "media": [
+        {
+          "position": 1,
+          "format": "CD",
+          "title": "",
+          "id": "6cae3493-126b-3a8e-acbf-9f1749ef83d9",
+          "track-count": 9,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "label-code": null,
+            "id": "d2b01fd0-4308-440d-a784-b6fac847b41e",
+            "name": "Jazz Images",
+            "disambiguation": "",
+            "type": "Reissue Production",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "sort-name": "Jazz Images"
+          },
+          "catalog-number": "IFPI LM13"
+        }
+      ],
+      "release-events": [
+        {
+          "date": "2022",
+          "area": null
+        }
+      ],
+      "cover-art-archive": {
+        "artwork": false,
+        "count": 0,
+        "darkened": false,
+        "back": false,
+        "front": false
+      },
+      "asin": null,
+      "packaging": "Book",
+      "title": "Kind Of Blue",
+      "barcode": "9788409345625",
+      "status": "Official",
+      "disambiguation": "2022 Remaster",
+      "date": "2022",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "d4da091b-6468-4ff9-afad-a6bc19408b3d",
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      }
+    },
+    {
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "country": "XE",
+      "media": [
+        {
+          "title": "",
+          "id": "3540b786-bb76-3f6a-8982-fc59cafce6f9",
+          "track-count": 5,
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "format": "12\" Vinyl",
+          "position": 1
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "88875111921",
+          "label": {
+            "name": "Columbia",
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+            "label-code": 162,
+            "sort-name": "Columbia",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX"
+          }
+        },
+        {
+          "label": {
+            "disambiguation": "reissue division of Sony Music Entertainment",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "sort-name": "Legacy",
+            "label-code": 2361,
+            "id": "45ffe1d8-92da-4750-9a4a-f42861f46e2c",
+            "name": "Legacy"
+          },
+          "catalog-number": "88875111921"
+        },
+        {
+          "label": {
+            "name": "Sony Music",
+            "id": "9e6b4d7f-4958-4db7-8504-d89e315836af",
+            "label-code": 10746,
+            "sort-name": "Sony Music",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "disambiguation": "global brand, excluding JP, owned by Sony Music Entertainment"
+          },
+          "catalog-number": "88875111921"
+        }
+      ],
+      "release-events": [
+        {
+          "area": {
+            "type-id": null,
+            "type": null,
+            "sort-name": "Europe",
+            "disambiguation": "",
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "iso-3166-1-codes": [
+              "XE"
+            ],
+            "name": "Europe"
+          },
+          "date": "2015-10-16"
+        }
+      ],
+      "cover-art-archive": {
+        "darkened": false,
+        "front": true,
+        "back": true,
+        "count": 5,
+        "artwork": true
+      },
+      "asin": null,
+      "packaging": "Cardboard/Paper Sleeve",
+      "title": "Kind of Blue",
+      "barcode": "888751119215",
+      "status": "Official",
+      "disambiguation": "",
+      "date": "2015-10-16",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "d7b496d8-f044-4e34-830a-1dd93c31cabf",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal"
+    },
+    {
+      "barcode": "190758834917",
+      "status": "Official",
+      "date": "2018",
+      "disambiguation": "blue marbled vinyl",
+      "id": "d7dab426-f295-4c3a-b43b-81d25f438f2e",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "country": "XE",
+      "media": [
+        {
+          "format": "12\" Vinyl",
+          "position": 1,
+          "track-count": 5,
+          "id": "7d8e69b1-8f4c-4c70-9ee5-2f8b71d62fae",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "title": ""
+        }
+      ],
+      "packaging-id": null,
+      "label-info": [
+        {
+          "label": {
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+            "name": "Columbia",
+            "label-code": 162,
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "Columbia",
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX"
+          },
+          "catalog-number": "19075883491"
+        },
+        {
+          "catalog-number": "19075883491",
+          "label": {
+            "id": "45ffe1d8-92da-4750-9a4a-f42861f46e2c",
+            "name": "Legacy",
+            "label-code": 2361,
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "sort-name": "Legacy",
+            "disambiguation": "reissue division of Sony Music Entertainment"
+          }
+        }
+      ],
+      "release-events": [
+        {
+          "area": {
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "name": "Europe",
+            "iso-3166-1-codes": [
+              "XE"
+            ],
+            "type": null,
+            "type-id": null,
+            "sort-name": "Europe",
+            "disambiguation": ""
+          },
+          "date": "2018"
+        }
+      ],
+      "asin": null,
+      "cover-art-archive": {
+        "artwork": true,
+        "front": true,
+        "back": true,
+        "darkened": false,
+        "count": 6
+      },
+      "title": "Kind of Blue",
+      "packaging": null
+    },
+    {
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "e7ba3cb7-a074-45ee-870f-3baeb6d3e8bf",
+      "disambiguation": "stereo",
+      "date": "2013-11",
+      "barcode": "886444350785",
+      "status": "Official",
+      "packaging": "None",
+      "title": "Kind of Blue",
+      "cover-art-archive": {
+        "artwork": true,
+        "count": 2,
+        "back": false,
+        "front": true,
+        "darkened": false
+      },
+      "asin": null,
+      "label-info": [
+        {
+          "label": {
+            "id": "011d1192-6f65-45bd-85c4-0400dd45693e",
+            "name": "Columbia",
+            "label-code": 162,
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "Columbia",
+            "disambiguation": "owned by Sony Music Entertainment, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX"
+          },
+          "catalog-number": null
+        },
+        {
+          "catalog-number": null,
+          "label": {
+            "id": "45ffe1d8-92da-4750-9a4a-f42861f46e2c",
+            "name": "Legacy",
+            "label-code": 2361,
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "sort-name": "Legacy",
+            "disambiguation": "reissue division of Sony Music Entertainment"
+          }
+        }
+      ],
+      "release-events": [
+        {
+          "area": {
+            "disambiguation": "",
+            "sort-name": "United States",
+            "type-id": null,
+            "type": null,
+            "name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "id": "489ce91b-6658-3307-9877-795b68554c98"
+          },
+          "date": "2013-11"
+        }
+      ],
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "country": "US",
+      "media": [
+        {
+          "id": "cb914604-68c1-31c6-b094-bb111898a2a0",
+          "track-count": 5,
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "title": "",
+          "position": 1,
+          "format": "Digital Media"
+        }
+      ]
+    },
+    {
+      "label-info": [
+        {
+          "label": {
+            "id": "c9a4ea86-7611-4fff-9f4f-41f18be7e14b",
+            "name": "Sony Records International",
+            "label-code": null,
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "Sony Records International",
+            "disambiguation": "Japanese TEXTLESS boxed Walking Eye imprint"
+          },
+          "catalog-number": "SIJP-1019"
+        }
+      ],
+      "release-events": [
+        {
+          "area": {
+            "iso-3166-1-codes": [
+              "JP"
+            ],
+            "name": "Japan",
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+            "sort-name": "Japan",
+            "type": null,
+            "type-id": null,
+            "disambiguation": ""
+          },
+          "date": "2020-09-23"
+        }
+      ],
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "country": "JP",
+      "media": [
+        {
+          "position": 1,
+          "format": "12\" Vinyl",
+          "track-count": 5,
+          "id": "76f7f98a-a780-3f3c-8c62-ce4900866045",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "title": ""
+        }
+      ],
+      "packaging": "Cardboard/Paper Sleeve",
+      "title": "Kind of Blue",
+      "cover-art-archive": {
+        "artwork": true,
+        "back": false,
+        "front": true,
+        "darkened": false,
+        "count": 1
+      },
+      "asin": "B0863R77GL",
+      "disambiguation": "mono",
+      "date": "2020-09-23",
+      "barcode": "4547366450958",
+      "status": "Official",
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "f82aa197-f528-46a0-b67b-a9a558bddd4c"
+    },
+    {
+      "status-id": "55005350-bc3f-441a-b0c7-27c565eae341",
+      "id": "fa7c01ac-5d2c-4968-af26-a0a0ebd1be6e",
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "status": "Cancelled",
+      "barcode": "4547366428599",
+      "disambiguation": "stereo",
+      "date": "2019-12-25",
+      "cover-art-archive": {
+        "front": false,
+        "back": false,
+        "darkened": false,
+        "count": 0,
+        "artwork": false
+      },
+      "asin": null,
+      "packaging": "Cardboard/Paper Sleeve",
+      "title": "Kind of Blue",
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "media": [
+        {
+          "title": "",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "id": "ab095d29-c5b3-3737-978e-6486e30803db",
+          "track-count": 5,
+          "format": "12\" Vinyl",
+          "position": 1
+        }
+      ],
+      "country": "JP",
+      "release-events": [
+        {
+          "area": {
+            "disambiguation": "",
+            "sort-name": "Japan",
+            "type-id": null,
+            "type": null,
+            "iso-3166-1-codes": [
+              "JP"
+            ],
+            "name": "Japan",
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c"
+          },
+          "date": "2019-12-25"
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "SIJP-1015",
+          "label": {
+            "label-code": null,
+            "id": "c9a4ea86-7611-4fff-9f4f-41f18be7e14b",
+            "name": "Sony Records International",
+            "disambiguation": "Japanese TEXTLESS boxed Walking Eye imprint",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "sort-name": "Sony Records International"
+          }
+        }
+      ]
+    }
+  ],
+  "release-offset": 100
+}

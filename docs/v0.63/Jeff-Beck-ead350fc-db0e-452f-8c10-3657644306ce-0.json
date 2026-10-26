@@ -1,0 +1,91 @@
+{
+  "release-count": 1,
+  "releases": [
+    {
+      "quality": "normal",
+      "country": "JP",
+      "disambiguation": "",
+      "asin": "B0DNZ3N4ZX",
+      "barcode": "4547366682960",
+      "release-events": [
+        {
+          "date": "2025-02-05",
+          "area": {
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+            "type": null,
+            "sort-name": "Japan",
+            "iso-3166-1-codes": [
+              "JP"
+            ],
+            "type-id": null,
+            "disambiguation": "",
+            "name": "Japan"
+          }
+        }
+      ],
+      "date": "2025-02-05",
+      "id": "b341e930-54e3-45b3-97cd-7b551f14a80f",
+      "status": "Official",
+      "text-representation": {
+        "script": "Jpan",
+        "language": "jpn"
+      },
+      "label-info": [
+        {
+          "label": {
+            "id": "29cb2e83-ecf8-4ff5-a411-9acfca9c32fb",
+            "sort-name": "Epic Records International",
+            "type": null,
+            "disambiguation": "2001–2006 reissue label for int’l music released in Japan, formerly a company/division of SMEJ",
+            "label-code": null,
+            "type-id": null,
+            "name": "Epic Records International"
+          },
+          "catalog-number": "SICP-31718"
+        },
+        {
+          "label": {
+            "sort-name": "Epic Records International",
+            "type": null,
+            "id": "29cb2e83-ecf8-4ff5-a411-9acfca9c32fb",
+            "name": "Epic Records International",
+            "disambiguation": "2001–2006 reissue label for int’l music released in Japan, formerly a company/division of SMEJ",
+            "type-id": null,
+            "label-code": null
+          },
+          "catalog-number": "SICP-31719"
+        }
+      ],
+      "packaging": null,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": null,
+      "cover-art-archive": {
+        "front": true,
+        "back": false,
+        "count": 1,
+        "artwork": true,
+        "darkened": false
+      },
+      "media": [
+        {
+          "title": "",
+          "id": "e69e3c87-6ade-348d-b989-37db3f8c5de5",
+          "position": 1,
+          "format": "Blu-spec CD",
+          "track-count": 15,
+          "format-id": "038ec24e-5d01-3a8c-817e-c51a515b1875"
+        },
+        {
+          "track-count": 16,
+          "format": "Blu-spec CD",
+          "position": 2,
+          "format-id": "038ec24e-5d01-3a8c-817e-c51a515b1875",
+          "title": "",
+          "id": "3e2cbf25-c848-3b0a-8e41-6a6a6a8c62b2"
+        }
+      ],
+      "title": "The Best of Jeff Beck: The Epic Years 1971–2003"
+    }
+  ],
+  "release-offset": 0
+}

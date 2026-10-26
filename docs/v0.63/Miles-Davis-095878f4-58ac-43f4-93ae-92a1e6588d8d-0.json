@@ -1,0 +1,136 @@
+{
+  "releases": [
+    {
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "status": "Official",
+      "asin": null,
+      "date": "1951",
+      "country": "US",
+      "cover-art-archive": {
+        "back": false,
+        "front": false,
+        "darkened": false,
+        "artwork": false,
+        "count": 0
+      },
+      "quality": "normal",
+      "id": "6fbb6d1b-e6b4-4027-acf1-85045a0bd771",
+      "release-events": [
+        {
+          "date": "1951",
+          "area": {
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "disambiguation": "",
+            "name": "United States",
+            "type-id": null,
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "sort-name": "United States",
+            "type": null
+          }
+        }
+      ],
+      "packaging-id": null,
+      "label-info": [
+        {
+          "label": {
+            "label-code": 313,
+            "type": "Original Production",
+            "sort-name": "Prestige",
+            "id": "11847c89-4b2c-4866-84c3-f72e264c0f66",
+            "type-id": "7aaa37fe-2def-3476-b359-80245850062d",
+            "name": "Prestige",
+            "disambiguation": "American jazz label"
+          },
+          "catalog-number": "PRLP 113"
+        }
+      ],
+      "packaging": null,
+      "barcode": "",
+      "title": "Modern Jazz Trumpets",
+      "disambiguation": "",
+      "media": [
+        {
+          "format": "10\" Vinyl",
+          "title": "",
+          "format-id": "3155d2b6-52fd-3952-bda3-bd7c429d038d",
+          "track-count": 8,
+          "id": "426570ce-ce7a-3574-86f5-ea5e16295afe",
+          "position": 1
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+    },
+    {
+      "release-events": [
+        {
+          "date": "1951",
+          "area": {
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "name": "United States",
+            "disambiguation": "",
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "type-id": null,
+            "type": null,
+            "sort-name": "United States"
+          }
+        }
+      ],
+      "packaging": null,
+      "packaging-id": null,
+      "label-info": [
+        {
+          "catalog-number": "PRLP 113",
+          "label": {
+            "type-id": "7aaa37fe-2def-3476-b359-80245850062d",
+            "id": "11847c89-4b2c-4866-84c3-f72e264c0f66",
+            "sort-name": "Prestige",
+            "type": "Original Production",
+            "disambiguation": "American jazz label",
+            "name": "Prestige",
+            "label-code": 313
+          }
+        }
+      ],
+      "disambiguation": "",
+      "media": [
+        {
+          "format": "10\" Vinyl",
+          "id": "a71ab26a-f8dd-3db7-a2f6-e38c62d5cce9",
+          "track-count": 9,
+          "format-id": "3155d2b6-52fd-3952-bda3-bd7c429d038d",
+          "position": 1,
+          "title": ""
+        }
+      ],
+      "title": "Modern Jazz Trumpets",
+      "barcode": "",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "text-representation": {
+        "language": null,
+        "script": null
+      },
+      "status": "Official",
+      "asin": null,
+      "date": "1951",
+      "country": "US",
+      "cover-art-archive": {
+        "back": true,
+        "front": true,
+        "darkened": false,
+        "count": 4,
+        "artwork": true
+      },
+      "quality": "normal",
+      "id": "f5453a0d-414c-4974-b26f-9ceea9b35887"
+    }
+  ],
+  "release-offset": 0,
+  "release-count": 2
+}

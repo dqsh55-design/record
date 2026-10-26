@@ -1,0 +1,1768 @@
+{
+  "release-offset": 0,
+  "releases": [
+    {
+      "status": "Official",
+      "label-info": [
+        {
+          "label": {
+            "sort-name": "Epic",
+            "name": "Epic",
+            "label-code": 199,
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "type": "Imprint",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony"
+          },
+          "catalog-number": "PE 33409"
+        }
+      ],
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "id": "14e1f859-ed2c-4dba-ae7a-dc43ea817aed",
+      "date": "1975",
+      "country": "US",
+      "title": "Blow by Blow",
+      "barcode": "",
+      "media": [
+        {
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "title": "",
+          "id": "525300b5-07b8-3ea4-a925-ac1609a2f92f",
+          "position": 1,
+          "format": "12\" Vinyl",
+          "track-count": 9
+        }
+      ],
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "asin": null,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "date": "1975",
+          "area": {
+            "name": "United States",
+            "sort-name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "type-id": null,
+            "type": null,
+            "disambiguation": "",
+            "id": "489ce91b-6658-3307-9877-795b68554c98"
+          }
+        }
+      ],
+      "packaging": "Cardboard/Paper Sleeve",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "darkened": false,
+        "front": false,
+        "back": false,
+        "count": 0,
+        "artwork": false
+      }
+    },
+    {
+      "asin": null,
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "packaging": "Jewel Case",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "back": false,
+        "front": false,
+        "darkened": false,
+        "artwork": false,
+        "count": 0
+      },
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "area": {
+            "name": "United States",
+            "sort-name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "type-id": null,
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "disambiguation": "",
+            "type": null
+          },
+          "date": "2000"
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "type": "Imprint",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 199,
+            "name": "Epic",
+            "sort-name": "Epic"
+          },
+          "catalog-number": "ES 33409"
+        }
+      ],
+      "status": "Official",
+      "id": "21dab5d0-7bab-415b-bcbe-5e7ffb83f9d0",
+      "date": "2000",
+      "country": "US",
+      "title": "Blow by Blow",
+      "media": [
+        {
+          "id": "8b70d4bb-5b29-321a-91a9-60a66a30338b",
+          "format-id": "dd9f171b-9099-438f-a410-3bdce00ce139",
+          "title": "",
+          "track-count": 9,
+          "format": "SACD (2 channels)",
+          "position": 1
+        }
+      ],
+      "barcode": "074643340960",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal"
+    },
+    {
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "date": "2005-01-19",
+          "area": {
+            "iso-3166-1-codes": [
+              "JP"
+            ],
+            "name": "Japan",
+            "sort-name": "Japan",
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+            "disambiguation": "",
+            "type": null,
+            "type-id": null
+          }
+        }
+      ],
+      "packaging": null,
+      "cover-art-archive": {
+        "back": false,
+        "front": false,
+        "darkened": false,
+        "artwork": false,
+        "count": 0
+      },
+      "disambiguation": "",
+      "packaging-id": null,
+      "asin": null,
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "title": "Blow by Blow",
+      "country": "JP",
+      "date": "2005-01-19",
+      "id": "22c7125a-feba-41d8-bf3c-125b61facc16",
+      "media": [
+        {
+          "id": "d3eb1b11-a441-3b03-92a6-8872b8229128",
+          "title": "",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "track-count": 9,
+          "format": "CD",
+          "position": 1
+        }
+      ],
+      "barcode": "4571191050328",
+      "status": "Official",
+      "label-info": [
+        {
+          "catalog-number": "MHCP-588",
+          "label": {
+            "name": "Epic",
+            "sort-name": "Epic",
+            "label-code": 199,
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "type": "Imprint"
+          }
+        }
+      ]
+    },
+    {
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "asin": null,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "area": {
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": [
+              "XW"
+            ],
+            "type-id": null,
+            "type": null,
+            "disambiguation": "",
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f"
+          },
+          "date": "2009-12-16"
+        }
+      ],
+      "packaging": "None",
+      "disambiguation": "176kHz/24‐bit",
+      "cover-art-archive": {
+        "darkened": false,
+        "back": false,
+        "front": true,
+        "count": 1,
+        "artwork": true
+      },
+      "status": "Official",
+      "label-info": [
+        {
+          "label": {
+            "name": "Epic",
+            "sort-name": "Epic",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "type": "Imprint",
+            "label-code": 199,
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded"
+          },
+          "catalog-number": "[none]"
+        }
+      ],
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "date": "2009-12-16",
+      "id": "479fd8bf-96c2-4eb2-88df-5b43627ce485",
+      "country": "XW",
+      "title": "Blow by Blow",
+      "media": [
+        {
+          "track-count": 9,
+          "position": 1,
+          "format": "Digital Media",
+          "id": "9e746e48-b3d1-31c4-9f9d-3e263c10c7f0",
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "title": ""
+        }
+      ],
+      "barcode": null
+    },
+    {
+      "packaging-id": null,
+      "asin": null,
+      "release-events": [
+        {
+          "date": "1975-03",
+          "area": {
+            "disambiguation": "",
+            "type": null,
+            "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+            "type-id": null,
+            "iso-3166-1-codes": [
+              "GB"
+            ],
+            "sort-name": "United Kingdom",
+            "name": "United Kingdom"
+          }
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging": null,
+      "cover-art-archive": {
+        "back": false,
+        "front": false,
+        "darkened": false,
+        "artwork": false,
+        "count": 0
+      },
+      "disambiguation": "",
+      "status": "Official",
+      "label-info": [
+        {
+          "catalog-number": "EPC 69117",
+          "label": {
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "type": "Imprint",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 199,
+            "sort-name": "Epic",
+            "name": "Epic"
+          }
+        }
+      ],
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "country": "GB",
+      "title": "Blow by Blow",
+      "date": "1975-03",
+      "id": "496a1856-c8ac-3a4b-8415-a6610250cfd7",
+      "media": [
+        {
+          "track-count": 9,
+          "position": 1,
+          "format": "12\" Vinyl",
+          "id": "84b9fd3e-d0d1-3c61-9850-9a51dfc11013",
+          "title": "",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64"
+        }
+      ],
+      "barcode": ""
+    },
+    {
+      "asin": "B000Q0AD3S",
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "cover-art-archive": {
+        "darkened": false,
+        "front": true,
+        "back": true,
+        "count": 4,
+        "artwork": true
+      },
+      "disambiguation": "",
+      "packaging": "Cardboard/Paper Sleeve",
+      "release-events": [
+        {
+          "area": {
+            "sort-name": "United States",
+            "name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "type-id": null,
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "type": null,
+            "disambiguation": ""
+          },
+          "date": ""
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "label-info": [
+        {
+          "label": {
+            "sort-name": "Epic",
+            "name": "Epic",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 199,
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "type": "Imprint",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55"
+          },
+          "catalog-number": "PE 33409"
+        }
+      ],
+      "status": "Official",
+      "barcode": "074643340915",
+      "media": [
+        {
+          "id": "f170dff2-2a67-36f9-ad0d-cf88b5a96145",
+          "title": "",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "track-count": 9,
+          "format": "12\" Vinyl",
+          "position": 1
+        }
+      ],
+      "country": "US",
+      "title": "Blow by Blow",
+      "id": "5d13db5c-0723-4dfa-aff0-c103bcda5649",
+      "date": "",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal"
+    },
+    {
+      "packaging-id": null,
+      "asin": null,
+      "release-events": [
+        {
+          "area": {
+            "iso-3166-1-codes": [
+              "JP"
+            ],
+            "name": "Japan",
+            "sort-name": "Japan",
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+            "disambiguation": "",
+            "type": null,
+            "type-id": null
+          },
+          "date": "2006-01-18"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging": null,
+      "cover-art-archive": {
+        "artwork": true,
+        "count": 7,
+        "front": true,
+        "back": true,
+        "darkened": false
+      },
+      "disambiguation": "",
+      "status": "Official",
+      "label-info": [
+        {
+          "catalog-number": "MHCP 965",
+          "label": {
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "type": "Imprint",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 199,
+            "sort-name": "Epic",
+            "name": "Epic"
+          }
+        }
+      ],
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "title": "Blow by Blow",
+      "country": "JP",
+      "date": "2006-01-18",
+      "id": "5d546a9a-f757-4cef-b53b-276b2e2e75bf",
+      "media": [
+        {
+          "format": "CD",
+          "position": 1,
+          "track-count": 9,
+          "title": "",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "id": "f46c54e5-6004-3af2-a716-461253f70d49"
+        }
+      ],
+      "barcode": "4571191056269"
+    },
+    {
+      "label-info": [
+        {
+          "label": {
+            "type": "Imprint",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 199,
+            "name": "Epic",
+            "sort-name": "Epic"
+          },
+          "catalog-number": "462710 2"
+        }
+      ],
+      "status": "Official",
+      "media": [
+        {
+          "id": "fb43ee8a-a9a5-3dbd-a44d-e4f1e0eed114",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": "",
+          "track-count": 9,
+          "format": "CD",
+          "position": 1
+        }
+      ],
+      "barcode": "9399746271029",
+      "title": "Blow by Blow",
+      "country": "AU",
+      "id": "6751c404-9762-3f25-b8c0-082546a7850c",
+      "date": "1988",
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "asin": null,
+      "packaging-id": null,
+      "cover-art-archive": {
+        "count": 0,
+        "artwork": false,
+        "darkened": false,
+        "back": false,
+        "front": false
+      },
+      "disambiguation": "",
+      "packaging": null,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "area": {
+            "name": "Australia",
+            "sort-name": "Australia",
+            "iso-3166-1-codes": [
+              "AU"
+            ],
+            "type-id": null,
+            "disambiguation": "",
+            "type": null,
+            "id": "106e0bec-b638-3b37-b731-f53d507dc00e"
+          },
+          "date": "1988"
+        }
+      ]
+    },
+    {
+      "cover-art-archive": {
+        "front": true,
+        "back": true,
+        "darkened": false,
+        "artwork": true,
+        "count": 4
+      },
+      "disambiguation": "",
+      "packaging": "Jewel Case",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "asin": null,
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "media": [
+        {
+          "title": "",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "id": "c63fb211-39d4-31d8-b131-4aa8a64c827a",
+          "format": "CD",
+          "position": 1,
+          "track-count": 9
+        }
+      ],
+      "barcode": "5099703236729",
+      "title": "Blow by Blow",
+      "id": "68874685-b89a-4255-b21a-0fea47101c2e",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "label-info": [
+        {
+          "label": {
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 199,
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "type": "Imprint",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "sort-name": "Epic",
+            "name": "Epic"
+          },
+          "catalog-number": "CDEPC 32367"
+        }
+      ],
+      "status": "Official"
+    },
+    {
+      "packaging": "Cardboard/Paper Sleeve",
+      "cover-art-archive": {
+        "front": true,
+        "back": true,
+        "darkened": false,
+        "artwork": true,
+        "count": 34
+      },
+      "disambiguation": "limited edition",
+      "release-events": [
+        {
+          "date": "2014-03-26",
+          "area": {
+            "type-id": null,
+            "disambiguation": "",
+            "type": null,
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+            "sort-name": "Japan",
+            "name": "Japan",
+            "iso-3166-1-codes": [
+              "JP"
+            ]
+          }
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "asin": "B00HHDWGPA",
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "title": "Blow by Blow",
+      "country": "JP",
+      "id": "6a808cf1-b0ac-4e5d-a0c1-c655f140080e",
+      "date": "2014-03-26",
+      "barcode": "4547366212921",
+      "media": [
+        {
+          "id": "39e2a4fa-4c2e-36fc-84e1-e3ff8b7533af",
+          "format-id": "5c9021b5-aecf-3339-b78e-c7bbe427c342",
+          "title": "",
+          "track-count": 9,
+          "format": "SACD",
+          "position": 1
+        }
+      ],
+      "text-representation": {
+        "language": "jpn",
+        "script": "Jpan"
+      },
+      "quality": "normal",
+      "label-info": [
+        {
+          "catalog-number": "EICP-10001",
+          "label": {
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 199,
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "type": "Imprint",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "name": "Epic",
+            "sort-name": "Epic"
+          }
+        }
+      ],
+      "status": "Official"
+    },
+    {
+      "packaging": "Cardboard/Paper Sleeve",
+      "cover-art-archive": {
+        "artwork": true,
+        "count": 4,
+        "back": true,
+        "front": true,
+        "darkened": false
+      },
+      "disambiguation": "180g",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "area": {
+            "disambiguation": "",
+            "type": null,
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "type-id": null,
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "sort-name": "United States",
+            "name": "United States"
+          },
+          "date": "2009"
+        }
+      ],
+      "asin": null,
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "title": "Blow by Blow",
+      "country": "US",
+      "date": "2009",
+      "id": "7bbd5466-bba7-4eb2-a76b-9a316ec0967d",
+      "media": [
+        {
+          "track-count": 9,
+          "position": 1,
+          "format": "12\" Vinyl",
+          "id": "9697273c-eb4f-3d80-9e02-897df05c029c",
+          "title": "",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64"
+        }
+      ],
+      "barcode": "829421334095",
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "label-info": [
+        {
+          "label": {
+            "sort-name": "Friday Music",
+            "name": "Friday Music",
+            "type-id": "7aaa37fe-2def-3476-b359-80245850062d",
+            "label-code": null,
+            "id": "e048433e-08be-4cee-a251-7876269f8e63",
+            "disambiguation": "",
+            "type": "Original Production"
+          },
+          "catalog-number": "FRM 33409"
+        }
+      ],
+      "status": "Official"
+    },
+    {
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "area": {
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "sort-name": "United States",
+            "name": "United States",
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "type": null,
+            "disambiguation": "",
+            "type-id": null
+          },
+          "date": "1998"
+        }
+      ],
+      "packaging": "Jewel Case",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "darkened": false,
+        "front": true,
+        "back": true,
+        "count": 2,
+        "artwork": true
+      },
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "asin": null,
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "id": "7fc2a579-3b50-4413-b31b-560204c03e58",
+      "date": "1998",
+      "title": "Blow by Blow",
+      "country": "US",
+      "barcode": "015775472723",
+      "media": [
+        {
+          "id": "76467a52-971e-37ff-9d84-de605aa73b3d",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": "",
+          "track-count": 9,
+          "position": 1,
+          "format": "CD"
+        }
+      ],
+      "status": "Official",
+      "label-info": [
+        {
+          "label": {
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "label-code": null,
+            "disambiguation": "",
+            "type": "Reissue Production",
+            "id": "edd54e2f-2eef-46b1-a9b5-bedfe5ed33be",
+            "name": "Mobile Fidelity Sound Lab",
+            "sort-name": "Mobile Fidelity Sound Lab"
+          },
+          "catalog-number": "UDCD 727"
+        }
+      ]
+    },
+    {
+      "packaging": "Jewel Case",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "back": true,
+        "front": true,
+        "darkened": false,
+        "artwork": true,
+        "count": 19
+      },
+      "release-events": [
+        {
+          "area": {
+            "type-id": null,
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+            "disambiguation": "",
+            "type": null,
+            "sort-name": "Japan",
+            "name": "Japan",
+            "iso-3166-1-codes": [
+              "JP"
+            ]
+          },
+          "date": "2013-03-06"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "asin": null,
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "date": "2013-03-06",
+      "id": "8c00d690-d2e0-417e-af3b-b2826e24f03b",
+      "title": "Blow by Blow",
+      "country": "JP",
+      "media": [
+        {
+          "position": 1,
+          "format": "Blu-spec CD",
+          "track-count": 9,
+          "format-id": "038ec24e-5d01-3a8c-817e-c51a515b1875",
+          "title": "",
+          "id": "9128f63e-5de3-3a26-9cb6-84f21c4aed8f"
+        }
+      ],
+      "barcode": "4547366190281",
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "label-info": [
+        {
+          "label": {
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 199,
+            "type": "Imprint",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "sort-name": "Epic",
+            "name": "Epic"
+          },
+          "catalog-number": "SICP 30087"
+        },
+        {
+          "label": {
+            "sort-name": "Sony Music",
+            "name": "Sony Music",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 10746,
+            "disambiguation": "global brand, excluding JP, owned by Sony Music Entertainment",
+            "type": "Imprint",
+            "id": "9e6b4d7f-4958-4db7-8504-d89e315836af"
+          },
+          "catalog-number": "SICP 30087"
+        }
+      ],
+      "status": "Official"
+    },
+    {
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "area": {
+            "name": "Japan",
+            "sort-name": "Japan",
+            "iso-3166-1-codes": [
+              "JP"
+            ],
+            "type-id": null,
+            "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+            "disambiguation": "",
+            "type": null
+          },
+          "date": "1975-07-21"
+        }
+      ],
+      "packaging": "Cardboard/Paper Sleeve",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true,
+        "back": true,
+        "darkened": false,
+        "artwork": true,
+        "count": 4
+      },
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "asin": null,
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "id": "914d6de2-a2e4-481e-bc78-eba902ca72d9",
+      "date": "1975-07-21",
+      "country": "JP",
+      "title": "Blow by Blow",
+      "media": [
+        {
+          "track-count": 9,
+          "format": "12\" Vinyl",
+          "position": 1,
+          "id": "a8b9a474-dbb8-3b5e-b6dd-bc2a5a9c7119",
+          "title": "",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64"
+        }
+      ],
+      "barcode": "",
+      "status": "Official",
+      "label-info": [
+        {
+          "label": {
+            "name": "Epic",
+            "sort-name": "Epic",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 199,
+            "type": "Imprint",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55"
+          },
+          "catalog-number": "ECPO-39"
+        }
+      ]
+    },
+    {
+      "barcode": "074643340922",
+      "media": [
+        {
+          "track-count": 9,
+          "format": "CD",
+          "position": 1,
+          "id": "d3e0b19d-9792-3094-b435-fed7d3b20865",
+          "title": "",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31"
+        }
+      ],
+      "title": "Blow by Blow",
+      "country": "US",
+      "id": "95420b2e-d645-4582-b7ad-6c5f28bfec76",
+      "date": "1984",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "label-info": [
+        {
+          "label": {
+            "sort-name": "Epic",
+            "name": "Epic",
+            "label-code": 199,
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "type": "Imprint"
+          },
+          "catalog-number": "EK 33409"
+        }
+      ],
+      "status": "Official",
+      "cover-art-archive": {
+        "count": 4,
+        "artwork": true,
+        "darkened": false,
+        "back": true,
+        "front": true
+      },
+      "disambiguation": "",
+      "packaging": "Jewel Case",
+      "release-events": [
+        {
+          "area": {
+            "type-id": null,
+            "disambiguation": "",
+            "type": null,
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "sort-name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ]
+          },
+          "date": "1984"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "asin": null,
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a"
+    },
+    {
+      "label-info": [
+        {
+          "label": {
+            "sort-name": "Analogue Productions",
+            "name": "Analogue Productions",
+            "id": "fbc379e0-b926-4bfa-94ef-96753c397654",
+            "type": "Reissue Production",
+            "disambiguation": "",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "label-code": null
+          },
+          "catalog-number": "AAPP 078-45"
+        }
+      ],
+      "status": "Official",
+      "date": "2023",
+      "id": "998c3e08-1c3f-4cc3-8fc6-f52f58ac2384",
+      "country": "US",
+      "title": "Blow by Blow",
+      "barcode": "753088007873",
+      "media": [
+        {
+          "position": 1,
+          "format": "12\" Vinyl",
+          "track-count": 5,
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "title": "",
+          "id": "731ec6e4-555f-49de-8d02-9160f8c514ca"
+        },
+        {
+          "title": "",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "id": "23962a0b-f004-4c3b-b30b-6b59d3941e5f",
+          "position": 2,
+          "format": "12\" Vinyl",
+          "track-count": 4
+        }
+      ],
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "asin": null,
+      "packaging-id": "e724a489-a7e8-30a1-a17c-30dfd6831202",
+      "packaging": "Gatefold Cover",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "darkened": false,
+        "front": false,
+        "back": false,
+        "count": 0,
+        "artwork": false
+      },
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "area": {
+            "type-id": null,
+            "disambiguation": "",
+            "type": null,
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "sort-name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ]
+          },
+          "date": "2023"
+        }
+      ]
+    },
+    {
+      "label-info": [
+        {
+          "catalog-number": "EPC 32367",
+          "label": {
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 199,
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "type": "Imprint",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "sort-name": "Epic",
+            "name": "Epic"
+          }
+        }
+      ],
+      "status": "Official",
+      "barcode": null,
+      "media": [
+        {
+          "track-count": 9,
+          "format": "Vinyl",
+          "position": 1,
+          "id": "82362cb9-a539-3692-b3f1-550a0cfa3587",
+          "title": "",
+          "format-id": "10e17707-9751-3aaf-95b2-2432acd5374c"
+        }
+      ],
+      "id": "9cb3ba30-a359-3246-a7ba-a34fa8f9db99",
+      "date": "1983-09",
+      "country": "GB",
+      "title": "Blow by Blow",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "asin": null,
+      "packaging-id": null,
+      "disambiguation": "",
+      "cover-art-archive": {
+        "darkened": false,
+        "front": false,
+        "back": false,
+        "count": 0,
+        "artwork": false
+      },
+      "packaging": null,
+      "release-events": [
+        {
+          "area": {
+            "iso-3166-1-codes": [
+              "GB"
+            ],
+            "sort-name": "United Kingdom",
+            "name": "United Kingdom",
+            "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+            "disambiguation": "",
+            "type": null,
+            "type-id": null
+          },
+          "date": "1983-09"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+    },
+    {
+      "status": "Official",
+      "label-info": [
+        {
+          "catalog-number": "469012 2",
+          "label": {
+            "type": "Imprint",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 199,
+            "sort-name": "Epic",
+            "name": "Epic"
+          }
+        }
+      ],
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "title": "Blow by Blow",
+      "country": "XE",
+      "id": "9e587ba8-ff2a-31b6-9d20-d1244164fcf8",
+      "date": "1988",
+      "barcode": "5099746901226",
+      "media": [
+        {
+          "track-count": 9,
+          "format": "CD",
+          "position": 1,
+          "id": "ff387150-4f10-3fb3-8105-19bf7a8f4f0b",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": ""
+        }
+      ],
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "asin": "B00000JAWX",
+      "release-events": [
+        {
+          "date": "1988",
+          "area": {
+            "type": null,
+            "disambiguation": "",
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "type-id": null,
+            "iso-3166-1-codes": [
+              "XE"
+            ],
+            "name": "Europe",
+            "sort-name": "Europe"
+          }
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging": "Jewel Case",
+      "cover-art-archive": {
+        "count": 0,
+        "artwork": false,
+        "darkened": false,
+        "front": false,
+        "back": false
+      },
+      "disambiguation": ""
+    },
+    {
+      "packaging": "Jewel Case",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "darkened": false,
+        "front": true,
+        "back": false,
+        "count": 1,
+        "artwork": true
+      },
+      "release-events": [
+        {
+          "area": {
+            "sort-name": "United States",
+            "name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "type-id": null,
+            "disambiguation": "",
+            "type": null,
+            "id": "489ce91b-6658-3307-9877-795b68554c98"
+          },
+          "date": "2001"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "asin": "B00005AREQ",
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "date": "2001",
+      "id": "a3c4c067-43f7-3c48-81e4-ed633ff96f45",
+      "title": "Blow by Blow",
+      "country": "US",
+      "media": [
+        {
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": "",
+          "id": "17198abf-8cf3-33ad-a2b8-cf6be2eb8f96",
+          "format": "CD",
+          "position": 1,
+          "track-count": 9
+        }
+      ],
+      "barcode": "696998544024",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "label-info": [
+        {
+          "label": {
+            "sort-name": "Epic",
+            "name": "Epic",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 199,
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "type": "Imprint",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55"
+          },
+          "catalog-number": "EK 85440"
+        }
+      ],
+      "status": "Official"
+    },
+    {
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "barcode": "753088007873",
+      "media": [
+        {
+          "position": 1,
+          "format": "12\" Vinyl",
+          "track-count": 5,
+          "title": "",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "id": "3673c5d9-33ec-3b85-af7e-b72994e141ea"
+        },
+        {
+          "id": "a3b17ba6-eafb-3a45-b676-998ad3bff02b",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "title": "",
+          "track-count": 4,
+          "format": "12\" Vinyl",
+          "position": 2
+        }
+      ],
+      "country": "US",
+      "title": "Blow by Blow",
+      "date": "2015-08-03",
+      "id": "b2e9d37a-239d-42eb-80fb-fa8af7702db8",
+      "status": "Official",
+      "label-info": [
+        {
+          "catalog-number": "AAPP 078-45",
+          "label": {
+            "sort-name": "Analogue Productions",
+            "name": "Analogue Productions",
+            "disambiguation": "",
+            "type": "Reissue Production",
+            "id": "fbc379e0-b926-4bfa-94ef-96753c397654",
+            "label-code": null,
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c"
+          }
+        }
+      ],
+      "release-events": [
+        {
+          "date": "2015-08-03",
+          "area": {
+            "type-id": null,
+            "disambiguation": "",
+            "type": null,
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "sort-name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ]
+          }
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "cover-art-archive": {
+        "front": true,
+        "back": true,
+        "darkened": false,
+        "artwork": true,
+        "count": 6
+      },
+      "disambiguation": "",
+      "packaging": "Gatefold Cover",
+      "packaging-id": "e724a489-a7e8-30a1-a17c-30dfd6831202",
+      "asin": null
+    },
+    {
+      "status": "Official",
+      "label-info": [
+        {
+          "label": {
+            "label-code": 199,
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "sort-name": "Epic",
+            "name": "Epic"
+          },
+          "catalog-number": "ES 85440"
+        }
+      ],
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "date": "2001-07-31",
+      "id": "d0dc531c-9452-4855-af3f-676597eb3711",
+      "title": "Blow by Blow",
+      "country": "US",
+      "barcode": "696998544062",
+      "media": [
+        {
+          "format-id": "dd9f171b-9099-438f-a410-3bdce00ce139",
+          "title": "",
+          "id": "4b9d1984-7f40-326f-8cbf-5816b5b930be",
+          "position": 1,
+          "format": "SACD (2 channels)",
+          "track-count": 9
+        },
+        {
+          "title": "",
+          "format-id": "3146aab3-e0cb-4571-898e-c25cffac0010",
+          "id": "a22d4717-443f-31cb-897e-2a80d17c9179",
+          "position": 2,
+          "format": "SACD (multichannel)",
+          "track-count": 9
+        }
+      ],
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "asin": "B00005MK6Y",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "date": "2001-07-31",
+          "area": {
+            "type-id": null,
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "disambiguation": "",
+            "type": null,
+            "sort-name": "United States",
+            "name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ]
+          }
+        }
+      ],
+      "packaging": "Jewel Case",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true,
+        "back": false,
+        "darkened": false,
+        "artwork": true,
+        "count": 1
+      }
+    },
+    {
+      "release-events": [
+        {
+          "area": {
+            "iso-3166-1-codes": [
+              "GB"
+            ],
+            "name": "United Kingdom",
+            "sort-name": "United Kingdom",
+            "type": null,
+            "disambiguation": "",
+            "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+            "type-id": null
+          },
+          "date": "1984"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "count": 3,
+        "artwork": true,
+        "darkened": false,
+        "back": true,
+        "front": true
+      },
+      "packaging": "Jewel Case",
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "asin": null,
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "barcode": null,
+      "media": [
+        {
+          "id": "4fbaef7f-6664-3c5c-9b9a-fd0150f89bc1",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": "",
+          "track-count": 9,
+          "position": 1,
+          "format": "CD"
+        }
+      ],
+      "id": "d30629e6-ab1a-4c6f-9347-ab7447096150",
+      "date": "1984",
+      "country": "GB",
+      "title": "Blow by Blow",
+      "status": "Official",
+      "label-info": [
+        {
+          "catalog-number": "CDEPC69117",
+          "label": {
+            "label-code": 199,
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "type": "Imprint",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "name": "Epic",
+            "sort-name": "Epic"
+          }
+        }
+      ]
+    },
+    {
+      "media": [
+        {
+          "id": "f9e2a144-1fa0-3794-b016-87dcb32df4de",
+          "title": "",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "track-count": 9,
+          "format": "CD",
+          "position": 1
+        }
+      ],
+      "barcode": "5099750218129",
+      "id": "d9a12c86-9301-3de0-af18-74cd80553cb9",
+      "date": "2001",
+      "title": "Blow by Blow",
+      "country": "XE",
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "label-info": [
+        {
+          "catalog-number": "502181 2",
+          "label": {
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 199,
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "type": "Imprint",
+            "sort-name": "Epic",
+            "name": "Epic"
+          }
+        },
+        {
+          "catalog-number": "5021812000",
+          "label": {
+            "sort-name": "Epic",
+            "name": "Epic",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "type": "Imprint",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "label-code": 199,
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded"
+          }
+        },
+        {
+          "label": {
+            "name": "Epic",
+            "sort-name": "Epic",
+            "type": "Imprint",
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55",
+            "label-code": 199,
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded"
+          },
+          "catalog-number": "EPC 502181 2"
+        }
+      ],
+      "status": "Official",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "back": true,
+        "front": true,
+        "darkened": false,
+        "artwork": true,
+        "count": 8
+      },
+      "packaging": "Jewel Case",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "area": {
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "type": null,
+            "disambiguation": "",
+            "type-id": null,
+            "iso-3166-1-codes": [
+              "XE"
+            ],
+            "name": "Europe",
+            "sort-name": "Europe"
+          },
+          "date": "2001"
+        },
+        {
+          "date": "2001",
+          "area": {
+            "name": "United Kingdom",
+            "sort-name": "United Kingdom",
+            "iso-3166-1-codes": [
+              "GB"
+            ],
+            "type-id": null,
+            "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+            "disambiguation": "",
+            "type": null
+          }
+        }
+      ],
+      "asin": "B00005CBTJ",
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a"
+    },
+    {
+      "packaging": null,
+      "disambiguation": "",
+      "cover-art-archive": {
+        "darkened": false,
+        "front": false,
+        "back": false,
+        "count": 0,
+        "artwork": false
+      },
+      "release-events": [
+        {
+          "area": {
+            "iso-3166-1-codes": [
+              "GB"
+            ],
+            "sort-name": "United Kingdom",
+            "name": "United Kingdom",
+            "disambiguation": "",
+            "type": null,
+            "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+            "type-id": null
+          },
+          "date": "2002-06-10"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "asin": "B000063744",
+      "packaging-id": null,
+      "date": "2002-06-10",
+      "id": "da14c4e8-6148-490e-be34-b99537c487b8",
+      "title": "Blow by Blow",
+      "country": "GB",
+      "media": [
+        {
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "title": "",
+          "id": "a07d3e7f-7af3-39b3-8c67-8a0847b6d2aa",
+          "format": "12\" Vinyl",
+          "position": 1,
+          "track-count": 9
+        }
+      ],
+      "barcode": "643346037110",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "label-info": [
+        {
+          "label": {
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "label-code": null,
+            "disambiguation": "",
+            "type": "Reissue Production",
+            "id": "32010ee6-d280-4060-823c-f0214ea619fc",
+            "sort-name": "Simply Vinyl",
+            "name": "Simply Vinyl"
+          },
+          "catalog-number": "SVLP 371"
+        }
+      ],
+      "status": "Official"
+    },
+    {
+      "asin": "B000002A6R",
+      "packaging-id": null,
+      "packaging": null,
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true,
+        "back": false,
+        "darkened": false,
+        "artwork": true,
+        "count": 1
+      },
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "date": "1994",
+          "area": {
+            "type-id": null,
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "type": null,
+            "disambiguation": "",
+            "sort-name": "United States",
+            "name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "sort-name": "Epic",
+            "name": "Epic",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": 199,
+            "disambiguation": "US label founded by CBS in 1953, now owned by Sony",
+            "type": "Imprint",
+            "id": "8f638ddb-131a-4cc3-b3d4-7ebdac201b55"
+          },
+          "catalog-number": "EK 64407"
+        }
+      ],
+      "status": "Official",
+      "date": "1994",
+      "id": "f9e85897-b4d4-4b3d-b8b8-a4f19031f321",
+      "title": "Blow by Blow",
+      "country": "US",
+      "barcode": null,
+      "media": [
+        {
+          "format": "CD",
+          "position": 1,
+          "track-count": 9,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": "",
+          "id": "beb837b6-889d-3075-8ef1-84a97a982b2a"
+        }
+      ],
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal"
+    },
+    {
+      "label-info": [
+        {
+          "label": {
+            "sort-name": "Analogue Productions",
+            "name": "Analogue Productions",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "label-code": null,
+            "id": "fbc379e0-b926-4bfa-94ef-96753c397654",
+            "disambiguation": "",
+            "type": "Reissue Production"
+          },
+          "catalog-number": "CAPP 078 SA"
+        }
+      ],
+      "status": "Official",
+      "media": [
+        {
+          "format-id": "1a168dbd-d7ce-381d-a38a-3948de2cb4d6",
+          "title": "",
+          "id": "88142ee5-3d02-30c5-bbc5-5095dad41436",
+          "position": 1,
+          "format": "Hybrid SACD (CD layer)",
+          "track-count": 9
+        },
+        {
+          "id": "b316cc31-f3d4-3de2-8560-48a57096a250",
+          "format-id": "6c521ee3-f723-41de-bc6b-ec3621b9ffa9",
+          "title": "",
+          "track-count": 9,
+          "position": 2,
+          "format": "Hybrid SACD (SACD layer, 2 channels)"
+        },
+        {
+          "title": "",
+          "format-id": "fa46fab8-4c29-495a-b2fa-7bc14257dcca",
+          "id": "5f01daef-2c3c-321a-894a-687914771093",
+          "format": "Hybrid SACD (SACD layer, multichannel)",
+          "position": 3,
+          "track-count": 9
+        }
+      ],
+      "barcode": "753088007866",
+      "id": "fcb60516-f293-4aeb-8305-76ba1154d971",
+      "date": "2016-03-25",
+      "country": "US",
+      "title": "Blow by Blow",
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "asin": null,
+      "packaging-id": "815b7785-8284-3926-8f04-e48bc6c4d102",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "darkened": false,
+        "back": false,
+        "front": true,
+        "count": 1,
+        "artwork": true
+      },
+      "packaging": "Other",
+      "release-events": [
+        {
+          "date": "2016-03-25",
+          "area": {
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "name": "United States",
+            "sort-name": "United States",
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "disambiguation": "",
+            "type": null,
+            "type-id": null
+          }
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe"
+    }
+  ],
+  "release-count": 26
+}

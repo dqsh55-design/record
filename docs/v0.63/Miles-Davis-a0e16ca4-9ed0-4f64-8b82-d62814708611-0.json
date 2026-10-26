@@ -1,0 +1,142 @@
+{
+  "releases": [
+    {
+      "asin": "B0GSXFSP88",
+      "cover-art-archive": {
+        "artwork": true,
+        "darkened": false,
+        "front": true,
+        "back": false,
+        "count": 1
+      },
+      "title": "Miles '56",
+      "packaging": "None",
+      "media": [
+        {
+          "id": "02df23a7-6fc9-4a58-8055-910a508617a2",
+          "track-count": 29,
+          "format-id": "907a28d9-b3b2-3ef6-89a8-7b18d91d4794",
+          "title": "",
+          "format": "Digital Media",
+          "position": 1
+        }
+      ],
+      "country": "XW",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "release-events": [
+        {
+          "date": "2026-06-19",
+          "area": {
+            "disambiguation": "",
+            "sort-name": "[Worldwide]",
+            "type": null,
+            "type-id": null,
+            "name": "[Worldwide]",
+            "iso-3166-1-codes": [
+              "XW"
+            ],
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f"
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "[none]",
+          "label": {
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production",
+            "sort-name": "Craft Recordings",
+            "disambiguation": "US jazz label; reissue division of Concord",
+            "id": "f1af31a6-389a-44fe-a47b-6bf14f2175ae",
+            "name": "Craft Recordings",
+            "label-code": null
+          }
+        }
+      ],
+      "id": "463bdca8-a0ac-45f2-bcc1-e80afc0cfd3c",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "status": "Official",
+      "barcode": "888072745667",
+      "date": "2026-06-19",
+      "disambiguation": ""
+    },
+    {
+      "packaging": "Box",
+      "title": "Miles '56",
+      "cover-art-archive": {
+        "artwork": true,
+        "darkened": false,
+        "back": true,
+        "front": true,
+        "count": 3
+      },
+      "asin": "B0GTWDN983",
+      "release-events": [
+        {
+          "area": null,
+          "date": "2026-06-19"
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "label-code": null,
+            "name": "Craft Recordings",
+            "id": "f1af31a6-389a-44fe-a47b-6bf14f2175ae",
+            "disambiguation": "US jazz label; reissue division of Concord",
+            "sort-name": "Craft Recordings",
+            "type-id": "88ee6ae7-f413-3490-a1d2-54f6a9f0838c",
+            "type": "Reissue Production"
+          },
+          "catalog-number": null
+        }
+      ],
+      "packaging-id": "c1668fc7-8944-4a00-bc3e-46e8d861d211",
+      "media": [
+        {
+          "title": "",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "id": "a0e6a90d-2f20-424f-88d0-4b7fbfd1c3b9",
+          "track-count": 10,
+          "position": 1,
+          "format": "CD"
+        },
+        {
+          "id": "2cb05507-78ae-4148-bf3a-3690a1c889f8",
+          "track-count": 9,
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "title": "",
+          "position": 2,
+          "format": "CD"
+        },
+        {
+          "title": "",
+          "id": "cb0f2cff-9233-41ba-9dd0-464ba4564595",
+          "format-id": "9712d52a-4509-3d4b-a1a2-67c88c643e31",
+          "track-count": 10,
+          "position": 3,
+          "format": "CD"
+        }
+      ],
+      "country": null,
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "id": "6702a6bd-c8ef-4235-af44-57b8bd2a71b5",
+      "disambiguation": "",
+      "date": "2026-06-19",
+      "status": "Official",
+      "barcode": "888072745643"
+    }
+  ],
+  "release-offset": 0,
+  "release-count": 2
+}
