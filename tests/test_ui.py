@@ -670,15 +670,19 @@ class BrowserTests(unittest.TestCase):
             prefix = name.replace(' ', '-')
             window = json.loads((ROOT / 'docs/v0.65' / (prefix + '-window-0.json')).read_text())
             editions = json.loads((ROOT / 'docs/v0.65' / (prefix + '-first-editions.json')).read_text())
+            full_index = json.loads((ROOT / 'docs/v0.65' / (prefix + '-browse-index.json')).read_text())
             for width in (320, 375, 390, 430):
                 page = self.open_site(width)
                 pending, catalogs, calls = [], [], []
-                def route(route, request, window=window, editions=editions, pending=pending, calls=calls):
+                def route(route, request, window=window, editions=editions, pending=pending, calls=calls, full_index=full_index):
                     url = urlparse(route.request.url)
                     q = parse_qs(url.query)
                     calls.append((url.path, q))
                     if url.path.endswith('/release-group'):
-                        pending.append(route)
+                        if 'artist' in q and len(full_index)>100:
+                            route.fulfill(json={'release-group-count':len(full_index),'release-groups':full_index[:100]})
+                        else:
+                            pending.append(route)
                     elif url.path.endswith('/release'):
                         route.fulfill(json=editions)
                     else:
@@ -695,13 +699,14 @@ class BrowserTests(unittest.TestCase):
                 expect(section.locator('article')).to_have_count(0)
                 expect(section.locator('.loading-card')).to_have_attribute('aria-hidden', 'true')
                 self.assertEqual(len(pending), 1)
-                pending[0].fulfill(json=window)
+                pending[0].fulfill(json=window if len(full_index)>100 else {'release-group-count':len(full_index),'release-groups':full_index})
                 expected = [r for r in editions['releases'] if r.get('status') not in ('Bootleg', 'Pseudo-Release', 'Promotion')]
                 expect(section.locator('article')).to_have_count(len(expected))
                 self.assertEqual(len(catalogs), 1)  # Slow optional catalog cannot hold the main list hostage.
-                self.assertEqual(len(calls), 2)  # One complete small window + one edition page, no full browse.
-                self.assertTrue('query' in calls[0][1])
-                self.assertTrue(all('artist' not in q for _, q in calls))
+                self.assertEqual(len(calls), 3 if len(full_index)>100 else 2)
+                self.assertTrue('artist' in calls[0][1])
+                if len(full_index)>100:
+                    self.assertTrue('query' in calls[1][1])
                 expect(section.locator('select:visible')).to_have_count(2)
                 self.assertEqual(section.locator('#credit-scope option').count(), 6)
                 expect(page.locator('#settings-details')).not_to_have_attribute('open', '')
@@ -805,7 +810,9 @@ class BrowserTests(unittest.TestCase):
             url = urlparse(route.request.url)
             q = parse_qs(url.query)
             if url.path.endswith('/release-group'):
-                if 'TO 1979' in q['query'][0]:
+                if 'artist' in q:
+                    route.fulfill(json={'release-group-count':101,'release-groups':[{'id':'probe','primary-type':'Album','artist-credit':[{'artist':{'id':'target'}}]}]})
+                elif 'TO 1979' in q['query'][0]:
                     pending.append(route)
                 else:
                     route.fulfill(json={'count': 1, 'release-groups': [{'id': 'new', 'title': 'Newest', 'primary-type': 'Album', 'first-release-date': '2024', 'artist-credit': [{'artist': {'id': 'target'}}]}]})
@@ -814,7 +821,7 @@ class BrowserTests(unittest.TestCase):
             else:
                 route.fulfill(json={'relations': []})
         page.route('**/ws/2/**', route)
-        with page.expect_request('**/release-group?**'):
+        with page.expect_request('**/release-group?query=**'):
             page.evaluate("void chooseArtist({id:'target',name:'Target'})")
         page.get_by_role('combobox', name='並び順').select_option('desc')
         pending[0].fulfill(json={'count': 1, 'release-groups': [{'id': 'old', 'title': 'Old', 'primary-type': 'Album', 'first-release-date': '1950', 'artist-credit': [{'artist': {'id': 'target'}}]}]})
@@ -938,6 +945,42 @@ class BrowserTests(unittest.TestCase):
             expect(work.locator('article')).to_have_count(3)
             expect(work.locator('article[data-release-id="incomplete"] .album-label')).to_have_text('レーベル未登録')
             self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+
+    def test_v070_small_index_and_no_idle_auto_loading(self):
+        from urllib.parse import parse_qs
+        page = self.open_site(390)
+        page.evaluate('window.IntersectionObserver = window.NativeIntersectionObserver')
+        requests = []
+        groups = [{'id': 'small-work', 'title': 'Small Work', 'primary-type': 'Album',
+                   'first-release-date': '2002', 'artist-credit': [{'artist': {'id': 'small'}}]}]
+        def route(route):
+            url = urlparse(route.request.url)
+            q = parse_qs(url.query)
+            requests.append((url.path, q))
+            if url.path.endswith('/release-group'):
+                route.fulfill(json={'release-group-count': 1, 'release-groups': groups})
+            elif url.path.endswith('/release'):
+                offset = int(q.get('offset', ['0'])[0])
+                route.fulfill(json={'release-count': 200, 'releases': [{
+                    'id': 'edition-'+str(offset+i), 'title': 'Small Work', 'status': 'Official',
+                    'label-info': [{'label': {'name': 'Label'}}]} for i in range(100)]})
+            else:
+                route.fulfill(json={'relations': []})
+        page.route('**/ws/2/**', route)
+        page.evaluate("chooseArtist({id:'small',name:'Small'})")
+        section = page.locator('#official-releases')
+        expect(section.locator('article')).to_have_count(100)
+        self.assertEqual(len([p for p,q in requests if p.endswith('/release-group')]), 1)
+        self.assertTrue(all('query' not in q for p,q in requests if p.endswith('/release-group')))
+        page.evaluate('render(true);render(true)')
+        page.wait_for_timeout(200)  # Give native observer/layout callbacks time to expose a loop.
+        self.assertEqual(len([p for p,q in requests if p.endswith('/release')]), 1)
+        page.locator('#chronology-more').scroll_into_view_if_needed()
+        expect(section.locator('article')).to_have_count(200)
+        page.evaluate('render(true);render(true)')
+        page.wait_for_timeout(200)
+        self.assertEqual(len([p for p,q in requests if p.endswith('/release')]), 2)
+        expect(section.locator('article:visible')).to_have_count(1)
 
     def test_mobile_layout_and_touch_targets(self):
         for width in (320, 375, 390, 430):
