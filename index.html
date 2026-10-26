@@ -22,7 +22,7 @@
 @media(max-width:500px){main{padding-top:24px}header{margin-bottom:20px}h1{font-size:29px}#official-releases .album{grid-template-columns:88px minmax(0,1fr);gap:14px}#official-releases .cover{width:88px;height:88px}#official-releases .album-title{font-size:16px}}
 @media(max-width:350px){main{padding-left:14px;padding-right:14px}#official-releases .album{grid-template-columns:76px minmax(0,1fr);gap:12px}#official-releases .cover{width:76px;height:76px}}
 @media(prefers-reduced-motion:no-preference){.loading-line{animation:loading-pulse 1.5s ease-in-out infinite alternate}@keyframes loading-pulse{to{opacity:.45}}}
-</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます</div><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Music data by MusicBrainz · v0.66</footer></main>
+</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます</div><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Music data by MusicBrainz · v0.67</footer></main>
 <script>
 const $=id=>document.getElementById(id), status=$('status'),results=$('results');
 let relatedCatalogAlbums=[],artistChoices=[],ytVisible=20,ytSort='name',ytAlbums=[],albums=[],filter='おすすめ',artistName='',offset=0,artistId='',busy=false,total=0;
@@ -47,7 +47,15 @@ async function fetchJSONWithTimeout(url,options={}){
  finally{clearTimeout(timer)}
 }
 let lastRequestAt=0,requestQueue=Promise.resolve();
+// Session-only successful responses: repeat searches and order changes need no HTTP.
+// Cache by complete URL (including page and artist); never cache failures.
+const apiResponses=new Map(),apiRequests=new Map(),API_CACHE_MS=10*60*1000;
+const copyResponse=value=>JSON.parse(JSON.stringify(value));
 function api(path,{attempts=3}={}){
+ const cached=apiResponses.get(path),age=cached?Date.now()-cached.savedAt:-1;
+ if(cached&&age>=0&&age<API_CACHE_MS)return Promise.resolve(copyResponse(cached.data));
+ apiResponses.delete(path);
+ if(apiRequests.has(path))return apiRequests.get(path).then(copyResponse);
  const job=requestQueue.catch(()=>{}).then(async()=>{
   for(let attempt=0;attempt<attempts;attempt++){
    const wait=Math.max(0,1100-(Date.now()-lastRequestAt));if(wait)await pause(wait);lastRequestAt=Date.now();
@@ -58,7 +66,13 @@ function api(path,{attempts=3}={}){
    }catch(e){const network=/Failed to fetch|NetworkError|Load failed/i.test(e.message);if(attempt===attempts-1||!network)throw network?Error('通信できませんでした。接続を確認して再試行してください'):e}
    await pause((attempt+1)*1700);
   }
- });requestQueue=job.catch(()=>{});return job;
+ });requestQueue=job.catch(()=>{});
+ const shared=job.then(data=>{
+  apiResponses.set(path,{savedAt:Date.now(),data:copyResponse(data)});
+  if(apiResponses.size>100)apiResponses.delete(apiResponses.keys().next().value);
+  return data;
+ }).finally(()=>apiRequests.delete(path));
+ apiRequests.set(path,shared);return shared.then(copyResponse);
 }
 function automaticState(a){
  const e=a.automatic_verification;
@@ -414,6 +428,11 @@ function sameArtistIds(left,right){
  if([...left,...right].some(id=>typeof id!=='string'||!id))return false;
  const a=new Set(left),b=new Set(right);return a.size===b.size&&[...a].every(id=>b.has(id));
 }
+function validReferenceDate(value){
+ if(typeof value!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(value))return false;
+ const date=new Date(value+'T00:00:00Z');
+ return Number.isFinite(date.getTime())&&date.toISOString().slice(0,10)===value&&date.getTime()<=Date.now();
+}
 function assessRelease(r,references=discographyReferences){
  references=Array.isArray(references)?references.filter(ref=>ref&&typeof ref==='object'):[];
  const group=r['release-group']||{},kind=albumKind(group);
@@ -422,7 +441,7 @@ function assessRelease(r,references=discographyReferences){
  const numbers=(r['label-info']||[]).map(li=>li['catalog-number']).filter(Boolean);
  const exact=references.filter(ref=>ref.scope==='release'&&ref.releaseId===r.id&&ref.groupId===group.id&&
   sameArtistIds(credits,ref.artistIds)&&
-  ref.sourceKind==='artist-or-label'&&/^https:\/\//.test(ref.sourceUrl||'')&&/^\d{4}-\d{2}-\d{2}$/.test(ref.checkedAt||'')&&
+  ref.sourceKind==='artist-or-label'&&/^https:\/\//.test(ref.sourceUrl||'')&&validReferenceDate(ref.checkedAt)&&
   ref.releaseDate&&ref.releaseDate===r.date&&(ref.label||ref.publisher)&&(!ref.label||labels.includes(ref.label))&&
   ref.catalogNumber&&numbers.includes(ref.catalogNumber)&&Array.isArray(ref.trackCounts)&&ref.trackCounts.length>0&&
   JSON.stringify(ref.trackCounts)===JSON.stringify((r.media||[]).map(m=>m['track-count']))&&
@@ -430,12 +449,12 @@ function assessRelease(r,references=discographyReferences){
  const confirmed=exact.filter(ref=>ref.official===true);
  const groupCredits=(group['artist-credit']||[]).map(c=>c?.artist?.id);
  const workFacts=references.filter(ref=>ref.scope==='work'&&ref.groupId===group.id&&ref.official===true&&
-  ref.sourceKind==='artist-or-label'&&/^https:\/\//.test(ref.sourceUrl||'')&&/^\d{4}-\d{2}-\d{2}$/.test(ref.checkedAt||'')&&
+  ref.sourceKind==='artist-or-label'&&/^https:\/\//.test(ref.sourceUrl||'')&&validReferenceDate(ref.checkedAt)&&
   sameArtistIds(groupCredits,ref.artistIds));
  const workConflict=workFacts.some(ref=>ref.kind!==kind||(ref.originalYear&&originalDate(group)&&ref.originalYear!==originalDate(group).slice(0,4)));
 
  const excluded=['Bootleg','Pseudo-Release','Promotion'].includes(r.status);
- const conflict=confirmed.length&&(excluded||['Withdrawn','Cancelled'].includes(r.status)||confirmed.some(ref=>ref.kind!==kind));
+ const conflict=confirmed.length&&(exact.some(ref=>ref.official===false)||excluded||['Withdrawn','Cancelled'].includes(r.status)||confirmed.some(ref=>ref.kind!==kind));
  return {kind,visibility:conflict?'unknown':excluded?'excluded':r.status==='Official'||confirmed.length?'official':'unknown',
   verification:conflict?'conflict':confirmed.length?'confirmed':'unconfirmed',
   workVerification:workConflict?'conflict':workFacts.some(ref=>ref.originalYear&&ref.originalYear===originalDate(group).slice(0,4))?'confirmed':'unconfirmed',
@@ -581,6 +600,7 @@ function inDateRange(group,range){
  return !!date&&(!range.low||date.slice(0,4)>=range.low.slice(0,4))&&(!range.high||date.slice(0,4)<=range.high.slice(0,4));
 }
 function switchChronology(order){
+ if(chronology?.restartRequired)apiResponses.clear();
  chronologyOrder=order;chronologyGeneration++;releaseObserver?.disconnect();
  officialLoading=false;officialError='';officialReleases=[];officialOffset=0;officialTotal=0;chronology=null;
  loadOfficialReleases();
@@ -629,6 +649,7 @@ async function loadOfficialReleases(reset=false){
   while(state.cursor>=state.groups.length&&!state.allReady){
    try{await loadIndexPage(state,selected)}catch(error){
     if(!current())return;
+    apiResponses.clear(); // Invalid/count-changing payloads must be fetched again on retry.
     // Before publishing anything, a failed/invalid search safely falls back to full browse.
     // After a prefix is visible, retain it and retry the same range; never switch sources mid-list.
     if(state.mode==='ranges'&&!officialReleases.length&&!state.groups.length){state.mode='browse';state.pending=[];state.indexOffset=0;state.indexTotal=null;state.ready=false;state.fallback=error.message;continue}
@@ -647,7 +668,7 @@ async function loadOfficialReleases(reset=false){
    state.releaseOffset+=batch.length;officialOffset+=batch.length;officialTotal=officialOffset;
    if(state.releaseOffset>=count){state.cursor++;state.releaseOffset=0}
   }
- }catch(e){if(current())officialError=e.message}
+ }catch(e){if(current()){apiResponses.clear();officialError=e.message}}
  finally{if(current()){officialLoading=false;status.textContent='';render(true)}}
 }
 function observeReleaseEnd(){
