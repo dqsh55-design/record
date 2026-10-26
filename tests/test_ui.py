@@ -728,7 +728,9 @@ class BrowserTests(unittest.TestCase):
                     draft.fill('https://music.youtube.com/browse/MPREb_draft')
                 catalogs[0].fulfill(json={})
                 page.wait_for_function('catalogDone && !officialLoading')
-                self.assertTrue(page.evaluate("primaryCard===document.querySelector('#official-releases article')"))
+                self.assertTrue(page.evaluate("primaryCard.isConnected && primaryCard===Array.from(document.querySelectorAll('#official-releases article')).find(row=>row.dataset.releaseId===primaryCard.dataset.releaseId)"))
+                if width == 390:
+                    self.assertTrue(page.evaluate("primaryCard===document.querySelector('#official-releases article')"))
                 if width == 390:
                     expect(draft).to_have_value('https://music.youtube.com/browse/MPREb_draft')
                     expect(draft).to_be_focused()
