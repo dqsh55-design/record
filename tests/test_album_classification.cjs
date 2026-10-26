@@ -125,3 +125,27 @@ for(const name of ['Miles-Davis','Jeff-Beck']){
  assert.equal(run('assessRelease(item).visibility'),'excluded');
 }
 console.log('Future/impossible review dates, contradictory evidence and three real artists passed');
+// v0.69: completeness selection is separate from legitimacy and never mixes editions.
+context.items=[{...original,id:'incomplete',status:null,'label-info':[],'cover-art-archive':{front:false}},original,reissue];
+assert.equal(run('representativeEditions({releases:items})[0].id'),original.id);
+assert.equal(run("representativeEditions({releases:items},'incomplete')[0].id"),'incomplete');
+assert.equal(run('representativeEditions({releases:items}).length'),3);
+assert.equal(context.items[0].id,'incomplete');
+context.items=[{...original,id:'without-image','cover-art-archive':{front:false}},original];
+assert.equal(run('representativeEditions({releases:items})[0].id'),original.id);
+run('coverFailures.set(items[1].id,Date.now())');
+assert.equal(run('representativeEditions({releases:items})[0].id'),'without-image');
+run('coverFailures.clear()');
+// Replay the actual 55+ editions that previously selected a label-less image-less entry.
+context.items=releases.filter(r=>r['release-group'].id===original['release-group'].id);
+const selected=run('representativeEditions({releases:items})[0]');
+assert.equal(selected.status,'Official');
+assert.equal(selected['cover-art-archive'].front,true);
+assert.ok(selected['label-info'].some(li=>li.label?.name));
+assert.equal(assess(selected).verification,'unconfirmed'); // Selection does not authorize a release.
+for(const name of ['Miles-Davis','Jeff-Beck']){
+ const detail=JSON.parse(readFileSync(`docs/v0.64/${name}-own.json`));
+ context.items=[{...detail,id:'incomplete-'+name,status:null,'label-info':[],media:[],'cover-art-archive':{front:false}},detail];
+ assert.equal(run('representativeEditions({releases:items})[0].id'),detail.id);
+}
+console.log('Representative edition: completeness, artwork registration/failure, interaction pin, no mutation and three real artists passed');

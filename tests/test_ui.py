@@ -253,8 +253,10 @@ class BrowserTests(unittest.TestCase):
         expect(image).to_have_attribute('decoding', 'async')
         page.wait_for_function("document.querySelector('#official-releases img').naturalWidth > 0")
         section.locator('.work-editions > summary').first.click()
-        section.locator('article').nth(1).scroll_into_view_if_needed()
-        expect(section.locator('article').nth(1).locator('.cover')).to_have_text('画像なし')
+        missing = section.locator('article[data-release-id="missing-label"]')
+        missing.scroll_into_view_if_needed()
+        expect(missing.locator('img')).to_have_count(0)
+        expect(missing.locator('.cover-placeholder')).to_have_text('画像なし')
         page.evaluate('render()')
         self.assertTrue(page.evaluate("coverFailures.has('missing-label')"))
         expect(section.locator('article')).to_have_count(2)
@@ -728,7 +730,9 @@ class BrowserTests(unittest.TestCase):
                     draft.fill('https://music.youtube.com/browse/MPREb_draft')
                 catalogs[0].fulfill(json={})
                 page.wait_for_function('catalogDone && !officialLoading')
-                self.assertTrue(page.evaluate("primaryCard===document.querySelector('#official-releases article')"))
+                self.assertTrue(page.evaluate("primaryCard.isConnected && primaryCard===Array.from(document.querySelectorAll('#official-releases article')).find(row=>row.dataset.releaseId===primaryCard.dataset.releaseId)"))
+                if width == 390:
+                    self.assertTrue(page.evaluate("primaryCard===document.querySelector('#official-releases article')"))
                 if width == 390:
                     expect(draft).to_have_value('https://music.youtube.com/browse/MPREb_draft')
                     expect(draft).to_be_focused()
@@ -905,6 +909,35 @@ class BrowserTests(unittest.TestCase):
             self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
             work.locator('.work-editions > summary').click()
             expect(section.locator('article:visible')).to_have_count(4)
+
+    def test_v069_complete_edition_and_interaction_pin(self):
+        for width in (320, 390, 430):
+            page = self.open_site(width)
+            base = {'title': 'Work', 'status': 'Official',
+                    'artist-credit': [{'artist': {'id': GROUP}}],
+                    'release-group': {'id': 'work', 'title': 'Work', 'primary-type': 'Album', 'first-release-date': '2002'}}
+            incomplete = {**base, 'id': 'incomplete', 'status': None, 'cover-art-archive': {'front': False}}
+            complete = {**base, 'id': 'complete', 'date': '2010', 'cover-art-archive': {'front': True},
+                        'label-info': [{'label': {'name': 'Specific Label'}, 'catalog-number': 'CAT1'}]}
+            page.evaluate("items=>{artistId='" + GROUP + "';artistName='Artist';creditScope='all';officialReleases=items;render()}", [incomplete, complete])
+            work = page.locator('.release-work-group').first
+            primary = work.locator(':scope > article')
+            expect(primary).to_have_attribute('data-release-id', 'complete')
+            expect(primary.locator('.album-label')).to_have_text('この盤のレーベル：Specific Label')
+            expect(primary.locator('.meta')).to_have_text('2002年（初回発売）')
+            primary.locator('summary').click()
+            expect(primary.locator('.edition-release-meta')).to_contain_text('この盤の発売：2010')
+            expect(primary.locator('.discography-evidence')).to_contain_text('独立確認は未確認')
+            field = primary.get_by_role('textbox', name='Workの発売盤リンク')
+            field.fill('https://music.youtube.com/browse/MPREb_draft')
+            page.evaluate("officialReleases.push({...officialReleases[1],id:'richer',media:[{'track-count':20}]});render(true)")
+            expect(primary).to_have_attribute('data-release-id', 'complete')
+            expect(field).to_have_value('https://music.youtube.com/browse/MPREb_draft')
+            expect(field).to_be_focused()
+            work.locator('.work-editions > summary').click()
+            expect(work.locator('article')).to_have_count(3)
+            expect(work.locator('article[data-release-id="incomplete"] .album-label')).to_have_text('レーベル未登録')
+            self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
 
     def test_mobile_layout_and_touch_targets(self):
         for width in (320, 375, 390, 430):
