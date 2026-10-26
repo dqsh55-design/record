@@ -344,6 +344,9 @@ class BrowserTests(unittest.TestCase):
 
     def test_primary_controls_with_touch(self):
         page = self.open_site(release_total=103)
+        # CI's normal font metrics produce a 17px line box: 17 + 2*13px padding = 43px.
+        # Reproduce it regardless of the local browser's installed fonts.
+        page.add_style_tag(content='.more { line-height:17px }')
         page.get_by_role('textbox', name='アーティスト名').fill('ジェフ・ベック')
         page.get_by_role('button', name='検索', exact=True).tap()
         page.get_by_role('button', name='この名義の作品を見る →').tap()
@@ -352,10 +355,20 @@ class BrowserTests(unittest.TestCase):
         section.get_by_text('収録曲・曲順・リンクを確認', exact=True).first.tap()
         section.get_by_role('button', name='曲目を取得', exact=True).first.tap()
         expect(section).to_contain_text('1. <Song>')
-        section.get_by_role('button', name='さらに発売記録を読み込む', exact=True).tap()
+        more = section.get_by_role('button', name='さらに発売記録を読み込む', exact=True)
+        self.assertGreaterEqual(more.bounding_box()['height'], 44, 'enabled pagination button')
+        batch = page.evaluate('officialReleases')
+        pending = []
+        page.route('**/ws/2/release?**', lambda route: pending.append(route))
+        with page.expect_request('**/ws/2/release?**'):
+            more.tap()
+        expect(more).to_be_disabled()
+        self.assertGreaterEqual(more.bounding_box()['height'], 44, 'loading pagination button')
+        self.assertEqual(len(pending), 1)
+        pending[0].fulfill(json={'release-count': 103, 'releases': batch})
         expect(page.locator('#catalog-info')).to_contain_text('発売盤 6件取得')
-        for control in section.locator('button:visible, a:visible, summary:visible').all():
-            self.assertGreaterEqual(control.bounding_box()['height'], 44)
+        for control in section.locator('button:visible, a:visible, summary:visible, select:visible').all():
+            self.assertGreaterEqual(control.bounding_box()['height'], 44, control.evaluate('(e)=>e.tagName+" "+(e.getAttribute("aria-label")||e.textContent).trim()'))
         self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
 
     def test_pending_tracks_survive_an_unrelated_rerender(self):
