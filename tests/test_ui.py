@@ -115,6 +115,95 @@ class BrowserTests(unittest.TestCase):
         page.get_by_text('以前のYouTube Music一覧・保存記録・照合ツール', exact=True).click()
         return page.locator('#results > details > section').first
 
+    def test_v061_real_snapshots_and_distinct_modern_editions(self):
+        # Captured MusicBrainz responses, replayed offline: not a live browser test.
+        for name in ('Jeff-Beck', 'Miles-Davis'):
+            page = self.open_site(375)
+            data = json.loads((ROOT / 'docs/v0.61' / (name + '-releases.json')).read_text())
+            page.route('**/ws/2/release?**', lambda route, request, data=data: route.fulfill(json=data))
+            self.search(page)
+            visible = [r for r in data['releases'] if r.get('status') not in ('Bootleg', 'Pseudo-Release', 'Promotion') and r.get('release-group', {}).get('primary-type') == 'Album']
+            expect(page.locator('#official-releases article')).to_have_count(len({r['id'] for r in visible}))
+            self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+        page = self.open_site(390)
+        records = [json.loads((ROOT / 'docs/v0.61' / (id + '.json')).read_text()) for id in (
+            '6fbb6d1b-e6b4-4027-acf1-85045a0bd771', 'f5453a0d-414c-4974-b26f-9ceea9b35887')]
+        page.route('**/ws/2/release?**', lambda route: route.fulfill(json={'release-count': 3, 'releases': records + [records[0]]}))
+        self.search(page)
+        section = page.locator('#official-releases')
+        expect(section.locator('article')).to_have_count(2)
+        expect(section).to_contain_text('8曲')
+        expect(section).to_contain_text('9曲')
+        for r in records:
+            expect(section).to_contain_text(r['id'])
+        output = os.environ.get('RECORD_SCREENSHOT_DIR')
+        if output:
+            Path(output).mkdir(parents=True, exist_ok=True)
+            page.evaluate("document.getElementById('historical-catalog').open=false")
+            page.screenshot(path=str(Path(output) / 'modern-jazz-trumpets-390.png'), full_page=True)
+
+    def test_v061_automatic_link_requires_exact_release_evidence(self):
+        page = self.open_site()
+        page.route('**/ws/2/release?**', lambda route: route.fulfill(json={'release-count': 2, 'releases': [
+            {'id': id, 'title': 'Album', 'status': 'Official', 'release-group': {'primary-type': 'Album'}} for id in (GROUP, 'different-edition')]}))
+        self.search(page)
+        section = page.locator('#official-releases')
+        expect(section.get_by_role('link', name='根拠のあるアルバムを直接開く')).to_have_count(1)
+        expect(section.get_by_role('link', name='YouTube Musicで探す ↗')).to_have_count(1)
+        section.get_by_text('収録曲・曲順・リンクを確認', exact=True).first.click()
+        expect(section).to_contain_text('一致した曲目：One / Two')
+        page.evaluate("ytAlbums.forEach(a=>{if(a.automatic_verification)a.automatic_verification.checked_at='2000-01-01'});render()")
+        expect(section.get_by_role('link', name='根拠のあるアルバムを直接開く')).to_have_count(0)
+
+    def test_v061_cover_success_failure_and_mobile_layout(self):
+        import base64
+        page = self.open_site(320)
+        pixel = base64.b64decode('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jRZkAAAAASUVORK5CYII=')
+        page.route('**/release/official/front-250', lambda route: route.fulfill(body=pixel, content_type='image/png'))
+        page.route('**/release/missing-label/front-250', lambda route: route.fulfill(status=404))
+        self.search(page)
+        section = page.locator('#official-releases')
+        image = section.locator('article').first.locator('img')
+        expect(image).to_have_attribute('loading', 'lazy')
+        expect(image).to_have_attribute('decoding', 'async')
+        page.wait_for_function("document.querySelector('#official-releases img').naturalWidth > 0")
+        section.locator('article').nth(1).scroll_into_view_if_needed()
+        expect(section.locator('article').nth(1).locator('.cover')).to_have_text('画像なし')
+        page.evaluate('render()')
+        self.assertTrue(page.evaluate("coverFailures.has('missing-label')"))
+        expect(section.locator('article')).to_have_count(2)
+        self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+
+    def test_v061_edition_link_save_reload_remove_and_backup(self):
+        page = self.open_site(fail_catalog=True)
+        page.route('**/ws/2/release?**', lambda route: route.fulfill(json={'release-count': 1, 'releases': [
+            {'id': GROUP, 'title': 'Edition', 'status': 'Official', 'release-group': {'primary-type': 'Album'}}]}))
+        self.search(page)
+        section = page.locator('#official-releases')
+        section.get_by_text('収録曲・曲順・リンクを確認', exact=True).click()
+        field = section.get_by_role('textbox', name='Editionの発売盤リンク')
+        field.fill('https://example.com/album')
+        section.get_by_role('button', name='発売盤リンクを保存', exact=True).click()
+        expect(section).to_contain_text('有効なYouTube MusicのアルバムURL')
+        field.fill('https://music.youtube.com/browse/MPREb_edition?si=share')
+        section.get_by_role('button', name='発売盤リンクを保存', exact=True).click()
+        expect(section.get_by_role('link', name='保存したアルバムを開く（利用者登録）')).to_have_attribute('href', 'https://music.youtube.com/browse/MPREb_edition')
+        expect(section).not_to_contain_text('正規盤確認済み')
+        with page.expect_download() as pending:
+            section.get_by_role('button', name='保存記録をバックアップ', exact=True).click()
+        backup = json.loads(Path(pending.value.path()).read_text())
+        self.assertEqual(backup['editionLinks'][GROUP]['source'], 'user')
+        page.reload()
+        self.search(page)
+        expect(section.get_by_role('link', name='保存したアルバムを開く（利用者登録）')).to_be_visible()
+        section.get_by_text('収録曲・曲順・リンクを確認', exact=True).click()
+        section.get_by_role('button', name='発売盤リンクを削除', exact=True).click()
+        expect(section.get_by_role('link', name='YouTube Musicで探す ↗')).to_be_visible()
+        with page.expect_event('dialog') as dialog:
+            section.get_by_label('保存記録を復元').set_input_files({'name': 'backup.json', 'mimeType': 'application/json', 'buffer': json.dumps(backup).encode()})
+        dialog.value.accept()
+        expect(section.get_by_role('link', name='保存したアルバムを開く（利用者登録）')).to_be_visible()
+
     def test_github_pages_repository_subpath(self):
         page = self.open_site(base_path='/record')
         section = self.search(page)
@@ -149,7 +238,7 @@ class BrowserTests(unittest.TestCase):
         expect(section).to_contain_text('レーベル未登録')
         expect(section).not_to_contain_text('Bootleg hidden')
         expect(section.get_by_role('link', name='YouTube Musicで探す ↗').first).to_have_attribute('href', 'https://music.youtube.com/search?q=Artist%20Official%20Album')
-        section.get_by_text('収録曲・曲順を見る', exact=True).first.click()
+        section.get_by_text('収録曲・曲順・リンクを確認', exact=True).first.click()
         section.get_by_role('button', name='曲目を取得', exact=True).first.click()
         expect(section).to_contain_text('1. <Song>')
         expect(section).to_contain_text('EPC 1')
@@ -176,7 +265,7 @@ class BrowserTests(unittest.TestCase):
         page.get_by_role('button', name='この名義の作品を見る →').tap()
         section = page.locator('#official-releases')
         expect(section.locator('article')).to_have_count(2)
-        section.get_by_text('収録曲・曲順を見る', exact=True).first.tap()
+        section.get_by_text('収録曲・曲順・リンクを確認', exact=True).first.tap()
         section.get_by_role('button', name='曲目を取得', exact=True).first.tap()
         expect(section).to_contain_text('1. <Song>')
         section.get_by_role('button', name='さらに発売記録を読み込む', exact=True).tap()
@@ -191,7 +280,7 @@ class BrowserTests(unittest.TestCase):
         pending = []
         page.route('**/release/official?**', lambda route: pending.append(route))
         section = page.locator('#official-releases')
-        section.get_by_text('収録曲・曲順を見る', exact=True).first.click()
+        section.get_by_text('収録曲・曲順・リンクを確認', exact=True).first.click()
         with page.expect_request('**/release/official?**'):
             section.get_by_role('button', name='曲目を取得', exact=True).first.click()
         page.evaluate('render()')
@@ -219,7 +308,7 @@ class BrowserTests(unittest.TestCase):
         self.search(page)
         section = page.locator('#official-releases')
         details = section.locator('details').first
-        details.get_by_text('収録曲・曲順を見る', exact=True).click()
+        details.get_by_text('収録曲・曲順・リンクを確認', exact=True).click()
         details.get_by_role('button', name='曲目を取得', exact=True).click()
         expect(details).to_contain_text('1. <Song>')
         section.get_by_role('button', name='さらに発売記録を読み込む', exact=True).click()
@@ -228,7 +317,7 @@ class BrowserTests(unittest.TestCase):
         expect(section.locator('details').first).to_contain_text('1. <Song>')
         page.route('**/release/missing-label?**', lambda route: route.fulfill(status=403, json={}))
         details = section.locator('details').nth(1)
-        details.get_by_text('収録曲・曲順を見る', exact=True).click()
+        details.get_by_text('収録曲・曲順・リンクを確認', exact=True).click()
         details.get_by_role('button', name='曲目を取得', exact=True).click()
         expect(details).to_contain_text('曲目を取得できませんでした：音楽データを取得できませんでした（403）')
         expect(details.get_by_role('button', name='曲目の取得を再試行')).to_be_enabled()

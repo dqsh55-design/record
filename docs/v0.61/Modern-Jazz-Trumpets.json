@@ -1,0 +1,189 @@
+{
+  "created": "2026-10-26T00:24:38.702Z",
+  "count": 2,
+  "offset": 0,
+  "releases": [
+    {
+      "id": "6fbb6d1b-e6b4-4027-acf1-85045a0bd771",
+      "score": 100,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "c040b35c-3fbd-4ce8-ac9b-00b165fe497b",
+      "count": 1,
+      "title": "Modern Jazz Trumpets",
+      "status": "Official",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "joinphrase": ", ",
+          "name": "Fats Navarro",
+          "artist": {
+            "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+            "name": "Fats Navarro",
+            "sort-name": "Navarro, Fats"
+          }
+        },
+        {
+          "joinphrase": ", ",
+          "name": "Dizzy Gillespie",
+          "artist": {
+            "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+            "name": "Dizzy Gillespie",
+            "sort-name": "Gillespie, Dizzy"
+          }
+        },
+        {
+          "joinphrase": ", ",
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis",
+            "sort-name": "Davis, Miles",
+            "disambiguation": "jazz trumpeter, bandleader, songwriter"
+          }
+        },
+        {
+          "name": "Kenny Dorham",
+          "artist": {
+            "id": "4476453a-d37e-4c52-b60d-07c90b6fa661",
+            "name": "Kenny Dorham",
+            "sort-name": "Dorham, Kenny",
+            "disambiguation": "US jazz trumpeter, singer, and composer"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "095878f4-58ac-43f4-93ae-92a1e6588d8d",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Modern Jazz Trumpets",
+        "primary-type": "Album"
+      },
+      "date": "1951",
+      "country": "US",
+      "release-events": [
+        {
+          "date": "1951",
+          "area": {
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "sort-name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ]
+          }
+        }
+      ],
+      "barcode": "",
+      "label-info": [
+        {
+          "catalog-number": "PRLP 113",
+          "label": {
+            "id": "11847c89-4b2c-4866-84c3-f72e264c0f66",
+            "name": "Prestige"
+          }
+        }
+      ],
+      "track-count": 8,
+      "media": [
+        {
+          "id": "426570ce-ce7a-3574-86f5-ea5e16295afe",
+          "format": "10\" Vinyl",
+          "disc-count": 0,
+          "track-count": 8
+        }
+      ]
+    },
+    {
+      "id": "f5453a0d-414c-4974-b26f-9ceea9b35887",
+      "score": 100,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "d76d3abe-868c-4a7a-8397-85237d06989c",
+      "count": 1,
+      "title": "Modern Jazz Trumpets",
+      "status": "Official",
+      "artist-credit": [
+        {
+          "joinphrase": " / ",
+          "name": "Fats Navarro",
+          "artist": {
+            "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+            "name": "Fats Navarro",
+            "sort-name": "Navarro, Fats"
+          }
+        },
+        {
+          "joinphrase": " / ",
+          "name": "Dizzy Gillespie",
+          "artist": {
+            "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+            "name": "Dizzy Gillespie",
+            "sort-name": "Gillespie, Dizzy"
+          }
+        },
+        {
+          "joinphrase": " / ",
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis",
+            "sort-name": "Davis, Miles",
+            "disambiguation": "jazz trumpeter, bandleader, songwriter"
+          }
+        },
+        {
+          "name": "Kenny Dorham",
+          "artist": {
+            "id": "4476453a-d37e-4c52-b60d-07c90b6fa661",
+            "name": "Kenny Dorham",
+            "sort-name": "Dorham, Kenny",
+            "disambiguation": "US jazz trumpeter, singer, and composer"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "095878f4-58ac-43f4-93ae-92a1e6588d8d",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Modern Jazz Trumpets",
+        "primary-type": "Album"
+      },
+      "date": "1951",
+      "country": "US",
+      "release-events": [
+        {
+          "date": "1951",
+          "area": {
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "sort-name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ]
+          }
+        }
+      ],
+      "barcode": "",
+      "label-info": [
+        {
+          "catalog-number": "PRLP 113",
+          "label": {
+            "id": "11847c89-4b2c-4866-84c3-f72e264c0f66",
+            "name": "Prestige"
+          }
+        }
+      ],
+      "track-count": 9,
+      "media": [
+        {
+          "id": "a71ab26a-f8dd-3db7-a2f6-e38c62d5cce9",
+          "format": "10\" Vinyl",
+          "disc-count": 0,
+          "track-count": 9
+        }
+      ]
+    }
+  ]
+}
