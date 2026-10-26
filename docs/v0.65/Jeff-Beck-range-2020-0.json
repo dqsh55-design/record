@@ -1,0 +1,150 @@
+{
+  "created": "2026-10-26T02:35:54.283Z",
+  "count": 6,
+  "offset": 0,
+  "release-groups": [
+    {
+      "id": "ead350fc-db0e-452f-8c10-3657644306ce",
+      "title": "The Best of Jeff Beck: The Epic Years 1971–2003",
+      "score": 100,
+      "first-release-date": "2025-02-05",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "99335238-6f66-4523-82b4-988320aa1fc0",
+      "title": "Even Odds Jeff Beck Recordings (live)",
+      "score": 100,
+      "first-release-date": "2021-09-15",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "33001da9-a797-4ead-b21d-8e79289aba7a",
+      "title": "2022‐11‐12: Grand Sierra Theatre, Reno, NV, USA",
+      "score": 100,
+      "first-release-date": "2022-11-12",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "Johnny Depp",
+          "artist": {
+            "id": "49654ec9-0c4d-44a6-a909-580ee9fbabb7",
+            "name": "Johnny Depp"
+          }
+        }
+      ]
+    },
+    {
+      "id": "49b0ead6-347c-4db1-b87c-7661d6bbd743",
+      "title": "Essential Classics, Vol. 446: Jeff Beck",
+      "score": 100,
+      "first-release-date": "2024-09-12",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a7c5a359-09ff-46bd-9cd2-51fd45430de0",
+      "title": "Night of the Guitar Kings",
+      "score": 100,
+      "first-release-date": "2024",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Eric Clapton",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+            "name": "Eric Clapton"
+          }
+        },
+        {
+          "name": "Jeff Beck",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "Jimmy Page",
+          "artist": {
+            "id": "519774a4-3b18-4042-b8c0-927845a616c9",
+            "name": "Jimmy Page"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7b52e70a-2436-4c16-bb72-58f0f7109e4b",
+      "title": "18",
+      "score": 100,
+      "first-release-date": "2022-07-15",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "Johnny Depp",
+          "artist": {
+            "id": "49654ec9-0c4d-44a6-a909-580ee9fbabb7",
+            "name": "Johnny Depp"
+          }
+        }
+      ]
+    }
+  ]
+}

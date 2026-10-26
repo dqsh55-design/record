@@ -1,0 +1,897 @@
+{
+  "created": "2026-10-26T02:27:28.284Z",
+  "count": 45,
+  "offset": 0,
+  "release-groups": [
+    {
+      "id": "cf0d0d08-2b70-4e7a-8702-a47e6b9a12a0",
+      "title": "Music From and Inspired by Miles Davis: Birth of the Cool",
+      "score": 100,
+      "first-release-date": "2020-02-21",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "197c0f71-6a84-4932-8a96-24efd466d9f2",
+      "title": "Music From and Inspired by the Film Birth of the Cool",
+      "score": 100,
+      "first-release-date": "2020-02-12",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation",
+        "Soundtrack"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "deb0bdd5-2990-4156-aa28-15890d96cc00",
+      "title": "Anthology 2020",
+      "score": 100,
+      "first-release-date": "2020",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "51923a62-8240-4e70-b284-3739d1814e82",
+      "title": "Miles '54: The Prestige Recordings",
+      "score": 100,
+      "first-release-date": "2024-11-22",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8f4f1594-204a-48ae-9ba1-57a85843469a",
+      "title": "Merci Miles! Live at Vienne (Live at Vienne Jazz Festival, 1991)",
+      "score": 100,
+      "first-release-date": "2021-06-25",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0f7bc517-9929-48cf-80d9-c0ddcbb82595",
+      "title": "The Lost Septet",
+      "score": 100,
+      "first-release-date": "2020",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4d20b6f5-73b5-4ed7-a875-4e4259473885",
+      "title": "Timeless: Miles Davis",
+      "score": 100,
+      "first-release-date": "2020-06-26",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "599a2a8f-a628-4736-b240-8ad327812364",
+      "title": "Double Image: Rare Miles From the Complete Bitches Brew Sessions",
+      "score": 100,
+      "first-release-date": "2020-10-24",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3afb5978-d5d3-4cc9-bfd6-0d2a73fe874a",
+      "title": "Melodie originale (live Paris ’73)",
+      "score": 100,
+      "first-release-date": "2024-01-01",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "86007012-9e26-4101-a0bb-646100dcb813",
+      "title": "The Lost Concert",
+      "score": 100,
+      "first-release-date": "2021-09-23",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c8f3af14-ffa4-4f3a-8290-ead5078118cc",
+      "title": "Four Classic Albums",
+      "score": 100,
+      "first-release-date": "2022-07-01",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e4e09c9b-85fb-4951-9467-7920d7ac0f32",
+      "title": "Christmas Holidays with Miles Davis",
+      "score": 100,
+      "first-release-date": "2020",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "John Coltrane",
+          "artist": {
+            "id": "b625448e-bf4a-41c3-a421-72ad46cdb831",
+            "name": "John Coltrane"
+          }
+        }
+      ]
+    },
+    {
+      "id": "70e40abf-47fe-4327-ab9b-15a0180a4528",
+      "title": "Turnaround (Rare Miles From the Complete on the Corner Sessions)",
+      "score": 100,
+      "first-release-date": "2023-04-22",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "51ebb108-cd45-4bc7-9d00-ce512bcd8e70",
+      "title": "Miles Davis: The Electric Years",
+      "score": 100,
+      "first-release-date": "2023-09",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5baf0675-1f3d-4d2c-ad1e-b888480e59a7",
+      "title": "Greatest Hits of Miles Davis",
+      "score": 100,
+      "first-release-date": "2021-05-24",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "475f75d7-b3a5-4452-8b3b-2a5bf3dd6d01",
+      "title": "Hits and Rarities",
+      "score": 100,
+      "first-release-date": "2022-08-25",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "edf9db96-6b0d-49ed-856a-3fe330b66909",
+      "title": "Helligdom",
+      "score": 100,
+      "first-release-date": "2025",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "51bfb8b0-937b-4aa8-a2e9-e596e8975357",
+      "title": "Melbourne Concert Hall, Australia, May 2nd, 1988 (Remastered, Live On Broadcasting)",
+      "score": 100,
+      "first-release-date": "2025",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d6fcb7ca-1ba0-48ef-85d1-33d9d9c93f61",
+      "title": "In Concert Live at the Olympia, Paris 1957",
+      "score": 100,
+      "first-release-date": "2023-09-15",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis Quintet",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3f900670-251c-44e3-9ae0-dc74a815ee03",
+      "title": "Fillmore West Auditorium, San Francisco, April 9th, 1970",
+      "score": 100,
+      "first-release-date": "2020",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ea192220-cbc8-4557-9de4-fcebd7c885ef",
+      "title": "Jazz Workshop, Boston Oct '73",
+      "score": 100,
+      "first-release-date": "2024-02-24",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "624ac9d8-fc0c-4096-8393-2ba39903ff02",
+      "title": "INTEGRAL MILES DAVIS 1951–1956",
+      "score": 100,
+      "first-release-date": "2024-04-19",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9f715c19-e0fe-45b5-9df4-e7e86366df8e",
+      "title": "Essential Classics, Vol. 517: Miles Davis Quintet",
+      "score": 100,
+      "first-release-date": "2024-10-09",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d07883b5-9bd7-4efa-bb88-32f2f5ce1e2b",
+      "title": "The Miles Davis Quintet: Four Classic Albums",
+      "score": 100,
+      "first-release-date": "2020-08-14",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "514f5ea9-d42a-49d0-8cc7-dd5fc12e13ae",
+      "title": "Four Classic Albums",
+      "score": 100,
+      "first-release-date": "2022",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1f735a70-28bc-4ce6-b43c-1c28943d6a7f",
+      "title": "On Savoy: Charlie Parker & Miles Davis",
+      "score": 100,
+      "first-release-date": "2022-11-04",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Charlie Parker",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "c7356af9-9ea6-4a78-a55b-c73775716312",
+            "name": "Charlie Parker"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "81d823a8-77bb-41ce-855d-7c98c29eaa8b",
+      "title": "The sound of his brilliance (restored edition 2025)",
+      "score": 100,
+      "first-release-date": "2025-04-25",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b175b690-a122-4a88-a166-7f90b3d70ca6",
+      "title": "Before the Cool: The Miles Davis Collection 1945–48",
+      "score": 100,
+      "first-release-date": "2020",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c6f9f6c1-16d7-4d5a-882f-0d07b975fc00",
+      "title": "The Greatest Hits",
+      "score": 100,
+      "first-release-date": "2025-01-27",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "594b73d0-f027-4e81-a482-489aaa7384dc",
+      "title": "55 (The Prestige Recordings)",
+      "score": 100,
+      "first-release-date": "2025-08-22",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "618feb09-f46e-4f9f-8749-6ca0079f014e",
+      "title": "Late Night Miles Davis",
+      "score": 100,
+      "first-release-date": "2025-05-07",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8c37be2f-d27c-43f5-aa49-e3bbc362541a",
+      "title": "A Catalogue of Jazz: Miles Davis",
+      "score": 100,
+      "first-release-date": "2024-05-08",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1597c232-8052-43d2-b101-24cf88f4a7a3",
+      "title": "Champions: Rare Miles From the Complete Jack Johnson Sessions",
+      "score": 100,
+      "first-release-date": "2021-07-17",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a4ea35f4-1bb9-49d1-b68a-10aa343c5d35",
+      "title": "Live: What It Is: Montreal 7/7/83",
+      "score": 100,
+      "first-release-date": "2022-06-03",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4a5868c5-d373-4c81-878c-0c09c2399a86",
+      "title": "Birth of the Blue",
+      "score": 100,
+      "first-release-date": "2024-12-13",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "65b0454d-fb70-4bb4-bae1-b5ec845f4bf4",
+      "title": "Lady Be Good: Live in Europe with the Birdland All-Stars 1956",
+      "score": 100,
+      "first-release-date": "2026-04-18",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "66a1eff2-9d4a-495b-b3d7-5a029c83a99c",
+      "title": "From Bebop to Blue",
+      "score": 100,
+      "first-release-date": "2026-04-18",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6a7c5087-dc5f-45da-a4c8-e6cdc05db66b",
+      "title": "Collection",
+      "score": 100,
+      "first-release-date": "2024",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "33617dcb-f5ce-4a79-91ed-7afd57525360",
+      "title": "The Classic Albums Collection",
+      "score": 100,
+      "first-release-date": "2023",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "83d2cf8a-8546-45b7-aa71-5f43f5e7f7c7",
+      "title": "Miles Davis With Tadd Dameron Revisited",
+      "score": 100,
+      "first-release-date": "2023-03",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation",
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " With ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Tadd Dameron",
+          "artist": {
+            "id": "52763c17-465b-48e9-9e2b-3345ea8ba761",
+            "name": "Tadd Dameron"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0839161f-3f1c-4deb-8210-d87cf9f1b0b8",
+      "title": "Four Classic Albums",
+      "score": 100,
+      "first-release-date": "2025",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "283bae1f-1a6d-4ac9-80d8-68818d8016e3",
+      "title": "A Touch of Blue",
+      "score": 100,
+      "first-release-date": "2021",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a0e16ca4-9ed0-4f64-8b82-d62814708611",
+      "title": "Miles '56",
+      "score": 100,
+      "first-release-date": "2026-06-19",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b43197df-0b77-4132-a27e-6efcd442c927",
+      "title": "That’s What Happened 1982–1985: The Bootleg Series, Vol. 7",
+      "score": 100,
+      "first-release-date": "2022-09-16",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation",
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bed2e7ec-a083-431a-81aa-44dfd69e279d",
+      "title": "Kind of Blue / Blue Train",
+      "score": 100,
+      "first-release-date": "2026",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " / ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "John Coltrane",
+          "artist": {
+            "id": "b625448e-bf4a-41c3-a421-72ad46cdb831",
+            "name": "John Coltrane"
+          }
+        }
+      ]
+    }
+  ]
+}

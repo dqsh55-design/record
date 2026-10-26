@@ -1,0 +1,890 @@
+{
+  "created": "2026-10-26T02:25:08.643Z",
+  "count": 47,
+  "offset": 0,
+  "release-groups": [
+    {
+      "id": "15bd6aaf-2c8c-3cbc-9f38-53756b75a558",
+      "title": "Conceptions",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3956c126-777c-3fe2-8f09-31762533aeb7",
+      "title": "Miles Davis",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c494b6ce-898d-3a47-9efe-a952ce2569da",
+      "title": "1969-10-27: Rome, Italy",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d33def78-0f25-34d4-af1a-8fe56405b5be",
+      "title": "Free Trade Hall, Volume 2",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5ad1763d-98e5-4a88-9e95-d606b385624e",
+      "title": "1970-03-06: Fillmore East",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8d5a838c-68d4-3f10-9e4b-68dbe3539906",
+      "title": "Free Trade Hall, Volume 1",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d674295f-585d-3f1f-b01b-a8dd78474d68",
+      "title": "Miles & Coltrane Quintet Live: First Time on Records",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "John Coltrane",
+          "artist": {
+            "id": "b625448e-bf4a-41c3-a421-72ad46cdb831",
+            "name": "John Coltrane"
+          }
+        }
+      ]
+    },
+    {
+      "id": "623392dd-45ec-3a44-91e3-96fe51f8e3fd",
+      "title": "1970-08-29: Live at the Isle of Wight Festival",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8c51a9e8-a499-3ba8-b00a-1704cc9cdf9b",
+      "title": "Now’s the Time",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "03e70c2a-bc0b-3bd2-915b-46e5a73587f4",
+      "title": "The Essence of Miles Davis",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "84914a80-3af5-3b3d-aa7e-809eab139e90",
+      "title": "1982-04-26: Rome, Italy",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc5d545a-3ea4-43b4-b50d-eab288888c6f",
+      "title": "Miles Davis Plays Jazz Classics",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "741ce20b-5d48-46b4-abc1-4cf75abd2b9e",
+      "title": "The Very Best of… 22 Masterpieces",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "90abadab-6e70-3ae6-b3d1-57fbdb9aeeaa",
+      "title": "The King of Priests",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9de70694-225b-3645-bcd1-ad5e45f71f78",
+      "title": "The World of Miles Davis",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8575e303-c962-3f1d-9db6-3a52678f478c",
+      "title": "Miles Davis",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "17f971a3-2b27-31e8-9e91-d159ae5dca12",
+      "title": "1966 Portland State College CDR 2",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d2069ef6-cc3a-3fbf-b06e-800ace0922de",
+      "title": "Walkin’",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f05f36ee-2049-33a1-9a2a-8fb6019c3412",
+      "title": "My Funny Valentine",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7f53903f-bab8-3724-9334-c1656618439b",
+      "title": "Collection 2000",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1a66cf03-b00a-3b62-951e-094bf98929b3",
+      "title": "Le meilleur de Miles Davis",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "71597458-72ee-35e3-a4ae-77464896b145",
+      "title": "Gemini",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ca06e06f-3d58-4053-aa78-86624088142a",
+      "title": "Paris 1969 Live",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "98817cd3-c426-4dfc-b7f8-937412b91bde",
+      "title": "Bluing",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b660cc6c-ff8c-4daa-b5ad-552f81cc0206",
+      "title": "Gold Collection III",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f1f57d7f-9547-40c7-b67d-78cbd2cf29d3",
+      "title": "Gold Collection IV",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0e55ecc0-1be6-444a-9285-a5a734ba60e8",
+      "title": "Gold Collection V",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3a15029f-56fd-3a54-9722-a86fa8968f04",
+      "title": "Trumpet Man",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d6165ca2-7796-32c8-a625-54cc475b3282",
+      "title": "Miles Davis at the \"Blackhawk\", San Francisco, 1961, Volume 2",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5213e22b-1fdd-445d-acea-6dbf58f2057a",
+      "title": "Miles Davis with Charlie Parker and Thelonious Monk",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3be0fdf9-bf5b-4291-a395-db62744bb85e",
+      "title": "Greatest Jazz",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6da051f1-b0d3-4e79-8999-bf6d7b1fe6c0",
+      "title": "Dizionario enciclopedico del jazz",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5f8714e5-dd45-403b-a775-a3a597deb1a1",
+      "title": "Jazz at the Movies",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Soundtrack"
+      ],
+      "artist-credit": [
+        {
+          "name": "Duke Ellington",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "3af06bc4-68ad-4cae-bb7a-7eeeb45e411f",
+            "name": "Duke Ellington"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "534cecb4-63d2-4041-8d14-7a0233b4e6ee",
+      "title": "Jazztime 12",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4145f563-7763-41e5-b592-de85f389cc94",
+      "title": "seventythree",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "44ba50cc-57c7-45d4-b0c7-f827a57e92b3",
+      "title": "Tune Up",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9903de67-6211-426d-b049-6c96abe40cde",
+      "title": "Round Midnight",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3c6ad7b0-9d7b-4326-b176-08361cf309ce",
+      "title": "Unknown Sessions, Volume 1 1973-1976",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Demo"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bb2340c3-f53c-438a-9406-b01ac130285b",
+      "title": "Paul's Mall, Boston, September 14th, 1972 (Remastered, Live On Broadcasting)",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d8a12706-6097-4483-94d8-c0e7f7081706",
+      "title": "Unknown Sessions, Volume 2 1974-1976",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Demo"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8c605f40-637a-4b58-9443-d86f4b2ecc33",
+      "title": "Unknown Sessions, Volume 3 1974-1976",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Demo"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "07234ed6-a6da-4d01-abf9-8bfb888c64bb",
+      "title": "Antwerp 1967",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eba0da4a-b890-4f48-aff9-6b475b1e6988",
+      "title": "Miles in New York",
+      "score": 100,
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cbfba97b-181b-4669-b07f-5e24e4b29535",
+      "title": "Street Smart",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Soundtrack"
+      ],
+      "artist-credit": [
+        {
+          "name": "Robert Irving III",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "0c3b9f2f-ac5f-4dbb-9aca-6ff9e5f4392b",
+            "name": "Robert Irving III"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a1f50b65-fd2b-4e3e-b2a8-41ce3e7acebc",
+      "title": "The Prince of Darkness",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "48136073-dae1-3d44-a59d-b6126e5d4ee2",
+      "title": "Charlie Parker With Miles Davis",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Charlie Parker",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "c7356af9-9ea6-4a78-a55b-c73775716312",
+            "name": "Charlie Parker"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "73811bad-c130-41a5-bdce-e5eec335a22e",
+      "title": "Bird & Miles",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Charlie Parker",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "c7356af9-9ea6-4a78-a55b-c73775716312",
+            "name": "Charlie Parker"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    }
+  ]
+}

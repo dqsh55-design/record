@@ -1,0 +1,117 @@
+{
+  "created": "2026-10-26T02:35:40.454Z",
+  "count": 5,
+  "offset": 0,
+  "release-groups": [
+    {
+      "id": "592ef280-d337-4a2f-b307-b383c36b05bc",
+      "title": "Shapes of Things",
+      "score": 100,
+      "first-release-date": "1972",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "The Yardbirds",
+          "artist": {
+            "id": "191de76f-a224-445d-b041-54df16d65bf7",
+            "name": "The Yardbirds"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1b6bb99e-d50d-42c0-990d-b882ba187ed6",
+      "title": "Reggae ’n’ Roll",
+      "score": 100,
+      "first-release-date": "1978",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "The Rolling Stones",
+          "joinphrase": " in studio with ",
+          "artist": {
+            "id": "b071f9fa-14b0-4217-8e97-eb41da73f598",
+            "name": "The Rolling Stones"
+          }
+        },
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "01e94aea-fd9f-36b3-9965-73904e97cd73",
+      "title": "Jeff Beck With the Jan Hammer Group Live",
+      "score": 100,
+      "first-release-date": "1977-03",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "joinphrase": " with the ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "Jan Hammer Group",
+          "artist": {
+            "id": "074ad168-8c8b-44df-8388-110bbea45a2b",
+            "name": "Jan Hammer Group"
+          }
+        }
+      ]
+    },
+    {
+      "id": "08f0ad54-dc95-38a9-bc88-503f0086b4f9",
+      "title": "Blow by Blow",
+      "score": 100,
+      "first-release-date": "1975-03",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1caefbb6-c4ac-3954-85ba-b512fc2da959",
+      "title": "Wired",
+      "score": 100,
+      "first-release-date": "1976-05",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    }
+  ]
+}

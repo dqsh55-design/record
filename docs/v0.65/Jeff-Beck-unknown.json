@@ -1,0 +1,250 @@
+{
+  "created": "2026-10-26T02:35:43.294Z",
+  "count": 11,
+  "offset": 0,
+  "release-groups": [
+    {
+      "id": "8f478649-4d1a-3d5a-baf6-515a81f57c34",
+      "title": "Assorted Boogies: Live in Rio 1988",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "35f517ac-b54a-3d37-9083-caf4db6c7d1e",
+      "title": "Ohne Filter 1991",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Buddy Guy",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "4336a134-d091-4e54-9967-c7c433db6d4e",
+            "name": "Buddy Guy"
+          }
+        },
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9bb05075-92a6-492e-8b95-1023bb199766",
+      "title": "Final BBC on the Air",
+      "score": 100,
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "04ab01f9-7c86-390d-ab13-4f9cd7ea3e1d",
+      "title": "Live in Japan",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "07ba9075-9075-3c8e-8606-85a0d0cea661",
+      "title": "2006‐09‐18: Opera House, Detroit, MI, USA",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "984e0ea7-7dc5-4fb0-988b-52fc1db75e07",
+      "title": "The Steakhouse Sessions",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f199410d-15dd-3a4f-ad5e-a82cc86363c3",
+      "title": "Two Blue Birds Fly",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Eric Clapton",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+            "name": "Eric Clapton"
+          }
+        },
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7d26ad00-ad2d-4f78-9fc3-df1a958c21f4",
+      "title": "2009-02-22: Saitama Super Arena, Omiya, Saitama, Japan",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Eric Clapton",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+            "name": "Eric Clapton"
+          }
+        },
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "15180dd9-b734-4bd3-9dd8-9fe44ac3da6a",
+      "title": "2009‐02‐22: Second Night in Saitama: Saitama Super Arena, Saitama, Japan",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Eric Clapton",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+            "name": "Eric Clapton"
+          }
+        },
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b1a37aab-a0d9-4db5-8abe-531b5ba20042",
+      "title": "3 Classic Albums for 1 Low Price!",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c1da64a3-4b47-4428-a01c-1897873df48b",
+      "title": "1983‐12‐02: Ronnie Lane’s Appeal for ARMS, Cow Palace, San Francisco, CA, USA",
+      "score": 100,
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Page",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "519774a4-3b18-4042-b8c0-927845a616c9",
+            "name": "Jimmy Page"
+          }
+        },
+        {
+          "name": "Beck",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "Clapton",
+          "artist": {
+            "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+            "name": "Eric Clapton"
+          }
+        }
+      ]
+    }
+  ]
+}

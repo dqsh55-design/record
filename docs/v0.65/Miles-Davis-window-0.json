@@ -1,0 +1,1506 @@
+{
+  "created": "2026-10-26T02:24:52.366Z",
+  "count": 76,
+  "offset": 0,
+  "release-groups": [
+    {
+      "id": "b5a0a374-d8e2-45d0-a4da-5b6465c2563a",
+      "title": "Quiet Nights",
+      "score": 100,
+      "first-release-date": "1963-12",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a0736e64-755c-3d5b-8045-386333cd4432",
+      "title": "Miles Davis in Europe",
+      "score": 100,
+      "first-release-date": "1964-07",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "29637fb6-1229-3b9f-9886-2eef2161729c",
+      "title": "Basic Miles: The Classic Performances of Miles Davis",
+      "score": 100,
+      "first-release-date": "1973",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c1f9db96-9fe6-3cd6-87a8-0e6cf5c3a55d",
+      "title": "In Person: Friday Night at the Blackhawk, San Francisco, Volume 1",
+      "score": 100,
+      "first-release-date": "1961",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "67aa2492-45e6-3036-a86d-e8ff41f29ea3",
+      "title": "Miles in Berlin",
+      "score": 100,
+      "first-release-date": "1965",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7aaa93b0-c370-4dae-98e3-d5be559a7167",
+      "title": "Vol. 3",
+      "score": 100,
+      "first-release-date": "1954",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "12dbaae5-338f-3386-89cc-d3575fcfdabf",
+      "title": "Miles Davis and Horns",
+      "score": 100,
+      "first-release-date": "1956",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "105ad848-00d2-39c4-8f0f-5a1b426358cd",
+      "title": "Live‐Evil",
+      "score": 100,
+      "first-release-date": "1971",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ebc5d7cd-63eb-3030-8fda-2f5cf27b1ba5",
+      "title": "E.S.P.",
+      "score": 100,
+      "first-release-date": "1965",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5d5b6555-9752-4edd-9e78-dcd5a76daca3",
+      "title": "Blue Period",
+      "score": 100,
+      "first-release-date": "1953",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "930ff792-925d-4a8d-a853-92cf67fc5d3d",
+      "title": "In Person: Saturday Night at the Blackhawk, San Francisco, Volume 2",
+      "score": 100,
+      "first-release-date": "1961",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1e3bc777-d24e-41cb-9c8c-6478f2ed682a",
+      "title": "Mode Study",
+      "score": 100,
+      "first-release-date": "1966",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "68b82999-96a9-48a7-a98b-e85b8afa9a0b",
+      "title": "The Essential Miles Davis",
+      "score": 100,
+      "first-release-date": "1973",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "29393845-34a2-40a6-9c8c-6647c83e9c1d",
+      "title": "Miles Davis, Vol. 2",
+      "score": 100,
+      "first-release-date": "1953",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "28fd9f34-bba4-48a2-83be-7258e94732fd",
+      "title": "1975-07-01 - Avery Fisher Hall - New York, NY",
+      "score": 100,
+      "first-release-date": "1975-07-01",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "231508e9-a256-4a05-b715-59e1ea242cbf",
+      "title": "Miles Davis With Sonny Rollins",
+      "score": 100,
+      "first-release-date": "1954-06-29",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "78bebfcd-25e0-4bb4-a008-2028af1e7209",
+      "title": "Dig",
+      "score": 100,
+      "first-release-date": "1975",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1a5abe37-f8d5-488e-b600-8ac93f36f7c4",
+      "title": "The Compositions of Al Cohn",
+      "score": 100,
+      "first-release-date": "1953",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "41bf0a3b-d7dc-4911-be96-c4d7dfe2360b",
+      "title": "Tallest Trees",
+      "score": 100,
+      "first-release-date": "1972",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2df9638f-3618-40b1-8928-d7f922f44ef5",
+      "title": "The New Sounds",
+      "score": 100,
+      "first-release-date": "1951",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Lee Konitz",
+          "joinphrase": " featuring ",
+          "artist": {
+            "id": "9136db51-46ba-4208-afd6-7753fb0739aa",
+            "name": "Lee Konitz"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5f491dad-4138-3f03-b3a0-655e6e15df2a",
+      "title": "Seven Steps to Heaven",
+      "score": 100,
+      "first-release-date": "1963",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e96cf770-03ba-47ab-8a14-7dbdf37a665a",
+      "title": "Tune Up",
+      "score": 100,
+      "first-release-date": "1977",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2978c580-9123-3ca5-bf60-6a6e45ad2c4a",
+      "title": "Blue Haze",
+      "score": 100,
+      "first-release-date": "1956",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6814da23-84cd-3353-902b-cfb83de507dc",
+      "title": "In Concert: Live at Philharmonic Hall",
+      "score": 100,
+      "first-release-date": "1973",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0ecf90fb-59ad-3194-b96b-57ad00e8bf1e",
+      "title": "Jack Johnson",
+      "score": 100,
+      "first-release-date": "1971",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Soundtrack"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "093a3235-7271-46d5-9c94-c092edf1fb25",
+      "title": "Young Man With a Horn",
+      "score": 100,
+      "first-release-date": "1952",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fdc36195-6677-3f29-aab3-22f847d207ed",
+      "title": "Black Beauty: Miles Davis at Fillmore West",
+      "score": 100,
+      "first-release-date": "1973",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2991c698-8fa7-4844-95bb-d0102e351ce2",
+      "title": "Plays for Lovers",
+      "score": 100,
+      "first-release-date": "1965",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3b3675c7-f267-37c0-bda7-e9e96141e8e7",
+      "title": "Miles Davis and the Modern Jazz Giants",
+      "score": 100,
+      "first-release-date": "1959-06",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "39402cf4-888f-3af0-9d0c-0dc7e80baa35",
+      "title": "Blue Moods",
+      "score": 100,
+      "first-release-date": "1955",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "642a3d14-97e2-39a3-874c-99baab025808",
+      "title": "Miles Davis’ Greatest Hits",
+      "score": 100,
+      "first-release-date": "1969",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d8ced714-bc46-3657-9076-8577c9d50231",
+      "title": "On the Corner",
+      "score": 100,
+      "first-release-date": "1972-10-11",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5ee0b8e6-e56d-3b22-85d8-0e29b223be00",
+      "title": "Water Babies",
+      "score": 100,
+      "first-release-date": "1976-11-02",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c8d56072-a32d-43c4-b52f-82ff0b8311a4",
+      "title": "The New Sounds",
+      "score": 100,
+      "first-release-date": "1951-10-05",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "faa7a279-e174-37b6-aeb5-22cc6e16d5a6",
+      "title": "Miles Davis at Fillmore",
+      "score": 100,
+      "first-release-date": "1970",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7b2ac355-548e-3d4a-b625-920dab441509",
+      "title": "Collectors’ Items",
+      "score": 100,
+      "first-release-date": "1956",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b07a7bf8-7e19-4216-b1da-8602e53b5ce9",
+      "title": "Dizzy Gillespie and Modern Trumpets",
+      "score": 100,
+      "first-release-date": "1952",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Dizzy Gillespie",
+          "joinphrase": " And Modern Trumpets, ",
+          "artist": {
+            "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+            "name": "Dizzy Gillespie"
+          }
+        },
+        {
+          "name": "Fats Navarro",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+            "name": "Fats Navarro"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Howard McGhee",
+          "artist": {
+            "id": "22b66dc2-f5b5-4c03-a4ca-083321bf8b6b",
+            "name": "Howard McGhee"
+          }
+        }
+      ]
+    },
+    {
+      "id": "095878f4-58ac-43f4-93ae-92a1e6588d8d",
+      "title": "Modern Jazz Trumpets",
+      "score": 100,
+      "first-release-date": "1951",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Fats Navarro",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+            "name": "Fats Navarro"
+          }
+        },
+        {
+          "name": "Dizzy Gillespie",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+            "name": "Dizzy Gillespie"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Kenny Dorham",
+          "artist": {
+            "id": "4476453a-d37e-4c52-b60d-07c90b6fa661",
+            "name": "Kenny Dorham"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9ca7315c-4ffb-3267-8ac9-c08d3bb696ad",
+      "title": "Miles in Tokyo",
+      "score": 100,
+      "first-release-date": "1969-06",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "21681a16-6223-3176-b571-094e47170ce4",
+      "title": "My Funny Valentine: Miles Davis in Concert",
+      "score": 100,
+      "first-release-date": "1965",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "963e59ee-7b59-4cbc-990e-2bd771d23bf6",
+      "title": "At Plugged Nickel, Chicago",
+      "score": 100,
+      "first-release-date": "1976-01-01",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f4ec83e4-4949-3cf4-88bb-0f6891ba3fd1",
+      "title": "Pangaea",
+      "score": 100,
+      "first-release-date": "1975",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5be21119-1842-38bd-8f43-23333e7ee182",
+      "title": "Miles in the Sky",
+      "score": 100,
+      "first-release-date": "1968",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7b44726d-0077-39c0-8525-129e59c8e496",
+      "title": "Big Fun",
+      "score": 100,
+      "first-release-date": "1974-04-19",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e030683f-bbc0-467c-a0f8-700326104ff0",
+      "title": "Jazz Track",
+      "score": 100,
+      "first-release-date": "1958",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "27e723f9-e347-4868-8e5d-7b515acfc4e5",
+      "title": "Conception",
+      "score": 100,
+      "first-release-date": "1956",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Stan Getz",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "8f2422ab-0ec6-4c92-80c4-afe9622fab32",
+            "name": "Stan Getz"
+          }
+        },
+        {
+          "name": "Gerry Mulligan",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "68f19808-1f7b-46d4-bd1d-71aaf0f6b267",
+            "name": "Gerry Mulligan"
+          }
+        },
+        {
+          "name": "Lee Konitz",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "9136db51-46ba-4208-afd6-7753fb0739aa",
+            "name": "Lee Konitz"
+          }
+        },
+        {
+          "name": "Sonny Rollins",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "3b47247e-5b57-49b6-a0ed-bad80243802a",
+            "name": "Sonny Rollins"
+          }
+        },
+        {
+          "name": "Zoot Sims",
+          "artist": {
+            "id": "d17b505f-a6e3-44e7-afcc-415d407c414f",
+            "name": "Zoot Sims"
+          }
+        }
+      ]
+    },
+    {
+      "id": "933c977e-8312-353e-b4ef-55d0dd90bd30",
+      "title": "Dig",
+      "score": 100,
+      "first-release-date": "1956",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " featuring ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Sonny Rollins",
+          "artist": {
+            "id": "3b47247e-5b57-49b6-a0ed-bad80243802a",
+            "name": "Sonny Rollins"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7d0a9612-7636-34fe-84d9-445c8df9c0f3",
+      "title": "In a Silent Way",
+      "score": 100,
+      "first-release-date": "1969-07-30",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2eb04add-96be-491d-ad18-946cbec9f2c8",
+      "title": "3 géants du jazz",
+      "score": 100,
+      "first-release-date": "1977",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Charlie Parker",
+          "joinphrase": " · ",
+          "artist": {
+            "id": "c7356af9-9ea6-4a78-a55b-c73775716312",
+            "name": "Charlie Parker"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "joinphrase": " · ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Dizzy Gillespie",
+          "artist": {
+            "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+            "name": "Dizzy Gillespie"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f22fae78-105d-433d-b213-f148c29bb1d4",
+      "title": "Play Richard Rodgers",
+      "score": 100,
+      "first-release-date": "1963-04",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "John Coltrane",
+          "artist": {
+            "id": "b625448e-bf4a-41c3-a421-72ad46cdb831",
+            "name": "John Coltrane"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fdb4f57d-8e6c-3809-a111-4e80564cd3f8",
+      "title": "1958 Miles",
+      "score": 100,
+      "first-release-date": "1979-03-21",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "82fd3ab5-0fc9-3a36-8832-65afaf05c2fe",
+      "title": "Filles de Kilimanjaro",
+      "score": 100,
+      "first-release-date": "1969-01-29",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1872d9c4-627d-3960-8bba-bea59ec6adc4",
+      "title": "Four & More",
+      "score": 100,
+      "first-release-date": "1966-01-17",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3c17dc33-ff39-3ac0-a190-847f42e4d03c",
+      "title": "Sorcerer",
+      "score": 100,
+      "first-release-date": "1967",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ff57576e-a7c6-4dc9-ba8c-df7039c96f8d",
+      "title": "Workin’ and Steamin’",
+      "score": 100,
+      "first-release-date": "1974",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "af25edeb-2897-4ff1-8601-28016610d0af",
+      "title": "Miles Davis with John Coltrane",
+      "score": 100,
+      "first-release-date": "1974",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " with ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "John Coltrane",
+          "artist": {
+            "id": "b625448e-bf4a-41c3-a421-72ad46cdb831",
+            "name": "John Coltrane"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e5e1dfb2-9184-32f4-af73-6093422ed77b",
+      "title": "Miles Davis and Milt Jackson Quintet / Sextet",
+      "score": 100,
+      "first-release-date": "1955",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " and ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Milt Jackson",
+          "artist": {
+            "id": "2e38e1de-2890-4620-8467-5b0bb4641cb9",
+            "name": "Milt Jackson"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c5bfc8df-ca3a-3cd1-a8b7-b453e023a84c",
+      "title": "Ascenseur pour l’échafaud",
+      "score": 100,
+      "first-release-date": "1958",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Soundtrack"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "903d5fe8-ab43-33b2-9411-6738af50de19",
+      "title": "Birth of the Cool",
+      "score": 100,
+      "first-release-date": "1957-02",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6356c6a7-99c5-345d-9758-f1194c61de23",
+      "title": "Agharta",
+      "score": 100,
+      "first-release-date": "1975-11-15",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4fbe28c1-e11e-3062-82bc-9045351ce9c2",
+      "title": "Circle in the Round",
+      "score": 100,
+      "first-release-date": "1979",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "948a4f0a-99a1-3c2e-b6a1-63ad8ef0e898",
+      "title": "Miles Davis, Volume 1",
+      "score": 100,
+      "first-release-date": "1955-11",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c4d7c9e0-3ac8-3f29-8224-79c19253d2da",
+      "title": "Miles Davis, Volume 2",
+      "score": 100,
+      "first-release-date": "1956-02",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "69bdfd8a-169f-34e7-b8ef-2277275dbbd6",
+      "title": "Dark Magus: Live at Carnegie Hall",
+      "score": 100,
+      "first-release-date": "1977",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eb84987d-15bd-3f69-bcd0-a0804c9d1130",
+      "title": "Nefertiti",
+      "score": 100,
+      "first-release-date": "1968",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a9e30282-5b37-3f92-b897-b9659a1a312b",
+      "title": "Bitches Brew",
+      "score": 100,
+      "first-release-date": "1970",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "49f122e4-8eef-3c69-93d4-a4369dc408d8",
+      "title": "Get Up With It",
+      "score": 100,
+      "first-release-date": "1974",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "70f3e516-4e76-3dc5-a261-e6c5cd6d71a1",
+      "title": "Porgy and Bess",
+      "score": 100,
+      "first-release-date": "1958",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "25a721dc-0940-359e-8b0d-4be9d5616348",
+      "title": "Bags’ Groove",
+      "score": 100,
+      "first-release-date": "1957",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "89896a3e-e309-3ed3-a1a9-36be29ae76b0",
+      "title": "Milestones",
+      "score": 100,
+      "first-release-date": "1958",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "263bc232-bac3-46c6-bd67-530572d420a4",
+      "title": "The Miles Davis Sextette / Kind Of Blue / The Three Suns",
+      "score": 100,
+      "first-release-date": "1959",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "The Miles Davis Sextette",
+          "joinphrase": " / ",
+          "artist": {
+            "id": "f137837b-fa55-48d1-8c85-f13961b3ac77",
+            "name": "Miles Davis Sextet"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "joinphrase": " / ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "The Three Suns",
+          "artist": {
+            "id": "3e4d6dff-eb42-4f0b-8b56-fdc6c21ec20c",
+            "name": "The Three Suns"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6477da93-2286-4919-a898-031caa34c307",
+      "title": "’Round About Midnight",
+      "score": 100,
+      "first-release-date": "1957-03-18",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "966fede2-31b2-3b6a-ab50-4a650d3bb97d",
+      "title": "Sketches of Spain",
+      "score": 100,
+      "first-release-date": "1960-08",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c97f8bf5-e86b-34ea-9a94-f8c7c9e89f54",
+      "title": "Miles Davis at Carnegie Hall",
+      "score": 100,
+      "first-release-date": "1962",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cc0c7530-a135-3386-a682-0d33d14c876e",
+      "title": "Miles Ahead",
+      "score": 100,
+      "first-release-date": "1957",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8e8a594f-2175-38c7-a871-abb68ec363e7",
+      "title": "Kind of Blue",
+      "score": 100,
+      "first-release-date": "1959-08-17",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    }
+  ]
+}

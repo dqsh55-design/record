@@ -1,0 +1,1627 @@
+[
+  {
+    "id": "00d35a65-c344-41ba-90e6-a51efda96d07",
+    "title": "Rock Giants",
+    "first-release-date": "1982",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "01e94aea-fd9f-36b3-9965-73904e97cd73",
+    "title": "Jeff Beck With the Jan Hammer Group Live",
+    "first-release-date": "1977-03",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": " with the ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "Jan Hammer Group",
+        "joinphrase": "",
+        "artist": {
+          "id": "074ad168-8c8b-44df-8388-110bbea45a2b",
+          "name": "Jan Hammer Group"
+        }
+      }
+    ]
+  },
+  {
+    "id": "04ab01f9-7c86-390d-ab13-4f9cd7ea3e1d",
+    "title": "Live in Japan",
+    "first-release-date": "",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "06a0d950-72bb-4f86-b79f-64c4c65b7233",
+    "title": "Jeff’s Blues",
+    "first-release-date": "2019-01-21",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": " and ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "The Yardbirds",
+        "joinphrase": "",
+        "artist": {
+          "id": "191de76f-a224-445d-b041-54df16d65bf7",
+          "name": "The Yardbirds"
+        }
+      }
+    ]
+  },
+  {
+    "id": "07ba9075-9075-3c8e-8606-85a0d0cea661",
+    "title": "2006‐09‐18: Opera House, Detroit, MI, USA",
+    "first-release-date": "",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "08f0ad54-dc95-38a9-bc88-503f0086b4f9",
+    "title": "Blow by Blow",
+    "first-release-date": "1975-03",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "0c8e1b93-fb6e-3045-ab40-8ce3c78dd850",
+    "title": "Official Bootleg USA ’06",
+    "first-release-date": "2007-05-23",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "13f27ba8-ce2f-4614-bbd2-59fb1db168e6",
+    "title": "Live in Tokyo 1999",
+    "first-release-date": "2011",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "15180dd9-b734-4bd3-9dd8-9fe44ac3da6a",
+    "title": "2009‐02‐22: Second Night in Saitama: Saitama Super Arena, Saitama, Japan",
+    "first-release-date": "",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Eric Clapton",
+        "joinphrase": " & ",
+        "artist": {
+          "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+          "name": "Eric Clapton"
+        }
+      },
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "15e12492-7d0d-32b5-a170-c9ae48bb76a4",
+    "title": "Beckology: The Sampler",
+    "first-release-date": "1991",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "1b6bb99e-d50d-42c0-990d-b882ba187ed6",
+    "title": "Reggae ’n’ Roll",
+    "first-release-date": "1978",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "artist-credit": [
+      {
+        "name": "The Rolling Stones",
+        "joinphrase": " in studio with ",
+        "artist": {
+          "id": "b071f9fa-14b0-4217-8e97-eb41da73f598",
+          "name": "The Rolling Stones"
+        }
+      },
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "1caefbb6-c4ac-3954-85ba-b512fc2da959",
+    "title": "Wired",
+    "first-release-date": "1976-05",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "1cc99424-7508-419e-a118-88172e5fa60c",
+    "title": "Loud Hailer",
+    "first-release-date": "2016-07-15",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "22e47996-7935-3ae3-8f09-e4744a8153e6",
+    "title": "Best of Beck",
+    "first-release-date": "1995-08-15",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "233c5ba4-f02a-4b5d-842f-6c902e109d64",
+    "title": "The Collection",
+    "first-release-date": "2009",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "28aa7e9d-5256-45ac-a022-b17905f82d21",
+    "title": "Boogie Woody’s Birthday",
+    "first-release-date": "2009",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation",
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "2f017160-2bc6-4b25-a2c0-eacf219ffe52",
+    "title": "The History of Rock, Volume Twenty Five",
+    "first-release-date": "1984",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Eric Clapton",
+        "joinphrase": " / ",
+        "artist": {
+          "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+          "name": "Eric Clapton"
+        }
+      },
+      {
+        "name": "Jeff Beck",
+        "joinphrase": " / ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "Johnny Winter",
+        "joinphrase": " / ",
+        "artist": {
+          "id": "8300d0fa-d120-47f6-a84e-91f140c74767",
+          "name": "Johnny Winter"
+        }
+      },
+      {
+        "name": "Rory Gallagher",
+        "joinphrase": "",
+        "artist": {
+          "id": "933fdeae-ec68-48e9-a752-8bcfd44bc429",
+          "name": "Rory Gallagher"
+        }
+      }
+    ]
+  },
+  {
+    "id": "31231274-27ce-4b5f-96b9-5a0ca49a2552",
+    "title": "Original Album Classics",
+    "first-release-date": "2008-10-13",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "33001da9-a797-4ead-b21d-8e79289aba7a",
+    "title": "2022‐11‐12: Grand Sierra Theatre, Reno, NV, USA",
+    "first-release-date": "2022-11-12",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": " & ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "Johnny Depp",
+        "joinphrase": "",
+        "artist": {
+          "id": "49654ec9-0c4d-44a6-a909-580ee9fbabb7",
+          "name": "Johnny Depp"
+        }
+      }
+    ]
+  },
+  {
+    "id": "35f517ac-b54a-3d37-9083-caf4db6c7d1e",
+    "title": "Ohne Filter 1991",
+    "first-release-date": "",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Buddy Guy",
+        "joinphrase": " & ",
+        "artist": {
+          "id": "4336a134-d091-4e54-9967-c7c433db6d4e",
+          "name": "Buddy Guy"
+        }
+      },
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "427b7ef0-d365-49d6-b181-e96507f05c6b",
+    "title": "2015‐05‐21: Chicago Theatre, Chicago, IL, USA",
+    "first-release-date": "2015-05-21",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "42fbc601-adb7-467f-9e97-c7664bc6c400",
+    "title": "Guitar Legend",
+    "first-release-date": "1998",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "443cefe9-0b77-45f8-99e9-91bf4eb5480f",
+    "title": "Best Of: The Early Years",
+    "first-release-date": "2018-05-18",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "4605fae2-0097-371b-8875-ebf302ef000a",
+    "title": "Frankie’s House",
+    "first-release-date": "1992",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Soundtrack"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": " and ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "Jed Leiber",
+        "joinphrase": "",
+        "artist": {
+          "id": "4984e633-2ff5-40b3-bb1f-7228c987c133",
+          "name": "Jed Leiber"
+        }
+      }
+    ]
+  },
+  {
+    "id": "49831df3-da9d-3dab-807e-fd2a4f6ed03e",
+    "title": "There and Back",
+    "first-release-date": "1980-07",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "49b0ead6-347c-4db1-b87c-7661d6bbd743",
+    "title": "Essential Classics, Vol. 446: Jeff Beck",
+    "first-release-date": "2024-09-12",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "57cb792c-d4cf-44ae-bb2e-7191070e2388",
+    "title": "Blue Wind",
+    "first-release-date": "2016",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "592ef280-d337-4a2f-b307-b383c36b05bc",
+    "title": "Shapes of Things",
+    "first-release-date": "1972",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": " & ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "The Yardbirds",
+        "joinphrase": "",
+        "artist": {
+          "id": "191de76f-a224-445d-b041-54df16d65bf7",
+          "name": "The Yardbirds"
+        }
+      }
+    ]
+  },
+  {
+    "id": "59ba91a5-560d-49ef-a204-1fcda75cdec3",
+    "title": "Live and Exclusive From the Grammy Museum",
+    "first-release-date": "2010-10-25",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "5bffce52-b2b4-4db9-95a9-60690f9284e8",
+    "title": "Live at the Hollywood Bowl",
+    "first-release-date": "2017-10-06",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "63860017-2a95-35f1-9d9e-9e43bd832756",
+    "title": "Jeff Beck’s Guitar Shop",
+    "first-release-date": "1989-10",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": " with ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "Terry Bozzio",
+        "joinphrase": " and ",
+        "artist": {
+          "id": "c4056664-378d-4c22-8402-b6a5c644f0e6",
+          "name": "Terry Bozzio"
+        }
+      },
+      {
+        "name": "Tony Hymas",
+        "joinphrase": "",
+        "artist": {
+          "id": "5b9a04dc-179b-4a3e-b5b9-3c33170e234a",
+          "name": "Tony Hymas"
+        }
+      }
+    ]
+  },
+  {
+    "id": "656f05b3-654f-3ed3-963a-8f5bc551986b",
+    "title": "Shapes of Things: 60’s Groups and Sessions",
+    "first-release-date": "2003",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "6707e3e4-03a3-36c3-aeef-7274937271dc",
+    "title": "Jeff Beck & Rod Stewart",
+    "first-release-date": "1998",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": " & ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "Rod Stewart",
+        "joinphrase": "",
+        "artist": {
+          "id": "a35237a0-4f47-40a6-b6f3-1e786db23402",
+          "name": "Rod Stewart"
+        }
+      }
+    ]
+  },
+  {
+    "id": "679f0f63-9bfb-4dd8-943d-e34c97897d40",
+    "title": "Shapes of Things",
+    "first-release-date": "1998-05-26",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "6840f49e-1395-43ee-9374-32f4b70e05af",
+    "title": "Shapes of Things",
+    "first-release-date": "1994-10-11",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "701b8269-ab4d-4dc8-af43-e3c8a3119713",
+    "title": "Live in Japan 2006",
+    "first-release-date": "2013",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "719e499f-4815-4bba-9a3d-119165b06dc7",
+    "title": "Freeway, Live in Tokyo 1980",
+    "first-release-date": "1996",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "78eac630-0c27-3f22-8c01-ee5fe689fb46",
+    "title": "Flash",
+    "first-release-date": "1985-07",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "7b52e70a-2436-4c16-bb72-58f0f7109e4b",
+    "title": "18",
+    "first-release-date": "2022-07-15",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": " & ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "Johnny Depp",
+        "joinphrase": "",
+        "artist": {
+          "id": "49654ec9-0c4d-44a6-a909-580ee9fbabb7",
+          "name": "Johnny Depp"
+        }
+      }
+    ]
+  },
+  {
+    "id": "7b94edcd-0423-4faa-9c7b-6c4926822f39",
+    "title": "Live at IndigO2, London",
+    "first-release-date": "2009-09-21",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": ", ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "The Imelda May Band",
+        "joinphrase": " & ",
+        "artist": {
+          "id": "efb902c7-cfcf-489a-b946-034d9ab3015c",
+          "name": "The Imelda May Band"
+        }
+      },
+      {
+        "name": "Harvey Goldsmith",
+        "joinphrase": "",
+        "artist": {
+          "id": "74fd9a3d-bc04-4cf1-a86c-8616b0ca142b",
+          "name": "Harvey Goldsmith"
+        }
+      }
+    ]
+  },
+  {
+    "id": "7d26ad00-ad2d-4f78-9fc3-df1a958c21f4",
+    "title": "2009-02-22: Saitama Super Arena, Omiya, Saitama, Japan",
+    "first-release-date": "",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Eric Clapton",
+        "joinphrase": " & ",
+        "artist": {
+          "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+          "name": "Eric Clapton"
+        }
+      },
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "85dc2820-21d6-41c2-a614-de0a2f488058",
+    "title": "The Jeff Beck Group UPP",
+    "first-release-date": "1993",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "The Jeff Beck Group UPP",
+        "joinphrase": " featuring ",
+        "artist": {
+          "id": "dd677525-28e5-44b1-acf4-f5683702dab7",
+          "name": "UPP"
+        }
+      },
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "8bb23bd6-ebbb-3cae-8ba7-9246d3eb6b2f",
+    "title": "You Had It Coming",
+    "first-release-date": "2000-11-15",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "8e352925-2809-3ea7-87a8-988a8cbbb35e",
+    "title": "Performing This Week… Live at Ronnie Scott’s",
+    "first-release-date": "2008-11-10",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "8f478649-4d1a-3d5a-baf6-515a81f57c34",
+    "title": "Assorted Boogies: Live in Rio 1988",
+    "first-release-date": "",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "8ff34802-47b1-3369-9e8f-09034bcc8d03",
+    "title": "Live at B.B. King Blues Club and Grill September 10, 2003",
+    "first-release-date": "2005-06-29",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "90d1f6a9-f4ee-4d6d-af9f-14df23a30e39",
+    "title": "Live",
+    "first-release-date": "2013",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": ", ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "Carlos Santana",
+        "joinphrase": " & ",
+        "artist": {
+          "id": "f7fda030-0ba1-42e9-a385-3deebc939bc9",
+          "name": "Carlos Santana"
+        }
+      },
+      {
+        "name": "Steve Lukather",
+        "joinphrase": "",
+        "artist": {
+          "id": "bd268536-b428-4e8f-b358-77b0622b62ff",
+          "name": "Steve Lukather"
+        }
+      }
+    ]
+  },
+  {
+    "id": "984e0ea7-7dc5-4fb0-988b-52fc1db75e07",
+    "title": "The Steakhouse Sessions",
+    "first-release-date": "",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "991384f7-8ee0-3868-a69d-695ed05d1dd6",
+    "title": "Jeff",
+    "first-release-date": "2003-08-06",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "99335238-6f66-4523-82b4-988320aa1fc0",
+    "title": "Even Odds Jeff Beck Recordings (live)",
+    "first-release-date": "2021-09-15",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "9bb05075-92a6-492e-8b95-1023bb199766",
+    "title": "Final BBC on the Air",
+    "first-release-date": "",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "a1ebacbf-dcd9-3a64-842f-e9c4daaf3a25",
+    "title": "Shapes of Things",
+    "first-release-date": "1990",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "a5fd84b4-e55f-363c-a88e-185788e3343d",
+    "title": "Crazy Legs",
+    "first-release-date": "1993-06-08",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": " & the ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "Big Town Playboys",
+        "joinphrase": "",
+        "artist": {
+          "id": "753d2501-f778-433f-b3e8-70449db3f30c",
+          "name": "Big Town Playboys"
+        }
+      }
+    ]
+  },
+  {
+    "id": "a5fec79a-eb30-442c-a349-55fa19930e3f",
+    "title": "Emotion & Commotion",
+    "first-release-date": "2010-03-24",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "a74e2d82-9ce3-48ab-9eb7-030b9ecc95b1",
+    "title": "2001‐02‐23: Universal Amphitheatre, CA, USA",
+    "first-release-date": "2001-02-23",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "a7c5a359-09ff-46bd-9cd2-51fd45430de0",
+    "title": "Night of the Guitar Kings",
+    "first-release-date": "2024",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Eric Clapton",
+        "joinphrase": ", ",
+        "artist": {
+          "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+          "name": "Eric Clapton"
+        }
+      },
+      {
+        "name": "Jeff Beck",
+        "joinphrase": " & ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "Jimmy Page",
+        "joinphrase": "",
+        "artist": {
+          "id": "519774a4-3b18-4042-b8c0-927845a616c9",
+          "name": "Jimmy Page"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ab544110-a104-4615-a1cc-e63a4bc1f164",
+    "title": "Play With Friends",
+    "first-release-date": "1997",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "b1a37aab-a0d9-4db5-8abe-531b5ba20042",
+    "title": "3 Classic Albums for 1 Low Price!",
+    "first-release-date": "",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "b920b770-4da9-379d-8af9-c7ddf9fc7025",
+    "title": "Anthology",
+    "first-release-date": "1991",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "b94ff60e-b4f6-35c8-9057-e9e7d8bd229c",
+    "title": "The Fire Meets the Fury",
+    "first-release-date": "1989",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": " / ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "Stevie Ray Vaughan and Double Trouble",
+        "joinphrase": "",
+        "artist": {
+          "id": "e3c8b0c8-3fa0-464b-b1f5-119cb52d3817",
+          "name": "Stevie Ray Vaughan and Double Trouble"
+        }
+      }
+    ]
+  },
+  {
+    "id": "c1da64a3-4b47-4428-a01c-1897873df48b",
+    "title": "1983‐12‐02: Ronnie Lane’s Appeal for ARMS, Cow Palace, San Francisco, CA, USA",
+    "first-release-date": "",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Page",
+        "joinphrase": ", ",
+        "artist": {
+          "id": "519774a4-3b18-4042-b8c0-927845a616c9",
+          "name": "Jimmy Page"
+        }
+      },
+      {
+        "name": "Beck",
+        "joinphrase": " & ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "Clapton",
+        "joinphrase": "",
+        "artist": {
+          "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+          "name": "Eric Clapton"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cccb63e2-470c-496b-b50d-9e9bc0824c99",
+    "title": "Rock ’n’ Roll Party: Honoring Les Paul",
+    "first-release-date": "2010",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "d7ac5e2d-c946-49a5-9bb2-fe467b12d13b",
+    "title": "White Boy Blues – Classic Guitars of Clapton, Beck & Page",
+    "first-release-date": "1984",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Clapton",
+        "joinphrase": ", ",
+        "artist": {
+          "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+          "name": "Eric Clapton"
+        }
+      },
+      {
+        "name": "Beck",
+        "joinphrase": " & ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "Page",
+        "joinphrase": "",
+        "artist": {
+          "id": "519774a4-3b18-4042-b8c0-927845a616c9",
+          "name": "Jimmy Page"
+        }
+      }
+    ]
+  },
+  {
+    "id": "d7aefcbf-3050-4982-9bb2-b708ed86a175",
+    "title": "Original Album Classics",
+    "first-release-date": "2011-01-24",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "e1f7f19d-ac4a-369f-932c-969d3bc4c13f",
+    "title": "Beckology",
+    "first-release-date": "1991-11-19",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "e25d47d3-6fff-462c-82ed-42ae321fe5d8",
+    "title": "Live+",
+    "first-release-date": "2015-06-02",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "e5d38cb2-f627-4429-b1f5-e7beb0d95016",
+    "title": "Live in Tokyo",
+    "first-release-date": "2014",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ead350fc-db0e-452f-8c10-3657644306ce",
+    "title": "The Best of Jeff Beck: The Epic Years 1971–2003",
+    "first-release-date": "2025-02-05",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "f0c65fbd-bb6c-3fe6-8d42-e764276ffc96",
+    "title": "Who Else!",
+    "first-release-date": "1999-03-16",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "f199410d-15dd-3a4f-ad5e-a82cc86363c3",
+    "title": "Two Blue Birds Fly",
+    "first-release-date": "",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Eric Clapton",
+        "joinphrase": " & ",
+        "artist": {
+          "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+          "name": "Eric Clapton"
+        }
+      },
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "f360c487-de04-4ffa-9dec-e417b3a16a76",
+    "title": "Stroll On",
+    "first-release-date": "1994-06-15",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "f8767a93-35ef-301c-96a4-c5815db32198",
+    "title": "L.A. Breakdown",
+    "first-release-date": "2001",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "f9c7258d-5020-418b-9403-368c84af5362",
+    "title": "The Best of Jeff Beck",
+    "first-release-date": "1994-03-23",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": "",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "fd443633-b972-4c8d-81e4-41151312cfc1",
+    "title": "Exhaust Note",
+    "first-release-date": "2008",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "artist-credit": [
+      {
+        "name": "Jeff Beck",
+        "joinphrase": " & ",
+        "artist": {
+          "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+          "name": "Jeff Beck"
+        }
+      },
+      {
+        "name": "Eric Clapton",
+        "joinphrase": "",
+        "artist": {
+          "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+          "name": "Eric Clapton"
+        }
+      }
+    ]
+  }
+]

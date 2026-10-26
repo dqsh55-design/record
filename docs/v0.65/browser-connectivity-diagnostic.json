@@ -1,0 +1,13 @@
+{
+  "mode": "real Chromium HTTPS diagnostic",
+  "result": {
+    "error": "TypeError: Failed to fetch"
+  },
+  "failed": [
+    {
+      "url": "https://musicbrainz.org/ws/2/artist?query=Miles%20Davis&limit=1&fmt=json",
+      "failure": "net::ERR_CERT_AUTHORITY_INVALID"
+    }
+  ],
+  "tls_validation_disabled": false
+}

@@ -1,0 +1,307 @@
+{
+  "created": "2026-10-26T02:35:52.910Z",
+  "count": 15,
+  "offset": 0,
+  "release-groups": [
+    {
+      "id": "701b8269-ab4d-4dc8-af43-e3c8a3119713",
+      "title": "Live in Japan 2006",
+      "score": 100,
+      "first-release-date": "2013",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5bffce52-b2b4-4db9-95a9-60690f9284e8",
+      "title": "Live at the Hollywood Bowl",
+      "score": 100,
+      "first-release-date": "2017-10-06",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e5d38cb2-f627-4429-b1f5-e7beb0d95016",
+      "title": "Live in Tokyo",
+      "score": 100,
+      "first-release-date": "2014",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "443cefe9-0b77-45f8-99e9-91bf4eb5480f",
+      "title": "Best Of: The Early Years",
+      "score": 100,
+      "first-release-date": "2018-05-18",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "06a0d950-72bb-4f86-b79f-64c4c65b7233",
+      "title": "Jeff’s Blues",
+      "score": 100,
+      "first-release-date": "2019-01-21",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "joinphrase": " and ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "The Yardbirds",
+          "artist": {
+            "id": "191de76f-a224-445d-b041-54df16d65bf7",
+            "name": "The Yardbirds"
+          }
+        }
+      ]
+    },
+    {
+      "id": "57cb792c-d4cf-44ae-bb2e-7191070e2388",
+      "title": "Blue Wind",
+      "score": 100,
+      "first-release-date": "2016",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d7aefcbf-3050-4982-9bb2-b708ed86a175",
+      "title": "Original Album Classics",
+      "score": 100,
+      "first-release-date": "2011-01-24",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "427b7ef0-d365-49d6-b181-e96507f05c6b",
+      "title": "2015‐05‐21: Chicago Theatre, Chicago, IL, USA",
+      "score": 100,
+      "first-release-date": "2015-05-21",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "13f27ba8-ce2f-4614-bbd2-59fb1db168e6",
+      "title": "Live in Tokyo 1999",
+      "score": 100,
+      "first-release-date": "2011",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e25d47d3-6fff-462c-82ed-42ae321fe5d8",
+      "title": "Live+",
+      "score": 100,
+      "first-release-date": "2015-06-02",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "59ba91a5-560d-49ef-a204-1fcda75cdec3",
+      "title": "Live and Exclusive From the Grammy Museum",
+      "score": 100,
+      "first-release-date": "2010-10-25",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "90d1f6a9-f4ee-4d6d-af9f-14df23a30e39",
+      "title": "Live",
+      "score": 100,
+      "first-release-date": "2013",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "Carlos Santana",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "f7fda030-0ba1-42e9-a385-3deebc939bc9",
+            "name": "Carlos Santana"
+          }
+        },
+        {
+          "name": "Steve Lukather",
+          "artist": {
+            "id": "bd268536-b428-4e8f-b358-77b0622b62ff",
+            "name": "Steve Lukather"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a5fec79a-eb30-442c-a349-55fa19930e3f",
+      "title": "Emotion & Commotion",
+      "score": 100,
+      "first-release-date": "2010-03-24",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cccb63e2-470c-496b-b50d-9e9bc0824c99",
+      "title": "Rock ’n’ Roll Party: Honoring Les Paul",
+      "score": 100,
+      "first-release-date": "2010",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1cc99424-7508-419e-a118-88172e5fa60c",
+      "title": "Loud Hailer",
+      "score": 100,
+      "first-release-date": "2016-07-15",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    }
+  ]
+}
