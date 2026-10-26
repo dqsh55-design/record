@@ -103,3 +103,25 @@ console.log('Recorded first-year conflict and malformed/format evidence regressi
 
 assert.equal(run("sameArtistIds(['a','a'],['a','b'])"),false);
 assert.equal(run("sameArtistIds(['a','b'],['b','a'])"),true);
+
+// An impossible or future review date must not establish independent evidence.
+context.item=reissue;
+for(const checkedAt of ['2099-01-01','2026-02-30','invalid']){
+ context.badDates=refs.map(ref=>({...ref,checkedAt}));
+ assert.equal(run('assessRelease(item,badDates).verification'),'unconfirmed');
+ assert.equal(run('assessRelease(item,badDates).workVerification'),'unconfirmed');
+}
+context.contradictory=[...refs,...refs.filter(ref=>ref.scope==='release').map(ref=>({...ref,official:false}))];
+assert.equal(run('assessRelease(item,contradictory).verification'),'conflict');
+assert.equal(run('assessRelease(item,contradictory).visibility'),'unknown');
+// Multiple real artists: no Norah reference can confirm a Miles/Jeff edition.
+for(const name of ['Miles-Davis','Jeff-Beck']){
+ const detail=JSON.parse(readFileSync(`docs/v0.64/${name}-own.json`));
+ context.item=detail;
+ assert.equal(run('assessRelease(item).verification'),'unconfirmed');
+ assert.equal(run('assessRelease(item).workVerification'),'unconfirmed');
+ assert.equal(run('assessRelease(item).visibility'),'official');
+ context.item={...detail,status:'Bootleg'};
+ assert.equal(run('assessRelease(item).visibility'),'excluded');
+}
+console.log('Future/impossible review dates, contradictory evidence and three real artists passed');
