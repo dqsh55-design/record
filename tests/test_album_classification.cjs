@@ -119,7 +119,8 @@ for(const name of ['Miles-Davis','Jeff-Beck']){
  const detail=JSON.parse(readFileSync(`docs/v0.64/${name}-own.json`));
  context.item=detail;
  assert.equal(run('assessRelease(item).verification'),'unconfirmed');
- assert.equal(run('assessRelease(item).workVerification'),'unconfirmed');
+ context.norahOnly=refs.filter(ref=>ref.artistIds.includes(capture.artist_id));
+ assert.equal(run('assessRelease(item,norahOnly).workVerification'),'unconfirmed');
  assert.equal(run('assessRelease(item).visibility'),'official');
  context.item={...detail,status:'Bootleg'};
  assert.equal(run('assessRelease(item).visibility'),'excluded');
@@ -149,3 +150,47 @@ for(const name of ['Miles-Davis','Jeff-Beck']){
  assert.equal(run('representativeEditions({releases:items})[0].id'),detail.id);
 }
 console.log('Representative edition: completeness, artwork registration/failure, interaction pin, no mutation and three real artists passed');
+
+// v0.71: a label and its catalog number must match the same label-info entry.
+context.item={...reissue,'label-info':[{label:{name:'Blue Note'},'catalog-number':'wrong'},
+ {label:{name:'Unrelated'},'catalog-number':'UCCQ-1155/7'}]};
+context.pairedRefs=refs.map(ref=>ref.scope==='release'?{...ref,label:'Blue Note'}:ref);
+assert.equal(run('assessRelease(item,pairedRefs).verification'),'unconfirmed');
+context.item={...reissue,'label-info':[{label:{name:'Blue Note'},'catalog-number':'UCCQ-1155/7'}]};
+assert.equal(run('assessRelease(item,pairedRefs).verification'),'confirmed');
+for(const sourceUrl of ['https://','https://user:secret@example.org/item','http://example.org/item']){
+ context.invalidSources=refs.map(ref=>({...ref,sourceUrl}));
+ assert.equal(run('assessRelease(item,invalidSources).verification'),'unconfirmed');
+}
+context.invalidPublisher=refs.map(ref=>({...ref,publisher:'[unknown]',label:undefined}));
+assert.equal(run('assessRelease(item,invalidPublisher).verification'),'unconfirmed');
+const reviewed=[
+ JSON.parse(readFileSync('docs/v0.64/Miles-Davis-own.json')),
+ JSON.parse(readFileSync('docs/v0.64/Jeff-Beck-joint.json')),
+ {id:'synthetic-edition-for-work-check', 'release-group':JSON.parse(readFileSync('docs/v0.64/Jeff-Beck-index.json')).find(g=>g.id==='e1f7f19d-ac4a-369f-932c-969d3bc4c13f')},
+ JSON.parse(readFileSync('docs/v0.71/healey-web-fields.json')).release,
+];
+for(const item of reviewed){
+ context.item=item;
+ assert.equal(run('assessRelease(item).workVerification'),'confirmed',item.title);
+ assert.equal(run('assessRelease(item).verification'),'unconfirmed');
+ context.negativeRefs=refs.map(ref=>({...ref,official:false}));
+ assert.equal(run('assessRelease(item,negativeRefs).workVerification'),'conflict');
+ context.item={...item,'release-group':{...item['release-group'],'artist-credit':[{artist:{id:'same-name-different-id'}}]}};
+ assert.equal(run('assessRelease(item).workVerification'),'unconfirmed');
+ context.item={...item,'release-group':{...item['release-group'],'first-release-date':'1900'}};
+ assert.equal(run('assessRelease(item).workVerification'),'conflict');
+}
+context.item=reviewed[3];
+assert.equal(run('assessRelease(item).kind'),'studio');
+assert.equal(run('assessRelease(item).labels[0]'),'Arista');
+assert.equal(run('assessRelease(item).sources.length'),0); // No edition-authorizing source.
+assert.equal(run("artistSearchTerm('ジェフ・ヒーリー・バンド')"),'The Jeff Healey Band');
+console.log('New official work references: Miles studio, Beck joint live/compilation, Healey Band studio; no edition escalation, field pairing and source validation passed');
+
+context.item={...reissue,media:[{'track-count':null,format:null}]};
+context.missingMedia=refs.map(ref=>({...ref,trackCounts:[null],mediaFormats:[null]}));
+assert.equal(run('assessRelease(item,missingMedia).verification'),'unconfirmed');
+context.item={...reissue,media:[{'track-count':0,format:'Unknown'}]};
+context.missingMedia=refs.map(ref=>({...ref,trackCounts:[0],mediaFormats:['Unknown']}));
+assert.equal(run('assessRelease(item,missingMedia).verification'),'unconfirmed');

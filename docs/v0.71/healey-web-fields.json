@@ -1,0 +1,52 @@
+{
+  "mode": "manual transcription of visible MusicBrainz webpage fields, not API JSON",
+  "checkedAt": "2026-10-26",
+  "sources": [
+    "https://musicbrainz.org/release/efd6d6cf-6f97-4cd0-b6e5-1b8914f0cc8b",
+    "https://musicbrainz.org/artist/9fac4087-8201-4b74-a619-e77b1602aaf4"
+  ],
+  "release": {
+    "id": "efd6d6cf-6f97-4cd0-b6e5-1b8914f0cc8b",
+    "title": "See the Light",
+    "status": "Official",
+    "date": "1988-09-13",
+    "country": "US",
+    "artist-credit": [
+      {
+        "artist": {
+          "id": "9fac4087-8201-4b74-a619-e77b1602aaf4",
+          "name": "The Jeff Healey Band"
+        }
+      }
+    ],
+    "label-info": [
+      {
+        "label": {
+          "name": "Arista"
+        },
+        "catalog-number": "ARCD-8553"
+      }
+    ],
+    "media": [
+      {
+        "format": "CD",
+        "track-count": 12
+      }
+    ],
+    "release-group": {
+      "id": "88996cde-51b7-3178-9d39-f16ca582330f",
+      "title": "See the Light",
+      "primary-type": "Album",
+      "secondary-types": [],
+      "first-release-date": "1988",
+      "artist-credit": [
+        {
+          "artist": {
+            "id": "9fac4087-8201-4b74-a619-e77b1602aaf4",
+            "name": "The Jeff Healey Band"
+          }
+        }
+      ]
+    }
+  }
+}

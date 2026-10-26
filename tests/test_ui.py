@@ -984,6 +984,27 @@ class BrowserTests(unittest.TestCase):
         self.assertEqual(len([p for p,q in requests if p.endswith('/release')]), 2)
         expect(section.locator('article:visible')).to_have_count(1)
 
+    def test_v071_work_evidence_does_not_authorize_editions(self):
+        refs = json.loads((ROOT / 'data/discography-references.json').read_text())['references']
+        miles = json.loads((ROOT / 'docs/v0.64/Miles-Davis-own.json').read_text())
+        joint = json.loads((ROOT / 'docs/v0.64/Jeff-Beck-joint.json').read_text())
+        compilation = next(g for g in json.loads((ROOT / 'docs/v0.64/Jeff-Beck-index.json').read_text()) if g['id']=='e1f7f19d-ac4a-369f-932c-969d3bc4c13f')
+        healey = json.loads((ROOT / 'docs/v0.71/healey-web-fields.json').read_text())['release']
+        cases = [miles, joint, {'id':'synthetic-compilation-edition', 'title':'Beckology', 'status':'Official', 'release-group':compilation}, healey]
+        for width in (320, 390, 430):
+            page = self.open_site(width)
+            for item in cases:
+                page.evaluate("args=>{discographyReferences=args.refs;artistId='test';artistName='Test';creditScope='all';officialReleases=[args.item];render()}", {'refs':refs,'item':item})
+                card = page.locator('#official-releases article').first
+                expect(card.locator('.work-verification')).to_have_text('作品：公式資料と一致（各発売盤は別途確認）')
+                card.locator('summary').click()
+                expect(card.locator('.discography-evidence')).to_contain_text('この盤の正規性：公式資料による独立確認は未確認')
+                expect(card.get_by_role('link', name='公式資料を見る ↗')).to_have_count(1)
+                expect(card.get_by_role('link', name='YouTube Musicで聴く')).to_have_count(0)
+                page.evaluate("officialReleases[0]['release-group']['first-release-date']='1900';refreshDiscographyEvidence()")
+                expect(card.locator('.work-verification')).to_contain_text('相違あり')
+                self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+
     def test_mobile_layout_and_touch_targets(self):
         for width in (320, 375, 390, 430):
             with self.subTest(width=width):
