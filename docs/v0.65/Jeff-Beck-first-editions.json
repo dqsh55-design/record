@@ -1,0 +1,99 @@
+{
+  "release-offset": 0,
+  "release-count": 1,
+  "releases": [
+    {
+      "asin": null,
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "packaging": "Cardboard/Paper Sleeve",
+      "cover-art-archive": {
+        "back": true,
+        "front": true,
+        "darkened": false,
+        "artwork": true,
+        "count": 4
+      },
+      "disambiguation": "",
+      "release-events": [
+        {
+          "area": {
+            "type-id": null,
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "disambiguation": "",
+            "type": null,
+            "sort-name": "United States",
+            "name": "United States",
+            "iso-3166-1-codes": [
+              "US"
+            ]
+          },
+          "date": "1972"
+        }
+      ],
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "label-info": [
+        {
+          "catalog-number": "SPB-4039",
+          "label": {
+            "id": "68e14892-9cf1-4ef0-a1e3-e161bab3c8ef",
+            "disambiguation": "",
+            "type": "Imprint",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": null,
+            "sort-name": "Springboard",
+            "name": "Springboard"
+          }
+        }
+      ],
+      "status": "Official",
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "disambiguation": "English rock guitarist",
+            "type": "Person",
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "country": "GB",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "sort-name": "Beck, Jeff",
+            "name": "Jeff Beck"
+          },
+          "joinphrase": " & "
+        },
+        {
+          "name": "The Yardbirds",
+          "artist": {
+            "name": "The Yardbirds",
+            "sort-name": "Yardbirds, The",
+            "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+            "type": "Group",
+            "disambiguation": "",
+            "country": "GB",
+            "id": "191de76f-a224-445d-b041-54df16d65bf7"
+          },
+          "joinphrase": ""
+        }
+      ],
+      "title": "Shapes of Things",
+      "country": "US",
+      "date": "1972",
+      "id": "b14a5449-8e08-46ba-98a1-abfd205ce152",
+      "media": [
+        {
+          "id": "97302020-2eb2-309e-9382-635c34a4ad4d",
+          "title": "",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "track-count": 9,
+          "position": 1,
+          "format": "12\" Vinyl"
+        }
+      ],
+      "barcode": "",
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      }
+    }
+  ]
+}

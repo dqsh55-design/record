@@ -121,6 +121,8 @@ run("artistName='Artist';ytAlbums[0].automatic_verification.checked_at='2000-01-
 assert.equal(run("supportedEditionLink({id,title:'Album',date:'2001'})"),undefined);
 console.log('v0.61: release ID deduplication, edition binding, stale evidence and storage rollback passed');
 
+// Keep the full-browse fallback regressions; range-window tests live in test_chronology.cjs.
+run("globalThis.makeDefaultChronology=newChronologyState;newChronologyState=()=>({...makeDefaultChronology(),mode:'browse'})");
 (async()=>{
  context.originalApi=run('api');context.pending=[];
  run("api=()=>new Promise(resolve=>pending.push(resolve));artistId=id");

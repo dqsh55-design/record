@@ -1,0 +1,976 @@
+{
+  "created": "2026-10-26T02:27:18.973Z",
+  "count": 46,
+  "offset": 0,
+  "release-groups": [
+    {
+      "id": "6ec634f1-1a94-4eaf-858e-58938f708dae",
+      "title": "Moon Dreams",
+      "score": 100,
+      "first-release-date": "1988",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bd104acb-d034-3100-bb26-b6a046ba07f6",
+      "title": "You’re Under Arrest",
+      "score": 100,
+      "first-release-date": "1985-07-02",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "181eba95-ea7c-3243-a68f-f38bfa961bc1",
+      "title": "The Real Birth of the Cool",
+      "score": 100,
+      "first-release-date": "1989",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ccf5deec-b8d2-30dd-bef7-e2d0433544d3",
+      "title": "Evolution of a Genius: Miles Davis 1945 – 1954",
+      "score": 100,
+      "first-release-date": "1988",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ef1afe99-b3d7-32a3-98f0-2e85cbc573e3",
+      "title": "Directions: Unreleased Recordings 1960–1970",
+      "score": 100,
+      "first-release-date": "1981",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "738dfaed-ffe5-35cd-b546-ee40b1fcf126",
+      "title": "The Columbia Years 1955–1985",
+      "score": 100,
+      "first-release-date": "1988",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "785bac8c-c709-49b3-b27b-4363b3eb0fe7",
+      "title": "The Legendary Masters: Unissued or Rare: 1948–60",
+      "score": 100,
+      "first-release-date": "1988",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "86bf23a9-edfe-39f2-8a5b-c06e1a30298a",
+      "title": "Bopping the Blues",
+      "score": 100,
+      "first-release-date": "1988-03",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dcdf4bec-1094-3bfa-85a3-7a6bc6662262",
+      "title": "Konserthuset, Stockholm, March 22, 1960",
+      "score": 100,
+      "first-release-date": "1988",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "John Coltrane",
+          "artist": {
+            "id": "b625448e-bf4a-41c3-a421-72ad46cdb831",
+            "name": "John Coltrane"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5b4323b3-0d73-3a63-92ab-3e8a42ef180a",
+      "title": "Compact Jazz: Miles Davis",
+      "score": 100,
+      "first-release-date": "1989-09-19",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b2fac9a8-6cfa-31fe-91f6-d8d73379829f",
+      "title": "Ballads",
+      "score": 100,
+      "first-release-date": "1988",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b8023c52-d30c-303a-92eb-789aade75787",
+      "title": "Chronicle: The Complete Prestige Recordings (1951–1956)",
+      "score": 100,
+      "first-release-date": "1980",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a4ec9a06-d953-398d-bdbb-a7710c00182c",
+      "title": "The Man With the Horn",
+      "score": 100,
+      "first-release-date": "1981",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "35422dd6-3f47-3f97-b604-4ffd2d8e7f56",
+      "title": "First Miles",
+      "score": 100,
+      "first-release-date": "1989-05-05",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fffbcf97-843e-3481-9b3c-bcd93bed1a44",
+      "title": "Amandla",
+      "score": 100,
+      "first-release-date": "1989-05-18",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da6e0f03-97e6-4390-b95b-037851df28e6",
+      "title": "Old Devil Moon",
+      "score": 100,
+      "first-release-date": "1988",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "52493479-af6e-443d-bbb3-a8fd1e688400",
+      "title": "Heard ’Round the World",
+      "score": 100,
+      "first-release-date": "1983",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation",
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d8ab4608-d714-4b66-a2f2-01298b03816f",
+      "title": "Evolution of a Genius: Miles Davis 1945 – 1958",
+      "score": 100,
+      "first-release-date": "1989",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "02e5e8b7-9899-4f07-8e64-5dd2a7d010bb",
+      "title": "Live at Montreux Jazz Festival",
+      "score": 100,
+      "first-release-date": "1989-07-21",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9e5a1f6c-8da7-373f-a0a6-7fd7e8c5e6f1",
+      "title": "Live in New York",
+      "score": 100,
+      "first-release-date": "1987-12-21",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "John Coltrane",
+          "artist": {
+            "id": "b625448e-bf4a-41c3-a421-72ad46cdb831",
+            "name": "John Coltrane"
+          }
+        }
+      ]
+    },
+    {
+      "id": "14e719f1-2647-3652-ba4b-e471194c7e38",
+      "title": "Cookin’ at the Plugged Nickel",
+      "score": 100,
+      "first-release-date": "1987",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a96fd426-d216-4e23-97ae-556fa4608a1d",
+      "title": "The Story",
+      "score": 100,
+      "first-release-date": "1989",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e54e7f93-0c68-32a1-84fd-5dc723294434",
+      "title": "The Collection: A Retrospective",
+      "score": 100,
+      "first-release-date": "1988",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3a553215-e96a-47f1-b130-0c03f5f9a514",
+      "title": "Live at the Plugged Nickel",
+      "score": 100,
+      "first-release-date": "1982",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ad706e89-d59f-3833-8b46-bf3fd684b9e0",
+      "title": "Aura",
+      "score": 100,
+      "first-release-date": "1989-09-12",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d450499f-51d2-4942-b09a-abf3e9232b70",
+      "title": "I giganti del jazz, vol. 54",
+      "score": 100,
+      "first-release-date": "1981",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Coleman Hawkins",
+          "artist": {
+            "id": "5c8cb181-38fe-4300-8153-650b2ed0258f",
+            "name": "Coleman Hawkins"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e9277a9c-8bc8-4ed2-82a5-b308784f57ef",
+      "title": "Greatest Jazz Recordings of All Time: Great Jazz Inventors",
+      "score": 100,
+      "first-release-date": "1983",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Davis",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Mingus",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "f3b8e107-abe8-4743-b6a3-4a4ee995e71f",
+            "name": "Charles Mingus"
+          }
+        },
+        {
+          "name": "Monk",
+          "artist": {
+            "id": "8e8c7417-c905-46b1-b42a-5260b4274ed4",
+            "name": "Thelonious Monk"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b1032064-7575-44ef-9e92-f42417c92415",
+      "title": "Miles Under Arrest: Live 1985",
+      "score": 100,
+      "first-release-date": "1985",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "77fe6224-38dc-383d-ad5f-297ddaa14085",
+      "title": "Star People",
+      "score": 100,
+      "first-release-date": "1983",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "31e1899d-1155-4318-bd43-f2c6a7805334",
+      "title": "I giganti del jazz, vol. 100",
+      "score": 100,
+      "first-release-date": "1982",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " / ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Charlie Mingus",
+          "artist": {
+            "id": "f3b8e107-abe8-4743-b6a3-4a4ee995e71f",
+            "name": "Charles Mingus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a2790b8a-8413-4b2e-be8c-6784ec7cf7eb",
+      "title": "I giganti del jazz, vol. 2",
+      "score": 100,
+      "first-release-date": "1980",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Sarah Vaughan",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "351d8bdf-33a1-45e2-8c04-c85fad20da55",
+            "name": "Sarah Vaughan"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Charlie Mingus",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "f3b8e107-abe8-4743-b6a3-4a4ee995e71f",
+            "name": "Charles Mingus"
+          }
+        },
+        {
+          "name": "Dizzy Gillespie",
+          "artist": {
+            "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+            "name": "Dizzy Gillespie"
+          }
+        }
+      ]
+    },
+    {
+      "id": "863f57f9-09ea-4406-876d-ffc454641d20",
+      "title": "Green Haze",
+      "score": 100,
+      "first-release-date": "1988",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1025b1c1-ac38-4a59-9a7e-df8c504ab940",
+      "title": "10 Top Tracks",
+      "score": 100,
+      "first-release-date": "1989",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "355d0e24-117b-3286-b627-d5ebd39e51ef",
+      "title": "Concierto de Aranjuez",
+      "score": 100,
+      "first-release-date": "1988",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Gil Evans",
+          "artist": {
+            "id": "83b1d510-c4ae-485b-91bf-c69b63044dd6",
+            "name": "Gil Evans"
+          }
+        }
+      ]
+    },
+    {
+      "id": "56549e85-64e6-38e4-b68c-9a33958bf63c",
+      "title": "Music From Siesta",
+      "score": 100,
+      "first-release-date": "1987-11-11",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Soundtrack"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Marcus Miller",
+          "artist": {
+            "id": "8fbabd07-4b2b-4f4c-add5-680429a8c44a",
+            "name": "Marcus Miller"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4e682ef4-5387-4c60-8c13-3f6c0aee8cc0",
+      "title": "Live in Stockholm 1960",
+      "score": 100,
+      "first-release-date": "1985",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "John Coltrane",
+          "artist": {
+            "id": "b625448e-bf4a-41c3-a421-72ad46cdb831",
+            "name": "John Coltrane"
+          }
+        }
+      ]
+    },
+    {
+      "id": "33fc2670-ed67-4062-8a01-a910878c7650",
+      "title": "Miles Davis and the Jazz Giants",
+      "score": 100,
+      "first-release-date": "1986",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "860d07a9-c4b2-399a-9243-555d6a446f8b",
+      "title": "Decoy",
+      "score": 100,
+      "first-release-date": "1984-04",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d6bd6598-ca4b-4864-be53-87d484a3553c",
+      "title": "The Miles Davis Collection - A Retrospective",
+      "score": 100,
+      "first-release-date": "1987",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6a8698e1-59e4-44a1-b45f-1a2b0f24222a",
+      "title": "1 Hour With Miles Davis",
+      "score": 100,
+      "first-release-date": "1986",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "44a7c417-f4ce-31d3-9e81-2f370126526f",
+      "title": "Tutu",
+      "score": 100,
+      "first-release-date": "1986-09",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7d232c0f-da70-3d33-816d-a86f11e2b8e4",
+      "title": "Live Miles: More Music From the Legendary Carnegie Hall Concert",
+      "score": 100,
+      "first-release-date": "1987",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b1597b7f-13b2-3c33-9186-61a9af1ba307",
+      "title": "Miles & Coltrane",
+      "score": 100,
+      "first-release-date": "1988",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation",
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "John Coltrane",
+          "artist": {
+            "id": "b625448e-bf4a-41c3-a421-72ad46cdb831",
+            "name": "John Coltrane"
+          }
+        }
+      ]
+    },
+    {
+      "id": "52754527-6f04-31a1-b134-88bc5bfcf60e",
+      "title": "We Want Miles",
+      "score": 100,
+      "first-release-date": "1982",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation",
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "87531a6a-d89a-32e4-a7fc-8e2a5c6fe606",
+      "title": "Miles in Antibes",
+      "score": 100,
+      "first-release-date": "1989",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6152c0c8-77e7-3c03-a6a1-bba9f6f55070",
+      "title": "Nouvelle Vague on CD",
+      "score": 100,
+      "first-release-date": "1985",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation",
+        "Soundtrack"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " / ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Art Blakey’s Jazz Messengers",
+          "artist": {
+            "id": "209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee",
+            "name": "Art Blakey & The Jazz Messengers"
+          }
+        }
+      ]
+    }
+  ]
+}

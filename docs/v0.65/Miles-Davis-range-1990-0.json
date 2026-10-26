@@ -1,0 +1,2028 @@
+{
+  "created": "2026-10-26T02:27:20.654Z",
+  "count": 135,
+  "offset": 0,
+  "release-groups": [
+    {
+      "id": "333d1d53-ff19-399d-9501-2bc38f9ab843",
+      "title": "Best of Miles Davis",
+      "score": 100,
+      "first-release-date": "1999",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2b3bc665-1ac0-3b2c-af29-be69879edaff",
+      "title": "Stockholm 1960",
+      "score": 100,
+      "first-release-date": "1990",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " / ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Sonny Stitt",
+          "artist": {
+            "id": "d7828cdd-7d63-49c0-b09b-cf3df7ecaf80",
+            "name": "Sonny Stitt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3526eaff-4566-3b2b-ad0b-df98962c7f9c",
+      "title": "Gold",
+      "score": 100,
+      "first-release-date": "1993",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9e3266ff-2a17-365d-a76f-94ccfa93823a",
+      "title": "1958-1960: Concierto De Aranjuez",
+      "score": 100,
+      "first-release-date": "1993",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0ed4270b-f119-3de9-b8b1-b7c2decf3dff",
+      "title": "Live at the Barrel",
+      "score": 100,
+      "first-release-date": "1996-03-06",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jimmy Forrest",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "4e1f405d-1a77-4e67-8523-6dd16d8c2b18",
+            "name": "Jimmy Forrest"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "885e4038-e2e0-3ece-a21b-af211c8527da",
+      "title": "Electric Shout",
+      "score": 100,
+      "first-release-date": "1996-05-06",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d407f29b-6a4e-3edc-80a9-82a918f65086",
+      "title": "Miles Davis & Friends: Jazz & Blues",
+      "score": 100,
+      "first-release-date": "1998",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "361527d2-9ecc-37b9-a7c3-da89bfe4f185",
+      "title": "So What!",
+      "score": 100,
+      "first-release-date": "1998",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d72e8c88-6785-305f-bee3-484d80178733",
+      "title": "The Best Live",
+      "score": 100,
+      "first-release-date": "1991",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation",
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "53af6b0c-0ce7-34d6-af4d-7040401a2e36",
+      "title": "Time After Time",
+      "score": 100,
+      "first-release-date": "1993",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fe8cf10b-24e1-314e-9619-4a4f851393da",
+      "title": "Original Jazz Classics Collection: Miles Davis",
+      "score": 100,
+      "first-release-date": "1998",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "03bfc9a0-3918-3313-8bef-7248fcd1d09a",
+      "title": "Cote Blues",
+      "score": 100,
+      "first-release-date": "1991",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bf5da5c7-cf7d-3ce5-bd03-a5606471edb1",
+      "title": "Miles Davis & Freddie Hubbard",
+      "score": 100,
+      "first-release-date": "1991",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Freddie Hubbard",
+          "artist": {
+            "id": "59ae7a1a-f454-435b-8a5a-e327e692bb5a",
+            "name": "Freddie Hubbard"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e0a4dfcf-5787-3520-a5a6-44148a8314a6",
+      "title": "Fat Time",
+      "score": 100,
+      "first-release-date": "1997",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0ebd2d46-175d-32f0-b64c-81c7fd4792f0",
+      "title": "Essentiel Jazz: Miles Davis, Vol. 1",
+      "score": 100,
+      "first-release-date": "1994",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e7d166f1-c46c-3303-aa29-566920b629d2",
+      "title": "Out of the Blue",
+      "score": 100,
+      "first-release-date": "1999-04-24",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "07393433-d1bc-3db4-a906-830e9f7d56fd",
+      "title": "Cool Blues",
+      "score": 100,
+      "first-release-date": "1999",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ebb3fc40-ce6e-3385-851f-43fc0393ea1f",
+      "title": "The Blue Note Years",
+      "score": 100,
+      "first-release-date": "1999-04-28",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "000ea85c-3f07-3432-85fd-e4c439d32093",
+      "title": "Collection",
+      "score": 100,
+      "first-release-date": "1993",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "88596c66-9b57-4993-aa1b-c45a1686504b",
+      "title": "The Man in the Green Shirt",
+      "score": 100,
+      "first-release-date": "1993",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c8b9397f-405f-399b-892c-99f56bfbd104",
+      "title": "The Complete Bitches Brew Sessions",
+      "score": 100,
+      "first-release-date": "1998-11-24",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2fc131ce-5962-32ba-bc5b-51d1c6f770b5",
+      "title": "Doo‐Bop",
+      "score": 100,
+      "first-release-date": "1992-06-26",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e8b2eced-3be7-35c5-adee-1bceec72cac1",
+      "title": "This Is Jazz 38: Electric",
+      "score": 100,
+      "first-release-date": "1998-04-28",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bf84ab81-7d87-37e3-8360-80f7b1aa2d3f",
+      "title": "In Stockholm 1960 Complete",
+      "score": 100,
+      "first-release-date": "1992",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " with ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "John Coltrane",
+          "joinphrase": " and ",
+          "artist": {
+            "id": "b625448e-bf4a-41c3-a421-72ad46cdb831",
+            "name": "John Coltrane"
+          }
+        },
+        {
+          "name": "Sonny Stitt",
+          "artist": {
+            "id": "d7828cdd-7d63-49c0-b09b-cf3df7ecaf80",
+            "name": "Sonny Stitt"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3e706af8-7214-426c-8b8b-2a00c3b86b77",
+      "title": "Blue Haze",
+      "score": 100,
+      "first-release-date": "1993",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5734a404-cc81-4972-95f6-6585a3291ba9",
+      "title": "Selection of Miles Davis",
+      "score": 100,
+      "first-release-date": "1997",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e87a4e83-1507-419c-a19d-6990091dc725",
+      "title": "En concert avec Europe 1 : 11 juillet 1973 à l'Olympia",
+      "score": 100,
+      "first-release-date": "1994",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c461b9c4-cba1-43e3-893b-a59f4bf31036",
+      "title": "The Miles Davis Gold Collection",
+      "score": 100,
+      "first-release-date": "1992",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f140568c-5f98-4cde-ae7c-f38429f7db74",
+      "title": "Miles Davis vs. Thelonious Monk",
+      "score": 100,
+      "first-release-date": "1995",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f176f8cd-cb02-4cd2-8bbc-c8f66b8579bd",
+      "title": "The Collection",
+      "score": 100,
+      "first-release-date": "1990",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6454a81a-fe72-42c3-b4b2-935311f09326",
+      "title": "XV: Their Greatest Concert",
+      "score": 100,
+      "first-release-date": "1991",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "John Coltrane",
+          "artist": {
+            "id": "b625448e-bf4a-41c3-a421-72ad46cdb831",
+            "name": "John Coltrane"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2a77b91b-84a6-326b-9af8-ab6965ff94f3",
+      "title": "Miles Davis Plays Classic Ballads",
+      "score": 100,
+      "first-release-date": "1990",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "32d32319-c632-36c6-aed7-5604b87115d6",
+      "title": "This Is Jazz 22: Miles Davis Plays Ballads",
+      "score": 100,
+      "first-release-date": "1997-05-06",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "984ae0d7-b168-4f7e-b030-794bf9dc752f",
+      "title": "This Is Miles! Vol. 2: Electric Side",
+      "score": 100,
+      "first-release-date": "1993",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "de4722ca-7bf3-495f-a56d-2ea75ee7e35f",
+      "title": "Milestones: New York, Berlin, Tokyo",
+      "score": 100,
+      "first-release-date": "1999",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fcdff3b4-1b78-37f3-8239-8ed4b65c14dd",
+      "title": "The Essence of Miles Davis",
+      "score": 100,
+      "first-release-date": "1991-11-21",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d0af72ca-ad99-3edb-b850-4da70703a7b6",
+      "title": "Ballads & Blues",
+      "score": 100,
+      "first-release-date": "1996-03-19",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "35537d22-bdb3-39b9-a528-1264893119ef",
+      "title": "On Green Dolphin Street",
+      "score": 100,
+      "first-release-date": "1997",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "John Coltrane",
+          "artist": {
+            "id": "b625448e-bf4a-41c3-a421-72ad46cdb831",
+            "name": "John Coltrane"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6ceb7da9-5396-3965-99cc-a1049e86dfeb",
+      "title": "Some Blue Sketches of Miles",
+      "score": 100,
+      "first-release-date": "1999",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a5495015-9d20-390d-8be6-7539cd7b55ae",
+      "title": "Highlights from the Plugged Nickel",
+      "score": 100,
+      "first-release-date": "1995-11-14",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0f92203c-0cbf-30ff-93ed-172358df1241",
+      "title": "Bluing: Miles Davis Plays the Blues",
+      "score": 100,
+      "first-release-date": "1996",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b7f98deb-4fa5-3608-85bf-dcef64ad8454",
+      "title": "Panthalassa: The Music of Miles Davis 1969–1974",
+      "score": 100,
+      "first-release-date": "1998-02-25",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Remix"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "85ee2179-eaf7-3fc7-a7d3-53177c713de3",
+      "title": "Jazz Showcase",
+      "score": 100,
+      "first-release-date": "1998-05-12",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b5a28620-9361-3fee-a260-94e589961b97",
+      "title": "This Is Jazz 8: Miles Davis Acoustic",
+      "score": 100,
+      "first-release-date": "1996-04-30",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1889af65-9149-38fb-b018-82f8948c1f6c",
+      "title": "Mellow Miles",
+      "score": 100,
+      "first-release-date": "1992-05-25",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f9347893-12f5-393d-98bf-18a25bc93070",
+      "title": "Bye Bye Blackbird",
+      "score": 100,
+      "first-release-date": "1997",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "37263773-a2c3-3ee2-88db-c3092f168bbd",
+      "title": "Panthalassa: The Remixes",
+      "score": 100,
+      "first-release-date": "1999",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Remix"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "213a071a-cd46-383f-83e1-6eab61d2cdae",
+      "title": "Green Dolphin Street: Live in Holland, 1960",
+      "score": 100,
+      "first-release-date": "1992",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5e577634-07b9-4f0a-ae05-a37b663e8c9c",
+      "title": "Live",
+      "score": 100,
+      "first-release-date": "1992",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " + ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Keith Jarrett",
+          "artist": {
+            "id": "061c4920-3ea6-4835-98f6-02f3b82f5e3a",
+            "name": "Keith Jarrett"
+          }
+        }
+      ]
+    },
+    {
+      "id": "40428355-41c8-3474-9d06-4d8a499a281f",
+      "title": "1957 – 1958",
+      "score": 100,
+      "first-release-date": "1995",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7fd7f29d-6644-3c7b-901d-2f226f85787d",
+      "title": "The Very Best of Miles Davis",
+      "score": 100,
+      "first-release-date": "1998-08-25",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5ce9daa1-2f17-4977-a805-5be681641955",
+      "title": "Miles: The Best of Miles Davis",
+      "score": 100,
+      "first-release-date": "1999",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f2bb7570-6746-4f78-9d0b-1ad7dee19f20",
+      "title": "Warner Jazz Les Incontournables",
+      "score": 100,
+      "first-release-date": "1996",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4c8c95cf-3063-4c22-a78a-933d2aa1e048",
+      "title": "Nonet 1948 / Jam 1949",
+      "score": 100,
+      "first-release-date": "1990",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c4dffdef-70ec-4833-9419-a96fdf90984e",
+      "title": "Live at the Hi-Hat/Boston",
+      "score": 100,
+      "first-release-date": "1991",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3209723f-630e-4f2b-9f71-511152d80d27",
+      "title": "Live in Sindelfingen, 1964",
+      "score": 100,
+      "first-release-date": "1992",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5272fd20-ce45-4159-8cb1-956a0bc8d49c",
+      "title": "What I Say? Volume 1",
+      "score": 100,
+      "first-release-date": "1994",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " Featuring ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Keith Jarrett",
+          "artist": {
+            "id": "061c4920-3ea6-4835-98f6-02f3b82f5e3a",
+            "name": "Keith Jarrett"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fe714502-01f5-45e4-b018-d2e020b55d31",
+      "title": "What I Say? Volume 2",
+      "score": 100,
+      "first-release-date": "1994",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "joinphrase": " Featuring ",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        },
+        {
+          "name": "Keith Jarrett",
+          "artist": {
+            "id": "061c4920-3ea6-4835-98f6-02f3b82f5e3a",
+            "name": "Keith Jarrett"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eccdabd0-8dbd-44dc-b403-eb78850ad932",
+      "title": "Masters of the Jazz Trumpet",
+      "score": 100,
+      "first-release-date": "1994",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Donald Byrd",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "69f95e5c-4b34-4c8b-b8fe-c59f9296195a",
+            "name": "Donald Byrd"
+          }
+        },
+        {
+          "name": "Kenny Dorham",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "4476453a-d37e-4c52-b60d-07c90b6fa661",
+            "name": "Kenny Dorham"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ce3ac2e2-aedc-4ac7-b33d-3af63f510eee",
+      "title": "Jazz & Blues Collection 11: Miles Davis",
+      "score": 100,
+      "first-release-date": "1995",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5e9aaaf6-34c2-4263-9938-325a2f94a980",
+      "title": "Round Midnight",
+      "score": 100,
+      "first-release-date": "1991",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a9e7b0bc-7940-4b90-b78e-a7e5557dba7b",
+      "title": "Quintet and Sextet",
+      "score": 100,
+      "first-release-date": "1991",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation",
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "88a783e0-ad62-451e-a47c-2f199e432ab6",
+      "title": "Jazz Portraits",
+      "score": 100,
+      "first-release-date": "1996-07-01",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "93c64a03-190f-4021-bea5-df41d67130a5",
+      "title": "The Last Bebop Session – Live at Birdland, June 30, 1950",
+      "score": 100,
+      "first-release-date": "1995",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b37711c8-7eb9-45bb-9bd2-60243bb66d6c",
+      "title": "Autumn Leaves",
+      "score": 100,
+      "first-release-date": "1993",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "34e3483e-6e8c-46e6-a003-da37df8891da",
+      "title": "Early Davis (The Birth of the Cool Trumpet)",
+      "score": 100,
+      "first-release-date": "1999",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "937d8958-dbf8-427e-81d4-8b859e8666f2",
+      "title": "Miscellaneous Davis 1955-1957",
+      "score": 100,
+      "first-release-date": "1994",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fa4de8c7-2760-446c-b230-cb7a023a410b",
+      "title": "Miles Davis",
+      "score": 100,
+      "first-release-date": "1996",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b6e6c87e-d071-42f8-a880-a8c452327ba9",
+      "title": "Gold",
+      "score": 100,
+      "first-release-date": "1999",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e054d9e3-de65-40db-8d1a-05a0663ced36",
+      "title": "Tune Up",
+      "score": 100,
+      "first-release-date": "1992",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "59e9929b-d05a-44e7-8ed4-3aa77dd15362",
+      "title": "Miles! Miles! Miles!",
+      "score": 100,
+      "first-release-date": "1992-11-01",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c1ffe362-9a09-4eff-8a88-75afad29e108",
+      "title": "Four‐Play",
+      "score": 100,
+      "first-release-date": "1995",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f3556bdf-d681-41a1-bb34-d217cc00eb1f",
+      "title": "Evolution of a Genius: Miles Davis 1957 – 1958",
+      "score": 100,
+      "first-release-date": "1990",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "438bad6c-7410-454e-95bd-6c3fbebfa225",
+      "title": "Miles Davis",
+      "score": 100,
+      "first-release-date": "1997",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d89a19e8-9f1d-48bd-88c3-acb6e148dc96",
+      "title": "Miles Ahead 1956-1958",
+      "score": 100,
+      "first-release-date": "1995",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0aa10489-15b5-4737-8d85-5102d145d20b",
+      "title": "Milestones",
+      "score": 100,
+      "first-release-date": "1998",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3c8d03f7-8890-45d4-8315-96d3450a8437",
+      "title": "Miles Davis",
+      "score": 100,
+      "first-release-date": "1995",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "06522146-8ca6-4dd5-a229-bd92f2b45d52",
+      "title": "Miles Davis",
+      "score": 100,
+      "first-release-date": "1996",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2b8052ab-221a-4af6-9e84-d783b9aaba34",
+      "title": "Spring",
+      "score": 100,
+      "first-release-date": "1992",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9f1da44b-fd11-4bdb-9993-237fefbafc48",
+      "title": "Anthropology",
+      "score": 100,
+      "first-release-date": "1998",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Dizzy Gillespie",
+          "joinphrase": " / ",
+          "artist": {
+            "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+            "name": "Dizzy Gillespie"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0d5f1af3-6dde-3303-a488-548d2d05b27b",
+      "title": "No (More) Blues",
+      "score": 100,
+      "first-release-date": "1999",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "086bf5c8-4a7b-3ec0-b7d3-a967c813bc40",
+      "title": "Another Bitches Brew, Two Concerts in Belgrade",
+      "score": 100,
+      "first-release-date": "1995",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cf31d49d-5f72-364b-aa91-9d1920f5fa9c",
+      "title": "The Best of Miles Davis: The Capitol/Blue Note Years",
+      "score": 100,
+      "first-release-date": "1992-02-25",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "108d4a72-e4ae-370b-89d4-7a27c1262893",
+      "title": "The Best of Miles Davis",
+      "score": 100,
+      "first-release-date": "1992",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e594b07a-a316-49c5-8ee9-e0f899fcfc73",
+      "title": "Live at Newport",
+      "score": 100,
+      "first-release-date": "1994",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0f3facb3-bd2e-46c5-9ddc-5431bbaa6dc0",
+      "title": "The Unheard Charlie Parker: Bird Seed, Volume One",
+      "score": 100,
+      "first-release-date": "1995",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Charlie Parker",
+          "joinphrase": " with ",
+          "artist": {
+            "id": "c7356af9-9ea6-4a78-a55b-c73775716312",
+            "name": "Charlie Parker"
+          }
+        },
+        {
+          "name": "Dizzy Gillespie",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+            "name": "Dizzy Gillespie"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d5124d06-603c-31bf-85ff-f782686d3453",
+      "title": "Charlie Parker & Miles Davis",
+      "score": 100,
+      "first-release-date": "1997",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Charlie Parker",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "c7356af9-9ea6-4a78-a55b-c73775716312",
+            "name": "Charlie Parker"
+          }
+        },
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f582107f-43ff-3d5e-8438-dc561c7344da",
+      "title": "Miles in Montreux",
+      "score": 100,
+      "first-release-date": "1993",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2f10830c-73b1-33d4-8086-ce5d805f1a16",
+      "title": "Jazz Profile: Miles Davis",
+      "score": 100,
+      "first-release-date": "1998",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cc64d1e5-4d38-31d0-8888-0b19967cb649",
+      "title": "Olympia 11 Octobre 1960",
+      "score": 100,
+      "first-release-date": "1999",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cca26580-0b62-451a-a8ba-93a0ea477e83",
+      "title": "Le Meilleur de Miles Davis",
+      "score": 100,
+      "first-release-date": "1994",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b01da0c5-2d88-30b4-8ee6-909408764624",
+      "title": "Gold Collection",
+      "score": 100,
+      "first-release-date": "1993",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4ab30469-e10f-4b43-8e85-ed2710dfe694",
+      "title": "Bird of Paradise",
+      "score": 100,
+      "first-release-date": "1995",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cff0a902-9ed8-45f6-ae4b-83989aef6de7",
+      "title": "Jazz Line",
+      "score": 100,
+      "first-release-date": "1990",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0296217c-404c-36db-abbe-3dde60ddd1d5",
+      "title": "From His Last Concert in Avignon",
+      "score": 100,
+      "first-release-date": "1992",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a9bc3ff2-8e8b-4bb1-aa22-1faffed79dd6",
+      "title": "At Fillmore: Live at the Fillmore East",
+      "score": 100,
+      "first-release-date": "1997",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis (11:2)",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c5cac8d2-31f4-3c34-a227-0e551cec412a",
+      "title": "Miles Davis at the \"Blackhawk\", San Francisco, 1961, Volume 1",
+      "score": 100,
+      "first-release-date": "1996",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "774ea076-433e-406f-8c10-dfc6b5922725",
+      "title": "Miles Davis: New York",
+      "score": 100,
+      "first-release-date": "1997",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "812bcf6c-c50f-4c69-b74d-65b4fe81fd05",
+      "title": "Miles Davis",
+      "score": 100,
+      "first-release-date": "1998",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "59c4d634-ee88-3ce7-a04e-079d81eef2b4",
+      "title": "Ballads and More",
+      "score": 100,
+      "first-release-date": "1999-11-20",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Miles Davis",
+          "artist": {
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "name": "Miles Davis"
+          }
+        }
+      ]
+    }
+  ]
+}

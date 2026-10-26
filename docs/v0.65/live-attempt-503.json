@@ -1,0 +1,65 @@
+{
+  "checked_at": "2026-10-26T02:26:41.885154+00:00",
+  "mode": "real HTTPS",
+  "artists": [
+    {
+      "artist": "Miles Davis",
+      "artist_id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "first_window_groups": 76,
+      "first_window_pages": 1,
+      "first_window_seconds": 2.726,
+      "first_group": "Modern Jazz Trumpets",
+      "first_group_date": "1951",
+      "first_release_count": 2,
+      "first_response_seconds": 4.338,
+      "browse_groups": 637,
+      "browse_pages": 7,
+      "browse_index_seconds": 22.672,
+      "missing_from_first_window": [],
+      "unexpected_in_first_window": [],
+      "unknown_groups": 47,
+      "unknown_browse_groups": 47,
+      "ranges": [
+        {
+          "year": 1980,
+          "count": 46,
+          "missing": [],
+          "unexpected": []
+        },
+        {
+          "year": 1990,
+          "count": 135,
+          "missing": [],
+          "unexpected": []
+        },
+        {
+          "year": 2000,
+          "count": 188,
+          "missing": [],
+          "unexpected": []
+        },
+        {
+          "year": 2010,
+          "count": 100,
+          "missing": [],
+          "unexpected": []
+        },
+        {
+          "year": 2020,
+          "count": 45,
+          "missing": [],
+          "unexpected": []
+        }
+      ],
+      "partition_missing": [],
+      "partition_unexpected": [],
+      "partition_duplicates": 0
+    },
+    {
+      "artist": "Jeff Beck",
+      "artist_id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+      "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://musicbrainz.org/ws/2/release-group?fmt=json&query=arid%3A14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17+AND+primarytype%3Aalbum+AND+firstreleasedate%3A%5B%2A+TO+1979-12-31%5D&limit=100&offset=0"
+    }
+  ],
+  "streaming_tested": false
+}

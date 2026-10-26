@@ -1,0 +1,195 @@
+{
+  "created": "2026-10-26T02:35:44.044Z",
+  "count": 7,
+  "offset": 0,
+  "release-groups": [
+    {
+      "id": "b94ff60e-b4f6-35c8-9057-e9e7d8bd229c",
+      "title": "The Fire Meets the Fury",
+      "score": 100,
+      "first-release-date": "1989",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "joinphrase": " / ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "Stevie Ray Vaughan and Double Trouble",
+          "artist": {
+            "id": "e3c8b0c8-3fa0-464b-b1f5-119cb52d3817",
+            "name": "Stevie Ray Vaughan and Double Trouble"
+          }
+        }
+      ]
+    },
+    {
+      "id": "00d35a65-c344-41ba-90e6-a51efda96d07",
+      "title": "Rock Giants",
+      "score": 100,
+      "first-release-date": "1982",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d7ac5e2d-c946-49a5-9bb2-fe467b12d13b",
+      "title": "White Boy Blues – Classic Guitars of Clapton, Beck & Page",
+      "score": 100,
+      "first-release-date": "1984",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Clapton",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+            "name": "Eric Clapton"
+          }
+        },
+        {
+          "name": "Beck",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "Page",
+          "artist": {
+            "id": "519774a4-3b18-4042-b8c0-927845a616c9",
+            "name": "Jimmy Page"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2f017160-2bc6-4b25-a2c0-eacf219ffe52",
+      "title": "The History of Rock, Volume Twenty Five",
+      "score": 100,
+      "first-release-date": "1984",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Eric Clapton",
+          "joinphrase": " / ",
+          "artist": {
+            "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+            "name": "Eric Clapton"
+          }
+        },
+        {
+          "name": "Jeff Beck",
+          "joinphrase": " / ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "Johnny Winter",
+          "joinphrase": " / ",
+          "artist": {
+            "id": "8300d0fa-d120-47f6-a84e-91f140c74767",
+            "name": "Johnny Winter"
+          }
+        },
+        {
+          "name": "Rory Gallagher",
+          "artist": {
+            "id": "933fdeae-ec68-48e9-a752-8bcfd44bc429",
+            "name": "Rory Gallagher"
+          }
+        }
+      ]
+    },
+    {
+      "id": "63860017-2a95-35f1-9d9e-9e43bd832756",
+      "title": "Jeff Beck’s Guitar Shop",
+      "score": 100,
+      "first-release-date": "1989-10",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "joinphrase": " with ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "Terry Bozzio",
+          "joinphrase": " and ",
+          "artist": {
+            "id": "c4056664-378d-4c22-8402-b6a5c644f0e6",
+            "name": "Terry Bozzio"
+          }
+        },
+        {
+          "name": "Tony Hymas",
+          "artist": {
+            "id": "5b9a04dc-179b-4a3e-b5b9-3c33170e234a",
+            "name": "Tony Hymas"
+          }
+        }
+      ]
+    },
+    {
+      "id": "78eac630-0c27-3f22-8c01-ee5fe689fb46",
+      "title": "Flash",
+      "score": 100,
+      "first-release-date": "1985-07",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "49831df3-da9d-3dab-807e-fd2a4f6ed03e",
+      "title": "There and Back",
+      "score": 100,
+      "first-release-date": "1980-07",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "created": "2026-10-26T02:35:51.079Z",
+  "count": 17,
+  "offset": 0,
+  "release-groups": [
+    {
+      "id": "15e12492-7d0d-32b5-a170-c9ae48bb76a4",
+      "title": "Beckology: The Sampler",
+      "score": 100,
+      "first-release-date": "1991",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "679f0f63-9bfb-4dd8-943d-e34c97897d40",
+      "title": "Shapes of Things",
+      "score": 100,
+      "first-release-date": "1998-05-26",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4605fae2-0097-371b-8875-ebf302ef000a",
+      "title": "Frankie’s House",
+      "score": 100,
+      "first-release-date": "1992",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Soundtrack"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "joinphrase": " and ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "Jed Leiber",
+          "artist": {
+            "id": "4984e633-2ff5-40b3-bb1f-7228c987c133",
+            "name": "Jed Leiber"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f9c7258d-5020-418b-9403-368c84af5362",
+      "title": "The Best of Jeff Beck",
+      "score": 100,
+      "first-release-date": "1994-03-23",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "719e499f-4815-4bba-9a3d-119165b06dc7",
+      "title": "Freeway, Live in Tokyo 1980",
+      "score": 100,
+      "first-release-date": "1996",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "42fbc601-adb7-467f-9e97-c7664bc6c400",
+      "title": "Guitar Legend",
+      "score": 100,
+      "first-release-date": "1998",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ab544110-a104-4615-a1cc-e63a4bc1f164",
+      "title": "Play With Friends",
+      "score": 100,
+      "first-release-date": "1997",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f360c487-de04-4ffa-9dec-e417b3a16a76",
+      "title": "Stroll On",
+      "score": 100,
+      "first-release-date": "1994-06-15",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "22e47996-7935-3ae3-8f09-e4744a8153e6",
+      "title": "Best of Beck",
+      "score": 100,
+      "first-release-date": "1995-08-15",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f0c65fbd-bb6c-3fe6-8d42-e764276ffc96",
+      "title": "Who Else!",
+      "score": 100,
+      "first-release-date": "1999-03-16",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b920b770-4da9-379d-8af9-c7ddf9fc7025",
+      "title": "Anthology",
+      "score": 100,
+      "first-release-date": "1991",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "85dc2820-21d6-41c2-a614-de0a2f488058",
+      "title": "The Jeff Beck Group UPP",
+      "score": 100,
+      "first-release-date": "1993",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "The Jeff Beck Group UPP",
+          "joinphrase": " featuring ",
+          "artist": {
+            "id": "dd677525-28e5-44b1-acf4-f5683702dab7",
+            "name": "UPP"
+          }
+        },
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e1f7f19d-ac4a-369f-932c-969d3bc4c13f",
+      "title": "Beckology",
+      "score": 100,
+      "first-release-date": "1991-11-19",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a5fd84b4-e55f-363c-a88e-185788e3343d",
+      "title": "Crazy Legs",
+      "score": 100,
+      "first-release-date": "1993-06-08",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "joinphrase": " & the ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "Big Town Playboys",
+          "artist": {
+            "id": "753d2501-f778-433f-b3e8-70449db3f30c",
+            "name": "Big Town Playboys"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6840f49e-1395-43ee-9374-32f4b70e05af",
+      "title": "Shapes of Things",
+      "score": 100,
+      "first-release-date": "1994-10-11",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a1ebacbf-dcd9-3a64-842f-e9c4daaf3a25",
+      "title": "Shapes of Things",
+      "score": 100,
+      "first-release-date": "1990",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6707e3e4-03a3-36c3-aeef-7274937271dc",
+      "title": "Jeff Beck & Rod Stewart",
+      "score": 100,
+      "first-release-date": "1998",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "Rod Stewart",
+          "artist": {
+            "id": "a35237a0-4f47-40a6-b6f3-1e786db23402",
+            "name": "Rod Stewart"
+          }
+        }
+      ]
+    }
+  ]
+}

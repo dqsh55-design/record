@@ -1,0 +1,244 @@
+{
+  "release-offset": 0,
+  "release-count": 2,
+  "releases": [
+    {
+      "packaging-id": null,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging": null,
+      "artist-credit": [
+        {
+          "name": "Fats Navarro",
+          "joinphrase": ", ",
+          "artist": {
+            "type": "Person",
+            "sort-name": "Navarro, Fats",
+            "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+            "country": "US",
+            "name": "Fats Navarro",
+            "disambiguation": "",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+          }
+        },
+        {
+          "artist": {
+            "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+            "type": "Person",
+            "sort-name": "Gillespie, Dizzy",
+            "disambiguation": "",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "country": "US",
+            "name": "Dizzy Gillespie"
+          },
+          "joinphrase": ", ",
+          "name": "Dizzy Gillespie"
+        },
+        {
+          "artist": {
+            "disambiguation": "jazz trumpeter, bandleader, songwriter",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "name": "Miles Davis",
+            "country": "US",
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "sort-name": "Davis, Miles",
+            "type": "Person"
+          },
+          "joinphrase": ", ",
+          "name": "Miles Davis"
+        },
+        {
+          "joinphrase": "",
+          "name": "Kenny Dorham",
+          "artist": {
+            "sort-name": "Dorham, Kenny",
+            "type": "Person",
+            "id": "4476453a-d37e-4c52-b60d-07c90b6fa661",
+            "name": "Kenny Dorham",
+            "country": "US",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "disambiguation": "US jazz trumpeter, singer, and composer"
+          }
+        }
+      ],
+      "cover-art-archive": {
+        "count": 0,
+        "darkened": false,
+        "artwork": false,
+        "back": false,
+        "front": false
+      },
+      "title": "Modern Jazz Trumpets",
+      "media": [
+        {
+          "id": "426570ce-ce7a-3574-86f5-ea5e16295afe",
+          "title": "",
+          "format-id": "3155d2b6-52fd-3952-bda3-bd7c429d038d",
+          "track-count": 8,
+          "format": "10\" Vinyl",
+          "position": 1
+        }
+      ],
+      "disambiguation": "",
+      "barcode": "",
+      "asin": null,
+      "quality": "normal",
+      "country": "US",
+      "id": "6fbb6d1b-e6b4-4027-acf1-85045a0bd771",
+      "status": "Official",
+      "label-info": [
+        {
+          "catalog-number": "PRLP 113",
+          "label": {
+            "sort-name": "Prestige",
+            "type": "Original Production",
+            "id": "11847c89-4b2c-4866-84c3-f72e264c0f66",
+            "name": "Prestige",
+            "disambiguation": "American jazz label",
+            "label-code": 313,
+            "type-id": "7aaa37fe-2def-3476-b359-80245850062d"
+          }
+        }
+      ],
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "release-events": [
+        {
+          "date": "1951",
+          "area": {
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "sort-name": "United States",
+            "type": null,
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "type-id": null,
+            "disambiguation": "",
+            "name": "United States"
+          }
+        }
+      ],
+      "date": "1951"
+    },
+    {
+      "label-info": [
+        {
+          "label": {
+            "name": "Prestige",
+            "label-code": 313,
+            "type-id": "7aaa37fe-2def-3476-b359-80245850062d",
+            "disambiguation": "American jazz label",
+            "sort-name": "Prestige",
+            "type": "Original Production",
+            "id": "11847c89-4b2c-4866-84c3-f72e264c0f66"
+          },
+          "catalog-number": "PRLP 113"
+        }
+      ],
+      "text-representation": {
+        "language": null,
+        "script": null
+      },
+      "id": "f5453a0d-414c-4974-b26f-9ceea9b35887",
+      "status": "Official",
+      "date": "1951",
+      "release-events": [
+        {
+          "area": {
+            "type-id": null,
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "disambiguation": "",
+            "name": "United States",
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "type": null,
+            "sort-name": "United States"
+          },
+          "date": "1951"
+        }
+      ],
+      "asin": null,
+      "barcode": "",
+      "disambiguation": "",
+      "country": "US",
+      "quality": "normal",
+      "title": "Modern Jazz Trumpets",
+      "media": [
+        {
+          "format-id": "3155d2b6-52fd-3952-bda3-bd7c429d038d",
+          "track-count": 9,
+          "format": "10\" Vinyl",
+          "position": 1,
+          "id": "a71ab26a-f8dd-3db7-a2f6-e38c62d5cce9",
+          "title": ""
+        }
+      ],
+      "cover-art-archive": {
+        "darkened": false,
+        "count": 4,
+        "artwork": true,
+        "front": true,
+        "back": true
+      },
+      "packaging-id": null,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit": [
+        {
+          "artist": {
+            "type": "Person",
+            "sort-name": "Navarro, Fats",
+            "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+            "country": "US",
+            "name": "Fats Navarro",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "disambiguation": ""
+          },
+          "joinphrase": " / ",
+          "name": "Fats Navarro"
+        },
+        {
+          "artist": {
+            "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+            "sort-name": "Gillespie, Dizzy",
+            "type": "Person",
+            "disambiguation": "",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "name": "Dizzy Gillespie",
+            "country": "US"
+          },
+          "name": "Dizzy Gillespie",
+          "joinphrase": " / "
+        },
+        {
+          "artist": {
+            "disambiguation": "jazz trumpeter, bandleader, songwriter",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "country": "US",
+            "name": "Miles Davis",
+            "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+            "type": "Person",
+            "sort-name": "Davis, Miles"
+          },
+          "joinphrase": " / ",
+          "name": "Miles Davis"
+        },
+        {
+          "name": "Kenny Dorham",
+          "joinphrase": "",
+          "artist": {
+            "type": "Person",
+            "sort-name": "Dorham, Kenny",
+            "id": "4476453a-d37e-4c52-b60d-07c90b6fa661",
+            "country": "US",
+            "name": "Kenny Dorham",
+            "disambiguation": "US jazz trumpeter, singer, and composer",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+          }
+        }
+      ],
+      "packaging": null
+    }
+  ]
+}

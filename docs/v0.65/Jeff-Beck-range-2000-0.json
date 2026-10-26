@@ -1,0 +1,273 @@
+{
+  "created": "2026-10-26T02:35:52.238Z",
+  "count": 13,
+  "offset": 0,
+  "release-groups": [
+    {
+      "id": "0c8e1b93-fb6e-3045-ab40-8ce3c78dd850",
+      "title": "Official Bootleg USA ’06",
+      "score": 100,
+      "first-release-date": "2007-05-23",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8ff34802-47b1-3369-9e8f-09034bcc8d03",
+      "title": "Live at B.B. King Blues Club and Grill September 10, 2003",
+      "score": 100,
+      "first-release-date": "2005-06-29",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "656f05b3-654f-3ed3-963a-8f5bc551986b",
+      "title": "Shapes of Things: 60’s Groups and Sessions",
+      "score": 100,
+      "first-release-date": "2003",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "233c5ba4-f02a-4b5d-842f-6c902e109d64",
+      "title": "The Collection",
+      "score": 100,
+      "first-release-date": "2009",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f8767a93-35ef-301c-96a4-c5815db32198",
+      "title": "L.A. Breakdown",
+      "score": 100,
+      "first-release-date": "2001",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8bb23bd6-ebbb-3cae-8ba7-9246d3eb6b2f",
+      "title": "You Had It Coming",
+      "score": 100,
+      "first-release-date": "2000-11-15",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "991384f7-8ee0-3868-a69d-695ed05d1dd6",
+      "title": "Jeff",
+      "score": 100,
+      "first-release-date": "2003-08-06",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "28aa7e9d-5256-45ac-a022-b17905f82d21",
+      "title": "Boogie Woody’s Birthday",
+      "score": 100,
+      "first-release-date": "2009",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation",
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a74e2d82-9ce3-48ab-9eb7-030b9ecc95b1",
+      "title": "2001‐02‐23: Universal Amphitheatre, CA, USA",
+      "score": 100,
+      "first-release-date": "2001-02-23",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fd443633-b972-4c8d-81e4-41151312cfc1",
+      "title": "Exhaust Note",
+      "score": 100,
+      "first-release-date": "2008",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "Eric Clapton",
+          "artist": {
+            "id": "618b6900-0618-4f1e-b835-bccb17f84294",
+            "name": "Eric Clapton"
+          }
+        }
+      ]
+    },
+    {
+      "id": "31231274-27ce-4b5f-96b9-5a0ca49a2552",
+      "title": "Original Album Classics",
+      "score": 100,
+      "first-release-date": "2008-10-13",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8e352925-2809-3ea7-87a8-988a8cbbb35e",
+      "title": "Performing This Week… Live at Ronnie Scott’s",
+      "score": 100,
+      "first-release-date": "2008-11-10",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7b94edcd-0423-4faa-9c7b-6c4926822f39",
+      "title": "Live at IndigO2, London",
+      "score": 100,
+      "first-release-date": "2009-09-21",
+      "primary-type": "Album",
+      "secondary-types": [
+        "Live"
+      ],
+      "artist-credit": [
+        {
+          "name": "Jeff Beck",
+          "joinphrase": ", ",
+          "artist": {
+            "id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+            "name": "Jeff Beck"
+          }
+        },
+        {
+          "name": "The Imelda May Band",
+          "joinphrase": " & ",
+          "artist": {
+            "id": "efb902c7-cfcf-489a-b946-034d9ab3015c",
+            "name": "The Imelda May Band"
+          }
+        },
+        {
+          "name": "Harvey Goldsmith",
+          "artist": {
+            "id": "74fd9a3d-bc04-4cf1-a86c-8616b0ca142b",
+            "name": "Harvey Goldsmith"
+          }
+        }
+      ]
+    }
+  ]
+}

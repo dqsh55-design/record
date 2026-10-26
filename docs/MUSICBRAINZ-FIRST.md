@@ -1,3 +1,5 @@
+> v0.65以降の画面・読み込みは [MOBILE-UI.md](MOBILE-UI.md)、今回の検証結果は [V0.65-REVIEW.md](V0.65-REVIEW.md) を参照。
+
 > 現行の名義判定は [ARTIST-CREDITS.md](ARTIST-CREDITS.md)、v0.64の調査・検証は [V0.64-REVIEW.md](V0.64-REVIEW.md)、年代順の仕様は [V0.63-REVIEW.md](V0.63-REVIEW.md) を参照。以下はv0.60当時の記録。
 
 # 発売記録を起点にする方針（v0.60）

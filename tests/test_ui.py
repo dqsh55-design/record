@@ -73,7 +73,8 @@ class BrowserTests(unittest.TestCase):
     def open_site(self, width=390, fail_mb=False, fail_catalog=False, fail_release=False, release_total=3, base_path=""):
         context = self.browser.new_context(viewport={'width': width, 'height': 844}, is_mobile=width < 500, has_touch=width < 500)
         self.addCleanup(context.close)
-        context.add_init_script('window.NativeIntersectionObserver = window.IntersectionObserver; window.IntersectionObserver = undefined')
+        # Recorded date windows are from 2026. Keep Date.now real for evidence expiry.
+        context.add_init_script('window.NativeIntersectionObserver = window.IntersectionObserver; window.IntersectionObserver = undefined; Date.prototype.getUTCFullYear = () => 2026')
         page = context.new_page()
         errors = []
         page.on('pageerror', lambda e: errors.append(str(e)))
@@ -106,6 +107,8 @@ class BrowserTests(unittest.TestCase):
 
         page.route('**/*', route)
         page.goto('http://record.test' + base_path + '/')
+        # Only intercepted mock traffic is used here; avoid real API pacing in the harness.
+        page.evaluate('()=>{globalThis.realApi=api;api=(path,options)=>{lastRequestAt=0;return realApi(path,options)}}')
         return page
 
     def search(self, page):
@@ -115,9 +118,10 @@ class BrowserTests(unittest.TestCase):
         expect(page.locator('#status')).not_to_contain_text('アルバムを取得します', timeout=20000)
         expect(page.locator('#status')).not_to_contain_text('作品を読み込んでいます')
         # Existing provenance/link tests include deliberately different artist IDs.
-        page.get_by_role('button', name='すべての名義', exact=True).click()
+        page.get_by_role('combobox', name='名義', exact=True).select_option('all')
+        page.get_by_text('設定・詳細', exact=True).click()
         page.get_by_text('以前のYouTube Music一覧・保存記録・照合ツール', exact=True).click()
-        return page.locator('#results > details > section').first
+        return page.locator('#historical-catalog > section').first
 
     def test_v061_real_snapshots_and_distinct_modern_editions(self):
         # Captured MusicBrainz responses, replayed offline: not a live browser test.
@@ -185,11 +189,11 @@ class BrowserTests(unittest.TestCase):
                 page.get_by_role('button', name='検索', exact=True).click()
                 page.get_by_role('button', name='この名義の作品を見る →').click()
                 section = page.locator('#official-releases')
-                section.get_by_role('button', name='すべての名義', exact=True).click()
+                section.get_by_role('combobox', name='名義', exact=True).select_option('all')
                 expect(section.get_by_role('link', name='YouTube Musicで聴く')).to_have_attribute('href', album['url'])
                 expect(section.locator('.album-label')).to_have_text(detail['label'])
                 expect(section.locator('.album-title')).to_have_text(release['title'])
-                page.wait_for_function('offset > 0 && !busy && !officialLoading')
+                page.wait_for_function('!officialLoading')
                 expect(section.locator('.edition-identity')).not_to_be_visible()
                 output = os.environ.get('RECORD_SCREENSHOT_DIR')
                 if output:
@@ -208,12 +212,13 @@ class BrowserTests(unittest.TestCase):
             page = self.open_site(width)
             self.search(page)
             card = page.locator('#official-releases article').first
+            card.scroll_into_view_if_needed()
             expect(card.locator('.album-title')).to_be_visible()
             expect(card.locator('.album-label')).to_have_text('Epic')
-            expect(card.locator('.meta')).to_contain_text('1975')
+            expect(card.locator('.meta')).to_have_text('2001年（初回発売）')
             expect(card.locator('.edition-identity')).not_to_be_visible()
             expect(card.locator('.link-state')).to_have_text('配信状況は未確認')
-            self.assertGreaterEqual(card.locator('.cover').bounding_box()['width'], 84)
+            self.assertGreaterEqual(card.locator('.cover').bounding_box()['width'], 76)
             card.get_by_text('収録曲・曲順・リンクを確認', exact=True).tap()
             expect(card.locator('.edition-identity')).to_be_visible()
             expect(card.get_by_role('link', name='発売記録を見る')).to_be_visible()
@@ -227,7 +232,7 @@ class BrowserTests(unittest.TestCase):
         section = page.locator('#official-releases')
         backup = {'format': 'RECORD-verification-v1', 'records': {}, 'editionLinks': {GROUP: {'url': 'https://music.youtube.com/playlist?list=OLAK5uy_legacy', 'savedAt': '2026-01-01'}}}
         with page.expect_event('dialog') as dialog:
-            section.get_by_label('保存記録を復元').set_input_files({'name': 'old.json', 'mimeType': 'application/json', 'buffer': json.dumps(backup).encode()})
+            page.locator('#settings-details').get_by_label('保存記録を復元').set_input_files({'name': 'old.json', 'mimeType': 'application/json', 'buffer': json.dumps(backup).encode()})
         dialog.value.accept()
         expect(section.get_by_role('link', name='YouTube Musicで聴く')).to_have_count(0)
         expect(section.get_by_role('link', name='YouTube Musicで探す ↗')).to_be_visible()
@@ -269,7 +274,7 @@ class BrowserTests(unittest.TestCase):
         expect(section.get_by_role('link', name='保存したリンクを開く（利用者登録・未照合）')).to_have_attribute('href', 'https://music.youtube.com/browse/MPREb_edition')
         expect(section).not_to_contain_text('正規盤確認済み')
         with page.expect_download() as pending:
-            section.get_by_role('button', name='保存記録をバックアップ', exact=True).click()
+            page.locator('#settings-details').get_by_role('button', name='保存記録をバックアップ', exact=True).click()
         backup = json.loads(Path(pending.value.path()).read_text())
         self.assertEqual(backup['editionLinks'][GROUP]['source'], 'user')
         page.reload()
@@ -279,7 +284,7 @@ class BrowserTests(unittest.TestCase):
         section.get_by_role('button', name='発売盤リンクを削除', exact=True).click()
         expect(section.get_by_role('link', name='YouTube Musicで探す ↗')).to_be_visible()
         with page.expect_event('dialog') as dialog:
-            section.get_by_label('保存記録を復元').set_input_files({'name': 'backup.json', 'mimeType': 'application/json', 'buffer': json.dumps(backup).encode()})
+            page.locator('#settings-details').get_by_label('保存記録を復元').set_input_files({'name': 'backup.json', 'mimeType': 'application/json', 'buffer': json.dumps(backup).encode()})
         dialog.value.accept()
         expect(section.get_by_role('link', name='保存したリンクを開く（利用者登録・未照合）')).to_be_visible()
 
@@ -297,7 +302,7 @@ class BrowserTests(unittest.TestCase):
         section = page.locator('#official-releases')
         expect(section.locator('article')).to_have_count(2)
         section.get_by_role('button', name='さらに発売記録を読み込む', exact=True).click()
-        expect(section).to_contain_text('（6件）')
+        expect(page.locator('#catalog-info')).to_contain_text('発売盤 6件取得')
         expect(section.locator('article')).to_have_count(2)
         expect(section.get_by_role('link', name='YouTube Musicで探す ↗')).to_have_count(2)
 
@@ -305,7 +310,7 @@ class BrowserTests(unittest.TestCase):
         page = self.open_site(fail_release=True)
         self.search(page)
         section = page.locator('#official-releases')
-        expect(section).to_contain_text('発売記録を取得できませんでした')
+        expect(section.get_by_role('alert')).to_contain_text('アルバムを読み込めませんでした', timeout=15000)
         expect(section.get_by_role('button', name='発売記録の取得を再試行')).to_be_visible()
 
     def test_musicbrainz_first_official_editions(self):
@@ -348,7 +353,7 @@ class BrowserTests(unittest.TestCase):
         section.get_by_role('button', name='曲目を取得', exact=True).first.tap()
         expect(section).to_contain_text('1. <Song>')
         section.get_by_role('button', name='さらに発売記録を読み込む', exact=True).tap()
-        expect(section).to_contain_text('（6件）')
+        expect(page.locator('#catalog-info')).to_contain_text('発売盤 6件取得')
         for control in section.locator('button:visible, a:visible, summary:visible').all():
             self.assertGreaterEqual(control.bounding_box()['height'], 44)
         self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
@@ -380,7 +385,7 @@ class BrowserTests(unittest.TestCase):
         expect(more).to_be_enabled()
         more.click()
         page.wait_for_function('offset === 2 && !busy')
-        expect(page.locator('#status')).to_contain_text('取得済み1件')
+        self.assertEqual(page.evaluate('albums.length'), 1)
         expect(more).to_be_enabled()
         expect(page.locator('#related-bands')).to_be_visible()
 
@@ -393,7 +398,7 @@ class BrowserTests(unittest.TestCase):
         details.get_by_role('button', name='曲目を取得', exact=True).click()
         expect(details).to_contain_text('1. <Song>')
         section.get_by_role('button', name='さらに発売記録を読み込む', exact=True).click()
-        expect(section).to_contain_text('（6件）')
+        expect(page.locator('#catalog-info')).to_contain_text('発売盤 6件取得')
         expect(section.locator('details').first).to_have_attribute('open', '')
         expect(section.locator('details').first).to_contain_text('1. <Song>')
         page.route('**/release/missing-label?**', lambda route: route.fulfill(status=403, json={}))
@@ -419,7 +424,7 @@ class BrowserTests(unittest.TestCase):
                 url = urlparse(route.request.url)
                 q = parse_qs(url.query)
                 offset = int(q.get('offset', ['0'])[0])
-                calls.append((url.path, offset, q.get('release-group', [''])[0]))
+                calls.append((url.path, offset, q.get('release-group', [''])[0], q.get('query', [''])[0]))
                 if url.path.endswith('/release-group'):
                     route.fulfill(json={'release-group-count': len(groups), 'release-groups': groups[offset:offset + 100]})
                 elif url.path.endswith('/release'):
@@ -437,10 +442,11 @@ class BrowserTests(unittest.TestCase):
             page.evaluate("chooseArtist({id:'artist',name:" + json.dumps(name) + "})")
             section = page.locator('#official-releases')
             expect(section.locator('article')).to_have_count(100, timeout=15000)
-            self.assertEqual([c[1] for c in calls[:2]], [0, 100])
+            self.assertEqual([c[1] for c in calls if not c[3]][:2], [0, 100])
             expect(section.locator('.decade').first).to_have_text('1950年代')
-            expect(section.locator('.meta').first).to_contain_text('作品の初回発売：1959')
-            expect(section.locator('.meta').first).to_contain_text('この盤の発売：2009')
+            expect(section.locator('.meta').first).to_have_text('1959年（初回発売）')
+            expect(section.locator('article').first).to_contain_text('この盤の発売：2009')
+            expect(section.locator('article').first.get_by_text('この盤の発売：2009', exact=False)).not_to_be_visible()
             self.assertFalse(section.locator('details').first.evaluate('(node)=>node.open'))
             page.evaluate("window.firstEdition=document.querySelector('#official-releases article')")
             page.locator('#chronology-more').scroll_into_view_if_needed()
@@ -448,7 +454,7 @@ class BrowserTests(unittest.TestCase):
             self.assertTrue(page.evaluate("firstEdition===document.querySelector('#official-releases article')"))
             self.assertEqual(section.locator('article[data-release-id="old-99"]').count(), 1)
             # Changing direction discards the prefix and starts at the newest known work.
-            section.get_by_role('button', name='新しい順', exact=True).click()
+            section.get_by_role('combobox', name='並び順', exact=True).select_option('desc')
             expect(section.locator('.decade').first).to_have_text('2010年代', timeout=10000)
             self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
             # Unknown originals stay last in either direction and never borrow edition dates.
@@ -485,14 +491,14 @@ class BrowserTests(unittest.TestCase):
         for _ in range(4):
             page.evaluate('loadOfficialReleases()')
         section = page.locator('#official-releases')
-        expect(section.get_by_role('button', name='本人・共同名義', exact=True)).to_have_attribute('aria-pressed', 'true')
+        expect(section.get_by_role('combobox', name='名義', exact=True)).to_have_value('credited')
         expect(section.locator('article')).to_have_count(2)
         expect(section.locator('.credit-badge').first).to_contain_text('本人名義')
         expect(section.locator('.credit-badge').nth(1)).to_contain_text('共同名義')
-        section.get_by_role('button', name='共同名義', exact=True).click()
+        section.get_by_role('combobox', name='名義', exact=True).select_option('joint')
         expect(section.locator('article')).to_have_count(1)
         expect(section.locator('.decade')).to_have_text('1960年代')
-        section.get_by_role('button', name='確認待ち', exact=True).click()
+        section.get_by_role('combobox', name='名義', exact=True).select_option('pending')
         expect(section.locator('article')).to_have_count(3)
         guest = section.locator('article[data-release-id="guest"]')
         guest.locator('summary').click()
@@ -500,18 +506,18 @@ class BrowserTests(unittest.TestCase):
         guest.get_by_role('button', name='曲目を取得', exact=True).click()
         expect(guest.locator('.credit-badge')).to_contain_text('演奏参加')
         expect(guest.locator('.credit-evidence a[href*="/recording/"]')).to_have_attribute('href', 'https://musicbrainz.org/recording/recording-id')
-        expect(section.locator('#credit-counts')).to_contain_text('演奏参加（録音の登録根拠あり） 1件')
-        section.get_by_role('button', name='演奏参加', exact=True).click()
+        expect(page.locator('#credit-counts')).to_contain_text('演奏参加（録音の登録根拠あり） 1件')
+        section.get_by_role('combobox', name='名義', exact=True).select_option('participation')
         expect(section.locator('article')).to_have_count(1)
-        expect(section).to_contain_text('参加作品の網羅性は保証しません')
+        expect(page.locator('#catalog-info')).to_contain_text('参加作品の網羅性は保証しません')
         expect(section.locator('details')).to_have_attribute('open', '')
-        section.get_by_role('button', name='本人・共同名義', exact=True).click()
+        section.get_by_role('combobox', name='名義', exact=True).select_option('credited')
         expect(section.locator('article')).to_have_count(2)
-        section.get_by_role('button', name='新しい順', exact=True).click()
+        section.get_by_role('combobox', name='並び順', exact=True).select_option('desc')
         page.wait_for_function('!officialLoading')
         # Newest work is a separate band credit: do not promote it to the target's solo albums.
         expect(section.locator('article')).to_have_count(0)
-        section.get_by_role('button', name='確認待ち', exact=True).click()
+        section.get_by_role('combobox', name='名義', exact=True).select_option('pending')
         expect(section.locator('.album-title')).to_have_text('band')
         self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
 
@@ -531,7 +537,7 @@ class BrowserTests(unittest.TestCase):
                 url = urlparse(route.request.url)
                 q = parse_qs(url.query)
                 if url.path.endswith('/release-group'):
-                    items = groups if q['artist'][0] == artist['artist_id'] else []
+                    items = groups if q.get('artist', [artist['artist_id']])[0] == artist['artist_id'] else []
                     route.fulfill(json={'release-group-count': len(items), 'release-groups': items})
                 elif url.path.endswith('/release'):
                     release = next(r for r in releases if r['release-group']['id'] == q['release-group'][0])
@@ -548,17 +554,18 @@ class BrowserTests(unittest.TestCase):
             expect(section.locator('article')).to_have_count(2)
             expect(section.locator('.credit-badge', has_text='本人名義')).to_have_count(1)
             expect(section.locator('.credit-badge', has_text='共同名義')).to_have_count(1)
-            section.get_by_role('button', name='確認待ち', exact=True).click()
+            section.get_by_role('combobox', name='名義', exact=True).select_option('pending')
             expect(section.locator('article')).to_have_count(1)
             expect(section.locator('.album-title')).to_have_text(releases[2]['title'])
             section.locator('summary').click()
             section.get_by_role('button', name='曲目を取得', exact=True).click()
             expect(section.locator('.credit-badge')).to_contain_text('演奏参加')
-            expect(section.get_by_role('button', name='演奏参加', exact=True)).to_have_attribute('aria-pressed', 'true')
+            expect(section.get_by_role('combobox', name='名義', exact=True)).to_have_value('participation')
             self.assertGreater(section.locator('.credit-evidence a[href*="/recording/"]').count(), 0)
             expect(section.locator('details')).to_have_attribute('open', '')
             expect(section.get_by_role('link', name='YouTube Musicで探す ↗')).to_have_count(1)
             expect(page.locator('#related-bands')).to_be_visible()
+            page.locator('#related-bands > summary').click()
             page.get_by_role('button', name='所属バンドを調べる →').click()
             band = next(rel['artist'] for rel in relationships['relations'] if rel['type'] == 'member of band' and rel.get('artist', {}).get('type') == 'Group')
             related = page.locator('#related-bands article').filter(has=page.get_by_text(band['name'], exact=True))
@@ -569,9 +576,167 @@ class BrowserTests(unittest.TestCase):
             page.wait_for_function('artistId === ' + json.dumps(band['id']) + ' && !officialLoading')
             expect(section.locator('h2')).to_have_text(band['name'] + ' の発売アルバム')
             expect(section.locator('article')).to_have_count(0)
-            expect(section.get_by_role('button', name='本人・共同名義', exact=True)).to_have_attribute('aria-pressed', 'true')
+            expect(section.get_by_role('combobox', name='名義', exact=True)).to_have_value('credited')
             self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
             page.close()
+
+    def test_v065_first_screen_with_real_window_snapshots(self):
+        # Real recorded MB bodies replayed in a mobile browser: NOT a live speed test.
+        from urllib.parse import parse_qs
+        import time
+        for name, aid in [('Miles Davis', '561d854a-6a28-4aa7-8c99-323e6ce46c2a'), ('Jeff Beck', '14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17')]:
+            prefix = name.replace(' ', '-')
+            window = json.loads((ROOT / 'docs/v0.65' / (prefix + '-window-0.json')).read_text())
+            editions = json.loads((ROOT / 'docs/v0.65' / (prefix + '-first-editions.json')).read_text())
+            for width in (320, 375, 390, 430):
+                page = self.open_site(width)
+                pending, catalogs, calls = [], [], []
+                def route(route, request, window=window, editions=editions, pending=pending, calls=calls):
+                    url = urlparse(route.request.url)
+                    q = parse_qs(url.query)
+                    calls.append((url.path, q))
+                    if url.path.endswith('/release-group'):
+                        pending.append(route)
+                    elif url.path.endswith('/release'):
+                        route.fulfill(json=editions)
+                    else:
+                        route.fulfill(json={'relations': []})
+                page.route('**/ws/2/**', route)
+                page.route('**/data/ytmusic-albums.json', lambda route, request, catalogs=catalogs: catalogs.append(route))
+                page.evaluate('()=>{globalThis.catalogDone=false;globalThis.catalogLoad=loadListeningCatalog;loadListeningCatalog=async artist=>{await catalogLoad(artist);catalogDone=true}}')
+                with page.expect_request('**/ws/2/release-group?**'):
+                    page.evaluate('void chooseArtist(' + json.dumps({'id': aid, 'name': name}) + ')')
+                section = page.locator('#official-releases')
+                expect(section.get_by_role('combobox', name='並び順')).to_have_value('asc')
+                expect(section.get_by_role('combobox', name='名義', exact=True)).to_have_value('credited')
+                expect(section.get_by_role('progressbar')).to_be_visible()
+                expect(section.locator('article')).to_have_count(0)
+                expect(section.locator('.loading-card')).to_have_attribute('aria-hidden', 'true')
+                self.assertEqual(len(pending), 1)
+                pending[0].fulfill(json=window)
+                expected = [r for r in editions['releases'] if r.get('status') not in ('Bootleg', 'Pseudo-Release', 'Promotion')]
+                expect(section.locator('article')).to_have_count(len(expected))
+                self.assertEqual(len(catalogs), 1)  # Slow optional catalog cannot hold the main list hostage.
+                self.assertEqual(len(calls), 2)  # One complete small window + one edition page, no full browse.
+                self.assertTrue('query' in calls[0][1])
+                self.assertTrue(all('artist' not in q for _, q in calls))
+                expect(section.locator('select:visible')).to_have_count(2)
+                self.assertEqual(section.locator('#credit-scope option').count(), 6)
+                expect(page.locator('#settings-details')).not_to_have_attribute('open', '')
+                expect(page.get_by_role('button', name='保存記録をバックアップ', exact=True)).not_to_be_visible()
+                expect(page.locator('#catalog-info')).not_to_be_visible()
+                first = section.locator('article').first
+                expect(first.locator('.album-title')).to_be_visible()
+                expect(first.locator('.album-label')).to_be_visible()
+                expect(first.locator('.credit-badge')).to_be_visible()
+                expect(first.locator('.meta')).to_have_text('1951年（初回発売）' if name == 'Miles Davis' else '1972年（初回発売）')
+                self.assertLess(first.bounding_box()['y'] + 150, 844)
+                expect(first.locator('.link-state')).not_to_be_visible()
+                expect(first.locator('.edition-identity')).not_to_be_visible()
+                expect(first.locator('.release-detail').filter(has_text='この盤の発売：')).not_to_be_visible()
+                for control in section.locator('select:visible, a:visible, summary:visible').all():
+                    self.assertGreaterEqual(control.bounding_box()['height'], 44)
+                self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+                for select in section.locator('select:visible').all():
+                    self.assertGreaterEqual(select.evaluate('e=>parseFloat(getComputedStyle(e).fontSize)'), 16)
+                # Actual distinct release IDs, including reissues, stay distinct.
+                self.assertEqual(len(expected), len(set(section.locator('article').evaluate_all('(rows)=>rows.map(r=>r.dataset.releaseId)'))))
+                page.evaluate("globalThis.primaryCard=document.querySelector('#official-releases article')")
+                if width == 390:
+                    first.locator('summary').click()
+                    draft = first.get_by_role('textbox', name=expected[0]['title'] + 'の発売盤リンク')
+                    draft.fill('https://music.youtube.com/browse/MPREb_draft')
+                catalogs[0].fulfill(json={})
+                page.wait_for_function('catalogDone && !officialLoading')
+                self.assertTrue(page.evaluate("primaryCard===document.querySelector('#official-releases article')"))
+                if width == 390:
+                    expect(draft).to_have_value('https://music.youtube.com/browse/MPREb_draft')
+                    expect(draft).to_be_focused()
+                    first.locator('summary').click()
+                output = os.environ.get('RECORD_SCREENSHOT_DIR')
+                if output and width == 390:
+                    Path(output).mkdir(parents=True, exist_ok=True)
+                    page.screenshot(path=str(Path(output) / (prefix + '-v065-390.png')))
+                first.locator('summary').click()
+                expect(first.locator('.edition-identity')).to_be_visible()
+                expect(first.get_by_text('この盤の発売：', exact=False)).to_be_visible()
+                page.get_by_text('設定・詳細', exact=True).click()
+                page.get_by_text('一覧の情報・読み込み状況', exact=True).click()
+                expect(page.locator('#catalog-info')).to_contain_text('全作品取得済みという意味ではありません')
+                expect(page.get_by_role('button', name='保存記録をバックアップ', exact=True)).to_be_visible()
+                page.close()
+
+    def test_v065_partial_browse_fallback_and_retry(self):
+        from urllib.parse import parse_qs
+        page = self.open_site()
+        target = 'target'
+        def group(id, date):
+            return {'id': id, 'title': id, 'primary-type': 'Album', 'first-release-date': date, 'artist-credit': [{'artist': {'id': target}}]}
+        pending, queries, releases = [], [], []
+        fail_release = [True]
+        def route(route):
+            url = urlparse(route.request.url)
+            q = parse_qs(url.query)
+            if url.path.endswith('/release-group'):
+                if 'query' in q:
+                    queries.append(route.request.url)
+                    route.fulfill(status=503, json={})
+                elif q.get('offset', ['0'])[0] == '0':
+                    route.fulfill(json={'release-group-count': 101, 'release-groups': [group('later-' + str(i), '2000') for i in range(100)]})
+                else:
+                    pending.append(route)
+            elif url.path.endswith('/release'):
+                releases.append(q)
+                if fail_release[0]:
+                    route.fulfill(status=403, json={})
+                else:
+                    route.fulfill(json={'release-count': 1, 'releases': [{'id': 'edition', 'title': 'Earliest edition', 'status': 'Official', 'date': '2020'}]})
+            else:
+                route.fulfill(json={'relations': []})
+        page.route('**/ws/2/**', route)
+        page.evaluate("void chooseArtist({id:'target',name:'Target'})")
+        page.wait_for_function('chronology.mode === "browse" && chronology.indexOffset === 100')
+        page.wait_for_timeout(30)
+        expect(page.locator('#official-releases article')).to_have_count(0)
+        expect(page.get_by_role('progressbar')).to_have_attribute('value', '100')
+        self.assertEqual(len(queries), 1)  # Cold search fails fast, bounded fallback is available.
+        self.assertEqual(len(pending), 1)
+        pending[0].fulfill(json={'release-group-count': 101, 'release-groups': [group('oldest', '1950')]})
+        section = page.locator('#official-releases')
+        expect(section.get_by_role('alert')).to_contain_text('読み込めませんでした')
+        expect(page.locator('#catalog-info')).to_contain_text('403')
+        expect(section.get_by_role('button', name='発売記録の取得を再試行')).to_be_enabled()
+        fail_release[0] = False
+        section.get_by_role('button', name='発売記録の取得を再試行').click()
+        expect(section.locator('.meta')).to_have_text('1950年（初回発売）')
+        self.assertEqual(len(releases), 2)
+        self.assertEqual([q['offset'][0] for q in releases], ['0', '0'])
+        expect(section.get_by_role('alert')).to_have_count(0)
+
+    def test_v065_menu_change_during_pending_window_discards_old_response(self):
+        from urllib.parse import parse_qs
+        page = self.open_site()
+        pending = []
+        def route(route):
+            url = urlparse(route.request.url)
+            q = parse_qs(url.query)
+            if url.path.endswith('/release-group'):
+                if 'TO 1979' in q['query'][0]:
+                    pending.append(route)
+                else:
+                    route.fulfill(json={'count': 1, 'release-groups': [{'id': 'new', 'title': 'Newest', 'primary-type': 'Album', 'first-release-date': '2024', 'artist-credit': [{'artist': {'id': 'target'}}]}]})
+            elif url.path.endswith('/release'):
+                route.fulfill(json={'release-count': 1, 'releases': [{'id': 'new-edition', 'title': 'Newest', 'status': 'Official'}]})
+            else:
+                route.fulfill(json={'relations': []})
+        page.route('**/ws/2/**', route)
+        with page.expect_request('**/release-group?**'):
+            page.evaluate("void chooseArtist({id:'target',name:'Target'})")
+        page.get_by_role('combobox', name='並び順').select_option('desc')
+        pending[0].fulfill(json={'count': 1, 'release-groups': [{'id': 'old', 'title': 'Old', 'primary-type': 'Album', 'first-release-date': '1950', 'artist-credit': [{'artist': {'id': 'target'}}]}]})
+        expect(page.locator('#official-releases .album-title')).to_have_text('Newest')
+        expect(page.get_by_role('combobox', name='並び順')).to_have_value('desc')
+        expect(page.locator('#official-releases .meta')).to_have_text('2024年（初回発売）')
 
     def test_search_generated_evidence_and_track_comparison(self):
         page = self.open_site()
@@ -594,7 +759,7 @@ class BrowserTests(unittest.TestCase):
         page = self.open_site(fail_mb=True)
         section = self.search(page)
         expect(section.locator('article')).to_have_count(5)
-        expect(page.locator('#status')).to_contain_text('403')
+        expect(page.locator('#results')).to_contain_text('403')
 
     def test_japanese_alias_and_existing_sort_controls(self):
         page = self.open_site()
@@ -603,9 +768,10 @@ class BrowserTests(unittest.TestCase):
         page.get_by_role('textbox', name='アーティスト名').fill('マイルス・デイヴィス')
         page.get_by_role('button', name='検索', exact=True).click()
         page.get_by_role('button', name='この名義の作品を見る →').click()
-        expect(page.locator('#status')).to_contain_text('作品を表示しています')
+        page.wait_for_function('!officialLoading')
+        page.get_by_text('設定・詳細', exact=True).click()
         page.get_by_text('以前のYouTube Music一覧・保存記録・照合ツール', exact=True).click()
-        section = page.locator('#results > details > section').first
+        section = page.locator('#historical-catalog > section').first
         expect(section.locator('article')).to_have_count(5)
         self.assertTrue(any('query=Miles%20Davis' in url for url in requests))
         section.get_by_role('button', name='発売年順', exact=True).click()
