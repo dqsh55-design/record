@@ -17,6 +17,7 @@ jobs:
         with:
           node-version: '22'
       - run: python -m unittest discover -s tests -p 'test_*matching.py' -v
+      - run: node tests/test_official_catalog.cjs
       - run: node tests/test_loading.cjs
       - run: node tests/test_api_cache.cjs
       - run: node tests/test_browser.cjs
@@ -26,6 +27,6 @@ jobs:
       - run: pip install 'playwright>=1.50,<2'
       # ubuntu-latest includes Chrome and its native libraries.
       - run: google-chrome --version
-      - run: python tests/test_ui.py
+      - run: python tests/test_official_ui.py
       - run: python -m py_compile scripts/build_catalog.py scripts/release_matching.py scripts/automatic_matching.py scripts/verify_catalog.py
 

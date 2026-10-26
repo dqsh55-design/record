@@ -1,0 +1,242 @@
+{
+  "version": 1,
+  "artists": [
+    {
+      "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+      "name": "Norah Jones",
+      "aliases": [
+        "ノラジョーンズ",
+        "ノラ・ジョーンズ"
+      ],
+      "albums": [
+        {
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9:0",
+          "title": "Come Away With Me",
+          "year": "2002",
+          "label": "Blue Note Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+          "sourceName": "Blue Note Records",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "公式Releases一覧と経歴を照合。Begin Againの年はこの資料から補完しない。"
+        },
+        {
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9:1",
+          "title": "Feels Like Home",
+          "year": "2004",
+          "label": "Blue Note Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+          "sourceName": "Blue Note Records",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "公式Releases一覧と経歴を照合。Begin Againの年はこの資料から補完しない。"
+        },
+        {
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9:2",
+          "title": "Not Too Late",
+          "year": "2007",
+          "label": "Blue Note Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+          "sourceName": "Blue Note Records",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "公式Releases一覧と経歴を照合。Begin Againの年はこの資料から補完しない。"
+        },
+        {
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9:3",
+          "title": "The Fall",
+          "year": "2009",
+          "label": "Blue Note Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+          "sourceName": "Blue Note Records",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "公式Releases一覧と経歴を照合。Begin Againの年はこの資料から補完しない。"
+        },
+        {
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9:4",
+          "title": "…Featuring Norah Jones",
+          "year": "2010",
+          "label": "Blue Note Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+          "sourceName": "Blue Note Records",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "公式Releases一覧と経歴を照合。Begin Againの年はこの資料から補完しない。"
+        },
+        {
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9:5",
+          "title": "Little Broken Hearts",
+          "year": "2012",
+          "label": "Blue Note Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+          "sourceName": "Blue Note Records",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "公式Releases一覧と経歴を照合。Begin Againの年はこの資料から補完しない。"
+        },
+        {
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9:6",
+          "title": "Day Breaks",
+          "year": "2016",
+          "label": "Blue Note Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+          "sourceName": "Blue Note Records",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "公式Releases一覧と経歴を照合。Begin Againの年はこの資料から補完しない。"
+        },
+        {
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9:7",
+          "title": "Begin Again",
+          "year": null,
+          "label": "Blue Note Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+          "sourceName": "Blue Note Records",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "公式Releases一覧と経歴を照合。Begin Againの年はこの資料から補完しない。"
+        },
+        {
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9:8",
+          "title": "Pick Me Up Off The Floor",
+          "year": "2020",
+          "label": "Blue Note Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+          "sourceName": "Blue Note Records",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "公式Releases一覧と経歴を照合。Begin Againの年はこの資料から補完しない。"
+        },
+        {
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9:9",
+          "title": "…’Til We Meet Again",
+          "year": "2021",
+          "label": "Blue Note Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+          "sourceName": "Blue Note Records",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "公式Releases一覧と経歴を照合。Begin Againの年はこの資料から補完しない。"
+        },
+        {
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9:10",
+          "title": "I Dream Of Christmas",
+          "year": "2021",
+          "label": "Blue Note Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+          "sourceName": "Blue Note Records",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "公式Releases一覧と経歴を照合。Begin Againの年はこの資料から補完しない。"
+        },
+        {
+          "id": "985c709c-7771-4de3-9024-7bda29ebe3f9:11",
+          "title": "Visions",
+          "year": "2024",
+          "label": "Blue Note Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+          "sourceName": "Blue Note Records",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "公式Releases一覧と経歴を照合。Begin Againの年はこの資料から補完しない。"
+        }
+      ]
+    },
+    {
+      "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "name": "Miles Davis",
+      "aliases": [
+        "マイルスデイビス",
+        "マイルス・デイヴィス",
+        "マイルス・デイビス"
+      ],
+      "albums": [
+        {
+          "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a:0",
+          "title": "’Round About Midnight",
+          "year": "1957",
+          "label": "Columbia Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.milesdavis.com/albums/round-about-midnight/",
+          "sourceName": "Miles Davis / Sony Music",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "Sony運営の公式作品ページで作品・発売年・レーベルを確認。国別盤・再発盤への認定転用なし。"
+        },
+        {
+          "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a:1",
+          "title": "Kind Of Blue",
+          "year": "1959",
+          "label": "Columbia Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.milesdavis.com/albums/kind-of-blue/",
+          "sourceName": "Miles Davis / Sony Music",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "Sony運営の公式作品ページで作品・発売年・レーベルを確認。国別盤・再発盤への認定転用なし。"
+        },
+        {
+          "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a:2",
+          "title": "Sketches Of Spain",
+          "year": "1960",
+          "label": "Columbia Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.milesdavis.com/albums/sketches-of-spain/",
+          "sourceName": "Miles Davis / Sony Music",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "Sony運営の公式作品ページで作品・発売年・レーベルを確認。国別盤・再発盤への認定転用なし。"
+        },
+        {
+          "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a:3",
+          "title": "In A Silent Way",
+          "year": "1969",
+          "label": "Columbia Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.milesdavis.com/albums/in-a-silent-way/",
+          "sourceName": "Miles Davis / Sony Music",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "Sony運営の公式作品ページで作品・発売年・レーベルを確認。国別盤・再発盤への認定転用なし。"
+        },
+        {
+          "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a:4",
+          "title": "Bitches Brew",
+          "year": "1970",
+          "label": "Columbia Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.milesdavis.com/albums/bitches-brew/",
+          "sourceName": "Miles Davis / Sony Music",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "Sony運営の公式作品ページで作品・発売年・レーベルを確認。国別盤・再発盤への認定転用なし。"
+        },
+        {
+          "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a:5",
+          "title": "The Essential Miles Davis",
+          "year": "2001",
+          "label": "Columbia/Legacy",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.milesdavis.com/albums/essential-plus-cd-dvd-combo/",
+          "sourceName": "Miles Davis / Sony Music",
+          "checkedAt": "2026-10-26",
+          "reviewNote": "Sony運営の公式作品ページで作品・発売年・レーベルを確認。国別盤・再発盤への認定転用なし。"
+        }
+      ]
+    }
+  ]
+}
