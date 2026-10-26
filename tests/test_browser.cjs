@@ -96,7 +96,34 @@ assert.equal(run('editionTrackText(detail)'), 'ディスク1 · A1. First\nデ�
 assert.equal(context.detail.media[0].position,2);
 console.log('Edition tracks: disc/track ordering, printed vinyl numbers and incomplete metadata passed');
 
+// v0.61: release identity, conservative direct links, and transactional saving.
+assert.equal(run("uniqueReleaseIds([{id:'one'},{id:'one'},{id:'two'}]).length"),2);
+assert.equal(run("saveEditionLink(id,'https://example.com')"),false);
+assert.equal(run("saveEditionLink(id,url+'?si=tracking')"),true);
+assert.equal(run("editionLinks[id].url"),run('url'));
+context.localStorage.setItem=()=>{throw Error('quota')};
+assert.equal(run("saveEditionLink(id,'')"),false);
+assert.equal(run('editionLinks[id].url'),run('url'));
+context.localStorage.setItem=(k,v)=>storage[k]=v;
+assert.equal(run("saveEditionLink(id,'')"),true);
+assert.equal(run('editionLinks[id]'),undefined);
+run("ytAlbums=[{id:'a',url,artist_check:'matched',automatic_verification:{version:1,album_id:'a',checked_at:fresh,status:'supported',candidates:[{release_id:id,status:'supported'}]}}]");
+assert.equal(run('supportedEditionLink({id}).id'),'a');
+assert.equal(run("supportedEditionLink({id:'other'})"),undefined);
+run("ytAlbums[0].automatic_verification.checked_at='2000-01-01'");
+assert.equal(run('supportedEditionLink({id})'),undefined);
+console.log('v0.61: release ID deduplication, edition binding, stale evidence and storage rollback passed');
+
 (async()=>{
+ context.originalApi=run('api');context.pending=[];
+ run("api=()=>new Promise(resolve=>pending.push(resolve));artistId=id");
+ const older=run('loadOfficialReleases(true)'),newer=run('loadOfficialReleases(true)');
+ context.pending[1]({releases:[{id:'new'}],'release-count':1});await newer;
+ context.pending[0]({releases:[{id:'stale'}],'release-count':1});await older;
+ assert.equal(run('officialReleases[0].id'),'new');
+ assert.equal(run('officialOffset'),1);
+ run('api=originalApi');
+ console.log('Overlapping resets cannot append stale releases or alter pagination');
  context.AbortController=AbortController;
  context.setTimeout=fn=>setTimeout(fn,1);
  context.fetch=async(url,{signal})=>({ok:true,status:200,json:()=>new Promise((resolve,reject)=>signal.addEventListener('abort',()=>reject(Object.assign(new Error('aborted'),{name:'AbortError'}))))});

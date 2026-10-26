@@ -1,0 +1,611 @@
+{
+  "text-representation": {
+    "language": null,
+    "script": null
+  },
+  "quality": "normal",
+  "release-group": {
+    "disambiguation": "",
+    "title": "Modern Jazz Trumpets",
+    "id": "095878f4-58ac-43f4-93ae-92a1e6588d8d",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "artist-credit": [
+      {
+        "name": "Fats Navarro",
+        "joinphrase": ", ",
+        "artist": {
+          "sort-name": "Navarro, Fats",
+          "name": "Fats Navarro",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "type": "Person",
+          "disambiguation": "",
+          "country": "US",
+          "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0"
+        }
+      },
+      {
+        "name": "Dizzy Gillespie",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "",
+          "type": "Person",
+          "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+          "country": "US",
+          "name": "Dizzy Gillespie",
+          "sort-name": "Gillespie, Dizzy"
+        },
+        "joinphrase": ", "
+      },
+      {
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "jazz trumpeter, bandleader, songwriter",
+          "type": "Person",
+          "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+          "country": "US",
+          "sort-name": "Davis, Miles",
+          "name": "Miles Davis"
+        },
+        "joinphrase": ", ",
+        "name": "Miles Davis"
+      },
+      {
+        "name": "Kenny Dorham",
+        "artist": {
+          "type": "Person",
+          "disambiguation": "US jazz trumpeter, singer, and composer",
+          "country": "US",
+          "id": "4476453a-d37e-4c52-b60d-07c90b6fa661",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Kenny Dorham",
+          "sort-name": "Dorham, Kenny"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1951"
+  },
+  "barcode": "",
+  "media": [
+    {
+      "track-offset": 0,
+      "position": 1,
+      "id": "a71ab26a-f8dd-3db7-a2f6-e38c62d5cce9",
+      "title": "",
+      "format-id": "3155d2b6-52fd-3952-bda3-bd7c429d038d",
+      "track-count": 9,
+      "format": "10\" Vinyl",
+      "tracks": [
+        {
+          "recording": {
+            "disambiguation": "",
+            "title": "Stop",
+            "id": "84e3829e-e2b1-4071-8ac4-740e8c535783",
+            "video": false,
+            "length": 243000,
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+                  "country": "US",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Fats Navarro",
+                  "sort-name": "Navarro, Fats"
+                },
+                "joinphrase": "",
+                "name": "Fats Navarro"
+              }
+            ],
+            "first-release-date": "1951"
+          },
+          "number": "A1",
+          "artist-credit": [
+            {
+              "name": "Fats Navarro",
+              "joinphrase": "",
+              "artist": {
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "disambiguation": "",
+                "country": "US",
+                "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+                "sort-name": "Navarro, Fats",
+                "name": "Fats Navarro"
+              }
+            }
+          ],
+          "length": null,
+          "position": 1,
+          "title": "Stop",
+          "id": "d0fc283e-89bd-42ba-95c1-269f031caef2"
+        },
+        {
+          "id": "4a36da65-7495-4977-8c56-2e0a7914e78c",
+          "title": "Go",
+          "position": 2,
+          "length": null,
+          "artist-credit": [
+            {
+              "name": "Fats Navarro",
+              "artist": {
+                "sort-name": "Navarro, Fats",
+                "name": "Fats Navarro",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "US",
+                "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+                "disambiguation": "",
+                "type": "Person"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "recording": {
+            "video": false,
+            "length": 209000,
+            "first-release-date": "1951",
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "artist": {
+                  "name": "Fats Navarro",
+                  "sort-name": "Navarro, Fats",
+                  "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+                  "country": "US",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "name": "Fats Navarro"
+              }
+            ],
+            "disambiguation": "",
+            "id": "448b4248-c948-4281-a36c-9e4ad94d4b21",
+            "title": "Go"
+          },
+          "number": "A2"
+        },
+        {
+          "number": "A3",
+          "recording": {
+            "length": 236000,
+            "video": false,
+            "artist-credit": [
+              {
+                "name": "Fats Navarro",
+                "joinphrase": "",
+                "artist": {
+                  "sort-name": "Navarro, Fats",
+                  "name": "Fats Navarro",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "country": "US",
+                  "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0"
+                }
+              }
+            ],
+            "first-release-date": "1951",
+            "disambiguation": "",
+            "title": "Wailing Wall",
+            "id": "9695bbf6-ae52-4119-b34a-fd1c232e0e90"
+          },
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "",
+                "type": "Person",
+                "country": "US",
+                "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+                "name": "Fats Navarro",
+                "sort-name": "Navarro, Fats"
+              },
+              "name": "Fats Navarro"
+            }
+          ],
+          "length": null,
+          "position": 3,
+          "title": "Wailing Wall",
+          "id": "3d93a750-ef85-42e8-aa82-9ebd086b19fb"
+        },
+        {
+          "artist-credit": [
+            {
+              "joinphrase": "",
+              "artist": {
+                "name": "Dizzy Gillespie",
+                "sort-name": "Gillespie, Dizzy",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "disambiguation": "",
+                "country": "US",
+                "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5"
+              },
+              "name": "Dizzy Gillespie"
+            }
+          ],
+          "number": "A4",
+          "recording": {
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "artist": {
+                  "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+                  "country": "US",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Dizzy Gillespie",
+                  "sort-name": "Gillespie, Dizzy"
+                },
+                "name": "Dizzy Gillespie"
+              }
+            ],
+            "first-release-date": "1951",
+            "video": false,
+            "length": 165000,
+            "title": "Thinking of You",
+            "id": "92a4efae-4b64-43fd-888e-56acd18f1881",
+            "disambiguation": ""
+          },
+          "title": "Thinking of You",
+          "id": "6bdb0d77-e084-4592-934f-dea963a31d32",
+          "position": 4,
+          "length": null
+        },
+        {
+          "recording": {
+            "disambiguation": "",
+            "id": "86b3f5d3-a972-4ad0-9ff7-bfcb1d8b00c3",
+            "title": "Morpheus",
+            "video": false,
+            "length": 145253,
+            "first-release-date": "1951",
+            "artist-credit": [
+              {
+                "artist": {
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "country": "US",
+                  "type": "Person",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "sort-name": "Davis, Miles",
+                  "name": "Miles Davis"
+                },
+                "joinphrase": "",
+                "name": "Miles Davis"
+              }
+            ]
+          },
+          "number": "B1",
+          "artist-credit": [
+            {
+              "name": "Miles Davis",
+              "artist": {
+                "name": "Miles Davis",
+                "sort-name": "Davis, Miles",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                "type": "Person",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "country": "US"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "length": null,
+          "position": 5,
+          "id": "ae22776c-aff7-4745-abb8-87f9cfa06b10",
+          "title": "Morpheus"
+        },
+        {
+          "position": 6,
+          "title": "Whispering",
+          "id": "9f8cb1b9-f16b-4279-9594-e50a70c9f318",
+          "length": null,
+          "recording": {
+            "disambiguation": "studio, 1951-01-17: Apex Studios, New York, NY, US",
+            "title": "Whispering",
+            "id": "1a8de27e-4418-45b5-b33c-e8527716bc5e",
+            "video": false,
+            "length": 183813,
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "artist": {
+                  "name": "Miles Davis",
+                  "sort-name": "Davis, Miles",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "country": "US",
+                  "type": "Person",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "name": "Miles Davis"
+              }
+            ],
+            "first-release-date": "1951"
+          },
+          "number": "B2",
+          "artist-credit": [
+            {
+              "name": "Miles Davis",
+              "artist": {
+                "country": "US",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "type": "Person",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Miles Davis",
+                "sort-name": "Davis, Miles"
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        {
+          "recording": {
+            "title": "Down",
+            "id": "f9b8ba44-4221-49c5-816e-680f56abb1f3",
+            "disambiguation": "",
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "artist": {
+                  "country": "US",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "name": "Miles Davis",
+                  "sort-name": "Davis, Miles"
+                },
+                "name": "Miles Davis"
+              }
+            ],
+            "first-release-date": "1951",
+            "length": 172920,
+            "video": false
+          },
+          "number": "B3",
+          "artist-credit": [
+            {
+              "artist": {
+                "country": "US",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                "type": "Person",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Davis, Miles",
+                "name": "Miles Davis"
+              },
+              "joinphrase": "",
+              "name": "Miles Davis"
+            }
+          ],
+          "position": 7,
+          "title": "Down",
+          "id": "1caa4c2d-02b8-46df-bb36-60ed5ccc79df",
+          "length": null
+        },
+        {
+          "id": "7a4f7980-a5ec-40ea-8aa2-f5f29e0f01f2",
+          "title": "Nice Work If You Can Get It",
+          "position": 8,
+          "length": null,
+          "artist-credit": [
+            {
+              "name": "Dizzy Gillespie",
+              "artist": {
+                "sort-name": "Gillespie, Dizzy",
+                "name": "Dizzy Gillespie",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "disambiguation": "",
+                "type": "Person",
+                "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+                "country": "US"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "number": "B4",
+          "recording": {
+            "disambiguation": "",
+            "title": "Nice Work If You Can Get It",
+            "id": "1409470f-6d6f-468b-9c79-0894820e081e",
+            "length": 165000,
+            "video": false,
+            "artist-credit": [
+              {
+                "artist": {
+                  "name": "Dizzy Gillespie",
+                  "sort-name": "Gillespie, Dizzy",
+                  "country": "US",
+                  "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                },
+                "joinphrase": "",
+                "name": "Dizzy Gillespie"
+              }
+            ],
+            "first-release-date": "1951"
+          }
+        },
+        {
+          "number": "B5",
+          "recording": {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "4476453a-d37e-4c52-b60d-07c90b6fa661",
+                  "country": "US",
+                  "disambiguation": "US jazz trumpeter, singer, and composer",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Dorham, Kenny",
+                  "name": "Kenny Dorham"
+                },
+                "joinphrase": "",
+                "name": "Kenny Dorham"
+              }
+            ],
+            "first-release-date": "1951",
+            "length": 339000,
+            "video": false,
+            "title": "Maxology",
+            "id": "2fbce607-75f3-4332-9e93-c23ed4a7032b",
+            "disambiguation": ""
+          },
+          "artist-credit": [
+            {
+              "name": "Kenny Dorham",
+              "joinphrase": "",
+              "artist": {
+                "country": "US",
+                "id": "4476453a-d37e-4c52-b60d-07c90b6fa661",
+                "disambiguation": "US jazz trumpeter, singer, and composer",
+                "type": "Person",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "name": "Kenny Dorham",
+                "sort-name": "Dorham, Kenny"
+              }
+            }
+          ],
+          "position": 9,
+          "id": "436e85ac-0406-4ec0-bf87-3f6e644faaa4",
+          "title": "Maxology",
+          "length": null
+        }
+      ]
+    }
+  ],
+  "country": "US",
+  "title": "Modern Jazz Trumpets",
+  "id": "f5453a0d-414c-4974-b26f-9ceea9b35887",
+  "date": "1951",
+  "artist-credit": [
+    {
+      "artist": {
+        "name": "Fats Navarro",
+        "sort-name": "Navarro, Fats",
+        "type": "Person",
+        "disambiguation": "",
+        "country": "US",
+        "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      },
+      "joinphrase": " / ",
+      "name": "Fats Navarro"
+    },
+    {
+      "artist": {
+        "name": "Dizzy Gillespie",
+        "sort-name": "Gillespie, Dizzy",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "disambiguation": "",
+        "type": "Person",
+        "country": "US",
+        "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5"
+      },
+      "joinphrase": " / ",
+      "name": "Dizzy Gillespie"
+    },
+    {
+      "name": "Miles Davis",
+      "joinphrase": " / ",
+      "artist": {
+        "name": "Miles Davis",
+        "sort-name": "Davis, Miles",
+        "disambiguation": "jazz trumpeter, bandleader, songwriter",
+        "type": "Person",
+        "country": "US",
+        "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+      }
+    },
+    {
+      "name": "Kenny Dorham",
+      "joinphrase": "",
+      "artist": {
+        "type": "Person",
+        "disambiguation": "US jazz trumpeter, singer, and composer",
+        "id": "4476453a-d37e-4c52-b60d-07c90b6fa661",
+        "country": "US",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "sort-name": "Dorham, Kenny",
+        "name": "Kenny Dorham"
+      }
+    }
+  ],
+  "status": "Official",
+  "label-info": [
+    {
+      "label": {
+        "label-code": 313,
+        "type-id": "7aaa37fe-2def-3476-b359-80245850062d",
+        "id": "11847c89-4b2c-4866-84c3-f72e264c0f66",
+        "type": "Original Production",
+        "disambiguation": "American jazz label",
+        "sort-name": "Prestige",
+        "name": "Prestige"
+      },
+      "catalog-number": "PRLP 113"
+    }
+  ],
+  "release-events": [
+    {
+      "date": "1951",
+      "area": {
+        "name": "United States",
+        "sort-name": "United States",
+        "iso-3166-1-codes": [
+          "US"
+        ],
+        "type-id": null,
+        "id": "489ce91b-6658-3307-9877-795b68554c98",
+        "type": null,
+        "disambiguation": ""
+      }
+    }
+  ],
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "cover-art-archive": {
+    "artwork": true,
+    "count": 4,
+    "back": true,
+    "front": true,
+    "darkened": false
+  },
+  "disambiguation": "",
+  "packaging": null,
+  "packaging-id": null,
+  "relations": [
+    {
+      "begin": null,
+      "attribute-ids": {},
+      "source-credit": "",
+      "target-type": "url",
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-values": {},
+      "url": {
+        "id": "d04e090f-6fde-426b-b219-5ae328895fc7",
+        "resource": "https://www.discogs.com/release/3675042"
+      },
+      "end": null,
+      "ended": false,
+      "type": "discogs",
+      "type-id": "4a78823c-1c53-4176-a5f3-58026c76f2bc",
+      "attributes": []
+    }
+  ],
+  "asin": null
+}

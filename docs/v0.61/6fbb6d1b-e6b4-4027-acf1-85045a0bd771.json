@@ -1,0 +1,560 @@
+{
+  "text-representation": {
+    "language": "eng",
+    "script": "Latn"
+  },
+  "quality": "normal",
+  "release-group": {
+    "artist-credit": [
+      {
+        "joinphrase": ", ",
+        "artist": {
+          "name": "Fats Navarro",
+          "sort-name": "Navarro, Fats",
+          "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+          "country": "US",
+          "type": "Person",
+          "disambiguation": "",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "name": "Fats Navarro"
+      },
+      {
+        "name": "Dizzy Gillespie",
+        "joinphrase": ", ",
+        "artist": {
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "disambiguation": "",
+          "type": "Person",
+          "country": "US",
+          "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+          "name": "Dizzy Gillespie",
+          "sort-name": "Gillespie, Dizzy"
+        }
+      },
+      {
+        "name": "Miles Davis",
+        "joinphrase": ", ",
+        "artist": {
+          "type": "Person",
+          "disambiguation": "jazz trumpeter, bandleader, songwriter",
+          "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+          "name": "Miles Davis",
+          "sort-name": "Davis, Miles"
+        }
+      },
+      {
+        "name": "Kenny Dorham",
+        "artist": {
+          "sort-name": "Dorham, Kenny",
+          "name": "Kenny Dorham",
+          "type": "Person",
+          "disambiguation": "US jazz trumpeter, singer, and composer",
+          "id": "4476453a-d37e-4c52-b60d-07c90b6fa661",
+          "country": "US",
+          "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+        },
+        "joinphrase": ""
+      }
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1951",
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "title": "Modern Jazz Trumpets",
+    "primary-type": "Album",
+    "id": "095878f4-58ac-43f4-93ae-92a1e6588d8d"
+  },
+  "media": [
+    {
+      "track-count": 8,
+      "format": "10\" Vinyl",
+      "tracks": [
+        {
+          "length": null,
+          "id": "6b029355-f047-4a81-be88-69ca56da9d30",
+          "title": "Dynamo",
+          "position": 1,
+          "artist-credit": [
+            {
+              "name": "Dizzy Gillespie Jazzmen",
+              "joinphrase": "",
+              "artist": {
+                "sort-name": "Gillespie, Dizzy, Jazzmen",
+                "name": "Dizzy Gillespie Jazzmen",
+                "id": "e495811a-f10c-4596-8b5e-7c0f3fc6f5db",
+                "country": null,
+                "disambiguation": "",
+                "type": "Group",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+              }
+            }
+          ],
+          "number": "A1",
+          "recording": {
+            "video": false,
+            "length": null,
+            "artist-credit": [
+              {
+                "name": "Dizzy Gillespie Jazzmen",
+                "joinphrase": "",
+                "artist": {
+                  "country": null,
+                  "id": "e495811a-f10c-4596-8b5e-7c0f3fc6f5db",
+                  "disambiguation": "",
+                  "type": "Group",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "name": "Dizzy Gillespie Jazzmen",
+                  "sort-name": "Gillespie, Dizzy, Jazzmen"
+                }
+              }
+            ],
+            "first-release-date": "1951",
+            "disambiguation": "",
+            "title": "Dynamo",
+            "id": "59ea7cf4-7a1b-4703-b073-a83bf226d024"
+          }
+        },
+        {
+          "recording": {
+            "first-release-date": "1946",
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "artist": {
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "country": null,
+                  "id": "f7c9a577-a035-40e3-a8d0-696174f48c45",
+                  "type": "Group",
+                  "disambiguation": "",
+                  "name": "Tempo Jazz Men",
+                  "sort-name": "Tempo Jazz Men"
+                },
+                "name": "Tempo Jazzmen (Dizzy Gillespie Jazzmen)"
+              }
+            ],
+            "length": 167000,
+            "video": false,
+            "id": "29fd128e-6177-4bb5-bad4-3a8ed56b01e9",
+            "title": "'Round Midnight",
+            "disambiguation": "1946-02-07, mx. GRC-1005-A"
+          },
+          "number": "A2",
+          "artist-credit": [
+            {
+              "name": "Dizzy Gillespie Jazzmen",
+              "artist": {
+                "name": "Dizzy Gillespie Jazzmen",
+                "sort-name": "Gillespie, Dizzy, Jazzmen",
+                "id": "e495811a-f10c-4596-8b5e-7c0f3fc6f5db",
+                "country": null,
+                "type": "Group",
+                "disambiguation": "",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "position": 2,
+          "id": "fcbb55b8-8d2e-4ab3-8be7-084d2376152b",
+          "title": "About Midnight",
+          "length": null
+        },
+        {
+          "recording": {
+            "id": "0993a1a5-0b67-4f5c-9432-e76e5d2e7e10",
+            "title": "Diggin’ Dizzy",
+            "disambiguation": "",
+            "first-release-date": "1951",
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "artist": {
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "type": "Group",
+                  "disambiguation": "",
+                  "id": "e495811a-f10c-4596-8b5e-7c0f3fc6f5db",
+                  "country": null,
+                  "sort-name": "Gillespie, Dizzy, Jazzmen",
+                  "name": "Dizzy Gillespie Jazzmen"
+                },
+                "name": "Dizzy Gillespie Jazzmen"
+              }
+            ],
+            "length": null,
+            "video": false
+          },
+          "number": "A3",
+          "artist-credit": [
+            {
+              "name": "Dizzy Gillespie Jazzmen",
+              "joinphrase": "",
+              "artist": {
+                "sort-name": "Gillespie, Dizzy, Jazzmen",
+                "name": "Dizzy Gillespie Jazzmen",
+                "country": null,
+                "id": "e495811a-f10c-4596-8b5e-7c0f3fc6f5db",
+                "type": "Group",
+                "disambiguation": "",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b"
+              }
+            }
+          ],
+          "length": null,
+          "position": 3,
+          "id": "4dce667d-2b56-4479-82b9-ef59cbf6072b",
+          "title": "Diggin’ Dizzy"
+        },
+        {
+          "length": null,
+          "position": 4,
+          "title": "When I Grow Too Old",
+          "id": "7112eb82-7cad-450a-97d8-86f2273d8004",
+          "recording": {
+            "title": "When I Grow Too Old to Dream",
+            "id": "7dfb3663-ee30-4c05-ae91-9f2acdba29d0",
+            "disambiguation": "",
+            "artist-credit": [
+              {
+                "joinphrase": " featuring ",
+                "artist": {
+                  "id": "f7c9a577-a035-40e3-a8d0-696174f48c45",
+                  "country": null,
+                  "type": "Group",
+                  "disambiguation": "",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "name": "Tempo Jazz Men",
+                  "sort-name": "Tempo Jazz Men"
+                },
+                "name": "Tempo Jazz Men"
+              },
+              {
+                "joinphrase": " on trumpet",
+                "artist": {
+                  "disambiguation": "",
+                  "type": "Person",
+                  "country": "US",
+                  "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Gillespie, Dizzy",
+                  "name": "Dizzy Gillespie"
+                },
+                "name": "Gabriel"
+              }
+            ],
+            "first-release-date": "1951",
+            "length": 171000,
+            "video": false
+          },
+          "number": "A4",
+          "artist-credit": [
+            {
+              "name": "Dizzy Gillespie Jazzmen",
+              "joinphrase": "",
+              "artist": {
+                "id": "e495811a-f10c-4596-8b5e-7c0f3fc6f5db",
+                "country": null,
+                "disambiguation": "",
+                "type": "Group",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "sort-name": "Gillespie, Dizzy, Jazzmen",
+                "name": "Dizzy Gillespie Jazzmen"
+              }
+            }
+          ]
+        },
+        {
+          "length": null,
+          "position": 5,
+          "id": "ee18a8e2-97ec-43fd-a886-9ad6a4fbc5cb",
+          "title": "Move",
+          "number": "B1",
+          "recording": {
+            "disambiguation": "",
+            "title": "Move",
+            "id": "ef98e753-4abf-4439-bd9a-755c4891d9d6",
+            "video": false,
+            "length": null,
+            "artist-credit": [
+              {
+                "name": "Fats Navarro",
+                "joinphrase": "",
+                "artist": {
+                  "sort-name": "Navarro, Fats",
+                  "name": "Fats Navarro",
+                  "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+                  "country": "US",
+                  "disambiguation": "",
+                  "type": "Person",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+                }
+              }
+            ],
+            "first-release-date": "1951"
+          },
+          "artist-credit": [
+            {
+              "name": "Fats Navarro",
+              "artist": {
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "country": "US",
+                "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+                "type": "Person",
+                "disambiguation": "",
+                "sort-name": "Navarro, Fats",
+                "name": "Fats Navarro"
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        {
+          "title": "Confirmation",
+          "id": "60b2b6e2-2614-4dda-95a2-ad79e3937c65",
+          "position": 6,
+          "length": null,
+          "artist-credit": [
+            {
+              "name": "Dizzy Gillespie",
+              "artist": {
+                "name": "Dizzy Gillespie",
+                "sort-name": "Gillespie, Dizzy",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "type": "Person",
+                "disambiguation": "",
+                "country": "US",
+                "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "recording": {
+            "id": "76e9745a-a85e-472b-a867-abd01a59d133",
+            "title": "Confirmation (D1001-E)",
+            "disambiguation": "studio, 1946-02-06: Dial D1001-E",
+            "first-release-date": "1946",
+            "artist-credit": [
+              {
+                "joinphrase": "",
+                "artist": {
+                  "name": "Tempo Jazz Men",
+                  "sort-name": "Tempo Jazz Men",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "disambiguation": "",
+                  "type": "Group",
+                  "country": null,
+                  "id": "f7c9a577-a035-40e3-a8d0-696174f48c45"
+                },
+                "name": "Tempo Jazzmen"
+              }
+            ],
+            "length": 173000,
+            "video": false
+          },
+          "number": "B2"
+        },
+        {
+          "length": null,
+          "title": "Thermodynamics",
+          "id": "bf670210-e596-4a5b-9b16-5d2da93ff99a",
+          "position": 7,
+          "artist-credit": [
+            {
+              "artist": {
+                "sort-name": "McGhee, Howard",
+                "name": "Howard McGhee",
+                "country": "US",
+                "id": "22b66dc2-f5b5-4c03-a4ca-083321bf8b6b",
+                "type": "Person",
+                "disambiguation": "",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df"
+              },
+              "joinphrase": "",
+              "name": "Howard McGhee"
+            }
+          ],
+          "number": "B3",
+          "recording": {
+            "length": null,
+            "video": false,
+            "first-release-date": "1951",
+            "artist-credit": [
+              {
+                "name": "Howard McGhee",
+                "joinphrase": "",
+                "artist": {
+                  "name": "Howard McGhee",
+                  "sort-name": "McGhee, Howard",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "type": "Person",
+                  "disambiguation": "",
+                  "country": "US",
+                  "id": "22b66dc2-f5b5-4c03-a4ca-083321bf8b6b"
+                }
+              }
+            ],
+            "disambiguation": "",
+            "id": "2b0e3b4c-2c0f-490e-bfd3-268591f6cad4",
+            "title": "Thermodynamics"
+          }
+        },
+        {
+          "artist-credit": [
+            {
+              "artist": {
+                "type": "Person",
+                "disambiguation": "jazz trumpeter, bandleader, songwriter",
+                "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                "country": "US",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Davis, Miles",
+                "name": "Miles Davis"
+              },
+              "joinphrase": "",
+              "name": "Miles Davis"
+            }
+          ],
+          "recording": {
+            "video": false,
+            "length": null,
+            "first-release-date": "1951",
+            "artist-credit": [
+              {
+                "name": "Miles Davis",
+                "joinphrase": "",
+                "artist": {
+                  "sort-name": "Davis, Miles",
+                  "name": "Miles Davis",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+                  "country": "US",
+                  "type": "Person",
+                  "disambiguation": "jazz trumpeter, bandleader, songwriter"
+                }
+              }
+            ],
+            "disambiguation": "",
+            "id": "43c2ee24-e3bb-4bfd-921c-d96a9566ccb6",
+            "title": "Superman"
+          },
+          "number": "B4",
+          "title": "Superman",
+          "id": "6c4d0622-6f61-4bc2-8868-69b3e3bdef16",
+          "position": 8,
+          "length": null
+        }
+      ],
+      "position": 1,
+      "id": "426570ce-ce7a-3574-86f5-ea5e16295afe",
+      "format-id": "3155d2b6-52fd-3952-bda3-bd7c429d038d",
+      "title": "",
+      "track-offset": 0
+    }
+  ],
+  "barcode": "",
+  "country": "US",
+  "title": "Modern Jazz Trumpets",
+  "id": "6fbb6d1b-e6b4-4027-acf1-85045a0bd771",
+  "date": "1951",
+  "status": "Official",
+  "artist-credit": [
+    {
+      "joinphrase": ", ",
+      "artist": {
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "country": "US",
+        "id": "d2a135f4-bb6b-4fb6-a09b-115e740b7fe0",
+        "type": "Person",
+        "disambiguation": "",
+        "sort-name": "Navarro, Fats",
+        "name": "Fats Navarro"
+      },
+      "name": "Fats Navarro"
+    },
+    {
+      "name": "Dizzy Gillespie",
+      "artist": {
+        "name": "Dizzy Gillespie",
+        "sort-name": "Gillespie, Dizzy",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "id": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+        "country": "US",
+        "disambiguation": "",
+        "type": "Person"
+      },
+      "joinphrase": ", "
+    },
+    {
+      "name": "Miles Davis",
+      "artist": {
+        "sort-name": "Davis, Miles",
+        "name": "Miles Davis",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "country": "US",
+        "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+        "type": "Person",
+        "disambiguation": "jazz trumpeter, bandleader, songwriter"
+      },
+      "joinphrase": ", "
+    },
+    {
+      "joinphrase": "",
+      "artist": {
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "id": "4476453a-d37e-4c52-b60d-07c90b6fa661",
+        "country": "US",
+        "disambiguation": "US jazz trumpeter, singer, and composer",
+        "type": "Person",
+        "sort-name": "Dorham, Kenny",
+        "name": "Kenny Dorham"
+      },
+      "name": "Kenny Dorham"
+    }
+  ],
+  "label-info": [
+    {
+      "label": {
+        "type-id": "7aaa37fe-2def-3476-b359-80245850062d",
+        "label-code": 313,
+        "id": "11847c89-4b2c-4866-84c3-f72e264c0f66",
+        "type": "Original Production",
+        "disambiguation": "American jazz label",
+        "name": "Prestige",
+        "sort-name": "Prestige"
+      },
+      "catalog-number": "PRLP 113"
+    }
+  ],
+  "release-events": [
+    {
+      "area": {
+        "id": "489ce91b-6658-3307-9877-795b68554c98",
+        "disambiguation": "",
+        "type": null,
+        "type-id": null,
+        "iso-3166-1-codes": [
+          "US"
+        ],
+        "sort-name": "United States",
+        "name": "United States"
+      },
+      "date": "1951"
+    }
+  ],
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "cover-art-archive": {
+    "artwork": false,
+    "count": 0,
+    "front": false,
+    "back": false,
+    "darkened": false
+  },
+  "disambiguation": "",
+  "packaging": null,
+  "packaging-id": null,
+  "asin": null,
+  "relations": []
+}
