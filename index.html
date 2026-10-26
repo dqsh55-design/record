@@ -23,7 +23,7 @@
 @media(max-width:350px){main{padding-left:14px;padding-right:14px}#official-releases .album{grid-template-columns:76px minmax(0,1fr);gap:12px}#official-releases .cover{width:76px;height:76px}}
 @media(prefers-reduced-motion:no-preference){.loading-line{animation:loading-pulse 1.5s ease-in-out infinite alternate}@keyframes loading-pulse{to{opacity:.45}}}
 .work-editions>summary{min-height:44px;box-sizing:border-box;padding:13px 0;font-size:13px;cursor:pointer;color:#555}.work-editions{border-bottom:1px solid #e0ded9}.work-editions[open]{padding-bottom:8px}.release-work-group{min-width:0}.release-work-group>.release-work{font-size:12px;font-weight:400;color:#777;margin:18px 0 0}.work-editions .album{border-bottom:0}
-.work-verification:empty{display:none}</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます</div><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Music data by MusicBrainz · v0.71</footer></main>
+.work-verification:empty{display:none}</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます</div><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Music data by MusicBrainz · v0.72</footer></main>
 <script>
 const $=id=>document.getElementById(id), status=$('status'),results=$('results');
 let relatedCatalogAlbums=[],artistChoices=[],ytVisible=20,ytSort='name',ytAlbums=[],albums=[],filter='おすすめ',artistName='',offset=0,artistId='',busy=false,total=0;
@@ -435,6 +435,14 @@ function validReferenceDate(value){
  const date=new Date(value+'T00:00:00Z');
  return Number.isFinite(date.getTime())&&date.toISOString().slice(0,10)===value&&date.getTime()<=Date.now();
 }
+function validEditionDate(value){
+ if(typeof value!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(value))return false;
+ const date=new Date(value+'T00:00:00Z');
+ return Number.isFinite(date.getTime())&&date.toISOString().slice(0,10)===value;
+}
+function meaningfulCatalog(value){
+ return typeof value==='string'&&Boolean(value.trim())&&!['unknown','[unknown]','none','[none]','n/a','[no catalog number]','-'].includes(value.trim().toLowerCase());
+}
 function validReferenceSource(value){
  try{const url=new URL(value);return url.protocol==='https:'&&Boolean(url.hostname)&&!url.username&&!url.password}catch{return false}
 }
@@ -447,12 +455,11 @@ function assessRelease(r,references=discographyReferences){
  const group=r['release-group']||{},kind=albumKind(group);
  const credits=(r['artist-credit']||group['artist-credit']||[]).map(c=>c?.artist?.id);
  const labels=(r['label-info']||[]).map(li=>li.label?.name).filter(usableLabel);
- const numbers=(r['label-info']||[]).map(li=>li['catalog-number']).filter(Boolean);
  const exact=references.filter(ref=>ref.scope==='release'&&ref.releaseId===r.id&&ref.groupId===group.id&&
   sameArtistIds(credits,ref.artistIds)&&
   ref.sourceKind==='artist-or-label'&&validReferenceSource(ref.sourceUrl)&&validReferenceDate(ref.checkedAt)&&
-  ref.releaseDate&&ref.releaseDate===r.date&&(usableLabel(ref.label)||usableLabel(ref.publisher))&&(!ref.label||usableLabel(ref.label))&&
-  ref.catalogNumber&&(r['label-info']||[]).some(li=>li['catalog-number']===ref.catalogNumber&&(!ref.label||li.label?.name===ref.label))&&Array.isArray(ref.trackCounts)&&ref.trackCounts.length>0&&ref.trackCounts.every(n=>Number.isInteger(n)&&n>0)&&
+  validEditionDate(ref.releaseDate)&&ref.releaseDate===r.date&&(usableLabel(ref.label)||usableLabel(ref.publisher))&&(!ref.label||usableLabel(ref.label))&&
+  meaningfulCatalog(ref.catalogNumber)&&(r['label-info']||[]).some(li=>li['catalog-number']===ref.catalogNumber&&(!ref.label||li.label?.name===ref.label))&&Array.isArray(ref.trackCounts)&&ref.trackCounts.length>0&&ref.trackCounts.every(n=>Number.isInteger(n)&&n>0)&&
   JSON.stringify(ref.trackCounts)===JSON.stringify((r.media||[]).map(m=>m['track-count']))&&
   Array.isArray(ref.mediaFormats)&&ref.mediaFormats.every(f=>usableLabel(f)&&f.toLowerCase()!=='unknown')&&JSON.stringify(ref.mediaFormats)===JSON.stringify((r.media||[]).map(m=>m.format)));
  const confirmed=exact.filter(ref=>ref.official===true);
@@ -463,15 +470,15 @@ function assessRelease(r,references=discographyReferences){
  const workConflict=workFacts.some(ref=>ref.official===false||ref.kind!==kind||(ref.originalYear&&originalDate(group)&&ref.originalYear!==originalDate(group).slice(0,4)));
 
  const excluded=['Bootleg','Pseudo-Release','Promotion'].includes(r.status);
- const conflict=confirmed.length&&(exact.some(ref=>ref.official===false)||excluded||['Withdrawn','Cancelled'].includes(r.status)||confirmed.some(ref=>ref.kind!==kind));
- return {kind,visibility:conflict?'unknown':excluded?'excluded':r.status==='Official'||confirmed.length?'official':'unknown',
+ const conflict=exact.some(ref=>ref.official===false)||Boolean(confirmed.length&&(excluded||['Withdrawn','Cancelled'].includes(r.status)||confirmed.some(ref=>ref.kind!==kind)));
+ return {kind,visibility:excluded&&!confirmed.length?'excluded':conflict?'unknown':r.status==='Official'||confirmed.length?'official':'unknown',
   verification:conflict?'conflict':confirmed.length?'confirmed':'unconfirmed',
   workVerification:workConflict?'conflict':workFacts.some(ref=>ref.originalYear&&ref.originalYear===originalDate(group).slice(0,4))?'confirmed':'unconfirmed',
   workSources:workFacts.map(ref=>ref.sourceUrl),referenceYears:[...new Set(workFacts.map(ref=>ref.originalYear).filter(Boolean))],
   // Never fill original dates or original labels from a later edition.
   originalDate:originalDate(group),releaseDate:r.date||'',labels,
   edition:confirmed.some(ref=>ref.edition==='reissue')&&!conflict?'reissue':'unconfirmed',
-  publishers:confirmed.map(ref=>ref.publisher).filter(usableLabel),sources:confirmed.map(ref=>ref.sourceUrl)};
+  publishers:confirmed.map(ref=>ref.publisher).filter(usableLabel),sources:exact.filter(ref=>typeof ref.official==='boolean').map(ref=>ref.sourceUrl)};
 }
 async function loadDiscographyReferences(){
  if(!discographyReferenceTask)discographyReferenceTask=(async()=>{
