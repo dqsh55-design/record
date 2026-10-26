@@ -1,0 +1,71 @@
+{
+  "release-offset": 0,
+  "release-count": 1,
+  "releases": [
+    {
+      "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+      "asin": null,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "release-events": [
+        {
+          "area": {
+            "iso-3166-1-codes": [
+              "US"
+            ],
+            "name": "United States",
+            "sort-name": "United States",
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "type": null,
+            "disambiguation": "",
+            "type-id": null
+          },
+          "date": "1972"
+        }
+      ],
+      "packaging": "Cardboard/Paper Sleeve",
+      "cover-art-archive": {
+        "darkened": false,
+        "back": true,
+        "front": true,
+        "count": 4,
+        "artwork": true
+      },
+      "disambiguation": "",
+      "status": "Official",
+      "label-info": [
+        {
+          "label": {
+            "name": "Springboard",
+            "sort-name": "Springboard",
+            "type": "Imprint",
+            "disambiguation": "",
+            "id": "68e14892-9cf1-4ef0-a1e3-e161bab3c8ef",
+            "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+            "label-code": null
+          },
+          "catalog-number": "SPB-4039"
+        }
+      ],
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "title": "Shapes of Things",
+      "country": "US",
+      "date": "1972",
+      "id": "b14a5449-8e08-46ba-98a1-abfd205ce152",
+      "barcode": "",
+      "media": [
+        {
+          "position": 1,
+          "format": "12\" Vinyl",
+          "track-count": 9,
+          "title": "",
+          "format-id": "3e9080b0-5e6c-34ab-bd15-f526b6306a64",
+          "id": "97302020-2eb2-309e-9382-635c34a4ad4d"
+        }
+      ]
+    }
+  ]
+}

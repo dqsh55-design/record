@@ -73,6 +73,7 @@ class BrowserTests(unittest.TestCase):
     def open_site(self, width=390, fail_mb=False, fail_catalog=False, fail_release=False, release_total=3, base_path=""):
         context = self.browser.new_context(viewport={'width': width, 'height': 844}, is_mobile=width < 500, has_touch=width < 500)
         self.addCleanup(context.close)
+        context.add_init_script('window.NativeIntersectionObserver = window.IntersectionObserver; window.IntersectionObserver = undefined')
         page = context.new_page()
         errors = []
         page.on('pageerror', lambda e: errors.append(str(e)))
@@ -293,7 +294,7 @@ class BrowserTests(unittest.TestCase):
         section = page.locator('#official-releases')
         expect(section.locator('article')).to_have_count(2)
         section.get_by_role('button', name='さらに発売記録を読み込む', exact=True).click()
-        expect(section).to_contain_text('6 / 103件取得')
+        expect(section).to_contain_text('（6件）')
         expect(section.locator('article')).to_have_count(2)
         expect(section.get_by_role('link', name='YouTube Musicで探す ↗')).to_have_count(2)
 
@@ -344,7 +345,7 @@ class BrowserTests(unittest.TestCase):
         section.get_by_role('button', name='曲目を取得', exact=True).first.tap()
         expect(section).to_contain_text('1. <Song>')
         section.get_by_role('button', name='さらに発売記録を読み込む', exact=True).tap()
-        expect(section).to_contain_text('6 / 103件取得')
+        expect(section).to_contain_text('（6件）')
         for control in section.locator('button:visible, a:visible, summary:visible').all():
             self.assertGreaterEqual(control.bounding_box()['height'], 44)
         self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
@@ -366,9 +367,11 @@ class BrowserTests(unittest.TestCase):
 
     def test_legacy_pagination_and_related_bands_survive_updates(self):
         page = self.open_site(release_total=103)
-        page.route('**/ws/2/release-group?**', lambda route: route.fulfill(json={'release-groups': [{'id': GROUP, 'title': 'supported', 'primary-type': 'Album'}], 'release-group-count': 103}))
+        # Main index is complete; legacy paginator retains its independent offset.
         self.search(page)
         expect(page.locator('#related-bands')).to_be_visible()
+        page.route('**/ws/2/release-group?**', lambda route: route.fulfill(json={'release-groups': [{'id': GROUP, 'title': 'supported', 'primary-type': 'Album'}], 'release-group-count': 103}))
+        page.evaluate('total=103;render()')
         page.get_by_text('参考資料：MusicBrainzの作品一覧（配信未確認）', exact=True).click()
         more = page.get_by_role('button', name='さらに作品を読み込む', exact=True)
         expect(more).to_be_enabled()
@@ -387,7 +390,7 @@ class BrowserTests(unittest.TestCase):
         details.get_by_role('button', name='曲目を取得', exact=True).click()
         expect(details).to_contain_text('1. <Song>')
         section.get_by_role('button', name='さらに発売記録を読み込む', exact=True).click()
-        expect(section).to_contain_text('6 / 103件取得')
+        expect(section).to_contain_text('（6件）')
         expect(section.locator('details').first).to_have_attribute('open', '')
         expect(section.locator('details').first).to_contain_text('1. <Song>')
         page.route('**/release/missing-label?**', lambda route: route.fulfill(status=403, json={}))
@@ -396,6 +399,56 @@ class BrowserTests(unittest.TestCase):
         details.get_by_role('button', name='曲目を取得', exact=True).click()
         expect(details).to_contain_text('曲目を取得できませんでした：音楽データを取得できませんでした（403）')
         expect(details.get_by_role('button', name='曲目の取得を再試行')).to_be_enabled()
+
+    def test_v063_chronological_prefix_and_scroll_for_both_artists(self):
+        from urllib.parse import parse_qs
+        for name in ('Miles Davis', 'Jeff Beck'):
+            page = self.open_site(390)
+            # Enable the real browser observer only for this scroll integration test.
+            page.evaluate('()=>{window.IntersectionObserver = window.NativeIntersectionObserver}')
+            groups = [{'id': 'later-' + str(i), 'title': 'Later', 'primary-type': 'Album', 'first-release-date': '2010'} for i in range(100)]
+            groups += [{'id': 'old', 'title': 'Early', 'primary-type': 'Album', 'first-release-date': '1959'},
+                       {'id': 'unknown', 'title': 'Unknown', 'primary-type': 'Album'}]
+            calls = []
+            def api_route(route, request, calls=calls, groups=groups, name=name):
+                url = urlparse(route.request.url)
+                q = parse_qs(url.query)
+                offset = int(q.get('offset', ['0'])[0])
+                calls.append((url.path, offset, q.get('release-group', [''])[0]))
+                if url.path.endswith('/release-group'):
+                    route.fulfill(json={'release-group-count': len(groups), 'release-groups': groups[offset:offset + 100]})
+                elif url.path.endswith('/release'):
+                    group = q['release-group'][0]
+                    if group == 'old':
+                        editions = [{'id': 'old-' + str(i), 'title': name + ' early edition ' + str(i), 'status': 'Official', 'date': '2009', 'label-info': [{'label': {'name': 'Label'}}]} for i in range(105)]
+                        # Overlap at the boundary must not duplicate a row.
+                        batch = editions[:100] if offset == 0 else [editions[99]] + editions[100:]
+                        route.fulfill(json={'release-count': 106, 'releases': batch})
+                    else:
+                        route.fulfill(json={'release-count': 1, 'releases': [{'id': group, 'title': group, 'status': 'Official', 'date': '2020'}]})
+                else:
+                    route.fulfill(json={'relations': []})
+            page.route('**/ws/2/**', api_route)
+            page.evaluate("chooseArtist({id:'artist',name:" + json.dumps(name) + "})")
+            section = page.locator('#official-releases')
+            expect(section.locator('article')).to_have_count(100, timeout=15000)
+            self.assertEqual([c[1] for c in calls[:2]], [0, 100])
+            expect(section.locator('.decade').first).to_have_text('1950年代')
+            expect(section.locator('.meta').first).to_contain_text('作品の初回発売：1959')
+            expect(section.locator('.meta').first).to_contain_text('この盤の発売：2009')
+            self.assertFalse(section.locator('details').first.evaluate('(node)=>node.open'))
+            page.evaluate("window.firstEdition=document.querySelector('#official-releases article')")
+            page.locator('#chronology-more').scroll_into_view_if_needed()
+            page.wait_for_function('officialReleases.length >= 105', timeout=15000)
+            self.assertTrue(page.evaluate("firstEdition===document.querySelector('#official-releases article')"))
+            self.assertEqual(section.locator('article[data-release-id="old-99"]').count(), 1)
+            # Changing direction discards the prefix and starts at the newest known work.
+            section.get_by_role('button', name='新しい順', exact=True).click()
+            expect(section.locator('.decade').first).to_have_text('2010年代', timeout=10000)
+            self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+            # Unknown originals stay last in either direction and never borrow edition dates.
+            self.assertEqual(page.evaluate("orderedGroups([{id:'u'},{id:'k','first-release-date':'1950'}]).map(g=>g.id)"), ['k', 'u'])
+            page.close()
 
     def test_search_generated_evidence_and_track_comparison(self):
         page = self.open_site()

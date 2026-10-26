@@ -1,0 +1,130 @@
+{
+  "checked_at": "2026-10-26T01:23:03.503470+00:00",
+  "mode": "real HTTP",
+  "artists": [
+    {
+      "artist": "Miles Davis",
+      "artist_id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "index_pages": [
+        {
+          "offset": 0,
+          "count": 100,
+          "total": 637
+        },
+        {
+          "offset": 100,
+          "count": 100,
+          "total": 637
+        },
+        {
+          "offset": 200,
+          "count": 100,
+          "total": 637
+        },
+        {
+          "offset": 300,
+          "count": 100,
+          "total": 637
+        },
+        {
+          "offset": 400,
+          "count": 100,
+          "total": 637
+        },
+        {
+          "offset": 500,
+          "count": 100,
+          "total": 637
+        },
+        {
+          "offset": 600,
+          "count": 37,
+          "total": 637
+        }
+      ],
+      "edition_pages": [
+        {
+          "group": "095878f4-58ac-43f4-93ae-92a1e6588d8d",
+          "title": "Modern Jazz Trumpets",
+          "original_date": "1951",
+          "offset": 0,
+          "count": 2,
+          "total": 2,
+          "official": 2
+        },
+        {
+          "group": "a0e16ca4-9ed0-4f64-8b82-d62814708611",
+          "title": "Miles '56",
+          "original_date": "2026-06-19",
+          "offset": 0,
+          "count": 2,
+          "total": 2,
+          "official": 2
+        },
+        {
+          "group": "8e8a594f-2175-38c7-a871-abb68ec363e7",
+          "title": "Kind of Blue",
+          "original_date": "1959-08-17",
+          "offset": 0,
+          "count": 100,
+          "total": 137,
+          "official": 94
+        },
+        {
+          "group": "8e8a594f-2175-38c7-a871-abb68ec363e7",
+          "title": "Kind of Blue",
+          "original_date": "1959-08-17",
+          "offset": 100,
+          "count": 37,
+          "total": 137,
+          "official": 33
+        }
+      ],
+      "unique_groups": 637,
+      "unknown_year": 47
+    },
+    {
+      "artist": "Jeff Beck",
+      "artist_id": "14a4bc78-1c2d-4ca7-8d1b-9b58076a2a17",
+      "index_pages": [
+        {
+          "offset": 0,
+          "count": 74,
+          "total": 74
+        }
+      ],
+      "edition_pages": [
+        {
+          "group": "592ef280-d337-4a2f-b307-b383c36b05bc",
+          "title": "Shapes of Things",
+          "original_date": "1972",
+          "offset": 0,
+          "count": 1,
+          "total": 1,
+          "official": 1
+        },
+        {
+          "group": "ead350fc-db0e-452f-8c10-3657644306ce",
+          "title": "The Best of Jeff Beck: The Epic Years 1971–2003",
+          "original_date": "2025-02-05",
+          "offset": 0,
+          "count": 1,
+          "total": 1,
+          "official": 1
+        },
+        {
+          "group": "08f0ad54-dc95-38a9-bc88-503f0086b4f9",
+          "title": "Blow by Blow",
+          "original_date": "1975-03",
+          "offset": 0,
+          "count": 26,
+          "total": 26,
+          "official": 26
+        }
+      ],
+      "unique_groups": 74,
+      "unknown_year": 11
+    }
+  ],
+  "youtube_playback_tested": false
+}

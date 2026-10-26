@@ -1,0 +1,980 @@
+[
+  {
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "title": "Shapes of Things",
+    "primary-type": "Album",
+    "id": "592ef280-d337-4a2f-b307-b383c36b05bc",
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1972"
+  },
+  {
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "title": "Blow by Blow",
+    "primary-type": "Album",
+    "id": "08f0ad54-dc95-38a9-bc88-503f0086b4f9",
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1975-03"
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1976-05",
+    "disambiguation": "",
+    "title": "Wired",
+    "id": "1caefbb6-c4ac-3954-85ba-b512fc2da959",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "secondary-type-ids": []
+  },
+  {
+    "first-release-date": "1977-03",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "id": "01e94aea-fd9f-36b3-9965-73904e97cd73",
+    "title": "Jeff Beck With the Jan Hammer Group Live",
+    "disambiguation": "",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ]
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1978",
+    "disambiguation": "",
+    "title": "Reggae ’n’ Roll",
+    "id": "1b6bb99e-d50d-42c0-990d-b882ba187ed6",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "secondary-type-ids": []
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1980-07",
+    "disambiguation": "",
+    "title": "There and Back",
+    "id": "49831df3-da9d-3dab-807e-fd2a4f6ed03e",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "secondary-type-ids": []
+  },
+  {
+    "first-release-date": "1982",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "id": "00d35a65-c344-41ba-90e6-a51efda96d07",
+    "title": "Rock Giants",
+    "disambiguation": "",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ]
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1984",
+    "disambiguation": "",
+    "title": "The History of Rock, Volume Twenty Five",
+    "primary-type": "Album",
+    "id": "2f017160-2bc6-4b25-a2c0-eacf219ffe52",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ]
+  },
+  {
+    "first-release-date": "1984",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "id": "d7ac5e2d-c946-49a5-9bb2-fe467b12d13b",
+    "title": "White Boy Blues – Classic Guitars of Clapton, Beck & Page",
+    "disambiguation": "",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ]
+  },
+  {
+    "first-release-date": "1985-07",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": "",
+    "primary-type": "Album",
+    "id": "78eac630-0c27-3f22-8c01-ee5fe689fb46",
+    "title": "Flash",
+    "secondary-type-ids": [],
+    "secondary-types": []
+  },
+  {
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "title": "The Fire Meets the Fury",
+    "primary-type": "Album",
+    "id": "b94ff60e-b4f6-35c8-9057-e9e7d8bd229c",
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1989"
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1989-10",
+    "title": "Jeff Beck’s Guitar Shop",
+    "id": "63860017-2a95-35f1-9d9e-9e43bd832756",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-types": [],
+    "secondary-type-ids": []
+  },
+  {
+    "first-release-date": "1990",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "id": "a1ebacbf-dcd9-3a64-842f-e9c4daaf3a25",
+    "title": "Shapes of Things"
+  },
+  {
+    "first-release-date": "1991",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ],
+    "primary-type": "Album",
+    "id": "15e12492-7d0d-32b5-a170-c9ae48bb76a4",
+    "title": "Beckology: The Sampler",
+    "disambiguation": ""
+  },
+  {
+    "first-release-date": "1991",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ],
+    "id": "b920b770-4da9-379d-8af9-c7ddf9fc7025",
+    "primary-type": "Album",
+    "title": "Anthology",
+    "disambiguation": ""
+  },
+  {
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "title": "Beckology",
+    "id": "e1f7f19d-ac4a-369f-932c-969d3bc4c13f",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1991-11-19"
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1992",
+    "title": "Frankie’s House",
+    "id": "4605fae2-0097-371b-8875-ebf302ef000a",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-types": [
+      "Soundtrack"
+    ],
+    "secondary-type-ids": [
+      "22a628ad-c082-3c4f-b1b6-d41665107b88"
+    ]
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1993",
+    "title": "The Jeff Beck Group UPP",
+    "id": "85dc2820-21d6-41c2-a614-de0a2f488058",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ]
+  },
+  {
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "title": "Crazy Legs",
+    "primary-type": "Album",
+    "id": "a5fd84b4-e55f-363c-a88e-185788e3343d",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1993-06-08"
+  },
+  {
+    "first-release-date": "1994-03-23",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "id": "f9c7258d-5020-418b-9403-368c84af5362",
+    "title": "The Best of Jeff Beck"
+  },
+  {
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "title": "Stroll On",
+    "id": "f360c487-de04-4ffa-9dec-e417b3a16a76",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1994-06-15"
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1994-10-11",
+    "disambiguation": "",
+    "title": "Shapes of Things",
+    "primary-type": "Album",
+    "id": "6840f49e-1395-43ee-9374-32f4b70e05af",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ]
+  },
+  {
+    "first-release-date": "1995-08-15",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ],
+    "primary-type": "Album",
+    "id": "22e47996-7935-3ae3-8f09-e4744a8153e6",
+    "title": "Best of Beck",
+    "disambiguation": ""
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1996",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "title": "Freeway, Live in Tokyo 1980",
+    "id": "719e499f-4815-4bba-9a3d-119165b06dc7",
+    "primary-type": "Album",
+    "disambiguation": ""
+  },
+  {
+    "first-release-date": "1997",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": "",
+    "id": "ab544110-a104-4615-a1cc-e63a4bc1f164",
+    "primary-type": "Album",
+    "title": "Play With Friends",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ]
+  },
+  {
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": "",
+    "title": "Guitar Legend",
+    "primary-type": "Album",
+    "id": "42fbc601-adb7-467f-9e97-c7664bc6c400",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1998"
+  },
+  {
+    "first-release-date": "1998",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ],
+    "primary-type": "Album",
+    "id": "6707e3e4-03a3-36c3-aeef-7274937271dc",
+    "title": "Jeff Beck & Rod Stewart",
+    "disambiguation": ""
+  },
+  {
+    "first-release-date": "1998-05-26",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "id": "679f0f63-9bfb-4dd8-943d-e34c97897d40",
+    "title": "Shapes of Things",
+    "disambiguation": "",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ]
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "1999-03-16",
+    "title": "Who Else!",
+    "primary-type": "Album",
+    "id": "f0c65fbd-bb6c-3fe6-8d42-e764276ffc96",
+    "disambiguation": "",
+    "secondary-types": [],
+    "secondary-type-ids": []
+  },
+  {
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "id": "8bb23bd6-ebbb-3cae-8ba7-9246d3eb6b2f",
+    "primary-type": "Album",
+    "title": "You Had It Coming",
+    "disambiguation": "",
+    "first-release-date": "2000-11-15",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ],
+    "disambiguation": "",
+    "id": "f8767a93-35ef-301c-96a4-c5815db32198",
+    "primary-type": "Album",
+    "title": "L.A. Breakdown",
+    "first-release-date": "2001",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "id": "a74e2d82-9ce3-48ab-9eb7-030b9ecc95b1",
+    "primary-type": "Album",
+    "title": "2001‐02‐23: Universal Amphitheatre, CA, USA",
+    "disambiguation": "",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "first-release-date": "2001-02-23",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "title": "Shapes of Things: 60’s Groups and Sessions",
+    "id": "656f05b3-654f-3ed3-963a-8f5bc551986b",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2003"
+  },
+  {
+    "first-release-date": "2003-08-06",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "id": "991384f7-8ee0-3868-a69d-695ed05d1dd6",
+    "title": "Jeff",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "secondary-types": []
+  },
+  {
+    "title": "Live at B.B. King Blues Club and Grill September 10, 2003",
+    "primary-type": "Album",
+    "id": "8ff34802-47b1-3369-9e8f-09034bcc8d03",
+    "disambiguation": "",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2005-06-29"
+  },
+  {
+    "disambiguation": "",
+    "title": "Official Bootleg USA ’06",
+    "id": "0c8e1b93-fb6e-3045-ab40-8ce3c78dd850",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2007-05-23"
+  },
+  {
+    "first-release-date": "2008",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "id": "fd443633-b972-4c8d-81e4-41151312cfc1",
+    "title": "Exhaust Note"
+  },
+  {
+    "first-release-date": "2008-10-13",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ],
+    "primary-type": "Album",
+    "id": "31231274-27ce-4b5f-96b9-5a0ca49a2552",
+    "title": "Original Album Classics",
+    "disambiguation": "Rough and Ready / Jeff Beck Group / Blow by Blow / Wired / Jeff Beck with Jan Hammer Group Live"
+  },
+  {
+    "first-release-date": "2008-11-10",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "disambiguation": "",
+    "id": "8e352925-2809-3ea7-87a8-988a8cbbb35e",
+    "primary-type": "Album",
+    "title": "Performing This Week… Live at Ronnie Scott’s"
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2009",
+    "disambiguation": "",
+    "title": "The Collection",
+    "id": "233c5ba4-f02a-4b5d-842f-6c902e109d64",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ]
+  },
+  {
+    "secondary-types": [
+      "Compilation",
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "title": "Boogie Woody’s Birthday",
+    "id": "28aa7e9d-5256-45ac-a022-b17905f82d21",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2009"
+  },
+  {
+    "title": "Live at IndigO2, London",
+    "id": "7b94edcd-0423-4faa-9c7b-6c4926822f39",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2009-09-21"
+  },
+  {
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "id": "cccb63e2-470c-496b-b50d-9e9bc0824c99",
+    "title": "Rock ’n’ Roll Party: Honoring Les Paul",
+    "first-release-date": "2010",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2010-03-24",
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "title": "Emotion & Commotion",
+    "primary-type": "Album",
+    "id": "a5fec79a-eb30-442c-a349-55fa19930e3f"
+  },
+  {
+    "title": "Live and Exclusive From the Grammy Museum",
+    "id": "59ba91a5-560d-49ef-a204-1fcda75cdec3",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2010-10-25"
+  },
+  {
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "id": "13f27ba8-ce2f-4614-bbd2-59fb1db168e6",
+    "primary-type": "Album",
+    "title": "Live in Tokyo 1999",
+    "disambiguation": "",
+    "first-release-date": "2011",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2011-01-24",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": "There and Back / Flash / Jeff Beck's Guitar Shop / Who Else! / You Had It Coming",
+    "title": "Original Album Classics",
+    "id": "d7aefcbf-3050-4982-9bb2-b708ed86a175",
+    "primary-type": "Album"
+  },
+  {
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "disambiguation": "",
+    "title": "Live in Japan 2006",
+    "primary-type": "Album",
+    "id": "701b8269-ab4d-4dc8-af43-e3c8a3119713",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2013"
+  },
+  {
+    "first-release-date": "2013",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "id": "90d1f6a9-f4ee-4d6d-af9f-14df23a30e39",
+    "title": "Live"
+  },
+  {
+    "id": "e5d38cb2-f627-4429-b1f5-e7beb0d95016",
+    "primary-type": "Album",
+    "title": "Live in Tokyo",
+    "disambiguation": "",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "first-release-date": "2014",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2015-05-21",
+    "disambiguation": "",
+    "title": "2015‐05‐21: Chicago Theatre, Chicago, IL, USA",
+    "primary-type": "Album",
+    "id": "427b7ef0-d365-49d6-b181-e96507f05c6b",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ]
+  },
+  {
+    "first-release-date": "2015-06-02",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "primary-type": "Album",
+    "id": "e25d47d3-6fff-462c-82ed-42ae321fe5d8",
+    "title": "Live+",
+    "disambiguation": "",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ]
+  },
+  {
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "disambiguation": "",
+    "title": "Blue Wind",
+    "id": "57cb792c-d4cf-44ae-bb2e-7191070e2388",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2016"
+  },
+  {
+    "disambiguation": "",
+    "title": "Loud Hailer",
+    "primary-type": "Album",
+    "id": "1cc99424-7508-419e-a118-88172e5fa60c",
+    "secondary-types": [],
+    "secondary-type-ids": [],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2016-07-15"
+  },
+  {
+    "disambiguation": "",
+    "title": "Live at the Hollywood Bowl",
+    "id": "5bffce52-b2b4-4db9-95a9-60690f9284e8",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2017-10-06"
+  },
+  {
+    "first-release-date": "2018-05-18",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": "",
+    "primary-type": "Album",
+    "id": "443cefe9-0b77-45f8-99e9-91bf4eb5480f",
+    "title": "Best Of: The Early Years",
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "secondary-types": [
+      "Compilation"
+    ]
+  },
+  {
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": "",
+    "title": "Jeff’s Blues",
+    "id": "06a0d950-72bb-4f86-b79f-64c4c65b7233",
+    "primary-type": "Album",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2019-01-21"
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2021-09-15",
+    "title": "Even Odds Jeff Beck Recordings (live)",
+    "primary-type": "Album",
+    "id": "99335238-6f66-4523-82b4-988320aa1fc0",
+    "disambiguation": "",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ]
+  },
+  {
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "id": "7b52e70a-2436-4c16-bb72-58f0f7109e4b",
+    "primary-type": "Album",
+    "title": "18",
+    "disambiguation": "",
+    "first-release-date": "2022-07-15",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "disambiguation": "",
+    "title": "2022‐11‐12: Grand Sierra Theatre, Reno, NV, USA",
+    "primary-type": "Album",
+    "id": "33001da9-a797-4ead-b21d-8e79289aba7a",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2022-11-12"
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2024",
+    "title": "Night of the Guitar Kings",
+    "id": "a7c5a359-09ff-46bd-9cd2-51fd45430de0",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ]
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2024-09-12",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "title": "Essential Classics, Vol. 446: Jeff Beck",
+    "primary-type": "Album",
+    "id": "49b0ead6-347c-4db1-b87c-7661d6bbd743",
+    "disambiguation": ""
+  },
+  {
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "disambiguation": "",
+    "title": "The Best of Jeff Beck: The Epic Years 1971–2003",
+    "primary-type": "Album",
+    "id": "ead350fc-db0e-452f-8c10-3657644306ce",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "2025-02-05"
+  },
+  {
+    "first-release-date": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "disambiguation": "",
+    "id": "04ab01f9-7c86-390d-ab13-4f9cd7ea3e1d",
+    "primary-type": "Album",
+    "title": "Live in Japan"
+  },
+  {
+    "first-release-date": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "disambiguation": "",
+    "primary-type": "Album",
+    "id": "07ba9075-9075-3c8e-8606-85a0d0cea661",
+    "title": "2006‐09‐18: Opera House, Detroit, MI, USA"
+  },
+  {
+    "first-release-date": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "disambiguation": "",
+    "primary-type": "Album",
+    "id": "15180dd9-b734-4bd3-9dd8-9fe44ac3da6a",
+    "title": "2009‐02‐22: Second Night in Saitama: Saitama Super Arena, Saitama, Japan",
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ]
+  },
+  {
+    "disambiguation": "",
+    "title": "Ohne Filter 1991",
+    "id": "35f517ac-b54a-3d37-9083-caf4db6c7d1e",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": ""
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "title": "2009-02-22: Saitama Super Arena, Omiya, Saitama, Japan",
+    "primary-type": "Album",
+    "id": "7d26ad00-ad2d-4f78-9fc3-df1a958c21f4",
+    "disambiguation": ""
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "",
+    "disambiguation": "",
+    "title": "Assorted Boogies: Live in Rio 1988",
+    "primary-type": "Album",
+    "id": "8f478649-4d1a-3d5a-baf6-515a81f57c34",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ]
+  },
+  {
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": "",
+    "disambiguation": "",
+    "title": "The Steakhouse Sessions",
+    "id": "984e0ea7-7dc5-4fb0-988b-52fc1db75e07",
+    "primary-type": "Album",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ]
+  },
+  {
+    "id": "9bb05075-92a6-492e-8b95-1023bb199766",
+    "primary-type": "Album",
+    "title": "Final BBC on the Air",
+    "disambiguation": "",
+    "secondary-type-ids": [],
+    "secondary-types": [],
+    "first-release-date": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "title": "3 Classic Albums for 1 Low Price!",
+    "id": "b1a37aab-a0d9-4db5-8abe-531b5ba20042",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-types": [
+      "Compilation"
+    ],
+    "secondary-type-ids": [
+      "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": ""
+  },
+  {
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "secondary-types": [
+      "Live"
+    ],
+    "primary-type": "Album",
+    "id": "c1da64a3-4b47-4428-a01c-1897873df48b",
+    "title": "1983‐12‐02: Ronnie Lane’s Appeal for ARMS, Cow Palace, San Francisco, CA, USA",
+    "disambiguation": "",
+    "first-release-date": "",
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+  },
+  {
+    "title": "Two Blue Birds Fly",
+    "id": "f199410d-15dd-3a4f-ad5e-a82cc86363c3",
+    "primary-type": "Album",
+    "disambiguation": "",
+    "secondary-types": [
+      "Live"
+    ],
+    "secondary-type-ids": [
+      "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+    ],
+    "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+    "first-release-date": ""
+  }
+]

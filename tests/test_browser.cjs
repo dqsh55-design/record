@@ -125,12 +125,60 @@ console.log('v0.61: release ID deduplication, edition binding, stale evidence an
  context.originalApi=run('api');context.pending=[];
  run("api=()=>new Promise(resolve=>pending.push(resolve));artistId=id");
  const older=run('loadOfficialReleases(true)'),newer=run('loadOfficialReleases(true)');
- context.pending[1]({releases:[{id:'new'}],'release-count':1});await newer;
- context.pending[0]({releases:[{id:'stale'}],'release-count':1});await older;
+ context.pending[1]({'release-groups':[{id:'group','primary-type':'Album','first-release-date':'1950'}],'release-group-count':1});await new Promise(resolve=>setImmediate(resolve));context.pending[2]({releases:[{id:'new'}],'release-count':1});await newer;
+ context.pending[0]({'release-groups':[{id:'stale'}],'release-group-count':1});await older;
  assert.equal(run('officialReleases[0].id'),'new');
  assert.equal(run('officialOffset'),1);
  run('api=originalApi');
  console.log('Overlapping resets cannot append stale releases or alter pagination');
+ context.paths=[];context.failPage=true;
+ run(`chronology=null;officialReleases=[];officialOffset=0;
+ api=async path=>{
+  paths.push(path);
+  if(path.startsWith('release-group?'))return {'release-group-count':2,'release-groups':[
+   {id:'later','primary-type':'Album','first-release-date':'2000'},
+   {id:'early','primary-type':'Album','first-release-date':'1959'}]};
+  const q=new URL('https://example.test/'+path).searchParams;
+  if(q.get('offset')==='100'&&failPage)throw Error('offline');
+  return {'release-count':101,releases:q.get('offset')==='0'?Array.from({length:100},(_,i)=>({id:'r'+i,status:'Official',date:'2020'})):[{id:'r99'},{id:'last'}]};
+ }`);
+ await run('loadOfficialReleases(true)');
+ assert.equal(run("officialReleases[0]['release-group']['first-release-date']"),'1959');
+ assert.equal(run('chronology.releaseOffset'),100);
+ await run('loadOfficialReleases()');
+ assert.equal(run('officialError'),'offline');
+ assert.equal(run('officialReleases.length'),100);
+ assert.equal(run('chronology.releaseOffset'),100);
+ run('failPage=false');await run('loadOfficialReleases()');
+ assert.equal(run('officialReleases.length'),101);
+ assert.equal(run('chronology.cursor'),1);
+ assert.equal(run("paths.filter(p=>p.includes('offset=100')).length"),2);
+ run("chronologyOrder='desc'");
+ assert.equal(run("orderedGroups([{id:'unknown'},{id:'old','first-release-date':'1950'},{id:'new','first-release-date':'2000'}]).map(g=>g.id).join(',')"),'new,old,unknown');
+ assert.equal(run("originalDate({'first-release-date':'invalid'})"),'');
+ console.log('v0.63: chronological prefix, original/edition dates, duplicate pages, error resume and descending unknown tail passed');
+ context.indexFail=true;context.indexCalls=[];
+ run(`api=async path=>{
+  indexCalls.push(path);
+  if(path.startsWith('release-group?')){
+   const offset=new URL('https://example.test/'+path).searchParams.get('offset');
+   if(offset==='0')return {'release-group-count':2,'release-groups':[{id:'new','primary-type':'Album','first-release-date':'2000'}]};
+   if(indexFail)throw Error('index offline');
+   return {'release-group-count':2,'release-groups':[{id:'old','primary-type':'Album','first-release-date':'1950'}]};
+  }
+  return {'release-count':1,releases:[{id:'old-edition',status:'Official',date:'2024'}]};
+ }`);
+ await run('loadOfficialReleases(true)');
+ assert.equal(run('officialReleases.length'),0);
+ assert.equal(run('chronology.indexOffset'),1);
+ assert.equal(run('officialError'),'index offline');
+ run('indexFail=false');await run('loadOfficialReleases()');
+ assert.equal(run("officialReleases[0]['release-group'].id"),'old');
+ assert.equal(run("indexCalls.filter(p=>p.startsWith('release-group?')&&p.includes('offset=0')).length"),1);
+ console.log('v0.63: incomplete index publishes no misleading prefix and resumes at failed page');
+
+ run('api=originalApi');
+
  context.AbortController=AbortController;
  context.setTimeout=fn=>setTimeout(fn,1);
  context.fetch=async(url,{signal})=>({ok:true,status:200,json:()=>new Promise((resolve,reject)=>signal.addEventListener('abort',()=>reject(Object.assign(new Error('aborted'),{name:'AbortError'}))))});
