@@ -469,6 +469,7 @@ class BrowserTests(unittest.TestCase):
             self.assertFalse(section.locator('details').first.evaluate('(node)=>node.open'))
             page.evaluate("window.firstEdition=document.querySelector('#official-releases article')")
             page.locator('#chronology-more').scroll_into_view_if_needed()
+            page.mouse.wheel(0, 300)
             page.wait_for_function('officialReleases.length >= 105', timeout=15000)
             self.assertTrue(page.evaluate("firstEdition===document.querySelector('#official-releases article')"))
             self.assertEqual(section.locator('article[data-release-id="old-99"]').count(), 1)
@@ -961,7 +962,7 @@ class BrowserTests(unittest.TestCase):
                 route.fulfill(json={'release-group-count': 1, 'release-groups': groups})
             elif url.path.endswith('/release'):
                 offset = int(q.get('offset', ['0'])[0])
-                route.fulfill(json={'release-count': 200, 'releases': [{
+                route.fulfill(json={'release-count': 300, 'releases': [{
                     'id': 'edition-'+str(offset+i), 'title': 'Small Work', 'status': 'Official',
                     'label-info': [{'label': {'name': 'Label'}}]} for i in range(100)]})
             else:
@@ -976,6 +977,7 @@ class BrowserTests(unittest.TestCase):
         page.wait_for_timeout(200)  # Give native observer/layout callbacks time to expose a loop.
         self.assertEqual(len([p for p,q in requests if p.endswith('/release')]), 1)
         page.locator('#chronology-more').scroll_into_view_if_needed()
+        page.mouse.wheel(0, 300)
         expect(section.locator('article')).to_have_count(200)
         page.evaluate('render(true);render(true)')
         page.wait_for_timeout(200)
