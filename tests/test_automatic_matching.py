@@ -10,9 +10,9 @@ from verify_catalog import refresh_file
 
 class AutomaticTests(unittest.TestCase):
     def setUp(self):
-        self.detail = {'title': 'Album', 'artists': [{'name': 'Artist'}], 'label': 'Label',
+        self.detail = {'title': 'Album', 'year': '2001', 'artists': [{'name': 'Artist'}], 'label': 'Label',
                        'trackCount': 2, 'tracks': [{'title': 'One'}, {'title': 'Two'}]}
-        self.release = {'id': 'edition', 'title': 'Album', 'status': 'Official',
+        self.release = {'id': 'edition', 'date': '2001-05-01', 'title': 'Album', 'status': 'Official',
                         'artist-credit': [{'artist': {'name': 'Artist'}}],
                         'label-info': [{'label': {'name': 'Label'}}], 'medium-count': 1,
                         'media': [{'position': 1, 'track-count': 2, 'tracks': [
@@ -30,6 +30,22 @@ class AutomaticTests(unittest.TestCase):
         self.assertEqual(self.check()['status'], 'supported')
         self.release['label-info'][0]['label']['name'] = 'Other'
         self.assertEqual(self.check()['status'], 'different')
+
+    def test_year_missing_or_conflicting_never_supports_direct_album(self):
+        self.assertEqual(self.check()['checks']['year'], 'match')
+        self.detail['year'] = '2002'
+        self.assertEqual(self.check()['status'], 'different')
+        self.detail.pop('year')
+        self.assertEqual(self.check()['status'], 'insufficient')
+        self.detail['year'] = '2001'
+        self.release.pop('date')
+        self.assertEqual(self.check()['status'], 'insufficient')
+
+    def test_playlist_and_video_ids_never_access_album_api(self):
+        for id in ('OLAK5uy_playlist', 'PLplaylist', 'abcdefghijk', 'MPREb_'):
+            self.music.reset_mock()
+            self.assertEqual(verify_album({'id': id, 'title': 'Album'}, self.music, self.mb)['status'], 'insufficient')
+            self.music.get_album.assert_not_called()
 
     def test_missing_label_description_never_infers_publisher(self):
         self.detail.pop('label')

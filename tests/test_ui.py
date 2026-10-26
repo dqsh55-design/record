@@ -17,16 +17,17 @@ from playwright.sync_api import sync_playwright, expect
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from verify_catalog import refresh_file
+from automatic_matching import verify_album
 
 GROUP = '11111111-1111-1111-1111-111111111111'
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def generated_catalog():
-    detail = {'title': 'Album', 'artists': [{'name': 'Artist'}], 'label': 'Label',
+    detail = {'title': 'Album', 'year': '2001', 'artists': [{'name': 'Artist'}], 'label': 'Label',
               'publisher': 'Publisher', 'description': 'Long description: ' + 'x' * 500,
               'trackCount': 2, 'tracks': [{'title': 'One'}, {'title': 'Two'}]}
-    release = {'id': GROUP, 'title': 'Album', 'status': 'Official',
+    release = {'id': GROUP, 'date': '2001', 'title': 'Album', 'status': 'Official',
                'artist-credit': [{'artist': {'name': 'Artist'}}],
                'label-info': [{'label': {'name': 'Label'}}], 'medium-count': 1,
                'media': [{'position': 1, 'track-count': 2, 'tracks': [
@@ -145,15 +146,89 @@ class BrowserTests(unittest.TestCase):
     def test_v061_automatic_link_requires_exact_release_evidence(self):
         page = self.open_site()
         page.route('**/ws/2/release?**', lambda route: route.fulfill(json={'release-count': 2, 'releases': [
-            {'id': id, 'title': 'Album', 'status': 'Official', 'release-group': {'primary-type': 'Album'}} for id in (GROUP, 'different-edition')]}))
+            {'id': id, 'title': 'Album', 'date': '2001', 'status': 'Official', 'release-group': {'primary-type': 'Album'}} for id in (GROUP, 'different-edition')]}))
         self.search(page)
         section = page.locator('#official-releases')
-        expect(section.get_by_role('link', name='根拠のあるアルバムを直接開く')).to_have_count(1)
+        expect(section.get_by_role('link', name='YouTube Musicで聴く')).to_have_count(1)
         expect(section.get_by_role('link', name='YouTube Musicで探す ↗')).to_have_count(1)
         section.get_by_text('収録曲・曲順・リンクを確認', exact=True).first.click()
         expect(section).to_contain_text('一致した曲目：One / Two')
         page.evaluate("ytAlbums.forEach(a=>{if(a.automatic_verification)a.automatic_verification.checked_at='2000-01-01'});render()")
-        expect(section.get_by_role('link', name='根拠のあるアルバムを直接開く')).to_have_count(0)
+        expect(section.get_by_role('link', name='YouTube Musicで聴く')).to_have_count(0)
+
+    def test_v062_jeff_and_miles_real_editions_with_mock_youtube(self):
+        # MB details are captured from live requests; YouTube metadata is synthetic.
+        # This proves matching/rendering and does not establish a real streaming URL.
+        for name in ('Jeff Beck', 'Miles Davis'):
+            with self.subTest(artist=name):
+                release = json.loads((ROOT / 'docs/v0.62' / (name.replace(' ', '-') + '-edition.json')).read_text())
+                tracks = [t for m in sorted(release['media'], key=lambda m: m['position']) for t in sorted(m['tracks'], key=lambda t: t['position'])]
+                detail = {'title': release['title'], 'year': release['date'][:4], 'trackCount': len(tracks),
+                          'artists': [{'name': a.get('name') or a['artist']['name']} for a in release['artist-credit'] if isinstance(a, dict)],
+                          'tracks': [{'title': t['title']} for t in tracks], 'label': release['label-info'][0]['label']['name']}
+                album = {'id': 'MPREb_mock' + name.replace(' ', ''), 'title': release['title'], 'artist_check': 'matched'}
+                album['url'] = 'https://music.youtube.com/browse/' + album['id']
+                mb = Mock()
+                mb.get.side_effect = lambda path, release=release, **kw: {'releases': [{'id': release['id']}], 'count': 1} if path == 'release/' else release
+                album['automatic_verification'] = verify_album(album, Mock(get_album=lambda id: detail), mb)
+                self.assertEqual(album['automatic_verification']['status'], 'supported')
+                page = self.open_site(390)
+                page.route('**/ws/2/artist?**', lambda route, request, name=name: route.fulfill(json={'artists': [{'id': GROUP, 'name': name, 'type': 'Person'}]}))
+                page.route('**/ws/2/release?**', lambda route, request, release=release: route.fulfill(json={'releases': [release], 'release-count': 1}))
+                page.route('**/ws/2/release/*?**', lambda route, request, release=release: route.fulfill(json=release))
+                page.route('**/data/ytmusic-albums.json', lambda route, request, name=name, album=album: route.fulfill(json={name: [album]}))
+                page.reload()
+                page.get_by_role('textbox', name='アーティスト名').fill(name)
+                page.get_by_role('button', name='検索', exact=True).click()
+                page.get_by_role('button', name='この名義の作品を見る →').click()
+                section = page.locator('#official-releases')
+                expect(section.get_by_role('link', name='YouTube Musicで聴く')).to_have_attribute('href', album['url'])
+                expect(section.locator('.album-label')).to_have_text(detail['label'])
+                expect(section.locator('.album-title')).to_have_text(release['title'])
+                page.wait_for_function('offset > 0 && !busy && !officialLoading')
+                expect(section.locator('.edition-identity')).not_to_be_visible()
+                output = os.environ.get('RECORD_SCREENSHOT_DIR')
+                if output:
+                    Path(output).mkdir(parents=True, exist_ok=True)
+                    page.screenshot(path=str(Path(output) / (name.replace(' ', '-') + '-390.png')), full_page=True)
+                section.get_by_text('収録曲・曲順・リンクを確認', exact=True).click()
+                section.get_by_role('button', name='曲目を取得', exact=True).click()
+                expect(section.locator('.edition-tracks')).to_contain_text(tracks[0]['title'])
+                expect(section.locator('.edition-tracks')).to_contain_text(tracks[-1]['title'])
+                page.evaluate("ytAlbums[0].url='https://music.youtube.com/playlist?list=OLAK5uy_mock';render()")
+                expect(section.get_by_role('link', name='YouTube Musicで聴く')).to_have_count(0)
+                expect(section.get_by_role('link', name='YouTube Musicで探す ↗')).to_be_visible()
+
+    def test_v062_card_provenance_is_in_details_and_cover_is_larger(self):
+        for width in (320, 375, 390, 430):
+            page = self.open_site(width)
+            self.search(page)
+            card = page.locator('#official-releases article').first
+            expect(card.locator('.album-title')).to_be_visible()
+            expect(card.locator('.album-label')).to_have_text('Epic')
+            expect(card.locator('.meta')).to_contain_text('1975')
+            expect(card.locator('.edition-identity')).not_to_be_visible()
+            expect(card.locator('.link-state')).to_have_text('配信状況は未確認')
+            self.assertGreaterEqual(card.locator('.cover').bounding_box()['width'], 84)
+            card.get_by_text('収録曲・曲順・リンクを確認', exact=True).tap()
+            expect(card.locator('.edition-identity')).to_be_visible()
+            expect(card.get_by_role('link', name='発売記録を見る')).to_be_visible()
+            self.assertTrue(page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+
+    def test_v062_old_playlist_backup_is_preserved_without_promotion(self):
+        page = self.open_site(fail_catalog=True)
+        page.route('**/ws/2/release?**', lambda route: route.fulfill(json={'release-count': 1, 'releases': [
+            {'id': GROUP, 'title': 'Edition', 'status': 'Official', 'release-group': {'primary-type': 'Album'}}]}))
+        self.search(page)
+        section = page.locator('#official-releases')
+        backup = {'format': 'RECORD-verification-v1', 'records': {}, 'editionLinks': {GROUP: {'url': 'https://music.youtube.com/playlist?list=OLAK5uy_legacy', 'savedAt': '2026-01-01'}}}
+        with page.expect_event('dialog') as dialog:
+            section.get_by_label('保存記録を復元').set_input_files({'name': 'old.json', 'mimeType': 'application/json', 'buffer': json.dumps(backup).encode()})
+        dialog.value.accept()
+        expect(section.get_by_role('link', name='YouTube Musicで聴く')).to_have_count(0)
+        expect(section.get_by_role('link', name='YouTube Musicで探す ↗')).to_be_visible()
+        section.get_by_text('収録曲・曲順・リンクを確認', exact=True).click()
+        expect(section.get_by_role('link', name='保存したリンクを開く（利用者登録・未照合）')).to_have_attribute('href', backup['editionLinks'][GROUP]['url'])
 
     def test_v061_cover_success_failure_and_mobile_layout(self):
         import base64
@@ -187,7 +262,7 @@ class BrowserTests(unittest.TestCase):
         expect(section).to_contain_text('有効なYouTube MusicのアルバムURL')
         field.fill('https://music.youtube.com/browse/MPREb_edition?si=share')
         section.get_by_role('button', name='発売盤リンクを保存', exact=True).click()
-        expect(section.get_by_role('link', name='保存したアルバムを開く（利用者登録）')).to_have_attribute('href', 'https://music.youtube.com/browse/MPREb_edition')
+        expect(section.get_by_role('link', name='保存したリンクを開く（利用者登録・未照合）')).to_have_attribute('href', 'https://music.youtube.com/browse/MPREb_edition')
         expect(section).not_to_contain_text('正規盤確認済み')
         with page.expect_download() as pending:
             section.get_by_role('button', name='保存記録をバックアップ', exact=True).click()
@@ -195,14 +270,14 @@ class BrowserTests(unittest.TestCase):
         self.assertEqual(backup['editionLinks'][GROUP]['source'], 'user')
         page.reload()
         self.search(page)
-        expect(section.get_by_role('link', name='保存したアルバムを開く（利用者登録）')).to_be_visible()
         section.get_by_text('収録曲・曲順・リンクを確認', exact=True).click()
+        expect(section.get_by_role('link', name='保存したリンクを開く（利用者登録・未照合）')).to_be_visible()
         section.get_by_role('button', name='発売盤リンクを削除', exact=True).click()
         expect(section.get_by_role('link', name='YouTube Musicで探す ↗')).to_be_visible()
         with page.expect_event('dialog') as dialog:
             section.get_by_label('保存記録を復元').set_input_files({'name': 'backup.json', 'mimeType': 'application/json', 'buffer': json.dumps(backup).encode()})
         dialog.value.accept()
-        expect(section.get_by_role('link', name='保存したアルバムを開く（利用者登録）')).to_be_visible()
+        expect(section.get_by_role('link', name='保存したリンクを開く（利用者登録・未照合）')).to_be_visible()
 
     def test_github_pages_repository_subpath(self):
         page = self.open_site(base_path='/record')

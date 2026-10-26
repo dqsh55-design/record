@@ -1,6 +1,7 @@
 """Conservative, edition-level evidence. Never infer rights holders from prose."""
 import datetime
 import json
+import re
 import time
 import unicodedata
 import urllib.parse
@@ -22,12 +23,17 @@ def ordered_positions(items):
     return bool(items) and all(type(p) is int for p in positions) and sorted(positions) == list(range(1, len(items) + 1))
 
 
+def release_year(value):
+    match = re.fullmatch(r'([1-9][0-9]{3})(?:-[0-9]{2}(?:-[0-9]{2})?)?', str(value or ''))
+    return match.group(1) if match else None
+
+
 def youtube_evidence(album_id, detail):
     tracks = [{'position': i + 1, 'title': t.get('title'), 'video_id': t.get('videoId')}
               for i, t in enumerate(detail.get('tracks') or [])]
     # Description/copyright is retained verbatim, never parsed into a label.
     return {'source': 'https://music.youtube.com/browse/' + album_id,
-            'title': detail.get('title'),
+            'title': detail.get('title'), 'year': release_year(detail.get('year')),
             'artists': [a.get('name') for a in detail.get('artists') or []],
             'labels': [detail['label']] if usable_label(detail.get('label')) else [],
             'publisher': detail.get('publisher') if isinstance(detail.get('publisher'), str) else None,
@@ -65,6 +71,7 @@ def compare(yt, release, *, full_release=False):
         'label': ('match' if {key(x) for x in yt['labels']} == {key(x) for x in labels}
                   else 'unknown' if {key(x) for x in yt['labels']} & {key(x) for x in labels}
                   else 'different') if yt.get('labels') and labels and all(usable_label((li.get('label') or {}).get('name')) for li in release.get('label-info', [])) else 'unknown',
+        'year': ('match' if release_year(yt.get('year')) == release_year(release.get('date')) else 'different') if release_year(yt.get('year')) and release_year(release.get('date')) else 'unknown',
         'count': 'unknown', 'titles': 'unknown', 'order': 'unknown'}
     if yt.get('complete') and complete:
         checks.update(count='match' if len(titles) == len(ytitles) else 'different',
@@ -74,7 +81,7 @@ def compare(yt, release, *, full_release=False):
     return {'status': status, 'checks': checks, 'release_id': release.get('id'),
             'source': 'https://musicbrainz.org/release/' + release.get('id', ''),
             'title': release.get('title'), 'date': release.get('date'), 'country': release.get('country'),
-            'labels': labels, 'catalog_numbers': [li['catalog-number'] for li in release.get('label-info', []) if li.get('catalog-number')], 'track_count': len(tracks) if complete else None,
+            'artists': artists, 'labels': labels, 'catalog_numbers': [li['catalog-number'] for li in release.get('label-info', []) if li.get('catalog-number')], 'track_count': len(tracks) if complete else None,
             'tracks': [{'position': i + 1, 'title': t.get('title')} for i, t in enumerate(tracks)]}
 
 
@@ -100,9 +107,11 @@ class MusicBrainz:
 
 
 def verify_album(album, music, mb):
-    result = {'version': 1, 'album_id': album['id'], 'checked_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    result = {'version': 2, 'album_id': album['id'], 'checked_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
               'status': 'insufficient', 'candidates': [], 'limitations': []}
     try:
+        if not re.fullmatch(r'MPREb_[A-Za-z0-9_-]+', album['id']):
+            raise ValueError('Not an album browse ID')
         yt = youtube_evidence(album['id'], music.get_album(album['id']))
         result['youtube'] = yt
         if not yt['labels']:
