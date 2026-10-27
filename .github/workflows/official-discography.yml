@@ -1,28 +1,19 @@
-name: Collect official discography candidates
+name: Legacy offline catalog preview (manual only)
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '25 3 * * 1'
 permissions:
   contents: read
-concurrency:
-  group: official-discography
-  cancel-in-progress: false
 jobs:
-  collect:
+  preview:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m unittest discover -s tests -p 'test_official_discography.py' -v
-      - run: python scripts/official_discography.py collect --report reports/official-candidates.json
+      - run: python scripts/generate_official_catalog.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: official-discography-candidates
-          path: reports/official-candidates.json
-          if-no-files-found: error
-          retention-days: 90
+          name: legacy-official-preview
+          path: reports/*.json

@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "cacheSeconds": 86400,
+  "providers": {
+    "blue-note": {
+      "hosts": [
+        "www.bluenote.com"
+      ],
+      "adapter": "bluenote-artist-v1",
+      "name": "Blue Note Records",
+      "label": "Blue Note Records"
+    },
+    "warner-japan": {
+      "hosts": [
+        "wmg.jp"
+      ],
+      "adapter": "warner-albums-v1",
+      "name": "Warner Music Japan",
+      "label": "Warner Music Japan"
+    },
+    "sony-japan": {
+      "hosts": [
+        "www.sonymusic.co.jp"
+      ],
+      "adapter": "music-album-jsonld-v1",
+      "name": "Sony Music Japan"
+    },
+    "artist-official": {
+      "hosts": [
+        "www.norahjones.com"
+      ],
+      "adapter": "music-album-jsonld-v1",
+      "name": "Artist Official Site"
+    },
+    "jimi-official": {
+      "hosts": [
+        "www.jimihendrix.com"
+      ],
+      "adapter": "artist-music-html-v1",
+      "name": "Jimi Hendrix / Experience Hendrix"
+    },
+    "sony-legacy": {
+      "hosts": [
+        "www.legacyrecordings.com"
+      ],
+      "adapter": "music-album-jsonld-v1",
+      "name": "Sony Music / Legacy Recordings"
+    },
+    "miles-official": {
+      "hosts": [
+        "www.milesdavis.com"
+      ],
+      "adapter": "music-album-jsonld-v1",
+      "name": "Miles Davis / Sony Music"
+    }
+  },
+  "identities": [
+    {
+      "id": "record:jimi-hendrix",
+      "name": "Jimi Hendrix",
+      "aliases": [
+        "ジミヘンドリックス",
+        "ジミ・ヘンドリックス",
+        "The Jimi Hendrix Experience",
+        "Jimi Hendrix Experience"
+      ],
+      "sources": [
+        {
+          "id": "jimi-official",
+          "provider": "jimi-official",
+          "host": "www.jimihendrix.com",
+          "url": "https://www.jimihendrix.com/music/",
+          "releasePath": "/music/[^/]+/?"
+        },
+        {
+          "id": "jimi-sony",
+          "provider": "sony-japan",
+          "host": "www.sonymusic.co.jp",
+          "url": "https://www.sonymusic.co.jp/artist/jimihendrix/discography/",
+          "releasePath": "/artist/jimihendrix/discography/[^/]+/?"
+        }
+      ]
+    },
+    {
+      "id": "record:norah-jones",
+      "name": "Norah Jones",
+      "aliases": [
+        "ノラ・ジョーンズ",
+        "ノラジョーンズ"
+      ],
+      "sources": []
+    },
+    {
+      "id": "record:miles-davis",
+      "name": "Miles Davis",
+      "aliases": [
+        "マイルス・デイビス",
+        "マイルス・デイヴィス",
+        "マイルスデイビス",
+        "マイルスデイヴィス"
+      ],
+      "sources": [
+        {
+          "id": "miles-official",
+          "provider": "miles-official",
+          "host": "www.milesdavis.com",
+          "url": "https://www.milesdavis.com/albums/",
+          "releasePath": "/albums/[^/]+/?"
+        },
+        {
+          "id": "miles-sony",
+          "provider": "sony-japan",
+          "host": "www.sonymusic.co.jp",
+          "url": "https://www.sonymusic.co.jp/artist/MilesDavis/discography/",
+          "releasePath": "/artist/MilesDavis/discography/[^/]+/?"
+        }
+      ]
+    }
+  ],
+  "directories": [
+    {
+      "id": "blue-note-directory",
+      "provider": "blue-note",
+      "host": "www.bluenote.com",
+      "url": "https://www.bluenote.com/artists/",
+      "kind": "bluenote",
+      "artistPath": "/artist/[a-z0-9-]+/?"
+    },
+    {
+      "id": "warner-directory",
+      "provider": "warner-japan",
+      "host": "wmg.jp",
+      "url": "https://wmg.jp/artistlist",
+      "kind": "warner",
+      "artistPath": "/[a-zA-Z0-9-]+/?"
+    },
+    {
+      "id": "sony-directory",
+      "provider": "sony-japan",
+      "host": "www.sonymusic.co.jp",
+      "url": "https://www.sonymusic.co.jp/artist/",
+      "kind": "sony",
+      "artistPath": "/artist/[^/]+/?"
+    }
+  ]
+}
