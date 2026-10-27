@@ -71,6 +71,7 @@ class PagesUI(unittest.TestCase):
         card=page.locator('article').filter(has=page.get_by_text('Visions',exact=True))
         link=card.get_by_role('link',name='YouTube Musicでアルバムを開く ↗',exact=True)
         expect(link).to_have_attribute('href',expected['listeningLink']['url'])
+        card.locator('summary').click()
         expect(card.get_by_role('link',name='発売の根拠：Blue Note Records ↗',exact=True)).to_have_attribute('href',expected['sourceUrl'])
         expect(card.get_by_role('link',name='別の配信をYouTube Musicで探す ↗',exact=True)).to_have_attribute('href',re.compile(r'^https://music\.youtube\.com/search\?q='))
         destinations=[]
@@ -99,6 +100,7 @@ class PagesUI(unittest.TestCase):
             self.search(page,artist)
             card=page.locator('article').filter(has=page.get_by_text(title,exact=True))
             expect(card).to_have_count(1)
+            card.locator('summary').click()
             expect(card.get_by_role('link',name=re.compile('発売の根拠'))).to_have_attribute('href',source)
             expect(card.get_by_role('link',name='YouTube Musicで探す（配信先は未確認） ↗',exact=True)).to_be_visible()
             expect(card.locator('img')).to_have_count(0)
@@ -111,6 +113,7 @@ class PagesUI(unittest.TestCase):
         for album in additions:
             card=page.locator('article').filter(has=page.get_by_text(album['title'],exact=True))
             expect(card).to_have_count(1)
+            card.locator('summary').click()
             expect(card.get_by_role('link',name='発売の根拠：Miles Davis Official Site ↗',exact=True)).to_have_attribute('href',album['sourceUrl'])
             if album.get('listeningLink'):
                 expect(card.get_by_role('link',name='YouTube Musicでアルバムを開く ↗',exact=True)).to_have_attribute('href',album['listeningLink']['url'])
@@ -127,6 +130,7 @@ class PagesUI(unittest.TestCase):
         for album in added:
             card=page.locator('article').filter(has=page.get_by_text(album['title'],exact=True))
             expect(card).to_have_count(1)
+            card.locator('summary').click()
             expect(card.get_by_role('link',name=re.compile('発売の根拠'))).to_have_attribute('href',album['sourceUrl'])
             if album.get('listeningLink'):
                 expect(card.get_by_role('link',name='YouTube Musicでアルバムを開く ↗',exact=True)).to_have_attribute('href',album['listeningLink']['url'])
@@ -141,6 +145,35 @@ class PagesUI(unittest.TestCase):
             card=page.locator('article').filter(has=page.get_by_text(title,exact=True))
             expect(card).to_have_count(1)
             expect(card.get_by_role('link',name='YouTube Musicで探す（配信先は未確認） ↗',exact=True)).to_be_visible()
+
+    def test_mobile_evidence_collapsed_keyboard_toggle_and_unchanged_links(self):
+        for width in [320,390,430]:
+            with self.subTest(width=width):
+                page,_=self.page(width)
+                for artist in CATALOG['artists']:
+                    self.search(page,artist['name'])
+                    cards=page.locator('#official-catalog article')
+                    expect(cards).to_have_count(len(artist['albums']))
+                    for album in artist['albums']:
+                        card=cards.filter(has=page.get_by_role('heading',name=album['title'],exact=True))
+                        expect(card.locator('.album-artist')).to_have_text(artist['name'])
+                        expect(card.locator('.meta')).to_have_text((album.get('year') or '発売年未確認')+' · '+album['label'])
+                        details=card.locator('details');expect(details).not_to_have_attribute('open','')
+                        source=details.locator('a').first
+                        expect(source).to_be_hidden();expect(source).to_have_attribute('href',album['sourceUrl'])
+                        expect(details.get_by_text('資料確認日：'+album['checkedAt'],exact=True)).to_be_hidden()
+                        primary=card.locator('.info > a')
+                        from urllib.parse import quote
+                        expected=album.get('listeningLink',{}).get('url') or 'https://music.youtube.com/search?q='+quote(artist['name']+' '+album['title'],safe="~()*!.'-")
+                        expect(primary).to_have_attribute('href',expected)
+                    first=cards.first;summary=first.locator('summary')
+                    summary.focus();summary.press('Enter')
+                    expect(first.locator('details')).to_have_attribute('open','')
+                    expect(first.locator('details a').first).to_be_visible()
+                    expect(first.get_by_text('資料確認日：'+artist['albums'][0]['checkedAt'],exact=True)).to_be_visible()
+                    self.assertGreaterEqual(summary.bounding_box()['height'],44)
+                    self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'),width)
+                    summary.press('Space');expect(first.locator('details a').first).to_be_hidden()
 
     def test_supported_artist_buttons_work_without_typing(self):
         page,requests=self.page()
