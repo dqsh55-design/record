@@ -22,7 +22,7 @@ class OnDemandUI(unittest.TestCase):
     def tearDownClass(cls):
         cls.browser.close();cls.p.stop()
 
-    def page(self,width=390,service_failure=False,status_override=None,inject=False,delay_first=False):
+    def page(self,width=390,service_failure=False,status_override=None,inject=False,delay_first=False,api_origin=None,rate_limited=False):
         context=self.browser.new_context(viewport={'width':width,'height':844})
         self.addCleanup(context.close)
         service,pages=make_service();self.addCleanup(service.cache.close)
@@ -32,9 +32,13 @@ class OnDemandUI(unittest.TestCase):
         def route(r):
             url=urlparse(r.request.url)
             if url.hostname=='record.test' and url.path=='/record/':
-                r.fulfill(body=(ROOT/'index.html').read_text(),content_type='text/html');return
-            if url.hostname=='record.test' and url.path=='/record/api/search':
+                html=(ROOT/'index.html').read_text()
+                if api_origin:html=html.replace('name="record-api-base" content=""','name="record-api-base" content="'+api_origin+'/"')
+                r.fulfill(body=html,content_type='text/html');return
+            if (url.hostname=='api.test' and url.path=='/api/search' if api_origin else url.hostname=='record.test' and url.path=='/record/api/search'):
                 query=parse_qs(url.query)
+                if rate_limited:
+                    r.fulfill(status=429,json={'status':'rate_limited'});return
                 if service_failure:
                     r.fulfill(status=503,json={'status':'service_unavailable'});return
                 if delay_first and query['q'][0]=='Jimi Hendrix':
@@ -48,7 +52,7 @@ class OnDemandUI(unittest.TestCase):
                     body['artist']['albums'].append(bad)
                     bad=copy.deepcopy(body['artist']['albums'][0]);bad.update(id='generated:expired',title='Expired Evidence',validUntilUnix=0)
                     body['artist']['albums'].append(bad)
-                r.fulfill(json=body);return
+                r.fulfill(json=body,headers={'Access-Control-Allow-Origin':'http://record.test'});return
             unexpected.append(r.request.url);r.abort()
         page.route('**/*',route);page.goto('http://record.test/record/')
         self.addCleanup(lambda:self.assertEqual(unexpected,[]))
@@ -57,6 +61,18 @@ class OnDemandUI(unittest.TestCase):
     def search(self,page,name):
         page.get_by_role('textbox',name='アーティスト名').fill(name)
         page.get_by_role('button',name='検索',exact=True).click()
+
+    def test_pages_uses_separate_https_api_origin(self):
+        page,_,_,_=self.page(api_origin='https://api.test')
+        self.search(page,'Norah Jones')
+        expect(page.locator('#status')).to_contain_text('2作品')
+
+    def test_rate_limit_explained_without_catalog_fallback(self):
+        page,_,_,_=self.page(rate_limited=True)
+        self.search(page,'Norah Jones')
+        expect(page.locator('#status')).to_have_attribute('data-state','rate_limited')
+        expect(page.locator('#status')).to_contain_text('1分')
+        expect(page.locator('#official-catalog')).to_have_count(0)
 
     def test_three_artists_on_demand_at_mobile_widths(self):
         for width in (320,390,430):

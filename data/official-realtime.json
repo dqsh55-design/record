@@ -142,5 +142,7 @@
       "kind": "sony",
       "artistPath": "/artist/[^/]+/?"
     }
-  ]
+  ],
+  "refreshCooldownSeconds": 300,
+  "negativeCacheSeconds": 300
 }

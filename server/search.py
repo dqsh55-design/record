@@ -1,5 +1,6 @@
 """On-demand official-only discovery, release verification and persistent cache."""
 from concurrent.futures import ThreadPoolExecutor, Future
+from contextlib import contextmanager
 import copy
 from datetime import date, datetime, timezone
 import hashlib
@@ -28,13 +29,24 @@ class SourceError(Exception):
 
 class OfficialTransport:
     """Only approved origins; no cross-host redirect, credentials or restriction bypass."""
-    def __init__(self, hosts, timeout=12, clock=time.time):
+    def __init__(self, hosts, timeout=12, clock=time.time, reserve=None):
         self.hosts, self.timeout, self.clock = set(hosts), timeout, clock
+        self.reserve = reserve
+        self.host_locks = {host: threading.Lock() for host in hosts}
+        self.last_fetch = {}
         self.blocked = {}
         self.pages = {}
         self.lock = threading.Lock()
 
     def __call__(self, source):
+        host = source['host']
+        if host not in self.host_locks:
+            raise SourceError('unsafe_source')
+        # One in-flight request per official host, including detail requests.
+        with self.host_locks[host]:
+            return self._fetch(source)
+
+    def _fetch(self, source):
         url, host = source['url'], source['host']
         if host not in self.hosts or not safe_url(url, host):
             raise SourceError('unsafe_source')
@@ -44,10 +56,13 @@ class OfficialTransport:
             cached = self.pages.get(url)
             if cached and cached[0] > self.clock():
                 return cached[1]
+        transport=self
+        self._reserve(host)
         class Redirects(HTTPRedirectHandler):
             def redirect_request(self, req, fp, code, msg, headers, target):
                 if not safe_url(target, host):
                     raise SourceError('unsafe_redirect')
+                transport._reserve(host)
                 return super().redirect_request(req, fp, code, msg, headers, target)
         try:
             with build_opener(Redirects()).open(Request(url, headers={'User-Agent':'RECORD-OfficialSearch/1.0'}), timeout=self.timeout) as response:
@@ -73,10 +88,18 @@ class OfficialTransport:
                 self.blocked[host]=self.clock()+180
             raise SourceError('blocked','challenge_page')
         with self.lock:
-            if len(self.pages) >= 128:
+            while self.pages and (len(self.pages) >= 32 or sum(len(value[1]) for value in self.pages.values())+len(html) > 4_000_000):
                 self.pages.pop(next(iter(self.pages)))
-            self.pages[url] = (self.clock()+60, html)
+            if len(html)<=4_000_000:
+                self.pages[url] = (self.clock()+60, html)
         return html
+
+    def _reserve(self, host):
+        if self.reserve and not self.reserve():
+            raise SourceError('budget_exhausted')
+        delay = self.last_fetch.get(host, 0) + 1 - time.monotonic()
+        if delay > 0: time.sleep(min(delay, 1))
+        self.last_fetch[host] = time.monotonic()
 
 
 def artist_music_html(source, html, fetch, today):
@@ -156,7 +179,7 @@ def valid_album(album, artist, config, now):
                 bool(re.fullmatch(r'[a-f0-9]{64}',proof['sourceSha256'])) and
                 url.hostname in provider['hosts'] and safe_url(album['sourceUrl'],url.hostname) and
                 0 <= now-album['verifiedAtUnix'] < config['cacheSeconds'] and
-                album['validUntilUnix'] > now and
+                now < album['validUntilUnix'] <= album['verifiedAtUnix']+config['cacheSeconds'] and
                 (rules.past_date(proof['listedReleaseDate'],datetime.fromtimestamp(now,timezone.utc).date()) if proof.get('listedReleaseDate') else
                  bool(re.fullmatch(r'\d{4}',proof.get('listedReleaseYear',''))) and 1900 <= int(proof['listedReleaseYear']) < datetime.fromtimestamp(now,timezone.utc).date().year))
     except (KeyError,TypeError,ValueError,AttributeError):
@@ -166,16 +189,54 @@ def valid_album(album, artist, config, now):
 class VerifiedCache:
     def __init__(self, path, config, clock=time.time):
         self.config, self.clock = config, clock
-        if str(path)!=':memory:': Path(path).parent.mkdir(parents=True,exist_ok=True)
-        self.db=sqlite3.connect(str(path),check_same_thread=False)
-        self.lock=threading.Lock()
-        with self.db:
-            self.db.execute('CREATE TABLE IF NOT EXISTS verified (artist_id TEXT PRIMARY KEY, body TEXT NOT NULL)')
-            self.db.execute('CREATE TABLE IF NOT EXISTS queries (query_key TEXT PRIMARY KEY, artist_id TEXT NOT NULL)')
+        self.postgres = str(path).startswith(('postgres://','postgresql://'))
+        self.path = str(path)
+        self.lock = threading.Lock()
+        self.db = None
+        self.initialized = False
+        if not self.postgres:
+            if str(path) != ':memory:': Path(path).parent.mkdir(parents=True, exist_ok=True)
+            self.db = sqlite3.connect(str(path), check_same_thread=False)
+        else:
+            from psycopg.conninfo import conninfo_to_dict
+            if conninfo_to_dict(self.path).get('sslmode') not in {'require','verify-ca','verify-full'}:
+                raise ValueError('PostgreSQL requires TLS')
+
+    @contextmanager
+    def transaction(self):
+        with self.lock:
+            if self.postgres:
+                import psycopg
+                # No idle pool: allow free serverless PostgreSQL to suspend.
+                with psycopg.connect(self.path, connect_timeout=10, options='-c statement_timeout=10000') as db:
+                    yield self._prepare(db)
+            else:
+                with self.db:
+                    yield self._prepare(self.db)
+
+    def _prepare(self, db):
+        if not self.initialized:
+            db.execute('CREATE TABLE IF NOT EXISTS verified (artist_id TEXT PRIMARY KEY, body TEXT NOT NULL)')
+            db.execute('CREATE TABLE IF NOT EXISTS queries (query_key TEXT PRIMARY KEY, artist_id TEXT NOT NULL)')
+            db.execute('CREATE TABLE IF NOT EXISTS fetch_budget (day TEXT PRIMARY KEY, used INTEGER NOT NULL)')
+            # DDL remains cheap; mark only after the transaction commits on later accesses.
+        return db
+
+    def execute(self, db, sql, args=()):
+        return db.execute(sql.replace('?', '%s') if self.postgres else sql, args)
+
+    def reserve_fetch(self, limit=2000):
+        day = datetime.fromtimestamp(self.clock(), timezone.utc).date().isoformat()
+        with self.transaction() as db:
+            self.execute(db, 'DELETE FROM fetch_budget WHERE day < ?', (day,))
+            row = self.execute(db, 'INSERT INTO fetch_budget VALUES (?,1) ON CONFLICT(day) DO UPDATE SET used=fetch_budget.used+1 WHERE fetch_budget.used < ? RETURNING used', (day,limit)).fetchone()
+        self.initialized = True
+        return row is not None
 
     def get(self, query):
-        with self.lock:
-            row=self.db.execute('SELECT body FROM verified JOIN queries USING(artist_id) WHERE query_key=?',(rules.norm(query),)).fetchone()
+        with self.transaction() as db:
+            row=self.execute(db,'SELECT body FROM verified JOIN queries USING(artist_id) WHERE query_key=?',(rules.norm(query),)).fetchone()
+        self.initialized = True
         if not row:
             return None
         try:
@@ -192,8 +253,8 @@ class VerifiedCache:
         artist=body['artist']
         if not artist['albums'] or not all(valid_album(a,artist,self.config,self.clock()) for a in artist['albums']):
             raise ValueError('only verified, unexpired works may be saved')
-        with self.lock, self.db:
-            row=self.db.execute('SELECT body FROM verified WHERE artist_id=?',(artist['id'],)).fetchone()
+        with self.transaction() as db:
+            row=self.execute(db,'SELECT body FROM verified WHERE artist_id=?',(artist['id'],)).fetchone()
             merged={}
             if row:
                 try:
@@ -207,21 +268,23 @@ class VerifiedCache:
             saved=copy.deepcopy(body)
             if reused: saved['cache']=dict(hit=True,mixed=True,refreshFailed=False)
             saved['artist']['albums']=list(merged.values())
-            self.db.execute('INSERT OR REPLACE INTO verified VALUES (?,?)',(artist['id'],json.dumps(saved,ensure_ascii=False)))
+            self.execute(db,'INSERT INTO verified VALUES (?,?) ON CONFLICT(artist_id) DO UPDATE SET body=excluded.body',(artist['id'],json.dumps(saved,ensure_ascii=False)))
             for value in [query,artist['name'],*artist.get('aliases',[])]:
-                self.db.execute('INSERT OR REPLACE INTO queries VALUES (?,?)',(rules.norm(value),artist['id']))
+                self.execute(db,'INSERT INTO queries VALUES (?,?) ON CONFLICT(query_key) DO UPDATE SET artist_id=excluded.artist_id',(rules.norm(value),artist['id']))
         return saved
 
     def close(self):
-        self.db.close()
+        if self.db is not None: self.db.close()
 
 
 class OfficialSearch:
     def __init__(self, config, cache_path, fetch=None, clock=time.time):
         self.config, self.clock = config, clock
         hosts={h for p in config['providers'].values() for h in p['hosts']}
-        self.fetch=fetch or OfficialTransport(hosts,clock=clock)
         self.cache=VerifiedCache(cache_path,config,clock)
+        self.fetch=fetch or OfficialTransport(hosts,clock=clock,reserve=self.cache.reserve_fetch)
+        self.recent={}
+        self.refresh_attempts={}
         self.lock=threading.Lock()
         self.pending={}
         self.capacity=threading.BoundedSemaphore(4)
@@ -231,10 +294,18 @@ class OfficialSearch:
             raise ValueError('invalid artist query')
         query=query.strip()
         previous=self.cache.get(query)
-        if previous and not refresh:
-            return previous
+        if previous:
+            latest=max(a['verifiedAtUnix'] for a in previous['artist']['albums'])
+            with self.lock:
+                attempted,failed=self.refresh_attempts.get(previous['artist']['id'],(latest,False))
+            if not refresh or self.clock()-max(latest,attempted) < self.config.get('refreshCooldownSeconds',0):
+                previous['cache']['refreshFailed']=failed
+                return previous
         key=rules.norm(query)
         with self.lock:
+            recent = self.recent.get(key)
+            if recent and recent[0] > self.clock() and not previous:
+                return copy.deepcopy(recent[1])
             owner=key not in self.pending
             future=self.pending.setdefault(key,Future())
         if not owner:
@@ -253,6 +324,14 @@ class OfficialSearch:
                 previous['sources']=result['sources']
                 previous['cache']['refreshFailed']=True
                 result=previous
+            if result['artist']['albums']:
+                with self.lock:
+                    if len(self.refresh_attempts)>=256: self.refresh_attempts.pop(next(iter(self.refresh_attempts)))
+                    self.refresh_attempts[result['artist']['id']]=(self.clock(),result['cache'].get('refreshFailed',False))
+            if not result['artist']['albums']:
+                with self.lock:
+                    if len(self.recent) >= 256: self.recent.pop(next(iter(self.recent)))
+                    self.recent[key]=(self.clock()+self.config.get('negativeCacheSeconds',0),copy.deepcopy(result))
             future.set_result(result)
             return copy.deepcopy(result)
         except Exception as error:
@@ -296,7 +375,7 @@ class OfficialSearch:
             for url,title in candidates.items():
                 if len(sources)>=2:break
                 artist=copy.deepcopy(identity)
-                artist['aliases']=list(dict.fromkeys([*artist.get('aliases',[]),*variants]))
+                artist['aliases']=list(dict.fromkeys([*artist.get('aliases',[]),title,*[x.strip() for x in title.split(' / ') ]]))
                 if directory['kind']=='bluenote':
                     page=url
                     path=re.escape(urlsplit(url).path.rstrip('/'))+'/?'

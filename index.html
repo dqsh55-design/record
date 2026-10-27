@@ -1084,7 +1084,7 @@ function officialResultMessage(data,count){
 function renderSearchSources(data){
  const panel=document.createElement('details');panel.id='search-sources';
  const caption=document.createElement('summary');caption.textContent='公式情報の確認状況';panel.append(caption);
- const labels={ok:'取得済み',unconfirmed:'発売根拠が不足',blocked:'アクセス制限',not_found:'ページなし',fetch_error:'取得失敗',unsupported_format:'形式未対応',unsafe_source:'情報源を検証できず',unsafe_redirect:'転送先を検証できず',response_too_large:'取得上限',unsupported_encoding:'形式未対応'};
+ const labels={ok:'取得済み',unconfirmed:'発売根拠が不足',blocked:'アクセス制限',not_found:'ページなし',fetch_error:'取得失敗',unsupported_format:'形式未対応',unsafe_source:'情報源を検証できず',unsafe_redirect:'転送先を検証できず',response_too_large:'取得上限',unsupported_encoding:'形式未対応',budget_exhausted:'本日の公式サイト取得上限'};
  for(const source of data.sources||[]){
   const line=document.createElement('p');line.className='release-detail';line.textContent=(labels[source.status]||'確認できず')+(/^\d{3}$/.test(source.code||'')?'（'+source.code+'）':'')+'：';
   try{const u=new URL(source.url);if(u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&officialSourceHosts.has(u.hostname)){const link=document.createElement('a');link.href=u.href;link.target='_blank';link.rel='noopener noreferrer';link.textContent=u.hostname+u.pathname;line.append(link)}}catch{}
@@ -1098,13 +1098,15 @@ async function searchOfficialNow(raw,refresh=false){
  raw=raw.trim();if(!raw)return;
  const token=++liveSearchToken;liveSearchController?.abort();
  const controller=new AbortController();liveSearchController=controller;
- const timer=setTimeout(()=>controller.abort(),60000);
+ const timer=setTimeout(()=>controller.abort(),180000);
+ const warming=setTimeout(()=>{if(token===liveSearchToken)status.textContent='検索サービスの起動、または公式情報の確認に時間がかかっています。そのままお待ちください…'},15000);
  liveQuery=raw;busy=true;$('submit').disabled=true;results.replaceChildren();status.textContent='公式ディスコグラフィーを検索し、正式発売の根拠を確認しています…';
  try{
   const configured=document.querySelector('meta[name="record-api-base"]')?.content;
   const endpoint=new URL('api/search',configured||document.baseURI);endpoint.searchParams.set('q',raw);if(refresh)endpoint.searchParams.set('refresh','1');
   const response=await fetch(endpoint,{signal:controller.signal,headers:{Accept:'application/json'},cache:'no-store'});
   if(response.status===400){status.dataset.state='invalid_query';status.textContent='アーティスト名を120文字以内で入力してください。';return}
+  if(response.status===429){status.dataset.state='rate_limited';status.textContent='検索が集中しています。1分ほど待って再検索してください。';return}
   if(!response.ok)throw Error('search service unavailable');
   const data=await response.json();if(token!==liveSearchToken)return;
   if(data.version!==1||typeof data.artist?.id!=='string'||typeof data.artist?.name!=='string'||!Array.isArray(data.artist?.albums)||!Array.isArray(data.sources)||data.artist.albums.length>500)throw Error('invalid search response');
@@ -1118,7 +1120,7 @@ async function searchOfficialNow(raw,refresh=false){
  }catch(error){
   if(token!==liveSearchToken)return;
   results.replaceChildren();status.dataset.state='service_unavailable';status.textContent=error.name==='AbortError'?'公式検索の通信がタイムアウトしました。再検索してください。':'公式検索サービスに接続できませんでした。時間をおいて再検索してください。';
- }finally{clearTimeout(timer);if(token===liveSearchToken){busy=false;$('submit').disabled=false}}
+ }finally{clearTimeout(timer);clearTimeout(warming);if(token===liveSearchToken){busy=false;$('submit').disabled=false}}
 }
 $('form').addEventListener('submit',e=>{e.preventDefault();searchOfficialNow($('query').value)});
 </script></body></html>

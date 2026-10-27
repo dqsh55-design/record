@@ -22,6 +22,7 @@ jobs:
       - run: python -m unittest discover -s tests -p 'test_columbia_catalog.py' -v
       - run: python -m unittest discover -s tests -p 'test_official_generator.py' -v
       - run: python -m unittest discover -s tests -p 'test_realtime_search.py' -v
+      - run: python -m unittest discover -s tests -p 'test_public_hosting.py' -v
       - run: node tests/test_official_catalog.cjs
       - run: node tests/test_loading.cjs
       - run: node tests/test_api_cache.cjs
@@ -36,3 +37,44 @@ jobs:
       - run: python tests/test_official_ui.py
       - run: python -m py_compile scripts/build_catalog.py scripts/release_matching.py scripts/automatic_matching.py scripts/verify_catalog.py
 
+
+  postgres:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_PASSWORD: record-ci-only
+          POSTGRES_DB: record_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r server/requirements.txt
+      - name: Enable TLS on disposable PostgreSQL
+        env:
+          PG_CONTAINER: ${{ job.services.postgres.id }}
+        run: |
+          openssl req -x509 -newkey rsa:2048 -nodes -days 1 -keyout /tmp/server.key -out /tmp/server.crt -subj /CN=localhost
+          docker cp /tmp/server.key "$PG_CONTAINER":/tmp/server.key
+          docker cp /tmp/server.crt "$PG_CONTAINER":/tmp/server.crt
+          docker exec -u root "$PG_CONTAINER" chown postgres:postgres /tmp/server.key /tmp/server.crt
+          docker exec -u root "$PG_CONTAINER" chmod 600 /tmp/server.key
+          docker exec -u postgres "$PG_CONTAINER" psql -d record_test -c "ALTER SYSTEM SET ssl='on'" -c "ALTER SYSTEM SET ssl_cert_file='/tmp/server.crt'" -c "ALTER SYSTEM SET ssl_key_file='/tmp/server.key'"
+          docker restart "$PG_CONTAINER"
+          for attempt in $(seq 1 20); do
+            if docker exec "$PG_CONTAINER" pg_isready -U postgres -d record_test; then break; fi
+            sleep 1
+          done
+      - name: Verify real PostgreSQL persistence, expiry and shared budget
+        env:
+          RECORD_TEST_DATABASE_URL: postgresql://postgres:record-ci-only@localhost:5432/record_test?sslmode=require
+        run: python -m unittest discover -s tests -p 'test_postgres_cache.py' -v

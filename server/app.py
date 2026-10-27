@@ -3,6 +3,10 @@ import argparse
 from concurrent.futures import TimeoutError as FutureTimeout
 import json
 import os
+import threading
+import time
+from collections import deque
+from urllib.parse import urlsplit
 from pathlib import Path
 from socketserver import ThreadingMixIn
 from urllib.parse import parse_qs
@@ -12,13 +16,38 @@ from .search import OfficialSearch, SourceError
 ROOT=Path(__file__).resolve().parents[1]
 
 
-def create_app(service=None, root=ROOT):
-    service=service or OfficialSearch(json.loads((root/'data/official-realtime.json').read_text()),os.environ.get('RECORD_CACHE_PATH','/tmp/record-official-cache.sqlite3'))
+def create_app(service=None, root=ROOT, allowed_origins=None, request_limit=60, clock=time.monotonic):
+    if service is None and os.environ.get('RECORD_REQUIRE_DATABASE')=='1' and not os.environ.get('RECORD_DATABASE_URL'):
+        raise ValueError('Persistent database URL is required')
+    if os.environ.get('RECORD_DATABASE_URL') and not os.environ['RECORD_DATABASE_URL'].startswith(('postgresql://','postgres://')):
+        raise ValueError('Persistent database must use a PostgreSQL URL')
+    service=service or OfficialSearch(json.loads((root/'data/official-realtime.json').read_text()),os.environ.get('RECORD_DATABASE_URL') or os.environ.get('RECORD_CACHE_PATH','/tmp/record-official-cache.sqlite3'))
+    origins = set(allowed_origins if allowed_origins is not None else filter(None,os.environ.get('RECORD_ALLOWED_ORIGINS','').split(',')))
+    for origin in origins:
+        parsed=urlsplit(origin)
+        if parsed.scheme!='https' or not parsed.hostname or parsed.path or parsed.query or parsed.fragment or parsed.username or parsed.password:
+            raise ValueError('CORS origins must be exact HTTPS origins without paths')
+    requests=deque()
+    lock=threading.Lock()
     def application(environ,start_response):
         path=environ.get('PATH_INFO','/')
         status='200 OK'
         content_type='application/json; charset=utf-8'
-        if environ.get('REQUEST_METHOD')!='GET':
+        origin=environ.get('HTTP_ORIGIN')
+        api=path in {'/api/search','/record/api/search'}
+        limited=False
+        if api and environ.get('REQUEST_METHOD')=='GET':
+            with lock:
+                while requests and requests[0]<=clock()-60: requests.popleft()
+                limited=len(requests)>=request_limit
+                if not limited: requests.append(clock())
+        if api and origin and origin not in origins:
+            status='403 Forbidden';body={'status':'origin_not_allowed'}
+        elif limited:
+            status='429 Too Many Requests';body={'status':'rate_limited','message':'検索が集中しています。1分ほど待って再検索してください。'}
+        elif len(environ.get('QUERY_STRING',''))>2048:
+            status='400 Bad Request';body={'status':'invalid_query'}
+        elif environ.get('REQUEST_METHOD')!='GET':
             status='405 Method Not Allowed';body={'status':'method_not_allowed'}
         elif path in {'/api/search','/record/api/search'}:
             params=parse_qs(environ.get('QUERY_STRING',''),keep_blank_values=True)
@@ -40,7 +69,11 @@ def create_app(service=None, root=ROOT):
             status='404 Not Found';body={'status':'not_found'}
         payload=(body if isinstance(body,str) else json.dumps(body,ensure_ascii=False)).encode()
         headers=[('Content-Type',content_type),('Content-Length',str(len(payload))),('Cache-Control','no-store'),('X-Content-Type-Options','nosniff')]
-        # No blanket CORS proxy: use the same origin or a controlled reverse proxy.
+        if api:
+            headers.append(('Vary','Origin'))
+            if origin in origins: headers.append(('Access-Control-Allow-Origin',origin))
+        if limited: headers.append(('Retry-After','60'))
+        headers.append(('Referrer-Policy','no-referrer'))
         start_response(status,headers)
         return [payload]
     application.service=service

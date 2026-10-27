@@ -1,0 +1,17 @@
+# API only. GitHub Pages continues to serve the UI.
+# Create only after approval; no paid resources or Render database are declared.
+services:
+  - type: web
+    name: record-official-api
+    runtime: docker
+    plan: free
+    region: frankfurt
+    autoDeployTrigger: off
+    healthCheckPath: /health
+    envVars:
+      - key: RECORD_REQUIRE_DATABASE
+        value: '1'
+      - key: RECORD_DATABASE_URL
+        sync: false
+      - key: RECORD_ALLOWED_ORIGINS
+        value: https://dqsh55-design.github.io

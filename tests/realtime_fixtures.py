@@ -20,6 +20,7 @@ def album_json(name,title,url):
 
 def fixture_config():
     config=json.loads((ROOT/'data/official-realtime.json').read_text())
+    config.update(refreshCooldownSeconds=0,negativeCacheSeconds=0)
     # Test only the two functioning directory formats. Sony failures are separate cases.
     config['directories']=[d for d in config['directories'] if d['provider']!='sony-japan']
     for identity in config['identities']:
