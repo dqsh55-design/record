@@ -10,4 +10,4 @@ RUN mkdir -p /data && chown 10001:10001 /data
 USER 10001:10001
 ENV RECORD_CACHE_PATH=/data/official-cache.sqlite3
 EXPOSE 8000
-CMD ["gunicorn", "server.app:create_app()", "--bind", "0.0.0.0:8000", "--workers", "1", "--threads", "4", "--timeout", "75"]
+CMD ["gunicorn", "server.app:create_app()", "--bind", "0.0.0.0:8000", "--workers", "1", "--threads", "8", "--timeout", "75"]

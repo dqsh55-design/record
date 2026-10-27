@@ -1105,6 +1105,7 @@ async function searchOfficialNow(raw,refresh=false){
   const configured=document.querySelector('meta[name="record-api-base"]')?.content;
   const endpoint=new URL('api/search',configured||document.baseURI);endpoint.searchParams.set('q',raw);if(refresh)endpoint.searchParams.set('refresh','1');
   const response=await fetch(endpoint,{signal:controller.signal,headers:{Accept:'application/json'},cache:'no-store'});
+  if(token!==liveSearchToken)return;
   if(response.status===400){status.dataset.state='invalid_query';status.textContent='アーティスト名を120文字以内で入力してください。';return}
   if(response.status===429){status.dataset.state='rate_limited';status.textContent='検索が集中しています。1分ほど待って再検索してください。';return}
   if(!response.ok)throw Error('search service unavailable');
