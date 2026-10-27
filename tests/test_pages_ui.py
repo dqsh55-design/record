@@ -50,8 +50,8 @@ class PagesUI(unittest.TestCase):
         for width in [320,390,430]:
             with self.subTest(width=width):
                 page,requests=self.page(width)
-                expect(page.locator('#status')).to_contain_text('14組・199作品')
-                expect(page.locator('#catalog-artists button')).to_have_count(14)
+                expect(page.locator('#catalog-total')).to_have_text('公式発売確認済み · 登録199作品')
+                expect(page.locator('#catalog-artists')).to_have_count(0)
                 self.search(page,'ノラ・ジョーンズ')
                 expect(page.locator('#official-catalog article')).to_have_count(13)
                 expect(page.locator('#official-catalog .sub')).to_contain_text('リアルタイム検索ではなく')
@@ -217,12 +217,35 @@ class PagesUI(unittest.TestCase):
         expect(card.locator('.meta')).to_contain_text('2001')
         expect(card.get_by_role('link',name='YouTube Musicで探す（配信先は未確認） ↗',exact=True)).to_be_visible()
 
-    def test_supported_artist_buttons_work_without_typing(self):
+    def test_all_artists_remain_searchable_with_artist_count_and_persistent_total(self):
         page,requests=self.page()
         for artist in CATALOG['artists']:
-            page.get_by_role('button',name=artist['name']+'（'+str(len(artist['albums']))+'作品）',exact=True).click()
+            self.search(page,artist['name'])
             expect(page.locator('#official-catalog article')).to_have_count(len(artist['albums']))
+            expect(page.locator('#status')).to_have_text(artist['name']+'：登録'+str(len(artist['albums']))+'作品（公式発売確認済み）')
+            expect(page.locator('#catalog-total')).to_have_text('公式発売確認済み · 登録199作品')
+            expect(page.locator('#catalog-artists')).to_have_count(0)
         self.assertEqual(len(requests),1)
+
+    def test_home_stays_compact_when_more_artists_are_registered(self):
+        many=copy.deepcopy(CATALOG)
+        for i in range(200):
+            many['artists'].append({'id':'test:artist:'+str(i),'name':'Additional Artist '+str(i),'aliases':[],
+                'albums':[dict(CATALOG['artists'][0]['albums'][0],id='test:album:'+str(i))]})
+        for width in [320,390,430]:
+            with self.subTest(width=width):
+                page,_=self.page(width,catalog=many)
+                expect(page.locator('#catalog-total')).to_have_text('公式発売確認済み · 登録399作品')
+                expect(page.locator('#catalog-artists')).to_have_count(0)
+                expect(page.locator('#results')).to_be_empty()
+                field=page.get_by_role('textbox',name='アーティスト名')
+                expect(field).to_be_in_viewport()
+                self.assertGreaterEqual(field.bounding_box()['height'],44)
+                self.assertGreaterEqual(page.locator('#submit').bounding_box()['height'],44)
+                self.assertLess(page.locator('#catalog-total').bounding_box()['y'],600)
+                self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'),width)
+                for selector in ['.intro','.hint','#catalog-total']:
+                    self.assertGreaterEqual(page.locator(selector).evaluate('el=>parseFloat(getComputedStyle(el).fontSize)'),14)
 
     def test_unknown_names_clear_old_cards_and_do_not_claim_no_official_site(self):
         page,_=self.page();self.search(page,'Norah Jones')
@@ -237,9 +260,11 @@ class PagesUI(unittest.TestCase):
     def test_catalog_http_failure_has_retry_separate_from_unsupported(self):
         page,requests=self.page(fail_once=True)
         expect(page.locator('#status')).to_have_attribute('data-state','catalog_error')
+        expect(page.locator('#catalog-total')).to_have_text('登録作品数を読み込めませんでした。')
         expect(page.locator('#status')).to_contain_text('通信環境')
         page.get_by_role('button',name='目次を再読み込み').click()
         expect(page.locator('#status')).to_have_attribute('data-state','catalog_ready')
+        expect(page.locator('#catalog-total')).to_have_text('公式発売確認済み · 登録199作品')
         self.search(page,'Norah Jones')
         expect(page.locator('#official-catalog article')).to_have_count(13)
         self.assertEqual(len(requests),2)
