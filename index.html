@@ -23,7 +23,19 @@
 @media(max-width:350px){main{padding-left:14px;padding-right:14px}#official-releases .album{grid-template-columns:76px minmax(0,1fr);gap:12px}#official-releases .cover{width:76px;height:76px}}
 @media(prefers-reduced-motion:no-preference){.loading-line{animation:loading-pulse 1.5s ease-in-out infinite alternate}@keyframes loading-pulse{to{opacity:.45}}}
 .work-editions>summary{min-height:44px;box-sizing:border-box;padding:13px 0;font-size:13px;cursor:pointer;color:#555}.work-editions{border-bottom:1px solid #e0ded9}.work-editions[open]{padding-bottom:8px}.release-work-group{min-width:0}.release-work-group>.release-work{font-size:12px;font-weight:400;color:#777;margin:18px 0 0}.work-editions .album{border-bottom:0}
-.work-verification:empty{display:none}</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" maxlength="120" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます。公式確認済みの公開目次から探します。</div><section id="catalog-artists" aria-label="対応アーティスト"></section><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Official release index · v0.82</footer></main>
+.work-verification:empty{display:none}/* Pages catalog: essentials first, provenance on demand. */
+#official-catalog .album{padding:22px 0;contain-intrinsic-size:auto 205px}
+#official-catalog .album-title{margin:0;font-size:18px;line-height:1.5;font-weight:600;letter-spacing:.01em}
+#official-catalog .album-artist{margin:5px 0 0;font-size:14px;color:#555;line-height:1.5}
+#official-catalog .meta{font-size:14px;color:#666;line-height:1.65;margin:5px 0 7px}
+#official-catalog .info>.listen{font-size:14px;font-weight:500;line-height:1.6}
+#official-catalog .catalog-evidence{margin-top:6px;border:0;padding:0}
+#official-catalog .catalog-evidence summary{font-size:13px;color:#555;line-height:1.5;padding:12px 0}
+#official-catalog .album-tools-body{padding:0 12px 12px;border-left:2px solid #e0ded9}
+#official-catalog .album-tools-body .listen,#official-catalog .release-detail{font-size:13px;line-height:1.7}
+#official-catalog :is(a,summary):focus-visible{outline:2px solid #555;outline-offset:3px;border-radius:2px}
+@media(max-width:500px){#official-catalog .artist{font-size:21px;line-height:1.5}#official-catalog .album{padding:20px 0}}
+</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" maxlength="120" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます。公式確認済みの公開目次から探します。</div><section id="catalog-artists" aria-label="対応アーティスト"></section><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Official release index · v0.83</footer></main>
 <script>
 const $=id=>document.getElementById(id), status=$('status'),results=$('results');
 let relatedCatalogAlbums=[],artistChoices=[],ytVisible=20,ytSort='name',ytAlbums=[],albums=[],filter='おすすめ',artistName='',offset=0,artistId='',busy=false,total=0;
@@ -873,17 +885,23 @@ function renderOfficialCatalog(){
  for(const a of items){
   const article=document.createElement('article');article.className='album';article.dataset.catalogId=a.id;
   const info=document.createElement('div');info.className='info';
-  const title=document.createElement('div');title.className='album-title';title.textContent=a.title;
-  const meta=document.createElement('div');meta.className='meta';meta.textContent=(a.year||'発売年未確認')+' · '+a.label+' · 正規発売確認済み（作品）';
+  const title=document.createElement('h3');title.className='album-title';title.textContent=a.title;
+  const artistLine=document.createElement('p');artistLine.className='album-artist';artistLine.textContent=artist.name;
+  const meta=document.createElement('div');meta.className='meta';meta.textContent=(a.year||'発売年未確認')+' · '+a.label;
   const source=document.createElement('a');source.className='listen';source.href=a.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';source.textContent='発売の根拠：'+a.sourceName+' ↗';
   const checked=document.createElement('div');checked.className='release-detail';checked.textContent='資料確認日：'+a.checkedAt;
   const listening=confirmedListeningLink(artist,a);
   const searchUrl='https://music.youtube.com/search?q='+encodeURIComponent(artistName+' '+a.title);
   const search=document.createElement('a');search.className='listen';search.href=listening?.url||searchUrl;search.target='_blank';search.rel='noopener noreferrer';search.textContent=listening?'YouTube Musicでアルバムを開く ↗':'YouTube Musicで探す（配信先は未確認） ↗';
-  info.append(title,meta,source,checked,search);
+  const evidence=document.createElement('details');evidence.className='album-tools catalog-evidence';
+  const caption=document.createElement('summary');caption.textContent='発売情報・根拠を見る';
+  const evidenceBody=document.createElement('div');evidenceBody.className='album-tools-body';
+  const status=document.createElement('div');status.className='release-detail';status.textContent='正規発売確認済み（作品）';
+  evidenceBody.append(status,source,checked);evidence.append(caption,evidenceBody);
+  info.append(title,artistLine,meta,search,evidence);
   if(listening){
    const note=document.createElement('div');note.className='release-detail';note.textContent='配信リンク確認日：'+listening.checkedAt+' · 現在の再生可否は変わる場合があります。';
-   const fallback=document.createElement('a');fallback.className='listen';fallback.href=searchUrl;fallback.target='_blank';fallback.rel='noopener noreferrer';fallback.textContent='別の配信をYouTube Musicで探す ↗';info.append(note,fallback);
+   const fallback=document.createElement('a');fallback.className='listen';fallback.href=searchUrl;fallback.target='_blank';fallback.rel='noopener noreferrer';fallback.textContent='別の配信をYouTube Musicで探す ↗';evidenceBody.append(note,fallback);
   }article.append(info);section.append(article);
  }
  if(!items.length){const empty=document.createElement('p');empty.className='status';empty.textContent=officialCatalogError?'公式目次を読み込めませんでした。再検索してください。':'このアーティストの公式発売資料はまだ登録されていません。未確認作品は表示しません。';section.append(empty)}

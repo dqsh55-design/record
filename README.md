@@ -8,6 +8,7 @@
 
 利用者の検索時に公式サイトやMusicBrainzへ情報取得を行いません。未対応のアーティストは、公開中の目次で確認できない旨を表示します。公式サイトや作品が存在しないとは判断しません。
 
+- [v0.83のスマートフォン向け一覧](docs/MOBILE-CATALOG.md)
 - [現在の設計・公開手順](docs/PAGES-FIRST.md)
 - [確認済み配信リンクの条件と検証結果](docs/YOUTUBE-ALBUM-LINKS.md)
 - [v0.80の追加作品と根拠](docs/CATALOG-ADDITIONS-2026-10-27.md)
