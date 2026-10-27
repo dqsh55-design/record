@@ -32,7 +32,7 @@ class OnDemandUI(unittest.TestCase):
         def route(r):
             url=urlparse(r.request.url)
             if url.hostname=='record.test' and url.path=='/record/':
-                html=(ROOT/'index.html').read_text()
+                html=(ROOT/'index.html').read_text().replace('name="record-search-mode" content="catalog"','name="record-search-mode" content="api"')
                 if api_origin:html=html.replace('name="record-api-base" content=""','name="record-api-base" content="'+api_origin+'/"')
                 r.fulfill(body=html,content_type='text/html');return
             if (url.hostname=='api.test' and url.path=='/api/search' if api_origin else url.hostname=='record.test' and url.path=='/record/api/search'):

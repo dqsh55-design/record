@@ -28,3 +28,10 @@ context.generatedArtist=context.catalog.artists.find(a=>a.id===context.generated
 for(const patch of [{generationProof:null},{verificationMethod:'unknown'},{generationProof:{...context.generated.generationProof,artistId:'wrong'}},{generationProof:{...context.generated.generationProof,sourceSha256:'bad'}},{generationProof:{...context.generated.generationProof,sourceUrl:'https://wmg.jp/wrong'}}]){
  context.patch=patch;assert.equal(run('confirmedCatalogAlbums({...generatedArtist,albums:[{...generated,...patch}]}).length'),0);
 }
+
+// Pages remains the default even when an API URL is present; API mode is explicit.
+assert.equal(run('publicSearchMode()'),'catalog');
+run(`document.querySelector=selector=>({content:selector.includes('record-api-base')?'https://unused.example/':'catalog'})`);
+assert.equal(run('publicSearchMode()'),'catalog');
+run(`document.querySelector=()=>({content:'api'})`);
+assert.equal(run('publicSearchMode()'),'api');

@@ -1,4 +1,4 @@
-name: Legacy offline catalog preview (manual only)
+name: Official catalog update preview (manual review)
 on:
   workflow_dispatch:
 permissions:

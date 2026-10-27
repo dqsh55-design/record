@@ -81,8 +81,9 @@ class PublicHosting(unittest.TestCase):
             self.assertEqual(error.exception.kind,'budget_exhausted');opener.assert_not_called()
 
     def test_public_configuration_never_accepts_credentials_or_insecure_url(self):
-        html='<meta name="record-api-base" content="">'
+        html='<meta name="record-api-base" content=""><meta name="record-search-mode" content="catalog">'
         self.assertIn('https://api.example.test/',configure(html,'https://api.example.test'))
+        self.assertIn('record-search-mode" content="api',configure(html,'https://api.example.test'))
         for base in ['http://api.test','https://secret@api.test','https://api.test/?key=secret','https://api.test/path','https://api.test:443','https://api.test/\"']:
             with self.assertRaises(ValueError):configure(html,base)
         with patch.dict(os.environ,{'RECORD_REQUIRE_DATABASE':'1','RECORD_DATABASE_URL':''}):

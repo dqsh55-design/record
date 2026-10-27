@@ -1,3 +1,4 @@
+# Future API option only: not required or used by the current Pages release.
 # API only. GitHub Pages continues to serve the UI.
 # Create only after approval; no paid resources or Render database are declared.
 services:

@@ -1,3 +1,5 @@
+> Future API option only. The public application currently uses GitHub Pages and the reviewed static catalog. No API/server/database/account is required. See [Pages-first design](../docs/PAGES-FIRST.md). To exercise this future API UI, explicitly select API mode as described below.
+
 # On-demand official search
 
 Run from the repository root:
@@ -48,3 +50,16 @@ After a real API has passed the release checks, set the static API URL using
 `python scripts/configure_public_api.py https://ACTUAL-API-HOST --output index.html`.
 Do not publish the new Pages UI before this step. The UI allows up to 180 seconds
 for cold start + search, without automatic retries or keepalive traffic.
+
+
+### Explicit future API UI mode
+
+The shipped `index.html` intentionally defaults to `record-search-mode=catalog`.
+An API URL alone does not switch the public search path. Before testing a future
+API deployment, prepare an isolated copy of the UI with
+`python scripts/configure_public_api.py https://APPROVED-API-HOST --output /tmp/record-api-index.html`.
+This writes both the approved origin and `record-search-mode=api`. Serve the copy
+with the API's configured exact CORS origin. Do not replace the Pages entry point
+until real API hosting and verification have been approved and completed.
+For localhost development, change the mode tag in an isolated local checkout to
+`api` and leave `record-api-base` empty to use the local same-origin server.

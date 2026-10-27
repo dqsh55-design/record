@@ -13,6 +13,9 @@ def configure(html, base):
     tag='<meta name="record-api-base" content="'+base.rstrip('/')+'/">'
     result,count=re.subn(r'<meta name="record-api-base" content="[^"]*">',lambda _:tag,html)
     if count!=1: raise ValueError('Expected exactly one API meta tag')
+    mode='<meta name="record-search-mode" content="api">'
+    result,count=re.subn(r'<meta name="record-search-mode" content="[^"]*">',lambda _:mode,result)
+    if count!=1: raise ValueError('Expected exactly one explicit search mode tag')
     return result
 
 

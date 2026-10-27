@@ -1,4 +1,4 @@
-name: Release matching tests
+name: RECORD Pages checks
 on:
   workflow_dispatch:
   pull_request:
@@ -30,66 +30,9 @@ jobs:
       - run: node tests/test_credit_attribution.cjs
       - run: node tests/test_chronology.cjs
       - run: node tests/test_album_classification.cjs
-      - run: pip install 'playwright>=1.50,<2' -r server/requirements.txt
-      - run: gunicorn 'server.app:create_app()' --check-config
-      # ubuntu-latest includes Chrome and its native libraries.
+      - run: pip install 'playwright>=1.50,<2'
       - run: google-chrome --version
+      - run: python tests/test_pages_ui.py
+      # The preserved future API is opt-in in its browser tests; no account needed.
       - run: python tests/test_official_ui.py
-      - name: Build deployment image and check startup
-        run: |
-          docker build -t record-ci .
-          docker run -d --name record-ci -p 127.0.0.1:18000:8000 record-ci
-          for attempt in $(seq 1 20); do
-            if curl --fail --silent http://127.0.0.1:18000/health; then break; fi
-            sleep 1
-          done
-          curl --fail --silent http://127.0.0.1:18000/health | python -c "import json,sys; assert json.load(sys.stdin)['status']=='ok'"
-          test "$(curl --silent -o /dev/null -w '%{http_code}' http://127.0.0.1:18000/server/search.py)" = 404
-      - name: Clean deployment container
-        if: always()
-        run: |
-          docker logs record-ci || true
-          docker rm -f record-ci || true
       - run: python -m py_compile scripts/build_catalog.py scripts/release_matching.py scripts/automatic_matching.py scripts/verify_catalog.py
-
-
-  postgres:
-    runs-on: ubuntu-latest
-    services:
-      postgres:
-        image: postgres:17
-        env:
-          POSTGRES_PASSWORD: record-ci-only
-          POSTGRES_DB: record_test
-        ports:
-          - 5432:5432
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 5s
-          --health-timeout 5s
-          --health-retries 10
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: pip install -r server/requirements.txt
-      - name: Enable TLS on disposable PostgreSQL
-        env:
-          PG_CONTAINER: ${{ job.services.postgres.id }}
-        run: |
-          openssl req -x509 -newkey rsa:2048 -nodes -days 1 -keyout /tmp/server.key -out /tmp/server.crt -subj /CN=localhost
-          docker cp /tmp/server.key "$PG_CONTAINER":/tmp/server.key
-          docker cp /tmp/server.crt "$PG_CONTAINER":/tmp/server.crt
-          docker exec -u root "$PG_CONTAINER" chown postgres:postgres /tmp/server.key /tmp/server.crt
-          docker exec -u root "$PG_CONTAINER" chmod 600 /tmp/server.key
-          docker exec -u postgres "$PG_CONTAINER" psql -d record_test -c "ALTER SYSTEM SET ssl='on'" -c "ALTER SYSTEM SET ssl_cert_file='/tmp/server.crt'" -c "ALTER SYSTEM SET ssl_key_file='/tmp/server.key'"
-          docker restart "$PG_CONTAINER"
-          for attempt in $(seq 1 20); do
-            if docker exec "$PG_CONTAINER" pg_isready -U postgres -d record_test; then break; fi
-            sleep 1
-          done
-      - name: Verify real PostgreSQL persistence, expiry and shared budget
-        env:
-          RECORD_TEST_DATABASE_URL: postgresql://postgres:record-ci-only@localhost:5432/record_test?sslmode=require
-        run: python -m unittest discover -s tests -p 'test_postgres_cache.py' -v
