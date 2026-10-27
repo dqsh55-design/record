@@ -22,6 +22,7 @@ jobs:
       - run: python -m unittest discover -s tests -p 'test_columbia_catalog.py' -v
       - run: python -m unittest discover -s tests -p 'test_catalog_additions.py' -v
       - run: python -m unittest discover -s tests -p 'test_miles_discography.py' -v
+      - run: python -m unittest discover -s tests -p 'test_catalog_hundred.py' -v
       - run: python -m unittest discover -s tests -p 'test_official_generator.py' -v
       - run: python -m unittest discover -s tests -p 'test_realtime_search.py' -v
       - run: python -m unittest discover -s tests -p 'test_public_hosting.py' -v

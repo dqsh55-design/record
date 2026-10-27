@@ -53,3 +53,10 @@ assert.equal(run('confirmedListeningLink(norah,visions).url'),context.visions.li
 console.log('Reviewed official outbound album links, wrong identity/source/target rejection and search fallback passed');
 
 assert.equal(run('confirmedListeningLink(miles,miles.albums.find(a=>a.title==="Birth Of The Cool")).url'),context.miles.albums.find(a=>a.title==='Birth Of The Cool').listeningLink.url);
+
+context.bill=context.catalog.artists.find(a=>a.name==='Bill Frisell');
+context.dreams=context.bill.albums.find(a=>a.title==='In My Dreams');
+assert.equal(run('confirmedListeningLink(bill,dreams).url'),context.dreams.listeningLink.url);
+for(const bad of ['https://billfrisell.lnk.to.evil.test/InMyDreams','https://fake.billfrisell.lnk.to/InMyDreams']){
+ context.bad=bad;assert.equal(run('confirmedListeningLink(bill,{...dreams,listeningLink:{...dreams.listeningLink,officialLinkUrl:bad}})'),null);
+}
