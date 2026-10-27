@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-27",
+  "observations": [
+    {
+      "host": "www.bluenote.com",
+      "url": "https://www.bluenote.com/robots.txt",
+      "sha256": "d5e02c9d472224e5a54375fa7269e39f67adfefba08c7d90a8137f9646e885b8",
+      "generalAgentDisallowed": false,
+      "specificTrainingAgentsDisallowed": true,
+      "note": "robotsの一般向け許可と利用規約の許諾は別。RECORDは非AIの構造照合であり、UA切替・制限回避には使わない。"
+    },
+    {
+      "host": "wmg.jp",
+      "url": "https://wmg.jp/robots.txt",
+      "sha256": "336feae4125ca21a079df39f62cc121e6b71328fd16c4283692ed63c47876022",
+      "generalAgentDisallowed": false,
+      "specificTrainingAgentsDisallowed": false,
+      "note": "robotsの一般向け許可と利用規約の許諾は別。RECORDは非AIの構造照合であり、UA切替・制限回避には使わない。"
+    },
+    {
+      "host": "www.jimihendrix.com",
+      "url": "https://www.jimihendrix.com/robots.txt",
+      "sha256": "a126bd920dacad5d98bb70a70cfdd2b779eac2b55f2f965aca5507107a74fda4",
+      "generalAgentDisallowed": false,
+      "specificTrainingAgentsDisallowed": false,
+      "note": "robotsの一般向け許可と利用規約の許諾は別。RECORDは非AIの構造照合であり、UA切替・制限回避には使わない。"
+    },
+    {
+      "host": "www.milesdavis.com",
+      "url": "https://www.milesdavis.com/robots.txt",
+      "sha256": "1a2021afb47430b739ed039a3d544f895af1fb179bfbac0d133f3604bb58e99c",
+      "generalAgentDisallowed": false,
+      "specificTrainingAgentsDisallowed": true,
+      "note": "robotsの一般向け許可と利用規約の許諾は別。RECORDは非AIの構造照合であり、UA切替・制限回避には使わない。"
+    }
+  ],
+  "terms": [
+    {
+      "url": "https://www.sonymusic.com/terms-and-conditions/",
+      "section": "4 B ii",
+      "observedRestriction": "Automated access/retrieval/scraping/indexing restricted",
+      "linkedBy": [
+        "https://www.jimihendrix.com/music/",
+        "https://www.milesdavis.com/music/releases/"
+      ],
+      "decision": "Stop automatic fetch until source permission is established; do not substitute UA, IP, host or proxy."
+    },
+    {
+      "url": "https://wmg.jp/corporate/terms-of-use",
+      "decision": "Limited prototype verification only; public automated operation and redistribution permission not established."
+    },
+    {
+      "url": "https://privacy.umusic.com/terms/",
+      "decision": "Personal/internal use and reuse restrictions require review before public deployment."
+    }
+  ],
+  "conservativeReviewHolds": [
+    "www.sonymusic.co.jp",
+    "www.legacyrecordings.com"
+  ],
+  "productionPermissionConfirmed": false
+}

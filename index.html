@@ -39,7 +39,7 @@
 header{margin-bottom:32px}.intro{font-size:15px;line-height:1.8;margin-bottom:24px}.hint{font-size:14px;line-height:1.7;color:#777}
 .catalog-total{font-size:14px;line-height:1.7;color:#666;margin:20px 0 0}.status{margin:24px 0}
 @media(max-width:500px){main{padding-top:36px}header{margin-bottom:26px}.intro{margin-bottom:22px}}
-</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">公式発売を確認したアルバムから、<br>YouTube Musicへ。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" maxlength="120" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます。公式確認済みの公開目次から探します。</div><p id="catalog-total" class="catalog-total" aria-live="polite">登録作品数を確認しています…</p><div id="status" class="status"></div><section id="results" aria-live="polite"></section><footer>RECORD · Official release index · v0.87</footer></main>
+</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">公式発売を確認したアルバムから、<br>YouTube Musicへ。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" maxlength="120" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます。公式確認済みの公開目次から探します。</div><p id="catalog-total" class="catalog-total" aria-live="polite">登録作品数を確認しています…</p><div id="status" class="status"></div><section id="results" aria-live="polite"></section><footer>RECORD · Official release index · v0.89</footer></main>
 <script>
 const $=id=>document.getElementById(id), status=$('status'),results=$('results');
 let relatedCatalogAlbums=[],artistChoices=[],ytVisible=20,ytSort='name',ytAlbums=[],albums=[],filter='おすすめ',artistName='',offset=0,artistId='',busy=false,total=0;
@@ -833,7 +833,7 @@ function releaseMetadataText(r){
  return ['作品の初回発売：'+(date||'不明'),'この盤の発売：'+(r.date||'不明'),typeOf(r['release-group']||{}),r.country,numbers.length?'品番：'+numbers.join(' / '):'',r.status==='Official'?'MusicBrainz：公式発売の登録あり':'発売区分：'+(r.status||'未登録')+'（確認待ち）'].filter(Boolean).join(' · ');
 }
 // Published, reviewed work catalog is the only source of search-result albums.
-let officialCatalog=null, officialCatalogTask=null, officialCatalogError='';
+let officialCatalog=null, officialCatalogTask=null, officialCatalogError='',liveCatalogArtist=null;
 const officialSourceHosts=new Set(['www.bluenote.com','www.milesdavis.com','www.sonymusic.co.jp','www.universal-music.co.jp','norahjones.jp','www.norahjones.com','wmg.jp','www.jimihendrix.com','www.legacyrecordings.com','www.thebeatles.com','discography.ledzeppelin.com','www.metallica.com','daftpunk.com','www.daftpunk.com','www.commmons.com']);
 function confirmedCatalogAlbums(artist){
  const seen=new Set();
@@ -881,10 +881,10 @@ function catalogArtist(query){
 }
 function renderOfficialCatalog(){
  results.replaceChildren();if(!artistName)return;
- const artist=officialCatalog?.artists.find(a=>a.id===artistId);
+ const artist=liveCatalogArtist?.id===artistId?liveCatalogArtist:officialCatalog?.artists.find(a=>a.id===artistId);
  const section=document.createElement('section');section.id='official-catalog';
  const heading=document.createElement('h2');heading.className='artist';heading.textContent=artistName+' の正規発売確認済みアルバム';section.append(heading);
- const note=document.createElement('p');note.className='sub';note.textContent=(publicSearchMode()==='api'?'検索時に公式資料で確認できた作品です。':'公開前に公式資料で発売を確認した作品です。リアルタイム検索ではなく、掲載は確認済みの範囲です。')+' 各国盤・再発盤の個別認定やYouTube Musicの配信状況は別途確認が必要です。';section.append(note);
+ const note=document.createElement('p');note.className='sub';note.textContent=(liveCatalogArtist?.id===artistId?'検索時または有効期限内の保存結果で、公式資料から発売を確認できた作品です。':'公開前に公式資料で発売を確認した作品です。リアルタイム検索ではなく、掲載は確認済みの範囲です。')+' 各国盤・再発盤の個別認定やYouTube Musicの配信状況は別途確認が必要です。';section.append(note);
  const items=confirmedCatalogAlbums(artist);
  for(const a of items){
   const article=document.createElement('article');article.className='album';article.dataset.catalogId=a.id;
@@ -1121,16 +1121,18 @@ function showArtistChoices(list){
 let liveSearchToken=0,liveSearchController=null,liveSearchResult=null,liveQuery='';
 function liveAlbumValid(album,artist){
  const now=Date.now()/1000;
- return album?.verificationMethod==='official-source-rule-v1'&&Number.isFinite(album.verifiedAtUnix)&&Number.isFinite(album.validUntilUnix)&&album.verifiedAtUnix<=now&&album.validUntilUnix>now&&album.validUntilUnix<=album.verifiedAtUnix+86400&&confirmedCatalogAlbums({...artist,albums:[album]}).length===1;
+ const stamp=album?.generationProof?.listedReleaseDate||album?.generationProof?.listedReleaseYear;
+ const proofYear=typeof stamp==='string'?stamp.slice(0,4):'';
+ return album?.year===proofYear&&album?.verificationMethod==='official-source-rule-v1'&&Number.isFinite(album.verifiedAtUnix)&&Number.isFinite(album.validUntilUnix)&&album.verifiedAtUnix<=now&&album.validUntilUnix>now&&album.validUntilUnix<=album.verifiedAtUnix+86400&&confirmedCatalogAlbums({...artist,albums:[album]}).length===1;
 }
 function officialResultMessage(data,count){
  if(count)return (data.cache?.hit?'保存した確認済み情報を再利用しています。 ':'')+count+'作品の正式発売を公式資料で確認済みです。'+(data.status==='partial'?' 一部の公式情報は取得できませんでした。':'')+(data.cache?.refreshFailed?' 再取得に失敗したため、有効期限内の保存結果を表示しています。':'');
- return {blocked:'アクセス制限により公式情報を取得できませんでした。公式情報がないとは判断していません。',fetch_error:'公式情報の取得に失敗しました。公式情報がないとは判断していません。',not_found:'検索した公式情報源では、該当する発売情報を確認できませんでした。',unconfirmed:'公式情報から、正式発売済みと確認できるアルバムはありませんでした。'}[data.status]||'公式発売情報を確認できませんでした。';
+ return {policy_restricted:'公式情報源の利用条件により自動取得を停止しています。公式発売作品がないという意味ではありません。',blocked:'アクセス制限により公式情報を取得できませんでした。公式情報がないとは判断していません。',fetch_error:'公式情報の取得に失敗しました。公式情報がないとは判断していません。',not_found:'検索した公式情報源では、該当する発売情報を確認できませんでした。',unconfirmed:'公式情報から、正式発売済みと確認できるアルバムはありませんでした。'}[data.status]||'公式発売情報を確認できませんでした。';
 }
 function renderSearchSources(data){
  const panel=document.createElement('details');panel.id='search-sources';
  const caption=document.createElement('summary');caption.textContent='公式情報の確認状況';panel.append(caption);
- const labels={ok:'取得済み',unconfirmed:'発売根拠が不足',blocked:'アクセス制限',not_found:'ページなし',fetch_error:'取得失敗',unsupported_format:'形式未対応',unsafe_source:'情報源を検証できず',unsafe_redirect:'転送先を検証できず',response_too_large:'取得上限',unsupported_encoding:'形式未対応',budget_exhausted:'本日の公式サイト取得上限'};
+ const labels={policy_restricted:'利用条件により取得停止',ok:'取得済み',unconfirmed:'発売根拠が不足',blocked:'アクセス制限',not_found:'ページなし',fetch_error:'取得失敗',unsupported_format:'形式未対応',unsafe_source:'情報源を検証できず',unsafe_redirect:'転送先を検証できず',response_too_large:'取得上限',unsupported_encoding:'形式未対応',budget_exhausted:'本日の公式サイト取得上限'};
  for(const source of data.sources||[]){
   const line=document.createElement('p');line.className='release-detail';line.textContent=(labels[source.status]||'確認できず')+(/^\d{3}$/.test(source.code||'')?'（'+source.code+'）':'')+'：';
   try{const u=new URL(source.url);if(u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&officialSourceHosts.has(u.hostname)){const link=document.createElement('a');link.href=u.href;link.target='_blank';link.rel='noopener noreferrer';link.textContent=u.hostname+u.pathname;line.append(link)}}catch{}
@@ -1149,8 +1151,9 @@ async function searchOfficialNow(raw,refresh=false){
  liveQuery=raw;busy=true;$('submit').disabled=true;results.replaceChildren();status.textContent='公式ディスコグラフィーを検索し、正式発売の根拠を確認しています…';
  try{
   const configured=document.querySelector('meta[name="record-api-base"]')?.content;
+  if(configured){const base=new URL(configured);if(base.protocol!=='https:'||base.username||base.password||base.port||base.search||base.hash||!['','/'].includes(base.pathname))throw Error('invalid API origin')}
   const endpoint=new URL('api/search',configured||document.baseURI);endpoint.searchParams.set('q',raw);if(refresh)endpoint.searchParams.set('refresh','1');
-  const response=await fetch(endpoint,{signal:controller.signal,headers:{Accept:'application/json'},cache:'no-store'});
+  const response=await fetch(endpoint,{signal:controller.signal,headers:{Accept:'application/json'},cache:'no-store',credentials:'omit'});
   if(token!==liveSearchToken)return;
   if(response.status===400){status.dataset.state='invalid_query';status.textContent='アーティスト名を120文字以内で入力してください。';return}
   if(response.status===429){status.dataset.state='rate_limited';status.textContent='検索が集中しています。1分ほど待って再検索してください。';return}
@@ -1160,7 +1163,7 @@ async function searchOfficialNow(raw,refresh=false){
   const verified=data.artist.albums.filter(album=>liveAlbumValid(album,data.artist));
   if(verified.length!==data.artist.albums.length&&!verified.length)data.status='unconfirmed';
   data.artist={...data.artist,albums:verified};liveSearchResult=data;
-  officialCatalog={version:1,artists:[data.artist]};artistName=data.artist.name;artistId=data.artist.id;
+  liveCatalogArtist=data.artist;artistName=data.artist.name;artistId=data.artist.id;
   renderOfficialCatalog();status.textContent=officialResultMessage(data,verified.length);status.dataset.state=data.status;
   const empty=results.querySelector('#official-catalog .status');if(empty)empty.textContent=officialResultMessage(data,0);
   renderSearchSources(data);
@@ -1170,7 +1173,7 @@ async function searchOfficialNow(raw,refresh=false){
  }finally{clearTimeout(timer);clearTimeout(warming);if(token===liveSearchToken){busy=false;$('submit').disabled=false}}
 }
 // Pages-first public entry point. The future API is an explicit deployment option.
-function publicSearchMode(){return document.querySelector?.('meta[name="record-search-mode"]')?.content==='api'?'api':'catalog'}
+function publicSearchMode(){const mode=document.querySelector?.('meta[name="record-search-mode"]')?.content;return ['api','hybrid'].includes(mode)?mode:'catalog'}
 let catalogSearchToken=0;
 function renderCatalogTotal(){
  const panel=$('catalog-total');if(!panel)return;
@@ -1203,14 +1206,15 @@ async function searchPublishedCatalog(raw){
   renderCatalogTotal();
   const artist=catalogArtist(raw);
   if(!artist||!confirmedCatalogAlbums(artist).length){
-   artistId='';artistName='';status.dataset.state='catalog_unsupported';
+   if(publicSearchMode()==='hybrid'){await searchOfficialNow(raw);return}
+   liveCatalogArtist=null;artistId='';artistName='';status.dataset.state='catalog_unsupported';
    status.textContent='公開中の目次では、このアーティストの公式発売情報を確認できません。未対応の可能性があります。公式サイトや作品が存在しないという意味ではありません。';return;
   }
-  artistId=artist.id;artistName=artist.name;renderOfficialCatalog();
+  liveCatalogArtist=null;artistId=artist.id;artistName=artist.name;renderOfficialCatalog();
   status.dataset.state='catalog_confirmed';status.textContent=artist.name+'：登録'+confirmedCatalogAlbums(artist).length+'作品（公式発売確認済み）';
  }finally{if(token===catalogSearchToken){busy=false;$('submit').disabled=false}}
 }
-function searchRecord(raw){return publicSearchMode()==='api'?searchOfficialNow(raw):searchPublishedCatalog(raw)}
+function searchRecord(raw){liveSearchToken++;liveSearchController?.abort();catalogSearchToken++;return publicSearchMode()==='api'?searchOfficialNow(raw):searchPublishedCatalog(raw)}
 $('form').addEventListener('submit',e=>{e.preventDefault();searchRecord($('query').value)});
 document.addEventListener?.('DOMContentLoaded',initializePublishedCatalog);
 </script></body></html>

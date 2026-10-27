@@ -11,6 +11,7 @@
 - [v0.83のスマートフォン向け一覧](docs/MOBILE-CATALOG.md)
 - [v0.84の追加9組・18作品と根拠](docs/ARTIST-EXPANSION-2026-10-27.md)
 - [v0.85の既存9組・81作品追加と根拠](docs/DEEPER-DISCOGRAPHIES-2026-10-27.md)
+- [v0.89の検索時取得・画面接続試作品と構成比較](docs/ON-DEMAND-PROTOTYPE-V089.md)
 - [v0.88の検索時公式取得の実現性検証（目次追加なし）](docs/ON-DEMAND-FEASIBILITY-V088.md)
 - [v0.87の追加6組・93作品と公式根拠](docs/WIDER-ARTISTS-V087.md)
 - [v0.86のシンプルなトップページ](docs/SIMPLE-HOME-V086.md)

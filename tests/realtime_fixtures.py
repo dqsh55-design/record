@@ -37,10 +37,10 @@ class Pages:
             'https://wmg.jp/artistlist':'<a href="/miles-davis">マイルス・デイヴィス</a><a href="/new-artist">New Artist</a>',
             'https://www.bluenote.com/artist/norah-jones/':blue_page('Norah Jones','norah-jones',['Come Away With Me','Feels Like Home']),
             'https://www.bluenote.com/artist/new-artist/':blue_page('New Artist','new-artist',['A Newly Discovered Album']),
-            'https://wmg.jp/new-artist/discography':'<p class="x_artistName">New Artist</p>',
+            'https://wmg.jp/new-artist/discography/album':'<p class="x_artistName">New Artist</p>',
             'https://www.jimihendrix.com/music/':album_json('The Jimi Hendrix Experience','Are You Experienced','https://www.jimihendrix.com/music/are-you-experienced/'),
             'https://www.milesdavis.com/albums/':album_json('Miles Davis','Kind Of Blue','https://www.milesdavis.com/albums/kind-of-blue/'),
-            'https://wmg.jp/miles-davis/discography':'<p class="x_artistName">マイルス・デイヴィス</p><a href="/miles-davis/discography/18010"><h3>ドゥー・バップ&lt;SHM-CD&gt;</h3><p class="x_releaseInfo">2017.05.24 発売</p><span>ALBUM</span></a>'
+            'https://wmg.jp/miles-davis/discography/album':'<p class="x_artistName">マイルス・デイヴィス</p><a href="/miles-davis/discography/18010"><h3>ドゥー・バップ&lt;SHM-CD&gt;</h3><p class="x_releaseInfo">2017.05.24 発売</p><span>ALBUM</span></a>'
         }
 
     def __call__(self,source):

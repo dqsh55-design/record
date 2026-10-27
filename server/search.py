@@ -14,7 +14,11 @@ import time
 from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin, urlsplit
 from urllib.request import Request, HTTPRedirectHandler, build_opener
+from urllib.robotparser import RobotFileParser
 
+# Linked Sony terms restrict automation; related Sony hosts are held pending review.
+# No UA/IP substitution or alternate-host retrieval.
+POLICY_RESTRICTED_HOSTS={'www.jimihendrix.com','www.milesdavis.com','www.legacyrecordings.com','www.sonymusic.co.jp'}
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 import generate_official_catalog as rules
@@ -36,6 +40,7 @@ class OfficialTransport:
         self.last_fetch = {}
         self.blocked = {}
         self.pages = {}
+        self.robots = {}
         self.lock = threading.Lock()
 
     def __call__(self, source):
@@ -50,6 +55,10 @@ class OfficialTransport:
         url, host = source['url'], source['host']
         if host not in self.hosts or not safe_url(url, host):
             raise SourceError('unsafe_source')
+        if host in POLICY_RESTRICTED_HOSTS:
+            raise SourceError('policy_restricted','terms_review_required')
+        if not source.get('_robots'):
+            self._check_robots(source)
         with self.lock:
             if self.blocked.get(host, 0) > self.clock():
                 raise SourceError('blocked', 'cooldown')
@@ -62,11 +71,12 @@ class OfficialTransport:
             def redirect_request(self, req, fp, code, msg, headers, target):
                 if not safe_url(target, host):
                     raise SourceError('unsafe_redirect')
+                if not source.get('_robots'):transport._check_robots(dict(source,url=target))
                 transport._reserve(host)
                 return super().redirect_request(req, fp, code, msg, headers, target)
         try:
             with build_opener(Redirects()).open(Request(url, headers={'User-Agent':'RECORD-OfficialSearch/1.0'}), timeout=self.timeout) as response:
-                if 'html' not in response.headers.get('Content-Type','').casefold():
+                if not source.get('_robots') and 'html' not in response.headers.get('Content-Type','').casefold():
                     raise SourceError('unsupported_format')
                 data = response.read(5_000_001)
                 if len(data) > 5_000_000:
@@ -93,6 +103,20 @@ class OfficialTransport:
             if len(html)<=4_000_000:
                 self.pages[url] = (self.clock()+60, html)
         return html
+
+    def _check_robots(self,source):
+        host=source['host'];cached=self.robots.get(host)
+        if not cached or cached[0]<=self.clock():
+            try:
+                body=self._fetch(dict(host=host,url='https://'+host+'/robots.txt',_robots=True))
+            except SourceError as error:
+                if error.kind=='not_found':body='' # A missing robots file is not an explicit prohibition.
+                else:raise
+            parser=RobotFileParser();parser.parse(body.splitlines())
+            self.robots[host]=(self.clock()+3600,parser)
+        else:parser=cached[1]
+        if not parser.can_fetch('RECORD-OfficialSearch/1.0',source['url']):
+            raise SourceError('policy_restricted','robots_disallow')
 
     def _reserve(self, host):
         if self.reserve and not self.reserve():
@@ -172,6 +196,7 @@ def valid_album(album, artist, config, now):
         url=urlsplit(album['sourceUrl'])
         return (album['official'] is True and album['scope']=='work' and bool(album['title'].strip()) and
                 rules.good_label(album['label']) and bool(album['reviewNote'].strip()) and
+                (album.get('year') is None or album['year']==(proof.get('listedReleaseDate') or proof.get('listedReleaseYear',''))[:4]) and
                 album['verificationMethod']==rules.RULE_VERSION and proof['artistId']==artist['id'] and
                 proof['sourceUrl']==album['sourceUrl'] and proof['rule']==provider['adapter'] and
                 isinstance(proof['sourceId'],str) and bool(proof['sourceId'].strip()) and
@@ -244,6 +269,9 @@ class VerifiedCache:
             body['artist']['albums']=[a for a in body['artist']['albums'] if valid_album(a,body['artist'],self.config,self.clock())]
             if not body['artist']['albums']:
                 return None
+            for album in body['artist']['albums']:
+                proof=album['generationProof']
+                album['year']=(proof.get('listedReleaseDate') or proof.get('listedReleaseYear',''))[:4]
             body['cache']={'hit':True,'refreshFailed':False}
             return body
         except (ValueError,KeyError,TypeError):
@@ -367,15 +395,16 @@ class OfficialSearch:
                 valid_count+=1
                 title=rules.text(title)
                 variants=[title,*[x.strip() for x in title.split(' / ')]]
-                if not any(rules.norm(v) in aliases for v in variants):
-                    continue
-                candidates[url]=title
+                variants=[v for v in variants if 1<len(v)<=120 and rules.norm(v) not in {'readmore','詳細','もっと見る'}]
+                candidates.setdefault(url,[]).extend(variants)
             if not valid_count:
                 raise SourceError('unsupported_format')
-            for url,title in candidates.items():
+            for url,titles in candidates.items():
+                if not any(rules.norm(title) in aliases for title in titles):continue
                 if len(sources)>=2:break
                 artist=copy.deepcopy(identity)
-                artist['aliases']=list(dict.fromkeys([*artist.get('aliases',[]),title,*[x.strip() for x in title.split(' / ') ]]))
+                # Two labels on the same official artist URL establish a bilingual alias.
+                artist['aliases']=list(dict.fromkeys([*artist.get('aliases',[]),*titles]))
                 if directory['kind']=='bluenote':
                     page=url
                     path=re.escape(urlsplit(url).path.rstrip('/'))+'/?'
@@ -391,6 +420,9 @@ class OfficialSearch:
         return sources,result
 
     def _albums(self, source):
+        # The album-only page has stable identity/category markup; the all-media page may not.
+        if source['provider']=='warner-japan' and source['url'].rstrip('/').endswith('/discography'):
+            source=dict(source,url=source['url'].rstrip('/')+'/album')
         diagnostic=dict(id=source['id'],url=source['url'],status='ok')
         entries=[]
         try:
@@ -413,7 +445,7 @@ class OfficialSearch:
                 proof=dict(rule=provider['adapter'],provider=source['provider'],sourceId=source['id'],artistId=source['artist']['id'],sourceUrl=item['url'],sourceSha256=item.get('detailSha256',digest))
                 proof.update({k:v for k,v in item.items() if k.startswith('listedRelease')})
                 identity=hashlib.sha256((source['artist']['id']+'\n'+rules.norm(title)).encode()).hexdigest()[:24]
-                album=dict(id='generated:'+identity,title=title,year=None,label=label,official=True,scope='work',sourceUrl=item['url'],sourceName=provider['name'],checkedAt=datetime.fromtimestamp(now,timezone.utc).date().isoformat(),reviewNote='公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。',verificationMethod=rules.RULE_VERSION,generationProof=proof,verifiedAtUnix=now,validUntilUnix=now+self.config['cacheSeconds'])
+                album=dict(id='generated:'+identity,title=title,year=(item.get('listedReleaseDate') or item.get('listedReleaseYear',''))[:4],label=label,official=True,scope='work',sourceUrl=item['url'],sourceName=provider['name'],checkedAt=datetime.fromtimestamp(now,timezone.utc).date().isoformat(),reviewNote='公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。',verificationMethod=rules.RULE_VERSION,generationProof=proof,verifiedAtUnix=now,validUntilUnix=now+self.config['cacheSeconds'])
                 if valid_album(album,source['artist'],self.config,now):entries.append(album)
             diagnostic.update(status='ok' if entries else 'unconfirmed',verified=len(entries),held=held)
         except SourceError as error:
@@ -450,7 +482,7 @@ class OfficialSearch:
         if albums:
             status='partial' if failed else 'confirmed'
         elif failed:
-            status='blocked' if all(d['status']=='blocked' for d in failed) else 'fetch_error'
+            status='policy_restricted' if all(d['status']=='policy_restricted' for d in failed) else 'blocked' if all(d['status']=='blocked' for d in failed) else 'fetch_error'
         else:
             status='unconfirmed' if sources else 'not_found'
         return dict(version=1,status=status,artist=dict(identity,albums=list(albums.values())),sources=diagnostics,cache={'hit':False,'refreshFailed':False},coverage='取得できた公式資料の範囲。全作品や公式サイトの不存在を断定しません。')

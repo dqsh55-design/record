@@ -27,6 +27,7 @@ jobs:
       - run: python -m unittest discover -s tests -p 'test_deeper_discographies.py' -v
       - run: python -m unittest discover -s tests -p 'test_wider_artists.py' -v
       - run: python -m unittest discover -s tests -p 'test_official_probe.py' -v
+      - run: python -m unittest discover -s tests -p 'test_on_demand_prototype.py' -v
       - run: python -m unittest discover -s tests -p 'test_official_generator.py' -v
       - run: python -m unittest discover -s tests -p 'test_realtime_search.py' -v
       - run: python -m unittest discover -s tests -p 'test_public_hosting.py' -v
@@ -42,4 +43,5 @@ jobs:
       - run: python tests/test_pages_ui.py
       # The preserved future API is opt-in in its browser tests; no account needed.
       - run: python tests/test_official_ui.py
+      - run: python tests/test_hybrid_ui.py
       - run: python -m py_compile scripts/build_catalog.py scripts/release_matching.py scripts/automatic_matching.py scripts/verify_catalog.py
