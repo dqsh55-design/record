@@ -19,7 +19,30 @@
       "host": "www.milesdavis.com",
       "url": "https://www.milesdavis.com/albums/",
       "releasePath": "/albums/[^/]+/?",
-      "label": "Columbia/Legacy"
+      "label": "Columbia/Legacy",
+      "enabled": false,
+      "disabledReason": "2026-10-27: normal HTTPS request returned 403; no access-limit bypass or retry."
+    },
+    {
+      "id": "miles-sony-japan",
+      "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "name": "Sony Music Japan",
+      "host": "www.sonymusic.co.jp",
+      "url": "https://www.sonymusic.co.jp/artist/MilesDavis/discography/",
+      "releasePath": "/artist/MilesDavis/discography/[^/]+/?",
+      "label": "Sony Music Japan",
+      "enabled": false,
+      "disabledReason": "2026-10-27: normal HTTPS request returned 403; search indexing alone is insufficient evidence."
+    },
+    {
+      "id": "miles-warner-japan",
+      "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "name": "Warner Music Japan",
+      "host": "wmg.jp",
+      "url": "https://wmg.jp/miles-davis/discography",
+      "releasePath": "/miles-davis/discography/\\d+/?",
+      "label": "Warner Music Japan",
+      "adapter": "warner-cards"
     }
   ]
 }

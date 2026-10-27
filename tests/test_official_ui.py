@@ -59,16 +59,18 @@ class OfficialCatalogUI(unittest.TestCase):
                 expect(page.locator('#official-catalog .meta').filter(has_text='2007')).to_have_count(1)
                 self.assertEqual(remote, [])
                 self.search(page, 'マイルス・デイビス')
-                expect(page.locator('#official-catalog article')).to_have_count(6)
+                expect(page.locator('#official-catalog article')).to_have_count(8)
                 expect(page.get_by_text('The Essential Miles Davis', exact=True)).to_be_visible()
+                expect(page.get_by_text('Doo-Bop', exact=True)).to_be_visible()
+                expect(page.get_by_text('TUTU', exact=True)).to_be_visible()
                 expect(page.get_by_text('Norah Jones の正規発売確認済みアルバム')).to_have_count(0)
                 self.assertEqual(remote, [])
                 self.assertFalse(page.evaluate('document.documentElement.scrollWidth > innerWidth'))
                 for link in page.locator('#official-catalog a').all():
                     self.assertEqual(link.get_attribute('target'), '_blank')
                     self.assertIn('noopener', link.get_attribute('rel'))
-                self.assertEqual(page.locator('#official-catalog a').filter(has_text='発売の根拠').count(),6)
-                self.assertEqual(page.locator('#official-catalog a').filter(has_text='配信先は未確認').count(),6)
+                self.assertEqual(page.locator('#official-catalog a').filter(has_text='発売の根拠').count(),8)
+                self.assertEqual(page.locator('#official-catalog a').filter(has_text='配信先は未確認').count(),8)
 
     def test_unconfirmed_injected_album_is_hidden(self):
         catalog=copy.deepcopy(CATALOG)
