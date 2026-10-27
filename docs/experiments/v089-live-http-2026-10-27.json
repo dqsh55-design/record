@@ -1,0 +1,635 @@
+{
+  "version": "v0.89",
+  "checkedAt": "2026-10-27T07:21:19.936273+00:00",
+  "publicDeployment": false,
+  "registeredArtistsAdded": 0,
+  "catalogSha256": "a46e3366162c7f9a3d858646bfdb5dc36c557cf00e9546388a75f9c81f53646d",
+  "mode": "Pages UI + loopback Python official fetch prototype",
+  "searches": [
+    {
+      "query": "Willie Nelson",
+      "elapsedSeconds": 24.542,
+      "result": {
+        "version": 1,
+        "status": "partial",
+        "artist": {
+          "id": "record:official:blue-note:artist-willie-nelson",
+          "name": "Willie Nelson",
+          "aliases": [
+            "Willie Nelson",
+            "ウィリー・ネルソン"
+          ],
+          "albums": [
+            {
+              "id": "generated:e6619729c00e34d2ee48d3a6",
+              "title": "American Classic",
+              "year": "2009",
+              "label": "Blue Note Records",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://www.bluenote.com/artist/willie-nelson/",
+              "sourceName": "Blue Note Records",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "bluenote-artist-v1",
+                "provider": "blue-note",
+                "sourceId": "blue-note:artist/willie-nelson",
+                "artistId": "record:official:blue-note:artist-willie-nelson",
+                "sourceUrl": "https://www.bluenote.com/artist/willie-nelson/",
+                "sourceSha256": "dcf58e9cb9fb78a3b0d8bbfd765c4bf893f89c991c873d966b597200369ddfd7",
+                "listedReleaseYear": "2009"
+              },
+              "verifiedAtUnix": 1793085704.4239664,
+              "validUntilUnix": 1793172104.4239664
+            },
+            {
+              "id": "generated:43d25282dba015d717748936",
+              "title": "ザ・コンプリート・アトランティック・セッションズ",
+              "year": "2006",
+              "label": "Warner Music Japan",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://wmg.jp/WillieNelson/discography/3355",
+              "sourceName": "Warner Music Japan",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "warner-albums-v1",
+                "provider": "warner-japan",
+                "sourceId": "warner-japan:WillieNelson",
+                "artistId": "record:official:blue-note:artist-willie-nelson",
+                "sourceUrl": "https://wmg.jp/WillieNelson/discography/3355",
+                "sourceSha256": "b2987bb383b45b36cded3f689840b8c4d04d72915dfa76a498d908eba3928f84",
+                "listedReleaseDate": "2006-08-23"
+              },
+              "verifiedAtUnix": 1793085704.4758036,
+              "validUntilUnix": 1793172104.4758036
+            }
+          ]
+        },
+        "sources": [
+          {
+            "id": "blue-note-directory",
+            "url": "https://www.bluenote.com/artists/",
+            "status": "ok",
+            "matches": 1
+          },
+          {
+            "id": "warner-directory",
+            "url": "https://wmg.jp/artistlist",
+            "status": "ok",
+            "matches": 1
+          },
+          {
+            "id": "sony-directory",
+            "url": "https://www.sonymusic.co.jp/artist/",
+            "status": "policy_restricted",
+            "code": "terms_review_required"
+          },
+          {
+            "id": "blue-note:artist/willie-nelson",
+            "url": "https://www.bluenote.com/artist/willie-nelson/",
+            "status": "ok",
+            "verified": 1,
+            "held": 2
+          },
+          {
+            "id": "warner-japan:WillieNelson",
+            "url": "https://wmg.jp/WillieNelson/discography/album",
+            "status": "ok",
+            "verified": 1,
+            "held": 0
+          }
+        ],
+        "cache": {
+          "hit": false,
+          "refreshFailed": false
+        },
+        "coverage": "取得できた公式資料の範囲。全作品や公式サイトの不存在を断定しません。"
+      }
+    },
+    {
+      "query": "Jimi Hendrix",
+      "elapsedSeconds": 0.21,
+      "result": {
+        "version": 1,
+        "status": "policy_restricted",
+        "artist": {
+          "id": "record:jimi-hendrix",
+          "name": "Jimi Hendrix",
+          "aliases": [
+            "ジミヘンドリックス",
+            "ジミ・ヘンドリックス",
+            "The Jimi Hendrix Experience",
+            "Jimi Hendrix Experience"
+          ],
+          "albums": []
+        },
+        "sources": [
+          {
+            "id": "blue-note-directory",
+            "url": "https://www.bluenote.com/artists/",
+            "status": "ok",
+            "matches": 0
+          },
+          {
+            "id": "warner-directory",
+            "url": "https://wmg.jp/artistlist",
+            "status": "ok",
+            "matches": 0
+          },
+          {
+            "id": "sony-directory",
+            "url": "https://www.sonymusic.co.jp/artist/",
+            "status": "policy_restricted",
+            "code": "terms_review_required"
+          },
+          {
+            "id": "jimi-official",
+            "url": "https://www.jimihendrix.com/music/",
+            "status": "policy_restricted",
+            "code": "terms_review_required"
+          },
+          {
+            "id": "jimi-sony",
+            "url": "https://www.sonymusic.co.jp/artist/jimihendrix/discography/",
+            "status": "policy_restricted",
+            "code": "terms_review_required"
+          }
+        ],
+        "cache": {
+          "hit": false,
+          "refreshFailed": false
+        },
+        "coverage": "取得できた公式資料の範囲。全作品や公式サイトの不存在を断定しません。"
+      }
+    },
+    {
+      "query": "Miles Davis",
+      "elapsedSeconds": 9.956,
+      "result": {
+        "version": 1,
+        "status": "partial",
+        "artist": {
+          "id": "record:miles-davis",
+          "name": "Miles Davis",
+          "aliases": [
+            "マイルス・デイビス",
+            "マイルス・デイヴィス",
+            "マイルスデイビス",
+            "マイルスデイヴィス"
+          ],
+          "albums": [
+            {
+              "id": "generated:380fdd684c71f88a507ee004",
+              "title": "Miles Davis, Vol. 2",
+              "year": "1953",
+              "label": "Blue Note Records",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://www.bluenote.com/artist/miles-davis/",
+              "sourceName": "Blue Note Records",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "bluenote-artist-v1",
+                "provider": "blue-note",
+                "sourceId": "blue-note:artist/miles-davis",
+                "artistId": "record:miles-davis",
+                "sourceUrl": "https://www.bluenote.com/artist/miles-davis/",
+                "sourceSha256": "ddd591b991b39baa7580d2fb7fafeacb0b933389afae94eb2be630ffe788cfe8",
+                "listedReleaseYear": "1953"
+              },
+              "verifiedAtUnix": 1793085709.9129822,
+              "validUntilUnix": 1793172109.9129822
+            },
+            {
+              "id": "generated:154b8e43efb52203d8043bde",
+              "title": "Miles Davis, Vol. 1",
+              "year": "1952",
+              "label": "Blue Note Records",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://www.bluenote.com/artist/miles-davis/",
+              "sourceName": "Blue Note Records",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "bluenote-artist-v1",
+                "provider": "blue-note",
+                "sourceId": "blue-note:artist/miles-davis",
+                "artistId": "record:miles-davis",
+                "sourceUrl": "https://www.bluenote.com/artist/miles-davis/",
+                "sourceSha256": "ddd591b991b39baa7580d2fb7fafeacb0b933389afae94eb2be630ffe788cfe8",
+                "listedReleaseYear": "1952"
+              },
+              "verifiedAtUnix": 1793085709.9129822,
+              "validUntilUnix": 1793172109.9129822
+            },
+            {
+              "id": "generated:bd8813b960f7590be7b3290b",
+              "title": "ヴェリー・ベスト・オブ・ワーナー・イヤーズ",
+              "year": "2026",
+              "label": "Warner Music Japan",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://wmg.jp/miles-davis/discography/33158",
+              "sourceName": "Warner Music Japan",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "warner-albums-v1",
+                "provider": "warner-japan",
+                "sourceId": "warner-japan:miles-davis",
+                "artistId": "record:miles-davis",
+                "sourceUrl": "https://wmg.jp/miles-davis/discography/33158",
+                "sourceSha256": "873fcbbd7e1ed461d372295cfd9e898294fe4d3ae9006835b59b88e4b388d6f9",
+                "listedReleaseDate": "2026-08-05"
+              },
+              "verifiedAtUnix": 1793085714.6418846,
+              "validUntilUnix": 1793172114.6418846
+            },
+            {
+              "id": "generated:2e0a9dfde21f9949ba080e5c",
+              "title": "ライヴ・アット・ヴィエンヌ",
+              "year": "2021",
+              "label": "Warner Music Japan",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://wmg.jp/miles-davis/discography/24589",
+              "sourceName": "Warner Music Japan",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "warner-albums-v1",
+                "provider": "warner-japan",
+                "sourceId": "warner-japan:miles-davis",
+                "artistId": "record:miles-davis",
+                "sourceUrl": "https://wmg.jp/miles-davis/discography/24589",
+                "sourceSha256": "873fcbbd7e1ed461d372295cfd9e898294fe4d3ae9006835b59b88e4b388d6f9",
+                "listedReleaseDate": "2021-06-25"
+              },
+              "verifiedAtUnix": 1793085714.6418846,
+              "validUntilUnix": 1793172114.6418846
+            },
+            {
+              "id": "generated:7b7575c59ff56e6fcbea2df6",
+              "title": "ラバーバンド",
+              "year": "2019",
+              "label": "Warner Music Japan",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://wmg.jp/miles-davis/discography/21247",
+              "sourceName": "Warner Music Japan",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "warner-albums-v1",
+                "provider": "warner-japan",
+                "sourceId": "warner-japan:miles-davis",
+                "artistId": "record:miles-davis",
+                "sourceUrl": "https://wmg.jp/miles-davis/discography/21247",
+                "sourceSha256": "873fcbbd7e1ed461d372295cfd9e898294fe4d3ae9006835b59b88e4b388d6f9",
+                "listedReleaseDate": "2019-09-06"
+              },
+              "verifiedAtUnix": 1793085714.6418846,
+              "validUntilUnix": 1793172114.6418846
+            },
+            {
+              "id": "generated:dd112378b02d6bf9ee8be6e8",
+              "title": "ライヴ・アラウンド・ザ・ワールド",
+              "year": "2019",
+              "label": "Warner Music Japan",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://wmg.jp/miles-davis/discography/19934",
+              "sourceName": "Warner Music Japan",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "warner-albums-v1",
+                "provider": "warner-japan",
+                "sourceId": "warner-japan:miles-davis",
+                "artistId": "record:miles-davis",
+                "sourceUrl": "https://wmg.jp/miles-davis/discography/19934",
+                "sourceSha256": "873fcbbd7e1ed461d372295cfd9e898294fe4d3ae9006835b59b88e4b388d6f9",
+                "listedReleaseDate": "2019-02-20"
+              },
+              "verifiedAtUnix": 1793085714.6418846,
+              "validUntilUnix": 1793172114.6418846
+            },
+            {
+              "id": "generated:04b2e5b064c07342cb1a9b94",
+              "title": "ライヴ・アット・モントルー",
+              "year": "2018",
+              "label": "Warner Music Japan",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://wmg.jp/miles-davis/discography/19616",
+              "sourceName": "Warner Music Japan",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "warner-albums-v1",
+                "provider": "warner-japan",
+                "sourceId": "warner-japan:miles-davis",
+                "artistId": "record:miles-davis",
+                "sourceUrl": "https://wmg.jp/miles-davis/discography/19616",
+                "sourceSha256": "873fcbbd7e1ed461d372295cfd9e898294fe4d3ae9006835b59b88e4b388d6f9",
+                "listedReleaseDate": "2018-10-17"
+              },
+              "verifiedAtUnix": 1793085714.6418846,
+              "validUntilUnix": 1793172114.6418846
+            },
+            {
+              "id": "generated:b3436f4ddc2b454692026d4b",
+              "title": "TUTU",
+              "year": "2018",
+              "label": "Warner Music Japan",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://wmg.jp/miles-davis/discography/19608",
+              "sourceName": "Warner Music Japan",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "warner-albums-v1",
+                "provider": "warner-japan",
+                "sourceId": "warner-japan:miles-davis",
+                "artistId": "record:miles-davis",
+                "sourceUrl": "https://wmg.jp/miles-davis/discography/19608",
+                "sourceSha256": "873fcbbd7e1ed461d372295cfd9e898294fe4d3ae9006835b59b88e4b388d6f9",
+                "listedReleaseDate": "2018-09-26"
+              },
+              "verifiedAtUnix": 1793085714.6418846,
+              "validUntilUnix": 1793172114.6418846
+            },
+            {
+              "id": "generated:ef27d2cac8d0baaf92735be0",
+              "title": "シエスタ",
+              "year": "2017",
+              "label": "Warner Music Japan",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://wmg.jp/miles-davis/discography/18318",
+              "sourceName": "Warner Music Japan",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "warner-albums-v1",
+                "provider": "warner-japan",
+                "sourceId": "warner-japan:miles-davis",
+                "artistId": "record:miles-davis",
+                "sourceUrl": "https://wmg.jp/miles-davis/discography/18318",
+                "sourceSha256": "873fcbbd7e1ed461d372295cfd9e898294fe4d3ae9006835b59b88e4b388d6f9",
+                "listedReleaseDate": "2017-07-26"
+              },
+              "verifiedAtUnix": 1793085714.6418846,
+              "validUntilUnix": 1793172114.6418846
+            },
+            {
+              "id": "generated:e90c6a8f2f40941c8cdaf972",
+              "title": "アマンドラ",
+              "year": "2017",
+              "label": "Warner Music Japan",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://wmg.jp/miles-davis/discography/18319",
+              "sourceName": "Warner Music Japan",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "warner-albums-v1",
+                "provider": "warner-japan",
+                "sourceId": "warner-japan:miles-davis",
+                "artistId": "record:miles-davis",
+                "sourceUrl": "https://wmg.jp/miles-davis/discography/18319",
+                "sourceSha256": "873fcbbd7e1ed461d372295cfd9e898294fe4d3ae9006835b59b88e4b388d6f9",
+                "listedReleaseDate": "2017-07-26"
+              },
+              "verifiedAtUnix": 1793085714.6418846,
+              "validUntilUnix": 1793172114.6418846
+            },
+            {
+              "id": "generated:b593dfa62bd25eea023419ef",
+              "title": "ディンゴ",
+              "year": "2017",
+              "label": "Warner Music Japan",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://wmg.jp/miles-davis/discography/18320",
+              "sourceName": "Warner Music Japan",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "warner-albums-v1",
+                "provider": "warner-japan",
+                "sourceId": "warner-japan:miles-davis",
+                "artistId": "record:miles-davis",
+                "sourceUrl": "https://wmg.jp/miles-davis/discography/18320",
+                "sourceSha256": "873fcbbd7e1ed461d372295cfd9e898294fe4d3ae9006835b59b88e4b388d6f9",
+                "listedReleaseDate": "2017-07-26"
+              },
+              "verifiedAtUnix": 1793085714.6418846,
+              "validUntilUnix": 1793172114.6418846
+            },
+            {
+              "id": "generated:a25bf8e2c61d331ef7d174e5",
+              "title": "ドゥー・バップ",
+              "year": "2017",
+              "label": "Warner Music Japan",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://wmg.jp/miles-davis/discography/18010",
+              "sourceName": "Warner Music Japan",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "warner-albums-v1",
+                "provider": "warner-japan",
+                "sourceId": "warner-japan:miles-davis",
+                "artistId": "record:miles-davis",
+                "sourceUrl": "https://wmg.jp/miles-davis/discography/18010",
+                "sourceSha256": "873fcbbd7e1ed461d372295cfd9e898294fe4d3ae9006835b59b88e4b388d6f9",
+                "listedReleaseDate": "2017-05-24"
+              },
+              "verifiedAtUnix": 1793085714.6418846,
+              "validUntilUnix": 1793172114.6418846
+            }
+          ]
+        },
+        "sources": [
+          {
+            "id": "blue-note-directory",
+            "url": "https://www.bluenote.com/artists/",
+            "status": "ok",
+            "matches": 1
+          },
+          {
+            "id": "warner-directory",
+            "url": "https://wmg.jp/artistlist",
+            "status": "ok",
+            "matches": 1
+          },
+          {
+            "id": "sony-directory",
+            "url": "https://www.sonymusic.co.jp/artist/",
+            "status": "policy_restricted",
+            "code": "terms_review_required"
+          },
+          {
+            "id": "miles-official",
+            "url": "https://www.milesdavis.com/albums/",
+            "status": "policy_restricted",
+            "code": "terms_review_required"
+          },
+          {
+            "id": "miles-sony",
+            "url": "https://www.sonymusic.co.jp/artist/MilesDavis/discography/",
+            "status": "policy_restricted",
+            "code": "terms_review_required"
+          },
+          {
+            "id": "blue-note:artist/miles-davis",
+            "url": "https://www.bluenote.com/artist/miles-davis/",
+            "status": "ok",
+            "verified": 2,
+            "held": 1
+          },
+          {
+            "id": "warner-japan:miles-davis",
+            "url": "https://wmg.jp/miles-davis/discography/album",
+            "status": "ok",
+            "verified": 12,
+            "held": 0
+          }
+        ],
+        "cache": {
+          "hit": false,
+          "refreshFailed": false
+        },
+        "coverage": "取得できた公式資料の範囲。全作品や公式サイトの不存在を断定しません。"
+      }
+    },
+    {
+      "query": "Willie Nelson",
+      "elapsedSeconds": 0.002,
+      "result": {
+        "version": 1,
+        "status": "partial",
+        "artist": {
+          "id": "record:official:blue-note:artist-willie-nelson",
+          "name": "Willie Nelson",
+          "aliases": [
+            "Willie Nelson",
+            "ウィリー・ネルソン"
+          ],
+          "albums": [
+            {
+              "id": "generated:e6619729c00e34d2ee48d3a6",
+              "title": "American Classic",
+              "year": "2009",
+              "label": "Blue Note Records",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://www.bluenote.com/artist/willie-nelson/",
+              "sourceName": "Blue Note Records",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "bluenote-artist-v1",
+                "provider": "blue-note",
+                "sourceId": "blue-note:artist/willie-nelson",
+                "artistId": "record:official:blue-note:artist-willie-nelson",
+                "sourceUrl": "https://www.bluenote.com/artist/willie-nelson/",
+                "sourceSha256": "dcf58e9cb9fb78a3b0d8bbfd765c4bf893f89c991c873d966b597200369ddfd7",
+                "listedReleaseYear": "2009"
+              },
+              "verifiedAtUnix": 1793085704.4239664,
+              "validUntilUnix": 1793172104.4239664
+            },
+            {
+              "id": "generated:43d25282dba015d717748936",
+              "title": "ザ・コンプリート・アトランティック・セッションズ",
+              "year": "2006",
+              "label": "Warner Music Japan",
+              "official": true,
+              "scope": "work",
+              "sourceUrl": "https://wmg.jp/WillieNelson/discography/3355",
+              "sourceName": "Warner Music Japan",
+              "checkedAt": "2026-10-27",
+              "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+              "verificationMethod": "official-source-rule-v1",
+              "generationProof": {
+                "rule": "warner-albums-v1",
+                "provider": "warner-japan",
+                "sourceId": "warner-japan:WillieNelson",
+                "artistId": "record:official:blue-note:artist-willie-nelson",
+                "sourceUrl": "https://wmg.jp/WillieNelson/discography/3355",
+                "sourceSha256": "b2987bb383b45b36cded3f689840b8c4d04d72915dfa76a498d908eba3928f84",
+                "listedReleaseDate": "2006-08-23"
+              },
+              "verifiedAtUnix": 1793085704.4758036,
+              "validUntilUnix": 1793172104.4758036
+            }
+          ]
+        },
+        "sources": [
+          {
+            "id": "blue-note-directory",
+            "url": "https://www.bluenote.com/artists/",
+            "status": "ok",
+            "matches": 1
+          },
+          {
+            "id": "warner-directory",
+            "url": "https://wmg.jp/artistlist",
+            "status": "ok",
+            "matches": 1
+          },
+          {
+            "id": "sony-directory",
+            "url": "https://www.sonymusic.co.jp/artist/",
+            "status": "policy_restricted",
+            "code": "terms_review_required"
+          },
+          {
+            "id": "blue-note:artist/willie-nelson",
+            "url": "https://www.bluenote.com/artist/willie-nelson/",
+            "status": "ok",
+            "verified": 1,
+            "held": 2
+          },
+          {
+            "id": "warner-japan:WillieNelson",
+            "url": "https://wmg.jp/WillieNelson/discography/album",
+            "status": "ok",
+            "verified": 1,
+            "held": 0
+          }
+        ],
+        "cache": {
+          "hit": true,
+          "refreshFailed": false
+        },
+        "coverage": "取得できた公式資料の範囲。全作品や公式サイトの不存在を断定しません。"
+      }
+    }
+  ]
+}

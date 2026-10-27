@@ -1,0 +1,44 @@
+name: On-demand prototype live validation
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - server/**
+      - index.html
+      - scripts/configure_public_api.py
+      - scripts/validate_v089_live.py
+      - .github/workflows/on-demand-prototype.yml
+permissions:
+  contents: read
+concurrency:
+  group: on-demand-live-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install 'playwright>=1.50,<2'
+      - run: python scripts/validate_v089_live.py --browser --output /tmp/record-v089/live.json
+      - name: Summarize local-only validation
+        if: always()
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          p=Path('/tmp/record-v089/live.json')
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as out:
+              out.write('## Local prototype, not a deployment\n\n')
+              if p.exists():out.write('```json\n'+p.read_text()+'\n```\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: record-v089-live
+          path: /tmp/record-v089
+          retention-days: 1
+          if-no-files-found: ignore

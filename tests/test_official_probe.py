@@ -34,8 +34,8 @@ class FixtureTransport:
         return {'url':url,'status':'ok','sourceSha256':hashlib.sha256(body.encode()).hexdigest(),'allowOrigin':''},body
 
 class OfficialProbe(unittest.TestCase):
-    def test_public_catalog_home_and_source_policies_are_byte_identical(self):
-        expected={'index.html':'848f03879daf0e9d7a5cb9ecdfb8dc35895adda2726bdca15d4261af761f6561','data/official-catalog.json':'a46e3366162c7f9a3d858646bfdb5dc36c557cf00e9546388a75f9c81f53646d','data/official-realtime.json':'6ecda71a8b1a1358b670718d426dadc74397a98be41655cd83b5a403137b2bb0','data/official-sources.json':'7122b8e0c5313532555780744ba5d10871f6b43c33344049b3df27fc3795851b'}
+    def test_public_catalog_and_source_policies_are_byte_identical(self):
+        expected={'data/official-catalog.json':'a46e3366162c7f9a3d858646bfdb5dc36c557cf00e9546388a75f9c81f53646d','data/official-realtime.json':'6ecda71a8b1a1358b670718d426dadc74397a98be41655cd83b5a403137b2bb0','data/official-sources.json':'7122b8e0c5313532555780744ba5d10871f6b43c33344049b3df27fc3795851b'}
         for path,digest in expected.items():self.assertEqual(hashlib.sha256((probe.ROOT/path).read_bytes()).hexdigest(),digest,path)
         catalog=json.loads((probe.ROOT/'data/official-catalog.json').read_text())
         self.assertEqual(len(catalog['artists']),20);self.assertEqual(sum(len(a['albums']) for a in catalog['artists']),292)

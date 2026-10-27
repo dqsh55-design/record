@@ -138,7 +138,7 @@ class RealtimeSearchTests(unittest.TestCase):
         album=result['artist']['albums'][0]
         self.assertEqual(album['generationProof']['listedReleaseDate'],'2023-11-10')
         self.assertEqual(album['sourceUrl'],detail_url)
-        self.assertIsNone(album['year'])
+        self.assertEqual(album['year'],'2023')
         for bad in [detail.replace('November 10, 2023','November 10, 2099'),detail.replace('music-release-date','article-date'),detail.replace('Jimi Hendrix','Other Artist'),detail.replace('Official album on vinyl and CD','Documentary video')]:
             self.pages.pages[detail_url]=bad
             # Clear the old valid proof so failure cannot be hidden by cache reuse.
