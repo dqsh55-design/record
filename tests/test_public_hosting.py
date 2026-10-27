@@ -88,6 +88,14 @@ class PublicHosting(unittest.TestCase):
         with patch.dict(os.environ,{'RECORD_REQUIRE_DATABASE':'1','RECORD_DATABASE_URL':''}):
             with self.assertRaises(ValueError):create_app()
 
+    def test_directory_aliases_cannot_contaminate_later_artist_search(self):
+        service,_=make_service();self.addCleanup(service.cache.close)
+        norah=service.search('Norah Jones')
+        other=service.search('New Artist')
+        self.assertNotIn('New Artist',norah['artist'].get('aliases',[]))
+        self.assertFalse(other['cache']['hit'])
+        self.assertEqual([a['title'] for a in other['artist']['albums']],['A Newly Discovered Album'])
+
     def test_no_db_credentials_in_public_error(self):
         service,_=make_service();self.addCleanup(service.cache.close)
         service.search=lambda *args,**kwargs:(_ for _ in ()).throw(RuntimeError('postgres://secret:password@private'))
