@@ -65,7 +65,7 @@ class CatalogAdditions(unittest.TestCase):
     def test_supported_counts_no_duplicate_work_ids_titles_or_held_candidates(self):
         counts={a['name']:len(a['albums']) for a in CATALOG['artists']}
         self.assertEqual(counts['Norah Jones'],13);self.assertEqual(counts['Miles Davis'],72)
-        self.assertEqual(sum(counts.values()),199)
+        self.assertEqual(sum(counts.values()),292)
         for artist in CATALOG['artists']:
             self.assertEqual(len(artist['albums']),len({a['id'] for a in artist['albums']}))
             keys=[re.sub(r'[^\w]','',a['title'].casefold()) for a in artist['albums']]

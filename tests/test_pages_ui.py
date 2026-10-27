@@ -50,7 +50,7 @@ class PagesUI(unittest.TestCase):
         for width in [320,390,430]:
             with self.subTest(width=width):
                 page,requests=self.page(width)
-                expect(page.locator('#catalog-total')).to_have_text('公式発売確認済み · 登録199作品')
+                expect(page.locator('#catalog-total')).to_have_text('公式発売確認済み · 登録292作品')
                 expect(page.locator('#catalog-artists')).to_have_count(0)
                 self.search(page,'ノラ・ジョーンズ')
                 expect(page.locator('#official-catalog article')).to_have_count(13)
@@ -217,13 +217,27 @@ class PagesUI(unittest.TestCase):
         expect(card.locator('.meta')).to_contain_text('2001')
         expect(card.get_by_role('link',name='YouTube Musicで探す（配信先は未確認） ↗',exact=True)).to_be_visible()
 
+    def test_wider_genres_aliases_counts_and_search_fallback_on_mobile(self):
+        page,requests=self.page(390)
+        for artist in CATALOG['artists'][14:]:
+            self.search(page,artist['aliases'][0])
+            expect(page.locator('#official-catalog article')).to_have_count(len(artist['albums']))
+            expect(page.locator('#status')).to_have_text(artist['name']+'：登録'+str(len(artist['albums']))+'作品（公式発売確認済み）')
+            card=page.locator('#official-catalog article').first
+            expect(card.locator('details a').first).to_be_hidden()
+            expect(card.get_by_role('link',name='YouTube Musicで探す（配信先は未確認） ↗',exact=True)).to_be_visible()
+            card.locator('summary').click()
+            expect(card.locator('details a').first).to_have_attribute('href',artist['albums'][0]['sourceUrl'])
+            self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'),390)
+        self.assertEqual(len(requests),1)
+
     def test_all_artists_remain_searchable_with_artist_count_and_persistent_total(self):
         page,requests=self.page()
         for artist in CATALOG['artists']:
             self.search(page,artist['name'])
             expect(page.locator('#official-catalog article')).to_have_count(len(artist['albums']))
             expect(page.locator('#status')).to_have_text(artist['name']+'：登録'+str(len(artist['albums']))+'作品（公式発売確認済み）')
-            expect(page.locator('#catalog-total')).to_have_text('公式発売確認済み · 登録199作品')
+            expect(page.locator('#catalog-total')).to_have_text('公式発売確認済み · 登録292作品')
             expect(page.locator('#catalog-artists')).to_have_count(0)
         self.assertEqual(len(requests),1)
 
@@ -235,7 +249,7 @@ class PagesUI(unittest.TestCase):
         for width in [320,390,430]:
             with self.subTest(width=width):
                 page,_=self.page(width,catalog=many)
-                expect(page.locator('#catalog-total')).to_have_text('公式発売確認済み · 登録399作品')
+                expect(page.locator('#catalog-total')).to_have_text('公式発売確認済み · 登録492作品')
                 expect(page.locator('#catalog-artists')).to_have_count(0)
                 expect(page.locator('#results')).to_be_empty()
                 field=page.get_by_role('textbox',name='アーティスト名')
@@ -264,7 +278,7 @@ class PagesUI(unittest.TestCase):
         expect(page.locator('#status')).to_contain_text('通信環境')
         page.get_by_role('button',name='目次を再読み込み').click()
         expect(page.locator('#status')).to_have_attribute('data-state','catalog_ready')
-        expect(page.locator('#catalog-total')).to_have_text('公式発売確認済み · 登録199作品')
+        expect(page.locator('#catalog-total')).to_have_text('公式発売確認済み · 登録292作品')
         self.search(page,'Norah Jones')
         expect(page.locator('#official-catalog article')).to_have_count(13)
         self.assertEqual(len(requests),2)

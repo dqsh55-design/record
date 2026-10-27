@@ -8,6 +8,8 @@ import unittest
 from urllib.parse import urlsplit
 ROOT=Path(__file__).resolve().parents[1]
 CATALOG=json.loads((ROOT/'data/official-catalog.json').read_text())
+# This historical review covers the original fourteen artists; v0.87 additions are tested separately.
+CATALOG['artists']=CATALOG['artists'][:14]
 FILE='data/official-reviews/deeper-discographies-2026-10-27.json'
 REVIEW=json.loads((ROOT/FILE).read_text())
 PREFIX='official:depth-20261027:'
