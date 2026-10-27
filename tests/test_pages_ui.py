@@ -2,6 +2,7 @@
 import copy
 import json
 import os
+import re
 from pathlib import Path
 import shutil
 import unittest
@@ -56,13 +57,38 @@ class PagesUI(unittest.TestCase):
                 expect(page.locator('#official-catalog .sub')).to_contain_text('リアルタイム検索ではなく')
                 for link in page.locator('#official-catalog article a').all():
                     href=link.get_attribute('href')
-                    self.assertTrue(href.startswith(('https://www.bluenote.com/','https://music.youtube.com/search?q=')))
+                    self.assertTrue(href.startswith(('https://www.bluenote.com/','https://music.youtube.com/search?q=','https://music.youtube.com/playlist?list=OLAK5uy_')))
                     self.assertEqual(link.get_attribute('rel'),'noopener noreferrer')
                 self.search(page,'マイルス・デイビス')
                 expect(page.locator('#official-catalog article')).to_have_count(34)
                 expect(page.get_by_text('Kind Of Blue',exact=True)).to_be_visible()
                 self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'),width)
                 self.assertEqual(len(requests),1)
+
+    def test_confirmed_album_opens_directly_and_keeps_official_source_and_search(self):
+        page,_=self.page();self.search(page,'Norah Jones')
+        expected=next(a for a in CATALOG['artists'][0]['albums'] if a['title']=='Visions')
+        card=page.locator('article').filter(has=page.get_by_text('Visions',exact=True))
+        link=card.get_by_role('link',name='YouTube Musicでアルバムを開く ↗',exact=True)
+        expect(link).to_have_attribute('href',expected['listeningLink']['url'])
+        expect(card.get_by_role('link',name='発売の根拠：Blue Note Records ↗',exact=True)).to_have_attribute('href',expected['sourceUrl'])
+        expect(card.get_by_role('link',name='別の配信をYouTube Musicで探す ↗',exact=True)).to_have_attribute('href',re.compile(r'^https://music\.youtube\.com/search\?q='))
+        destinations=[]
+        def destination(route):
+            destinations.append(route.request.url)
+            route.fulfill(body='<title>Verified link destination test</title>',content_type='text/html')
+        page.context.route('https://music.youtube.com/**',destination)
+        with page.expect_popup() as popup:link.click()
+        popup.value.wait_for_load_state()
+        self.assertEqual(destinations,[expected['listeningLink']['url']])
+
+    def test_norah_and_miles_unconfirmed_listening_targets_stay_search_links(self):
+        page,_=self.page()
+        for name,title in [('Norah Jones','Come Away With Me'),('Miles Davis','Kind Of Blue')]:
+            self.search(page,name)
+            card=page.locator('article').filter(has=page.get_by_text(title,exact=True))
+            expect(card.get_by_role('link',name='YouTube Musicで探す（配信先は未確認） ↗',exact=True)).to_have_attribute('href',re.compile(r'^https://music\.youtube\.com/search\?q='))
+            expect(card.get_by_role('link',name='YouTube Musicでアルバムを開く ↗',exact=True)).to_have_count(0)
 
     def test_supported_artist_buttons_work_without_typing(self):
         page,requests=self.page()

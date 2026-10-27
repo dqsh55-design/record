@@ -35,3 +35,19 @@ run(`document.querySelector=selector=>({content:selector.includes('record-api-ba
 assert.equal(run('publicSearchMode()'),'catalog');
 run(`document.querySelector=()=>({content:'api'})`);
 assert.equal(run('publicSearchMode()'),'api');
+
+// A reviewed official outbound chain can open an album. Names or saved URLs alone cannot.
+context.norah=context.catalog.artists.find(a=>a.name==='Norah Jones');
+context.visions=context.norah.albums.find(a=>a.title==='Visions');
+assert.equal(run('confirmedListeningLink(norah,visions).url'),context.visions.listeningLink.url);
+for(const patch of [{artistId:'wrong'},{albumId:'wrong'},{albumTitle:'Other Album'},{linkPageTitle:'Other Artist - Visions'},{officialSourceUrl:'https://evil.test/'},{officialLinkUrl:'https://evil.test/Visions'},{checkedAt:'2099-01-01'},{reviewNote:''},{targetSha256:'bad'},{url:'https://music.youtube.com/watch?v=abc'},{url:'https://music.youtube.com/playlist?list=PLuserlist'},{url:'https://music.youtube.com.evil.test/playlist?list=OLAK5uy_test'},{target:{...context.visions.listeningLink.target,title:'Other Album'}},{target:{...context.visions.listeningLink.target,artist:'Other Artist'}},{target:{...context.visions.listeningLink.target,type:'music.song'}},{target:{...context.visions.listeningLink.target,url:'https://music.youtube.com/browse/MPREb_other'}}]){
+ context.patch=patch;
+ assert.equal(run('confirmedListeningLink(norah,{...visions,listeningLink:{...visions.listeningLink,...patch}})'),null,JSON.stringify(patch));
+}
+assert.equal(run('confirmedListeningLink(norah,{...visions,official:false})'),null);
+assert.equal(run('confirmedListeningLink(norah,norah.albums.find(a=>a.title==="Come Away With Me"))'),null);
+context.miles=context.catalog.artists.find(a=>a.name==='Miles Davis');
+assert.ok(context.miles.albums.every(a=>run('confirmedListeningLink(miles,miles.albums.find(x=>x.id==="'+a.id+'"))')===null));
+run('verifiedLinks[visions.id]="https://music.youtube.com/browse/MPREb_unreviewed"');
+assert.equal(run('confirmedListeningLink(norah,visions).url'),context.visions.listeningLink.url);
+console.log('Reviewed official outbound album links, wrong identity/source/target rejection and search fallback passed');

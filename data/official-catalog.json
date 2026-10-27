@@ -151,7 +151,28 @@
           "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
           "sourceName": "Blue Note Records",
           "checkedAt": "2026-10-26",
-          "reviewNote": "公式Releases一覧と経歴を照合。Begin Againの年はこの資料から補完しない。"
+          "reviewNote": "公式Releases一覧と経歴を照合。Begin Againの年はこの資料から補完しない。",
+          "listeningLink": {
+            "verificationMethod": "official-outbound-album-v1",
+            "artistId": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+            "albumId": "985c709c-7771-4de3-9024-7bda29ebe3f9:11",
+            "albumTitle": "Visions",
+            "url": "https://music.youtube.com/playlist?list=OLAK5uy_lM3P4kceusY0iTd2n-RzLeqUKHHc_fMxo",
+            "checkedAt": "2026-10-27",
+            "officialSourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+            "officialLinkUrl": "https://norahjones.lnk.to/Visions",
+            "linkPageTitle": "Norah Jones - Visions",
+            "target": {
+              "url": "https://music.youtube.com/playlist?list=OLAK5uy_lM3P4kceusY0iTd2n-RzLeqUKHHc_fMxo",
+              "title": "Visions",
+              "artist": "ノラ・ジョーンズ",
+              "type": "music.album"
+            },
+            "sourceSha256": "cb42aadb8d77dd7482364275711bc571bf1c73f60c64b9858c1a5c61c4e98af5",
+            "linkPageSha256": "9ad1183c75bdca1895b0af4adaa10ab4d3c49b4f1ff3766b1416eee1334707c9",
+            "targetSha256": "2a4d4b3b6f99c032e624dd2c385b49b493b4f1ab2844fc14dac08eb1b82a40bf",
+            "reviewNote": "Blue Note本人ページのVisions配信リンクから案内先を確認。配信案内のYouTube Musicリンクと到達ページのcanonical URLが一致。music.album、Visions、ノラ・ジョーンズを確認。現在の地域別再生可否は未確認。"
+          }
         }
       ]
     },
