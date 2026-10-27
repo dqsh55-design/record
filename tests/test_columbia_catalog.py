@@ -49,6 +49,8 @@ class ColumbiaCatalogTests(unittest.TestCase):
         baseline['artists']=[a for a in baseline['artists'] if a['id'] in {'985c709c-7771-4de3-9024-7bda29ebe3f9','561d854a-6a28-4aa7-8c99-323e6ce46c2a'}]
         for artist in baseline['artists']:
             artist['albums']=[a for a in artist['albums'] if not a['id'].startswith(('official:miles-columbia:','generated:'))]
+            # Listening targets are independently reviewed, not official-release evidence.
+            for album in artist['albums']:album.pop('listeningLink',None)
         self.assertEqual([len(a['albums']) for a in baseline['artists']],[12,8])
         fingerprint=hashlib.sha256(json.dumps(baseline,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
         self.assertEqual(fingerprint,REVIEW['baselineCatalogFingerprint'])
