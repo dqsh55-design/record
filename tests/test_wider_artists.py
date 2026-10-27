@@ -9,6 +9,8 @@ import unittest
 from urllib.parse import urlsplit
 ROOT=Path(__file__).resolve().parents[1]
 CATALOG=json.loads((ROOT/'data/official-catalog.json').read_text())
+# Historical v0.87 review; later additions have their own complete-baseline test.
+CATALOG['artists']=CATALOG['artists'][:20]
 FILE='data/official-reviews/wider-artists-v087-2026-10-27.json'
 REVIEW=json.loads((ROOT/FILE).read_text())
 COUNTS={'John Coltrane':29,'Queen':17,'Iron Maiden':22,'Underworld':6,'Madonna':10,'宇多田ヒカル':9}
