@@ -50,7 +50,7 @@ class PagesUI(unittest.TestCase):
         for width in [320,390,430]:
             with self.subTest(width=width):
                 page,requests=self.page(width)
-                expect(page.locator('#status')).to_contain_text('5組・77作品')
+                expect(page.locator('#status')).to_contain_text('5組・100作品')
                 expect(page.locator('#catalog-artists button')).to_have_count(5)
                 self.search(page,'ノラ・ジョーンズ')
                 expect(page.locator('#official-catalog article')).to_have_count(13)
@@ -60,7 +60,7 @@ class PagesUI(unittest.TestCase):
                     self.assertTrue(href.startswith(('https://www.bluenote.com/','https://www.universal-music.co.jp/','https://music.youtube.com/search?q=','https://music.youtube.com/playlist?list=OLAK5uy_')))
                     self.assertEqual(link.get_attribute('rel'),'noopener noreferrer')
                 self.search(page,'マイルス・デイビス')
-                expect(page.locator('#official-catalog article')).to_have_count(54)
+                expect(page.locator('#official-catalog article')).to_have_count(72)
                 expect(page.get_by_text('Kind Of Blue',exact=True)).to_be_visible()
                 self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'),width)
                 self.assertEqual(len(requests),1)
@@ -105,7 +105,7 @@ class PagesUI(unittest.TestCase):
 
     def test_miles_twelve_new_listings_and_verified_birth_link(self):
         page,_=self.page();self.search(page,'マイルス・デイヴィス')
-        expect(page.locator('#official-catalog article')).to_have_count(54)
+        expect(page.locator('#official-catalog article')).to_have_count(72)
         additions=[a for a in CATALOG['artists'][1]['albums'] if a['id'].startswith('official:miles-discography-20261027:')]
         self.assertEqual(len(additions),12)
         for album in additions:
@@ -117,6 +117,30 @@ class PagesUI(unittest.TestCase):
             else:
                 expect(card.get_by_role('link',name='YouTube Musicで探す（配信先は未確認） ↗',exact=True)).to_have_attribute('href',re.compile(r'^https://music\.youtube\.com/search\?q='))
             expect(card.locator('img')).to_have_count(0)
+
+    def test_bill_additions_and_canonical_direct_link(self):
+        page,_=self.page();self.search(page,'ビル・フリゼール')
+        expect(page.locator('#official-catalog article')).to_have_count(9)
+        bill=next(a for a in CATALOG['artists'] if a['name']=='Bill Frisell')
+        added=[a for a in bill['albums'] if a['id'].startswith('official:hundred-20261027:')]
+        self.assertEqual(len(added),5)
+        for album in added:
+            card=page.locator('article').filter(has=page.get_by_text(album['title'],exact=True))
+            expect(card).to_have_count(1)
+            expect(card.get_by_role('link',name=re.compile('発売の根拠'))).to_have_attribute('href',album['sourceUrl'])
+            if album.get('listeningLink'):
+                expect(card.get_by_role('link',name='YouTube Musicでアルバムを開く ↗',exact=True)).to_have_attribute('href',album['listeningLink']['url'])
+            else:
+                expect(card.get_by_role('link',name='YouTube Musicで探す（配信先は未確認） ↗',exact=True)).to_be_visible()
+            expect(card.locator('img')).to_have_count(0)
+
+    def test_new_miles_official_series_is_not_excluded_by_bootleg_word(self):
+        page,_=self.page();self.search(page,'Miles Davis')
+        expect(page.locator('#official-catalog article')).to_have_count(72)
+        for title in ["Miles Davis Quintet - Live In Europe 1967: The Bootleg Series Vol. 1","Miles Davis, Volume 1","Miles Davis, Volume 2","Jazz Track"]:
+            card=page.locator('article').filter(has=page.get_by_text(title,exact=True))
+            expect(card).to_have_count(1)
+            expect(card.get_by_role('link',name='YouTube Musicで探す（配信先は未確認） ↗',exact=True)).to_be_visible()
 
     def test_supported_artist_buttons_work_without_typing(self):
         page,requests=self.page()
@@ -173,7 +197,7 @@ class PagesUI(unittest.TestCase):
         expect(page.locator('#status')).to_have_attribute('data-state','catalog_ready')
         page.evaluate("searchPublishedCatalog('Norah Jones');searchPublishedCatalog('Miles Davis')")
         expect(page.locator('#official-catalog h2')).to_contain_text('Miles Davis')
-        expect(page.locator('#official-catalog article')).to_have_count(54)
+        expect(page.locator('#official-catalog article')).to_have_count(72)
         self.assertEqual(len(requests),1)
 
 
