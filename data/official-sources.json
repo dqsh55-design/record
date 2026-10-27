@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "norah-jones",
+      "artistId": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+      "name": "Blue Note Records",
+      "host": "www.bluenote.com",
+      "url": "https://www.bluenote.com/artist/norah-jones/",
+      "releasePath": "/releases/[^/]+/?",
+      "label": "Blue Note Records",
+      "adapter": "bluenote-artist",
+      "artistName": "Norah Jones"
+    },
+    {
+      "id": "miles-davis",
+      "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "name": "Miles Davis / Sony Music",
+      "host": "www.milesdavis.com",
+      "url": "https://www.milesdavis.com/albums/",
+      "releasePath": "/albums/[^/]+/?",
+      "label": "Columbia/Legacy"
+    }
+  ]
+}
