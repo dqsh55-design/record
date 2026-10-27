@@ -14,7 +14,7 @@ with tempfile.TemporaryDirectory() as directory:
     with socket.socket() as s:s.bind(('127.0.0.1',0));port=s.getsockname()[1]
     base='http://127.0.0.1:'+str(port)
     env=dict(os.environ,RECORD_CACHE_PATH=str(Path(directory)/'cache.sqlite3'))
-    process=subprocess.Popen([sys.executable,'-m','gunicorn','server.public:create_public_app()','--bind','127.0.0.1:'+str(port),'--workers','1','--threads','4','--timeout','75','--max-requests','0'],cwd=ROOT,env=env)
+    process=subprocess.Popen([sys.executable,'-m','gunicorn','server.public:create_public_app()','--bind','127.0.0.1:'+str(port),'--workers','1','--threads','4','--timeout','75','--max-requests','0','--no-control-socket'],cwd=ROOT,env=env)
     try:
         for attempt in range(100):
             try:

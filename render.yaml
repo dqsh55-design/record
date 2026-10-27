@@ -9,7 +9,7 @@ services:
     numInstances: 1
     autoDeployTrigger: off
     buildCommand: pip install -r server/requirements-free.txt
-    startCommand: gunicorn 'server.public:create_public_app()' --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 75 --max-requests 0
+    startCommand: gunicorn 'server.public:create_public_app()' --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 75 --max-requests 0 --no-control-socket
     healthCheckPath: /health
     envVars:
       - key: PYTHON_VERSION
