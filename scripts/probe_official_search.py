@@ -14,6 +14,9 @@ import generate_official_catalog as rules
 from official_discography import Links, safe_url
 
 ROOT=Path(__file__).resolve().parents[1]
+import sys
+sys.path.insert(0,str(ROOT))
+from server.source_policy import SourcePolicy
 ORIGIN='https://dqsh55-design.github.io'
 ARTIST={'name':'Willie Nelson','aliases':['ウィリー・ネルソン','ウィリーネルソン']}
 SOURCES=[
@@ -37,7 +40,8 @@ class NoRedirect(HTTPRedirectHandler):
 
 
 class ProbeTransport:
-    def __init__(self,limit=7,timeout=12):
+    def __init__(self,limit=7,timeout=12,access_policy=None):
+        self.access_policy=access_policy or SourcePolicy.load()
         self.limit,self.timeout=limit,timeout
         self.cache={};self.blocked=set();self.last={};self.calls=0
 
@@ -45,6 +49,7 @@ class ProbeTransport:
         if not approved_url(url):return {'url':url,'status':'unsafe_source'},''
         if url in self.cache:return self.cache[url]
         host=urlsplit(url).hostname
+        if not self.access_policy.permits(host):return {'url':url,'status':'policy_restricted'},''
         if host in self.blocked:return {'url':url,'status':'blocked','code':'host_cooldown'},''
         if self.calls>=self.limit:return {'url':url,'status':'budget_exhausted'},''
         delay=self.last.get(host,0)+1-time.monotonic()

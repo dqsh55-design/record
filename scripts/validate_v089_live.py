@@ -21,6 +21,11 @@ ORIGIN='https://dqsh55-design.github.io'
 API='https://record-v089-api.test'
 
 def validate(browser=False):
+    from server.source_policy import SourcePolicy
+    policy=SourcePolicy.load()
+    if not any(policy.permits(host) for host in policy.document['hosts']):
+        from scripts.validate_v090_readiness import validate as readiness
+        return readiness() # No old live probe when source permission is unclear.
     app=prototype_app();server=make_server('127.0.0.1',0,app,server_class=ThreadedServer)
     thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
     base='http://127.0.0.1:'+str(server.server_port)

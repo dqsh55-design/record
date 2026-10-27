@@ -137,4 +137,30 @@ class HybridUI(unittest.TestCase):
         self.search(page,'Willie Nelson');expect(page.locator('.album-title')).to_have_text('American Classic')
         self.search(page,'Miles Davis');expect(page.locator('article')).to_have_count(72)
 
+    def test_prepared_public_runtime_policy_stop_and_japanese_static_fallback(self):
+        from server.public import create_public_app,PAGES_ORIGIN
+        app=create_public_app(cache_path=':memory:');self.addCleanup(app.service.cache.close)
+        server=make_server('127.0.0.1',0,app,server_class=ThreadedServer)
+        thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
+        self.addCleanup(lambda:(server.shutdown(),server.server_close(),thread.join(timeout=2)))
+        context=self.browser.new_context(viewport={'width':390,'height':844});self.addCleanup(context.close)
+        page=context.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
+        def route(r):
+            url=urlsplit(r.request.url)
+            if r.request.url==PAGES_ORIGIN+'/record/':
+                r.fulfill(body=configure((ROOT/'index.html').read_text(),'https://api.test',mode='hybrid'),content_type='text/html');return
+            if r.request.url==PAGES_ORIGIN+'/record/data/official-catalog.json':
+                r.fulfill(body=(ROOT/'data/official-catalog.json').read_text(),content_type='application/json');return
+            if url.hostname=='api.test':
+                response=context.request.get('http://127.0.0.1:'+str(server.server_port)+url.path+'?'+url.query,headers={'Origin':PAGES_ORIGIN})
+                r.fulfill(status=response.status,headers=response.headers,body=response.body());return
+            r.abort()
+        page.route('**/*',route);page.goto(PAGES_ORIGIN+'/record/')
+        for query in ['Willie Nelson','ウィリー・ネルソン']:
+            self.search(page,query);expect(page.locator('#status')).to_have_attribute('data-state','policy_restricted')
+            expect(page.locator('article')).to_have_count(0)
+        self.search(page,'マイルス・デイビス');expect(page.locator('article')).to_have_count(72)
+        expect(page.locator('#catalog-total')).to_contain_text('292作品')
+        self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'),390);self.assertEqual(errors,[])
+
 if __name__=='__main__':unittest.main()

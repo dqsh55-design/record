@@ -33,9 +33,11 @@ class SourceError(Exception):
 
 class OfficialTransport:
     """Only approved origins; no cross-host redirect, credentials or restriction bypass."""
-    def __init__(self, hosts, timeout=12, clock=time.time, reserve=None):
+    def __init__(self, hosts, timeout=12, clock=time.time, reserve=None, access_policy=None):
         self.hosts, self.timeout, self.clock = set(hosts), timeout, clock
         self.reserve = reserve
+        from .source_policy import SourcePolicy
+        self.access_policy = access_policy or SourcePolicy.load(clock=clock)
         self.host_locks = {host: threading.Lock() for host in hosts}
         self.last_fetch = {}
         self.blocked = {}
@@ -55,7 +57,7 @@ class OfficialTransport:
         url, host = source['url'], source['host']
         if host not in self.hosts or not safe_url(url, host):
             raise SourceError('unsafe_source')
-        if host in POLICY_RESTRICTED_HOSTS:
+        if host in POLICY_RESTRICTED_HOSTS or not self.access_policy.permits(host):
             raise SourceError('policy_restricted','terms_review_required')
         if not source.get('_robots'):
             self._check_robots(source)

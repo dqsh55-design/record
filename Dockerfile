@@ -5,6 +5,7 @@ RUN pip install --no-cache-dir -r server/requirements.txt
 COPY server /app/server
 COPY scripts /app/scripts
 COPY data/official-realtime.json /app/data/official-realtime.json
+COPY data/official-access-policy.json /app/data/official-access-policy.json
 COPY index.html /app/index.html
 RUN mkdir -p /data && chown 10001:10001 /data
 USER 10001:10001

@@ -1,0 +1,32 @@
+{
+  "version": "v0.90",
+  "checkedAt": "2026-10-27T07:51:27.253014+00:00",
+  "publicDeployment": false,
+  "liveOfficialRetrieval": false,
+  "reason": "All source permissions pending or prohibited; no official network requests permitted.",
+  "catalogSha256": "a46e3366162c7f9a3d858646bfdb5dc36c557cf00e9546388a75f9c81f53646d",
+  "searches": [
+    {
+      "query": "Willie Nelson",
+      "status": "policy_restricted",
+      "works": 0
+    },
+    {
+      "query": "ウィリー・ネルソン",
+      "status": "policy_restricted",
+      "works": 0
+    },
+    {
+      "query": "Jimi Hendrix",
+      "status": "policy_restricted",
+      "works": 0
+    },
+    {
+      "query": "Miles Davis",
+      "status": "policy_restricted",
+      "works": 0
+    }
+  ],
+  "registeredWorks": 292,
+  "registeredMilesWorks": 72
+}

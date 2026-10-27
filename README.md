@@ -24,3 +24,5 @@
 - [将来の任意API](server/README.md)
 
 ローカル確認は `python -m http.server 8000` をリポジトリのルートで実行し、http://localhost:8000/ を開いてください。静的ファイルの確認用であり、本番のPythonサーバー導入は必要ありません。
+
+- [v0.90：Render FreeとWorkers Freeの比較・公開前準備](docs/PUBLIC-READINESS-V090.md)
