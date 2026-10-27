@@ -35,6 +35,21 @@ jobs:
       # ubuntu-latest includes Chrome and its native libraries.
       - run: google-chrome --version
       - run: python tests/test_official_ui.py
+      - name: Build deployment image and check startup
+        run: |
+          docker build -t record-ci .
+          docker run -d --name record-ci -p 127.0.0.1:18000:8000 record-ci
+          for attempt in $(seq 1 20); do
+            if curl --fail --silent http://127.0.0.1:18000/health; then break; fi
+            sleep 1
+          done
+          curl --fail --silent http://127.0.0.1:18000/health | python -c "import json,sys; assert json.load(sys.stdin)['status']=='ok'"
+          test "$(curl --silent -o /dev/null -w '%{http_code}' http://127.0.0.1:18000/server/search.py)" = 404
+      - name: Clean deployment container
+        if: always()
+        run: |
+          docker logs record-ci || true
+          docker rm -f record-ci || true
       - run: python -m py_compile scripts/build_catalog.py scripts/release_matching.py scripts/automatic_matching.py scripts/verify_catalog.py
 
 
