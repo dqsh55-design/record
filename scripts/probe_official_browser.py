@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 import shutil
+import time
 from urllib.parse import urlsplit
 from playwright.sync_api import sync_playwright
 from probe_official_search import ORIGIN, SOURCES
@@ -38,12 +39,15 @@ def measure(samples=2):
         page.on('console',lambda msg:console.append(msg.text) if msg.type=='error' else None)
         def route(r):
             if r.request.url==PROBE_URL:
-                r.fulfill(body='<!doctype html><meta charset="utf-8"><title>RECORD isolated CORS probe</title>',content_type='text/html');return
+                r.fulfill(body='<!doctype html><meta charset="utf-8"><title>RECORD isolated CORS probe</title>',content_type='text/html',headers={'Content-Security-Policy':"default-src 'none'; connect-src https://willienelson.com https://wmg.jp https://www.bluenote.com; base-uri 'none'; form-action 'none'"});return
             if r.request.url in TARGETS and r.request.method=='GET':r.continue_();return
             unexpected.append(r.request.url);r.abort()
-        page.route('**/*',route);page.goto(PROBE_URL)
+        page.route('**/*',route);page.goto(PROBE_URL);last={}
         for sample in range(samples):
             for url in TARGETS:
+                host=urlsplit(url).hostname;delay=last.get(host,0)+1-time.monotonic()
+                if delay>0:time.sleep(min(delay,1))
+                last[host]=time.monotonic()
                 console.clear();result=page.evaluate(FETCH_SCRIPT,url)
                 result.update(url=url,sample=sample+1,corsConsoleObserved=any('cors' in m.lower() for m in console))
                 report['samples'].append(result)

@@ -6,7 +6,22 @@
 
 通常のHTTPS取得と既存の共通アダプターで、未登録のWillie Nelsonの発売作品を抽出し、作品名・発売年・発売元・根拠URLを出力する試作品は動作した。ただし、GitHub Pagesのブラウザだけで検索時に公式ディスコグラフィーを探索する本番機能への移行は未達成。
 
-取得したHTMLのCORSヘッダー観測では、本人の一覧、Warner、Blue Noteの一覧はいずれもPages Originへの許可がない。一部の本人商品ページだけ `Access-Control-Allow-Origin: *` があっても、一覧探索の成立を意味しない。HTTPクライアントで200が返ること、ブラウザが本文を読めること、正式発売の証拠が揃うことは別々に評価する。ブラウザ実測の結果はPRのCIに記録する。
+取得したHTMLのCORSヘッダー観測では、本人の一覧、Warner、Blue Noteの一覧はいずれもPages Originへの許可がない。一部の本人商品ページだけ `Access-Control-Allow-Origin: *` があっても、一覧探索の成立を意味しない。HTTPクライアントで200が返ること、ブラウザが本文を読めること、正式発売の証拠が揃うことは別々に評価する。Chromiumの実通信でも、主要3一覧は各2回ともCORSエラーで読めず、Spiritの商品ページのみ2回とも読めた。
+
+## ブラウザ・安定性の実測
+
+[検証Actionsの初回実行](https://github.com/dqsh55-design/record/actions/runs/40463771759)で、Pagesと同じOriginから公式4URLへ通常のfetchを各2回実行した。
+
+| 公式URL | HTTPクライアント | Chromium本文読み取り（2回） |
+| --- | --- | --- |
+| https://willienelson.com/collections/music | 200・CORS許可なし | 失敗・失敗、CORSエラーを観測 |
+| https://wmg.jp/WillieNelson/discography/album | 200・CORS許可なし | 失敗・失敗、CORSエラーを観測 |
+| https://www.bluenote.com/artist/willie-nelson/ | 200・CORS許可なし | 失敗・失敗、CORSエラーを観測 |
+| https://willienelson.com/products/spirit | 200・許可 `*` | 成功・成功。取得できることだけを確認し、発売確認の完了とは扱わない |
+
+[実ブラウザの測定記録](experiments/willie-nelson-browser-2026-10-27.json)を保存。短時間の2回測定に限られ、長期間・全ブラウザ・全地域での安定性は保証しない。HTML全体のハッシュは動的部分で変化したが、通常HTTP取得で抽出した作品・年・発売元とCORS許可の有無はローカルとActionsで同じだった。ソース側の書式変更・アクセス制限が運用上のリスクとなる。
+
+最初の測定では公式商品のリソースヒントに伴う補助リソース要求が観測されたが、許可リスト外の通信は全件中止した。追加のCSPで検証文書のスクリプト・スタイル・画像の読み込みを禁止し、本文のfetchだけを許可した。公式サイトのスクリプトは実行しない。
 
 ## 自動取得・確認した作品（公開目次には未登録）
 
@@ -48,7 +63,7 @@ python scripts/probe_official_search.py --artist 'Willie Nelson' --output-dir /t
 
 `scripts/probe_official_browser.py` はChromium内の通常の `fetch(mode: cors, credentials: omit)` を使用する。Pagesと同じOriginの検証用文書だけをローカル応答し、公式URLへのGETは実通信。CORSを無効にする起動引数、認証、ログイン情報、公開プロキシは使わない。実際の公開トップページを変更・再公開する試験ではない。取得エラーだけでCORS・通信断・アクセス拒否を断定せず、HTTP観測とブラウザのCORSエラーを突き合わせる。
 
-`.github/workflows/official-source-probe.yml` で同じ読み取り専用試験を実行できる。検証コード変更のPRと手動起動だけで動作し、定期実行・自動コミット・自動公開は設定していない。新規workflowの手動起動はdefault branchへのマージ後に利用可能。権限はcontents: readのみ。公式入口を指定したモードのHTTPは1実行最大7ページ、同一ホストに1秒以上の間隔、12秒タイムアウト、応答2MBまで。401/403/429は同一ホストの後続取得も中止し、リトライ・別IP・別ドメインへの迂回をしない。汎用探索モードは既存の上限（公式ディレクトリー3件、発見元ごと最大2入口、全体最大8入口）とホスト単位の取得間隔・拒否時の停止を再利用する。ブラウザ測定は固定4URLを各2回だけ取得する。資料本文・画像は保存せず、診断結果のみ小さなartifactにして1日で削除する。
+`.github/workflows/official-source-probe.yml` で同じ読み取り専用試験を実行できる。検証コード変更のPRと手動起動だけで動作し、定期実行・自動コミット・自動公開は設定していない。新規workflowの手動起動はdefault branchへのマージ後に利用可能。権限はcontents: readのみ。公式入口を指定したモードのHTTPは1実行最大7ページ、同一ホストに1秒以上の間隔、12秒タイムアウト、応答2MBまで。401/403/429は同一ホストの後続取得も中止し、リトライ・別IP・別ドメインへの迂回をしない。汎用探索モードは既存の上限（公式ディレクトリー3件、発見元ごと最大2入口、全体最大8入口）とホスト単位の取得間隔・拒否時の停止を再利用する。ブラウザ測定は固定4URLを各2回だけ、ホストごとに1秒以上の間隔を空けて取得する。資料本文・画像は保存せず、診断結果のみ小さなartifactにして1日で削除する。
 
 ## 方式の違い・費用・制約
 
