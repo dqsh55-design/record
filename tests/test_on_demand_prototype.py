@@ -89,7 +89,7 @@ class OnDemandPrototype(unittest.TestCase):
             opener.assert_not_called()
 
     def test_robots_disallow_stops_before_album_fetch(self):
-        transport=OfficialTransport({'wmg.jp'});parser=RobotFileParser();parser.parse(['User-agent: *','Disallow: /private'])
+        transport=OfficialTransport({'wmg.jp'},access_policy=type('FixturePolicy',(),{'permits':lambda self,host:True})());parser=RobotFileParser();parser.parse(['User-agent: *','Disallow: /private'])
         transport.robots['wmg.jp']=(transport.clock()+3600,parser)
         with patch('server.search.build_opener') as opener:
             with self.assertRaises(SourceError) as error:transport(dict(host='wmg.jp',url='https://wmg.jp/private'))

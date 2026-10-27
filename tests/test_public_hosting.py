@@ -75,7 +75,7 @@ class PublicHosting(unittest.TestCase):
             now[0]+=86400;self.assertTrue(cache.reserve_fetch(2))
 
     def test_budget_denial_never_contacts_official_host(self):
-        transport=OfficialTransport({'www.bluenote.com'},reserve=lambda:False)
+        transport=OfficialTransport({'www.bluenote.com'},access_policy=type('FixturePolicy',(),{'permits':lambda self,host:True})(),reserve=lambda:False)
         with patch('server.search.build_opener') as opener:
             with self.assertRaises(SourceError) as error:transport({'host':'www.bluenote.com','url':'https://www.bluenote.com/artists/'})
             self.assertEqual(error.exception.kind,'budget_exhausted');opener.assert_not_called()

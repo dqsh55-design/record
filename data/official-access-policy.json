@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hosts": {
+    "www.bluenote.com": {"status": "review_required", "termsUrl": "https://privacy.umusic.com/terms/", "reason": "Public automated retrieval and reuse permission is not established."},
+    "wmg.jp": {"status": "review_required", "termsUrl": "https://wmg.jp/corporate/terms-of-use", "reason": "Public automated retrieval and reuse permission is not established."},
+    "www.norahjones.com": {"status": "review_required", "reason": "Public automated retrieval and reuse permission is not established."},
+    "www.jimihendrix.com": {"status": "prohibited", "termsUrl": "https://www.sonymusic.com/terms-and-conditions/"},
+    "www.milesdavis.com": {"status": "prohibited", "termsUrl": "https://www.sonymusic.com/terms-and-conditions/"},
+    "www.legacyrecordings.com": {"status": "review_required", "reason": "Sony terms review required."},
+    "www.sonymusic.co.jp": {"status": "review_required", "reason": "Sony terms review required."}
+  }
+}

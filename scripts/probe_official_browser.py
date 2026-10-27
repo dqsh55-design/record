@@ -8,7 +8,7 @@ import shutil
 import time
 from urllib.parse import urlsplit
 from playwright.sync_api import sync_playwright
-from probe_official_search import ORIGIN, SOURCES
+from probe_official_search import ORIGIN, SOURCES, SourcePolicy
 
 TARGETS=[s['url'] for s in SOURCES]+['https://willienelson.com/products/spirit']
 PROBE_URL=ORIGIN+'/record/__official_source_probe__'
@@ -31,6 +31,10 @@ FETCH_SCRIPT="""async url=>{
 
 def measure(samples=2):
     report={'format':'RECORD-browser-cors-probe-v1','checkedAt':datetime.now(timezone.utc).isoformat(),'origin':ORIGIN,'method':'Chromium page fetch with normal CORS; Pages origin document fulfilled locally, official responses are live','credentialMode':'omit','corsDisabled':False,'samples':[],'interpretation':'readable proves transport only, never official album release; a fetch error alone cannot distinguish CORS, blocking and network failure'}
+    policy=SourcePolicy.load()
+    targets=[url for url in TARGETS if policy.permits(urlsplit(url).hostname)]
+    report['samples']=[{'url':url,'status':'policy_restricted','readable':False} for url in TARGETS if url not in targets]
+    if not targets:return report
     with sync_playwright() as p:
         executable=os.environ.get('RECORD_CHROMIUM') or shutil.which('google-chrome') or shutil.which('chromium')
         browser=p.chromium.launch(**({'executable_path':executable} if executable else {}))
@@ -40,11 +44,11 @@ def measure(samples=2):
         def route(r):
             if r.request.url==PROBE_URL:
                 r.fulfill(body='<!doctype html><meta charset="utf-8"><title>RECORD isolated CORS probe</title>',content_type='text/html',headers={'Content-Security-Policy':"default-src 'none'; connect-src https://willienelson.com https://wmg.jp https://www.bluenote.com; base-uri 'none'; form-action 'none'"});return
-            if r.request.url in TARGETS and r.request.method=='GET':r.continue_();return
+            if r.request.url in targets and r.request.method=='GET':r.continue_();return
             unexpected.append(r.request.url);r.abort()
         page.route('**/*',route);page.goto(PROBE_URL);last={}
         for sample in range(samples):
-            for url in TARGETS:
+            for url in targets:
                 host=urlsplit(url).hostname;delay=last.get(host,0)+1-time.monotonic()
                 if delay>0:time.sleep(min(delay,1))
                 last[host]=time.monotonic()

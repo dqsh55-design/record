@@ -1,18 +1,16 @@
-# Future API option only: not required or used by the current Pages release.
-# API only. GitHub Pages continues to serve the UI.
-# Create only after approval; no paid resources or Render database are declared.
+# Preparation only. Registration, creation and first deployment require approval.
+# One free API; no database, disk, secrets, keepalive or paid resource.
 services:
   - type: web
     name: record-official-api
-    runtime: docker
+    runtime: python
     plan: free
     region: frankfurt
+    numInstances: 1
     autoDeployTrigger: off
+    buildCommand: pip install -r server/requirements-free.txt
+    startCommand: gunicorn 'server.public:create_public_app()' --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 75 --max-requests 0
     healthCheckPath: /health
     envVars:
-      - key: RECORD_REQUIRE_DATABASE
-        value: '1'
-      - key: RECORD_DATABASE_URL
-        sync: false
-      - key: RECORD_ALLOWED_ORIGINS
-        value: https://dqsh55-design.github.io
+      - key: PYTHON_VERSION
+        value: 3.12.12

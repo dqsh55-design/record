@@ -1,4 +1,4 @@
-name: On-demand prototype live validation
+name: On-demand source policy validation
 on:
   workflow_dispatch:
   pull_request:
@@ -7,6 +7,8 @@ on:
       - index.html
       - scripts/configure_public_api.py
       - scripts/validate_v089_live.py
+      - scripts/validate_v090_readiness.py
+      - data/official-access-policy.json
       - .github/workflows/on-demand-prototype.yml
 permissions:
   contents: read
@@ -22,15 +24,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install 'playwright>=1.50,<2'
-      - run: python scripts/validate_v089_live.py --browser --output /tmp/record-v089/live.json
+      - run: python scripts/validate_v090_readiness.py --output /tmp/record-v090/readiness.json
       - name: Summarize local-only validation
         if: always()
         run: |
           python - <<'PY'
           import os
           from pathlib import Path
-          p=Path('/tmp/record-v089/live.json')
+          p=Path('/tmp/record-v090/readiness.json')
           with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as out:
               out.write('## Local prototype, not a deployment\n\n')
               if p.exists():out.write('```json\n'+p.read_text()+'\n```\n')
@@ -38,7 +39,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: record-v089-live
-          path: /tmp/record-v089
+          name: record-v090-readiness
+          path: /tmp/record-v090
           retention-days: 1
           if-no-files-found: ignore

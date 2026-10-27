@@ -115,7 +115,7 @@ class RealtimeSearchTests(unittest.TestCase):
         self.assertEqual(self.pages.calls,[])
 
     def test_unapproved_redirect_hosts_rejected_before_network(self):
-        transport=OfficialTransport({'www.bluenote.com'})
+        transport=OfficialTransport({'www.bluenote.com'},access_policy=type('FixturePolicy',(),{'permits':lambda self,host:True})())
         for url in ['https://www.bluenote.com.evil.test/','http://www.bluenote.com/','https://user@www.bluenote.com/']:
             with self.assertRaises(SourceError):transport({'url':url,'host':'www.bluenote.com'})
 

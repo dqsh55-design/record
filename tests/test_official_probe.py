@@ -107,13 +107,13 @@ class OfficialProbe(unittest.TestCase):
 
     def test_budget_exhaustion_stops_requests(self):
         with patch.object(probe,'build_opener') as opener:
-            info,body=probe.ProbeTransport(limit=0)(I)
+            info,body=probe.ProbeTransport(limit=0,access_policy=type('FixturePolicy',(),{'permits':lambda self,host:True})())(I)
             self.assertEqual(info['status'],'budget_exhausted');self.assertEqual(body,'');opener.assert_not_called()
 
     def test_403_blocks_further_requests_to_same_host_without_retry(self):
         with patch.object(probe,'build_opener') as opener:
             opener.return_value.open.side_effect=HTTPError(I,403,'Forbidden',{},BytesIO())
-            client=probe.ProbeTransport();self.assertEqual(client(I)[0]['status'],'blocked')
+            client=probe.ProbeTransport(access_policy=type('FixturePolicy',(),{'permits':lambda self,host:True})());self.assertEqual(client(I)[0]['status'],'blocked')
             self.assertEqual(client(P)[0]['status'],'blocked');self.assertEqual(opener.return_value.open.call_count,1)
 
     def test_cors_header_observation_is_exact_and_not_a_browser_success_claim(self):
