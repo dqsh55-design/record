@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "artist": "Miles Davis",
+  "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+  "checkedAt": "2026-10-27",
+  "reviewer": "Codex（公式作品資料照合）",
+  "retrievalMethod": "official-pages-via-web-retrieval",
+  "automatedCollection": false,
+  "reviewScope": "work",
+  "reviewDecision": "approve",
+  "note": "公式作品ページ本文の作品名・Release Date・Recording Period・Labelを個別照合。通常HTTP取得は403のため自動取得設定は無効のまま維持。公開資料の閲覧・照合による手動登録であり、自動収集の成功を意味しない。Sony日本の2006年公式復刻企画も掲載作品を補助照合。",
+  "works": [
+    {
+      "catalogId": "official:miles-columbia:miles-ahead",
+      "title": "Miles Ahead",
+      "sourceUrl": "https://www.milesdavis.com/albums/miles-ahead/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Oct 21, 1957",
+      "sourceRecordingPeriod": "May 1957",
+      "displayYear": "1957",
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1202",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    },
+    {
+      "catalogId": "official:miles-columbia:milestones",
+      "title": "Milestones",
+      "sourceUrl": "https://www.milesdavis.com/albums/milestones/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Sep 2, 1958",
+      "sourceRecordingPeriod": "Feb 1958 - Mar 1958",
+      "displayYear": "1958",
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1203",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    },
+    {
+      "catalogId": "official:miles-columbia:porgy-and-bess",
+      "title": "Porgy And Bess",
+      "sourceUrl": "https://www.milesdavis.com/albums/porgy-and-bess/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Mar 9, 1959",
+      "sourceRecordingPeriod": "Jul 1958 - Aug 1958",
+      "displayYear": "1959",
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1205",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    },
+    {
+      "catalogId": "official:miles-columbia:someday-my-prince-will-come",
+      "title": "Someday My Prince Will Come",
+      "sourceUrl": "https://www.milesdavis.com/albums/someday-my-prince-will-come/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Dec 11, 1961",
+      "sourceRecordingPeriod": "Mar 1961",
+      "displayYear": "1961",
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1208",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    },
+    {
+      "catalogId": "official:miles-columbia:seven-steps-to-heaven",
+      "title": "Seven Steps To Heaven",
+      "sourceUrl": "https://www.milesdavis.com/albums/seven-steps-to-heaven/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Jul 15, 1963",
+      "sourceRecordingPeriod": "Apr 1963 - May 1963",
+      "displayYear": "1963",
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1209",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    },
+    {
+      "catalogId": "official:miles-columbia:my-funny-valentine",
+      "title": "My Funny Valentine: Miles Davis In Concert",
+      "sourceUrl": "https://www.milesdavis.com/albums/my-funny-valentine/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Feb 23, 1965",
+      "sourceRecordingPeriod": "Feb 1964",
+      "displayYear": "1965",
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1211",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    },
+    {
+      "catalogId": "official:miles-columbia:four-more",
+      "title": "‘Four’ & More",
+      "sourceUrl": "https://www.milesdavis.com/albums/four-more/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Jan 17, 1966",
+      "sourceRecordingPeriod": "Feb 1964",
+      "displayYear": "1966",
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1212",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    },
+    {
+      "catalogId": "official:miles-columbia:e-s-p",
+      "title": "E.S.P.",
+      "sourceUrl": "https://www.milesdavis.com/albums/e-s-p/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Aug 16, 1965",
+      "sourceRecordingPeriod": "Jan 1965",
+      "displayYear": "1965",
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1215",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    },
+    {
+      "catalogId": "official:miles-columbia:miles-smiles",
+      "title": "Miles Smiles",
+      "sourceUrl": "https://www.milesdavis.com/albums/miles-smiles/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Feb 16, 1967",
+      "sourceRecordingPeriod": "Oct 1966",
+      "displayYear": "1967",
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1216",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    },
+    {
+      "catalogId": "official:miles-columbia:sorcerer",
+      "title": "Sorcerer",
+      "sourceUrl": "https://www.milesdavis.com/albums/sorcerer/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Oct 23, 1967",
+      "sourceRecordingPeriod": "Aug 1962 - May 1967",
+      "displayYear": "1967",
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1217",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    },
+    {
+      "catalogId": "official:miles-columbia:nefertiti",
+      "title": "Nefertiti",
+      "sourceUrl": "https://www.milesdavis.com/albums/nefertiti/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Jan 15, 1968",
+      "sourceRecordingPeriod": "Jun 1967 - Jul 1967",
+      "displayYear": "1968",
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1218",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    },
+    {
+      "catalogId": "official:miles-columbia:miles-in-the-sky",
+      "title": "Miles In The Sky",
+      "sourceUrl": "https://www.milesdavis.com/albums/miles-in-the-sky/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Jul 22, 1968",
+      "sourceRecordingPeriod": "Jan 1968 - May 1968",
+      "displayYear": "1968"
+    },
+    {
+      "catalogId": "official:miles-columbia:filles-de-kilimanjaro",
+      "title": "Filles De Kilimanjaro",
+      "sourceUrl": "https://www.milesdavis.com/albums/filles-de-kilimanjaro/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Feb 5, 1969",
+      "sourceRecordingPeriod": "Jun 1968 - Sep 1968",
+      "displayYear": null
+    },
+    {
+      "catalogId": "official:miles-columbia:a-tribute-to-jack-johnson",
+      "title": "A Tribute To Jack Johnson",
+      "sourceUrl": "https://www.milesdavis.com/albums/a-tribute-to-jack-johnson/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Feb 24, 1971",
+      "sourceRecordingPeriod": "Feb 1970 - Apr 1970",
+      "displayYear": "1971",
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1222",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    },
+    {
+      "catalogId": "official:miles-columbia:on-the-corner",
+      "title": "On The Corner",
+      "sourceUrl": "https://www.milesdavis.com/albums/on-the-corner/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Oct 11, 1972",
+      "sourceRecordingPeriod": "Jun 1972 - Jul 1972",
+      "displayYear": "1972",
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1227",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    },
+    {
+      "catalogId": "official:miles-columbia:get-up-with-it",
+      "title": "Get Up With It",
+      "sourceUrl": "https://www.milesdavis.com/albums/get-up-with-it/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "Nov 22, 1974",
+      "sourceRecordingPeriod": "May 1970 - Oct 1974",
+      "displayYear": "1974",
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1228-9",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    },
+    {
+      "catalogId": "official:miles-columbia:agharta",
+      "title": "Agharta",
+      "sourceUrl": "https://www.milesdavis.com/albums/agharta/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "1975",
+      "sourceRecordingPeriod": "Feb 1975",
+      "displayYear": "1975",
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1230-1",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    },
+    {
+      "catalogId": "official:miles-columbia:pangaea",
+      "title": "Pangaea",
+      "sourceUrl": "https://www.milesdavis.com/albums/pangaea/",
+      "sourceName": "Miles Davis / Sony Music",
+      "label": "Columbia Records",
+      "sourceReleaseDate": "1976",
+      "sourceRecordingPeriod": "Feb 1975",
+      "displayYear": null,
+      "sonyJapanReissue": {
+        "sourceUrl": "https://www.sonymusic.co.jp/Music/Jazz/Special/milesdavis2006/index_pc.html",
+        "catalogNumber": "SICP 1232-3",
+        "scope": "supporting-reissue-reference",
+        "yearUsedAsOriginal": false
+      }
+    }
+  ],
+  "baselineCatalogFingerprint": "a4a29953a95508a5521a0f020f7bf473dc4242ba74fa8ede9d3791552349bd37"
+}
