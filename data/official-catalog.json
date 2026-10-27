@@ -1670,6 +1670,372 @@
         "url": "https://www.bluenote.com/artists/",
         "sourceSha256": "d7f988d10152dc1cdadf51bc1052405b723f066db43a06737756ab9c0175379c"
       }
+    },
+    {
+      "id": "record:the-beatles",
+      "name": "The Beatles",
+      "aliases": [
+        "ザ・ビートルズ",
+        "ビートルズ",
+        "ザビートルズ"
+      ],
+      "albums": [
+        {
+          "id": "official:artists-20261027:the-beatles:abbey-road",
+          "title": "Abbey Road",
+          "year": "1969",
+          "label": "EMI",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.thebeatles.com/abbey-road",
+          "sourceName": "The Beatles Official Site",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        },
+        {
+          "id": "official:artists-20261027:the-beatles:revolver",
+          "title": "Revolver",
+          "year": "1966",
+          "label": "EMI",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.thebeatles.com/revolver",
+          "sourceName": "The Beatles Official Site",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        }
+      ]
+    },
+    {
+      "id": "record:led-zeppelin",
+      "name": "Led Zeppelin",
+      "aliases": [
+        "レッド・ツェッペリン",
+        "レッドツェッペリン"
+      ],
+      "albums": [
+        {
+          "id": "official:artists-20261027:led-zeppelin:ii",
+          "title": "Led Zeppelin II",
+          "year": "1969",
+          "label": "Rhino Entertainment",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://discography.ledzeppelin.com/lz2",
+          "sourceName": "Led Zeppelin Official Discography",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        },
+        {
+          "id": "official:artists-20261027:led-zeppelin:iv",
+          "title": "Led Zeppelin IV",
+          "year": "1971",
+          "label": "Atlantic / Rhino",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://discography.ledzeppelin.com/lz4",
+          "sourceName": "Led Zeppelin Official Discography",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        }
+      ]
+    },
+    {
+      "id": "record:black-sabbath",
+      "name": "Black Sabbath",
+      "aliases": [
+        "ブラック・サバス",
+        "ブラックサバス"
+      ],
+      "albums": [
+        {
+          "id": "official:artists-20261027:black-sabbath:paranoid",
+          "title": "Paranoid（パラノイド）",
+          "year": "1970",
+          "label": "SANCTUARY RECORDS GROUP",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.universal-music.co.jp/p/uicy-20039/",
+          "sourceName": "Universal Music Japan",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。商品紹介の発表年",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        },
+        {
+          "id": "official:artists-20261027:black-sabbath:master-of-reality",
+          "title": "Master of Reality（マスター・オブ・リアリティ）",
+          "year": "1971",
+          "label": "SANCTUARY RECORDS GROUP",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.universal-music.co.jp/p/uicy-20106/",
+          "sourceName": "Universal Music Japan",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。商品紹介の発表年。「オリジナル発売日2009.06.29」は再発関連の日付として扱う",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        }
+      ]
+    },
+    {
+      "id": "record:metallica",
+      "name": "Metallica",
+      "aliases": [
+        "メタリカ"
+      ],
+      "albums": [
+        {
+          "id": "official:artists-20261027:metallica:master-of-puppets",
+          "title": "Master of Puppets",
+          "year": "1986",
+          "label": "Blackened Recordings",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.metallica.com/releases/albums/master-of-puppets-album.html",
+          "sourceName": "Metallica Official Site",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        },
+        {
+          "id": "official:artists-20261027:metallica:metallica",
+          "title": "Metallica",
+          "year": "1991",
+          "label": "Blackened Recordings",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.metallica.com/releases/albums/the-black-album.html",
+          "sourceName": "Metallica Official Site",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        }
+      ]
+    },
+    {
+      "id": "record:kraftwerk",
+      "name": "Kraftwerk",
+      "aliases": [
+        "クラフトワーク"
+      ],
+      "albums": [
+        {
+          "id": "official:artists-20261027:kraftwerk:autobahn",
+          "title": "Autobahn（アウトバーン）",
+          "year": "1974",
+          "label": "Warner Music Japan",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://wmg.jp/kraftwerk/discography/11358",
+          "sourceName": "Warner Music Japan",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。公式商品紹介の作品年",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        },
+        {
+          "id": "official:artists-20261027:kraftwerk:computer-world",
+          "title": "Computer World（コンピューター・ワールド）",
+          "year": "1981",
+          "label": "Warner Music Japan",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://wmg.jp/kraftwerk/discography/11362",
+          "sourceName": "Warner Music Japan",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。公式商品紹介の作品年",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        }
+      ]
+    },
+    {
+      "id": "record:daft-punk",
+      "name": "Daft Punk",
+      "aliases": [
+        "ダフト・パンク",
+        "ダフトパンク"
+      ],
+      "albums": [
+        {
+          "id": "official:artists-20261027:daft-punk:discovery",
+          "title": "Discovery",
+          "year": "2001",
+          "label": "Warner Music Japan",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://daftpunk.com/discovery/",
+          "sourceName": "Daft Punk Official Site",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json",
+          "listeningLink": {
+            "verificationMethod": "official-outbound-album-v1",
+            "artistId": "record:daft-punk",
+            "albumId": "official:artists-20261027:daft-punk:discovery",
+            "albumTitle": "Discovery",
+            "url": "https://music.youtube.com/playlist?list=OLAK5uy_mz6eafmqdRHSaR4IwG0ll6J6rgv0_ZpGw",
+            "checkedAt": "2026-10-27",
+            "officialSourceUrl": "https://daftpunk.com/discovery/",
+            "officialLinkUrl": "https://daftpunk.lnk.to/Discovery",
+            "linkPageTitle": "Daft Punk - Discovery",
+            "target": {
+              "url": "https://music.youtube.com/playlist?list=OLAK5uy_mz6eafmqdRHSaR4IwG0ll6J6rgv0_ZpGw",
+              "title": "Discovery",
+              "artist": "Daft Punk",
+              "type": "music.album"
+            },
+            "sourceSha256": "24b3bd21d9185f8c96952b03dd7045ae52acdccb1f40c6c49eb9a09888fd6317",
+            "linkPageSha256": "5ca45798a9b8c95c1ac38622e70d26e0735053ef12ca79b7bcd8b45d89d00c49",
+            "targetSha256": "4170392aea060a2684d6239ee479074863e19fd3371a09effa3271b6f0a8be7a",
+            "reviewNote": "本人公式アルバムページ→公式配信案内→YouTube Musicの正規アルバムURLを取得。canonical・作品名・名義・music.albumを確認。ログイン後の再生・地域別配信可否は未検証。"
+          }
+        },
+        {
+          "id": "official:artists-20261027:daft-punk:random-access-memories",
+          "title": "Random Access Memories",
+          "year": "2013",
+          "label": "Sony Music",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.daftpunk.com/randomaccessmemories/",
+          "sourceName": "Daft Punk Official Site",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        }
+      ]
+    },
+    {
+      "id": "record:david-bowie",
+      "name": "David Bowie",
+      "aliases": [
+        "デヴィッド・ボウイ",
+        "デビッド・ボウイ",
+        "デヴィッドボウイ",
+        "デビッドボウイ"
+      ],
+      "albums": [
+        {
+          "id": "official:artists-20261027:david-bowie:hunky-dory",
+          "title": "Hunky Dory（ハンキー・ドリー）",
+          "year": "1971",
+          "label": "Warner Music Japan",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://wmg.jp/davidbowie/discography/11404",
+          "sourceName": "Warner Music Japan",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式発売作品の掲載を確認。本人公式の発売記念記事の作品年。Warnerの2014年日本盤再発日と区別する。配信先の照合は別の判断として扱う。",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        },
+        {
+          "id": "official:artists-20261027:david-bowie:ziggy-stardust",
+          "title": "The Rise and Fall of Ziggy Stardust（ジギー・スターダスト）",
+          "year": "1972",
+          "label": "Warner Music Japan",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://wmg.jp/davidbowie/discography/11405",
+          "sourceName": "Warner Music Japan",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式発売作品の掲載を確認。本人公式の発売記念記事の作品年。Warnerの2014年日本盤再発日と区別する。配信先の照合は別の判断として扱う。",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        }
+      ]
+    },
+    {
+      "id": "record:michael-jackson",
+      "name": "Michael Jackson",
+      "aliases": [
+        "マイケル・ジャクソン",
+        "マイケルジャクソン"
+      ],
+      "albums": [
+        {
+          "id": "official:artists-20261027:michael-jackson:thriller",
+          "title": "Thriller",
+          "year": "1982",
+          "label": "Sony Music",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.sonymusic.co.jp/artist/MichaelJackson/page/bscd2_2016",
+          "sourceName": "Sony Music Japan",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        },
+        {
+          "id": "official:artists-20261027:michael-jackson:bad",
+          "title": "Bad",
+          "year": "1987",
+          "label": "Sony Music",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.sonymusic.co.jp/artist/MichaelJackson/page/bscd2_2016",
+          "sourceName": "Sony Music Japan",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        }
+      ]
+    },
+    {
+      "id": "record:ryuichi-sakamoto",
+      "name": "Ryuichi Sakamoto",
+      "aliases": [
+        "坂本龍一",
+        "坂本竜一",
+        "坂本 龍一",
+        "さかもとりゅういち"
+      ],
+      "albums": [
+        {
+          "id": "official:artists-20261027:ryuichi-sakamoto:async",
+          "title": "async",
+          "year": "2017",
+          "label": "commmons",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.commmons.com/archive/whatsnew/artists/sakamotoryuichi/202310060910.html",
+          "sourceName": "commmons",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。公式再発案内に明記されたオリジナルアルバムの発売年",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        },
+        {
+          "id": "official:artists-20261027:ryuichi-sakamoto:12",
+          "title": "12",
+          "year": "2023",
+          "label": "commmons",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.commmons.com/archive/carbonoffset/2023/015630.html",
+          "sourceName": "commmons",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式サイトでアルバムの正規発売掲載を確認。配信先の照合は別の判断として扱う。レーベルの年度別発売商品一覧にリリース日明記",
+          "reviewer": "Codex（公式発売目次照合）",
+          "evidenceFile": "data/official-reviews/artist-expansion-2026-10-27.json"
+        }
+      ]
     }
   ]
 }

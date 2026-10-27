@@ -60,3 +60,20 @@ assert.equal(run('confirmedListeningLink(bill,dreams).url'),context.dreams.liste
 for(const bad of ['https://billfrisell.lnk.to.evil.test/InMyDreams','https://fake.billfrisell.lnk.to/InMyDreams']){
  context.bad=bad;assert.equal(run('confirmedListeningLink(bill,{...dreams,listeningLink:{...dreams.listeningLink,officialLinkUrl:bad}})'),null);
 }
+
+// New genres use the same reviewed catalog, alias lookup and exact-host rules.
+for(const name of ['The Beatles','Led Zeppelin','Black Sabbath','Metallica','Kraftwerk','Daft Punk','David Bowie','Michael Jackson','Ryuichi Sakamoto']){
+ const artist=context.catalog.artists.find(a=>a.name===name);
+ for(const alias of [name,...artist.aliases]){context.query=alias;assert.equal(run('catalogArtist(query).id'),artist.id)}
+}
+for(const name of ["B’z","B'z","B'z","ビーズ"]){context.query=name;assert.equal(run('catalogArtist(query)'),undefined)}
+context.daft=context.catalog.artists.find(a=>a.name==='Daft Punk');context.discovery=context.daft.albums[0];
+assert.equal(run('confirmedListeningLink(daft,discovery).url'),context.discovery.listeningLink.url);
+assert.equal(run('confirmedListeningLink(daft,daft.albums[1])'),null);
+for(const bad of ['https://daftpunk.lnk.to.evil.test/Discovery','https://fake.daftpunk.lnk.to/Discovery']){
+ context.bad=bad;assert.equal(run('confirmedListeningLink(daft,{...discovery,listeningLink:{...discovery.listeningLink,officialLinkUrl:bad}})'),null);
+}
+for(const host of ['www.thebeatles.com','discography.ledzeppelin.com','www.metallica.com','daftpunk.com','www.daftpunk.com','www.commmons.com']){
+ context.bad='https://'+host+'.evil.test/album';assert.equal(run('confirmedCatalogAlbums({albums:[{...discovery,sourceUrl:bad}]}).length'),0);
+}
+console.log('Nine new artist aliases, approved direct link, search fallbacks and exact host rejection passed');

@@ -50,8 +50,8 @@ class PagesUI(unittest.TestCase):
         for width in [320,390,430]:
             with self.subTest(width=width):
                 page,requests=self.page(width)
-                expect(page.locator('#status')).to_contain_text('5組・100作品')
-                expect(page.locator('#catalog-artists button')).to_have_count(5)
+                expect(page.locator('#status')).to_contain_text('14組・118作品')
+                expect(page.locator('#catalog-artists button')).to_have_count(14)
                 self.search(page,'ノラ・ジョーンズ')
                 expect(page.locator('#official-catalog article')).to_have_count(13)
                 expect(page.locator('#official-catalog .sub')).to_contain_text('リアルタイム検索ではなく')
@@ -174,6 +174,27 @@ class PagesUI(unittest.TestCase):
                     self.assertGreaterEqual(summary.bounding_box()['height'],44)
                     self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'),width)
                     summary.press('Space');expect(first.locator('details a').first).to_be_hidden()
+
+    def test_new_artist_japanese_aliases_evidence_and_one_reviewed_direct_link(self):
+        page,requests=self.page()
+        for name in ['The Beatles','Led Zeppelin','Black Sabbath','Metallica','Kraftwerk','Daft Punk','David Bowie','Michael Jackson','Ryuichi Sakamoto']:
+            artist=next(a for a in CATALOG['artists'] if a['name']==name)
+            self.search(page,artist['aliases'][0])
+            cards=page.locator('#official-catalog article');expect(cards).to_have_count(2)
+            expect(page.locator('#official-catalog h2')).to_contain_text(name)
+            for album in artist['albums']:
+                card=cards.filter(has=page.get_by_role('heading',name=album['title'],exact=True))
+                expect(card.locator('details a').first).to_be_hidden()
+                card.locator('summary').click()
+                expect(card.get_by_role('link',name=re.compile('発売の根拠'))).to_have_attribute('href',album['sourceUrl'])
+                if album.get('listeningLink'):
+                    expect(card.get_by_role('link',name='YouTube Musicでアルバムを開く ↗',exact=True)).to_have_attribute('href',album['listeningLink']['url'])
+                else:
+                    expect(card.get_by_role('link',name='YouTube Musicで探す（配信先は未確認） ↗',exact=True)).to_be_visible()
+        self.assertEqual(len(requests),1)
+        self.search(page,"B’z")
+        expect(page.locator('#status')).to_have_attribute('data-state','catalog_unsupported')
+        expect(page.locator('#official-catalog article')).to_have_count(0)
 
     def test_supported_artist_buttons_work_without_typing(self):
         page,requests=self.page()
