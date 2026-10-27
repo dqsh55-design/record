@@ -173,6 +173,20 @@
             "targetSha256": "2a4d4b3b6f99c032e624dd2c385b49b493b4f1ab2844fc14dac08eb1b82a40bf",
             "reviewNote": "Blue Note本人ページのVisions配信リンクから案内先を確認。配信案内のYouTube Musicリンクと到達ページのcanonical URLが一致。music.album、Visions、ノラ・ジョーンズを確認。現在の地域別再生可否は未確認。"
           }
+        },
+        {
+          "id": "official:expansion-20261027:norah:covers",
+          "title": "Covers（カヴァーズ〜私のお気に入り）",
+          "year": "2012",
+          "label": "Blue Note Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.universal-music.co.jp/norah-jones/products/tocp-71410/",
+          "sourceName": "Universal Music Japan",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "公式商品でCD・本人名義・BLUE NOTE・国内発売日2012-10-31・TOCP-71410・10曲を確認。日本公式Coversと照合。オリジナル発売日とは区別し、配信状況は未確認。",
+          "reviewer": "Codex（公式発売資料照合）",
+          "evidenceFile": "data/official-reviews/catalog-expansion-2026-10-27.json"
         }
       ]
     },
@@ -722,6 +736,118 @@
             "sourceSha256": "baa2f56f3225be9471ac73e425ca0ca84f6d775ed673aa0ca74386b55c71bd82",
             "listedReleaseDate": "2017-07-26"
           }
+        },
+        {
+          "id": "official:expansion-20261027:miles:live-evil",
+          "title": "Live-Evil",
+          "year": "1971",
+          "label": "Columbia Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.milesdavis.com/albums/live-evil/",
+          "sourceName": "Miles Davis / Sony Music",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "本人公式で発売日・Columbiaレーベル・録音期間・音楽アルバムの曲目を照合。年は明示されたRelease Dateから採用。月/年のみの表記を日単位に補完せず、配信状況は未確認。",
+          "reviewer": "Codex（公式発売資料照合）",
+          "evidenceFile": "data/official-reviews/catalog-expansion-2026-10-27.json"
+        },
+        {
+          "id": "official:expansion-20261027:miles:big-fun",
+          "title": "Big Fun",
+          "year": "1974",
+          "label": "Columbia Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.milesdavis.com/albums/big-fun/",
+          "sourceName": "Miles Davis / Sony Music",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "本人公式で発売日・Columbiaレーベル・録音期間・音楽アルバムの曲目を照合。年は明示されたRelease Dateから採用。月/年のみの表記を日単位に補完せず、配信状況は未確認。",
+          "reviewer": "Codex（公式発売資料照合）",
+          "evidenceFile": "data/official-reviews/catalog-expansion-2026-10-27.json"
+        },
+        {
+          "id": "official:expansion-20261027:miles:dark-magus",
+          "title": "Dark Magus",
+          "year": "1977",
+          "label": "Columbia Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.milesdavis.com/albums/dark-magus/",
+          "sourceName": "Miles Davis / Sony Music",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "本人公式で発売日・Columbiaレーベル・録音期間・音楽アルバムの曲目を照合。年は明示されたRelease Dateから採用。月/年のみの表記を日単位に補完せず、配信状況は未確認。",
+          "reviewer": "Codex（公式発売資料照合）",
+          "evidenceFile": "data/official-reviews/catalog-expansion-2026-10-27.json"
+        },
+        {
+          "id": "official:expansion-20261027:miles:the-man-with-the-horn",
+          "title": "The Man With The Horn",
+          "year": "1981",
+          "label": "Columbia Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.milesdavis.com/albums/the-man-with-the-horn/",
+          "sourceName": "Miles Davis / Sony Music",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "本人公式で発売日・Columbiaレーベル・録音期間・音楽アルバムの曲目を照合。年は明示されたRelease Dateから採用。月/年のみの表記を日単位に補完せず、配信状況は未確認。",
+          "reviewer": "Codex（公式発売資料照合）",
+          "evidenceFile": "data/official-reviews/catalog-expansion-2026-10-27.json"
+        },
+        {
+          "id": "official:expansion-20261027:miles:we-want-miles",
+          "title": "We Want Miles",
+          "year": "1982",
+          "label": "Columbia Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.milesdavis.com/albums/we-want-miles/",
+          "sourceName": "Miles Davis / Sony Music",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "本人公式で発売日・Columbiaレーベル・録音期間・音楽アルバムの曲目を照合。年は明示されたRelease Dateから採用。月/年のみの表記を日単位に補完せず、配信状況は未確認。",
+          "reviewer": "Codex（公式発売資料照合）",
+          "evidenceFile": "data/official-reviews/catalog-expansion-2026-10-27.json"
+        },
+        {
+          "id": "official:expansion-20261027:miles:star-people",
+          "title": "Star People",
+          "year": "1983",
+          "label": "Columbia Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.milesdavis.com/albums/star-people/",
+          "sourceName": "Miles Davis / Sony Music",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "本人公式で発売日・Columbiaレーベル・録音期間・音楽アルバムの曲目を照合。年は明示されたRelease Dateから採用。月/年のみの表記を日単位に補完せず、配信状況は未確認。",
+          "reviewer": "Codex（公式発売資料照合）",
+          "evidenceFile": "data/official-reviews/catalog-expansion-2026-10-27.json"
+        },
+        {
+          "id": "official:expansion-20261027:miles:decoy",
+          "title": "Decoy",
+          "year": "1984",
+          "label": "Columbia Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.milesdavis.com/albums/decoy/",
+          "sourceName": "Miles Davis / Sony Music",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "本人公式で発売日・Columbiaレーベル・録音期間・音楽アルバムの曲目を照合。年は明示されたRelease Dateから採用。月/年のみの表記を日単位に補完せず、配信状況は未確認。",
+          "reviewer": "Codex（公式発売資料照合）",
+          "evidenceFile": "data/official-reviews/catalog-expansion-2026-10-27.json"
+        },
+        {
+          "id": "official:expansion-20261027:miles:youre-under-arrest",
+          "title": "You’re Under Arrest",
+          "year": "1985",
+          "label": "Columbia Records",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://www.milesdavis.com/albums/youre-under-arrest/",
+          "sourceName": "Miles Davis / Sony Music",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "本人公式で発売日・Columbiaレーベル・録音期間・音楽アルバムの曲目を照合。年は明示されたRelease Dateから採用。月/年のみの表記を日単位に補完せず、配信状況は未確認。",
+          "reviewer": "Codex（公式発売資料照合）",
+          "evidenceFile": "data/official-reviews/catalog-expansion-2026-10-27.json"
         }
       ]
     },
