@@ -1,28 +1,75 @@
-name: Collect official discography candidates
+name: Generate official release catalog
 on:
   workflow_dispatch:
   schedule:
     - cron: '25 3 * * 1'
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
+  actions: write
 concurrency:
   group: official-discography
   cancel-in-progress: false
 jobs:
-  collect:
+  generate:
+    # Always start with the published main branch, even on a manual invocation.
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m unittest discover -s tests -p 'test_official_discography.py' -v
-      - run: python scripts/official_discography.py collect --report reports/official-candidates.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m unittest discover -s tests -p 'test_official_generator.py' -v
+      - name: Generate from official evidence
+        run: python scripts/generate_official_catalog.py
+      - name: Validate generated catalog
+        run: |
+          cp reports/official-catalog.generated.json data/official-catalog.json
+          python -m unittest discover -s tests -p 'test_*matching.py' -v
+          python -m unittest discover -s tests -p 'test_official_discography.py' -v
+          python -m unittest discover -s tests -p 'test_columbia_catalog.py' -v
+          python -m unittest discover -s tests -p 'test_official_generator.py' -v
+          for test_file in tests/test_*.cjs; do node "$test_file"; done
+          git diff --check
+      - name: Propose catalog update
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- data/official-catalog.json; then
+            echo "No catalog changes."
+            exit 0
+          fi
+          pending_pr=$(gh pr list --base main --state open --json number,headRefName --jq '[.[] | select(.headRefName | startswith("automation/official-catalog-"))][0].number // empty')
+          if [ -n "$pending_pr" ]; then
+            echo "An official catalog update PR is already open; latest preview remains in artifacts."
+            exit 0
+          fi
+          update_branch="automation/official-catalog-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$update_branch"
+          cp reports/official-generation.json data/official-generation-last-run.json
+          git add data/official-catalog.json data/official-generation-last-run.json
+          git commit -m "Generate verified official release catalog"
+          git push origin "$update_branch"
+          # GITHUB_TOKEN pushes do not trigger pull_request CI; dispatch explicitly.
+          gh workflow run matching-tests.yml --ref "$update_branch"
+          cat > "$RUNNER_TEMP/official-catalog-pr.md" <<'BODY'
+          Approved official-source rules generated these additive work entries without MusicBrainz or per-album manual registration. Existing records are preserved. Missing artist, album, issuer or release evidence is held back. Generation diagnostics accompany the catalog.
+
+          Python and Node checks passed before this proposal. The complete CI suite, including browser tests, was explicitly dispatched for this branch. Verify that run before merging. This PR does not merge or publish itself.
+          BODY
+          gh pr create --base main --head "$update_branch" --title "Update catalog from verified official release sources" --body-file "$RUNNER_TEMP/official-catalog-pr.md"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: official-discography-candidates
-          path: reports/official-candidates.json
+          name: official-release-generation
+          path: reports/*.json
           if-no-files-found: error
           retention-days: 90

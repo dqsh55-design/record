@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-27T00:26:02.183094+00:00",
+  "sources": [
+    {
+      "id": "norah-jones",
+      "added": 0,
+      "status": "ok",
+      "sourceSha256": "546345e0be4c23b6051adb88c1861a50abc850fdb4f727c891cfa9a7e2e911c4",
+      "extracted": 12,
+      "held": 6
+    },
+    {
+      "id": "miles-warner-japan",
+      "added": 8,
+      "status": "ok",
+      "sourceSha256": "baa2f56f3225be9471ac73e425ca0ca84f6d775ed673aa0ca74386b55c71bd82",
+      "extracted": 12,
+      "held": 0
+    },
+    {
+      "id": "bill-frisell",
+      "added": 4,
+      "status": "ok",
+      "sourceSha256": "b98dd3fb57fb2438749640afcd3173c28a1f87c2ff4bfc1363f2c86978d5da4b",
+      "extracted": 4,
+      "held": 3
+    },
+    {
+      "id": "miles-sony-japan",
+      "added": 0,
+      "status": "disabled",
+      "reason": "Normal HTTP access returned 403; no bypass. JSON-LD support is fixture-tested, not live-verified for Sony."
+    }
+  ],
+  "added": 12,
+  "errorCount": 0
+}

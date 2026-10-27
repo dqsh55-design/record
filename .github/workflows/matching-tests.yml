@@ -1,5 +1,6 @@
 name: Release matching tests
 on:
+  workflow_dispatch:
   pull_request:
   push:
     branches: [main]
@@ -19,6 +20,7 @@ jobs:
       - run: python -m unittest discover -s tests -p 'test_*matching.py' -v
       - run: python -m unittest discover -s tests -p 'test_official_discography.py' -v
       - run: python -m unittest discover -s tests -p 'test_columbia_catalog.py' -v
+      - run: python -m unittest discover -s tests -p 'test_official_generator.py' -v
       - run: node tests/test_official_catalog.cjs
       - run: node tests/test_loading.cjs
       - run: node tests/test_api_cache.cjs

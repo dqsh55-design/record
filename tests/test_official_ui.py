@@ -9,6 +9,9 @@ from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright, expect
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = json.loads((ROOT / 'data/official-catalog.json').read_text())
+NORAH_COUNT = len(next(a for a in CATALOG['artists'] if a['name']=='Norah Jones')['albums'])
+MILES_COUNT = len(next(a for a in CATALOG['artists'] if a['name']=='Miles Davis')['albums'])
+BILL_COUNT = len(next(a for a in CATALOG['artists'] if a['name']=='Bill Frisell')['albums'])
 
 class OfficialCatalogUI(unittest.TestCase):
     @classmethod
@@ -22,7 +25,7 @@ class OfficialCatalogUI(unittest.TestCase):
         cls.browser.close()
         cls.p.stop()
 
-    def page(self, width=390, catalog=None, failure=False):
+    def page(self, width=390, catalog=None, failure=False, candidate=None):
         context = self.browser.new_context(viewport={'width': width, 'height': 844})
         self.addCleanup(context.close)
         page = context.new_page()
@@ -38,7 +41,7 @@ class OfficialCatalogUI(unittest.TestCase):
             else:
                 remote.append(r.request.url)
                 if u.hostname == 'musicbrainz.org' and u.path.endswith('/artist'):
-                    r.fulfill(json={'artists': [{'id':'unknown','name':'Unknown Artist'}]})
+                    r.fulfill(json={'artists': [candidate or {'id':'unknown','name':'Unknown Artist'}]})
                 else:
                     r.abort()
         page.route('**/*', route)
@@ -54,12 +57,12 @@ class OfficialCatalogUI(unittest.TestCase):
             with self.subTest(width=width):
                 page, remote = self.page(width)
                 self.search(page, 'ノラ・ジョーンズ')
-                expect(page.locator('#official-catalog article')).to_have_count(12)
+                expect(page.locator('#official-catalog article')).to_have_count(NORAH_COUNT)
                 expect(page.get_by_text('Not Too Late', exact=True)).to_be_visible()
                 expect(page.locator('#official-catalog .meta').filter(has_text='2007')).to_have_count(1)
                 self.assertEqual(remote, [])
                 self.search(page, 'マイルス・デイビス')
-                expect(page.locator('#official-catalog article')).to_have_count(26)
+                expect(page.locator('#official-catalog article')).to_have_count(MILES_COUNT)
                 expect(page.get_by_text('The Essential Miles Davis', exact=True)).to_be_visible()
                 expect(page.get_by_text('Doo-Bop', exact=True)).to_be_visible()
                 expect(page.get_by_text('TUTU', exact=True)).to_be_visible()
@@ -71,8 +74,29 @@ class OfficialCatalogUI(unittest.TestCase):
                 for link in page.locator('#official-catalog a').all():
                     self.assertEqual(link.get_attribute('target'), '_blank')
                     self.assertIn('noopener', link.get_attribute('rel'))
-                self.assertEqual(page.locator('#official-catalog a').filter(has_text='発売の根拠').count(),26)
-                self.assertEqual(page.locator('#official-catalog a').filter(has_text='配信先は未確認').count(),26)
+                self.assertEqual(page.locator('#official-catalog a').filter(has_text='発売の根拠').count(),MILES_COUNT)
+                self.assertEqual(page.locator('#official-catalog a').filter(has_text='配信先は未確認').count(),MILES_COUNT)
+
+    def test_generated_new_artist_uses_no_musicbrainz_and_has_source_links(self):
+        page,remote=self.page()
+        self.search(page,'ビルフリゼール')
+        expect(page.locator('#official-catalog article')).to_have_count(BILL_COUNT)
+        expect(page.get_by_text('HARMONY',exact=True)).to_be_visible()
+        self.assertEqual(remote,[])
+        for link in page.locator('#official-catalog a').filter(has_text='発売の根拠').all():
+            self.assertEqual(link.get_attribute('href'),'https://www.bluenote.com/artist/bill-frisell/')
+
+    def test_discovered_artist_search_and_database_name_choice_use_catalog_identity(self):
+        discovered=next(a for a in CATALOG['artists'] if a.get('officialDiscovery'))
+        page,remote=self.page()
+        self.search(page,discovered['name'])
+        expect(page.locator('#official-catalog article')).to_have_count(len(discovered['albums']))
+        self.assertEqual(remote,[])
+        page,remote=self.page(candidate={'id':'database-only-id','name':'Bill Frisell'})
+        self.search(page,'未登録の日本語表記')
+        page.get_by_role('button',name='この名義の作品を見る →').click()
+        expect(page.locator('#official-catalog article')).to_have_count(BILL_COUNT)
+        self.assertTrue(all('/artist?' in url for url in remote))
 
     def test_unconfirmed_injected_album_is_hidden(self):
         catalog=copy.deepcopy(CATALOG)
@@ -84,7 +108,7 @@ class OfficialCatalogUI(unittest.TestCase):
         catalog['artists'][0]['albums'].append(missing_note)
         page,_=self.page(catalog=catalog)
         self.search(page,'Norah Jones')
-        expect(page.locator('#official-catalog article')).to_have_count(12)
+        expect(page.locator('#official-catalog article')).to_have_count(NORAH_COUNT)
         expect(page.get_by_text('Unverified Bootleg')).to_have_count(0)
         expect(page.get_by_text('Missing Review Evidence')).to_have_count(0)
 
