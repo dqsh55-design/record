@@ -47,7 +47,9 @@ for(const patch of [{artistId:'wrong'},{albumId:'wrong'},{albumTitle:'Other Albu
 assert.equal(run('confirmedListeningLink(norah,{...visions,official:false})'),null);
 assert.equal(run('confirmedListeningLink(norah,norah.albums.find(a=>a.title==="Come Away With Me"))'),null);
 context.miles=context.catalog.artists.find(a=>a.name==='Miles Davis');
-assert.ok(context.miles.albums.every(a=>run('confirmedListeningLink(miles,miles.albums.find(x=>x.id==="'+a.id+'"))')===null));
+assert.equal(run('confirmedListeningLink(miles,miles.albums.find(a=>a.title==="Kind Of Blue"))'),null);
 run('verifiedLinks[visions.id]="https://music.youtube.com/browse/MPREb_unreviewed"');
 assert.equal(run('confirmedListeningLink(norah,visions).url'),context.visions.listeningLink.url);
 console.log('Reviewed official outbound album links, wrong identity/source/target rejection and search fallback passed');
+
+assert.equal(run('confirmedListeningLink(miles,miles.albums.find(a=>a.title==="Birth Of The Cool")).url'),context.miles.albums.find(a=>a.title==='Birth Of The Cool').listeningLink.url);
