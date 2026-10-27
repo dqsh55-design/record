@@ -116,7 +116,7 @@ class ObservedCatalogIntegrationTests(unittest.TestCase):
             subprocess.run(command,check=True,capture_output=True,text=True)
             first=path.read_text()
             out=json.loads(first)['artists'][0]['albums']
-            self.assertEqual({m.key(a['title']) for a in out},{m.key(a['title']) for a in self.catalog['artists'][0]['albums']})
+            self.assertEqual({m.key(a['title']) for a in out},{m.key(a['title']) for a in self.reviews})
             self.assertEqual(len(out),12)
             self.assertEqual(next(a for a in out if a['title']=='Not Too Late')['year'],'2007')
             self.assertIsNone(next(a for a in out if a['title']=='Begin Again')['year'])

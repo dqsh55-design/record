@@ -1,0 +1,197 @@
+[
+  {
+    "artist": "Jimi Hendrix",
+    "status": "confirmed",
+    "count": 3,
+    "titles": [
+      "Hollywood Bowl August 18, 1967",
+      "Los Angeles Forum: April 26, 1969",
+      "Live In Maui"
+    ],
+    "sources": [
+      {
+        "id": "blue-note-directory",
+        "url": "https://www.bluenote.com/artists/",
+        "status": "ok",
+        "matches": 0
+      },
+      {
+        "id": "warner-directory",
+        "url": "https://wmg.jp/artistlist",
+        "status": "ok",
+        "matches": 0
+      },
+      {
+        "id": "sony-directory",
+        "url": "https://www.sonymusic.co.jp/artist/",
+        "status": "not_found",
+        "code": "404"
+      },
+      {
+        "id": "jimi-official:detail",
+        "url": "https://www.jimihendrix.com/music/hollywood-bowl-august-18-1967/",
+        "status": "ok",
+        "verified": 1
+      },
+      {
+        "id": "jimi-official:detail",
+        "url": "https://www.jimihendrix.com/music/electric-lady-studios-a-jimi-hendrix-vision/",
+        "status": "unconfirmed"
+      },
+      {
+        "id": "jimi-official:detail",
+        "url": "https://www.jimihendrix.com/music/los-angeles-forum-april-26-1969/",
+        "status": "ok",
+        "verified": 1
+      },
+      {
+        "id": "jimi-official:detail",
+        "url": "https://www.jimihendrix.com/music/music-money-madness-jimi-hendrix-in-maui/",
+        "status": "ok",
+        "verified": 1
+      },
+      {
+        "id": "jimi-official:detail",
+        "url": "https://www.jimihendrix.com/music/no-business-curtis-knight-the-squires-the-ppx-sessions-volume-2/",
+        "status": "unconfirmed"
+      },
+      {
+        "id": "jimi-official:detail",
+        "url": "https://www.jimihendrix.com/music/jimi-hendrix-songs-for-groovy-children/",
+        "status": "unconfirmed"
+      },
+      {
+        "id": "jimi-official",
+        "url": "https://www.jimihendrix.com/music/",
+        "status": "ok",
+        "verified": 3,
+        "held": 3
+      },
+      {
+        "id": "jimi-sony",
+        "url": "https://www.sonymusic.co.jp/artist/jimihendrix/discography/",
+        "status": "unconfirmed",
+        "verified": 0,
+        "held": 0
+      }
+    ],
+    "seconds": 34.93,
+    "secondSearchCacheHit": true
+  },
+  {
+    "artist": "Norah Jones",
+    "status": "confirmed",
+    "count": 12,
+    "titles": [
+      "Visions",
+      "I Dream Of Christmas",
+      "‘Til We Meet Again",
+      "Pick Me Up Off The Floor",
+      "Begin Again",
+      "Day Breaks",
+      "Little Broken Hearts",
+      "…Featuring Norah Jones",
+      "The Fall",
+      "Not Too Late",
+      "Feels Like Home",
+      "Come Away With Me"
+    ],
+    "sources": [
+      {
+        "id": "blue-note-directory",
+        "url": "https://www.bluenote.com/artists/",
+        "status": "ok",
+        "matches": 1
+      },
+      {
+        "id": "warner-directory",
+        "url": "https://wmg.jp/artistlist",
+        "status": "ok",
+        "matches": 0
+      },
+      {
+        "id": "sony-directory",
+        "url": "https://www.sonymusic.co.jp/artist/",
+        "status": "not_found",
+        "code": "404"
+      },
+      {
+        "id": "blue-note:artist/norah-jones",
+        "url": "https://www.bluenote.com/artist/norah-jones/",
+        "status": "ok",
+        "verified": 12,
+        "held": 6
+      }
+    ],
+    "seconds": 18.94,
+    "secondSearchCacheHit": true
+  },
+  {
+    "artist": "Miles Davis",
+    "status": "confirmed",
+    "count": 12,
+    "titles": [
+      "Miles Davis, Vol. 2",
+      "Miles Davis, Vol. 1",
+      "ヴェリー・ベスト・オブ・ワーナー・イヤーズ",
+      "ライヴ・アット・ヴィエンヌ",
+      "ラバーバンド",
+      "ライヴ・アラウンド・ザ・ワールド",
+      "ライヴ・アット・モントルー",
+      "TUTU",
+      "シエスタ",
+      "アマンドラ",
+      "ディンゴ",
+      "ドゥー・バップ"
+    ],
+    "sources": [
+      {
+        "id": "blue-note-directory",
+        "url": "https://www.bluenote.com/artists/",
+        "status": "ok",
+        "matches": 1
+      },
+      {
+        "id": "warner-directory",
+        "url": "https://wmg.jp/artistlist",
+        "status": "ok",
+        "matches": 1
+      },
+      {
+        "id": "sony-directory",
+        "url": "https://www.sonymusic.co.jp/artist/",
+        "status": "not_found",
+        "code": "404"
+      },
+      {
+        "id": "miles-official",
+        "url": "https://www.milesdavis.com/albums/",
+        "status": "not_found",
+        "code": "404"
+      },
+      {
+        "id": "miles-sony",
+        "url": "https://www.sonymusic.co.jp/artist/MilesDavis/discography/",
+        "status": "unconfirmed",
+        "verified": 0,
+        "held": 0
+      },
+      {
+        "id": "blue-note:artist/miles-davis",
+        "url": "https://www.bluenote.com/artist/miles-davis/",
+        "status": "ok",
+        "verified": 2,
+        "held": 1
+      },
+      {
+        "id": "warner-japan:miles-davis",
+        "url": "https://wmg.jp/miles-davis/discography",
+        "status": "ok",
+        "verified": 12,
+        "held": 0
+      }
+    ],
+    "seconds": 17.93,
+    "secondSearchCacheHit": true
+  }
+]

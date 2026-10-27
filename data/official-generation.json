@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "providers": {
+    "blue-note": {
+      "hosts": [
+        "www.bluenote.com"
+      ],
+      "adapter": "bluenote-artist-v1",
+      "name": "Blue Note Records",
+      "label": "Blue Note Records"
+    },
+    "warner-japan": {
+      "hosts": [
+        "wmg.jp"
+      ],
+      "adapter": "warner-albums-v1",
+      "name": "Warner Music Japan",
+      "label": "Warner Music Japan"
+    },
+    "sony-japan": {
+      "hosts": [
+        "www.sonymusic.co.jp"
+      ],
+      "adapter": "music-album-jsonld-v1",
+      "name": "Sony Music Japan"
+    },
+    "artist-official": {
+      "hosts": [
+        "www.norahjones.com"
+      ],
+      "adapter": "music-album-jsonld-v1",
+      "name": "Artist Official Site"
+    }
+  },
+  "sources": [
+    {
+      "id": "norah-jones",
+      "provider": "blue-note",
+      "artist": {
+        "id": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+        "name": "Norah Jones",
+        "aliases": [
+          "ノラジョーンズ",
+          "ノラ・ジョーンズ"
+        ]
+      },
+      "host": "www.bluenote.com",
+      "url": "https://www.bluenote.com/artist/norah-jones/",
+      "releasePath": "/artist/norah-jones/?"
+    },
+    {
+      "id": "miles-warner-japan",
+      "provider": "warner-japan",
+      "artist": {
+        "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+        "name": "Miles Davis",
+        "aliases": [
+          "マイルスデイビス",
+          "マイルス・デイヴィス",
+          "マイルス・デイビス"
+        ]
+      },
+      "host": "wmg.jp",
+      "url": "https://wmg.jp/miles-davis/discography",
+      "releasePath": "/miles-davis/discography/\\d+/?"
+    },
+    {
+      "id": "bill-frisell",
+      "provider": "blue-note",
+      "artist": {
+        "id": "record:bill-frisell",
+        "name": "Bill Frisell",
+        "aliases": [
+          "ビル・フリゼール",
+          "ビルフリゼール"
+        ]
+      },
+      "host": "www.bluenote.com",
+      "url": "https://www.bluenote.com/artist/bill-frisell/",
+      "releasePath": "/artist/bill-frisell/?"
+    },
+    {
+      "id": "miles-sony-japan",
+      "provider": "sony-japan",
+      "artist": {
+        "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+        "name": "Miles Davis",
+        "aliases": [
+          "マイルスデイビス",
+          "マイルス・デイヴィス",
+          "マイルス・デイビス"
+        ]
+      },
+      "host": "www.sonymusic.co.jp",
+      "url": "https://www.sonymusic.co.jp/artist/MilesDavis/discography/",
+      "releasePath": "/artist/MilesDavis/discography/[^/]+/?",
+      "enabled": false,
+      "disabledReason": "Normal HTTP access returned 403; no bypass. JSON-LD support is fixture-tested, not live-verified for Sony."
+    }
+  ],
+  "discovery": [
+    {
+      "id": "blue-note-artists",
+      "provider": "blue-note",
+      "host": "www.bluenote.com",
+      "url": "https://www.bluenote.com/artists/",
+      "artistPath": "/artist/[a-z0-9-]+/?",
+      "maxNewArtistsPerRun": 2
+    }
+  ]
+}

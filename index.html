@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RECORD — Find the music.</title>
+<html lang="ja"><head><meta charset="utf-8"><meta name="record-api-base" content=""><meta name="record-search-mode" content="catalog"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RECORD — Find the music.</title>
 <style>
 :root{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;color:#252525;background:#f8f7f4}*{box-sizing:border-box}body{margin:0}main{max-width:780px;margin:auto;padding:65px 22px 90px}header{text-align:center;margin-bottom:54px}h1{font-size:39px;letter-spacing:.22em;font-weight:450;margin:0 0 12px;padding-left:.22em}header p{color:#888;font-size:12px;letter-spacing:.13em;margin:0}.intro{font-size:14px;color:#777;line-height:1.9;text-align:center;margin-bottom:28px}.search{display:flex;gap:8px}input{min-width:0;flex:1;padding:16px;border:1px solid #d9d7d2;border-radius:4px;background:white;font-size:16px}button{border:0;background:#242424;color:#fff;padding:0 24px;border-radius:4px;font-size:15px;cursor:pointer}button:disabled{opacity:.5}.hint{font-size:12px;color:#999;margin-top:12px}.status{margin:32px 0;color:#777;font-size:14px;line-height:1.8}.artist{font-size:24px;font-weight:500;margin:42px 0 8px}.sub{font-size:12px;color:#888;margin-bottom:22px}.filters{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}.filter{background:transparent;color:#666;border:1px solid #d8d6d1;border-radius:30px;padding:9px 14px;font-size:12px}.filter.active{background:#252525;color:white;border-color:#252525}.album{border-top:1px solid #e0ded9;padding:18px 0;display:flex;gap:17px;align-items:center}.cover{width:76px;height:76px;flex:none;background:#e9e7e2;border-radius:2px;object-fit:cover}.info{min-width:0;flex:1}.album-title{font-size:15px;font-weight:550;line-height:1.5}.meta{font-size:12px;color:#888;margin:6px 0 10px}.listen{font-size:12px;color:#4d4d4d;text-underline-offset:3px}.detail-btn{background:transparent;color:#555;border:1px solid #d8d6d1;padding:7px 10px;font-size:12px;margin-top:9px}.album-tools{margin-top:12px;border-top:1px solid #eceae5;padding-top:10px}.album-tools summary{cursor:pointer;font-size:12px;color:#777;list-style:none}.album-tools summary::-webkit-details-marker{display:none}.album-tools summary::after{content:' ＋'}.album-tools[open] summary::after{content:' −'}.album-tools-body{padding-top:8px}.album-tools .direct-url{max-width:100%}.availability{font-size:12px;color:#888;margin-top:9px}.availability.confirmed{color:#336b52}.availability.missing{color:#955f48}.direct-url{display:block;width:100%;max-width:390px;margin-top:8px;padding:9px;border:1px solid #d8d6d1;border-radius:4px;background:#fff;font-size:12px}.release-detail{font-size:12px;color:#777;line-height:1.8;margin-top:8px}.note{font-size:12px;line-height:1.8;color:#999;margin-top:36px}.more{display:block;margin:26px auto 0;padding:13px 24px;min-height:44px}footer{text-align:center;color:#aaa;font-size:11px;margin-top:80px}@media(max-width:420px){main{padding-top:48px}h1{font-size:33px}.search button{padding:0 17px}.cover{width:66px;height:66px}}
 .decade{font-size:18px;margin:32px 0 8px}.album{content-visibility:auto;contain-intrinsic-size:auto 230px}.info,.release-detail{overflow-wrap:anywhere}.album-tools summary{padding:12px 0;min-height:44px}.detail-btn,.filter{min-height:44px}.listen{display:inline-block;padding:12px 0;min-height:44px}.direct-url{font-size:16px;min-height:44px}
@@ -23,7 +23,7 @@
 @media(max-width:350px){main{padding-left:14px;padding-right:14px}#official-releases .album{grid-template-columns:76px minmax(0,1fr);gap:12px}#official-releases .cover{width:76px;height:76px}}
 @media(prefers-reduced-motion:no-preference){.loading-line{animation:loading-pulse 1.5s ease-in-out infinite alternate}@keyframes loading-pulse{to{opacity:.45}}}
 .work-editions>summary{min-height:44px;box-sizing:border-box;padding:13px 0;font-size:13px;cursor:pointer;color:#555}.work-editions{border-bottom:1px solid #e0ded9}.work-editions[open]{padding-bottom:8px}.release-work-group{min-width:0}.release-work-group>.release-work{font-size:12px;font-weight:400;color:#777;margin:18px 0 0}.work-editions .album{border-bottom:0}
-.work-verification:empty{display:none}</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます</div><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Official release sources · v0.75</footer></main>
+.work-verification:empty{display:none}</style></head><body><main><header><h1>RECORD</h1><p>FIND THE MUSIC. KNOW THE ERA.</p></header><div class="intro">アーティストから、音楽の歴史をたどる。</div><form class="search" id="form"><input id="query" aria-label="アーティスト名" placeholder="例：マイルス・デイヴィス" autocomplete="off" maxlength="120" required><button id="submit">検索</button></form><div class="hint">日本語・英語で検索できます。公式確認済みの公開目次から探します。</div><section id="catalog-artists" aria-label="対応アーティスト"></section><div id="status" class="status">アーティスト名を入力して検索してください。</div><section id="results" aria-live="polite"></section><footer>RECORD · Official release index · v0.78</footer></main>
 <script>
 const $=id=>document.getElementById(id), status=$('status'),results=$('results');
 let relatedCatalogAlbums=[],artistChoices=[],ytVisible=20,ytSort='name',ytAlbums=[],albums=[],filter='おすすめ',artistName='',offset=0,artistId='',busy=false,total=0;
@@ -818,19 +818,25 @@ function releaseMetadataText(r){
 }
 // Published, reviewed work catalog is the only source of search-result albums.
 let officialCatalog=null, officialCatalogTask=null, officialCatalogError='';
-const officialSourceHosts=new Set(['www.bluenote.com','www.milesdavis.com','www.sonymusic.co.jp','www.universal-music.co.jp','norahjones.jp','www.norahjones.com','wmg.jp']);
+const officialSourceHosts=new Set(['www.bluenote.com','www.milesdavis.com','www.sonymusic.co.jp','www.universal-music.co.jp','norahjones.jp','www.norahjones.com','wmg.jp','www.jimihendrix.com','www.legacyrecordings.com']);
 function confirmedCatalogAlbums(artist){
  const seen=new Set();
  return (Array.isArray(artist?.albums)?artist.albums:[]).filter(a=>{
   if(!a||a.official!==true||a.scope!=='work'||typeof a.id!=='string'||!a.id||seen.has(a.id)||typeof a.title!=='string'||!a.title.trim()||!usableLabel(a.label)||['unknown','n/a','tbd'].includes(a.label.trim().toLowerCase())||typeof a.sourceName!=='string'||!a.sourceName.trim()||typeof a.reviewNote!=='string'||!a.reviewNote.trim()||!validReferenceDate(a.checkedAt))return false;
   try{const u=new URL(a.sourceUrl);if(u.protocol!=='https:'||u.username||u.password||u.port||!officialSourceHosts.has(u.hostname))return false}catch{return false}
+  if(a.id.startsWith('generated:')||a.verificationMethod){
+   const p=a.generationProof;
+   if(a.verificationMethod!=='official-source-rule-v1'||!p||p.artistId!==artist.id||p.sourceUrl!==a.sourceUrl||!['bluenote-artist-v1','warner-albums-v1','music-album-jsonld-v1','artist-music-html-v1'].includes(p.rule)||typeof p.sourceId!=='string'||!p.sourceId||typeof p.provider!=='string'||!p.provider||!/^[a-f0-9]{64}$/.test(p.sourceSha256))return false;
+   if(p.listedReleaseDate){if(!validReferenceDate(p.listedReleaseDate))return false}
+   else if(!/^\d{4}$/.test(p.listedReleaseYear||'')||Number(p.listedReleaseYear)<1900||Number(p.listedReleaseYear)>=new Date().getFullYear())return false;
+  }
   seen.add(a.id);return true;
  });
 }
 async function loadOfficialCatalog(){
  if(!officialCatalogTask)officialCatalogTask=(async()=>{
   try{const response=await fetchJSONWithTimeout('data/official-catalog.json');if(!response.ok)throw new Error('公式目次を取得できませんでした');
-   const data=await response.json();if(data.version!==1||!Array.isArray(data.artists))throw new Error('公式目次の形式を確認できませんでした');
+   const data=await response.json();if(data?.version!==1||!Array.isArray(data.artists)||data.artists.some(a=>!a||typeof a.id!=='string'||!a.id||typeof a.name!=='string'||!a.name.trim()||!Array.isArray(a.albums)||!Array.isArray(a.aliases)||a.aliases.some(n=>typeof n!=='string')))throw new Error('公式目次の形式を確認できませんでした');
    officialCatalog=data;officialCatalogError='';return data;
   }catch(error){officialCatalogError=error.message;officialCatalogTask=null;return null}
  })();
@@ -844,7 +850,7 @@ function renderOfficialCatalog(){
  const artist=officialCatalog?.artists.find(a=>a.id===artistId);
  const section=document.createElement('section');section.id='official-catalog';
  const heading=document.createElement('h2');heading.className='artist';heading.textContent=artistName+' の正規発売確認済みアルバム';section.append(heading);
- const note=document.createElement('p');note.className='sub';note.textContent='レコード会社・公式サイトで発売を確認した作品だけを掲載。確認済みの一部目次です。各国の発売盤・再発盤やYouTube Musicの配信状況は別途確認が必要です。';section.append(note);
+ const note=document.createElement('p');note.className='sub';note.textContent=(publicSearchMode()==='api'?'検索時に公式資料で確認できた作品です。':'公開前に公式資料で発売を確認した作品です。リアルタイム検索ではなく、掲載は確認済みの範囲です。')+' 各国盤・再発盤の個別認定やYouTube Musicの配信状況は別途確認が必要です。';section.append(note);
  const items=confirmedCatalogAlbums(artist);
  for(const a of items){
   const article=document.createElement('article');article.className='album';article.dataset.catalogId=a.id;
@@ -1047,6 +1053,7 @@ async function loadListeningCatalog(artist,initialReady=Promise.resolve()){
  }catch(error){console.warn('Catalog not available yet',error)}
 }
 async function chooseArtist(artist){
+ artist=catalogArtist(artist.name)||artist;
  artistChoices=[];albums=[];ytAlbums=[];relatedCatalogAlbums=[];ytVisible=20;ytSort='name';offset=0;total=0;filter='おすすめ';legacyLoadedFor='';legacyLoadingFor='';legacyError='';
  artistId=artist.id;artistName=artist.name;results.innerHTML='';status.textContent='';
  await loadOfficialCatalog();if(artistId===artist.id)render();
@@ -1064,23 +1071,107 @@ function showArtistChoices(list){
     info.append(name,description,button);row.append(info);section.append(row)}
   results.append(section);status.textContent=list.length+'件の候補が見つかりました。アーティストを選択してください。';
 }
-$('form').addEventListener('submit',async e=>{
-  e.preventDefault();if(busy)return;let raw=$('query').value.trim();let q=artistSearchTerm(raw);
-  albums=[];ytAlbums=[];artistName='';artistId='';results.innerHTML='';status.textContent='アーティストを探しています…';
-  busy=true;$('submit').disabled=true;
-  try{
-    await loadOfficialCatalog();if(!officialCatalog){status.textContent='公式目次を読み込めませんでした。再検索してください。';return}
-    const known=catalogArtist(raw)||catalogArtist(q);if(known){await chooseArtist(known);return}
-    let terms=[q];if(normalize(q)==='jimihendrix')terms.push('The Jimi Hendrix Experience');
-    let lists=await Promise.all(terms.map(term=>api('artist?query='+encodeURIComponent(term)+'&limit=15&fmt=json')));
-    let candidates=new Map();
-    for(const data of lists){for(const a of data.artists||[]){if(!candidates.has(a.id))candidates.set(a.id,a)}}
-    let list=[...candidates.values()];
-    if(!list.length){status.textContent='見つかりませんでした。英語表記でもお試しください。';return}
-    const queryKey=normalize(q);
-    list.sort((a,b)=>{let score=x=>normalize(x.name)===queryKey?0:normalize(x.name).includes(queryKey)||queryKey.includes(normalize(x.name))?1:2;return score(a)-score(b)});
-    showArtistChoices(list.slice(0,12));
-  }catch(err){status.textContent=err.message}
-  finally{busy=false;$('submit').disabled=false}
-});
+// Active search path: same-origin official-search API only. Legacy tools above remain isolated.
+let liveSearchToken=0,liveSearchController=null,liveSearchResult=null,liveQuery='';
+function liveAlbumValid(album,artist){
+ const now=Date.now()/1000;
+ return album?.verificationMethod==='official-source-rule-v1'&&Number.isFinite(album.verifiedAtUnix)&&Number.isFinite(album.validUntilUnix)&&album.verifiedAtUnix<=now&&album.validUntilUnix>now&&album.validUntilUnix<=album.verifiedAtUnix+86400&&confirmedCatalogAlbums({...artist,albums:[album]}).length===1;
+}
+function officialResultMessage(data,count){
+ if(count)return (data.cache?.hit?'保存した確認済み情報を再利用しています。 ':'')+count+'作品の正式発売を公式資料で確認済みです。'+(data.status==='partial'?' 一部の公式情報は取得できませんでした。':'')+(data.cache?.refreshFailed?' 再取得に失敗したため、有効期限内の保存結果を表示しています。':'');
+ return {blocked:'アクセス制限により公式情報を取得できませんでした。公式情報がないとは判断していません。',fetch_error:'公式情報の取得に失敗しました。公式情報がないとは判断していません。',not_found:'検索した公式情報源では、該当する発売情報を確認できませんでした。',unconfirmed:'公式情報から、正式発売済みと確認できるアルバムはありませんでした。'}[data.status]||'公式発売情報を確認できませんでした。';
+}
+function renderSearchSources(data){
+ const panel=document.createElement('details');panel.id='search-sources';
+ const caption=document.createElement('summary');caption.textContent='公式情報の確認状況';panel.append(caption);
+ const labels={ok:'取得済み',unconfirmed:'発売根拠が不足',blocked:'アクセス制限',not_found:'ページなし',fetch_error:'取得失敗',unsupported_format:'形式未対応',unsafe_source:'情報源を検証できず',unsafe_redirect:'転送先を検証できず',response_too_large:'取得上限',unsupported_encoding:'形式未対応',budget_exhausted:'本日の公式サイト取得上限'};
+ for(const source of data.sources||[]){
+  const line=document.createElement('p');line.className='release-detail';line.textContent=(labels[source.status]||'確認できず')+(/^\d{3}$/.test(source.code||'')?'（'+source.code+'）':'')+'：';
+  try{const u=new URL(source.url);if(u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&officialSourceHosts.has(u.hostname)){const link=document.createElement('a');link.href=u.href;link.target='_blank';link.rel='noopener noreferrer';link.textContent=u.hostname+u.pathname;line.append(link)}}catch{}
+  panel.append(line);
+ }
+ const coverage=document.createElement('p');coverage.className='release-detail';coverage.textContent='確認できた公式資料の範囲です。全作品の網羅や公式サイトの不存在を断定するものではありません。';panel.append(coverage);
+ const refresh=document.createElement('button');refresh.className='detail-btn';refresh.textContent='公式情報を再確認';refresh.onclick=()=>searchOfficialNow(liveQuery,true);
+ results.append(panel,refresh);
+}
+async function searchOfficialNow(raw,refresh=false){
+ raw=raw.trim();if(!raw)return;
+ const token=++liveSearchToken;liveSearchController?.abort();
+ const controller=new AbortController();liveSearchController=controller;
+ const timer=setTimeout(()=>controller.abort(),180000);
+ const warming=setTimeout(()=>{if(token===liveSearchToken)status.textContent='検索サービスの起動、または公式情報の確認に時間がかかっています。そのままお待ちください…'},15000);
+ liveQuery=raw;busy=true;$('submit').disabled=true;results.replaceChildren();status.textContent='公式ディスコグラフィーを検索し、正式発売の根拠を確認しています…';
+ try{
+  const configured=document.querySelector('meta[name="record-api-base"]')?.content;
+  const endpoint=new URL('api/search',configured||document.baseURI);endpoint.searchParams.set('q',raw);if(refresh)endpoint.searchParams.set('refresh','1');
+  const response=await fetch(endpoint,{signal:controller.signal,headers:{Accept:'application/json'},cache:'no-store'});
+  if(token!==liveSearchToken)return;
+  if(response.status===400){status.dataset.state='invalid_query';status.textContent='アーティスト名を120文字以内で入力してください。';return}
+  if(response.status===429){status.dataset.state='rate_limited';status.textContent='検索が集中しています。1分ほど待って再検索してください。';return}
+  if(!response.ok)throw Error('search service unavailable');
+  const data=await response.json();if(token!==liveSearchToken)return;
+  if(data.version!==1||typeof data.artist?.id!=='string'||typeof data.artist?.name!=='string'||!Array.isArray(data.artist?.albums)||!Array.isArray(data.sources)||data.artist.albums.length>500)throw Error('invalid search response');
+  const verified=data.artist.albums.filter(album=>liveAlbumValid(album,data.artist));
+  if(verified.length!==data.artist.albums.length&&!verified.length)data.status='unconfirmed';
+  data.artist={...data.artist,albums:verified};liveSearchResult=data;
+  officialCatalog={version:1,artists:[data.artist]};artistName=data.artist.name;artistId=data.artist.id;
+  renderOfficialCatalog();status.textContent=officialResultMessage(data,verified.length);status.dataset.state=data.status;
+  const empty=results.querySelector('#official-catalog .status');if(empty)empty.textContent=officialResultMessage(data,0);
+  renderSearchSources(data);
+ }catch(error){
+  if(token!==liveSearchToken)return;
+  results.replaceChildren();status.dataset.state='service_unavailable';status.textContent=error.name==='AbortError'?'公式検索の通信がタイムアウトしました。再検索してください。':'公式検索サービスに接続できませんでした。時間をおいて再検索してください。';
+ }finally{clearTimeout(timer);clearTimeout(warming);if(token===liveSearchToken){busy=false;$('submit').disabled=false}}
+}
+// Pages-first public entry point. The future API is an explicit deployment option.
+function publicSearchMode(){return document.querySelector?.('meta[name="record-search-mode"]')?.content==='api'?'api':'catalog'}
+let catalogSearchToken=0;
+function renderCatalogArtists(){
+ const panel=$('catalog-artists');if(!panel)return;
+ panel.replaceChildren();
+ const artists=(officialCatalog?.artists||[]).filter(a=>confirmedCatalogAlbums(a).length);
+ const caption=document.createElement('p');caption.className='sub';caption.textContent='対応アーティスト（'+artists.length+'組）';panel.append(caption);
+ for(const artist of artists){
+  const button=document.createElement('button');button.type='button';button.className='detail-btn';
+  button.textContent=artist.name+'（'+confirmedCatalogAlbums(artist).length+'作品）';
+  button.onclick=()=>{$('query').value=artist.name;searchPublishedCatalog(artist.name)};
+  panel.append(button);
+ }
+}
+function catalogLoadFailed(){
+ status.dataset.state='catalog_error';status.textContent='公開目次を読み込めませんでした。通信環境を確認して再試行してください。';
+ results.replaceChildren();
+ const retry=document.createElement('button');retry.type='button';retry.className='detail-btn';retry.textContent='目次を再読み込み';
+ retry.onclick=()=>{$('query').value.trim()?searchPublishedCatalog($('query').value):initializePublishedCatalog()};results.append(retry);
+}
+async function initializePublishedCatalog(){
+ if(publicSearchMode()==='api')return;
+ const data=await loadOfficialCatalog();
+ if(data)renderCatalogArtists();
+ if(catalogSearchToken)return;
+ if(!data){catalogLoadFailed();return}
+ const artists=data.artists.filter(a=>confirmedCatalogAlbums(a).length);
+ status.dataset.state='catalog_ready';status.textContent=artists.length+'組・'+artists.reduce((n,a)=>n+confirmedCatalogAlbums(a).length,0)+'作品を公開中。アーティスト名を入力するか、上の名前を選んでください。';
+}
+async function searchPublishedCatalog(raw){
+ raw=raw.trim();if(!raw)return;
+ const token=++catalogSearchToken;
+ if(raw.length>120){busy=false;$('submit').disabled=false;status.dataset.state='invalid_query';status.textContent='アーティスト名を120文字以内で入力してください。';results.replaceChildren();return}
+ busy=true;$('submit').disabled=true;results.replaceChildren();status.textContent='公式確認済みの目次を検索しています…';
+ try{
+  const data=await loadOfficialCatalog();if(token!==catalogSearchToken)return;
+  if(!data){catalogLoadFailed();return}
+  renderCatalogArtists();
+  const artist=catalogArtist(raw);
+  if(!artist||!confirmedCatalogAlbums(artist).length){
+   artistId='';artistName='';status.dataset.state='catalog_unsupported';
+   status.textContent='公開中の目次では、このアーティストの公式発売情報を確認できません。未対応の可能性があります。公式サイトや作品が存在しないという意味ではありません。';return;
+  }
+  artistId=artist.id;artistName=artist.name;renderOfficialCatalog();
+  status.dataset.state='catalog_confirmed';status.textContent=confirmedCatalogAlbums(artist).length+'作品の正規発売を公式資料で確認済みです。公開済みの目次を表示しています。';
+ }finally{if(token===catalogSearchToken){busy=false;$('submit').disabled=false}}
+}
+function searchRecord(raw){return publicSearchMode()==='api'?searchOfficialNow(raw):searchPublishedCatalog(raw)}
+$('form').addEventListener('submit',e=>{e.preventDefault();searchRecord($('query').value)});
+document.addEventListener?.('DOMContentLoaded',initializePublishedCatalog);
 </script></body></html>

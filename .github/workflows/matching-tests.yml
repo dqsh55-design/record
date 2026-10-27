@@ -1,5 +1,6 @@
-name: Release matching tests
+name: RECORD Pages checks
 on:
+  workflow_dispatch:
   pull_request:
   push:
     branches: [main]
@@ -19,6 +20,9 @@ jobs:
       - run: python -m unittest discover -s tests -p 'test_*matching.py' -v
       - run: python -m unittest discover -s tests -p 'test_official_discography.py' -v
       - run: python -m unittest discover -s tests -p 'test_columbia_catalog.py' -v
+      - run: python -m unittest discover -s tests -p 'test_official_generator.py' -v
+      - run: python -m unittest discover -s tests -p 'test_realtime_search.py' -v
+      - run: python -m unittest discover -s tests -p 'test_public_hosting.py' -v
       - run: node tests/test_official_catalog.cjs
       - run: node tests/test_loading.cjs
       - run: node tests/test_api_cache.cjs
@@ -27,8 +31,8 @@ jobs:
       - run: node tests/test_chronology.cjs
       - run: node tests/test_album_classification.cjs
       - run: pip install 'playwright>=1.50,<2'
-      # ubuntu-latest includes Chrome and its native libraries.
       - run: google-chrome --version
+      - run: python tests/test_pages_ui.py
+      # The preserved future API is opt-in in its browser tests; no account needed.
       - run: python tests/test_official_ui.py
       - run: python -m py_compile scripts/build_catalog.py scripts/release_matching.py scripts/automatic_matching.py scripts/verify_catalog.py
-

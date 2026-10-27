@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-27T00:30:52.143115+00:00",
+  "sources": [
+    {
+      "id": "norah-jones",
+      "added": 0,
+      "status": "ok",
+      "sourceSha256": "ddb15b59d3e6e972e4522ed23f613d3c0c1e8f7443d080a73a7a9fec59ecb73f",
+      "extracted": 12,
+      "held": 6
+    },
+    {
+      "id": "miles-warner-japan",
+      "added": 0,
+      "status": "ok",
+      "sourceSha256": "f0b3c984043ad007aaaee428f5676ab53455e14f827545316825df18502bab6e",
+      "extracted": 12,
+      "held": 0
+    },
+    {
+      "id": "bill-frisell",
+      "added": 0,
+      "status": "ok",
+      "sourceSha256": "18835351b522d188b749c24fe9dc4e938d6c55ee7d175b22e1d0e549d603068d",
+      "extracted": 4,
+      "held": 3
+    },
+    {
+      "id": "miles-sony-japan",
+      "added": 0,
+      "status": "disabled",
+      "reason": "Normal HTTP access returned 403; no bypass. JSON-LD support is fixture-tested, not live-verified for Sony."
+    },
+    {
+      "id": "discovered:blue-note:cannonball-adderley",
+      "added": 1,
+      "status": "ok",
+      "sourceSha256": "db3d79ab36d2764f7c5687d91c98f0be3f3e2b4e8f37c9b096d57a9aed5a58f1",
+      "extracted": 1,
+      "held": 2
+    },
+    {
+      "id": "discovered:blue-note:ambrose-akinmusire",
+      "added": 5,
+      "status": "ok",
+      "sourceSha256": "d3128fe4e5dc45fa05e91bbd1e175a7fbe6e59e98f9aae0893bfba23affbaf98",
+      "extracted": 5,
+      "held": 1
+    }
+  ],
+  "discovery": [
+    {
+      "id": "blue-note-artists",
+      "addedSources": 2,
+      "status": "ok",
+      "sourceSha256": "d7f988d10152dc1cdadf51bc1052405b723f066db43a06737756ab9c0175379c",
+      "newArtistPages": 2
+    }
+  ],
+  "added": 6,
+  "errorCount": 0
+}
