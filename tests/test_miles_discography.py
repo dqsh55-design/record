@@ -76,7 +76,7 @@ class MilesDiscography(unittest.TestCase):
         self.assertFalse(REVIEW['listeningChecks'][0]['playbackVerified'])
 
     def test_no_duplicate_titles_sources_or_ids(self):
-        self.assertEqual(sum(len(a['albums']) for a in CATALOG['artists']),118)
+        self.assertEqual(sum(len(a['albums']) for a in CATALOG['artists']),199)
         self.assertEqual(len(CATALOG['artists'][1]['albums']),72)
         for artist in CATALOG['artists']:
             self.assertEqual(len(artist['albums']),len({a['id'] for a in artist['albums']}))

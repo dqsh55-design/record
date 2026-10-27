@@ -77,3 +77,11 @@ for(const host of ['www.thebeatles.com','discography.ledzeppelin.com','www.metal
  context.bad='https://'+host+'.evil.test/album';assert.equal(run('confirmedCatalogAlbums({albums:[{...discovery,sourceUrl:bad}]}).length'),0);
 }
 console.log('Nine new artist aliases, approved direct link, search fallbacks and exact host rejection passed');
+
+// A larger official discography retains reviewed links and independent search fallbacks.
+for(const title of ['Human After All','Alive 2007']){
+ context.album=context.daft.albums.find(a=>a.title===title);
+ assert.equal(run('confirmedListeningLink(daft,album).url'),context.album.listeningLink.url);
+}
+assert.equal(run('confirmedListeningLink(daft,daft.albums.find(a=>a.title==="Alive 1997"))'),null);
+assert.equal(context.catalog.artists.reduce((sum,artist)=>sum+artist.albums.length,0),199);

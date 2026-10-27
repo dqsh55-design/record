@@ -50,7 +50,7 @@ class PagesUI(unittest.TestCase):
         for width in [320,390,430]:
             with self.subTest(width=width):
                 page,requests=self.page(width)
-                expect(page.locator('#status')).to_contain_text('14組・118作品')
+                expect(page.locator('#status')).to_contain_text('14組・199作品')
                 expect(page.locator('#catalog-artists button')).to_have_count(14)
                 self.search(page,'ノラ・ジョーンズ')
                 expect(page.locator('#official-catalog article')).to_have_count(13)
@@ -175,12 +175,12 @@ class PagesUI(unittest.TestCase):
                     self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'),width)
                     summary.press('Space');expect(first.locator('details a').first).to_be_hidden()
 
-    def test_new_artist_japanese_aliases_evidence_and_one_reviewed_direct_link(self):
+    def test_artist_japanese_aliases_evidence_and_reviewed_links(self):
         page,requests=self.page()
         for name in ['The Beatles','Led Zeppelin','Black Sabbath','Metallica','Kraftwerk','Daft Punk','David Bowie','Michael Jackson','Ryuichi Sakamoto']:
             artist=next(a for a in CATALOG['artists'] if a['name']==name)
             self.search(page,artist['aliases'][0])
-            cards=page.locator('#official-catalog article');expect(cards).to_have_count(2)
+            cards=page.locator('#official-catalog article');expect(cards).to_have_count(len(artist['albums']))
             expect(page.locator('#official-catalog h2')).to_contain_text(name)
             for album in artist['albums']:
                 card=cards.filter(has=page.get_by_role('heading',name=album['title'],exact=True))
@@ -195,6 +195,27 @@ class PagesUI(unittest.TestCase):
         self.search(page,"B’z")
         expect(page.locator('#status')).to_have_attribute('data-state','catalog_unsupported')
         expect(page.locator('#official-catalog article')).to_have_count(0)
+
+    def test_deeper_live_compilation_and_reissue_catalogs(self):
+        page,_=self.page()
+        for name,title in [('The Beatles','Live At The BBC'),('Led Zeppelin','Mothership'),('Black Sabbath','ベスト・オブ・ディオ・イヤーズ'),('Metallica','S&M2'),('Kraftwerk','3-D 12345678'),('David Bowie','Stage 2017（ステージ 2017ミックス）'),('Michael Jackson','XSCAPE'),('Ryuichi Sakamoto','out of noise')]:
+            self.search(page,name)
+            artist=next(a for a in CATALOG['artists'] if a['name']==name)
+            expect(page.locator('#official-catalog article')).to_have_count(len(artist['albums']))
+            card=page.locator('article').filter(has=page.get_by_role('heading',name=title,exact=True))
+            expect(card).to_have_count(1)
+            expect(card.locator('details a').first).to_be_hidden()
+            expect(card.get_by_role('link',name='YouTube Musicで探す（配信先は未確認） ↗',exact=True)).to_be_visible()
+            card.locator('summary').click()
+            expect(card.locator('details a').first).to_be_visible()
+        self.search(page,'ダフト・パンク')
+        for title in ['Human After All','Alive 2007']:
+            album=next(a for a in CATALOG['artists'][10]['albums'] if a['title']==title)
+            card=page.locator('article').filter(has=page.get_by_role('heading',name=title,exact=True))
+            expect(card.get_by_role('link',name='YouTube Musicでアルバムを開く ↗',exact=True)).to_have_attribute('href',album['listeningLink']['url'])
+        card=page.locator('article').filter(has=page.get_by_role('heading',name='Alive 1997',exact=True))
+        expect(card.locator('.meta')).to_contain_text('2001')
+        expect(card.get_by_role('link',name='YouTube Musicで探す（配信先は未確認） ↗',exact=True)).to_be_visible()
 
     def test_supported_artist_buttons_work_without_typing(self):
         page,requests=self.page()
