@@ -45,6 +45,7 @@ class CatalogAdditions(unittest.TestCase):
 
     def test_all_previously_published_entries_and_listening_evidence_are_unchanged(self):
         baseline=copy.deepcopy(CATALOG)
+        baseline['artists']=baseline['artists'][:5]  # Snapshot of the original five artists.
         for artist in baseline['artists']:artist['albums']=[a for a in artist['albums'] if not a['id'].startswith((PREFIX,'official:miles-discography-20261027:','official:hundred-20261027:'))]
         self.assertEqual(sum(len(a['albums']) for a in baseline['artists']),56)
         fingerprint=hashlib.sha256(json.dumps(baseline,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
@@ -64,7 +65,7 @@ class CatalogAdditions(unittest.TestCase):
     def test_supported_counts_no_duplicate_work_ids_titles_or_held_candidates(self):
         counts={a['name']:len(a['albums']) for a in CATALOG['artists']}
         self.assertEqual(counts['Norah Jones'],13);self.assertEqual(counts['Miles Davis'],72)
-        self.assertEqual(sum(counts.values()),100)
+        self.assertEqual(sum(counts.values()),118)
         for artist in CATALOG['artists']:
             self.assertEqual(len(artist['albums']),len({a['id'] for a in artist['albums']}))
             keys=[re.sub(r'[^\w]','',a['title'].casefold()) for a in artist['albums']]
