@@ -61,7 +61,8 @@ class ColumbiaCatalogTests(unittest.TestCase):
             self.assertEqual(albums[title]['year'],year)
         for title in ['Pangaea','Filles De Kilimanjaro','TUTU','Doo-Bop','Begin Again']:
             self.assertIsNone(albums[title]['year'])
-        self.assertFalse(any(a.get('year')=='2006' for a in albums.values()))
+        # Sony's 2006 reissue must not become Miles' original year; other artists may release in 2006.
+        self.assertFalse(any(a.get('year')=='2006' for artist in CATALOG['artists'] if artist['name']=='Miles Davis' for a in artist['albums']))
 
     def test_blocked_sources_remain_disabled_and_no_duplicates(self):
         sources=json.loads((ROOT/'data/official-sources.json').read_text())['sources']

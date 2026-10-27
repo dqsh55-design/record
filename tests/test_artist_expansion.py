@@ -7,6 +7,9 @@ import unittest
 from urllib.parse import urlsplit
 ROOT=Path(__file__).resolve().parents[1]
 CATALOG=json.loads((ROOT/'data/official-catalog.json').read_text())
+# This review describes the historical 18-work batch; depth additions have their own review/tests.
+for artist in CATALOG['artists']:
+    artist['albums']=[a for a in artist['albums'] if not a['id'].startswith('official:depth-20261027:')]
 FILE='data/official-reviews/artist-expansion-2026-10-27.json'
 REVIEW=json.loads((ROOT/FILE).read_text())
 class ArtistExpansion(unittest.TestCase):

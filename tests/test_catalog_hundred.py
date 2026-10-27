@@ -47,7 +47,7 @@ class CatalogHundred(unittest.TestCase):
 
     def test_hundred_works_without_duplicate_ids_titles_or_sources_in_new_batch(self):
         self.assertEqual({a['name']:len(a['albums']) for a in CATALOG['artists'][:5]},{'Norah Jones':13,'Miles Davis':72,'Bill Frisell':9,'Cannonball Adderley':1,'Ambrose Akinmusire':5})
-        self.assertEqual(sum(len(a['albums']) for a in CATALOG['artists']),118)
+        self.assertEqual(sum(len(a['albums']) for a in CATALOG['artists']),199)
         self.assertEqual(len({w['sourceUrl'] for w in REVIEW['works']}),23)
         for artist in CATALOG['artists']:
             ids=[a['id'] for a in artist['albums']];self.assertEqual(len(ids),len(set(ids)))
@@ -75,7 +75,7 @@ class CatalogHundred(unittest.TestCase):
         self.assertIn(link['target']['artist'],bill['aliases'])
         self.assertEqual(link['officialSourceUrl'],album['sourceUrl'])
         self.assertFalse(report['playbackVerified'])
-        self.assertEqual(sum(bool(a.get('listeningLink')) for artist in CATALOG['artists'] for a in artist['albums']),4)
+        self.assertEqual(sum(bool(a.get('listeningLink')) for artist in CATALOG['artists'] for a in artist['albums']),6)
         # Direct-link availability does not gate approved official release listings.
         self.assertEqual(sum(bool(a.get('listeningLink')) for artist in CATALOG['artists'] for a in artist['albums'] if a['id'].startswith(PREFIX)),1)
 
