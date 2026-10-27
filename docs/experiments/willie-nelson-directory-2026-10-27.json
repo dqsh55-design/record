@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "status": "partial",
+  "artist": {
+    "id": "record:official:blue-note:artist-willie-nelson",
+    "name": "Willie Nelson",
+    "aliases": [
+      "Willie Nelson"
+    ],
+    "albums": [
+      {
+        "id": "generated:e6619729c00e34d2ee48d3a6",
+        "title": "American Classic",
+        "year": null,
+        "label": "Blue Note Records",
+        "official": true,
+        "scope": "work",
+        "sourceUrl": "https://www.bluenote.com/artist/willie-nelson/",
+        "sourceName": "Blue Note Records",
+        "checkedAt": "2026-10-27",
+        "reviewNote": "公式発行元のアルバム区分・本人名義・発売済み日付を検索時に確認。初回発売年・配信先は未確認。",
+        "verificationMethod": "official-source-rule-v1",
+        "generationProof": {
+          "rule": "bluenote-artist-v1",
+          "provider": "blue-note",
+          "sourceId": "blue-note:artist/willie-nelson",
+          "artistId": "record:official:blue-note:artist-willie-nelson",
+          "sourceUrl": "https://www.bluenote.com/artist/willie-nelson/",
+          "sourceSha256": "cce1e844c5865beca51e418a4995c4180a8718dc13a275e261606a09d3f60e76",
+          "listedReleaseYear": "2009"
+        },
+        "verifiedAtUnix": 1793083687.6303806,
+        "validUntilUnix": 1793170087.6303806
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "blue-note-directory",
+      "url": "https://www.bluenote.com/artists/",
+      "status": "ok",
+      "matches": 1
+    },
+    {
+      "id": "warner-directory",
+      "url": "https://wmg.jp/artistlist",
+      "status": "ok",
+      "matches": 1
+    },
+    {
+      "id": "sony-directory",
+      "url": "https://www.sonymusic.co.jp/artist/",
+      "status": "not_found",
+      "code": "404"
+    },
+    {
+      "id": "blue-note:artist/willie-nelson",
+      "url": "https://www.bluenote.com/artist/willie-nelson/",
+      "status": "ok",
+      "verified": 1,
+      "held": 2
+    },
+    {
+      "id": "warner-japan:WillieNelson",
+      "url": "https://wmg.jp/WillieNelson/discography",
+      "status": "fetch_error",
+      "code": "source_format"
+    }
+  ],
+  "cache": {
+    "hit": false,
+    "refreshFailed": false
+  },
+  "coverage": "取得できた公式資料の範囲。全作品や公式サイトの不存在を断定しません。"
+}

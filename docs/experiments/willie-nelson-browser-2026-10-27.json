@@ -1,0 +1,89 @@
+{
+  "format": "RECORD-browser-cors-probe-v1",
+  "checkedAt": "2026-10-27T06:53:35.246709+00:00",
+  "origin": "https://dqsh55-design.github.io",
+  "method": "Chromium page fetch with normal CORS; Pages origin document fulfilled locally, official responses are live",
+  "credentialMode": "omit",
+  "corsDisabled": false,
+  "samples": [
+    {
+      "status": "browser_fetch_error",
+      "readable": false,
+      "url": "https://willienelson.com/collections/music",
+      "sample": 1,
+      "corsConsoleObserved": true
+    },
+    {
+      "status": "browser_fetch_error",
+      "readable": false,
+      "url": "https://wmg.jp/WillieNelson/discography/album",
+      "sample": 1,
+      "corsConsoleObserved": true
+    },
+    {
+      "status": "browser_fetch_error",
+      "readable": false,
+      "url": "https://www.bluenote.com/artist/willie-nelson/",
+      "sample": 1,
+      "corsConsoleObserved": true
+    },
+    {
+      "status": "readable",
+      "readable": true,
+      "httpStatus": 200,
+      "bytes": 259830,
+      "sourceSha256": "ac3e39bf03c10d8ef4cf061957c3dbc9cdb27d5a2ebc72e3e009eb6024bef340",
+      "url": "https://willienelson.com/products/spirit",
+      "sample": 1,
+      "corsConsoleObserved": false
+    },
+    {
+      "status": "browser_fetch_error",
+      "readable": false,
+      "url": "https://willienelson.com/collections/music",
+      "sample": 2,
+      "corsConsoleObserved": true
+    },
+    {
+      "status": "browser_fetch_error",
+      "readable": false,
+      "url": "https://wmg.jp/WillieNelson/discography/album",
+      "sample": 2,
+      "corsConsoleObserved": true
+    },
+    {
+      "status": "browser_fetch_error",
+      "readable": false,
+      "url": "https://www.bluenote.com/artist/willie-nelson/",
+      "sample": 2,
+      "corsConsoleObserved": true
+    },
+    {
+      "status": "readable",
+      "readable": true,
+      "httpStatus": 200,
+      "bytes": 259830,
+      "sourceSha256": "5ca7878f844946920c4c55c23bbf5b135c0a4371a6cc11aad8603ba535460c43",
+      "url": "https://willienelson.com/products/spirit",
+      "sample": 2,
+      "corsConsoleObserved": false
+    }
+  ],
+  "interpretation": "readable proves transport only, never official album release; a fetch error alone cannot distinguish CORS, blocking and network failure",
+  "browserVersion": "155.0.8059.39",
+  "unexpectedRequests": [
+    "https://willienelson.com/apps/easylockdown/easylockdown-1.0.8.min.js?v=202607151617",
+    "https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js",
+    "https://willienelson.com/cdn/shop/t/52/assets/bold-upsell.css?v=154440006918531836521784132266",
+    "https://willienelson.com/cdn/shop/t/52/assets/bold-upsell-custom.css?v=150135899998303055901784132266",
+    "https://willienelson.com/cdn/shop/t/52/assets/bold-options.css?v=123160307633435409531784132266",
+    "https://options.shopapps.site/js/options.js",
+    "https://willienelson.com/cdn/shop/t/52/assets/base.css?v=140624990073879848751784132266",
+    "https://willienelson.com/cdn/shop/t/52/assets/custom.css?v=138140117263062135311784132266",
+    "https://use.typekit.net/wjl0wqk.css",
+    "https://cdn.shopify.com/extensions/01a17a15-42f8-7e4a-b274-ff796840c750/vex-auto-add-to-cart-1994/assets/script.js"
+  ],
+  "runUrl": "https://github.com/dqsh55-design/record/actions/runs/40463771759",
+  "headSha": "dcc43de19886a1f0d0701a4065306b82ddf1a395",
+  "observationNote": "Initial real-browser sample, before additional CSP hardening. All non-target requests were aborted by the route allowlist."
+}
