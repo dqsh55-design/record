@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "collectedAt": "2026-10-27T00:03:38.662588+00:00",
+  "sources": [
+    {
+      "id": "norah-jones",
+      "status": "ok",
+      "count": 12,
+      "sha256": "03bcb1d6f37e6491295e86cd58e0ef7dd79c7861293ec4ae00ca305065474a14"
+    },
+    {
+      "id": "miles-davis",
+      "status": "disabled",
+      "reason": "2026-10-27: normal HTTPS request returned 403; no access-limit bypass or retry."
+    },
+    {
+      "id": "miles-sony-japan",
+      "status": "disabled",
+      "reason": "2026-10-27: normal HTTPS request returned 403; search indexing alone is insufficient evidence."
+    },
+    {
+      "id": "miles-warner-japan",
+      "status": "ok",
+      "count": 12,
+      "sha256": "91acfed1402ffd36bfb9a5741d94d81fdcba60be99f399e955c240d1aeb6b1ab"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "fab4416dff02ed669e6e7910",
+      "artistId": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+      "title": "Visions",
+      "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+      "sourceId": "norah-jones",
+      "sourceName": "Blue Note Records",
+      "label": "Blue Note Records",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "cd18601e15e1907129b13b75",
+      "artistId": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+      "title": "I Dream Of Christmas",
+      "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+      "sourceId": "norah-jones",
+      "sourceName": "Blue Note Records",
+      "label": "Blue Note Records",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "936b9da7532a4b4399a79082",
+      "artistId": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+      "title": "‘Til We Meet Again",
+      "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+      "sourceId": "norah-jones",
+      "sourceName": "Blue Note Records",
+      "label": "Blue Note Records",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "18869a022f8717e8032c44c0",
+      "artistId": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+      "title": "Pick Me Up Off The Floor",
+      "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+      "sourceId": "norah-jones",
+      "sourceName": "Blue Note Records",
+      "label": "Blue Note Records",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "b6955f5e5722389110205394",
+      "artistId": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+      "title": "Begin Again",
+      "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+      "sourceId": "norah-jones",
+      "sourceName": "Blue Note Records",
+      "label": "Blue Note Records",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "56b8bbe9cc10f3d606019773",
+      "artistId": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+      "title": "Day Breaks",
+      "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+      "sourceId": "norah-jones",
+      "sourceName": "Blue Note Records",
+      "label": "Blue Note Records",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "cfca7f51ca3d17aa96b94e8b",
+      "artistId": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+      "title": "Little Broken Hearts",
+      "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+      "sourceId": "norah-jones",
+      "sourceName": "Blue Note Records",
+      "label": "Blue Note Records",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "a0ca469b4c319bb9573f6e8b",
+      "artistId": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+      "title": "…Featuring Norah Jones",
+      "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+      "sourceId": "norah-jones",
+      "sourceName": "Blue Note Records",
+      "label": "Blue Note Records",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "deff9cc532a92a4d4078c5a3",
+      "artistId": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+      "title": "The Fall",
+      "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+      "sourceId": "norah-jones",
+      "sourceName": "Blue Note Records",
+      "label": "Blue Note Records",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "0090577700c4c2423ef95f70",
+      "artistId": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+      "title": "Not Too Late",
+      "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+      "sourceId": "norah-jones",
+      "sourceName": "Blue Note Records",
+      "label": "Blue Note Records",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "fdb381ff0a54dd9d8e2aa772",
+      "artistId": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+      "title": "Feels Like Home",
+      "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+      "sourceId": "norah-jones",
+      "sourceName": "Blue Note Records",
+      "label": "Blue Note Records",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "ab5e1fd5c6c31096cc0ba54e",
+      "artistId": "985c709c-7771-4de3-9024-7bda29ebe3f9",
+      "title": "Come Away With Me",
+      "sourceUrl": "https://www.bluenote.com/artist/norah-jones/",
+      "sourceId": "norah-jones",
+      "sourceName": "Blue Note Records",
+      "label": "Blue Note Records",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "140893031908975d212527f7",
+      "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "title": "ヴェリー・ベスト・オブ・ワーナー・イヤーズ<ヨウガクベスト Blu-spec CD2>",
+      "sourceUrl": "https://wmg.jp/miles-davis/discography/33158",
+      "sourceId": "miles-warner-japan",
+      "sourceName": "Warner Music Japan",
+      "label": "Warner Music Japan",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "968442d14f3a73baae85d99e",
+      "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "title": "ライヴ・アット・ヴィエンヌ",
+      "sourceUrl": "https://wmg.jp/miles-davis/discography/24589",
+      "sourceId": "miles-warner-japan",
+      "sourceName": "Warner Music Japan",
+      "label": "Warner Music Japan",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "c996104b59720e7b4b1c6d2c",
+      "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "title": "ラバーバンド",
+      "sourceUrl": "https://wmg.jp/miles-davis/discography/21247",
+      "sourceId": "miles-warner-japan",
+      "sourceName": "Warner Music Japan",
+      "label": "Warner Music Japan",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "a187eeb5482eaadb5e3056b0",
+      "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "title": "ライヴ・アラウンド・ザ・ワールド<ジャズ・アナログ・プレミアム・コレクション第2弾>",
+      "sourceUrl": "https://wmg.jp/miles-davis/discography/19934",
+      "sourceId": "miles-warner-japan",
+      "sourceName": "Warner Music Japan",
+      "label": "Warner Music Japan",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "0d291e0830ab2f61bc66db43",
+      "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "title": "ライヴ・アット・モントルー<ジャズ・アナログ・プレミアム・コレクション>",
+      "sourceUrl": "https://wmg.jp/miles-davis/discography/19616",
+      "sourceId": "miles-warner-japan",
+      "sourceName": "Warner Music Japan",
+      "label": "Warner Music Japan",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "286b1557c6ad04b277a735cc",
+      "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "title": "TUTU<ジャズ・アナログ・プレミアム・コレクション>",
+      "sourceUrl": "https://wmg.jp/miles-davis/discography/19608",
+      "sourceId": "miles-warner-japan",
+      "sourceName": "Warner Music Japan",
+      "label": "Warner Music Japan",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "f0b77a8e7e2c3bfb754e10df",
+      "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "title": "ライヴ・アット・モントルー<SHM-CD>",
+      "sourceUrl": "https://wmg.jp/miles-davis/discography/18316",
+      "sourceId": "miles-warner-japan",
+      "sourceName": "Warner Music Japan",
+      "label": "Warner Music Japan",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "b0c76dc52f5d6cd29b18ca13",
+      "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "title": "ライヴ・アラウンド・ザ・ワールド<SHM-CD>",
+      "sourceUrl": "https://wmg.jp/miles-davis/discography/18317",
+      "sourceId": "miles-warner-japan",
+      "sourceName": "Warner Music Japan",
+      "label": "Warner Music Japan",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "e17b4f346a72f5178036872e",
+      "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "title": "シエスタ<SHM-CD>",
+      "sourceUrl": "https://wmg.jp/miles-davis/discography/18318",
+      "sourceId": "miles-warner-japan",
+      "sourceName": "Warner Music Japan",
+      "label": "Warner Music Japan",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "76122c4a386b3c7ae19079b6",
+      "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "title": "アマンドラ<SHM-CD>",
+      "sourceUrl": "https://wmg.jp/miles-davis/discography/18319",
+      "sourceId": "miles-warner-japan",
+      "sourceName": "Warner Music Japan",
+      "label": "Warner Music Japan",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "121b30297df1c87401748d9a",
+      "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "title": "ディンゴ<SHM-CD>",
+      "sourceUrl": "https://wmg.jp/miles-davis/discography/18320",
+      "sourceId": "miles-warner-japan",
+      "sourceName": "Warner Music Japan",
+      "label": "Warner Music Japan",
+      "status": "pending",
+      "scope": "work"
+    },
+    {
+      "id": "2d93afe0c892e2b8f170bd83",
+      "artistId": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "title": "ドゥー・バップ<SHM-CD>",
+      "sourceUrl": "https://wmg.jp/miles-davis/discography/18010",
+      "sourceId": "miles-warner-japan",
+      "sourceName": "Warner Music Japan",
+      "label": "Warner Music Japan",
+      "status": "pending",
+      "scope": "work"
+    }
+  ]
+}

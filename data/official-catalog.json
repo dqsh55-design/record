@@ -235,6 +235,36 @@
           "sourceName": "Miles Davis / Sony Music",
           "checkedAt": "2026-10-26",
           "reviewNote": "Sony運営の公式作品ページで作品・発売年・レーベルを確認。国別盤・再発盤への認定転用なし。"
+        },
+        {
+          "id": "official:286b1557c6ad04b277a735cc",
+          "title": "TUTU",
+          "year": null,
+          "label": "Warner Music Japan",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://wmg.jp/miles-davis/discography/19608",
+          "sourceName": "Warner Music Japan",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "Warner Music Japan公式商品ページでMiles Davis本人名義、英題、ALBUM表記、品番WPJR-10030、再発発売日2018-09-26を確認。作品の正規発売の根拠として登録。再発発売日・録音年を初回発売年に転用しない。YouTube Music配信・再生や他の発売盤は未確認。",
+          "reviewer": "Codex（公式資料照合）",
+          "sourceSha256": "91acfed1402ffd36bfb9a5741d94d81fdcba60be99f399e955c240d1aeb6b1ab",
+          "candidateTitle": "TUTU<ジャズ・アナログ・プレミアム・コレクション>"
+        },
+        {
+          "id": "official:2d93afe0c892e2b8f170bd83",
+          "title": "Doo-Bop",
+          "year": null,
+          "label": "Warner Music Japan",
+          "official": true,
+          "scope": "work",
+          "sourceUrl": "https://wmg.jp/miles-davis/discography/18010",
+          "sourceName": "Warner Music Japan",
+          "checkedAt": "2026-10-27",
+          "reviewNote": "Warner Music Japan公式商品ページでMiles Davis本人名義、英題、ALBUM表記、品番WPCR-29228、再発発売日2017-05-24を確認。作品の正規発売の根拠として登録。再発発売日・録音年を初回発売年に転用しない。YouTube Music配信・再生や他の発売盤は未確認。",
+          "reviewer": "Codex（公式資料照合）",
+          "sourceSha256": "91acfed1402ffd36bfb9a5741d94d81fdcba60be99f399e955c240d1aeb6b1ab",
+          "candidateTitle": "ドゥー・バップ<SHM-CD>"
         }
       ]
     }

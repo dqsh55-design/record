@@ -7,7 +7,7 @@ from pathlib import Path
 import re
 from datetime import date, datetime, timezone
 from urllib.parse import urljoin, urlsplit
-from urllib.request import Request, urlopen
+from urllib.request import Request
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -43,6 +43,39 @@ class Links(HTMLParser):
             self.href, self.text = None, []
 
 
+class WarnerCards(HTMLParser):
+    """Read visible album cards, excluding navigation and non-album media."""
+    def __init__(self):
+        super().__init__()
+        self.cards = []
+        self.card = None
+        self.heading = False
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == 'a':
+            self.card = {'href': attrs.get('href', ''), 'title': [], 'album': False}
+        if tag == 'h3' and self.card:
+            self.heading = True
+
+    def handle_data(self, data):
+        if self.card:
+            if self.heading:
+                self.card['title'].append(data)
+            if data.strip() == 'ALBUM':
+                self.card['album'] = True
+
+    def handle_endtag(self, tag):
+        if tag == 'h3':
+            self.heading = False
+        if tag == 'a' and self.card:
+            if self.card['album']:
+                title = ' '.join(''.join(self.card['title']).split())
+                self.cards.append((self.card['href'], title))
+            self.card = None
+            self.heading = False
+
+
 def extract(source, html):
     if source.get('adapter') == 'bluenote-artist':
         from html import unescape
@@ -62,10 +95,11 @@ def extract(source, html):
             if title:
                 found[identity] = dict(id=identity, artistId=source['artistId'], title=title, sourceUrl=source['url'], sourceId=source['id'], sourceName=source['name'], label=source['label'], status='pending', scope='work')
         return list(found.values())
-    parser = Links()
+    parser = WarnerCards() if source.get('adapter') == 'warner-cards' else Links()
     parser.feed(html)
     found = {}
-    for href, title in parser.links:
+    links = parser.cards if isinstance(parser, WarnerCards) else parser.links
+    for href, title in links:
         url = urljoin(source['url'], href).split('#')[0].split('?')[0]
         if not safe_url(url, source['host']) or not re.fullmatch(source['releasePath'], urlsplit(url).path):
             continue
@@ -102,6 +136,9 @@ def collect(sources, previous, fetch=download):
     # Preserve last observations during outages; never overwrite a review or catalog.
     old = previous.get('candidates', [])
     for source in sources:
+        if source.get('enabled') is False:
+            report['sources'].append(dict(id=source['id'], status='disabled', reason=source['disabledReason']))
+            continue
         try:
             html = fetch(source)
             candidates = extract(source, html)
@@ -121,7 +158,7 @@ def publish(catalog, report, reviews, sources):
     result = copy.deepcopy(catalog)
     candidates = {c['id']: c for c in report['candidates']}
     source_map = {s['id']: s for s in sources}
-    healthy = {s['id'] for s in report['sources'] if s['status'] == 'ok'}
+    healthy = {s['id']: s for s in report['sources'] if s['status'] == 'ok'}
     artists = {a['id']: a for a in result['artists']}
     seen = set()
     for review in reviews:
@@ -134,6 +171,9 @@ def publish(catalog, report, reviews, sources):
             raise ValueError('invalid decision')
         c = candidates[review['candidateId']]
         s = source_map[c['sourceId']]
+        observation = healthy.get(c['sourceId'], {})
+        if s.get('enabled') is False or not observation.get('sha256') or review.get('sourceSha256') != observation['sha256'] or review.get('candidateTitle') != c['title']:
+            raise ValueError('review is not bound to the current source observation')
         checked = date.fromisoformat(review['checkedAt'])
         if checked > date.today() or not review['reviewer'].strip() or not review['note'].strip():
             raise ValueError('review evidence required')
@@ -149,7 +189,7 @@ def publish(catalog, report, reviews, sources):
         artist = artists[c['artistId']]
         if any(key(a['title']) == key(title) for a in artist['albums']):
             continue
-        artist['albums'].append(dict(id='official:'+c['id'], title=title, year=year, label=label, official=True, scope='work', sourceUrl=c['sourceUrl'], sourceName=s['name'], checkedAt=review['checkedAt'], reviewNote=review['note'], reviewer=review['reviewer']))
+        artist['albums'].append(dict(id='official:'+c['id'], title=title, year=year, label=label, official=True, scope='work', sourceUrl=c['sourceUrl'], sourceName=s['name'], checkedAt=review['checkedAt'], reviewNote=review['note'], reviewer=review['reviewer'], sourceSha256=review['sourceSha256'], candidateTitle=c['title']))
     return result
 
 
@@ -165,8 +205,10 @@ def main():
     parser.add_argument('command', choices=['collect', 'publish'])
     parser.add_argument('--report', type=Path, default=ROOT/'data/official-candidates.json')
     parser.add_argument('--reviews', type=Path)
+    parser.add_argument('--catalog', type=Path, default=ROOT/'data/official-catalog.json')
+    parser.add_argument('--sources', type=Path, default=ROOT/'data/official-sources.json')
     args = parser.parse_args()
-    sources = json.loads((ROOT/'data/official-sources.json').read_text())['sources']
+    sources = json.loads(args.sources.read_text())['sources']
     if args.command == 'collect':
         previous = json.loads(args.report.read_text()) if args.report.exists() else {}
         report = collect(sources, previous)
@@ -176,7 +218,7 @@ def main():
     else:
         if not args.reviews:
             parser.error('--reviews is required for publish')
-        path = ROOT/'data/official-catalog.json'
+        path = args.catalog
         result = publish(json.loads(path.read_text()), json.loads(args.report.read_text()), json.loads(args.reviews.read_text()), sources)
         write_json(path, result)
 
