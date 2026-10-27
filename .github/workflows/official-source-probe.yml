@@ -1,0 +1,48 @@
+name: Official source feasibility probe
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - scripts/probe_official_search.py
+      - scripts/probe_official_browser.py
+      - tests/test_official_probe.py
+      - .github/workflows/official-source-probe.yml
+permissions:
+  contents: read
+concurrency:
+  group: official-source-probe-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  probe:
+    # Only standard public-repository runners; no larger runner or paid service.
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s tests -p 'test_official_probe.py' -v
+      - run: pip install 'playwright>=1.50,<2'
+      - run: python scripts/probe_official_search.py --output-dir /tmp/record-probe
+      - run: python scripts/probe_official_search.py --directory-search --output-dir /tmp/record-probe/discovery
+      - run: python scripts/probe_official_browser.py --output /tmp/record-probe/browser-cors.json
+      - name: Show diagnostic results (no publish, no catalog write)
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as out:
+              out.write('## Willie Nelson: isolated official-source probe\n\nPublic catalog unchanged. This is not an on-demand Pages service.\n\n')
+              for p in Path('/tmp/record-probe').rglob('*.json'):
+                  out.write('### '+p.name+'\n\n```json\n'+p.read_text()+'\n```\n\n')
+          PY
+      # JSON/HTML are small and short-lived. Never upload source HTML or pictures.
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: official-source-probe
+          path: /tmp/record-probe
+          retention-days: 1
+          if-no-files-found: ignore

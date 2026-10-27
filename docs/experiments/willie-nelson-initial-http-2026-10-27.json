@@ -1,0 +1,60 @@
+{
+  "checkedAt": "2026-10-27",
+  "method": "ordinary HTTPS GET with Pages Origin; header observation, not real browser verification",
+  "observations": [
+    {
+      "url": "https://willienelson.com/collections/music",
+      "finalUrl": "https://willienelson.com/collections/music",
+      "status": 200,
+      "sha256": "42e517efc575faedab869287175d6ae76170a0701396fb6c6777cc3c412abec7",
+      "bytes": 388016,
+      "seconds": 6.94,
+      "accessControlAllowOrigin": ""
+    },
+    {
+      "url": "https://willienelson.com/products/spirit",
+      "finalUrl": "https://willienelson.com/products/spirit",
+      "status": 200,
+      "sha256": "6d7bd12e90ce12b89ea0fc47d4a303c57a37f94811cbeb0c3a64685c02e98c73",
+      "bytes": 259830,
+      "seconds": 6.79,
+      "accessControlAllowOrigin": "*"
+    },
+    {
+      "url": "https://wmg.jp/WillieNelson/discography/album",
+      "finalUrl": "https://wmg.jp/WillieNelson/discography/album",
+      "status": 200,
+      "sha256": "b2987bb383b45b36cded3f689840b8c4d04d72915dfa76a498d908eba3928f84",
+      "bytes": 67904,
+      "seconds": 7.75,
+      "accessControlAllowOrigin": ""
+    },
+    {
+      "url": "https://www.bluenote.com/artist/willie-nelson/",
+      "finalUrl": "https://www.bluenote.com/artist/willie-nelson/",
+      "status": 200,
+      "sha256": "b63ec5d3e985e4dc5e1e25855cb8c38c348c59e87df73fd9ecd11980944b347b",
+      "bytes": 124619,
+      "seconds": 14.26,
+      "accessControlAllowOrigin": ""
+    },
+    {
+      "url": "https://www.legacyrecordings.com/releases/",
+      "finalUrl": "https://www.legacyrecordings.com/releases/",
+      "status": 200,
+      "sha256": "65b468af40326c007bdef5ad4b823d68ff53addee994c5a61ee9e5cb71327b02",
+      "bytes": 174250,
+      "seconds": 6.52,
+      "accessControlAllowOrigin": ""
+    },
+    {
+      "url": "https://www.sonymusic.com/legacy/workin-man-willie-sings-merle/",
+      "finalUrl": "https://www.sonymusic.com/legacy/workin-man-willie-sings-merle/",
+      "status": 200,
+      "sha256": "ffe3090383821f60b4965defbeead1730bfa724f5181e30c821db33098824820",
+      "bytes": 151588,
+      "seconds": 6.78,
+      "accessControlAllowOrigin": ""
+    }
+  ]
+}

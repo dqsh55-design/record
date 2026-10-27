@@ -1,0 +1,148 @@
+{
+  "format": "RECORD-official-search-probe-v1",
+  "mode": "read-only-experiment",
+  "query": "Willie Nelson",
+  "checkedAt": "2026-10-27",
+  "publicCatalogModified": false,
+  "realtimePagesImplemented": false,
+  "verifiedWorks": [
+    {
+      "title": "ザ・コンプリート・アトランティック・セッションズ",
+      "artist": "Willie Nelson",
+      "year": "2006",
+      "label": "Warner Music Japan",
+      "sourceUrl": "https://wmg.jp/WillieNelson/discography/3355",
+      "evidenceSourceUrl": "https://wmg.jp/WillieNelson/discography/album",
+      "sourceSha256": "b2987bb383b45b36cded3f689840b8c4d04d72915dfa76a498d908eba3928f84",
+      "listedReleaseDate": "2006-08-23",
+      "listedReleaseYear": null,
+      "checkedAt": "2026-10-27",
+      "officialReleaseConfirmed": true,
+      "rule": "warner-albums-v1",
+      "experimentalOnly": true
+    },
+    {
+      "title": "American Classic",
+      "artist": "Willie Nelson",
+      "year": "2009",
+      "label": "Blue Note Records",
+      "sourceUrl": "https://www.bluenote.com/artist/willie-nelson/",
+      "evidenceSourceUrl": "https://www.bluenote.com/artist/willie-nelson/",
+      "sourceSha256": "003c90635674eec991430f8975a209705757e5bb540a08ae65cbc09df8068186",
+      "listedReleaseDate": null,
+      "listedReleaseYear": "2009",
+      "checkedAt": "2026-10-27",
+      "officialReleaseConfirmed": true,
+      "rule": "bluenote-artist-v1",
+      "experimentalOnly": true
+    }
+  ],
+  "heldCandidates": [
+    {
+      "title": "Workin’ Man: Willie Sings Merle",
+      "sourceUrl": "https://willienelson.com/products/workin-man-willie-sings-merle",
+      "status": "unconfirmed",
+      "reason": "missing_explicit_music_release_artist_date_and_issuer"
+    },
+    {
+      "title": "Oh What A Beautiful World",
+      "sourceUrl": "https://willienelson.com/products/oh-what-a-beautiful-world",
+      "status": "unconfirmed",
+      "reason": "missing_explicit_music_release_artist_date_and_issuer"
+    },
+    {
+      "title": "Last Leaf On The Tree",
+      "sourceUrl": "https://willienelson.com/products/last-leaf-on-the-tree",
+      "status": "unconfirmed",
+      "reason": "missing_explicit_music_release_artist_date_and_issuer"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://willienelson.com/collections/music",
+      "observedAt": "2026-10-27T06:43:40.068056+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "allowOrigin": "",
+      "corsHeaderAllowsPagesOrigin": false,
+      "contentType": "text/html; charset=utf-8",
+      "sourceSha256": "712ca4f072366aeb0f02b670ee5a31f0084b31af9fcd6214aec62ba34a02c15f",
+      "bytes": 388016,
+      "elapsedSeconds": 7.04,
+      "id": "artist-discography"
+    },
+    {
+      "url": "https://wmg.jp/WillieNelson/discography/album",
+      "observedAt": "2026-10-27T06:43:47.128004+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "allowOrigin": "",
+      "corsHeaderAllowsPagesOrigin": false,
+      "contentType": "text/html; charset=utf-8",
+      "sourceSha256": "b2987bb383b45b36cded3f689840b8c4d04d72915dfa76a498d908eba3928f84",
+      "bytes": 67904,
+      "elapsedSeconds": 7.514,
+      "id": "warner",
+      "verifiedCount": 1,
+      "heldCount": 0
+    },
+    {
+      "url": "https://www.bluenote.com/artist/willie-nelson/",
+      "observedAt": "2026-10-27T06:43:54.644540+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "allowOrigin": "",
+      "corsHeaderAllowsPagesOrigin": false,
+      "contentType": "text/html; charset=UTF-8",
+      "sourceSha256": "003c90635674eec991430f8975a209705757e5bb540a08ae65cbc09df8068186",
+      "bytes": 124618,
+      "elapsedSeconds": 7.338,
+      "id": "bluenote",
+      "verifiedCount": 1,
+      "heldCount": 2
+    },
+    {
+      "url": "https://willienelson.com/products/workin-man-willie-sings-merle",
+      "observedAt": "2026-10-27T06:44:01.983671+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "allowOrigin": "*",
+      "corsHeaderAllowsPagesOrigin": true,
+      "contentType": "text/html; charset=utf-8",
+      "sourceSha256": "2e399b85334fb86c6e9243846632a5b3a1ad7cdaa01b9fbcb22fcba4ea77775c",
+      "bytes": 260202,
+      "elapsedSeconds": 6.647,
+      "id": "artist-product"
+    },
+    {
+      "url": "https://willienelson.com/products/oh-what-a-beautiful-world",
+      "observedAt": "2026-10-27T06:44:08.638496+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "allowOrigin": "*",
+      "corsHeaderAllowsPagesOrigin": true,
+      "contentType": "text/html; charset=utf-8",
+      "sourceSha256": "fb23bb74d64f11b45f7b2c48d112d2c8ce2996a3e756d9a7d8e78d557257473a",
+      "bytes": 260847,
+      "elapsedSeconds": 6.588,
+      "id": "artist-product"
+    },
+    {
+      "url": "https://willienelson.com/products/last-leaf-on-the-tree",
+      "observedAt": "2026-10-27T06:44:15.233605+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "allowOrigin": "*",
+      "corsHeaderAllowsPagesOrigin": true,
+      "contentType": "text/html; charset=utf-8",
+      "sourceSha256": "2784ec3b6e076db12374d6d446f19cc9d1dc65750b9f9389d38b1096b4376f47",
+      "bytes": 259157,
+      "elapsedSeconds": 6.629,
+      "id": "artist-product"
+    }
+  ],
+  "discoveredProductCount": 24,
+  "coverage": "bounded_partial_probe_not_complete_discography",
+  "artist": "Willie Nelson",
+  "status": "confirmed_partial"
+}
