@@ -84,7 +84,7 @@ for(const title of ['Human After All','Alive 2007']){
  assert.equal(run('confirmedListeningLink(daft,album).url'),context.album.listeningLink.url);
 }
 assert.equal(run('confirmedListeningLink(daft,daft.albums.find(a=>a.title==="Alive 1997"))'),null);
-assert.equal(context.catalog.artists.reduce((sum,artist)=>sum+artist.albums.length,0),292);
+assert.equal(context.catalog.artists.reduce((sum,artist)=>sum+artist.albums.length,0),385);
 
 // v0.87 adds genres through the same exact-alias and reviewed-catalog path.
 for(const name of ['John Coltrane','Queen','Iron Maiden','Underworld','Madonna','宇多田ヒカル']){
@@ -94,4 +94,12 @@ for(const name of ['John Coltrane','Queen','Iron Maiden','Underworld','Madonna',
  assert.equal(run('confirmedCatalogAlbums(artist).length'),artist.albums.length);
  for(const album of artist.albums){context.album=album;assert.equal(run('confirmedListeningLink(artist,album)'),null)}
 }
-assert.equal(context.catalog.artists.length,20);
+assert.equal(context.catalog.artists.length,27);
+
+// v0.88 additions pass the existing recognition and multilingual lookup path.
+for(const artist of context.catalog.artists.slice(20)){
+ context.artist=artist;
+ for(const alias of [artist.name,...artist.aliases]){context.query=alias;assert.equal(run('catalogArtist(query).id'),artist.id)}
+ assert.equal(run('confirmedCatalogAlbums(artist).length'),artist.albums.length);
+ for(const album of artist.albums){context.album=album;assert.equal(run('confirmedListeningLink(artist,album)'),null)}
+}
